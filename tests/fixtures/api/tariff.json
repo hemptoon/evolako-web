@@ -1,0 +1,11 @@
+{
+  "source": "meterOwnerBill",
+  "nightWindow": {
+    "endHour": 7,
+    "endMinute": 0,
+    "startHour": 23,
+    "startMinute": 0
+  },
+  "lowRateRSDPerKWh": 5.7,
+  "highRateRSDPerKWh": 19.65
+}

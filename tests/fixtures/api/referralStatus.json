@@ -1,0 +1,19 @@
+{
+  "code": "EVO-KW5R6",
+  "link": "https://www.evolako.rs/preporuka?ref=EVO-KW5R6",
+  "referrals": [
+    {
+      "id": "7db46260-9d77-4c93-86aa-c9d06bf0867d",
+      "status": "installed",
+      "createdAt": "2026-09-25T06:29:30+02:00",
+      "friendName": "Jelena S.",
+      "installedAt": "2026-09-25T06:29:30+02:00",
+      "monthsAwarded": 2
+    }
+  ],
+  "appliesFrom": {
+    "year": 2026,
+    "month": 10
+  },
+  "freeMonthsBalance": 2
+}

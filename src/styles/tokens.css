@@ -1,0 +1,150 @@
+/* Evolako design tokens — BVPalette/BVColor of the app, as CSS custom properties per theme.
+   Roles, not hues: every pair of text/graphic on a surface is checked in tests/unit/contrast.test.ts
+   (text ≥ 4.5:1, graphics and control outlines ≥ 3:1). Pure accent is a fill, never text on dark. */
+
+:root {
+  /* palette (raw) */
+  --ink: #0b1220;
+  --card: #141c2e;
+  --fog: #e2e8f5;
+  --paper: #f1f4f9;
+  --paper2: #e6ebf3;
+  --mist: #e3ebff;
+  --ice: #ffffff;
+  --muted: #5a6478;
+  --accent-raw: #2e6bff;
+  --accent-deep: #2358e0;
+  --accent-light: #6290ff;
+  --slate: #828da3;
+  --signal-fault: #e86a4e;
+  --signal-fault-deep: #be4325;
+  --signal-ok-deep: #1b7f46;
+  --signal-ok-light: #3ccb7f;
+  --signal-caution-deep: #9a5b00;
+  --signal-caution-light: #f0b43c;
+
+  /* spacing 4/8/12/16/24/32 */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+
+  /* radii */
+  --r-tile: 20px;
+  --r-card: 24px;
+  --r-block: 28px;
+  --r-pill: 999px;
+  --r-control: 14px;
+
+  /* type */
+  --font: "Onest", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fs-caption: 0.8125rem;   /* 13 */
+  --fs-sub: 0.9375rem;       /* 15 */
+  --fs-body: 1rem;           /* 16 */
+  --fs-headline: 1.0625rem;  /* 17 */
+  --fs-title: 1.375rem;      /* 22 */
+  --fs-large: 2rem;          /* 32 */
+  --fs-metric-s: 1.625rem;   /* 26 */
+  --fs-metric: 2.5rem;       /* 40 */
+  --fs-metric-xl: 3.5rem;    /* 56 */
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --t-fast: 150ms;
+  --t-med: 200ms;
+  --t-slow: 250ms;
+
+  /* layout */
+  --sidebar-w: 272px;
+  --content-max: 1200px;
+  --tabbar-h: 64px;
+  --topbar-h: 64px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-top: env(safe-area-inset-top, 0px);
+}
+
+/* ---------------------------------------------------------------- light (default) */
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: var(--paper);
+  --surface: var(--ice);
+  --surface-2: var(--paper2);
+  --tile: var(--paper);
+  --text: var(--ink);
+  --text-2: var(--muted);
+  --accent: var(--accent-raw);
+  --accent-hover: var(--accent-deep);
+  --on-accent: #ffffff;
+  --accent-text: var(--accent-deep);
+  --accent-graphic: var(--accent-deep);
+  --accent-soft: var(--mist);
+  --chart-night: var(--accent-raw);
+  --chart-day: var(--slate);
+  --chart-grid: rgba(11, 18, 32, 0.08);
+  --mark: var(--accent-raw);
+  --fault: var(--signal-fault);
+  --fault-text: var(--signal-fault-deep);
+  --fault-soft: rgba(232, 106, 78, 0.14);
+  --on-fault: var(--ink);
+  --ok-text: var(--signal-ok-deep);
+  --ok-soft: rgba(27, 127, 70, 0.12);
+  --caution-text: var(--signal-caution-deep);
+  --caution-soft: rgba(154, 91, 0, 0.12);
+  --outline: rgba(11, 18, 32, 0.5);
+  --hairline: rgba(11, 18, 32, 0.07);
+  --separator: rgba(11, 18, 32, 0.1);
+  --focus: var(--accent-deep);
+  --scrim: rgba(11, 18, 32, 0.38);
+  --shadow-card: 0 1px 2px rgba(11, 18, 32, 0.04), 0 10px 30px -18px rgba(11, 18, 32, 0.22);
+  --shadow-raise: 0 1px 2px rgba(11, 18, 32, 0.05), 0 16px 40px -20px rgba(11, 18, 32, 0.3);
+  --shadow-pop: 0 24px 64px -16px rgba(11, 18, 32, 0.34), 0 2px 6px rgba(11, 18, 32, 0.06);
+  --hero-grad: radial-gradient(120% 140% at 100% 0%, rgba(46, 107, 255, 0.12) 0%, rgba(46, 107, 255, 0) 55%);
+  --skeleton: rgba(11, 18, 32, 0.06);
+  --skeleton-shine: rgba(255, 255, 255, 0.7);
+  --chrome: rgba(241, 244, 249, 0.86);
+}
+
+/* ---------------------------------------------------------------- dark */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: var(--ink);
+  --surface: var(--card);
+  --surface-2: rgba(226, 232, 245, 0.08);
+  --tile: rgba(226, 232, 245, 0.05);
+  --text: var(--paper);
+  --text-2: rgba(226, 232, 245, 0.68);
+  --accent: var(--accent-raw);
+  --accent-hover: #3d77ff;
+  --on-accent: #ffffff;
+  --accent-text: var(--accent-light);
+  --accent-graphic: var(--accent-raw);
+  --accent-soft: rgba(46, 107, 255, 0.18);
+  --chart-night: var(--accent-raw);
+  --chart-day: rgba(226, 232, 245, 0.42);
+  --chart-grid: rgba(226, 232, 245, 0.08);
+  --mark: var(--accent-light);
+  --fault: var(--signal-fault);
+  --fault-text: var(--signal-fault);
+  --fault-soft: rgba(232, 106, 78, 0.16);
+  --on-fault: var(--ink);
+  --ok-text: var(--signal-ok-light);
+  --ok-soft: rgba(60, 203, 127, 0.14);
+  --caution-text: var(--signal-caution-light);
+  --caution-soft: rgba(240, 180, 60, 0.14);
+  --outline: rgba(226, 232, 245, 0.45);
+  --hairline: rgba(226, 232, 245, 0.07);
+  --separator: rgba(226, 232, 245, 0.1);
+  --focus: var(--accent-light);
+  --scrim: rgba(3, 6, 12, 0.62);
+  --shadow-card: none;
+  --shadow-raise: none;
+  --shadow-pop: 0 24px 64px -16px rgba(0, 0, 0, 0.6);
+  --hero-grad: radial-gradient(120% 140% at 100% 0%, rgba(46, 107, 255, 0.22) 0%, rgba(46, 107, 255, 0) 60%);
+  --skeleton: rgba(226, 232, 245, 0.07);
+  --skeleton-shine: rgba(226, 232, 245, 0.08);
+  --chrome: rgba(11, 18, 32, 0.84);
+}

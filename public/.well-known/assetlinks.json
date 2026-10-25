@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.evolako.app",
+      "sha256_cert_fingerprints": [
+        "38:BE:90:81:AB:93:72:80:B9:FF:8F:A5:6E:86:0E:9C:3F:00:B8:B0:74:29:E1:37:1D:EF:09:A2:D3:48:6A:09",
+        "1C:52:54:F2:47:26:55:1A:8B:94:58:4D:11:C2:89:73:F6:6C:4F:EA:35:72:67:4F:91:4B:7B:7E:58:65:95:77",
+        "F9:14:7E:79:D2:90:1A:6F:EE:28:83:09:7E:FD:27:2A:27:3F:52:FD:0B:5E:B4:CF:FC:77:A1:9C:93:34:43:46"
+      ]
+    }
+  }
+]

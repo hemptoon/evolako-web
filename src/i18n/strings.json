@@ -1,0 +1,3270 @@
+{
+ "%@: cena mora biti između %@ i %@ RSD.": {
+  "sr": "%@: cena mora biti između %@ i %@ RSD.",
+  "sr-Cyrl": "%@: цена мора бити између %@ и %@ RSD.",
+  "en": "%@: the price must be between %@ and %@ RSD.",
+  "ru": "%@: цена должна быть от %@ до %@ RSD."
+ },
+ "%@: najviše dve decimale, kao na računu.": {
+  "sr": "%@: najviše dve decimale, kao na računu.",
+  "sr-Cyrl": "%@: највише две децимале, као на рачуну.",
+  "en": "%@: two decimal places at most, as on the bill.",
+  "ru": "%@: не больше двух знаков после запятой, как в счёте."
+ },
+ "%@: upiši cenu, na primer 12,50.": {
+  "sr": "%@: upiši cenu, na primer 12,50.",
+  "sr-Cyrl": "%@: упиши цену, на пример 12,50.",
+  "en": "%@: enter a price, for example 12,50.",
+  "ru": "%@: впиши цену, например 12,50."
+ },
+ "%lld meseca za svakog prijatelja": {
+  "sr": {
+   "one": "%lld mesec za svakog prijatelja",
+   "few": "%lld meseca za svakog prijatelja",
+   "other": "%lld meseci za svakog prijatelja"
+  },
+  "sr-Cyrl": {
+   "one": "%lld месец за сваког пријатеља",
+   "few": "%lld месеца за сваког пријатеља",
+   "other": "%lld месеци за сваког пријатеља"
+  },
+  "en": {
+   "one": "%lld month for every friend",
+   "other": "%lld months for every friend"
+  },
+  "ru": {
+   "one": "%lld месяц за каждого друга",
+   "few": "%lld месяца за каждого друга",
+   "many": "%lld месяцев за каждого друга",
+   "other": "%lld месяца за каждого друга"
+  }
+ },
+ "+%lld besplatna meseca od preporuka": {
+  "sr": {
+   "one": "+%lld besplatan mesec od preporuka",
+   "few": "+%lld besplatna meseca od preporuka",
+   "other": "+%lld besplatnih meseci od preporuka"
+  },
+  "sr-Cyrl": {
+   "one": "+%lld бесплатан месец од препорука",
+   "few": "+%lld бесплатна месеца од препорука",
+   "other": "+%lld бесплатних месеци од препорука"
+  },
+  "en": {
+   "one": "+%lld free month from referrals",
+   "other": "+%lld free months from referrals"
+  },
+  "ru": {
+   "one": "+%lld бесплатный месяц за рекомендации",
+   "few": "+%lld бесплатных месяца за рекомендации",
+   "many": "+%lld бесплатных месяцев за рекомендации",
+   "other": "+%lld бесплатного месяца за рекомендации"
+  }
+ },
+ "+%lld meseca": {
+  "sr": {
+   "one": "+%lld mesec",
+   "few": "+%lld meseca",
+   "other": "+%lld meseci"
+  },
+  "sr-Cyrl": {
+   "one": "+%lld месец",
+   "few": "+%lld месеца",
+   "other": "+%lld месеци"
+  },
+  "en": {
+   "one": "+%lld month",
+   "other": "+%lld months"
+  },
+  "ru": {
+   "one": "+%lld месяц",
+   "few": "+%lld месяца",
+   "many": "+%lld месяцев",
+   "other": "+%lld месяца"
+  }
+ },
+ "+%lld meseca pretplate besplatno": {
+  "sr": {
+   "one": "+%lld mesec pretplate besplatno",
+   "few": "+%lld meseca pretplate besplatno",
+   "other": "+%lld meseci pretplate besplatno"
+  },
+  "sr-Cyrl": {
+   "one": "+%lld месец претплате бесплатно",
+   "few": "+%lld месеца претплате бесплатно",
+   "other": "+%lld месеци претплате бесплатно"
+  },
+  "en": {
+   "one": "+%lld month of subscription free",
+   "other": "+%lld months of subscription free"
+  },
+  "ru": {
+   "one": "+%lld месяц подписки бесплатно",
+   "few": "+%lld месяца подписки бесплатно",
+   "many": "+%lld месяцев подписки бесплатно",
+   "other": "+%lld месяца подписки бесплатно"
+  }
+ },
+ "15 minuta kasnije": {
+  "sr": "15 minuta kasnije",
+  "sr-Cyrl": "15 минута касније",
+  "en": "15 minutes later",
+  "ru": "На 15 минут позже"
+ },
+ "15 minuta ranije": {
+  "sr": "15 minuta ranije",
+  "sr-Cyrl": "15 минута раније",
+  "en": "15 minutes earlier",
+  "ru": "На 15 минут раньше"
+ },
+ "Adresa": {
+  "sr": "Adresa",
+  "sr-Cyrl": "Адреса",
+  "en": "Address",
+  "ru": "Адрес"
+ },
+ "Adresa (nije obavezno)": {
+  "sr": "Adresa (nije obavezno)",
+  "sr-Cyrl": "Адреса (није обавезно)",
+  "en": "Address (optional)",
+  "ru": "Адрес (необязательно)"
+ },
+ "Ako se predomisliš, prijavi se ponovo na evolako.rs.": {
+  "sr": "Ako se predomisliš, prijavi se ponovo na evolako.rs.",
+  "sr-Cyrl": "Ако се предомислиш, пријави се поново на evolako.rs.",
+  "en": "Changed your mind? Sign up again on evolako.rs.",
+  "ru": "Если передумаешь — подпишись снова на evolako.rs."
+ },
+ "Ako si prijavu već potvrdio, ovaj link više ne važi. Ako nisi, prijavi se ponovo na evolako.rs.": {
+  "sr": "Ako si prijavu već potvrdio, ovaj link više ne važi. Ako nisi, prijavi se ponovo na evolako.rs.",
+  "sr-Cyrl": "Ако си пријаву већ потврдио, овај линк више не важи. Ако ниси, пријави се поново на evolako.rs.",
+  "en": "If you've already confirmed, this link no longer works. If not, please sign up again on evolako.rs.",
+  "ru": "Если ты уже подтвердил подписку, эта ссылка больше не работает. Если нет — подпишись ещё раз на evolako.rs."
+ },
+ "Ako tačku punjenja koristiš samo ti, pretplata za nju prestaje poslednjeg dana tekućeg meseca.": {
+  "sr": "Ako tačku punjenja koristiš samo ti, pretplata za nju prestaje poslednjeg dana tekućeg meseca.",
+  "sr-Cyrl": "Ако тачку пуњења користиш само ти, претплата за њу престаје последњег дана текућег месеца.",
+  "en": "If you're the only user of your charging point, its subscription ends on the last day of the current month.",
+  "ru": "Если точкой пользуешься только ты, подписка на неё закончится в последний день текущего месяца."
+ },
+ "Aktivna": {
+  "sr": "Aktivna",
+  "sr-Cyrl": "Активна",
+  "en": "Active",
+  "ru": "Активна"
+ },
+ "Aktivna — %@ mesečno": {
+  "sr": "Aktivna — %@ mesečno",
+  "sr-Cyrl": "Активна — %@ месечно",
+  "en": "Active — %@ per month",
+  "ru": "Активна — %@ в месяц"
+ },
+ "Anonimna statistika korišćenja": {
+  "sr": "Anonimna statistika korišćenja",
+  "sr-Cyrl": "Анонимна статистика коришћења",
+  "en": "Anonymous usage statistics",
+  "ru": "Анонимная статистика использования"
+ },
+ "Auto": {
+  "sr": "Auto",
+  "sr-Cyrl": "Ауто",
+  "en": "Car",
+  "ru": "Машина"
+ },
+ "Auto je priključen, a punjenje ne počinje.": {
+  "sr": "Auto je priključen, a punjenje ne počinje.",
+  "sr-Cyrl": "Ауто је прикључен, а пуњење не почиње.",
+  "en": "The car is plugged in, but charging doesn't start.",
+  "ru": "Авто подключено, а зарядка не начинается."
+ },
+ "Autostart": {
+  "sr": "Autostart",
+  "sr-Cyrl": "Аутостарт",
+  "en": "Auto-start",
+  "ru": "Автостарт"
+ },
+ "Autostart je pokrenuo punjenje": {
+  "sr": "Autostart je pokrenuo punjenje",
+  "sr-Cyrl": "Аутостарт је покренуо пуњење",
+  "en": "Auto-start began charging",
+  "ru": "Автостарт запустил зарядку"
+ },
+ "Besplatni meseci se ne menjaju za novac i ne prenose se na drugog.": {
+  "sr": "Besplatni meseci se ne menjaju za novac i ne prenose se na drugog.",
+  "sr-Cyrl": "Бесплатни месеци се не мењају за новац и не преносе се на другог.",
+  "en": "Free months can't be exchanged for money or transferred to someone else.",
+  "ru": "Бесплатные месяцы не обмениваются на деньги и не передаются другому."
+ },
+ "Bez lozinke — preko Google naloga ili kodom na e-poštu.": {
+  "sr": "Bez lozinke — preko Google naloga ili kodom na e-poštu.",
+  "sr-Cyrl": "Без лозинке — преко Google налога или кодом на е-пошту.",
+  "en": "No password — with Google or a code sent to your email.",
+  "ru": "Без пароля — через Google или по коду из письма."
+ },
+ "Bez ograničenja: meseci se sabiraju i pokrivaju tvoje sledeće plaćene mesece.": {
+  "sr": "Bez ograničenja: meseci se sabiraju i pokrivaju tvoje sledeće plaćene mesece.",
+  "sr-Cyrl": "Без ограничења: месеци се сабирају и покривају твоје следеће плаћене месеце.",
+  "en": "No limit: the months add up and cover your next paid months.",
+  "ru": "Без ограничений: месяцы складываются и закрывают твои следующие платные месяцы."
+ },
+ "Bez oznake": {
+  "sr": "Bez oznake",
+  "sr-Cyrl": "Без ознаке",
+  "en": "No tag",
+  "ru": "Без метки"
+ },
+ "Bez saglasnosti ne možemo da te kontaktiramo.": {
+  "sr": "Bez saglasnosti ne možemo da te kontaktiramo.",
+  "sr-Cyrl": "Без сагласности не можемо да те контактирамо.",
+  "en": "Without your consent we can't contact you.",
+  "ru": "Без согласия мы не можем с тобой связаться."
+ },
+ "Brisanje je trajno — ne može da se poništi.": {
+  "sr": "Brisanje je trajno — ne može da se poništi.",
+  "sr-Cyrl": "Брисање је трајно — не може да се поништи.",
+  "en": "Deletion is permanent — it can't be undone.",
+  "ru": "Удаление окончательное — отменить его нельзя."
+ },
+ "Brisanje naloga": {
+  "sr": "Brisanje naloga",
+  "sr-Cyrl": "Брисање налога",
+  "en": "Delete your account",
+  "ru": "Удаление аккаунта"
+ },
+ "Brišemo ime, kontakt, zahteve i fotografije. Obračuni ostaju samo sa imenom platioca — čuvamo ih po zakonu. Ovo ne može da se poništi.": {
+  "sr": "Brišemo ime, kontakt, zahteve i fotografije. Obračuni ostaju samo sa imenom platioca — čuvamo ih po zakonu. Ovo ne može da se poništi.",
+  "sr-Cyrl": "Бришемо име, контакт, захтеве и фотографије. Обрачуни остају само са именом платиоца — чувамо их по закону. Ово не може да се поништи.",
+  "en": "We delete your name, contact details, requests and photos. Statements stay with the payer's name only — the law requires us to keep them. This can't be undone.",
+  "ru": "Удалим имя, контакты, заявки и фотографии. Отчёты останутся только с именем плательщика — их мы обязаны хранить по закону. Отменить это нельзя."
+ },
+ "Brišemo nalog…": {
+  "sr": "Brišemo nalog…",
+  "sr-Cyrl": "Бришемо налог…",
+  "en": "Deleting your account…",
+  "ru": "Удаляем аккаунт…"
+ },
+ "Brojilo": {
+  "sr": "Brojilo",
+  "sr-Cyrl": "Бројило",
+  "en": "Meter",
+  "ru": "Счётчик"
+ },
+ "Cena": {
+  "sr": "Cena",
+  "sr-Cyrl": "Цена",
+  "en": "Price",
+  "ru": "Цена"
+ },
+ "Cene iz mog EPS računa": {
+  "sr": "Cene iz mog EPS računa",
+  "sr-Cyrl": "Цене из мог ЕПС рачуна",
+  "en": "Prices from my EPS bill",
+  "ru": "Цены из моего счёта EPS"
+ },
+ "Cene po kWh": {
+  "sr": "Cene po kWh",
+  "sr-Cyrl": "Цене по kWh",
+  "en": "Prices per kWh",
+  "ru": "Цены за кВт·ч"
+ },
+ "Cene struje": {
+  "sr": "Cene struje",
+  "sr-Cyrl": "Цене струје",
+  "en": "Electricity prices",
+  "ru": "Цены на электроэнергию"
+ },
+ "Cene unosimo po računu zgrade koji nam pošalješ": {
+  "sr": "Cene unosimo po računu zgrade koji nam pošalješ",
+  "sr-Cyrl": "Цене уносимо по рачуну зграде који нам пошаљеш",
+  "en": "We enter the prices from the building's bill you send us",
+  "ru": "Цены вносим по счёту здания, который ты нам присылаешь"
+ },
+ "Česta pitanja": {
+  "sr": "Česta pitanja",
+  "sr-Cyrl": "Честа питања",
+  "en": "FAQ",
+  "ru": "Частые вопросы"
+ },
+ "Često pitano": {
+  "sr": "Često pitano",
+  "sr-Cyrl": "Често питано",
+  "en": "Frequently asked",
+  "ru": "Часто спрашивают"
+ },
+ "dan": {
+  "sr": "dan",
+  "sr-Cyrl": "дан",
+  "en": "day",
+  "ru": "день"
+ },
+ "Danas": {
+  "sr": "Danas",
+  "sr-Cyrl": "Данас",
+  "en": "Today",
+  "ru": "Сегодня"
+ },
+ "Datum": {
+  "sr": "Datum",
+  "sr-Cyrl": "Датум",
+  "en": "Date",
+  "ru": "Дата"
+ },
+ "Deli potrošnju na privatnu i poslovnu — vidi se u statistici, obračunu i izvozu.": {
+  "sr": "Deli potrošnju na privatnu i poslovnu — vidi se u statistici, obračunu i izvozu.",
+  "sr-Cyrl": "Дели потрошњу на приватну и пословну — види се у статистици, обрачуну и извозу.",
+  "en": "Splits consumption into personal and work — you'll see it in statistics, the statement and the export.",
+  "ru": "Делит расход на личный и рабочий — это видно в статистике, отчёте и выгрузке."
+ },
+ "Demo": {
+  "sr": "Demo",
+  "sr-Cyrl": "Демо",
+  "en": "Demo",
+  "ru": "Демо"
+ },
+ "DEMO — ne plaćaj": {
+  "sr": "DEMO — ne plaćaj",
+  "sr-Cyrl": "ДЕМО — не плаћај",
+  "en": "DEMO — do not pay",
+  "ru": "ДЕМО — не оплачивай"
+ },
+ "Demo nalog": {
+  "sr": "Demo nalog",
+  "sr-Cyrl": "Демо налог",
+  "en": "Demo account",
+  "ru": "Демо-аккаунт"
+ },
+ "Dnevna": {
+  "sr": "Dnevna",
+  "sr-Cyrl": "Дневна",
+  "en": "Day",
+  "ru": "Дневная"
+ },
+ "Dnevna energija": {
+  "sr": "Dnevna energija",
+  "sr-Cyrl": "Дневна енергија",
+  "en": "Day energy",
+  "ru": "Дневная энергия"
+ },
+ "Dobijaš još %lld meseca pretplate besplatno, preko probnog perioda.": {
+  "sr": {
+   "one": "Dobijaš još %lld mesec pretplate besplatno, preko probnog perioda.",
+   "few": "Dobijaš još %lld meseca pretplate besplatno, preko probnog perioda.",
+   "other": "Dobijaš još %lld meseci pretplate besplatno, preko probnog perioda."
+  },
+  "sr-Cyrl": {
+   "one": "Добијаш још %lld месец претплате бесплатно, преко пробног периода.",
+   "few": "Добијаш још %lld месеца претплате бесплатно, преко пробног периода.",
+   "other": "Добијаш још %lld месеци претплате бесплатно, преко пробног периода."
+  },
+  "en": {
+   "one": "You get %lld more month of subscription free, on top of the trial.",
+   "other": "You get %lld more months of subscription free, on top of the trial."
+  },
+  "ru": {
+   "one": "Ты получишь ещё %lld месяц подписки бесплатно — сверх пробного периода.",
+   "few": "Ты получишь ещё %lld месяца подписки бесплатно — сверх пробного периода.",
+   "many": "Ты получишь ещё %lld месяцев подписки бесплатно — сверх пробного периода.",
+   "other": "Ты получишь ещё %lld месяца подписки бесплатно — сверх пробного периода."
+  }
+ },
+ "Dodaj fotografiju": {
+  "sr": "Dodaj fotografiju",
+  "sr-Cyrl": "Додај фотографију",
+  "en": "Add a photo",
+  "ru": "Добавить фото"
+ },
+ "Dodaj fotografiju brojila.": {
+  "sr": "Dodaj fotografiju brojila.",
+  "sr-Cyrl": "Додај фотографију бројила.",
+  "en": "Add a photo of the meter.",
+  "ru": "Добавь фото счётчика."
+ },
+ "Dokument sa iznosima i IPS QR kodom: skeniraš u banci i platiš.": {
+  "sr": "Dokument sa iznosima i IPS QR kodom: skeniraš u banci i platiš.",
+  "sr-Cyrl": "Документ са износима и IPS QR кодом: скенираш у банци и платиш.",
+  "en": "A document with the amounts and an IPS QR code — Serbia's standard payment code. Scan it in your bank app and pay.",
+  "ru": "Документ с суммами и IPS QR-кодом — это сербский стандарт платёжных кодов. Отсканировал в банке — оплатил."
+ },
+ "Dovoljan je telefon ili e-mail.": {
+  "sr": "Dovoljan je telefon ili e-mail.",
+  "sr-Cyrl": "Довољан је телефон или e-mail.",
+  "en": "A phone number or an email is enough.",
+  "ru": "Достаточно телефона или почты."
+ },
+ "Druga tačka ili komplet za komšiju": {
+  "sr": "Druga tačka ili komplet za komšiju",
+  "sr-Cyrl": "Друга тачка или комплет за комшију",
+  "en": "A second charging point, or a kit for a neighbor",
+  "ru": "Вторая точка или комплект для соседа"
+ },
+ "Drugo": {
+  "sr": "Drugo",
+  "sr-Cyrl": "Друго",
+  "en": "Other",
+  "ru": "Другое"
+ },
+ "E-mail": {
+  "sr": "E-mail",
+  "sr-Cyrl": "E-mail",
+  "en": "Email",
+  "ru": "Почта"
+ },
+ "E-pošta": {
+  "sr": "E-pošta",
+  "sr-Cyrl": "Е-пошта",
+  "en": "Email",
+  "ru": "Почта"
+ },
+ "E-pošta naloga": {
+  "sr": "E-pošta naloga",
+  "sr-Cyrl": "Е-пошта налога",
+  "en": "Account email",
+  "ru": "Почта аккаунта"
+ },
+ "Energija i cene": {
+  "sr": "Energija i cene",
+  "sr-Cyrl": "Енергија и цене",
+  "en": "Energy and prices",
+  "ru": "Энергия и цены"
+ },
+ "EUR — evro": {
+  "sr": "EUR — evro",
+  "sr-Cyrl": "EUR — евро",
+  "en": "EUR — euro",
+  "ru": "EUR — евро"
+ },
+ "Evolako nalog možeš da obrišeš sam — ovde, bez aplikacije, ili u aplikaciji. Isti je u aplikaciji Evolako i u Moj Evolako.": {
+  "sr": "Evolako nalog možeš da obrišeš sam — ovde, bez aplikacije, ili u aplikaciji. Isti je u aplikaciji Evolako i u Moj Evolako.",
+  "sr-Cyrl": "Evolako налог можеш да обришеш сам — овде, без апликације, или у апликацији. Исти је у апликацији Evolako и у Мој Evolako.",
+  "en": "You can delete your Evolako account yourself — here, without the app, or in the app. It's the same account in the Evolako app and in My Evolako.",
+  "ru": "Аккаунт Evolako можно удалить самому — здесь, без приложения, или в приложении. Он один и тот же в приложении Evolako и в Мой Evolako."
+ },
+ "Evolako pismo": {
+  "sr": "Evolako pismo",
+  "sr-Cyrl": "Evolako писмо",
+  "en": "Evolako Letter",
+  "ru": "Письмо Evolako"
+ },
+ "Evolako pismo stiže jednom mesečno: kako da puniš jeftinije kod kuće, šta traži skupština zgrade i šta je novo u Evolako. Odjava je u svakom pismu, jednim klikom.": {
+  "sr": "Evolako pismo stiže jednom mesečno: kako da puniš jeftinije kod kuće, šta traži skupština zgrade i šta je novo u Evolako. Odjava je u svakom pismu, jednim klikom.",
+  "sr-Cyrl": "Evolako писмо стиже једном месечно: како да пуниш јефтиније код куће, шта тражи скупштина зграде и шта је ново у Evolako. Одјава је у сваком писму, једним кликом.",
+  "en": "The Evolako Letter comes once a month: how to charge for less at home, what the building assembly needs, and what's new at Evolako. Every letter has a one-click unsubscribe.",
+  "ru": "Письмо Evolako приходит раз в месяц: как заряжаться дешевле дома, что нужно для собрания жильцов и что нового в Evolako. Отписаться можно в каждом письме, одним кликом."
+ },
+ "Evolako pismo stiže prve srede u mesecu.": {
+  "sr": "Evolako pismo stiže prve srede u mesecu.",
+  "sr-Cyrl": "Evolako писмо стиже прве среде у месецу.",
+  "en": "The Evolako Letter arrives on the first Wednesday of each month.",
+  "ru": "Письмо Evolako приходит в первую среду месяца."
+ },
+ "Fotografija": {
+  "sr": "Fotografija",
+  "sr-Cyrl": "Фотографија",
+  "en": "Photo",
+  "ru": "Фото"
+ },
+ "Fotografija (nije obavezno)": {
+  "sr": "Fotografija (nije obavezno)",
+  "sr-Cyrl": "Фотографија (није обавезно)",
+  "en": "Photo (optional)",
+  "ru": "Фото (необязательно)"
+ },
+ "Fotografije koje si poslao — uz prijavu kvara i očitavanje brojila.": {
+  "sr": "Fotografije koje si poslao — uz prijavu kvara i očitavanje brojila.",
+  "sr-Cyrl": "Фотографије које си послао — уз пријаву квара и очитавање бројила.",
+  "en": "Photos you sent — with a problem report or a meter reading.",
+  "ru": "Фотографии, которые ты отправил, — к заявке о проблеме и к показаниям счётчика."
+ },
+ "Fotografiši brojilo": {
+  "sr": "Fotografiši brojilo",
+  "sr-Cyrl": "Фотографиши бројило",
+  "en": "Take a photo of the meter",
+  "ru": "Сфотографировать счётчик"
+ },
+ "Gde": {
+  "sr": "Gde",
+  "sr-Cyrl": "Где",
+  "en": "Where",
+  "ru": "Где"
+ },
+ "Gde auto noći": {
+  "sr": "Gde auto noći",
+  "sr-Cyrl": "Где ауто ноћи",
+  "en": "Where the car stays overnight",
+  "ru": "Где машина ночует"
+ },
+ "Glavna navigacija": {
+  "sr": "Glavna navigacija",
+  "sr-Cyrl": "Главна навигација",
+  "en": "Main navigation",
+  "ru": "Основная навигация"
+ },
+ "Godina": {
+  "sr": "Godina",
+  "sr-Cyrl": "Година",
+  "en": "Year",
+  "ru": "Год"
+ },
+ "Gotovo": {
+  "sr": "Gotovo",
+  "sr-Cyrl": "Готово",
+  "en": "Done",
+  "ru": "Готово"
+ },
+ "Grad": {
+  "sr": "Grad",
+  "sr-Cyrl": "Град",
+  "en": "City",
+  "ru": "Город"
+ },
+ "Hvala — prijava je potvrđena.": {
+  "sr": "Hvala — prijava je potvrđena.",
+  "sr-Cyrl": "Хвала — пријава је потврђена.",
+  "en": "Thanks — you're subscribed.",
+  "ru": "Спасибо — подписка подтверждена."
+ },
+ "ili kodom na e-poštu": {
+  "sr": "ili kodom na e-poštu",
+  "sr-Cyrl": "или кодом на е-пошту",
+  "en": "or with a code sent to your email",
+  "ru": "или по коду из письма"
+ },
+ "Imam kod preporuke": {
+  "sr": "Imam kod preporuke",
+  "sr-Cyrl": "Имам код препоруке",
+  "en": "I have a referral code",
+  "ru": "У меня есть код рекомендации"
+ },
+ "Imaš kod preporuke?": {
+  "sr": "Imaš kod preporuke?",
+  "sr-Cyrl": "Имаш код препоруке?",
+  "en": "Have a referral code?",
+  "ru": "Есть код рекомендации?"
+ },
+ "Ime": {
+  "sr": "Ime",
+  "sr-Cyrl": "Име",
+  "en": "Name",
+  "ru": "Имя"
+ },
+ "Ime može da ima najviše %lld znakova.": {
+  "sr": "Ime može da ima najviše %lld znakova.",
+  "sr-Cyrl": "Име може да има највише %lld знакова.",
+  "en": "The name can be at most %lld characters long.",
+  "ru": "Имя может быть не длиннее %lld символов."
+ },
+ "Ime tačke": {
+  "sr": "Ime tačke",
+  "sr-Cyrl": "Име тачке",
+  "en": "Charging point name",
+  "ru": "Имя точки"
+ },
+ "Ime, kontakt, zahtevi i fotografije su obrisani. Obračuni ostaju samo sa imenom platioca — čuvamo ih po zakonu.": {
+  "sr": "Ime, kontakt, zahtevi i fotografije su obrisani. Obračuni ostaju samo sa imenom platioca — čuvamo ih po zakonu.",
+  "sr-Cyrl": "Име, контакт, захтеви и фотографије су обрисани. Обрачуни остају само са именом платиоца — чувамо их по закону.",
+  "en": "Your name, contact details, requests and photos are deleted. Statements stay with the payer's name only — the law requires us to keep them.",
+  "ru": "Имя, контакты, заявки и фотографии удалены. Отчёты остаются только с именем плательщика — их мы обязаны хранить по закону."
+ },
+ "Instalirano": {
+  "sr": "Instalirano",
+  "sr-Cyrl": "Инсталирано",
+  "en": "Installed",
+  "ru": "Установлено"
+ },
+ "Isključen": {
+  "sr": "Isključen",
+  "sr-Cyrl": "Искључен",
+  "en": "Off",
+  "ru": "Выключен"
+ },
+ "Ispravi": {
+  "sr": "Ispravi",
+  "sr-Cyrl": "Исправи",
+  "en": "Edit",
+  "ru": "Исправить"
+ },
+ "Ista adresa ili tačka": {
+  "sr": "Ista adresa ili tačka",
+  "sr-Cyrl": "Иста адреса или тачка",
+  "en": "Same address or charging point",
+  "ru": "Тот же адрес или точка"
+ },
+ "Isti nalog kao u aplikaciji Evolako — na računaru, tabletu ili telefonu.": {
+  "sr": "Isti nalog kao u aplikaciji Evolako — na računaru, tabletu ili telefonu.",
+  "sr-Cyrl": "Исти налог као у апликацији Evolako — на рачунару, таблету или телефону.",
+  "en": "The same account as in the Evolako app — on your computer, tablet or phone.",
+  "ru": "Тот же аккаунт, что и в приложении Evolako, — на компьютере, планшете или телефоне."
+ },
+ "Isto kao na sajtu evolako.rs.": {
+  "sr": "Isto kao na sajtu evolako.rs.",
+  "sr-Cyrl": "Исто као на сајту evolako.rs.",
+  "en": "The same as on evolako.rs.",
+  "ru": "То же, что на сайте evolako.rs."
+ },
+ "Istorija": {
+  "sr": "Istorija",
+  "sr-Cyrl": "Историја",
+  "en": "History",
+  "ru": "История"
+ },
+ "Izaberi": {
+  "sr": "Izaberi",
+  "sr-Cyrl": "Изабери",
+  "en": "Choose",
+  "ru": "Выбрать"
+ },
+ "Izaberi demo nalog": {
+  "sr": "Izaberi demo nalog",
+  "sr-Cyrl": "Изабери демо налог",
+  "en": "Choose a demo account",
+  "ru": "Выбери демо-аккаунт"
+ },
+ "Izaberi gde auto noći.": {
+  "sr": "Izaberi gde auto noći.",
+  "sr-Cyrl": "Изабери где ауто ноћи.",
+  "en": "Choose where the car stays overnight.",
+  "ru": "Выбери, где ночует машина."
+ },
+ "Izaberi grad.": {
+  "sr": "Izaberi grad.",
+  "sr-Cyrl": "Изабери град.",
+  "en": "Choose a city.",
+  "ru": "Выбери город."
+ },
+ "Izaberi iz galerije": {
+  "sr": "Izaberi iz galerije",
+  "sr-Cyrl": "Изабери из галерије",
+  "en": "Choose from library",
+  "ru": "Выбрать из галереи"
+ },
+ "Izaberi šta se dešava.": {
+  "sr": "Izaberi šta se dešava.",
+  "sr-Cyrl": "Изабери шта се дешава.",
+  "en": "Choose what's happening.",
+  "ru": "Выбери, что происходит."
+ },
+ "Izaberi vreme": {
+  "sr": "Izaberi vreme",
+  "sr-Cyrl": "Изабери време",
+  "en": "Choose the time",
+  "ru": "Выбери время"
+ },
+ "Izađi iz demoa": {
+  "sr": "Izađi iz demoa",
+  "sr-Cyrl": "Изађи из демоа",
+  "en": "Exit the demo",
+  "ru": "Выйти из демо"
+ },
+ "Izdato": {
+  "sr": "Izdato",
+  "sr-Cyrl": "Издато",
+  "en": "Issued",
+  "ru": "Выставлен"
+ },
+ "Iznos": {
+  "sr": "Iznos",
+  "sr-Cyrl": "Износ",
+  "en": "Amount",
+  "ru": "Сумма"
+ },
+ "Iznosi su po cenama iz tvog računa.": {
+  "sr": "Iznosi su po cenama iz tvog računa.",
+  "sr-Cyrl": "Износи су по ценама из твог рачуна.",
+  "en": "Amounts use the prices from your bill.",
+  "ru": "Суммы считаются по ценам из твоего счёта."
+ },
+ "Iznosi u evrima i dolarima su informativni, po srednjem kursu NBS na %@. Plaćaš uvek u dinarima.": {
+  "sr": "Iznosi u evrima i dolarima su informativni, po srednjem kursu NBS na %@. Plaćaš uvek u dinarima.",
+  "sr-Cyrl": "Износи у еврима и доларима су информативни, по средњем курсу НБС на %@. Плаћаш увек у динарима.",
+  "en": "Amounts in euros and dollars are for reference, at the National Bank of Serbia middle rate on %@. You always pay in dinars.",
+  "ru": "Суммы в евро и долларах — справочные, по среднему курсу НБС на %@. Платишь всегда в динарах."
+ },
+ "Izvezi sesije (CSV)": {
+  "sr": "Izvezi sesije (CSV)",
+  "sr-Cyrl": "Извези сесије (CSV)",
+  "en": "Export sessions (CSV)",
+  "ru": "Выгрузить сессии (CSV)"
+ },
+ "Javićemo se do %@ da dogovorimo procenu.": {
+  "sr": "Javićemo se do %@ da dogovorimo procenu.",
+  "sr-Cyrl": "Јавићемо се до %@ да договоримо процену.",
+  "en": "We'll contact you by %@ to arrange the assessment.",
+  "ru": "Свяжемся до %@, чтобы договориться об оценке."
+ },
+ "Javićemo se do %@.": {
+  "sr": "Javićemo se do %@.",
+  "sr-Cyrl": "Јавићемо се до %@.",
+  "en": "We'll get back to you by %@.",
+  "ru": "Свяжемся с тобой до %@."
+ },
+ "Javićemo se u roku od 48 h.": {
+  "sr": "Javićemo se u roku od 48 h.",
+  "sr-Cyrl": "Јавићемо се у року од 48 h.",
+  "en": "We'll get back to you within 48 h.",
+  "ru": "Свяжемся с тобой в течение 48 ч."
+ },
+ "Javićemo se u roku od 72 h da dogovorimo termin.": {
+  "sr": "Javićemo se u roku od 72 h da dogovorimo termin.",
+  "sr-Cyrl": "Јавићемо се у року од 72 h да договоримо термин.",
+  "en": "We'll get back to you within 72 h to agree on a date.",
+  "ru": "Свяжемся в течение 72 ч, чтобы договориться о дате."
+ },
+ "Javićemo ti kada punjenje počne ili se završi, kada bude obračun i ako nešto krene naopako.": {
+  "sr": "Javićemo ti kada punjenje počne ili se završi, kada bude obračun i ako nešto krene naopako.",
+  "sr-Cyrl": "Јавићемо ти када пуњење почне или се заврши, када буде обрачун и ако нешто крене наопако.",
+  "en": "We'll let you know when charging starts or finishes, when the statement is ready, and if something goes wrong.",
+  "ru": "Сообщим, когда зарядка началась или закончилась, когда готов отчёт и если что-то пошло не так."
+ },
+ "Jednom mesečno pošalji fotografiju MID brojila pored punjača. Iz nje pravimo mesečni obračun.": {
+  "sr": "Jednom mesečno pošalji fotografiju MID brojila pored punjača. Iz nje pravimo mesečni obračun.",
+  "sr-Cyrl": "Једном месечно пошаљи фотографију MID бројила поред пуњача. Из ње правимо месечни обрачун.",
+  "en": "Once a month, send a photo of the MID meter next to your charger. We use it to prepare your monthly statement.",
+  "ru": "Раз в месяц присылай фото счётчика MID рядом с зарядкой. По нему мы готовим ежемесячный отчёт."
+ },
+ "Jezik": {
+  "sr": "Jezik",
+  "sr-Cyrl": "Језик",
+  "en": "Language",
+  "ru": "Язык"
+ },
+ "Jezik i izgled": {
+  "sr": "Jezik i izgled",
+  "sr-Cyrl": "Језик и изглед",
+  "en": "Language and appearance",
+  "ru": "Язык и оформление"
+ },
+ "Još": {
+  "sr": "Još",
+  "sr-Cyrl": "Још",
+  "en": "More",
+  "ru": "Ещё"
+ },
+ "Još ne znam": {
+  "sr": "Još ne znam",
+  "sr-Cyrl": "Још не знам",
+  "en": "Not sure yet",
+  "ru": "Пока не знаю"
+ },
+ "Još nema obračuna": {
+  "sr": "Još nema obračuna",
+  "sr-Cyrl": "Још нема обрачуна",
+  "en": "No statements yet",
+  "ru": "Отчётов пока нет"
+ },
+ "Još nema očitavanja.": {
+  "sr": "Još nema očitavanja.",
+  "sr-Cyrl": "Још нема очитавања.",
+  "en": "No readings yet.",
+  "ru": "Показаний пока нет."
+ },
+ "Još nema preporuka. Kad prijatelj upiše tvoj kod, videćeš ga ovde.": {
+  "sr": "Još nema preporuka. Kad prijatelj upiše tvoj kod, videćeš ga ovde.",
+  "sr-Cyrl": "Још нема препорука. Кад пријатељ упише твој код, видећеш га овде.",
+  "en": "No referrals yet. Once a friend enters your code, you'll see them here.",
+  "ru": "Рекомендаций пока нет. Когда друг введёт твой код, он появится здесь."
+ },
+ "Još nema prijava": {
+  "sr": "Još nema prijava",
+  "sr-Cyrl": "Још нема пријава",
+  "en": "No reports yet",
+  "ru": "Заявок пока нет"
+ },
+ "Još nema sesija": {
+  "sr": "Još nema sesija",
+  "sr-Cyrl": "Још нема сесија",
+  "en": "No sessions yet",
+  "ru": "Сессий пока нет"
+ },
+ "Još nemaš Evolako? Proveri svoju garažu →": {
+  "sr": "Još nemaš Evolako? Proveri svoju garažu →",
+  "sr-Cyrl": "Још немаш Evolako? Провери своју гаражу →",
+  "en": "Don't have Evolako yet? Check your garage →",
+  "ru": "Ещё нет Evolako? Проверь свой гараж →"
+ },
+ "Još nešto": {
+  "sr": "Još nešto",
+  "sr-Cyrl": "Још нешто",
+  "en": "Anything else",
+  "ru": "Что-то ещё"
+ },
+ "Juče": {
+  "sr": "Juče",
+  "sr-Cyrl": "Јуче",
+  "en": "Yesterday",
+  "ru": "Вчера"
+ },
+ "Kabl, utičnica ili kućište su oštećeni.": {
+  "sr": "Kabl, utičnica ili kućište su oštećeni.",
+  "sr-Cyrl": "Кабл, утичница или кућиште су оштећени.",
+  "en": "The cable, socket or housing is damaged.",
+  "ru": "Повреждены кабель, розетка или корпус."
+ },
+ "Kad mu ugradimo komplet, besplatne mesece pretplate dobijate oboje.": {
+  "sr": "Kad mu ugradimo komplet, besplatne mesece pretplate dobijate oboje.",
+  "sr-Cyrl": "Кад му уградимо комплет, бесплатне месеце претплате добијате обоје.",
+  "en": "Once their kit is installed, you both get free months of subscription.",
+  "ru": "Когда мы установим ему комплект, бесплатные месяцы подписки получите вы оба."
+ },
+ "Kad mu ugradimo komplet, oboje dobijate besplatne mesece pretplate.": {
+  "sr": "Kad mu ugradimo komplet, oboje dobijate besplatne mesece pretplate.",
+  "sr-Cyrl": "Кад му уградимо комплет, обоје добијате бесплатне месеце претплате.",
+  "en": "Once we install their kit, you both get free subscription months.",
+  "ru": "Когда мы установим ему комплект, вы оба получите бесплатные месяцы подписки."
+ },
+ "Kada je počelo, šta vidiš na tački…": {
+  "sr": "Kada je počelo, šta vidiš na tački…",
+  "sr-Cyrl": "Када је почело, шта видиш на тачки…",
+  "en": "When it started, what you see on the charging point…",
+  "ru": "Когда началось, что видно на точке…"
+ },
+ "Kada se auto napuni, ovde će biti grafikon potrošnje i lista sesija.": {
+  "sr": "Kada se auto napuni, ovde će biti grafikon potrošnje i lista sesija.",
+  "sr-Cyrl": "Када се ауто напуни, овде ће бити графикон потрошње и листа сесија.",
+  "en": "Once the car charges, you'll see a consumption chart and a list of sessions here.",
+  "ru": "Когда машина зарядится, здесь появятся график расхода и список сессий."
+ },
+ "Kada se auto prvi put napuni, ovde će se pojaviti potrošnja i procena iznosa.": {
+  "sr": "Kada se auto prvi put napuni, ovde će se pojaviti potrošnja i procena iznosa.",
+  "sr-Cyrl": "Када се ауто први пут напуни, овде ће се појавити потрошња и процена износа.",
+  "en": "After the first charge, consumption and an estimated amount will appear here.",
+  "ru": "После первой зарядки здесь появится расход и оценка суммы."
+ },
+ "Kako da obrišeš nalog": {
+  "sr": "Kako da obrišeš nalog",
+  "sr-Cyrl": "Како да обришеш налог",
+  "en": "How to delete your account",
+  "ru": "Как удалить аккаунт"
+ },
+ "Kako da ti se obratimo": {
+  "sr": "Kako da ti se obratimo",
+  "sr-Cyrl": "Како да ти се обратимо",
+  "en": "What should we call you",
+  "ru": "Как к тебе обращаться"
+ },
+ "Kako funkcioniše": {
+  "sr": "Kako funkcioniše",
+  "sr-Cyrl": "Како функционише",
+  "en": "How it works",
+  "ru": "Как это работает"
+ },
+ "Kod izgleda ovako: EVO-XXXXX.": {
+  "sr": "Kod izgleda ovako: EVO-XXXXX.",
+  "sr-Cyrl": "Код изгледа овако: EVO-XXXXX.",
+  "en": "The code looks like this: EVO-XXXXX.",
+  "ru": "Код выглядит так: EVO-XXXXX."
+ },
+ "Kod nije tačan ili je istekao. Proveri pismo ili zatraži novi.": {
+  "sr": "Kod nije tačan ili je istekao. Proveri pismo ili zatraži novi.",
+  "sr-Cyrl": "Код није тачан или је истекао. Провери писмо или затражи нови.",
+  "en": "The code is wrong or has expired. Check the email or ask for a new one.",
+  "ru": "Код неверный или устарел. Проверь письмо или запроси новый."
+ },
+ "Kod preporuke": {
+  "sr": "Kod preporuke",
+  "sr-Cyrl": "Код препоруке",
+  "en": "Referral code",
+  "ru": "Код рекомендации"
+ },
+ "Kod se upisuje pre ugradnje.": {
+  "sr": "Kod se upisuje pre ugradnje.",
+  "sr-Cyrl": "Код се уписује пре уградње.",
+  "en": "The code is entered before installation.",
+  "ru": "Код вводится до установки."
+ },
+ "Kod se upisuje pre ugradnje. Ako ga imaš, pošalji nam ga porukom — dodaćemo ga u tvoj zahtev.": {
+  "sr": "Kod se upisuje pre ugradnje. Ako ga imaš, pošalji nam ga porukom — dodaćemo ga u tvoj zahtev.",
+  "sr-Cyrl": "Код се уписује пре уградње. Ако га имаш, пошаљи нам га поруком — додаћемо га у твој захтев.",
+  "en": "The code is entered before installation. If you have one, send it to us in a message — we'll add it to your request.",
+  "ru": "Код вводится до установки. Если он у тебя есть, пришли его нам сообщением — мы добавим его в заявку."
+ },
+ "Kod upisan posle ugradnje": {
+  "sr": "Kod upisan posle ugradnje",
+  "sr-Cyrl": "Код уписан после уградње",
+  "en": "Code entered after installation",
+  "ru": "Код введён после установки"
+ },
+ "Kod upisan: %@": {
+  "sr": "Kod upisan: %@",
+  "sr-Cyrl": "Код уписан: %@",
+  "en": "Code entered: %@",
+  "ru": "Код введён: %@"
+ },
+ "Koje ekrane i dugmad koristiš — bez imena, kontakta i lokacije. Pomaže nam da vidimo šta radi, a šta ne.": {
+  "sr": "Koje ekrane i dugmad koristiš — bez imena, kontakta i lokacije. Pomaže nam da vidimo šta radi, a šta ne.",
+  "sr-Cyrl": "Које екране и дугмад користиш — без имена, контакта и локације. Помаже нам да видимо шта ради, а шта не.",
+  "en": "Which screens and buttons you use — no name, contact details or location. It helps us see what works and what doesn't.",
+  "ru": "Какие экраны и кнопки ты используешь — без имени, контактов и геолокации. Так мы видим, что работает, а что нет."
+ },
+ "Komentar": {
+  "sr": "Komentar",
+  "sr-Cyrl": "Коментар",
+  "en": "Comment",
+  "ru": "Комментарий"
+ },
+ "Komentar (nije obavezno)": {
+  "sr": "Komentar (nije obavezno)",
+  "sr-Cyrl": "Коментар (није обавезно)",
+  "en": "Comment (optional)",
+  "ru": "Комментарий (необязательно)"
+ },
+ "Komplet": {
+  "sr": "Komplet",
+  "sr-Cyrl": "Комплет",
+  "en": "Kit",
+  "ru": "Комплект"
+ },
+ "Komplet je na novoj adresi od %@.": {
+  "sr": "Komplet je na novoj adresi od %@.",
+  "sr-Cyrl": "Комплет је на новој адреси од %@.",
+  "en": "The kit has been at the new address since %@.",
+  "ru": "Комплект на новом адресе с %@."
+ },
+ "Komplet je ugrađen. Nalog ti otvara naš tim — posle toga se prijavi u aplikaciji.": {
+  "sr": "Komplet je ugrađen. Nalog ti otvara naš tim — posle toga se prijavi u aplikaciji.",
+  "sr-Cyrl": "Комплет је уграђен. Налог ти отвара наш тим — после тога се пријави у апликацији.",
+  "en": "The kit is installed. Our team opens your account — then sign in to the app.",
+  "ru": "Комплект установлен. Аккаунт тебе откроет наша команда — после этого войди в приложение."
+ },
+ "Komplet radi i bez pretplate. Kad pretplata istekne, prestaje sve što ona pokriva — spisak je na ovoj strani. Do tada je možeš nastaviti.": {
+  "sr": "Komplet radi i bez pretplate. Kad pretplata istekne, prestaje sve što ona pokriva — spisak je na ovoj strani. Do tada je možeš nastaviti.",
+  "sr-Cyrl": "Комплет ради и без претплате. Кад претплата истекне, престаје све што она покрива — списак је на овој страни. До тада је можеш наставити.",
+  "en": "The kit works without a subscription. When the subscription ends, everything it covers ends with it — the list is on this page. Until then, you can keep it.",
+  "ru": "Комплект работает и без подписки. Когда подписка закончится, закончится и всё, что она покрывает, — список есть на этой странице. До этого её можно возобновить."
+ },
+ "Komplet, ugradnja, pretplata i kalkulator": {
+  "sr": "Komplet, ugradnja, pretplata i kalkulator",
+  "sr-Cyrl": "Комплет, уградња, претплата и калкулатор",
+  "en": "Kit, installation, subscription and calculator",
+  "ru": "Комплект, установка, подписка и калькулятор"
+ },
+ "Kontakt": {
+  "sr": "Kontakt",
+  "sr-Cyrl": "Контакт",
+  "en": "Contact",
+  "ru": "Контакт"
+ },
+ "Kopiraj": {
+  "sr": "Kopiraj",
+  "sr-Cyrl": "Копирај",
+  "en": "Copy",
+  "ru": "Скопировать"
+ },
+ "Kopiraj podatke za uplatu": {
+  "sr": "Kopiraj podatke za uplatu",
+  "sr-Cyrl": "Копирај податке за уплату",
+  "en": "Copy payment details",
+  "ru": "Скопировать реквизиты"
+ },
+ "Kopirano": {
+  "sr": "Kopirano",
+  "sr-Cyrl": "Копирано",
+  "en": "Copied",
+  "ru": "Скопировано"
+ },
+ "Kraj": {
+  "sr": "Kraj",
+  "sr-Cyrl": "Крај",
+  "en": "End",
+  "ru": "Конец"
+ },
+ "Kvar": {
+  "sr": "Kvar",
+  "sr-Cyrl": "Квар",
+  "en": "Fault",
+  "ru": "Сбой"
+ },
+ "Kvar na tački": {
+  "sr": "Kvar na tački",
+  "sr-Cyrl": "Квар на тачки",
+  "en": "Fault at your charging point",
+  "ru": "Сбой на точке"
+ },
+ "kW": {
+  "sr": "kW",
+  "sr-Cyrl": "kW",
+  "en": "kW",
+  "ru": "кВт"
+ },
+ "kW u proseku": {
+  "sr": "kW u proseku",
+  "sr-Cyrl": "kW у просеку",
+  "en": "kW on average",
+  "ru": "кВт в среднем"
+ },
+ "kWh": {
+  "sr": "kWh",
+  "sr-Cyrl": "kWh",
+  "en": "kWh",
+  "ru": "кВт·ч"
+ },
+ "kWh dan": {
+  "sr": "kWh dan",
+  "sr-Cyrl": "kWh дан",
+  "en": "kWh day",
+  "ru": "кВт·ч день"
+ },
+ "kWh noć": {
+  "sr": "kWh noć",
+  "sr-Cyrl": "kWh ноћ",
+  "en": "kWh night",
+  "ru": "кВт·ч ночь"
+ },
+ "Licence": {
+  "sr": "Licence",
+  "sr-Cyrl": "Лиценце",
+  "en": "Licenses",
+  "ru": "Лицензии"
+ },
+ "Lične podatke u zahtevima za procenu: ime, kontakt, adresu, auto i komentar.": {
+  "sr": "Lične podatke u zahtevima za procenu: ime, kontakt, adresu, auto i komentar.",
+  "sr-Cyrl": "Личне податке у захтевима за процену: име, контакт, адресу, ауто и коментар.",
+  "en": "Personal details in your assessment requests: name, contact details, address, car and comment.",
+  "ru": "Личные данные в заявках на оценку: имя, контакты, адрес, машину и комментарий."
+ },
+ "Lično": {
+  "sr": "Lično",
+  "sr-Cyrl": "Лично",
+  "en": "Personal",
+  "ru": "Личные"
+ },
+ "Lično i službeno": {
+  "sr": "Lično i službeno",
+  "sr-Cyrl": "Лично и службено",
+  "en": "Personal and work",
+  "ru": "Личные и рабочие"
+ },
+ "Link je istekao.": {
+  "sr": "Link je istekao.",
+  "sr-Cyrl": "Линк је истекао.",
+  "en": "This link has expired.",
+  "ru": "Ссылка устарела."
+ },
+ "Link nije ispravan.": {
+  "sr": "Link nije ispravan.",
+  "sr-Cyrl": "Линк није исправан.",
+  "en": "This link is not valid.",
+  "ru": "Ссылка недействительна."
+ },
+ "Marka i model": {
+  "sr": "Marka i model",
+  "sr-Cyrl": "Марка и модел",
+  "en": "Make and model",
+  "ru": "Марка и модель"
+ },
+ "Merenje": {
+  "sr": "Merenje",
+  "sr-Cyrl": "Мерење",
+  "en": "Metering",
+  "ru": "Учёт"
+ },
+ "Merenje, statistika i obračuni rade kao i uvek.": {
+  "sr": "Merenje, statistika i obračuni rade kao i uvek.",
+  "sr-Cyrl": "Мерење, статистика и обрачуни раде као и увек.",
+  "en": "Metering, statistics and statements work as always.",
+  "ru": "Учёт, статистика и отчёты работают как обычно."
+ },
+ "Mesec": {
+  "sr": "Mesec",
+  "sr-Cyrl": "Месец",
+  "en": "Month",
+  "ru": "Месяц"
+ },
+ "MID brojilo broji kilovat-sate, noću i danju odvojeno.": {
+  "sr": "MID brojilo broji kilovat-sate, noću i danju odvojeno.",
+  "sr-Cyrl": "MID бројило броји киловат-сате, ноћу и дању одвојено.",
+  "en": "A MID meter counts the kilowatt-hours, night and day separately.",
+  "ru": "Счётчик MID считает киловатт-часы — ночью и днём отдельно."
+ },
+ "Model": {
+  "sr": "Model",
+  "sr-Cyrl": "Модел",
+  "en": "Model",
+  "ru": "Модель"
+ },
+ "Moj Evolako": {
+  "sr": "Moj Evolako",
+  "sr-Cyrl": "Мој Evolako",
+  "en": "My Evolako",
+  "ru": "Мой Evolako"
+ },
+ "Moja prijava": {
+  "sr": "Moja prijava",
+  "sr-Cyrl": "Моја пријава",
+  "en": "My request",
+  "ru": "Моя заявка"
+ },
+ "Moja tačka": {
+  "sr": "Moja tačka",
+  "sr-Cyrl": "Моја тачка",
+  "en": "My charging point",
+  "ru": "Моя точка"
+ },
+ "monofazno": {
+  "sr": "monofazno",
+  "sr-Cyrl": "монофазно",
+  "en": "single-phase",
+  "ru": "однофазно"
+ },
+ "Na brojilu zgrade": {
+  "sr": "Na brojilu zgrade",
+  "sr-Cyrl": "На бројилу зграде",
+  "en": "On the building's meter",
+  "ru": "На счётчике здания"
+ },
+ "Na čekanju": {
+  "sr": "Na čekanju",
+  "sr-Cyrl": "На чекању",
+  "en": "On hold",
+  "ru": "Приостановлена"
+ },
+ "Na mreži": {
+  "sr": "Na mreži",
+  "sr-Cyrl": "На мрежи",
+  "en": "Online",
+  "ru": "В сети"
+ },
+ "Na utičnici upravljanje nije dostupno": {
+  "sr": "Na utičnici upravljanje nije dostupno",
+  "sr-Cyrl": "На утичници управљање није доступно",
+  "en": "The socket can't be controlled remotely",
+  "ru": "На розетке управление недоступно"
+ },
+ "Najranije %@.": {
+  "sr": "Najranije %@.",
+  "sr-Cyrl": "Најраније %@.",
+  "en": "The earliest is %@.",
+  "ru": "Не раньше %@."
+ },
+ "Nalog": {
+  "sr": "Nalog",
+  "sr-Cyrl": "Налог",
+  "en": "Account",
+  "ru": "Аккаунт"
+ },
+ "Nalog i podešavanja": {
+  "sr": "Nalog i podešavanja",
+  "sr-Cyrl": "Налог и подешавања",
+  "en": "Account and settings",
+  "ru": "Аккаунт и настройки"
+ },
+ "Nalog i profil: e-poštu za prijavu, ime, telefon, podešavanja i saglasnosti.": {
+  "sr": "Nalog i profil: e-poštu za prijavu, ime, telefon, podešavanja i saglasnosti.",
+  "sr-Cyrl": "Налог и профил: е-пошту за пријаву, име, телефон, подешавања и сагласности.",
+  "en": "Your account and profile: sign-in email, name, phone number, settings and consents.",
+  "ru": "Аккаунт и профиль: почту для входа, имя, телефон, настройки и согласия."
+ },
+ "Nalog je obrisan.": {
+  "sr": "Nalog je obrisan.",
+  "sr-Cyrl": "Налог је обрисан.",
+  "en": "Your account has been deleted.",
+  "ru": "Аккаунт удалён."
+ },
+ "Nalog koji brišeš:": {
+  "sr": "Nalog koji brišeš:",
+  "sr-Cyrl": "Налог који бришеш:",
+  "en": "The account you're deleting:",
+  "ru": "Аккаунт, который удаляешь:"
+ },
+ "Nalog otvaramo mi, posle ugradnje kompleta.": {
+  "sr": "Nalog otvaramo mi, posle ugradnje kompleta.",
+  "sr-Cyrl": "Налог отварамо ми, после уградње комплета.",
+  "en": "We open your account after the kit is installed.",
+  "ru": "Аккаунт открываем мы — после установки комплекта."
+ },
+ "Napunjeno": {
+  "sr": "Napunjeno",
+  "sr-Cyrl": "Напуњено",
+  "en": "Charged",
+  "ru": "Заряжено"
+ },
+ "Nastavi pretplatu": {
+  "sr": "Nastavi pretplatu",
+  "sr-Cyrl": "Настави претплату",
+  "en": "Resume subscription",
+  "ru": "Возобновить подписку"
+ },
+ "Nastavi sa Google nalogom": {
+  "sr": "Nastavi sa Google nalogom",
+  "sr-Cyrl": "Настави са Google налогом",
+  "en": "Continue with Google",
+  "ru": "Продолжить с Google"
+ },
+ "Nazad": {
+  "sr": "Nazad",
+  "sr-Cyrl": "Назад",
+  "en": "Back",
+  "ru": "Назад"
+ },
+ "Nazad na prijavu": {
+  "sr": "Nazad na prijavu",
+  "sr-Cyrl": "Назад на пријаву",
+  "en": "Back to sign-in",
+  "ru": "Назад ко входу"
+ },
+ "Ne možemo da nađemo tu sesiju.": {
+  "sr": "Ne možemo da nađemo tu sesiju.",
+  "sr-Cyrl": "Не можемо да нађемо ту сесију.",
+  "en": "We can't find that session.",
+  "ru": "Не можем найти эту сессию."
+ },
+ "Ne možemo da nađemo tvoju tačku.": {
+  "sr": "Ne možemo da nađemo tvoju tačku.",
+  "sr-Cyrl": "Не можемо да нађемо твоју тачку.",
+  "en": "We can't find your charging point.",
+  "ru": "Не можем найти твою точку."
+ },
+ "Ne možeš da se prijaviš? Piši nam sa e-pošte naloga na hello@evolako.com.": {
+  "sr": "Ne možeš da se prijaviš? Piši nam sa e-pošte naloga na hello@evolako.com.",
+  "sr-Cyrl": "Не можеш да се пријавиш? Пиши нам са е-поште налога на hello@evolako.com.",
+  "en": "Can't sign in? Write to us from the account's email at hello@evolako.com.",
+  "ru": "Не получается войти? Напиши нам с почты аккаунта на hello@evolako.com."
+ },
+ "Ne puni": {
+  "sr": "Ne puni",
+  "sr-Cyrl": "Не пуни",
+  "en": "Not charging",
+  "ru": "Не заряжает"
+ },
+ "Ne računa se": {
+  "sr": "Ne računa se",
+  "sr-Cyrl": "Не рачуна се",
+  "en": "Doesn't count",
+  "ru": "Не засчитано"
+ },
+ "Ne računa se: sopstveni kod, ista adresa ili tačka i postojeći klijent.": {
+  "sr": "Ne računa se: sopstveni kod, ista adresa ili tačka i postojeći klijent.",
+  "sr-Cyrl": "Не рачуна се: сопствени код, иста адреса или тачка и постојећи клијент.",
+  "en": "These don't count: your own code, the same address or charging point, and existing customers.",
+  "ru": "Не засчитываются: свой код, тот же адрес или точка и действующий клиент."
+ },
+ "Ne vidi se": {
+  "sr": "Ne vidi se",
+  "sr-Cyrl": "Не види се",
+  "en": "Not visible",
+  "ru": "Не видна"
+ },
+ "Neaktivna": {
+  "sr": "Neaktivna",
+  "sr-Cyrl": "Неактивна",
+  "en": "Inactive",
+  "ru": "Неактивна"
+ },
+ "Nedelja": {
+  "sr": "Nedelja",
+  "sr-Cyrl": "Недеља",
+  "en": "Week",
+  "ru": "Неделя"
+ },
+ "Neiskorišćeni besplatni meseci od preporuka čuvaju se 12 meseci — važe ako se vratiš u tom roku.": {
+  "sr": "Neiskorišćeni besplatni meseci od preporuka čuvaju se 12 meseci — važe ako se vratiš u tom roku.",
+  "sr-Cyrl": "Неискоришћени бесплатни месеци од препорука чувају се 12 месеци — важе ако се вратиш у том року.",
+  "en": "Unused free months from referrals are kept for 12 months — they count if you come back within that time.",
+  "ru": "Неиспользованные бесплатные месяцы за рекомендации сохраняются 12 месяцев — они засчитаются, если вернёшься за это время."
+ },
+ "Nema interneta.": {
+  "sr": "Nema interneta.",
+  "sr-Cyrl": "Нема интернета.",
+  "en": "You're offline.",
+  "ru": "Нет интернета."
+ },
+ "Nema obaveštenja": {
+  "sr": "Nema obaveštenja",
+  "sr-Cyrl": "Нема обавештења",
+  "en": "No notifications",
+  "ru": "Уведомлений нет"
+ },
+ "Nema obračuna za ovaj mesec.": {
+  "sr": "Nema obračuna za ovaj mesec.",
+  "sr-Cyrl": "Нема обрачуна за овај месец.",
+  "en": "There's no statement for this month.",
+  "ru": "За этот месяц отчёта нет."
+ },
+ "Nema pitanja koja se poklapaju.": {
+  "sr": "Nema pitanja koja se poklapaju.",
+  "sr-Cyrl": "Нема питања која се поклапају.",
+  "en": "No questions match.",
+  "ru": "Подходящих вопросов нет."
+ },
+ "Nema pretplate": {
+  "sr": "Nema pretplate",
+  "sr-Cyrl": "Нема претплате",
+  "en": "No subscription",
+  "ru": "Подписки нет"
+ },
+ "Nema veze sa serverom. Proveri internet i pokušaj ponovo.": {
+  "sr": "Nema veze sa serverom. Proveri internet i pokušaj ponovo.",
+  "sr-Cyrl": "Нема везе са сервером. Провери интернет и покушај поново.",
+  "en": "Can't reach the server. Check your internet connection and try again.",
+  "ru": "Нет связи с сервером. Проверь интернет и попробуй ещё раз."
+ },
+ "Nema veze. Očitavanje nije poslato — fotografija i broj su sačuvani, pokušaj ponovo.": {
+  "sr": "Nema veze. Očitavanje nije poslato — fotografija i broj su sačuvani, pokušaj ponovo.",
+  "sr-Cyrl": "Нема везе. Очитавање није послато — фотографија и број су сачувани, покушај поново.",
+  "en": "No connection. The reading wasn't sent — your photo and number are kept, try again.",
+  "ru": "Нет связи. Показания не отправлены — фото и число сохранены, попробуй ещё раз."
+ },
+ "Nepročitano": {
+  "sr": "Nepročitano",
+  "sr-Cyrl": "Непрочитано",
+  "en": "Unread",
+  "ru": "Непрочитанное"
+ },
+ "Nešto nije u redu": {
+  "sr": "Nešto nije u redu",
+  "sr-Cyrl": "Нешто није у реду",
+  "en": "Something went wrong",
+  "ru": "Что-то пошло не так"
+ },
+ "Nešto nije u redu. Pokušaj ponovo malo kasnije.": {
+  "sr": "Nešto nije u redu. Pokušaj ponovo malo kasnije.",
+  "sr-Cyrl": "Нешто није у реду. Покушај поново мало касније.",
+  "en": "Something went wrong. Try again a little later.",
+  "ru": "Что-то пошло не так. Попробуй чуть позже."
+ },
+ "Nešto treće — opiši u komentaru.": {
+  "sr": "Nešto treće — opiši u komentaru.",
+  "sr-Cyrl": "Нешто треће — опиши у коментару.",
+  "en": "Something else — describe it in the comment.",
+  "ru": "Что-то другое — опиши в комментарии."
+ },
+ "Nije uspelo": {
+  "sr": "Nije uspelo",
+  "sr-Cyrl": "Није успело",
+  "en": "That didn't work",
+  "ru": "Не получилось"
+ },
+ "Niža tarifa": {
+  "sr": "Niža tarifa",
+  "sr-Cyrl": "Нижа тарифа",
+  "en": "Lower tariff",
+  "ru": "Низкий тариф"
+ },
+ "Niža tarifa ne može biti skuplja od više.": {
+  "sr": "Niža tarifa ne može biti skuplja od više.",
+  "sr-Cyrl": "Нижа тарифа не може бити скупља од више.",
+  "en": "The lower tariff can't cost more than the higher one.",
+  "ru": "Низкий тариф не может быть дороже высокого."
+ },
+ "Niža tarifa važi": {
+  "sr": "Niža tarifa važi",
+  "sr-Cyrl": "Нижа тарифа важи",
+  "en": "Lower tariff applies",
+  "ru": "Низкий тариф действует"
+ },
+ "noć": {
+  "sr": "noć",
+  "sr-Cyrl": "ноћ",
+  "en": "night",
+  "ru": "ночь"
+ },
+ "Noćna": {
+  "sr": "Noćna",
+  "sr-Cyrl": "Ноћна",
+  "en": "Night",
+  "ru": "Ночная"
+ },
+ "Noćna energija": {
+  "sr": "Noćna energija",
+  "sr-Cyrl": "Ноћна енергија",
+  "en": "Night energy",
+  "ru": "Ночная энергия"
+ },
+ "Noćna i dnevna energija, sesije i izvoz za Excel.": {
+  "sr": "Noćna i dnevna energija, sesije i izvoz za Excel.",
+  "sr-Cyrl": "Ноћна и дневна енергија, сесије и извоз за Excel.",
+  "en": "Night and day energy, sessions and an export for Excel.",
+  "ru": "Ночная и дневная энергия, сессии и выгрузка для Excel."
+ },
+ "Noćni autostart": {
+  "sr": "Noćni autostart",
+  "sr-Cyrl": "Ноћни аутостарт",
+  "en": "Night auto-start",
+  "ru": "Ночной автостарт"
+ },
+ "Noćni autostart, statistika po danima i obračun sa dva IPS QR koda — struja za zgradu, pretplata za Evolako.": {
+  "sr": "Noćni autostart, statistika po danima i obračun sa dva IPS QR koda — struja za zgradu, pretplata za Evolako.",
+  "sr-Cyrl": "Ноћни аутостарт, статистика по данима и обрачун са два IPS QR кода — струја за зграду, претплата за Evolako.",
+  "en": "Night auto-start, daily statistics and a statement with two IPS QR codes — electricity for the building, subscription for Evolako.",
+  "ru": "Ночной автостарт, статистика по дням и отчёт с двумя IPS QR-кодами — электроэнергия для здания, подписка для Evolako."
+ },
+ "Noćno okno": {
+  "sr": "Noćno okno",
+  "sr-Cyrl": "Ноћно окно",
+  "en": "Night window",
+  "ru": "Ночное окно"
+ },
+ "Noćno okno određuje EPS, ne račun — zato se ovde ne menja.": {
+  "sr": "Noćno okno određuje EPS, ne račun — zato se ovde ne menja.",
+  "sr-Cyrl": "Ноћно окно одређује ЕПС, не рачун — зато се овде не мења.",
+  "en": "The night window is set by EPS, not by your bill — so it can't be changed here.",
+  "ru": "Ночное окно задаёт EPS, а не счёт, — поэтому здесь оно не меняется."
+ },
+ "Nova adresa": {
+  "sr": "Nova adresa",
+  "sr-Cyrl": "Нова адреса",
+  "en": "New address",
+  "ru": "Новый адрес"
+ },
+ "O aplikaciji": {
+  "sr": "O aplikaciji",
+  "sr-Cyrl": "О апликацији",
+  "en": "About",
+  "ru": "О приложении"
+ },
+ "Obaveštenja": {
+  "sr": "Obaveštenja",
+  "sr-Cyrl": "Обавештења",
+  "en": "Notifications",
+  "ru": "Уведомления"
+ },
+ "Obaveštenja u nalogu, prijavu na Evolako pismo i neiskorišćene besplatne mesece od preporuka.": {
+  "sr": "Obaveštenja u nalogu, prijavu na Evolako pismo i neiskorišćene besplatne mesece od preporuka.",
+  "sr-Cyrl": "Обавештења у налогу, пријаву на Evolako писмо и неискоришћене бесплатне месеце од препорука.",
+  "en": "Notifications in your account, your Evolako Letter subscription and unused free months from referrals.",
+  "ru": "Уведомления в аккаунте, подписку на Письмо Evolako и неиспользованные бесплатные месяцы за рекомендации."
+ },
+ "Obračun": {
+  "sr": "Obračun",
+  "sr-Cyrl": "Обрачун",
+  "en": "Statement",
+  "ru": "Отчёт"
+ },
+ "Obračun za %@ je spreman": {
+  "sr": "Obračun za %@ je spreman",
+  "sr-Cyrl": "Обрачун за %@ је спреман",
+  "en": "The statement for %@ is ready",
+  "ru": "Отчёт за %@ готов"
+ },
+ "Obračuni": {
+  "sr": "Obračuni",
+  "sr-Cyrl": "Обрачуни",
+  "en": "Statements",
+  "ru": "Отчёты"
+ },
+ "Obračuni i podaci o plaćanjima — samo sa imenom platioca. Čuvamo ih onoliko dugo koliko to propisuje Zakon o računovodstvu.": {
+  "sr": "Obračuni i podaci o plaćanjima — samo sa imenom platioca. Čuvamo ih onoliko dugo koliko to propisuje Zakon o računovodstvu.",
+  "sr-Cyrl": "Обрачуни и подаци о плаћањима — само са именом платиоца. Чувамо их онолико дуго колико то прописује Закон о рачуноводству.",
+  "en": "Statements and payment records — with the payer's name only. We keep them for as long as Serbia's Law on Accounting requires.",
+  "ru": "Отчёты и данные об оплатах — только с именем плательщика. Храним их столько, сколько требует сербский Закон о бухгалтерском учёте."
+ },
+ "Obračuni sa IPS QR kodom": {
+  "sr": "Obračuni sa IPS QR kodom",
+  "sr-Cyrl": "Обрачуни са IPS QR кодом",
+  "en": "Statements with an IPS QR code",
+  "ru": "Отчёты с IPS QR-кодом"
+ },
+ "Obrisati nalog?": {
+  "sr": "Obrisati nalog?",
+  "sr-Cyrl": "Обрисати налог?",
+  "en": "Delete your account?",
+  "ru": "Удалить аккаунт?"
+ },
+ "Obriši nalog": {
+  "sr": "Obriši nalog",
+  "sr-Cyrl": "Обриши налог",
+  "en": "Delete account",
+  "ru": "Удалить аккаунт"
+ },
+ "Očitavanje brojila": {
+  "sr": "Očitavanje brojila",
+  "sr-Cyrl": "Очитавање бројила",
+  "en": "Meter reading",
+  "ru": "Показания счётчика"
+ },
+ "Očitavanje je poslato. Proveravamo ga i javljamo se ako nešto nije jasno.": {
+  "sr": "Očitavanje je poslato. Proveravamo ga i javljamo se ako nešto nije jasno.",
+  "sr-Cyrl": "Очитавање је послато. Проверавамо га и јављамо се ако нешто није јасно.",
+  "en": "Reading sent. We'll check it and get in touch if anything is unclear.",
+  "ru": "Показания отправлены. Проверим и напишем, если что-то будет непонятно."
+ },
+ "od %@": {
+  "sr": "od %@",
+  "sr-Cyrl": "од %@",
+  "en": "of %@",
+  "ru": "из %@"
+ },
+ "Odjava sa Evolako pisma": {
+  "sr": "Odjava sa Evolako pisma",
+  "sr-Cyrl": "Одјава са Evolako писма",
+  "en": "Unsubscribe from the Evolako Letter",
+  "ru": "Отписка от Письма Evolako"
+ },
+ "Odjavi me": {
+  "sr": "Odjavi me",
+  "sr-Cyrl": "Одјави ме",
+  "en": "Unsubscribe",
+  "ru": "Отписаться"
+ },
+ "Odjavi se": {
+  "sr": "Odjavi se",
+  "sr-Cyrl": "Одјави се",
+  "en": "Sign out",
+  "ru": "Выйти"
+ },
+ "Odjavljen si.": {
+  "sr": "Odjavljen si.",
+  "sr-Cyrl": "Одјављен си.",
+  "en": "You're unsubscribed.",
+  "ru": "Ты отписан."
+ },
+ "Oštećeno": {
+  "sr": "Oštećeno",
+  "sr-Cyrl": "Оштећено",
+  "en": "Damaged",
+  "ru": "Повреждено"
+ },
+ "Osveži": {
+  "sr": "Osveži",
+  "sr-Cyrl": "Освежи",
+  "en": "Reload",
+  "ru": "Обновить"
+ },
+ "Otkazana": {
+  "sr": "Otkazana",
+  "sr-Cyrl": "Отказана",
+  "en": "Cancelled",
+  "ru": "Отменена"
+ },
+ "Otkazati pretplatu?": {
+  "sr": "Otkazati pretplatu?",
+  "sr-Cyrl": "Отказати претплату?",
+  "en": "Cancel the subscription?",
+  "ru": "Отменить подписку?"
+ },
+ "Otkaži": {
+  "sr": "Otkaži",
+  "sr-Cyrl": "Откажи",
+  "en": "Cancel",
+  "ru": "Отмена"
+ },
+ "Otkaži pretplatu": {
+  "sr": "Otkaži pretplatu",
+  "sr-Cyrl": "Откажи претплату",
+  "en": "Cancel subscription",
+  "ru": "Отменить подписку"
+ },
+ "Otvori Moj Evolako": {
+  "sr": "Otvori Moj Evolako",
+  "sr-Cyrl": "Отвори Мој Evolako",
+  "en": "Open My Evolako",
+  "ru": "Открыть Мой Evolako"
+ },
+ "Otvori obračun": {
+  "sr": "Otvori obračun",
+  "sr-Cyrl": "Отвори обрачун",
+  "en": "Open the statement",
+  "ru": "Открыть отчёт"
+ },
+ "Otvori Viber": {
+  "sr": "Otvori Viber",
+  "sr-Cyrl": "Отвори Viber",
+  "en": "Open Viber",
+  "ru": "Открыть Viber"
+ },
+ "Ova stranica ne postoji.": {
+  "sr": "Ova stranica ne postoji.",
+  "sr-Cyrl": "Ова страница не постоји.",
+  "en": "This page doesn't exist.",
+  "ru": "Такой страницы нет."
+ },
+ "Ova tačka ne podržava tu radnju.": {
+  "sr": "Ova tačka ne podržava tu radnju.",
+  "sr-Cyrl": "Ова тачка не подржава ту радњу.",
+  "en": "This charging point doesn't support that action.",
+  "ru": "Эта точка не поддерживает это действие."
+ },
+ "Ovde: prijavi se, pritisni „%@“ i potvrdi.": {
+  "sr": "Ovde: prijavi se, pritisni „%@“ i potvrdi.",
+  "sr-Cyrl": "Овде: пријави се, притисни „%@“ и потврди.",
+  "en": "Here: sign in, tap “%@” and confirm.",
+  "ru": "Здесь: войди, нажми «%@» и подтверди."
+ },
+ "Ovo je dostupno kad imaš Evolako tačku.": {
+  "sr": "Ovo je dostupno kad imaš Evolako tačku.",
+  "sr-Cyrl": "Ово је доступно кад имаш Evolako тачку.",
+  "en": "This is available once you have an Evolako charging point.",
+  "ru": "Это доступно, когда у тебя есть точка Evolako."
+ },
+ "Ovog meseca": {
+  "sr": "Ovog meseca",
+  "sr-Cyrl": "Овог месеца",
+  "en": "This month",
+  "ru": "В этом месяце"
+ },
+ "Ovu fotografiju ne možemo da otvorimo. Probaj drugu.": {
+  "sr": "Ovu fotografiju ne možemo da otvorimo. Probaj drugu.",
+  "sr-Cyrl": "Ову фотографију не можемо да отворимо. Пробај другу.",
+  "en": "We can't open this photo. Try another one.",
+  "ru": "Не получается открыть это фото. Попробуй другое."
+ },
+ "Označi sve kao pročitano": {
+  "sr": "Označi sve kao pročitano",
+  "sr-Cyrl": "Означи све као прочитано",
+  "en": "Mark all as read",
+  "ru": "Отметить всё прочитанным"
+ },
+ "Oznaka": {
+  "sr": "Oznaka",
+  "sr-Cyrl": "Ознака",
+  "en": "Tag",
+  "ru": "Метка"
+ },
+ "Paket": {
+  "sr": "Paket",
+  "sr-Cyrl": "Пакет",
+  "en": "Kit",
+  "ru": "Комплект"
+ },
+ "Paket i auto": {
+  "sr": "Paket i auto",
+  "sr-Cyrl": "Пакет и ауто",
+  "en": "Kit and car",
+  "ru": "Комплект и машина"
+ },
+ "Paket još nije izabran": {
+  "sr": "Paket još nije izabran",
+  "sr-Cyrl": "Пакет још није изабран",
+  "en": "Kit not chosen yet",
+  "ru": "Комплект пока не выбран"
+ },
+ "Paketi": {
+  "sr": "Paketi",
+  "sr-Cyrl": "Пакети",
+  "en": "Kits",
+  "ru": "Комплекты"
+ },
+ "Pauza traje ceo kalendarski mesec: pretplata se tada ne plaća, a merenje i obračuni rade i dalje. Produžena garancija i prioritetni izlazak važe dok traje pretplata. Ove godine možeš još %lld od %lld meseca pauze.": {
+  "sr": "Pauza traje ceo kalendarski mesec: pretplata se tada ne plaća, a merenje i obračuni rade i dalje. Produžena garancija i prioritetni izlazak važe dok traje pretplata. Ove godine možeš još %lld od %lld meseca pauze.",
+  "sr-Cyrl": "Пауза траје цео календарски месец: претплата се тада не плаћа, а мерење и обрачуни раде и даље. Продужена гаранција и приоритетни излазак важе док траје претплата. Ове године можеш још %lld од %lld месеца паузе.",
+  "en": "A pause lasts a full calendar month: you don't pay for the subscription, and metering and statements keep working. The extended warranty and priority visits apply only while the subscription is active. You have %lld of %lld pause months left this year.",
+  "ru": "Пауза длится весь календарный месяц: подписку за него не платишь, а учёт и отчёты продолжают работать. Расширенная гарантия и приоритетный выезд действуют, только пока подписка активна. В этом году осталось %lld из %lld месяцев паузы."
+ },
+ "Pauza trenutno nije dostupna.": {
+  "sr": "Pauza trenutno nije dostupna.",
+  "sr-Cyrl": "Пауза тренутно није доступна.",
+  "en": "A pause isn't available right now.",
+  "ru": "Пауза сейчас недоступна."
+ },
+ "Pauziraj pretplatu": {
+  "sr": "Pauziraj pretplatu",
+  "sr-Cyrl": "Паузирај претплату",
+  "en": "Pause subscription",
+  "ru": "Поставить подписку на паузу"
+ },
+ "Pauzirana": {
+  "sr": "Pauzirana",
+  "sr-Cyrl": "Паузирана",
+  "en": "Paused",
+  "ru": "На паузе"
+ },
+ "Pauzirana — %lld od %lld meseca godišnje": {
+  "sr": "Pauzirana — %lld od %lld meseca godišnje",
+  "sr-Cyrl": "Паузирана — %lld од %lld месеца годишње",
+  "en": "Paused — %lld of %lld months per year",
+  "ru": "На паузе — %lld из %lld месяцев в году"
+ },
+ "Pauzirati pretplatu?": {
+  "sr": "Pauzirati pretplatu?",
+  "sr-Cyrl": "Паузирати претплату?",
+  "en": "Pause the subscription?",
+  "ru": "Поставить подписку на паузу?"
+ },
+ "Period": {
+  "sr": "Period",
+  "sr-Cyrl": "Период",
+  "en": "Period",
+  "ru": "Период"
+ },
+ "Piši nam": {
+  "sr": "Piši nam",
+  "sr-Cyrl": "Пиши нам",
+  "en": "Write to us",
+  "ru": "Напиши нам"
+ },
+ "Piši nam na hello@evolako.com i odjavićemo te.": {
+  "sr": "Piši nam na hello@evolako.com i odjavićemo te.",
+  "sr-Cyrl": "Пиши нам на hello@evolako.com и одјавићемо те.",
+  "en": "Write to us at hello@evolako.com and we'll unsubscribe you.",
+  "ru": "Напиши нам на hello@evolako.com — и мы тебя отпишем."
+ },
+ "Plaćeno": {
+  "sr": "Plaćeno",
+  "sr-Cyrl": "Плаћено",
+  "en": "Paid",
+  "ru": "Оплачен"
+ },
+ "Plaćeno. Podaci za uplatu ostaju ovde samo radi evidencije.": {
+  "sr": "Plaćeno. Podaci za uplatu ostaju ovde samo radi evidencije.",
+  "sr-Cyrl": "Плаћено. Подаци за уплату остају овде само ради евиденције.",
+  "en": "Paid. The payment details stay here for your records only.",
+  "ru": "Отчёт оплачен. Реквизиты остаются здесь только для справки."
+ },
+ "Plati pretplatu": {
+  "sr": "Plati pretplatu",
+  "sr-Cyrl": "Плати претплату",
+  "en": "Pay subscription",
+  "ru": "Оплатить подписку"
+ },
+ "Po cenama iz tvog računa": {
+  "sr": "Po cenama iz tvog računa",
+  "sr-Cyrl": "По ценама из твог рачуна",
+  "en": "At the prices from your bill",
+  "ru": "По ценам из твоего счёта"
+ },
+ "Po cenama iz tvog računa: noć / dan %@": {
+  "sr": "Po cenama iz tvog računa: noć / dan %@",
+  "sr-Cyrl": "По ценама из твог рачуна: ноћ / дан %@",
+  "en": "At the prices from your bill: night / day %@",
+  "ru": "По ценам из твоего счёта: ночь / день %@"
+ },
+ "Po cenama sa računa zgrade": {
+  "sr": "Po cenama sa računa zgrade",
+  "sr-Cyrl": "По ценама са рачуна зграде",
+  "en": "At the prices from the building's bill",
+  "ru": "По ценам из счёта здания"
+ },
+ "Po cenama sa računa zgrade: noć / dan %@": {
+  "sr": "Po cenama sa računa zgrade: noć / dan %@",
+  "sr-Cyrl": "По ценама са рачуна зграде: ноћ / дан %@",
+  "en": "At the prices from the building's bill: night / day %@",
+  "ru": "По ценам из счёта здания: ночь / день %@"
+ },
+ "Početak": {
+  "sr": "Početak",
+  "sr-Cyrl": "Почетак",
+  "en": "Start",
+  "ru": "Начало"
+ },
+ "Podaci o samoj tački punjenja — adresa ugradnje, sesije punjenja, stanja brojila i istorija servisa — ostaju uz tačku, bez veze sa tvojim nalogom.": {
+  "sr": "Podaci o samoj tački punjenja — adresa ugradnje, sesije punjenja, stanja brojila i istorija servisa — ostaju uz tačku, bez veze sa tvojim nalogom.",
+  "sr-Cyrl": "Подаци о самој тачки пуњења — адреса уградње, сесије пуњења, стања бројила и историја сервиса — остају уз тачку, без везе са твојим налогом.",
+  "en": "Data about the charging point itself — installation address, charging sessions, meter readings and service history — stays with the point, no longer linked to your account.",
+  "ru": "Данные о самой точке — адрес установки, зарядки, показания счётчика и история сервиса — остаются у точки, без связи с твоим аккаунтом."
+ },
+ "Podaci trenutno nisu dostupni.": {
+  "sr": "Podaci trenutno nisu dostupni.",
+  "sr-Cyrl": "Подаци тренутно нису доступни.",
+  "en": "The data isn't available right now.",
+  "ru": "Данные сейчас недоступны."
+ },
+ "Podeli link": {
+  "sr": "Podeli link",
+  "sr-Cyrl": "Подели линк",
+  "en": "Share link",
+  "ru": "Поделиться ссылкой"
+ },
+ "Podeli svoj kod ili link komšiji ili prijatelju.": {
+  "sr": "Podeli svoj kod ili link komšiji ili prijatelju.",
+  "sr-Cyrl": "Подели свој код или линк комшији или пријатељу.",
+  "en": "Share your code or link with a neighbor or a friend.",
+  "ru": "Поделись своим кодом или ссылкой с соседом или другом."
+ },
+ "Podešavanja": {
+  "sr": "Podešavanja",
+  "sr-Cyrl": "Подешавања",
+  "en": "Settings",
+  "ru": "Настройки"
+ },
+ "Podrška": {
+  "sr": "Podrška",
+  "sr-Cyrl": "Подршка",
+  "en": "Support",
+  "ru": "Поддержка"
+ },
+ "Pogledaj demo": {
+  "sr": "Pogledaj demo",
+  "sr-Cyrl": "Погледај демо",
+  "en": "See the demo",
+  "ru": "Посмотреть демо"
+ },
+ "Pokretanje": {
+  "sr": "Pokretanje",
+  "sr-Cyrl": "Покретање",
+  "en": "Started by",
+  "ru": "Запуск"
+ },
+ "Pokušaj ponovo": {
+  "sr": "Pokušaj ponovo",
+  "sr-Cyrl": "Покушај поново",
+  "en": "Try again",
+  "ru": "Попробовать снова"
+ },
+ "Pokušaj ponovo malo kasnije.": {
+  "sr": "Pokušaj ponovo malo kasnije.",
+  "sr-Cyrl": "Покушај поново мало касније.",
+  "en": "Try again a little later.",
+  "ru": "Попробуй чуть позже."
+ },
+ "Politika privatnosti": {
+  "sr": "Politika privatnosti",
+  "sr-Cyrl": "Политика приватности",
+  "en": "Privacy policy",
+  "ru": "Политика конфиденциальности"
+ },
+ "Popuni ime, kontakt, grad i mesto, i prihvati politiku privatnosti.": {
+  "sr": "Popuni ime, kontakt, grad i mesto, i prihvati politiku privatnosti.",
+  "sr-Cyrl": "Попуни име, контакт, град и место, и прихвати политику приватности.",
+  "en": "Fill in your name, contact, city and parking spot, and accept the privacy policy.",
+  "ru": "Заполни имя, контакт, город и место и прими политику конфиденциальности."
+ },
+ "Pošalji": {
+  "sr": "Pošalji",
+  "sr-Cyrl": "Пошаљи",
+  "en": "Send",
+  "ru": "Отправить"
+ },
+ "Pošalji ipak": {
+  "sr": "Pošalji ipak",
+  "sr-Cyrl": "Пошаљи ипак",
+  "en": "Send anyway",
+  "ru": "Всё равно отправить"
+ },
+ "Pošalji kod": {
+  "sr": "Pošalji kod",
+  "sr-Cyrl": "Пошаљи код",
+  "en": "Send code",
+  "ru": "Отправить код"
+ },
+ "Pošalji očitavanje": {
+  "sr": "Pošalji očitavanje",
+  "sr-Cyrl": "Пошаљи очитавање",
+  "en": "Send reading",
+  "ru": "Отправить показания"
+ },
+ "Pošalji ponovo": {
+  "sr": "Pošalji ponovo",
+  "sr-Cyrl": "Пошаљи поново",
+  "en": "Resend",
+  "ru": "Отправить снова"
+ },
+ "Pošalji ponovo za %@ s": {
+  "sr": "Pošalji ponovo za %@ s",
+  "sr-Cyrl": "Пошаљи поново за %@ с",
+  "en": "Resend in %@ s",
+  "ru": "Отправить снова через %@ с"
+ },
+ "Poslali smo šestocifreni kod na %@.": {
+  "sr": "Poslali smo šestocifreni kod na %@.",
+  "sr-Cyrl": "Послали смо шестоцифрени код на %@.",
+  "en": "We sent a six-digit code to %@.",
+  "ru": "Мы отправили шестизначный код на %@."
+ },
+ "Poslato": {
+  "sr": "Poslato",
+  "sr-Cyrl": "Послато",
+  "en": "Sent",
+  "ru": "Отправлено"
+ },
+ "Posle probnog perioda — %@ mesečno.": {
+  "sr": "Posle probnog perioda — %@ mesečno.",
+  "sr-Cyrl": "После пробног периода — %@ месечно.",
+  "en": "After the trial — %@ a month.",
+  "ru": "После пробного периода — %@ в месяц."
+ },
+ "Poslednja očitavanja": {
+  "sr": "Poslednja očitavanja",
+  "sr-Cyrl": "Последња очитавања",
+  "en": "Recent readings",
+  "ru": "Последние показания"
+ },
+ "Poslednje prihvaćeno: %@ kWh": {
+  "sr": "Poslednje prihvaćeno: %@ kWh",
+  "sr-Cyrl": "Последње прихваћено: %@ kWh",
+  "en": "Last accepted: %@ kWh",
+  "ru": "Последние принятые: %@ кВт·ч"
+ },
+ "Poslednji dan u mesecu — pošalji očitavanje brojila.": {
+  "sr": "Poslednji dan u mesecu — pošalji očitavanje brojila.",
+  "sr-Cyrl": "Последњи дан у месецу — пошаљи очитавање бројила.",
+  "en": "Last day of the month — send your meter reading.",
+  "ru": "Последний день месяца — передай показания счётчика."
+ },
+ "Poslednji izbor sa ovog uređaja": {
+  "sr": "Poslednji izbor sa ovog uređaja",
+  "sr-Cyrl": "Последњи избор са овог уређаја",
+  "en": "Your last choice on this device",
+  "ru": "Последний выбор на этом устройстве"
+ },
+ "Potrošnja je već na tvom računu za struju od EPS-a. Nema šta da se nadoknađuje.": {
+  "sr": "Potrošnja je već na tvom računu za struju od EPS-a. Nema šta da se nadoknađuje.",
+  "sr-Cyrl": "Потрошња је већ на твом рачуну за струју од ЕПС-а. Нема шта да се надокнађује.",
+  "en": "The consumption is already on your EPS electricity bill. There's nothing to reimburse.",
+  "ru": "Расход уже в твоём счёте EPS за электроэнергию. Возмещать нечего."
+ },
+ "Potrošnja po danima": {
+  "sr": "Potrošnja po danima",
+  "sr-Cyrl": "Потрошња по данима",
+  "en": "Consumption by day",
+  "ru": "Расход по дням"
+ },
+ "Potvrdi": {
+  "sr": "Potvrdi",
+  "sr-Cyrl": "Потврди",
+  "en": "Confirm",
+  "ru": "Подтвердить"
+ },
+ "Potvrdi prijavu": {
+  "sr": "Potvrdi prijavu",
+  "sr-Cyrl": "Потврди пријаву",
+  "en": "Confirm subscription",
+  "ru": "Подтвердить подписку"
+ },
+ "Potvrdi prijavu na Evolako pismo": {
+  "sr": "Potvrdi prijavu na Evolako pismo",
+  "sr-Cyrl": "Потврди пријаву на Evolako писмо",
+  "en": "Confirm your Evolako Letter subscription",
+  "ru": "Подтверди подписку на Письмо Evolako"
+ },
+ "Potvrdu šaljemo na e-poštu naloga.": {
+  "sr": "Potvrdu šaljemo na e-poštu naloga.",
+  "sr-Cyrl": "Потврду шаљемо на е-пошту налога.",
+  "en": "We're sending a confirmation to the account's email.",
+  "ru": "Подтверждение отправим на почту аккаунта."
+ },
+ "Poziv na broj": {
+  "sr": "Poziv na broj",
+  "sr-Cyrl": "Позив на број",
+  "en": "Poziv na broj (payment reference)",
+  "ru": "Poziv na broj (номер-ссылка платежа)"
+ },
+ "Pozovi komšiju": {
+  "sr": "Pozovi komšiju",
+  "sr-Cyrl": "Позови комшију",
+  "en": "Invite a neighbor",
+  "ru": "Позови соседа"
+ },
+ "Pozovi komšiju — besplatni meseci": {
+  "sr": "Pozovi komšiju — besplatni meseci",
+  "sr-Cyrl": "Позови комшију — бесплатни месеци",
+  "en": "Invite a neighbor — free months",
+  "ru": "Позови соседа — бесплатные месяцы"
+ },
+ "Pre nego što obrišeš": {
+  "sr": "Pre nego što obrišeš",
+  "sr-Cyrl": "Пре него што обришеш",
+  "en": "Before you delete",
+  "ru": "Прежде чем удалить"
+ },
+ "Preimenuj": {
+  "sr": "Preimenuj",
+  "sr-Cyrl": "Преименуј",
+  "en": "Rename",
+  "ru": "Переименовать"
+ },
+ "Preimenuj tačku": {
+  "sr": "Preimenuj tačku",
+  "sr-Cyrl": "Преименуј тачку",
+  "en": "Rename charging point",
+  "ru": "Переименовать точку"
+ },
+ "Preko probnog perioda — ukupno %lld besplatnih meseci": {
+  "sr": {
+   "one": "Preko probnog perioda — ukupno %lld besplatan mesec",
+   "few": "Preko probnog perioda — ukupno %lld besplatna meseca",
+   "other": "Preko probnog perioda — ukupno %lld besplatnih meseci"
+  },
+  "sr-Cyrl": {
+   "one": "Преко пробног периода — укупно %lld бесплатан месец",
+   "few": "Преко пробног периода — укупно %lld бесплатна месеца",
+   "other": "Преко пробног периода — укупно %lld бесплатних месеци"
+  },
+  "en": {
+   "one": "On top of the trial — %lld free month in total",
+   "other": "On top of the trial — %lld free months in total"
+  },
+  "ru": {
+   "one": "Сверх пробного периода — всего %lld бесплатный месяц",
+   "few": "Сверх пробного периода — всего %lld бесплатных месяца",
+   "many": "Сверх пробного периода — всего %lld бесплатных месяцев",
+   "other": "Сверх пробного периода — всего %lld бесплатного месяца"
+  }
+ },
+ "Prenos je zakazan za %@.": {
+  "sr": "Prenos je zakazan za %@.",
+  "sr-Cyrl": "Пренос је заказан за %@.",
+  "en": "The move is scheduled for %@.",
+  "ru": "Перенос назначен на %@."
+ },
+ "Prenos kompleta na novu adresu uključen je u pretplatu. Proverićemo da li nova garaža može da ga primi i dogovorićemo termin.": {
+  "sr": "Prenos kompleta na novu adresu uključen je u pretplatu. Proverićemo da li nova garaža može da ga primi i dogovorićemo termin.",
+  "sr-Cyrl": "Пренос комплета на нову адресу укључен је у претплату. Проверићемо да ли нова гаража може да га прими и договорићемо термин.",
+  "en": "Moving the kit to your new address is included in the subscription. We'll check whether the new garage can take it and agree on a date.",
+  "ru": "Перенос комплекта на новый адрес входит в подписку. Проверим, подходит ли новый гараж, и договоримся о дате."
+ },
+ "Prenosimo komplet na novu adresu. Javićemo se u roku od 72 h.": {
+  "sr": "Prenosimo komplet na novu adresu. Javićemo se u roku od 72 h.",
+  "sr-Cyrl": "Преносимо комплет на нову адресу. Јавићемо се у року од 72 h.",
+  "en": "We move the kit to your new address. We'll get back to you within 72 h.",
+  "ru": "Перенесём комплект на новый адрес. Свяжемся в течение 72 ч."
+ },
+ "Prepiši cene po kWh sa svog EPS računa. Tada su iznosi u aplikaciji tvoji, a ne procena.": {
+  "sr": "Prepiši cene po kWh sa svog EPS računa. Tada su iznosi u aplikaciji tvoji, a ne procena.",
+  "sr-Cyrl": "Препиши цене по kWh са свог ЕПС рачуна. Тада су износи у апликацији твоји, а не процена.",
+  "en": "Copy the prices per kWh from your EPS bill. Then the amounts in the app are yours, not an estimate.",
+  "ru": "Перепиши цены за кВт·ч из своего счёта EPS. Тогда суммы в приложении будут твоими, а не оценкой."
+ },
+ "Preporuči Evolako komšiji ili prijatelju": {
+  "sr": "Preporuči Evolako komšiji ili prijatelju",
+  "sr-Cyrl": "Препоручи Evolako комшији или пријатељу",
+  "en": "Recommend Evolako to a neighbor or a friend",
+  "ru": "Порекомендуй Evolako соседу или другу"
+ },
+ "Preporuka se računa kad je komplet prijatelja ugrađen.": {
+  "sr": "Preporuka se računa kad je komplet prijatelja ugrađen.",
+  "sr-Cyrl": "Препорука се рачуна кад је комплет пријатеља уграђен.",
+  "en": "A referral counts once your friend's kit is installed.",
+  "ru": "Рекомендация засчитывается, когда комплект друга установлен."
+ },
+ "Preporuke trenutno nisu dostupne": {
+  "sr": "Preporuke trenutno nisu dostupne",
+  "sr-Cyrl": "Препоруке тренутно нису доступне",
+  "en": "Referrals aren't available right now",
+  "ru": "Рекомендации сейчас недоступны"
+ },
+ "Preračunato po kursu NBS na %@. Cena u dinarima: %@.": {
+  "sr": "Preračunato po kursu NBS na %@. Cena u dinarima: %@.",
+  "sr-Cyrl": "Прерачунато по курсу НБС на %@. Цена у динарима: %@.",
+  "en": "Converted at the NBS rate on %@. Price in dinars: %@.",
+  "ru": "Пересчитано по курсу НБС на %@. Цена в динарах: %@."
+ },
+ "Preseljeno": {
+  "sr": "Preseljeno",
+  "sr-Cyrl": "Пресељено",
+  "en": "Moved",
+  "ru": "Перенесено"
+ },
+ "Preskoči na sadržaj": {
+  "sr": "Preskoči na sadržaj",
+  "sr-Cyrl": "Прескочи на садржај",
+  "en": "Skip to content",
+  "ru": "Перейти к содержимому"
+ },
+ "Pretplata": {
+  "sr": "Pretplata",
+  "sr-Cyrl": "Претплата",
+  "en": "Subscription",
+  "ru": "Подписка"
+ },
+ "Pretplata Evolako": {
+  "sr": "Pretplata Evolako",
+  "sr-Cyrl": "Претплата Evolako",
+  "en": "Evolako subscription",
+  "ru": "Подписка Evolako"
+ },
+ "Pretplata je na čekanju jer uplata kasni više od 30 dana. Dok je tako, produžena garancija i prioritetni servis ne važe. Nema kamata ni penala — čim uplata stigne, sve se vraća samo.": {
+  "sr": "Pretplata je na čekanju jer uplata kasni više od 30 dana. Dok je tako, produžena garancija i prioritetni servis ne važe. Nema kamata ni penala — čim uplata stigne, sve se vraća samo.",
+  "sr-Cyrl": "Претплата је на чекању јер уплата касни више од 30 дана. Док је тако, продужена гаранција и приоритетни сервис не важе. Нема камата ни пенала — чим уплата стигне, све се враћа само.",
+  "en": "Your subscription is on hold because a payment is more than 30 days late. Until it arrives, the extended warranty and priority service don't apply. There are no fees or interest — once the payment comes in, everything is restored automatically.",
+  "ru": "Подписка приостановлена: оплата задерживается больше чем на 30 дней. Пока так, продлённая гарантия и приоритетный сервис не действуют. Штрафов и процентов нет — как только оплата придёт, всё вернётся само."
+ },
+ "Pretplata je već otkazana.": {
+  "sr": "Pretplata je već otkazana.",
+  "sr-Cyrl": "Претплата је већ отказана.",
+  "en": "The subscription is already cancelled.",
+  "ru": "Подписка уже отменена."
+ },
+ "Pretplata od %@": {
+  "sr": "Pretplata od %@",
+  "sr-Cyrl": "Претплата од %@",
+  "en": "Subscribed since %@",
+  "ru": "Подписка с %@"
+ },
+ "Pretplata važi do %@.": {
+  "sr": "Pretplata važi do %@.",
+  "sr-Cyrl": "Претплата важи до %@.",
+  "en": "The subscription runs until %@.",
+  "ru": "Подписка действует до %@."
+ },
+ "Pretplata za ovaj mesec: %lld od %lld dana (posle probnog perioda).": {
+  "sr": "Pretplata za ovaj mesec: %lld od %lld dana (posle probnog perioda).",
+  "sr-Cyrl": "Претплата за овај месец: %lld од %lld дана (после пробног периода).",
+  "en": "Subscription this month: %lld of %lld days (after the trial).",
+  "ru": "Подписка за этот месяц: %lld из %lld дней (после пробного периода)."
+ },
+ "Pretraži pitanja": {
+  "sr": "Pretraži pitanja",
+  "sr-Cyrl": "Претражи питања",
+  "en": "Search questions",
+  "ru": "Поиск по вопросам"
+ },
+ "Previše pokušaja. Pokušaj ponovo malo kasnije.": {
+  "sr": "Previše pokušaja. Pokušaj ponovo malo kasnije.",
+  "sr-Cyrl": "Превише покушаја. Покушај поново мало касније.",
+  "en": "Too many attempts. Try again a little later.",
+  "ru": "Слишком много попыток. Попробуй чуть позже."
+ },
+ "Previše pokušaja. Pokušaj ponovo za minut.": {
+  "sr": "Previše pokušaja. Pokušaj ponovo za minut.",
+  "sr-Cyrl": "Превише покушаја. Покушај поново за минут.",
+  "en": "Too many attempts. Try again in a minute.",
+  "ru": "Слишком много попыток. Попробуй через минуту."
+ },
+ "Prihvaćeno": {
+  "sr": "Prihvaćeno",
+  "sr-Cyrl": "Прихваћено",
+  "en": "Accepted",
+  "ru": "Принято"
+ },
+ "Prihvatam politiku privatnosti — kontaktirajte me povodom mog upita.": {
+  "sr": "Prihvatam politiku privatnosti — kontaktirajte me povodom mog upita.",
+  "sr-Cyrl": "Прихватам политику приватности — контактирајте ме поводом мог упита.",
+  "en": "I accept the privacy policy — contact me about my request.",
+  "ru": "Принимаю политику конфиденциальности — свяжитесь со мной по моему запросу."
+ },
+ "Prijatelj dobija": {
+  "sr": "Prijatelj dobija",
+  "sr-Cyrl": "Пријатељ добија",
+  "en": "Your friend gets",
+  "ru": "Друг получает"
+ },
+ "Prijatelj upiše kod kad se prijavljuje — pre ugradnje.": {
+  "sr": "Prijatelj upiše kod kad se prijavljuje — pre ugradnje.",
+  "sr-Cyrl": "Пријатељ упише код кад се пријављује — пре уградње.",
+  "en": "Your friend enters the code when signing up — before installation.",
+  "ru": "Друг вводит код, когда оставляет заявку, — до установки."
+ },
+ "Prijava": {
+  "sr": "Prijava",
+  "sr-Cyrl": "Пријава",
+  "en": "Sign in",
+  "ru": "Вход"
+ },
+ "Prijava je poslata": {
+  "sr": "Prijava je poslata",
+  "sr-Cyrl": "Пријава је послата",
+  "en": "Report sent",
+  "ru": "Заявка отправлена"
+ },
+ "Prijava je poslata. Javićemo se u roku od 48 h.": {
+  "sr": "Prijava je poslata. Javićemo se u roku od 48 h.",
+  "sr-Cyrl": "Пријава је послата. Јавићемо се у року од 48 h.",
+  "en": "Report sent. We'll get back to you within 48 h.",
+  "ru": "Заявка отправлена. Свяжемся с тобой в течение 48 ч."
+ },
+ "Prijava kodom na e-poštu — bez lozinke.": {
+  "sr": "Prijava kodom na e-poštu — bez lozinke.",
+  "sr-Cyrl": "Пријава кодом на е-пошту — без лозинке.",
+  "en": "Sign in with a code sent to your email — no password.",
+  "ru": "Вход по коду из письма — без пароля."
+ },
+ "Prijava kvara": {
+  "sr": "Prijava kvara",
+  "sr-Cyrl": "Пријава квара",
+  "en": "Problem report",
+  "ru": "Заявка о проблеме"
+ },
+ "Prijava na webu stiže uskoro. Do tada pogledaj demo.": {
+  "sr": "Prijava na webu stiže uskoro. Do tada pogledaj demo.",
+  "sr-Cyrl": "Пријава на webu стиже ускоро. До тада погледај демо.",
+  "en": "Web sign-in is coming soon. Until then, take a look at the demo.",
+  "ru": "Вход через веб скоро появится. А пока посмотри демо."
+ },
+ "Prijava preko Google naloga nije uspela. Pokušaj ponovo ili se prijavi kodom na e-poštu.": {
+  "sr": "Prijava preko Google naloga nije uspela. Pokušaj ponovo ili se prijavi kodom na e-poštu.",
+  "sr-Cyrl": "Пријава преко Google налога није успела. Покушај поново или се пријави кодом на е-пошту.",
+  "en": "Signing in with Google didn't work. Try again, or sign in with a code sent to your email.",
+  "ru": "Не получилось войти через Google. Попробуй ещё раз или войди по коду из письма."
+ },
+ "Prijava selidbe je poslata": {
+  "sr": "Prijava selidbe je poslata",
+  "sr-Cyrl": "Пријава селидбе је послата",
+  "en": "Move request sent",
+  "ru": "Заявка на переезд отправлена"
+ },
+ "Prijava selidbe je već poslata.": {
+  "sr": "Prijava selidbe je već poslata.",
+  "sr-Cyrl": "Пријава селидбе је већ послата.",
+  "en": "A move request has already been sent.",
+  "ru": "Заявка на переезд уже отправлена."
+ },
+ "Prijava u toku": {
+  "sr": "Prijava u toku",
+  "sr-Cyrl": "Пријава у току",
+  "en": "Request in progress",
+  "ru": "Заявка в работе"
+ },
+ "Prijavi kvar": {
+  "sr": "Prijavi kvar",
+  "sr-Cyrl": "Пријави квар",
+  "en": "Report a problem",
+  "ru": "Сообщить о проблеме"
+ },
+ "Prijavi kvar i prati servis": {
+  "sr": "Prijavi kvar i prati servis",
+  "sr-Cyrl": "Пријави квар и прати сервис",
+  "en": "Report a problem and follow the service",
+  "ru": "Сообщи о проблеме и следи за сервисом"
+ },
+ "Prijavi se da obrišeš nalog": {
+  "sr": "Prijavi se da obrišeš nalog",
+  "sr-Cyrl": "Пријави се да обришеш налог",
+  "en": "Sign in to delete your account",
+  "ru": "Войти, чтобы удалить аккаунт"
+ },
+ "Prijavi se istom e-poštom kao u zahtevu za procenu. Ovde pratiš status procene i ugradnje, a kad je komplet ugrađen — obračune i punjenje.": {
+  "sr": "Prijavi se istom e-poštom kao u zahtevu za procenu. Ovde pratiš status procene i ugradnje, a kad je komplet ugrađen — obračune i punjenje.",
+  "sr-Cyrl": "Пријави се истом е-поштом као у захтеву за процену. Овде пратиш статус процене и уградње, а кад је комплет уграђен — обрачуне и пуњење.",
+  "en": "Sign in with the same email as in your assessment request. Here you can follow the status of the assessment and installation, and once the kit is installed, your statements and charging.",
+  "ru": "Войди с той же почтой, что и в заявке на оценку. Здесь виден статус оценки и установки, а когда комплект установлен, — отчёты и зарядка."
+ },
+ "Prijavi se kodom na e-poštu naloga ili preko Google naloga sa tom e-poštom, pa potvrdi brisanje.": {
+  "sr": "Prijavi se kodom na e-poštu naloga ili preko Google naloga sa tom e-poštom, pa potvrdi brisanje.",
+  "sr-Cyrl": "Пријави се кодом на е-пошту налога или преко Google налога са том е-поштом, па потврди брисање.",
+  "en": "Sign in with a code sent to the account's email, or with Google using that email, then confirm the deletion.",
+  "ru": "Войди по коду на почту аккаунта или через Google с той же почтой и подтверди удаление."
+ },
+ "Prijavi se kodom na e-poštu naloga, pa potvrdi brisanje.": {
+  "sr": "Prijavi se kodom na e-poštu naloga, pa potvrdi brisanje.",
+  "sr-Cyrl": "Пријави се кодом на е-пошту налога, па потврди брисање.",
+  "en": "Sign in with a code sent to the account's email, then confirm the deletion.",
+  "ru": "Войди по коду на почту аккаунта и подтверди удаление."
+ },
+ "Prijavi se ponovo na evolako.rs.": {
+  "sr": "Prijavi se ponovo na evolako.rs.",
+  "sr-Cyrl": "Пријави се поново на evolako.rs.",
+  "en": "Please sign up again on evolako.rs.",
+  "ru": "Подпишись ещё раз на evolako.rs."
+ },
+ "Prijavi se u Moj Evolako": {
+  "sr": "Prijavi se u Moj Evolako",
+  "sr-Cyrl": "Пријави се у Мој Evolako",
+  "en": "Sign in to My Evolako",
+  "ru": "Войти в Мой Evolako"
+ },
+ "Prikazujemo poslednje poznate podatke.": {
+  "sr": "Prikazujemo poslednje poznate podatke.",
+  "sr-Cyrl": "Приказујемо последње познате податке.",
+  "en": "Showing the last known data.",
+  "ru": "Показываем последние известные данные."
+ },
+ "Primalac": {
+  "sr": "Primalac",
+  "sr-Cyrl": "Прималац",
+  "en": "Payee",
+  "ru": "Получатель"
+ },
+ "Primenjuju se od: %@": {
+  "sr": "Primenjuju se od: %@",
+  "sr-Cyrl": "Примењују се од: %@",
+  "en": "Applied from: %@",
+  "ru": "Применятся с: %@"
+ },
+ "Primer": {
+  "sr": "Primer",
+  "sr-Cyrl": "Пример",
+  "en": "Example",
+  "ru": "Пример"
+ },
+ "Primeri podataka iz Novog Sada i Beograda. Ništa se ne šalje i ništa se ne plaća.": {
+  "sr": "Primeri podataka iz Novog Sada i Beograda. Ništa se ne šalje i ništa se ne plaća.",
+  "sr-Cyrl": "Примери података из Новог Сада и Београда. Ништа се не шаље и ништа се не плаћа.",
+  "en": "Sample data from Novi Sad and Belgrade. Nothing is sent and nothing is paid.",
+  "ru": "Примеры данных из Нови-Сада и Белграда. Ничего не отправляется и ничего не оплачивается."
+ },
+ "Primljeno": {
+  "sr": "Primljeno",
+  "sr-Cyrl": "Примљено",
+  "en": "Received",
+  "ru": "Принята"
+ },
+ "Pripremam CSV…": {
+  "sr": "Pripremam CSV…",
+  "sr-Cyrl": "Припремам CSV…",
+  "en": "Preparing CSV…",
+  "ru": "Готовлю CSV…"
+ },
+ "Privatnost": {
+  "sr": "Privatnost",
+  "sr-Cyrl": "Приватност",
+  "en": "Privacy",
+  "ru": "Конфиденциальность"
+ },
+ "Probni period": {
+  "sr": "Probni period",
+  "sr-Cyrl": "Пробни период",
+  "en": "Trial",
+  "ru": "Пробный период"
+ },
+ "Probni period ističe za %lld dana": {
+  "sr": {
+   "one": "Probni period ističe za %lld dan",
+   "few": "Probni period ističe za %lld dana",
+   "other": "Probni period ističe za %lld dana"
+  },
+  "sr-Cyrl": {
+   "one": "Пробни период истиче за %lld дан",
+   "few": "Пробни период истиче за %lld дана",
+   "other": "Пробни период истиче за %lld дана"
+  },
+  "en": {
+   "one": "The trial ends in %lld day",
+   "other": "The trial ends in %lld days"
+  },
+  "ru": {
+   "one": "Пробный период заканчивается через %lld день",
+   "few": "Пробный период заканчивается через %lld дня",
+   "many": "Пробный период заканчивается через %lld дней",
+   "other": "Пробный период заканчивается через %lld дня"
+  }
+ },
+ "Probni period počinje kad prvi put otvoriš punjač u aplikaciji (najkasnije 14 dana posle ugradnje).": {
+  "sr": "Probni period počinje kad prvi put otvoriš punjač u aplikaciji (najkasnije 14 dana posle ugradnje).",
+  "sr-Cyrl": "Пробни период почиње кад први пут отвориш пуњач у апликацији (најкасније 14 дана после уградње).",
+  "en": "Your trial starts the first time you open your charger in the app (14 days after installation at the latest).",
+  "ru": "Пробный период начнётся, когда ты впервые откроешь зарядку в приложении (не позже чем через 14 дней после установки)."
+ },
+ "Probni period: do %@.": {
+  "sr": "Probni period: do %@.",
+  "sr-Cyrl": "Пробни период: до %@.",
+  "en": "Trial: until %@.",
+  "ru": "Пробный период: до %@."
+ },
+ "Procena iznosa": {
+  "sr": "Procena iznosa",
+  "sr-Cyrl": "Процена износа",
+  "en": "Estimated amount",
+  "ru": "Оценка суммы"
+ },
+ "Procena je zakazana za %@.": {
+  "sr": "Procena je zakazana za %@.",
+  "sr-Cyrl": "Процена је заказана за %@.",
+  "en": "The assessment is booked for %@.",
+  "ru": "Оценка назначена на %@."
+ },
+ "Procena po okvirnim cenama": {
+  "sr": "Procena po okvirnim cenama",
+  "sr-Cyrl": "Процена по оквирним ценама",
+  "en": "Estimate at typical prices",
+  "ru": "Оценка по примерным ценам"
+ },
+ "Procena po okvirnim cenama: noć / dan %@": {
+  "sr": "Procena po okvirnim cenama: noć / dan %@",
+  "sr-Cyrl": "Процена по оквирним ценама: ноћ / дан %@",
+  "en": "Estimate at typical prices: night / day %@",
+  "ru": "Оценка по примерным ценам: ночь / день %@"
+ },
+ "Procena zakazana": {
+  "sr": "Procena zakazana",
+  "sr-Cyrl": "Процена заказана",
+  "en": "Assessment booked",
+  "ru": "Оценка назначена"
+ },
+ "Profil": {
+  "sr": "Profil",
+  "sr-Cyrl": "Профил",
+  "en": "Profile",
+  "ru": "Профиль"
+ },
+ "Promeni e-poštu": {
+  "sr": "Promeni e-poštu",
+  "sr-Cyrl": "Промени е-пошту",
+  "en": "Change email",
+  "ru": "Изменить почту"
+ },
+ "Promeni fotografiju": {
+  "sr": "Promeni fotografiju",
+  "sr-Cyrl": "Промени фотографију",
+  "en": "Change photo",
+  "ru": "Заменить фото"
+ },
+ "Prosečna snaga": {
+  "sr": "Prosečna snaga",
+  "sr-Cyrl": "Просечна снага",
+  "en": "Average power",
+  "ru": "Средняя мощность"
+ },
+ "Proveri adresu e-pošte.": {
+  "sr": "Proveri adresu e-pošte.",
+  "sr-Cyrl": "Провери адресу е-поште.",
+  "en": "Check the email address.",
+  "ru": "Проверь адрес почты."
+ },
+ "Proveri broj — izgleda previše.": {
+  "sr": "Proveri broj — izgleda previše.",
+  "sr-Cyrl": "Провери број — изгледа превише.",
+  "en": "Check the number — it looks too high.",
+  "ru": "Проверь число — кажется, слишком много."
+ },
+ "Proveri broj — npr. +381 60 123 45 67.": {
+  "sr": "Proveri broj — npr. +381 60 123 45 67.",
+  "sr-Cyrl": "Провери број — нпр. +381 60 123 45 67.",
+  "en": "Check the number — e.g. +381 60 123 45 67.",
+  "ru": "Проверь номер — например, +381 60 123 45 67."
+ },
+ "Proveri e-mail adresu.": {
+  "sr": "Proveri e-mail adresu.",
+  "sr-Cyrl": "Провери e-mail адресу.",
+  "en": "Check the email address.",
+  "ru": "Проверь адрес почты."
+ },
+ "Prva 2 meseca — 0 RSD": {
+  "sr": "Prva 2 meseca — 0 RSD",
+  "sr-Cyrl": "Прва 2 месеца — 0 RSD",
+  "en": "First 2 months — 0 RSD",
+  "ru": "Первые 2 месяца — 0 RSD"
+ },
+ "Prvi obračun stiže na kraju meseca. U njemu su kilovat-sati i iznosi sa QR kodom za plaćanje.": {
+  "sr": "Prvi obračun stiže na kraju meseca. U njemu su kilovat-sati i iznosi sa QR kodom za plaćanje.",
+  "sr-Cyrl": "Први обрачун стиже на крају месеца. У њему су киловат-сати и износи са QR кодом за плаћање.",
+  "en": "The first statement arrives at the end of the month, with kilowatt-hours and amounts plus a QR code for payment.",
+  "ru": "Первый отчёт придёт в конце месяца: киловатт-часы, суммы и QR-код для оплаты."
+ },
+ "Puni auto tamo gde parkiraš. Dok spavaš.": {
+  "sr": "Puni auto tamo gde parkiraš. Dok spavaš.",
+  "sr-Cyrl": "Пуни ауто тамо где паркираш. Док спаваш.",
+  "en": "Charge the car where you park it. While you sleep.",
+  "ru": "Заряжай машину там, где паркуешься. Пока спишь."
+ },
+ "Punim auto u garaži dok spavam — uz Evolako. Kad se prijaviš, upiši moj kod %@ pre ugradnje.": {
+  "sr": "Punim auto u garaži dok spavam — uz Evolako. Kad se prijaviš, upiši moj kod %@ pre ugradnje.",
+  "sr-Cyrl": "Пуним ауто у гаражи док спавам — уз Evolako. Кад се пријавиш, упиши мој код %@ пре уградње.",
+  "en": "I charge my car in the garage while I sleep — with Evolako. When you sign up, enter my code %@ before installation.",
+  "ru": "Заряжаю машину в гараже, пока сплю, — с Evolako. Когда будешь оставлять заявку, введи мой код %@ до установки."
+ },
+ "Punjenje": {
+  "sr": "Punjenje",
+  "sr-Cyrl": "Пуњење",
+  "en": "Charging",
+  "ru": "Зарядка"
+ },
+ "Punjenje i potrošnja po danima": {
+  "sr": "Punjenje i potrošnja po danima",
+  "sr-Cyrl": "Пуњење и потрошња по данима",
+  "en": "Charging and usage by day",
+  "ru": "Зарядка и расход по дням"
+ },
+ "Punjenje je počelo": {
+  "sr": "Punjenje je počelo",
+  "sr-Cyrl": "Пуњење је почело",
+  "en": "Charging has started",
+  "ru": "Зарядка началась"
+ },
+ "Punjenje je već u toku.": {
+  "sr": "Punjenje je već u toku.",
+  "sr-Cyrl": "Пуњење је већ у току.",
+  "en": "Charging is already running.",
+  "ru": "Зарядка уже идёт."
+ },
+ "Punjenje je završeno — %@": {
+  "sr": "Punjenje je završeno — %@",
+  "sr-Cyrl": "Пуњење је завршено — %@",
+  "en": "Charging finished — %@",
+  "ru": "Зарядка завершена — %@"
+ },
+ "Punjenje kreće samo, u okviru noćnog okna.": {
+  "sr": "Punjenje kreće samo, u okviru noćnog okna.",
+  "sr-Cyrl": "Пуњење креће само, у оквиру ноћног окна.",
+  "en": "Charging starts on its own, within the night window.",
+  "ru": "Зарядка стартует сама, внутри ночного окна."
+ },
+ "Punjenje pokrećeš i zaustavljaš u aplikaciji Evolako.": {
+  "sr": "Punjenje pokrećeš i zaustavljaš u aplikaciji Evolako.",
+  "sr-Cyrl": "Пуњење покрећеш и заустављаш у апликацији Evolako.",
+  "en": "You start and stop charging in the Evolako app.",
+  "ru": "Запускать и останавливать зарядку можно в приложении Evolako."
+ },
+ "Punjenje trenutno ne radi.": {
+  "sr": "Punjenje trenutno ne radi.",
+  "sr-Cyrl": "Пуњење тренутно не ради.",
+  "en": "Charging isn't running.",
+  "ru": "Зарядка сейчас не идёт."
+ },
+ "Punjenje u toku": {
+  "sr": "Punjenje u toku",
+  "sr-Cyrl": "Пуњење у току",
+  "en": "Charging",
+  "ru": "Идёт зарядка"
+ },
+ "Račun": {
+  "sr": "Račun",
+  "sr-Cyrl": "Рачун",
+  "en": "Account",
+  "ru": "Счёт"
+ },
+ "Ranije selidbe": {
+  "sr": "Ranije selidbe",
+  "sr-Cyrl": "Раније селидбе",
+  "en": "Earlier moves",
+  "ru": "Прошлые переезды"
+ },
+ "Razlog": {
+  "sr": "Razlog",
+  "sr-Cyrl": "Разлог",
+  "en": "Reason",
+  "ru": "Причина"
+ },
+ "Rešeno": {
+  "sr": "Rešeno",
+  "sr-Cyrl": "Решено",
+  "en": "Resolved",
+  "ru": "Решено"
+ },
+ "Rešeno %@.": {
+  "sr": "Rešeno %@.",
+  "sr-Cyrl": "Решено %@.",
+  "en": "Resolved %@.",
+  "ru": "Решено %@."
+ },
+ "Retko, bez reklama drugih firmi. Odjava je u svakom pismu.": {
+  "sr": "Retko, bez reklama drugih firmi. Odjava je u svakom pismu.",
+  "sr-Cyrl": "Ретко, без реклама других фирми. Одјава је у сваком писму.",
+  "en": "Rarely, and never ads from other companies. Every email has an unsubscribe link.",
+  "ru": "Редко и без рекламы других компаний. Отписаться можно в каждом письме."
+ },
+ "Rok za uplatu: %@": {
+  "sr": "Rok za uplatu: %@",
+  "sr-Cyrl": "Рок за уплату: %@",
+  "en": "Due by %@",
+  "ru": "Оплатить до %@"
+ },
+ "RSD — dinar": {
+  "sr": "RSD — dinar",
+  "sr-Cyrl": "RSD — динар",
+  "en": "RSD — Serbian dinar",
+  "ru": "RSD — динар"
+ },
+ "RSD (procena)": {
+  "sr": "RSD (procena)",
+  "sr-Cyrl": "RSD (процена)",
+  "en": "RSD (estimate)",
+  "ru": "RSD (оценка)"
+ },
+ "Ručno": {
+  "sr": "Ručno",
+  "sr-Cyrl": "Ручно",
+  "en": "Manual",
+  "ru": "Вручную"
+ },
+ "Sačuvaj": {
+  "sr": "Sačuvaj",
+  "sr-Cyrl": "Сачувај",
+  "en": "Save",
+  "ru": "Сохранить"
+ },
+ "Sačuvaj cene": {
+  "sr": "Sačuvaj cene",
+  "sr-Cyrl": "Сачувај цене",
+  "en": "Save prices",
+  "ru": "Сохранить цены"
+ },
+ "Sačuvaj PDF": {
+  "sr": "Sačuvaj PDF",
+  "sr-Cyrl": "Сачувај PDF",
+  "en": "Save PDF",
+  "ru": "Сохранить PDF"
+ },
+ "Sačuvano": {
+  "sr": "Sačuvano",
+  "sr-Cyrl": "Сачувано",
+  "en": "Saved",
+  "ru": "Сохранено"
+ },
+ "Sada gledaš demo — u njemu nema pravog naloga. Izađi iz demoa i prijavi se svojom e-poštom.": {
+  "sr": "Sada gledaš demo — u njemu nema pravog naloga. Izađi iz demoa i prijavi se svojom e-poštom.",
+  "sr-Cyrl": "Сада гледаш демо — у њему нема правог налога. Изађи из демоа и пријави се својом е-поштом.",
+  "en": "You're looking at the demo — there's no real account in it. Exit the demo and sign in with your email.",
+  "ru": "Сейчас ты в демо — настоящего аккаунта в нём нет. Выйди из демо и войди со своей почтой."
+ },
+ "Sada su iznosi procena po okvirnim cenama.": {
+  "sr": "Sada su iznosi procena po okvirnim cenama.",
+  "sr-Cyrl": "Сада су износи процена по оквирним ценама.",
+  "en": "Amounts are currently an estimate at typical prices.",
+  "ru": "Сейчас суммы — оценка по примерным ценам."
+ },
+ "Samo merenje i obračuni, bez upravljanja. Struja ide preko tvog brojila.": {
+  "sr": "Samo merenje i obračuni, bez upravljanja. Struja ide preko tvog brojila.",
+  "sr-Cyrl": "Само мерење и обрачуни, без управљања. Струја иде преко твог бројила.",
+  "en": "Metering and statements only, no control. Electricity goes through your own meter.",
+  "ru": "Только учёт и отчёты, без управления. Электроэнергия идёт через твой счётчик."
+ },
+ "Samo poruke, bez poziva": {
+  "sr": "Samo poruke, bez poziva",
+  "sr-Cyrl": "Само поруке, без позива",
+  "en": "Messages only, no calls",
+  "ru": "Только сообщения, без звонков"
+ },
+ "Saveti o punjenju e-poštom": {
+  "sr": "Saveti o punjenju e-poštom",
+  "sr-Cyrl": "Савети о пуњењу е-поштом",
+  "en": "Charging tips by email",
+  "ru": "Советы по зарядке на почту"
+ },
+ "Selidba": {
+  "sr": "Selidba",
+  "sr-Cyrl": "Селидба",
+  "en": "Moving",
+  "ru": "Переезд"
+ },
+ "Selim se": {
+  "sr": "Selim se",
+  "sr-Cyrl": "Селим се",
+  "en": "I'm moving",
+  "ru": "Я переезжаю"
+ },
+ "Serijski broj": {
+  "sr": "Serijski broj",
+  "sr-Cyrl": "Серијски број",
+  "en": "Serial number",
+  "ru": "Серийный номер"
+ },
+ "Serviser dolazi %@.": {
+  "sr": "Serviser dolazi %@.",
+  "sr-Cyrl": "Сервисер долази %@.",
+  "en": "A technician is coming %@.",
+  "ru": "Мастер приедет %@."
+ },
+ "Sesija": {
+  "sr": "Sesija",
+  "sr-Cyrl": "Сесија",
+  "en": "Session",
+  "ru": "Сессия"
+ },
+ "Sesija je istekla. Prijavi se ponovo.": {
+  "sr": "Sesija je istekla. Prijavi se ponovo.",
+  "sr-Cyrl": "Сесија је истекла. Пријави се поново.",
+  "en": "Your session expired. Sign in again.",
+  "ru": "Сессия истекла. Войди снова."
+ },
+ "Sesije": {
+  "sr": "Sesije",
+  "sr-Cyrl": "Сесије",
+  "en": "Sessions",
+  "ru": "Сессии"
+ },
+ "Šestocifreni kod": {
+  "sr": "Šestocifreni kod",
+  "sr-Cyrl": "Шестоцифрени код",
+  "en": "Six-digit code",
+  "ru": "Код из шести цифр"
+ },
+ "Šifra plaćanja": {
+  "sr": "Šifra plaćanja",
+  "sr-Cyrl": "Шифра плаћања",
+  "en": "Payment code",
+  "ru": "Код платежа"
+ },
+ "Sistem": {
+  "sr": "Sistem",
+  "sr-Cyrl": "Систем",
+  "en": "System",
+  "ru": "Система"
+ },
+ "Skeniraj u svojoj m-banking aplikaciji": {
+  "sr": "Skeniraj u svojoj m-banking aplikaciji",
+  "sr-Cyrl": "Скенирај у својој м-банкинг апликацији",
+  "en": "Scan in your m-banking app",
+  "ru": "Отсканируй в приложении банка"
+ },
+ "Sledeći autostart u %@": {
+  "sr": "Sledeći autostart u %@",
+  "sr-Cyrl": "Следећи аутостарт у %@",
+  "en": "Next auto-start at %@",
+  "ru": "Следующий автостарт в %@"
+ },
+ "Službeno": {
+  "sr": "Službeno",
+  "sr-Cyrl": "Службено",
+  "en": "Work",
+  "ru": "Рабочие"
+ },
+ "Snaga": {
+  "sr": "Snaga",
+  "sr-Cyrl": "Снага",
+  "en": "Power",
+  "ru": "Мощность"
+ },
+ "Snaga uživo": {
+  "sr": "Snaga uživo",
+  "sr-Cyrl": "Снага уживо",
+  "en": "Live power",
+  "ru": "Мощность в реальном времени"
+ },
+ "Sopstveni kod": {
+  "sr": "Sopstveni kod",
+  "sr-Cyrl": "Сопствени код",
+  "en": "Your own code",
+  "ru": "Свой код"
+ },
+ "Sprat garaže, pristup, kada da se javimo…": {
+  "sr": "Sprat garaže, pristup, kada da se javimo…",
+  "sr-Cyrl": "Спрат гараже, приступ, када да се јавимо…",
+  "en": "Garage level, access, when to call…",
+  "ru": "Этаж гаража, доступ, когда позвонить…"
+ },
+ "Sprat garaže, pristup, kome da se javimo…": {
+  "sr": "Sprat garaže, pristup, kome da se javimo…",
+  "sr-Cyrl": "Спрат гараже, приступ, коме да се јавимо…",
+  "en": "Garage level, access, who to contact…",
+  "ru": "Уровень гаража, доступ, с кем связаться…"
+ },
+ "Šta brišemo": {
+  "sr": "Šta brišemo",
+  "sr-Cyrl": "Шта бришемо",
+  "en": "What we delete",
+  "ru": "Что удаляем"
+ },
+ "Šta dobijaš": {
+  "sr": "Šta dobijaš",
+  "sr-Cyrl": "Шта добијаш",
+  "en": "What you get",
+  "ru": "Что ты получаешь"
+ },
+ "Šta ostaje": {
+  "sr": "Šta ostaje",
+  "sr-Cyrl": "Шта остаје",
+  "en": "What stays",
+  "ru": "Что остаётся"
+ },
+ "Šta se dešava?": {
+  "sr": "Šta se dešava?",
+  "sr-Cyrl": "Шта се дешава?",
+  "en": "What's happening?",
+  "ru": "Что случилось?"
+ },
+ "Šta sledi": {
+  "sr": "Šta sledi",
+  "sr-Cyrl": "Шта следи",
+  "en": "What happens next",
+  "ru": "Что дальше"
+ },
+ "Šta tačka može": {
+  "sr": "Šta tačka može",
+  "sr-Cyrl": "Шта тачка може",
+  "en": "What the charging point can do",
+  "ru": "Что умеет точка"
+ },
+ "Šta znamo": {
+  "sr": "Šta znamo",
+  "sr-Cyrl": "Шта знамо",
+  "en": "What we know",
+  "ru": "Что мы знаем"
+ },
+ "Stanje na brojilu (kWh)": {
+  "sr": "Stanje na brojilu (kWh)",
+  "sr-Cyrl": "Стање на бројилу (kWh)",
+  "en": "Meter reading (kWh)",
+  "ru": "Показания (кВт·ч)"
+ },
+ "Stanje ne može biti manje od poslednjeg prihvaćenog: %@ kWh.": {
+  "sr": "Stanje ne može biti manje od poslednjeg prihvaćenog: %@ kWh.",
+  "sr-Cyrl": "Стање не може бити мање од последњег прихваћеног: %@ kWh.",
+  "en": "The reading can't be lower than the last accepted one: %@ kWh.",
+  "ru": "Показания не могут быть меньше последних принятых: %@ кВт·ч."
+ },
+ "Stanje sa sajta od %@": {
+  "sr": "Stanje sa sajta od %@",
+  "sr-Cyrl": "Стање са сајта од %@",
+  "en": "From the website as of %@",
+  "ru": "Данные с сайта на %@"
+ },
+ "Statistika": {
+  "sr": "Statistika",
+  "sr-Cyrl": "Статистика",
+  "en": "Statistics",
+  "ru": "Статистика"
+ },
+ "Status pratiš na ekranu Danas i u obaveštenjima.": {
+  "sr": "Status pratiš na ekranu Danas i u obaveštenjima.",
+  "sr-Cyrl": "Статус пратиш на екрану Данас и у обавештењима.",
+  "en": "Follow the status on the Today screen and in notifications.",
+  "ru": "Статус видно на экране «Сегодня» и в уведомлениях."
+ },
+ "Status pratiš u obaveštenjima i u profilu.": {
+  "sr": "Status pratiš u obaveštenjima i u profilu.",
+  "sr-Cyrl": "Статус пратиш у обавештењима и у профилу.",
+  "en": "Follow the status in notifications and in your profile.",
+  "ru": "Статус — в уведомлениях и в профиле."
+ },
+ "Stigla je nova verzija": {
+  "sr": "Stigla je nova verzija",
+  "sr-Cyrl": "Стигла је нова верзија",
+  "en": "A new version is available",
+  "ru": "Вышла новая версия"
+ },
+ "Strelicama biraš dan, podaci su i u tabeli ispod.": {
+  "sr": "Strelicama biraš dan, podaci su i u tabeli ispod.",
+  "sr-Cyrl": "Стрелицама бираш дан, подаци су и у табели испод.",
+  "en": "Use the arrow keys to pick a day; the same data is in the table below.",
+  "ru": "Стрелками выбираешь день, те же данные есть в таблице ниже."
+ },
+ "Struja — uplata zgradi": {
+  "sr": "Struja — uplata zgradi",
+  "sr-Cyrl": "Струја — уплата згради",
+  "en": "Electricity — payable to the building",
+  "ru": "Электроэнергия — оплата зданию"
+ },
+ "Struja ide preko tvog brojila": {
+  "sr": "Struja ide preko tvog brojila",
+  "sr-Cyrl": "Струја иде преко твог бројила",
+  "en": "Electricity goes through your own meter",
+  "ru": "Электроэнергия идёт через твой счётчик"
+ },
+ "Struju ne prodajemo — merimo je.": {
+  "sr": "Struju ne prodajemo — merimo je.",
+  "sr-Cyrl": "Струју не продајемо — меримо је.",
+  "en": "We don't sell electricity — we measure it.",
+  "ru": "Электричество мы не продаём — мы его измеряем."
+ },
+ "Sve": {
+  "sr": "Sve",
+  "sr-Cyrl": "Све",
+  "en": "All",
+  "ru": "Все"
+ },
+ "Sve na sajtu": {
+  "sr": "Sve na sajtu",
+  "sr-Cyrl": "Све на сајту",
+  "en": "Everything on the website",
+  "ru": "Всё на сайте"
+ },
+ "Svetla": {
+  "sr": "Svetla",
+  "sr-Cyrl": "Светла",
+  "en": "Light",
+  "ru": "Светлая"
+ },
+ "Svrha plaćanja": {
+  "sr": "Svrha plaćanja",
+  "sr-Cyrl": "Сврха плаћања",
+  "en": "Payment purpose",
+  "ru": "Назначение платежа"
+ },
+ "Tačka je van mreže": {
+  "sr": "Tačka je van mreže",
+  "sr-Cyrl": "Тачка је ван мреже",
+  "en": "The charging point is offline",
+  "ru": "Точка не в сети"
+ },
+ "Tačka nije na mreži": {
+  "sr": "Tačka nije na mreži",
+  "sr-Cyrl": "Тачка није на мрежи",
+  "en": "The charging point is offline",
+  "ru": "Точка не в сети"
+ },
+ "Tačka punjenja": {
+  "sr": "Tačka punjenja",
+  "sr-Cyrl": "Тачка пуњења",
+  "en": "Charging point",
+  "ru": "Точка зарядки"
+ },
+ "Tačka se u aplikaciji ne vidi ili je van mreže.": {
+  "sr": "Tačka se u aplikaciji ne vidi ili je van mreže.",
+  "sr-Cyrl": "Тачка се у апликацији не види или је ван мреже.",
+  "en": "The charging point doesn't show up in the app or is offline.",
+  "ru": "Точка не видна в приложении или не в сети."
+ },
+ "Tamna": {
+  "sr": "Tamna",
+  "sr-Cyrl": "Тамна",
+  "en": "Dark",
+  "ru": "Тёмная"
+ },
+ "Tarifa": {
+  "sr": "Tarifa",
+  "sr-Cyrl": "Тарифа",
+  "en": "Tariff",
+  "ru": "Тариф"
+ },
+ "Telefon": {
+  "sr": "Telefon",
+  "sr-Cyrl": "Телефон",
+  "en": "Phone",
+  "ru": "Телефон"
+ },
+ "Tema": {
+  "sr": "Tema",
+  "sr-Cyrl": "Тема",
+  "en": "Theme",
+  "ru": "Тема"
+ },
+ "Ti dobijaš": {
+  "sr": "Ti dobijaš",
+  "sr-Cyrl": "Ти добијаш",
+  "en": "You get",
+  "ru": "Ты получаешь"
+ },
+ "Tim Evolako": {
+  "sr": "Tim Evolako",
+  "sr-Cyrl": "Тим Evolako",
+  "en": "The Evolako team",
+  "ru": "Команда Evolako"
+ },
+ "Trajanje": {
+  "sr": "Trajanje",
+  "sr-Cyrl": "Трајање",
+  "en": "Duration",
+  "ru": "Длительность"
+ },
+ "Treba ponoviti": {
+  "sr": "Treba ponoviti",
+  "sr-Cyrl": "Треба поновити",
+  "en": "Please resend",
+  "ru": "Нужно переснять"
+ },
+ "trofazno": {
+  "sr": "trofazno",
+  "sr-Cyrl": "трофазно",
+  "en": "three-phase",
+  "ru": "трёхфазно"
+ },
+ "Trošak": {
+  "sr": "Trošak",
+  "sr-Cyrl": "Трошак",
+  "en": "Cost",
+  "ru": "Стоимость"
+ },
+ "Tvoj kod": {
+  "sr": "Tvoj kod",
+  "sr-Cyrl": "Твој код",
+  "en": "Your code",
+  "ru": "Твой код"
+ },
+ "Tvoja tačka je na brojilu zgrade. Cene unosimo po računu za to brojilo koji nam pošalješ (dobijaš ga od upravnika) — dok ga ne pošalješ, iznosi su procena.": {
+  "sr": "Tvoja tačka je na brojilu zgrade. Cene unosimo po računu za to brojilo koji nam pošalješ (dobijaš ga od upravnika) — dok ga ne pošalješ, iznosi su procena.",
+  "sr-Cyrl": "Твоја тачка је на бројилу зграде. Цене уносимо по рачуну за то бројило који нам пошаљеш (добијаш га од управника) — док га не пошаљеш, износи су процена.",
+  "en": "Your charging point is on the building's meter. We enter the prices from that meter's bill, which you send us (you get it from the building manager) — until you do, the amounts are an estimate.",
+  "ru": "Твоя точка подключена к счётчику здания. Цены вносим по счёту за этот счётчик, который ты нам присылаешь (его даёт управник), — пока его нет, суммы оценочные."
+ },
+ "Tvoja tačka je na brojilu zgrade. Cene unosimo po računu za to brojilo koji nam pošalješ (dobijaš ga od upravnika) — po njima se računa iznos koji uplaćuješ zgradi.": {
+  "sr": "Tvoja tačka je na brojilu zgrade. Cene unosimo po računu za to brojilo koji nam pošalješ (dobijaš ga od upravnika) — po njima se računa iznos koji uplaćuješ zgradi.",
+  "sr-Cyrl": "Твоја тачка је на бројилу зграде. Цене уносимо по рачуну за то бројило који нам пошаљеш (добијаш га од управника) — по њима се рачуна износ који уплаћујеш згради.",
+  "en": "Your charging point is on the building's meter. We enter the prices from that meter's bill, which you send us (you get it from the building manager) — they set the amount you pay to the building.",
+  "ru": "Твоя точка подключена к счётчику здания. Цены вносим по счёту за этот счётчик, который ты нам присылаешь (его даёт управник), — по ним считается сумма, которую ты платишь зданию."
+ },
+ "Tvoja tačka punjenja, obračuni i pretplata na jednom mestu": {
+  "sr": "Tvoja tačka punjenja, obračuni i pretplata na jednom mestu",
+  "sr-Cyrl": "Твоја тачка пуњења, обрачуни и претплата на једном месту",
+  "en": "Your charging point, statements and subscription in one place",
+  "ru": "Твоя точка, отчёты и подписка в одном месте"
+ },
+ "Tvoje preporuke": {
+  "sr": "Tvoje preporuke",
+  "sr-Cyrl": "Твоје препоруке",
+  "en": "Your referrals",
+  "ru": "Твои рекомендации"
+ },
+ "Tvoje prijave": {
+  "sr": "Tvoje prijave",
+  "sr-Cyrl": "Твоје пријаве",
+  "en": "Your reports",
+  "ru": "Твои заявки"
+ },
+ "U aplikaciji Evolako: %@.": {
+  "sr": "U aplikaciji Evolako: %@.",
+  "sr-Cyrl": "У апликацији Evolako: %@.",
+  "en": "In the Evolako app: %@.",
+  "ru": "В приложении Evolako: %@."
+ },
+ "U demou ovo nije dostupno: Moj Evolako ovde radi bez servera i ništa ne šalje.": {
+  "sr": "U demou ovo nije dostupno: Moj Evolako ovde radi bez servera i ništa ne šalje.",
+  "sr-Cyrl": "У демоу ово није доступно: Мој Evolako овде ради без сервера и ништа не шаље.",
+  "en": "This isn't available in the demo: here My Evolako runs without a server and sends nothing.",
+  "ru": "В демо это недоступно: здесь Мой Evolako работает без сервера и ничего не отправляет."
+ },
+ "U demou se ništa ne briše — samo izlaziš iz demoa.": {
+  "sr": "U demou se ništa ne briše — samo izlaziš iz demoa.",
+  "sr-Cyrl": "У демоу се ништа не брише — само излазиш из демоа.",
+  "en": "Nothing is deleted in the demo — you just leave it.",
+  "ru": "В демо ничего не удаляется — ты просто выходишь из него."
+ },
+ "U Moj Evolako: %@.": {
+  "sr": "U Moj Evolako: %@.",
+  "sr-Cyrl": "У Мој Evolako: %@.",
+  "en": "In My Evolako: %@.",
+  "ru": "В Мой Evolako: %@."
+ },
+ "U noćnom oknu struja je jeftinija po nižoj tarifi EPS-a.": {
+  "sr": "U noćnom oknu struja je jeftinija po nižoj tarifi EPS-a.",
+  "sr-Cyrl": "У ноћном окну струја је јефтинија по нижој тарифи ЕПС-а.",
+  "en": "During the night window electricity is cheaper on the EPS lower tariff.",
+  "ru": "В ночном окне электроэнергия дешевле по низкому тарифу EPS."
+ },
+ "Učitavanje…": {
+  "sr": "Učitavanje…",
+  "sr-Cyrl": "Учитавање…",
+  "en": "Loading…",
+  "ru": "Загрузка…"
+ },
+ "Ugrađeno": {
+  "sr": "Ugrađeno",
+  "sr-Cyrl": "Уграђено",
+  "en": "Installed",
+  "ru": "Установлено"
+ },
+ "Ugrađeno: %@": {
+  "sr": "Ugrađeno: %@",
+  "sr-Cyrl": "Уграђено: %@",
+  "en": "Installed: %@",
+  "ru": "Установлено: %@"
+ },
+ "Ugradnja": {
+  "sr": "Ugradnja",
+  "sr-Cyrl": "Уградња",
+  "en": "Installation",
+  "ru": "Установка"
+ },
+ "Ugradnja je zakazana za %@.": {
+  "sr": "Ugradnja je zakazana za %@.",
+  "sr-Cyrl": "Уградња је заказана за %@.",
+  "en": "The installation is booked for %@.",
+  "ru": "Установка назначена на %@."
+ },
+ "Ugradnja zakazana": {
+  "sr": "Ugradnja zakazana",
+  "sr-Cyrl": "Уградња заказана",
+  "en": "Installation booked",
+  "ru": "Установка назначена"
+ },
+ "Ukloni": {
+  "sr": "Ukloni",
+  "sr-Cyrl": "Уклони",
+  "en": "Remove",
+  "ru": "Убрать"
+ },
+ "Ukupno": {
+  "sr": "Ukupno",
+  "sr-Cyrl": "Укупно",
+  "en": "Total",
+  "ru": "Всего"
+ },
+ "Ulica i broj, garaža": {
+  "sr": "Ulica i broj, garaža",
+  "sr-Cyrl": "Улица и број, гаража",
+  "en": "Street and number, garage",
+  "ru": "Улица и дом, гараж"
+ },
+ "Ulica i broj, grad, garaža": {
+  "sr": "Ulica i broj, grad, garaža",
+  "sr-Cyrl": "Улица и број, град, гаража",
+  "en": "Street and number, city, garage",
+  "ru": "Улица и дом, город, гараж"
+ },
+ "Unesi cene sa svog EPS računa": {
+  "sr": "Unesi cene sa svog EPS računa",
+  "sr-Cyrl": "Унеси цене са свог ЕПС рачуна",
+  "en": "Enter the prices from your EPS bill",
+  "ru": "Введи цены из своего счёта EPS"
+ },
+ "Upiši broj sa ekrana brojila.": {
+  "sr": "Upiši broj sa ekrana brojila.",
+  "sr-Cyrl": "Упиши број са екрана бројила.",
+  "en": "Enter the number shown on the meter display.",
+  "ru": "Впиши число с экрана счётчика."
+ },
+ "Upiši ime.": {
+  "sr": "Upiši ime.",
+  "sr-Cyrl": "Упиши име.",
+  "en": "Enter your name.",
+  "ru": "Впиши имя."
+ },
+ "Upiši novu adresu i izaberi datum.": {
+  "sr": "Upiši novu adresu i izaberi datum.",
+  "sr-Cyrl": "Упиши нову адресу и изабери датум.",
+  "en": "Enter the new address and pick a date.",
+  "ru": "Впиши новый адрес и выбери дату."
+ },
+ "Upiši stanje na brojilu.": {
+  "sr": "Upiši stanje na brojilu.",
+  "sr-Cyrl": "Упиши стање на бројилу.",
+  "en": "Enter the meter reading.",
+  "ru": "Впиши показания счётчика."
+ },
+ "Upiši telefon ili e-mail.": {
+  "sr": "Upiši telefon ili e-mail.",
+  "sr-Cyrl": "Упиши телефон или e-mail.",
+  "en": "Enter a phone number or an email.",
+  "ru": "Впиши телефон или почту."
+ },
+ "Upravljanje punjenjem": {
+  "sr": "Upravljanje punjenjem",
+  "sr-Cyrl": "Управљање пуњењем",
+  "en": "Charging control",
+  "ru": "Управление зарядкой"
+ },
+ "USD — dolar": {
+  "sr": "USD — dolar",
+  "sr-Cyrl": "USD — долар",
+  "en": "USD — US dollar",
+  "ru": "USD — доллар"
+ },
+ "Uslovi": {
+  "sr": "Uslovi",
+  "sr-Cyrl": "Услови",
+  "en": "Terms",
+  "ru": "Условия"
+ },
+ "Utičnica + merenje": {
+  "sr": "Utičnica + merenje",
+  "sr-Cyrl": "Утичница + мерење",
+  "en": "Socket + metering",
+  "ru": "Розетка + учёт"
+ },
+ "Utičnica, sopstveno brojilo": {
+  "sr": "Utičnica, sopstveno brojilo",
+  "sr-Cyrl": "Утичница, сопствено бројило",
+  "en": "Socket, your own meter",
+  "ru": "Розетка, свой счётчик"
+ },
+ "Valuta": {
+  "sr": "Valuta",
+  "sr-Cyrl": "Валута",
+  "en": "Currency",
+  "ru": "Валюта"
+ },
+ "Van mreže": {
+  "sr": "Van mreže",
+  "sr-Cyrl": "Ван мреже",
+  "en": "Offline",
+  "ru": "Не в сети"
+ },
+ "Već je klijent": {
+  "sr": "Već je klijent",
+  "sr-Cyrl": "Већ је клијент",
+  "en": "Already a customer",
+  "ru": "Уже клиент"
+ },
+ "Verzija": {
+  "sr": "Verzija",
+  "sr-Cyrl": "Верзија",
+  "en": "Version",
+  "ru": "Версия"
+ },
+ "Vidiš koliko kW auto prima dok se puni.": {
+  "sr": "Vidiš koliko kW auto prima dok se puni.",
+  "sr-Cyrl": "Видиш колико kW ауто прима док се пуни.",
+  "en": "You see how many kW the car takes while it charges.",
+  "ru": "Видно, сколько кВт получает машина во время зарядки."
+ },
+ "Viša tarifa": {
+  "sr": "Viša tarifa",
+  "sr-Cyrl": "Виша тарифа",
+  "en": "Higher tariff",
+  "ru": "Высокий тариф"
+ },
+ "Više ti nećemo slati savete i novosti. Obaveštenja o nalogu, zahtevima i obračunima stižu i dalje.": {
+  "sr": "Više ti nećemo slati savete i novosti. Obaveštenja o nalogu, zahtevima i obračunima stižu i dalje.",
+  "sr-Cyrl": "Више ти нећемо слати савете и новости. Обавештења о налогу, захтевима и обрачунима стижу и даље.",
+  "en": "We won't send you tips and news any more. Messages about your account, requests and statements still arrive.",
+  "ru": "Мы больше не будем присылать советы и новости. Письма об аккаунте, заявках и отчётах продолжат приходить."
+ },
+ "Vrati okvirne cene": {
+  "sr": "Vrati okvirne cene",
+  "sr-Cyrl": "Врати оквирне цене",
+  "en": "Go back to typical prices",
+  "ru": "Вернуть примерные цены"
+ },
+ "Wallbox 11 kW": {
+  "sr": "Wallbox 11 kW",
+  "sr-Cyrl": "Wallbox 11 kW",
+  "en": "Wallbox 11 kW",
+  "ru": "Wallbox 11 кВт"
+ },
+ "Wallbox u garaži zgrade": {
+  "sr": "Wallbox u garaži zgrade",
+  "sr-Cyrl": "Wallbox у гаражи зграде",
+  "en": "Wallbox in a building garage",
+  "ru": "Wallbox в гараже дома"
+ },
+ "Za „Drugo“ napiši ukratko šta se dešava.": {
+  "sr": "Za „Drugo“ napiši ukratko šta se dešava.",
+  "sr-Cyrl": "За „Друго“ напиши укратко шта се дешава.",
+  "en": "For “Other”, briefly describe what's happening.",
+  "ru": "Для «Другое» коротко опиши, что происходит."
+ },
+ "Za %@ još nije poslato": {
+  "sr": "Za %@ još nije poslato",
+  "sr-Cyrl": "За %@ још није послато",
+  "en": "Not sent for %@ yet",
+  "ru": "За %@ ещё не отправлены"
+ },
+ "Za koga": {
+  "sr": "Za koga",
+  "sr-Cyrl": "За кога",
+  "en": "Who it's for",
+  "ru": "Для кого"
+ },
+ "Za ovaj mesec nismo dobili očitavanje, pa je potrošnja procenjena po proseku. Razliku ispravljamo u sledećem obračunu.": {
+  "sr": "Za ovaj mesec nismo dobili očitavanje, pa je potrošnja procenjena po proseku. Razliku ispravljamo u sledećem obračunu.",
+  "sr-Cyrl": "За овај месец нисмо добили очитавање, па је потрошња процењена по просеку. Разлику исправљамо у следећем обрачуну.",
+  "en": "We didn't get a reading for this month, so usage is estimated from your average. We'll correct the difference in the next statement.",
+  "ru": "За этот месяц показаний не было, поэтому расход посчитан по среднему. Разницу поправим в следующем отчёте."
+ },
+ "Za svaku ugradnju po tvojoj preporuci — besplatni meseci i tebi i prijatelju.": {
+  "sr": "Za svaku ugradnju po tvojoj preporuci — besplatni meseci i tebi i prijatelju.",
+  "sr-Cyrl": "За сваку уградњу по твојој препоруци — бесплатни месеци и теби и пријатељу.",
+  "en": "For every installation you refer — free months for you and your friend.",
+  "ru": "За каждую установку по твоей рекомендации — бесплатные месяцы и тебе, и другу."
+ },
+ "Za uplatu": {
+  "sr": "Za uplatu",
+  "sr-Cyrl": "За уплату",
+  "en": "Amount due",
+  "ru": "К оплате"
+ },
+ "Zadrži pretplatu": {
+  "sr": "Zadrži pretplatu",
+  "sr-Cyrl": "Задржи претплату",
+  "en": "Keep subscription",
+  "ru": "Оставить подписку"
+ },
+ "Zahtev je poslat i procena je zakazana: tok prijave, paketi i kontakt.": {
+  "sr": "Zahtev je poslat i procena je zakazana: tok prijave, paketi i kontakt.",
+  "sr-Cyrl": "Захтев је послат и процена је заказана: ток пријаве, пакети и контакт.",
+  "en": "Request sent and assessment scheduled: its progress, the kits and how to reach us.",
+  "ru": "Заявка отправлена, оценка назначена: ход заявки, комплекты и контакты."
+ },
+ "Zahtev za procenu": {
+  "sr": "Zahtev za procenu",
+  "sr-Cyrl": "Захтев за процену",
+  "en": "Assessment request",
+  "ru": "Заявка на оценку"
+ },
+ "Zahtev za procenu je već poslat.": {
+  "sr": "Zahtev za procenu je već poslat.",
+  "sr-Cyrl": "Захтев за процену је већ послат.",
+  "en": "An assessment request has already been sent.",
+  "ru": "Заявка на оценку уже отправлена."
+ },
+ "Zakazano": {
+  "sr": "Zakazano",
+  "sr-Cyrl": "Заказано",
+  "en": "Scheduled",
+  "ru": "Назначено"
+ },
+ "Zašto noću": {
+  "sr": "Zašto noću",
+  "sr-Cyrl": "Зашто ноћу",
+  "en": "Why at night",
+  "ru": "Почему ночью"
+ },
+ "Zatraži pauzu": {
+  "sr": "Zatraži pauzu",
+  "sr-Cyrl": "Затражи паузу",
+  "en": "Request a pause",
+  "ru": "Запросить паузу"
+ },
+ "Zatraži procenu": {
+  "sr": "Zatraži procenu",
+  "sr-Cyrl": "Затражи процену",
+  "en": "Request an assessment",
+  "ru": "Запросить оценку"
+ },
+ "Zatvori": {
+  "sr": "Zatvori",
+  "sr-Cyrl": "Затвори",
+  "en": "Close",
+  "ru": "Закрыть"
+ },
+ "Željeni datum": {
+  "sr": "Željeni datum",
+  "sr-Cyrl": "Жељени датум",
+  "en": "Preferred date",
+  "ru": "Желаемая дата"
+ },
+ "Željeni datum: %@. Javićemo se do %@.": {
+  "sr": "Željeni datum: %@. Javićemo se do %@.",
+  "sr-Cyrl": "Жељени датум: %@. Јавићемо се до %@.",
+  "en": "Preferred date: %@. We'll get back to you by %@.",
+  "ru": "Желаемая дата: %@. Свяжемся до %@."
+ }
+}

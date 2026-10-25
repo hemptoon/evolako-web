@@ -1,0 +1,393 @@
+{
+  "source": "https://www.evolako.rs/cesta-pitanja",
+  "retrieved": "2026-10-07",
+  "note": "Snimak stranice Česta pitanja sa evolako.rs; EN/RU iz rečnika sajta. Generiše Scripts/make_faq.py.",
+  "categories": [
+    {
+      "id": "cena",
+      "title": {
+        "sr": "Cena i šta je uključeno",
+        "en": "Price & what's included",
+        "ru": "Цена и что входит"
+      },
+      "items": [
+        {
+          "question": {
+            "sr": "Koliko košta kućni punjač sa ugradnjom?",
+            "en": "How much does a home charger cost, installed?",
+            "ru": "Сколько стоит домашняя зарядка с монтажом?"
+          },
+          "answer": {
+            "sr": "Otvoreno, sa PDV-om i osnovnom ugradnjom pored razvodne table: START (pojačana utičnica + MID brojilo) — 39.000 RSD; WALLBOX 11 kW — od 94.000 RSD (sa MID brojilom 104.000); Wallbox Plus sa 4G vezom — od 115.000 RSD; Wallbox Premium — 155.000 RSD; samo ugradnja tvog punjača — od 24.000 RSD; paket ZGRADA za 2–6 mesta — od 96.000 RSD po mestu. U svaku cenu su uključeni FID zaštita, automat i šabloni papira. MID brojilo je u START i ZGRADA, uz WALLBOX po izboru (+10.000); kod samo ugradnje punjač je tvoj. Detaljni sastavi — na stranici Paketi i cene. Kabl do tvog mesta, kanalice, prolaz kroz zid ili nova tabla — posebno, po proceni, pre početka radova.",
+            "en": "Openly, with VAT and basic installation next to the distribution board: START (reinforced socket + MID meter) — 39.000 RSD; WALLBOX 11 kW — from 94.000 RSD (with a MID meter 104.000); Wallbox Plus with 4G — from 115.000 RSD; Wallbox Premium — 155.000 RSD; installation of your own charger — from 24.000 RSD; the ZGRADA kit for 2–6 spots — from 96.000 RSD per spot. RCD protection, a breaker and document templates are included in every price. A MID meter comes with START and ZGRADA and is optional with WALLBOX (+10.000); with installation only, the charger is yours. Full breakdowns are on the Kits & pricing page. Cable to your spot, trunking, a wall passage or a new board are priced separately, at the assessment, before any work starts.",
+            "ru": "Открыто, с НДС и базовым монтажом рядом со щитком: START (усиленная розетка + MID-счётчик) — 39.000 RSD; WALLBOX 11 кВт — от 94.000 RSD (с MID-счётчиком 104.000); Wallbox Plus с 4G — от 115.000 RSD; Wallbox Premium — 155.000 RSD; установка твоей зарядки — от 24.000 RSD; пакет ZGRADA на 2–6 мест — от 96.000 RSD за место. В каждую цену входят УЗО, автомат и шаблоны документов. MID-счётчик входит в START и ZGRADA, к WALLBOX — по выбору (+10.000); при «только установке» зарядка твоя. Подробный состав — на странице «Пакеты и цены». Кабель до твоего места, кабель-каналы, проход через стену или новый щиток — отдельно, на оценке, до начала работ."
+          }
+        },
+        {
+          "question": {
+            "sr": "Ima li skrivenih troškova?",
+            "en": "Are there any hidden costs?",
+            "ru": "Есть ли скрытые платежи?"
+          },
+          "answer": {
+            "sr": "Nema. Cena paketa pokriva opremu i osnovnu ugradnju pored razvodne table: do 2 m kabla, FID zaštitu i automat. Ako je tvoje mesto dalje od table, kabl do mesta, kanalice, prolaz kroz zid ili novu tablu računamo posebno — na proceni, pre početka radova, pa iznos znaš unapred, a ne tek na fakturi.",
+            "en": "No. The kit price covers the equipment and basic installation next to the distribution board: up to 2 m of cable, RCD protection and breaker. If your spot is further from the board, we price the cable to your spot, trunking, a wall passage or a new board separately — at the assessment, before any work starts, so you know the amount in advance, not from the invoice.",
+            "ru": "Нет. Цена пакета покрывает оборудование и базовый монтаж рядом со щитком: до 2 м кабеля, УЗО и автомат. Если твоё место дальше от щитка, кабель до места, кабель-каналы, проход через стену или новый щиток считаем отдельно — на оценке, до начала работ, так что сумму ты знаешь заранее, а не из счёта."
+          }
+        },
+        {
+          "question": {
+            "sr": "Zašto se procena plaća 3.500 RSD?",
+            "en": "Why does the survey cost 3.500 RSD?",
+            "ru": "Почему выезд инженера платный — 3.500 RSD?"
+          },
+          "answer": {
+            "sr": "Zato što je to pravi izlazak na teren: dolazimo u roku od 48h, proveravamo instalaciju, snagu i put kabla, i dobijaš tačnu ponudu, a ne procenu preko telefona. Celih 3.500 RSD se uračunava u cenu ugradnje, pa je procena praktično besplatna ako nastaviš.",
+            "en": "Because it's a real site visit: we come within 48h, check the wiring, the available power and the cable route, and you get an exact quote, not a guess over the phone. The full 3.500 RSD is credited toward the installation price, so the assessment is effectively free if you go ahead.",
+            "ru": "Потому что это настоящий выезд на место: приезжаем в течение 48 часов, проверяем проводку, мощность и трассу кабеля — и ты получаешь точное предложение, а не оценку по телефону. Все 3.500 RSD засчитываются в стоимость установки, так что оценка фактически бесплатна, если продолжаешь."
+          }
+        },
+        {
+          "question": {
+            "sr": "Koliko traje ugradnja i kada mogu da počnem da punim?",
+            "en": "How long does installation take, and when can I start charging?",
+            "ru": "Сколько занимает монтаж и когда можно заряжаться?"
+          },
+          "answer": {
+            "sr": "Sama ugradnja — jedan radni dan. Od prijave do prvog punjenja obično prođe manje od 7 dana ako u garaži ima struje; za iznajmljenu garažu računaj 1–2 nedelje (saglasnost vlasnika), za odluku skupštine 4–10 nedelja — vreme odlazi na proceduru, ne na radove.",
+            "en": "The installation itself takes one working day. From sign-up to your first charge it's usually under 7 days if there's power in the garage; for a rented garage allow 1–2 weeks (the owner's consent), for a building assembly decision 4–10 weeks — the time goes on procedure, not on the work.",
+            "ru": "Сам монтаж — один рабочий день. От заявки до первой зарядки обычно проходит меньше 7 дней, если в гараже есть электричество; для арендованного гаража закладывай 1–2 недели (согласие владельца), для решения собрания дома — 4–10 недель: время уходит на процедуру, а не на работы."
+          }
+        },
+        {
+          "question": {
+            "sr": "Čiji je punjač posle ugradnje?",
+            "en": "Who owns the charger after installation?",
+            "ru": "Чья зарядка после монтажа?"
+          },
+          "answer": {
+            "sr": "Tvoj. Komplet kupuješ jednom i on ostaje tvoj — pretplata je opciona usluga i možeš da je otkažeš bilo kad, a oprema i dalje radi.",
+            "en": "Yours. You buy the kit once and it stays yours — the subscription is an optional service you can cancel anytime, and the equipment keeps working.",
+            "ru": "Твоя. Комплект ты покупаешь один раз, и он остаётся твоим. Подписка — дополнительная услуга: её можно отменить в любой момент, а оборудование продолжит работать."
+          }
+        },
+        {
+          "question": {
+            "sr": "Koji punjač ugrađujete i radi li sa mojim autom?",
+            "en": "Which charger do you install — will it work with my car?",
+            "ru": "Какую зарядку вы ставите — подойдёт ли она моей машине?"
+          },
+          "answer": {
+            "sr": "Evropski sertifikovan smart wallbox 11 kW (OCPP) sa Type 2 priključkom — standardom koji koristi svaki električni auto i plug-in hibrid u Evropi. U START paketu punjač je kabl koji si dobio uz auto — mi obezbeđujemo pojačanu utičnicu, zaštitu i merenje da bi taj kabl radio bezbedno, svake noći.",
+            "en": "A European-certified 11 kW smart wallbox (OCPP) with a Type 2 connector — the standard used by every EV and plug-in hybrid in Europe. In the START kit, the charger is the cable that came with your car — we provide the reinforced socket, the protection and the metering so that cable can work safely, night after night.",
+            "ru": "Сертифицированный в Европе смарт-wallbox 11 кВт (OCPP) с разъёмом Type 2 — это стандарт для всех электромобилей и подключаемых гибридов в Европе. В комплекте START зарядкой служит кабель, который шёл с твоей машиной, — мы добавляем усиленную розетку, защиту и учёт, чтобы этот кабель работал безопасно каждую ночь."
+          }
+        },
+        {
+          "question": {
+            "sr": "Nemam trofaznu struju — mogu li ipak?",
+            "en": "I don't have three-phase power — can I still do it?",
+            "ru": "У меня нет трёхфазной сети — что-то можно сделать?"
+          },
+          "answer": {
+            "sr": "Možeš: START radi na običnoj monofaznoj instalaciji (2,3–3,7 kW), što je 100–180 km dometa preko noći — dovoljno za nedelju gradske vožnje. WALLBOX 11 kW traži trofazni priključak; da li ga imaš, proveravamo na proceni. I da ga nema — START radi i bez njega, wallbox može kasnije.",
+            "en": "You can: START works on a regular single-phase installation (2,3–3,7 kW), which gives 100–180 km of range overnight — enough for a week of city driving. WALLBOX 11 kW needs a three-phase connection; we check whether you have one during the assessment. Even if you don't, START works without it, and the wallbox can come later.",
+            "ru": "Можно: START работает от обычной однофазной сети (2,3–3,7 кВт) — это 100–180 км запаса хода за ночь, хватает на неделю городской езды. WALLBOX 11 кВт требует трёхфазного подключения; есть ли оно у тебя, проверим на оценке. Даже если нет — START работает и без него, а wallbox можно поставить позже."
+          }
+        }
+      ]
+    },
+    {
+      "id": "struja",
+      "title": {
+        "sr": "Struja i ko je plaća",
+        "en": "Electricity & who pays",
+        "ru": "Электричество и кто платит"
+      },
+      "items": [
+        {
+          "question": {
+            "sr": "Ko plaća struju za punjenje?",
+            "en": "Who pays for the charging electricity?",
+            "ru": "Кто платит за электричество для зарядки?"
+          },
+          "answer": {
+            "sr": "Ti — i tačno onoliko koliko si potrošio. Sertifikovano MID brojilo na tvojoj liniji meri svaki kilovat-sat, a obračun se pravi po ceni struje iz realnog računa EPS-a, bez ikakve marže. Zgrada i komšije ne plaćaju ništa — i to se vidi na papiru, svakog meseca.",
+            "en": "You do — and exactly what you used. The certified MID meter on your line counts every kilowatt-hour, and the statement is made at the electricity price from the actual EPS bill, with no markup. The building and the neighbours pay nothing — and that's visible on paper, every month.",
+            "ru": "Ты — и ровно за то, что израсходовал. Сертифицированный счётчик MID на твоей линии фиксирует каждый киловатт-час, а расчёт делается по цене электричества из реального счёта EPS, без всякой наценки. Дом и соседи не платят ничего — и это видно в документе каждый месяц."
+          }
+        },
+        {
+          "question": {
+            "sr": "Da li Evolako prodaje struju? Treba li vam licenca?",
+            "en": "Does Evolako sell electricity? Don't you need a licence?",
+            "ru": "Evolako продаёт электричество? Нужна ли вам лицензия?"
+          },
+          "answer": {
+            "sr": "Ne prodajemo struju i zato licenca nije potrebna. Struja ide preko postojećeg brojila (tvog, vlasnikovog ili zgradinog), a naše MID brojilo samo meri potrošnju punjača. To je prefakturisanje troškova — priznata praksa nadoknade po stvarnoj potrošnji, bez marže. Mi naplaćujemo opremu, ugradnju i uslugu — ne kilovate.",
+            "en": "We don't sell electricity, so no licence is needed. The power flows through the existing meter (yours, the owner's or the building's), and our MID meter only measures what the charger uses. That's cost pass-through — a recognised practice of reimbursement at actual consumption, with no markup. We charge for equipment, installation and service — not for kilowatts.",
+            "ru": "Мы не продаём электричество, поэтому лицензия не нужна. Ток идёт через существующий счётчик (твой, владельца или дома), а наш счётчик MID только измеряет расход зарядки. Это перевыставление расходов — признанная практика возмещения по фактическому потреблению, без наценки. Мы берём деньги за оборудование, монтаж и сервис, а не за киловатты."
+          }
+        },
+        {
+          "question": {
+            "sr": "Kako vlasnik garaže koju iznajmljujem zna da neće plaćati moje punjenje?",
+            "en": "How does my landlord know they won't end up paying for my charging?",
+            "ru": "Откуда владельцу гаража знать, что он не будет платить за мою зарядку?"
+          },
+          "answer": {
+            "sr": "Zato što mu svakog meseca prosleđuješ izveštaj-dokument: potrošnja punjača po MID brojilu i tačan iznos nadoknade, po ceni iz njegovog računa EPS-a. Nadoknada ide uz kiriju — bez procena „od oka“ i bez rasprava. Zato vlasnici na ovo lako pristaju.",
+            "en": "Because every month you forward them a report document: the charger's consumption on the MID meter and the exact reimbursement, at the price on their EPS bill. The reimbursement goes with the rent — no guesswork and no arguments. That's why owners agree to this easily.",
+            "ru": "Потому что каждый месяц ты пересылаешь ему отчёт-документ: потребление зарядки по MID-счётчику и точную сумму компенсации по цене из его счёта EPS. Компенсация идёт вместе с арендой — без оценок «на глаз» и без споров. Поэтому владельцы легко на это соглашаются."
+          }
+        },
+        {
+          "question": {
+            "sr": "Koliko realno košta punjenje kod kuće?",
+            "en": "What does home charging really cost?",
+            "ru": "Сколько на самом деле стоит зарядка дома?"
+          },
+          "answer": {
+            "sr": "Noćna (niža) tarifa sa svim naknadama ispadne oko 4–7 RSD/kWh — naspram 70–91 RSD/kWh na javnim punjačima. Za 1.500 km mesečno (potrošnja 16 kWh/100 km) to je oko 240 kWh: kod kuće 1.000–1.700 RSD, na javnim punjačima 17.000–22.000 RSD. Zato se komplet isplati za 3–9 meseci — svoju cifru izračunaj na kalkulatoru.",
+            "en": "The night (lower) tariff with all fees works out to about 4–7 RSD/kWh — versus 70–91 RSD/kWh at public chargers. For 1.500 km a month (at 16 kWh/100 km) that's about 240 kWh: 1.000–1.700 RSD at home, 17.000–22.000 RSD at public chargers. That's why the kit pays for itself in 3–9 months — run your own numbers on the calculator.",
+            "ru": "Ночной (льготный) тариф со всеми надбавками выходит около 4–7 RSD/кВт·ч — против 70–91 RSD/кВт·ч на публичных станциях. При 1.500 км в месяц (расход 16 кВт·ч/100 км) это около 240 кВт·ч: дома 1.000–1.700 RSD, на публичных зарядках 17.000–22.000 RSD. Поэтому комплект окупается за 3–9 месяцев — свою цифру посчитайте на калькуляторе."
+          }
+        },
+        {
+          "question": {
+            "sr": "Da li moje punjenje opterećuje struju zgrade ili komšija?",
+            "en": "Does my charging strain the building's or my neighbours' power?",
+            "ru": "Моя зарядка нагружает сеть дома или соседей?"
+          },
+          "answer": {
+            "sr": "Ne. Linija ide sa tvog brojila (ili brojila vlasnika garaže, uz njegov obračun) — ne sa zajedničkog. A wallbox uz to podešavamo prema snazi tvog priključka, pa ne izbija osigurače ni tebi, ni bilo kome drugom.",
+            "en": "No. The line runs from your meter (or from the meter of the garage owner, with the statement made out to them) — not from the shared one. And on top of that we set the wallbox to the power of your connection, so it does not trip the breakers for you or for anyone else.",
+            "ru": "Нет. Линия идёт от твоего счётчика (или счётчика владельца гаража, с его расчётом), а не от общедомового. К тому же wallbox мы настраиваем под мощность твоего подключения, так что автоматы не выбивает ни у тебя, ни у кого-то ещё."
+          }
+        }
+      ]
+    },
+    {
+      "id": "skupstina",
+      "title": {
+        "sr": "Skupština i papiri",
+        "en": "Building assembly & paperwork",
+        "ru": "Собрание и документы"
+      },
+      "items": [
+        {
+          "question": {
+            "sr": "Da li je ovo uopšte legalno?",
+            "en": "Is this even legal?",
+            "ru": "Это вообще легально?"
+          },
+          "answer": {
+            "sr": "Jeste. Punjenje u privatnoj garaži ili na tvom parking mestu nije javna usluga punjenja — čl. 210v Zakona o energetici uređuje samo punjače na javnim mestima. Nadoknada struje po brojilu je standardno prefakturisanje troškova.",
+            "en": "Yes. Charging in a private garage or on your own parking spot isn't a public charging service — Article 210v of the Energy Law covers only chargers in public places. Reimbursing electricity by the meter is standard cost pass-through.",
+            "ru": "Да. Зарядка в частном гараже или на твоём парковочном месте — не публичная услуга зарядки: ст. 210v Закона об энергетике регулирует только зарядки в общественных местах. Возмещение электричества по счётчику — обычное перевыставление расходов."
+          }
+        },
+        {
+          "question": {
+            "sr": "Treba li mi saglasnost skupštine?",
+            "en": "Do I need the building assembly's approval?",
+            "ru": "Нужно ли согласие собрания дома?"
+          },
+          "answer": {
+            "sr": "Zavisi od situacije. Sopstvena garaža sa svojim brojilom — najjednostavniji slučaj. Parking mesto ili garaža u zgradi gde linija prolazi kroz zajedničke delove — treba odluka skupštine, po pravilu prostom većinom. Iznajmljena garaža — dovoljna je saglasnost vlasnika (šablon dajemo mi). U svakom slučaju dobijaš šablon i čeklistu; papire popunjavaš i predaješ ti (ili upravnik).",
+            "en": "It depends. Your own garage with its own meter — the simplest case. A parking spot or garage in a building where the line runs through common areas — you need a decision of the building assembly, usually by a simple majority. A rented garage — the owner's consent is enough (we give you the template). In any case you get a template and a checklist; you (or the building manager) fill in and submit the papers.",
+            "ru": "Зависит от ситуации. Свой гараж со своим счётчиком — самый простой случай. Парковочное место или гараж в доме, где линия проходит через общие части, — нужно решение собрания, как правило простым большинством. Арендованный гараж — достаточно согласия владельца (шаблон даём мы). В любом случае ты получаешь шаблон и чек-лист; документы заполняешь и подаёшь ты (или управник)."
+          }
+        },
+        {
+          "question": {
+            "sr": "Šta ako skupština kaže „ne“?",
+            "en": "What if the assembly says no?",
+            "ru": "А если собрание скажет «нет»?"
+          },
+          "answer": {
+            "sr": "Skupštine kažu „ne“ kad niko ne odgovori na dva pitanja: ko plaća struju i ko odgovara ako nešto krene naopako. Zato šablon odluke odgovara na njih unapred: sertifikovano MID merenje, tehnički opis i jasna pravila ko plaća. Propisi o bezbednosti garaža od požara iz 2024. ne zabranjuju punjenje i predviđaju da garaža može imati prostor za punjenje električnih vozila. Kad su odgovori spremni unapred — razgovor je drugačiji.",
+            "en": "Assemblies say “no” when nobody answers two questions: who pays for the electricity and who is responsible if something goes wrong. That's why the draft decision template answers them up front: certified MID metering, a technical description and clear rules on who pays. The 2024 garage fire-safety regulations don't prohibit charging and provide that a garage may have an EV charging area. When the answers are ready up front, the conversation is different.",
+            "ru": "Собрания говорят «нет», когда никто не отвечает на два вопроса: кто платит за электричество и кто отвечает, если что-то пойдёт не так. Поэтому шаблон решения отвечает на них заранее: сертифицированный MID-учёт, техническое описание и понятные правила, кто платит. Правила пожарной безопасности гаражей 2024 года не запрещают зарядку и предусматривают, что в гараже может быть зона для зарядки электромобилей. Когда ответы готовы заранее, разговор идёт иначе."
+          }
+        },
+        {
+          "question": {
+            "sr": "Koje šablone i dokumente dobijam?",
+            "en": "Which templates and documents do I get?",
+            "ru": "Какие шаблоны и документы я получаю?"
+          },
+          "answer": {
+            "sr": "Od nas: tehnički opis ugradnje (šta se ugrađuje, trasa, snaga i merenje), ugovor o ugradnji i obračunu i, posle ugradnje, dokumentaciju o izvedenim radovima. Šabloni koje popunjavaš ti: za skupštinu — predlog odluke i tačka dnevnog reda; za vlasnika iznajmljene garaže — saglasnost. Predlog odluke pre sednice proveri sa upravnikom.",
+            "en": "From us: a technical description of the installation (what gets installed, cable route, power and metering), the installation and billing contract and, after installation, the as-built documentation. Templates you fill in: for the building assembly — a draft decision and an agenda item; for the owner of a rented garage — consent. Check the draft decision with the building manager before the meeting.",
+            "ru": "От нас: техническое описание установки (что устанавливается, трасса, мощность и учёт), договор на установку и расчёт и, после установки, исполнительная документация. Шаблоны, которые заполняешь ты: для собрания — проект решения и пункт повестки; для владельца арендованного гаража — согласие. Проект решения перед собранием проверь с управником."
+          }
+        },
+        {
+          "question": {
+            "sr": "Ko ide na sednicu skupštine?",
+            "en": "Who goes to the assembly meeting?",
+            "ru": "Кто идёт на собрание?"
+          },
+          "answer": {
+            "sr": "Ti, kao vlasnik mesta — ili upravnik, ako on vodi tačku. Mi na sednice ne idemo, ali u šablonu su odgovori na pitanja koja se uvek postave: ko plaća struju, kako se meri i ko odgovara za opremu.",
+            "en": "You, as the owner of the spot — or the building manager, if they lead that agenda item. We don't attend the meetings, but the template answers the questions that always come up: who pays for the electricity, how it's metered and who is responsible for the equipment.",
+            "ru": "Ты, как владелец места, — или управник, если он ведёт этот пункт. Мы на собрания не ходим, но в шаблоне есть ответы на вопросы, которые задают всегда: кто платит за электричество, как ведётся учёт и кто отвечает за оборудование."
+          }
+        },
+        {
+          "question": {
+            "sr": "Koliko traje ceo proces sa zgradom?",
+            "en": "How long does the whole building process take?",
+            "ru": "Сколько занимает весь процесс с домом?"
+          },
+          "answer": {
+            "sr": "Realno 4–10 nedelja: zakazivanje sednice, glasanje, papiri — pa ugradnja za jedan dan. Proceduru ne možemo da preskočimo niti da je vodimo umesto tebe, ali uz šablone i čeklistu znaš svaki korak unapred.",
+            "en": "Realistically 4–10 weeks: scheduling the meeting, the vote, the paperwork — then installation in one day. We can't skip the procedure or run it for you, but with the templates and checklist you know every step in advance.",
+            "ru": "Реально 4–10 недель: назначение собрания, голосование, документы — потом установка за один день. Пропустить процедуру или вести её вместо тебя мы не можем, но с шаблонами и чек-листом ты заранее знаешь каждый шаг."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bezbednost",
+      "title": {
+        "sr": "Bezbednost",
+        "en": "Safety",
+        "ru": "Безопасность"
+      },
+      "items": [
+        {
+          "question": {
+            "sr": "Da li je bezbedno puniti auto u garaži zgrade?",
+            "en": "Is it safe to charge a car in the building garage?",
+            "ru": "Безопасно ли заряжать машину в паркинге дома?"
+          },
+          "answer": {
+            "sr": "Jeste — kad je instalacija namenska. Punjač dobija zasebnu liniju, FID zaštitu (tip A + DC) i sertifikovanu opremu, a ugradnja se radi prema uputstvu proizvođača i važećim standardima. Propisi o bezbednosti garaža od požara iz 2024. predviđaju da garaža može imati prostor za punjenje električnih vozila.",
+            "en": "Yes — when the wiring is purpose-built. The charger gets a separate line, RCD protection (Type A + DC) and certified equipment, and the installation follows the manufacturer's instructions and current standards. The 2024 garage fire-safety rules provide that a garage may include an area for charging electric vehicles.",
+            "ru": "Да — когда линия сделана специально под зарядку. Зарядка получает отдельную линию, УЗО (тип A + DC) и сертифицированное оборудование, а монтаж выполняется по инструкции производителя и действующим стандартам. Правила пожарной безопасности гаражей 2024 года предусматривают, что в гараже может быть место для зарядки электромобилей."
+          }
+        },
+        {
+          "question": {
+            "sr": "Zašto ne mogu prosto preko produžnog kabla iz stana?",
+            "en": "Why can't I just run an extension cord from my flat?",
+            "ru": "Почему нельзя просто кинуть удлинитель из квартиры?"
+          },
+          "answer": {
+            "sr": "Zato što obična šuko utičnica nije pravljena za sate neprekidnog opterećenja: pri dužem punjenju na 16 A kontakti i kabl se greju, a u staroj ili loše izvedenoj instalaciji temperatura ume da poraste do opasnog nivoa. Tu su i pad napona, kabl preko stepeništa i struja koja se ne meri — pa svađa sa komšijama. Namenska linija sve to rešava jednom zauvek.",
+            "en": "Because a regular household socket isn't built for hours of continuous load: during long charging at 16 A the contacts and the cable heat up, and in old or badly done wiring the temperature can reach a dangerous level. Add voltage drop, a cable across the stairwell and electricity nobody meters — and a fight with the neighbours. A dedicated line settles all of that once and for all.",
+            "ru": "Потому что обычная розетка не рассчитана на часы непрерывной нагрузки: при долгой зарядке на 16 А контакты и кабель греются, а в старой или неудачно сделанной проводке температура может дойти до опасного уровня. Добавьте падение напряжения, кабель через лестницу и электричество, которое никто не учитывает, — и ссору с соседями. Отдельная линия решает всё это раз и навсегда."
+          }
+        },
+        {
+          "question": {
+            "sr": "Ko izvodi radove?",
+            "en": "Who does the work?",
+            "ru": "Кто выполняет работы?"
+          },
+          "answer": {
+            "sr": "Licencirani električari sa iskustvom u EV instalacijama, po našem standardizovanom kompletu i čeklisti. Oprema je evropski sertifikovana, sa servisom u EU.",
+            "en": "Licensed electricians with EV installation experience, following our standardised kit and checklist. The equipment is EU-certified, with service support in the EU.",
+            "ru": "Лицензированные электрики с опытом EV-инсталляций, по нашему стандартному комплекту и чек-листу. Оборудование сертифицировано в Европе, с сервисом в ЕС."
+          }
+        },
+        {
+          "question": {
+            "sr": "Šta pokriva garancija?",
+            "en": "What does the warranty cover?",
+            "ru": "Что покрывает гарантия?"
+          },
+          "answer": {
+            "sr": "Na opremu dobijaš 2 godine garancije — a uz pretplatu garancija traje koliko i pretplata. Uz to, pretplatnici imaju prioritetni izlazak servisa u roku od 48h.",
+            "en": "The equipment comes with a 2-year warranty — and with the subscription, the warranty lasts as long as you subscribe. Subscribers also get a priority service visit within 48 hours.",
+            "ru": "На оборудование действует гарантия 2 года, а с подпиской она длится, пока действует подписка. Кроме того, у подписчиков приоритетный выезд сервиса в течение 48 часов."
+          }
+        },
+        {
+          "question": {
+            "sr": "Šta je sa punjenjem zimi?",
+            "en": "What about charging in winter?",
+            "ru": "Как зарядка работает зимой?"
+          },
+          "answer": {
+            "sr": "Zimi deo energije ide na grejanje baterije, pa je punjenje na maloj snazi nešto sporije — zato brzine prikazujemo pošteno, za realne uslove. WALLBOX 11 kW zimske gubitke svodi na minimum, a pretplatnicima pred sezonu radimo zimsku proveru instalacije.",
+            "en": "In winter, some of the energy goes into warming the battery, so low-power charging is a bit slower — that's why we quote speeds honestly, for real conditions. The 11 kW WALLBOX keeps winter losses to a minimum, and before the season we do a winter check-up for subscribers.",
+            "ru": "Зимой часть энергии уходит на подогрев батареи, поэтому зарядка на малой мощности идёт чуть медленнее — потому мы и указываем скорости честно, для реальных условий. WALLBOX 11 кВт сводит зимние потери к минимуму, а подписчикам перед сезоном мы делаем зимнюю проверку линии."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pretplata",
+      "title": {
+        "sr": "Pretplata",
+        "en": "Subscription",
+        "ru": "Подписка"
+      },
+      "items": [
+        {
+          "question": {
+            "sr": "Šta tačno dobijam uz pretplatu od 990 RSD mesečno?",
+            "en": "What exactly do I get for 990 RSD a month?",
+            "ru": "Что именно я получаю за 990 RSD в месяц?"
+          },
+          "answer": {
+            "sr": "Šest konkretnih stvari: mesečni obračun sa izveštajem-dokumentom (za vlasnika garaže ili zgradu) · nadzor kompleta sa alarmima — za kvar često znamo pre tebe · prioritetni izlazak servisa za 48h · zimsku proveru instalacije · produženu garanciju na opremu dok pretplata traje · prenos kompleta pri selidbi ili primopredaju novom korisniku u roku od 72h.",
+            "en": "Six concrete things: a monthly statement with a written report (for the garage owner or the building) · kit monitoring with alerts — we often know about a fault before you do · a priority service visit within 48 hours · a winter check-up · an extended equipment warranty while you subscribe · kit transfer if you move, or handover to a new user, within 72 hours.",
+            "ru": "Шесть конкретных вещей: ежемесячный расчёт с отчётом-документом (для владельца гаража или дома) · мониторинг комплекта с оповещениями — о сбое мы часто узнаём раньше тебя · приоритетный выезд сервиса за 48 часов · зимнюю проверку инсталляции · продлённую гарантию на оборудование, пока действует подписка · перенос комплекта при переезде или передачу новому пользователю за 72 часа."
+          }
+        },
+        {
+          "question": {
+            "sr": "Da li je pretplata obavezna? Šta ako je otkažem?",
+            "en": "Is the subscription mandatory? What if I cancel?",
+            "ru": "Подписка обязательна? Что будет, если её отменить?"
+          },
+          "answer": {
+            "sr": "Nije obavezna i nema ugovorne obaveze — otkazuješ bilo kog meseca. Komplet radi i bez pretplate: puniš normalno, a brojilo očitavaš sam i sam praviš obračun. Bez pretplate nema automatskog izveštaja, garancija ističe posle standardne 2 godine, a servis ide po redovnim terminima umesto za 48h.",
+            "en": "It's not mandatory and there's no contract — you can cancel any month. The kit works without it: you charge as normal, read the meter yourself and do your own statement. Without the subscription there's no automatic report, the warranty ends after the standard 2 years, and service runs on regular scheduling instead of 48 hours.",
+            "ru": "Не обязательна, и договора на срок нет — отменить можно в любой месяц. Комплект работает и без подписки: заряжаетесь как обычно, показания снимаете сами и сами делаете расчёт. Без подписки не будет автоматического отчёта, гарантия закончится после стандартных 2 лет, а сервис пойдёт в обычном порядке, а не за 48 часов."
+          }
+        },
+        {
+          "question": {
+            "sr": "Kako funkcioniše „prva 2 meseca 0 RSD“?",
+            "en": "How does \"first 2 months free\" work?",
+            "ru": "Как работают «первые 2 месяца — 0 RSD»?"
+          },
+          "answer": {
+            "sr": "Od dana ugradnje pretplata je 2 meseca besplatna — obračun, izveštaji i nadzor rade punom snagom da vidiš kako izgleda. Plaćaš tek od trećeg meseca; ako otkažeš ranije, ne duguješ ništa.",
+            "en": "From installation day, the subscription is free for 2 months — billing, reports and monitoring run at full strength so you can see what it's like. You start paying from month three; cancel earlier and you owe nothing.",
+            "ru": "Со дня монтажа подписка 2 месяца бесплатна — расчёты, отчёты и мониторинг работают в полную силу, чтобы ты увидел, как это устроено. Платить начинаешь с третьего месяца; если отменишь раньше, ничего не должен."
+          }
+        },
+        {
+          "question": {
+            "sr": "Mogu li da pauziram pretplatu?",
+            "en": "Can I pause the subscription?",
+            "ru": "Можно ли поставить подписку на паузу?"
+          },
+          "answer": {
+            "sr": "Možeš, do 3 meseca godišnje — zgodno za duži put ili period između dva auta. U pauzi ne plaćaš ništa, a komplet normalno radi; po povratku se sve nastavlja gde je stalo.",
+            "en": "Yes, for up to 3 months a year — handy for a long trip or the gap between two cars. During the pause you pay nothing and the kit works as normal; when you're back, everything picks up where it left off.",
+            "ru": "Можно, до 3 месяцев в году — удобно на время долгой поездки или между двумя машинами. На паузе ты не платишь ничего, а комплект работает как обычно; когда вернёшься, всё продолжится с того же места."
+          }
+        },
+        {
+          "question": {
+            "sr": "Selim se ili menjam auto — šta onda?",
+            "en": "I'm moving, or changing cars — what then?",
+            "ru": "Переезжаю или меняю машину — что тогда?"
+          },
+          "answer": {
+            "sr": "Auto: oprema radi sa svakim EV i plug-in hibridom (Type 2 standard) — menjaš auto, ne komplet. Selidba: uz pretplatu komplet prenosimo na novu adresu, ili ga predajemo sledećem korisniku tvoje garaže — primopredaja i prevezivanje obračuna u roku od 72h.",
+            "en": "The car: the equipment works with every EV and plug-in hybrid (the Type 2 standard) — you change the car, not the kit. Moving: with the subscription we move the kit to your new address, or hand it over to the next user of your garage — handover and billing switch within 72 hours.",
+            "ru": "Машина: оборудование работает с любым электромобилем и подключаемым гибридом (стандарт Type 2) — меняешь машину, а не комплект. Переезд: с подпиской перенесём комплект на новый адрес или передадим следующему пользователю твоего гаража — передача и переоформление расчётов за 72 часа."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Evolako",
+  "short_name": "Evolako",
+  "description": "Moj Evolako — tačka punjenja, obračuni sa IPS QR kodom i pretplata.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "sr-Latn",
+  "dir": "ltr",
+  "background_color": "#F1F4F9",
+  "theme_color": "#F1F4F9",
+  "categories": ["utilities", "finance"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

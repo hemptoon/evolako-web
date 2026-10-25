@@ -1,0 +1,10 @@
+*.log
+.DS_Store
+.vite/
+_transfer/
+dist/
+node_modules/
+playwright-report/
+test-results/
+tests/e2e/.out/
+_patches/

@@ -1,0 +1,40 @@
+{
+  "name": "evolako-web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Moj Evolako — web version of the Evolako customer account (app.evolako.rs)",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "node tests/e2e/serve.mjs dist 4173",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test --project=e2e",
+    "shots": "playwright test --project=shots",
+    "check": "npm run strings:check && npm run typecheck && npm run test && npm run build && npm run test:e2e",
+    "assets": "python3 scripts/make_fonts.py && python3 scripts/make_images.py && node scripts/make_icons.mjs",
+    "strings": "node scripts/make_strings.mjs",
+    "strings:check": "node scripts/make_strings.mjs --check"
+  },
+  "dependencies": {
+    "@preact/signals": "2.11.2",
+    "preact": "10.29.8"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.0",
+    "@playwright/test": "1.56.1",
+    "@preact/preset-vite": "2.10.6",
+    "@types/node": "22.20.4",
+    "jsqr": "1.4.0",
+    "lucide-static": "1.48.0",
+    "pngjs": "7.0.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.6",
+    "vitest": "4.1.11"
+  }
+}

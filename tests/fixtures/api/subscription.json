@@ -1,0 +1,21 @@
+{
+  "state": {
+    "type": "trial",
+    "until": "2026-10-20T00:00:00+02:00"
+  },
+  "endsOn": null,
+  "history": [
+    {
+      "month": {
+        "year": 2026,
+        "month": 9
+      },
+      "state": {
+        "type": "trial",
+        "until": "2026-10-20T00:00:00+02:00"
+      },
+      "amountRSD": 0
+    }
+  ],
+  "startedAt": "2026-08-20T00:00:00+02:00"
+}

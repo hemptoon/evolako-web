@@ -1,0 +1,62 @@
+{
+  "readings": [
+    {
+      "id": 4,
+      "month": {
+        "year": 2026,
+        "month": 10
+      },
+      "readAt": "2026-10-11T11:11:57+02:00",
+      "source": "app_photo",
+      "status": "submitted",
+      "valueKWh": 2431.5,
+      "photoPath": "aaaaaaaa-0000-4000-8000-000000000002/r3.jpg",
+      "chargePointID": "56afc8f2-b24e-4866-bf8f-24c4ce852177"
+    },
+    {
+      "id": 3,
+      "month": {
+        "year": 2026,
+        "month": 10
+      },
+      "readAt": "2026-10-10T12:11:57+02:00",
+      "source": "app_photo",
+      "status": "accepted",
+      "valueKWh": 18.412,
+      "photoPath": "aaaaaaaa-0000-4000-8000-000000000002/r2.jpg",
+      "chargePointID": "56afc8f2-b24e-4866-bf8f-24c4ce852177"
+    },
+    {
+      "id": 2,
+      "note": "Na fotografiji se ne vidi ceo ekran brojila.",
+      "month": {
+        "year": 2026,
+        "month": 10
+      },
+      "readAt": "2026-10-09T12:11:57+02:00",
+      "source": "app_photo",
+      "status": "rejected",
+      "valueKWh": 18.4,
+      "photoPath": "aaaaaaaa-0000-4000-8000-000000000002/r1.jpg",
+      "chargePointID": "56afc8f2-b24e-4866-bf8f-24c4ce852177"
+    },
+    {
+      "id": 1,
+      "month": {
+        "year": 2026,
+        "month": 10
+      },
+      "readAt": "2026-10-08T12:11:57+02:00",
+      "source": "technician",
+      "status": "accepted",
+      "valueKWh": 0.0,
+      "chargePointID": "56afc8f2-b24e-4866-bf8f-24c4ce852177"
+    }
+  ],
+  "required": true,
+  "lastAccepted": {
+    "readAt": "2026-10-10T12:11:57+02:00",
+    "valueKWh": 18.412
+  },
+  "chargePointID": "56afc8f2-b24e-4866-bf8f-24c4ce852177"
+}

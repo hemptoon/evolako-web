@@ -1,0 +1,9 @@
+{
+  "window": {
+    "endHour": 7,
+    "endMinute": 0,
+    "startHour": 23,
+    "startMinute": 0
+  },
+  "isEnabled": true
+}

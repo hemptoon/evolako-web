@@ -1,0 +1,13 @@
+[
+  {
+    "id": "d1341c7e-9ec5-4148-a05b-2b3cbe342c1e",
+    "status": "scheduled",
+    "comment": "Auto je priključen, punjenje ne počinje",
+    "category": "notCharging",
+    "hasPhoto": false,
+    "createdAt": "2026-09-25T06:29:30+02:00",
+    "updatedAt": "2026-09-25T06:29:30+02:00",
+    "scheduledFor": "2026-09-23T10:00:00+02:00",
+    "chargePointID": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5"
+  }
+]

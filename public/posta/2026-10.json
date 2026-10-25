@@ -1,0 +1,218 @@
+{
+  "slug": "2026-10",
+  "issue": 1,
+  "date": "2026-10-14",
+  "sr": {
+    "subject": "Pred zimu: noćna tarifa, utičnica i zimska provera",
+    "preheader": "Tri saveta za punjenje kod kuće kad zahladni, šta je novo na evolako.rs i kako komšija dobija 4 meseca pretplate za 0 RSD.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Ovo je prvo Evolako pismo. Jednom mesečno ti šaljemo kratke savete za punjenje kod kuće i Evolako novosti."
+      },
+      {
+        "type": "h2",
+        "text": "Tri saveta pred zimu"
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "title": "Puni noću, po nižoj tarifi",
+            "text": "Od 1. oktobra struja nije poskupela: važi cenovnik iz 2025. Noćni kWh u plavoj zoni sa svim naknadama i PDV-om košta oko 6 RSD, pa je punjenje noću i dalje najisplativije."
+          },
+          {
+            "title": "Puni na posebnom strujnom kolu",
+            "text": "Ako puniš na šuko utičnici, ona treba da bude na posebnom strujnom kolu. Kad zimi na istom kolu rade grejalica ili bojler, ne puni na njoj. Posle sat-dva punjenja dodirni utikač: ako je topao, smanji struju punjenja u autu ili puni na drugom mestu."
+          },
+          {
+            "title": "Proveri kada auto zaista puni",
+            "text": "Elektrodistribucija Srbije najavljuje da će do kraja 2026. pokrenuti portal sa potrošnjom po satima za pametna brojila. Ako punjač ide preko tvog brojila, videćeš da li auto puni u satima niže tarife."
+          }
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Uz pretplatu ti pripada godišnja zimska provera instalacije: spojevi, osigurač i FID, kabl i utikač, očitavanje MID brojila (ako ga imaš). Početkom novembra pisaćemo ti da dogovorimo termin."
+      },
+      {
+        "type": "h2",
+        "text": "Novo na evolako.rs"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Novi paketi: START 39.000 RSD i Wallbox od 94.000 RSD — punjač i osnovna ugradnja pored razvodne table. Sve preko toga — posle procene; cenu sa svim dodacima znaš pre početka radova.",
+          "Vodiči za stanare: punjenje preko šuko utičnice i punjač od 11 ili 22 kW — koliko snage ti zaista treba za noć.",
+          "Novosti: cene struje, pametna brojila i propisi koji se tiču punjenja kod kuće.",
+          "Mapa javnih punjača u Srbiji, sa cenama mreža, datumom i izvorom.",
+          "Pretplata sada košta 990 RSD mesečno, prva dva meseca su 0 RSD, bez ugovorne obaveze."
+        ]
+      },
+      {
+        "type": "button",
+        "text": "Pročitaj vodiče",
+        "href": "https://www.evolako.rs/vodici"
+      },
+      {
+        "type": "h2",
+        "text": "Pozovi komšiju"
+      },
+      {
+        "type": "p",
+        "text": "Imaš Evolako? Tvoj kod preporuke je u aplikaciji, na ekranu „Pozovi komšiju“. Kad komšija sa tim kodom ugradi komplet, ti dobijaš 2 besplatna meseca pretplate, a on ukupno 4 meseca za 0 RSD — 2 povrh 2 koja dobija svaki novi korisnik."
+      },
+      {
+        "type": "button",
+        "text": "Stranica za preporuku",
+        "href": "https://www.evolako.rs/preporuka"
+      },
+      {
+        "type": "p",
+        "text": "Pitanje o punjenju kod kuće? Piši na hello@evolako.com — javljamo se u roku od 48 sati."
+      }
+    ]
+  },
+  "en": {
+    "subject": "Before winter: night rates, wall outlets and your winter check",
+    "preheader": "Three tips for charging at home in the cold, what's new on evolako.rs and how a neighbor can get 4 months of subscription for 0 RSD.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "This is the first Evolako Letter, our monthly newsletter. Once a month we'll send you short tips on charging at home and news from Evolako."
+      },
+      {
+        "type": "h2",
+        "text": "Three tips before winter"
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "title": "Charge at night, when power is cheaper",
+            "text": "Electricity prices did not go up on October 1: the 2025 rates still apply. In the EPS blue zone, a night-rate kWh costs about 6 RSD with all fees and VAT, so charging overnight is still the best deal."
+          },
+          {
+            "title": "Give the outlet its own circuit",
+            "text": "If you charge from a regular wall outlet, it should be on its own circuit. In winter, if a space heater or water heater runs on the same circuit, don't charge from that outlet. An hour or two into charging, touch the plug: if it feels warm, lower the charging current in the car or charge somewhere else."
+          },
+          {
+            "title": "See when your car actually charges",
+            "text": "Elektrodistribucija Srbije (EDS) plans to launch a portal by the end of 2026 that shows hourly usage for smart meters. If your charger runs through your own meter, you'll be able to see whether the car charges during night-rate hours."
+          }
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Your subscription includes a yearly winter check of your installation: connections, breaker and RCD, cable and plug, and a MID meter reading (if you have one). We'll email you in early November to set a date."
+      },
+      {
+        "type": "h2",
+        "text": "New on evolako.rs"
+      },
+      {
+        "type": "list",
+        "items": [
+          "New packages: START for 39,000 RSD and Wallbox from 94,000 RSD — the price covers the charger and basic installation next to the distribution board. Anything beyond that is quoted after the assessment, so you know the full price before any work starts.",
+          "Guides for residents: charging from a regular wall outlet, and 11 vs. 22 kW — how much power you really need overnight.",
+          "News on electricity prices, smart meters and regulations that affect charging at home.",
+          "A map of public chargers in Serbia, with network prices and the date and source of each price.",
+          "The subscription is now 990 RSD a month, with the first two months at 0 RSD and no minimum term."
+        ]
+      },
+      {
+        "type": "button",
+        "text": "Read the guides",
+        "href": "https://www.evolako.rs/vodici?lang=en"
+      },
+      {
+        "type": "h2",
+        "text": "Invite a neighbor"
+      },
+      {
+        "type": "p",
+        "text": "Already have Evolako? Your referral code is in the app, on the “Invite a neighbor” screen. When a neighbor gets a kit installed with your code, you get 2 months of subscription free, and they get 4 months for 0 RSD instead of the usual 2."
+      },
+      {
+        "type": "button",
+        "text": "How referrals work",
+        "href": "https://www.evolako.rs/preporuka?lang=en"
+      },
+      {
+        "type": "p",
+        "text": "Questions about charging at home? Email hello@evolako.com — we reply within 48 hours."
+      }
+    ]
+  },
+  "ru": {
+    "subject": "Перед холодами: ночной тариф, розетка и зимняя проверка",
+    "preheader": "Три совета по зарядке дома в холода, что нового на evolako.rs и как сосед может получить 4 месяца подписки за 0 RSD.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Это первый выпуск рассылки Evolako. Раз в месяц будем коротко писать о зарядке дома и о том, что нового в Evolako."
+      },
+      {
+        "type": "h2",
+        "text": "Три совета перед зимой"
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "title": "Заряжай ночью — так дешевле",
+            "text": "С 1 октября электричество не подорожало: действуют цены 2025 года. По ночному тарифу в «синей» зоне киловатт-час со всеми сборами и НДС стоит около 6 RSD — заряжаться выгоднее всего именно ночью."
+          },
+          {
+            "title": "Розетка для зарядки — на отдельной линии",
+            "text": "Если заряжаешь машину от обычной розетки, лучше, чтобы она была на отдельной линии от щитка. Если зимой на той же линии работают обогреватель или бойлер, от этой розетки не заряжай. Через час-два после начала зарядки потрогай вилку: если она тёплая, уменьши ток зарядки в настройках машины или заряжай в другом месте."
+          },
+          {
+            "title": "Смотри, когда машина на самом деле заряжается",
+            "text": "До конца 2026 года «Электродистрибуция Сербии» (EDS) обещает запустить портал, где для умных счётчиков будет видно потребление по часам. Если зарядка подключена через твой счётчик, ты сможешь проверить, заряжается ли машина в часы ночного тарифа."
+          }
+        ]
+      },
+      {
+        "type": "note",
+        "text": "В подписку входит ежегодная зимняя проверка: соединения, автомат и УЗО, кабель и вилка, показания счётчика MID (если он есть). В начале ноября напишем тебе, чтобы договориться о дате."
+      },
+      {
+        "type": "h2",
+        "text": "Новое на evolako.rs"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Новые пакеты: START за 39.000 RSD и Wallbox от 94.000 RSD — в цену входят зарядная станция и базовый монтаж рядом со щитком. Всё, что сверх этого, считаем после оценки на месте, и полную цену ты узнаёшь до начала работ.",
+          "Гайды для жильцов: зарядка от обычной розетки и выбор между 11 и 22 кВт — сколько мощности на самом деле нужно за ночь.",
+          "Новости: цены на электричество, умные счётчики и правила, которые касаются зарядки дома.",
+          "Карта публичных зарядных станций в Сербии — с ценами сетей, датой и источником данных.",
+          "Подписка теперь стоит 990 RSD в месяц, первые два месяца — 0 RSD, без обязательного срока."
+        ]
+      },
+      {
+        "type": "button",
+        "text": "Читать гайды",
+        "href": "https://www.evolako.rs/vodici?lang=ru"
+      },
+      {
+        "type": "h2",
+        "text": "Позови соседа"
+      },
+      {
+        "type": "p",
+        "text": "Уже пользуешься Evolako? Твой код — в приложении, на экране «Позови соседа». Когда сосед установит комплект по твоему коду, ты получишь 2 месяца подписки бесплатно, а он — 4 месяца за 0 RSD вместо обычных двух."
+      },
+      {
+        "type": "button",
+        "text": "Как это работает",
+        "href": "https://www.evolako.rs/preporuka?lang=ru"
+      },
+      {
+        "type": "p",
+        "text": "Есть вопрос о зарядке дома? Пиши на hello@evolako.com — ответим в течение 48 часов."
+      }
+    ]
+  }
+}

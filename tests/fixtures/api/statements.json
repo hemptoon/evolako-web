@@ -1,0 +1,80 @@
+[
+  {
+    "month": {
+      "year": 2026,
+      "month": 9
+    },
+    "energy": {
+      "dayKWh": 2.0,
+      "nightKWh": 47.6
+    },
+    "status": "paid",
+    "dueDate": "2026-10-15T00:00:00+02:00",
+    "sessions": [
+      {
+        "id": "d04958a0-2089-4518-9db1-675ba5c5d781",
+        "tag": null,
+        "energy": {
+          "dayKWh": 2.0,
+          "nightKWh": 19.0
+        },
+        "endedAt": "2026-09-11T02:10:00+02:00",
+        "trigger": "manual",
+        "startedAt": "2026-09-10T22:40:00+02:00",
+        "chargePointID": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5"
+      },
+      {
+        "id": "eccdcab1-e566-4956-9ec2-3a2301a18d62",
+        "tag": null,
+        "energy": {
+          "dayKWh": 0.0,
+          "nightKWh": 28.6
+        },
+        "endedAt": "2026-09-21T03:30:00+02:00",
+        "trigger": "auto",
+        "startedAt": "2026-09-20T23:00:00+02:00",
+        "chargePointID": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5"
+      }
+    ],
+    "energyPart": {
+      "payee": {
+        "name": "SZ Bulevar oslobođenja 12, Novi Sad",
+        "accountNumber": "160000000000000173",
+        "referenceModel": "97"
+      },
+      "tariff": {
+        "source": "meterOwnerBill",
+        "nightWindow": {
+          "endHour": 7,
+          "endMinute": 0,
+          "startHour": 23,
+          "startMinute": 0
+        },
+        "lowRateRSDPerKWh": 5.7,
+        "highRateRSDPerKWh": 19.65
+      },
+      "purpose": "Struja punjac 09/2026",
+      "amountRSD": 310.62,
+      "qrPayload": "K:PR|V:01|C:1|R:160000000000000173|N:SZ Bulevar oslobođenja 12, Novi Sad|I:RSD310,62|SF:289|S:Struja punjac 09/2026|RO:97461202609000001",
+      "pozivNaBroj": {
+        "model": "97",
+        "reference": "461202609000001"
+      }
+    },
+    "servicePart": {
+      "payee": {
+        "name": "Evolako, Novi Sad",
+        "accountNumber": "845000000040484987",
+        "referenceModel": "97"
+      },
+      "isTrial": true,
+      "amountRSD": 0,
+      "qrPayload": "",
+      "pozivNaBroj": {
+        "model": "97",
+        "reference": "902202609000001"
+      }
+    },
+    "chargePointID": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5"
+  }
+]

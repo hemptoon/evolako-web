@@ -1,0 +1,202 @@
+{
+  "slug": "test-2026-09-29",
+  "issue": 1,
+  "date": "2026-09-29",
+  "cover": {
+    "src": "/posta/test-2026-09-29.jpg",
+    "alt": {
+      "sr": "Auto na punjenju u garaži zgrade",
+      "en": "A car charging in a building garage",
+      "ru": "Машина на зарядке в гараже дома"
+    }
+  },
+  "sr": {
+    "subject": "Probni broj: kako da puniš jeftinije kod kuće",
+    "preheader": "Noćna tarifa, autostart i šta traži skupština zgrade.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Noću je jeftinije"
+      },
+      {
+        "type": "p",
+        "text": "Po nižoj tarifi u plavoj zoni kWh sa svim naknadama košta **oko 6 RSD**. U Vojvodini niža tarifa traje od 23 do 07 h — baš kad auto ionako stoji u garaži."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Uključi autostart za noćno okno u aplikaciji.",
+          "Proveri da li tvoj auto puni monofazno ili trofazno."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Šta traži skupština zgrade"
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "title": "Saglasnost",
+            "text": "Za zajedničku garažu treba saglasnost skupštine stambene zajednice."
+          },
+          {
+            "title": "Papiri",
+            "text": "Šablone za skupštinu dajemo mi — predlog odluke i tačku dnevnog reda; predaješ ih ti ili upravnik."
+          }
+        ]
+      },
+      {
+        "type": "kv",
+        "rows": [
+          [
+            "Niža tarifa",
+            "23–07 h"
+          ],
+          [
+            "kWh noću",
+            "oko 6 RSD"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Pitanja? Piši nam na hello@evolako.com ili pogledaj https://www.evolako.rs/cesta-pitanja."
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "button",
+        "text": "Proveri svoju garažu",
+        "href": "https://www.evolako.rs/proveri-svoju-garazu"
+      }
+    ]
+  },
+  "en": {
+    "subject": "Test issue: how to charge for less at home",
+    "preheader": "The night tariff, auto-start and what the building assembly needs.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Nights are cheaper"
+      },
+      {
+        "type": "p",
+        "text": "On the lower tariff in the blue zone a kWh with all fees costs **about 6 RSD**. In Vojvodina the lower tariff runs from 23 to 07 h — exactly when the car is in the garage anyway."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Turn on auto-start for the night window in the app.",
+          "Check whether your car charges on one phase or three."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "What the building assembly needs"
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "title": "Consent",
+            "text": "A shared garage needs the consent of the building assembly."
+          },
+          {
+            "title": "Papers",
+            "text": "We give you templates for the assembly — draft decision and agenda item; you or the building manager submit them."
+          }
+        ]
+      },
+      {
+        "type": "kv",
+        "rows": [
+          [
+            "Lower tariff",
+            "23–07 h"
+          ],
+          [
+            "kWh at night",
+            "about 6 RSD"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Questions? Write to hello@evolako.com or see https://www.evolako.rs/cesta-pitanja."
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "button",
+        "text": "Check your garage",
+        "href": "https://www.evolako.rs/proveri-svoju-garazu"
+      }
+    ]
+  },
+  "ru": {
+    "subject": "Пробный выпуск: как заряжаться дешевле дома",
+    "preheader": "Ночной тариф, автостарт и что нужно для собрания жильцов.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Ночью дешевле"
+      },
+      {
+        "type": "p",
+        "text": "По низкому тарифу в синей зоне кВт·ч со всеми сборами стоит **около 6 RSD**. В Воеводине низкий тариф действует с 23 до 07 ч — как раз когда машина всё равно стоит в гараже."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Включи автостарт на ночное окно в приложении.",
+          "Проверь, заряжается твоя машина от одной фазы или от трёх."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Что нужно для собрания жильцов"
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "title": "Согласие",
+            "text": "Для общего гаража нужно согласие собрания жильцов."
+          },
+          {
+            "title": "Документы",
+            "text": "Шаблоны для собрания даём мы — проект решения и пункт повестки; подаёшь их ты или управник."
+          }
+        ]
+      },
+      {
+        "type": "kv",
+        "rows": [
+          [
+            "Низкий тариф",
+            "23–07 ч"
+          ],
+          [
+            "кВт·ч ночью",
+            "около 6 RSD"
+          ]
+        ]
+      },
+      {
+        "type": "note",
+        "text": "Вопросы? Пиши на hello@evolako.com или смотри https://www.evolako.rs/cesta-pitanja."
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "button",
+        "text": "Проверить свой гараж",
+        "href": "https://www.evolako.rs/proveri-svoju-garazu"
+      }
+    ]
+  }
+}

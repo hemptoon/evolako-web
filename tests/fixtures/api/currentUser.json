@@ -1,0 +1,39 @@
+{
+  "id": "aaaaaaaa-0000-4000-8000-000000000001",
+  "lang": "sr",
+  "name": "Mila Ilić",
+  "email": "mila@example.com",
+  "phone": "",
+  "chargePoints": [
+    {
+      "id": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5",
+      "sku": "wallboxB",
+      "phases": 3,
+      "status": "charging",
+      "address": "Garaža −1, mesto 14, Bulevar oslobođenja 12, Novi Sad",
+      "location": {
+        "latitude": 45.2551,
+        "longitude": 19.8452
+      },
+      "customName": "Garaža",
+      "installedAt": "2026-08-20T12:00:00+02:00",
+      "capabilities": [
+        "metering",
+        "remoteControl",
+        "scheduling",
+        "livePower"
+      ],
+      "serialNumber": "IOC-AH20-0001",
+      "nominalPowerKW": 11.0,
+      "connectionScheme": {
+        "type": "thirdPartyMeter",
+        "payee": {
+          "name": "SZ Bulevar oslobođenja 12, Novi Sad",
+          "accountNumber": "160000000000000173",
+          "referenceModel": "97"
+        }
+      }
+    }
+  ],
+  "displayCurrency": "RSD"
+}

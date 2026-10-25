@@ -1,0 +1,49 @@
+{
+  "_comment": "PostgREST answers for contract errors (HTTP 400) and the installation-requests function",
+  "chargePointNotFound": {
+    "status": 400,
+    "body": {
+      "code": "P0001",
+      "details": null,
+      "hint": null,
+      "message": "chargePointNotFound"
+    }
+  },
+  "guestMode": {
+    "status": 400,
+    "body": {
+      "code": "P0001",
+      "details": null,
+      "hint": null,
+      "message": "guestMode"
+    }
+  },
+  "installationRequestIncomplete": {
+    "status": 422,
+    "body": {
+      "error": "installationRequestIncomplete",
+      "field": "email"
+    }
+  },
+  "installationAlreadyRequested": {
+    "status": 409,
+    "body": {
+      "error": "installationAlreadyRequested"
+    }
+  },
+  "rateLimited": {
+    "status": 429,
+    "body": {
+      "error": "rateLimited"
+    }
+  },
+  "jwtExpired": {
+    "status": 401,
+    "body": {
+      "code": "PGRST303",
+      "details": null,
+      "hint": null,
+      "message": "JWT expired"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "energy": {
+    "dayKWh": 0.0,
+    "nightKWh": 7.2
+  },
+  "costRSD": 41.04,
+  "powerKW": 10.8,
+  "trigger": "manual",
+  "startedAt": "2026-09-25T05:49:30+02:00",
+  "chargePointID": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5"
+}

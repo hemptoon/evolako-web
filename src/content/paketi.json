@@ -1,0 +1,962 @@
+{
+  "sources": [
+    "https://www.evolako.rs/paketi-i-cene",
+    "https://www.evolako.rs/proveri-svoju-garazu",
+    "https://www.evolako.rs/",
+    "https://www.evolako.rs/cesta-pitanja"
+  ],
+  "retrieved": "2026-10-07",
+  "note": "Snimak stranica Paketi i cene, Proveri svoju garažu, početne i Česta pitanja sa evolako.rs; EN/RU iz rečnika sajta. Generiše Scripts/make_paketi.py.",
+  "intro": {
+    "title": {
+      "sr": "Paketi i cene",
+      "en": "Kits & pricing",
+      "ru": "Комплекты и цены"
+    },
+    "text": {
+      "sr": "Tri glavna paketa i tri dodatne opcije — sve sa PDV-om i osnovnom ugradnjom pored razvodne table; šabloni papira su uz to. Cenu sa svim dodacima znaš pre početka radova: tačan iznos potvrđujemo na proceni, pre bilo kakvog potpisa. Bez sitnih slova.",
+      "en": "Three main kits and three extra options — all with VAT and basic installation next to the distribution board; document templates included. You know the full price, extras included, before any work starts: we confirm the exact amount at the assessment, before anything is signed. No fine print.",
+      "ru": "Три основных пакета и три дополнительных варианта — всё с НДС и базовым монтажом рядом со щитком; шаблоны документов в комплекте. Полную цену со всеми доплатами ты знаешь до начала работ: точную сумму подтверждаем на оценке, до любой подписи. Без мелкого шрифта."
+    },
+    "photo": "paketi-hero"
+  },
+  "packages": [
+    {
+      "id": "start",
+      "name": {
+        "sr": "Start",
+        "en": "Start",
+        "ru": "Start"
+      },
+      "priceRSD": 39000,
+      "priceText": {
+        "sr": "39.000",
+        "en": "39.000",
+        "ru": "39.000"
+      },
+      "priceFrom": false,
+      "priceUnit": {
+        "sr": "RSD sa PDV",
+        "en": "RSD incl. VAT",
+        "ru": "RSD с PDV"
+      },
+      "tagline": {
+        "sr": "pojačana utičnica + brojilo",
+        "en": "reinforced socket + meter",
+        "ru": "усиленная розетка + счётчик"
+      },
+      "forWhom": {
+        "sr": "Za iznajmljene garaže i bokseve, mesta gde nisi vlasnik — i svaku situaciju gde je dovoljno da auto ujutru bude pun.",
+        "en": "For rented garages and lock-ups, spots you don't own — and any situation where a full battery by morning is enough.",
+        "ru": "Для арендованных гаражей и боксов, мест, которыми ты не владеешь, — и любой ситуации, где достаточно, чтобы к утру машина была заряжена."
+      },
+      "note": {
+        "sr": "Kako puniš: kablom-punjačem koji ide uz svaki auto. Radi na monofaznoj instalaciji — trofazna struja nije potrebna.",
+        "en": "How you charge: with the cable charger that comes with every car. Works on a single-phase installation — three-phase power is not required.",
+        "ru": "Как заряжаешь: кабелем-зарядкой, который идёт в комплекте с каждой машиной. Работает на однофазной проводке — трёхфазное подключение не нужно."
+      },
+      "features": [
+        {
+          "sr": "Osnovna ugradnja pored razvodne table: do 2 m kabla, FID zaštita i automat",
+          "en": "Basic installation next to the distribution board: up to 2 m of cable, RCD protection and breaker",
+          "ru": "Базовый монтаж рядом со щитком: до 2 м кабеля, УЗО и автомат"
+        },
+        {
+          "sr": "Industrijska utičnica — 2,3–3,7 kW, do 180 km preko noći",
+          "en": "Industrial socket — 2.3–3.7 kW, up to 180 km overnight",
+          "ru": "Промышленная розетка — 2,3–3,7 кВт, до 180 км за ночь"
+        },
+        {
+          "sr": "FID zaštita (tip A + DC) i automatski osigurač",
+          "en": "RCD protection (Type A + DC) and a circuit breaker",
+          "ru": "УЗО (тип A + DC) и автомат"
+        },
+        {
+          "sr": "Sertifikovano MID brojilo — osnova obračuna",
+          "en": "A certified MID meter — the basis of billing",
+          "ru": "Сертифицированный счётчик MID — основа расчёта"
+        },
+        {
+          "sr": "Ugradnja licenciranog električara — 1 radni dan",
+          "en": "Installed by a licensed electrician — 1 working day",
+          "ru": "Монтаж лицензированным электриком — 1 рабочий день"
+        },
+        {
+          "sr": "Šabloni — saglasnost vlasnika i papiri za skupštinu",
+          "en": "Templates — owner consent and building-assembly papers",
+          "ru": "Шаблоны — согласие владельца и документы для собрания"
+        },
+        {
+          "sr": "Prva 2 meseca pretplate — 0 RSD",
+          "en": "First 2 months of the subscription — free",
+          "ru": "Первые 2 месяца подписки — 0 RSD"
+        }
+      ],
+      "variantLines": [],
+      "variants": [],
+      "midOptionRSD": null,
+      "badge": null,
+      "powerKW": [
+        2.3,
+        3.7
+      ],
+      "phases": 1,
+      "photos": [],
+      "faq": [
+        "Koliko košta kućni punjač sa ugradnjom?",
+        "Kako vlasnik garaže koju iznajmljujem zna da neće plaćati moje punjenje?",
+        "Nemam trofaznu struju — mogu li ipak?",
+        "Zašto se procena plaća 3.500 RSD?"
+      ]
+    },
+    {
+      "id": "wallbox",
+      "name": {
+        "sr": "Wallbox 11 kW",
+        "en": "Wallbox 11 kW",
+        "ru": "Wallbox 11 кВт"
+      },
+      "priceRSD": 94000,
+      "priceText": {
+        "sr": "od 94.000",
+        "en": "from 94.000",
+        "ru": "от 94.000"
+      },
+      "priceFrom": true,
+      "priceUnit": {
+        "sr": "RSD sa PDV",
+        "en": "RSD incl. VAT",
+        "ru": "RSD с PDV"
+      },
+      "tagline": {
+        "sr": "smart punjač — pun auto za jednu noć",
+        "en": "smart charger — a full car in one night",
+        "ru": "смарт-зарядка: полный заряд за одну ночь"
+      },
+      "forWhom": {
+        "sr": "Za sopstvenu garažu ili mesto u zgradi, kuću sa trofaznim priključkom — kad hoćeš pun auto svako jutro, bez razmišljanja.",
+        "en": "For your own garage or spot in the building, or a house with a three-phase connection — when you want a full car every morning, without thinking about it.",
+        "ru": "Для собственного гаража или места в доме, для дома с трёхфазным вводом — когда хочешь заряженную машину каждое утро, не думая об этом."
+      },
+      "note": {
+        "sr": "Wallbox traži trofazni priključak — većina zgrada ga ima, proveravamo na proceni. Ako ga nema: START radi i bez njega, wallbox može kasnije.",
+        "en": "A wallbox needs three-phase power — most buildings have it; we check at the survey. If yours doesn't: START works without it, the wallbox can come later.",
+        "ru": "Wallbox требует трёхфазного подключения — в большинстве домов оно есть, проверяем на осмотре. Если нет: START работает и без него, wallbox можно добавить позже."
+      },
+      "features": [
+        {
+          "sr": "Iocharger 11 kW — smart wallbox (OCPP, Type 2, kabl 5 m)",
+          "en": "Iocharger 11 kW smart wallbox (OCPP, Type 2, 5 m cable)",
+          "ru": "Iocharger 11 кВт — смарт-wallbox (OCPP, Type 2, кабель 5 м)"
+        },
+        {
+          "sr": "Oko 60 km dometa po satu punjenja",
+          "en": "Around 60 km of range per hour of charging",
+          "ru": "Около 60 км запаса хода за час зарядки"
+        },
+        {
+          "sr": "Struju podešavamo prema tvojoj snazi — ne izbija osigurače",
+          "en": "We set the current to your supply — no tripped breakers",
+          "ru": "Ток настраиваем под твою мощность — автоматы не выбивает"
+        },
+        {
+          "sr": "Ugrađena DC zaštita, garancija 2 godine na opremu",
+          "en": "Built-in DC protection, 2-year warranty on the equipment",
+          "ru": "Встроенная DC-защита, гарантия 2 года на оборудование"
+        },
+        {
+          "sr": "Šabloni papira i prva 2 meseca pretplate — 0 RSD",
+          "en": "Document templates, and the first 2 months of subscription at 0 RSD",
+          "ru": "Шаблоны документов и первые 2 месяца подписки — 0 RSD"
+        }
+      ],
+      "variantLines": [
+        {
+          "sr": "94.000 — punjač i osnovna ugradnja pored razvodne table (do 2 m kabla, FID zaštita i automat)",
+          "en": "94.000 — the charger and basic installation next to the distribution board (up to 2 m of cable, RCD protection and breaker)",
+          "ru": "94.000 — зарядка и базовый монтаж рядом со щитком (до 2 м кабеля, УЗО и автомат)"
+        },
+        {
+          "sr": "104.000 — isto, plus MID brojilo za obračun",
+          "en": "104.000 — the same, plus a MID meter for billing",
+          "ru": "104.000 — то же плюс MID-счётчик для расчёта"
+        }
+      ],
+      "variants": [
+        {
+          "id": "base",
+          "priceRSD": 94000,
+          "includesMID": false
+        },
+        {
+          "id": "mid",
+          "priceRSD": 104000,
+          "includesMID": true
+        }
+      ],
+      "midOptionRSD": null,
+      "badge": {
+        "sr": "Najtraženije",
+        "en": "Most popular",
+        "ru": "Берут чаще всего"
+      },
+      "powerKW": [
+        11.0,
+        11.0
+      ],
+      "phases": 3,
+      "photos": [
+        "paket-wallbox-closeup",
+        "paket-wallbox-hero",
+        "paket-garage"
+      ],
+      "faq": [
+        "Koji punjač ugrađujete i radi li sa mojim autom?",
+        "Da li moje punjenje opterećuje struju zgrade ili komšija?",
+        "Šta pokriva garancija?",
+        "Koliko traje ugradnja i kada mogu da počnem da punim?"
+      ]
+    },
+    {
+      "id": "zgrada",
+      "name": {
+        "sr": "Zgrada",
+        "en": "Building",
+        "ru": "Дом"
+      },
+      "priceRSD": 96000,
+      "priceText": {
+        "sr": "od 96.000",
+        "en": "from 96.000",
+        "ru": "от 96.000"
+      },
+      "priceFrom": true,
+      "priceUnit": {
+        "sr": "RSD po mestu sa PDV",
+        "en": "RSD per spot incl. VAT",
+        "ru": "RSD за место с PDV"
+      },
+      "tagline": {
+        "sr": "2–6 mesta odjednom, proširivo kasnije",
+        "en": "2–6 spots at once, expandable later",
+        "ru": "2–6 мест сразу, позже можно расширить"
+      },
+      "forWhom": {
+        "sr": "Za stambene zajednice, upravnike i grupe komšija koje hoće da reše punjenje za celu garažu odjednom.",
+        "en": "For residential communities, building managers and groups of neighbours who want charging solved for the whole garage at once.",
+        "ru": "Для домов, управляющих и групп соседей, которые хотят решить вопрос зарядки сразу для всего паркинга."
+      },
+      "note": {
+        "sr": "Zgradu ne košta ništa — priključenje plaćaju vlasnici mesta, a svako plaća struju po svom brojilu. Konačna cena zavisi od garaže — zato „od“.",
+        "en": "The building pays nothing — owners of the spots pay for their connections, and everyone pays for power on their own meter. The final price depends on the garage — hence the \"from\".",
+        "ru": "Дом не платит ничего: подключение оплачивают владельцы мест, электричество — каждый по своему счётчику. Итоговая цена зависит от паркинга — поэтому «от»."
+      },
+      "features": [
+        {
+          "sr": "Obilazak i tehnički opis za celu garažu",
+          "en": "Site visit and technical description for the whole garage",
+          "ru": "Выезд на объект и техническое описание для всего гаража"
+        },
+        {
+          "sr": "Tehnički opis i šabloni za skupštinu — predlog odluke i tačka dnevnog reda",
+          "en": "Technical description and assembly templates — draft decision and agenda item",
+          "ru": "Техническое описание и шаблоны для собрания — проект решения и пункт повестки"
+        },
+        {
+          "sr": "Zajednička linija + MID merenje po svakom korisniku",
+          "en": "A shared line + MID metering for each user",
+          "ru": "Общая линия + учёт MID по каждому пользователю"
+        },
+        {
+          "sr": "Centralno upravljanje snagom — ne opterećuje mrežu zgrade",
+          "en": "Central load management — no strain on the building's grid",
+          "ru": "Центральное управление мощностью — сеть дома не перегружается"
+        },
+        {
+          "sr": "Ugradnja i primopredaja",
+          "en": "Installation and handover",
+          "ru": "Установка и передача"
+        }
+      ],
+      "variantLines": [],
+      "variants": [],
+      "midOptionRSD": null,
+      "badge": null,
+      "powerKW": null,
+      "phases": null,
+      "photos": [
+        "paket-zgrada"
+      ],
+      "faq": [
+        "Treba li mi saglasnost skupštine?",
+        "Šta ako skupština kaže „ne“?",
+        "Koje šablone i dokumente dobijam?",
+        "Koliko traje ceo proces sa zgradom?"
+      ]
+    }
+  ],
+  "options": {
+    "kicker": {
+      "sr": "Još opcija",
+      "en": "More options",
+      "ru": "Ещё варианты"
+    },
+    "title": {
+      "sr": "Kad ti treba nešto drugo",
+      "en": "When you need something else",
+      "ru": "Когда нужно другое"
+    },
+    "items": [
+      {
+        "id": "plus",
+        "name": {
+          "sr": "Wallbox Plus",
+          "en": "Wallbox Plus",
+          "ru": "Wallbox Plus"
+        },
+        "priceRSD": 115000,
+        "priceText": {
+          "sr": "od 115.000",
+          "en": "from 115.000",
+          "ru": "от 115.000"
+        },
+        "priceFrom": true,
+        "priceUnit": {
+          "sr": "RSD sa PDV",
+          "en": "RSD incl. VAT",
+          "ru": "RSD с PDV"
+        },
+        "tagline": {
+          "sr": "4G veza, RFID kartice i ekran",
+          "en": "4G connection, RFID cards and a screen",
+          "ru": "4G-связь, RFID-карты и экран"
+        },
+        "text": {
+          "sr": "Iocharger 22 kW, podešen na 11 kW. Za garaže bez Wi-Fi signala i zajednička mesta gde puni više ljudi.",
+          "en": "An Iocharger 22 kW unit set to 11 kW. For garages without Wi-Fi and shared spots where several people charge.",
+          "ru": "Iocharger 22 кВт, настроенный на 11 кВт. Для гаражей без Wi-Fi и общих мест, где заряжаются несколько человек."
+        },
+        "variantLines": [
+          {
+            "sr": "115.000 sa Type 2 utičnicom (puniš svojim kablom), 127.000 sa kablom 5 m. MID brojilo — +10.000.",
+            "en": "115.000 with a Type 2 socket (you charge with your own cable), 127.000 with a 5 m cable. MID meter — +10.000.",
+            "ru": "115.000 с розеткой Type 2 (заряжаешь своим кабелем), 127.000 с кабелем 5 м. MID-счётчик — +10.000."
+          }
+        ],
+        "variants": [
+          {
+            "id": "socket",
+            "priceRSD": 115000,
+            "includesMID": false
+          },
+          {
+            "id": "cable",
+            "priceRSD": 127000,
+            "includesMID": false
+          }
+        ],
+        "midOptionRSD": 10000,
+        "note": null
+      },
+      {
+        "id": "premium",
+        "name": {
+          "sr": "Wallbox Premium",
+          "en": "Wallbox Premium",
+          "ru": "Wallbox Premium"
+        },
+        "priceRSD": 155000,
+        "priceText": {
+          "sr": "155.000",
+          "en": "155.000",
+          "ru": "155.000"
+        },
+        "priceFrom": false,
+        "priceUnit": {
+          "sr": "RSD sa PDV",
+          "en": "RSD incl. VAT",
+          "ru": "RSD с PDV"
+        },
+        "tagline": {
+          "sr": "Wallbox Pulsar Max",
+          "en": "Wallbox Pulsar Max",
+          "ru": "Wallbox Pulsar Max"
+        },
+        "text": {
+          "sr": "Poznati evropski brend, aplikacija myWallbox, kućište IP55/IK10. Rok isporuke potvrđujemo na proceni.",
+          "en": "A well-known European brand, the myWallbox app, IP55/IK10 housing. We confirm the delivery time at the assessment.",
+          "ru": "Известный европейский бренд, приложение myWallbox, корпус IP55/IK10. Срок поставки подтверждаем на оценке."
+        },
+        "variantLines": [
+          {
+            "sr": "Sa PowerBoost brojilom — dinamičko upravljanje snagom i punjenje iz solarnih panela: 195.000. MID brojilo — +10.000.",
+            "en": "With the PowerBoost meter — dynamic power management and charging from solar panels: 195.000. MID meter — +10.000.",
+            "ru": "Со счётчиком PowerBoost — динамическое управление мощностью и зарядка от солнечных панелей: 195.000. MID-счётчик — +10.000."
+          }
+        ],
+        "variants": [
+          {
+            "id": "base",
+            "priceRSD": 155000,
+            "includesMID": false
+          },
+          {
+            "id": "powerBoost",
+            "priceRSD": 195000,
+            "includesMID": false
+          }
+        ],
+        "midOptionRSD": 10000,
+        "note": null
+      },
+      {
+        "id": "ugradnja",
+        "name": {
+          "sr": "Samo ugradnja",
+          "en": "Installation only",
+          "ru": "Только установка"
+        },
+        "priceRSD": 24000,
+        "priceText": {
+          "sr": "od 24.000",
+          "en": "from 24.000",
+          "ru": "от 24.000"
+        },
+        "priceFrom": true,
+        "priceUnit": {
+          "sr": "RSD sa PDV",
+          "en": "RSD incl. VAT",
+          "ru": "RSD с PDV"
+        },
+        "tagline": {
+          "sr": "Već imaš punjač? Ugrađujemo ga.",
+          "en": "Already have a charger? We install it.",
+          "ru": "Уже есть зарядка? Установим её."
+        },
+        "text": null,
+        "variantLines": [
+          {
+            "sr": "24.000 — ugradnja pored razvodne table: do 2 m kabla, FID zaštita i automat.",
+            "en": "24.000 — installation next to the distribution board: up to 2 m of cable, RCD protection and breaker.",
+            "ru": "24.000 — установка рядом со щитком: до 2 м кабеля, УЗО и автомат."
+          }
+        ],
+        "variants": [
+          {
+            "id": "base",
+            "priceRSD": 24000,
+            "includesMID": false
+          }
+        ],
+        "midOptionRSD": null,
+        "note": {
+          "sr": "Punjač mora imati CE oznaku i zaštitu od DC struje kvara (6 mA). Ako je nema, FID tip B dodajemo u ponudi.",
+          "en": "The charger must carry the CE mark and have DC fault protection (6 mA). If it doesn't, we add a Type B RCD to the quote.",
+          "ru": "У зарядки должна быть маркировка CE и защита от постоянного тока утечки (6 мА). Если её нет, добавим в предложение УЗО типа B."
+        }
+      }
+    ]
+  },
+  "assessment": {
+    "kicker": {
+      "sr": "Kako počinje",
+      "en": "Where it starts",
+      "ru": "С чего всё начинается"
+    },
+    "title": {
+      "sr": "Svaka ugradnja počinje procenom",
+      "en": "Every installation starts with a survey",
+      "ru": "Любой монтаж начинается с осмотра"
+    },
+    "text": {
+      "sr": "Dolazimo u roku od 48h; pregled traje oko 30 minuta. Proveravamo instalaciju, snagu priključka, put kabla i poziciju punjača — i na licu mesta dobijaš tačnu ponudu i preporuku paketa.",
+      "en": "We come within 48h; the survey takes about 30 minutes. We check the installation, the connection capacity, the cable route and the charger position — and on the spot you get an exact quote and a kit recommendation.",
+      "ru": "Приезжаем в течение 48 часов; осмотр занимает около 30 минут. Проверяем проводку, мощность ввода, путь кабеля и место для зарядки — и прямо на месте ты получаешь точное предложение и рекомендацию пакета."
+    },
+    "note": {
+      "sr": "Ako se ispostavi da tvoja lokacija tehnički ne može — kažemo to otvoreno i predlažemo šta može.",
+      "en": "If your location turns out to be technically unsuitable, we say so openly and suggest what will work.",
+      "ru": "Если окажется, что на твоём месте это технически невозможно, — скажем прямо и предложим, что можно сделать."
+    },
+    "priceRSD": 3500,
+    "priceText": {
+      "sr": "3.500 RSD",
+      "en": "3.500 RSD",
+      "ru": "3.500 RSD"
+    },
+    "priceNote": {
+      "sr": "cena procene — u celosti se uračunava u cenu ugradnje. Ako nastaviš, praktično je besplatna.",
+      "en": "the price of the assessment — credited in full towards the installation price. If you go ahead, it is effectively free.",
+      "ru": "стоимость оценки — полностью засчитывается в цену монтажа. Если продолжишь, она фактически бесплатна."
+    }
+  },
+  "timelines": {
+    "kicker": {
+      "sr": "Rokovi",
+      "en": "Timelines",
+      "ru": "Сроки"
+    },
+    "title": {
+      "sr": "Koliko šta traje",
+      "en": "How long things take",
+      "ru": "Сколько что занимает"
+    },
+    "items": [
+      {
+        "title": {
+          "sr": "Garaža sa strujom u blizini",
+          "en": "A garage with power nearby",
+          "ru": "Гараж, рядом есть электричество"
+        },
+        "text": {
+          "sr": "Ugradnja 1 radni dan; od prijave do prvog punjenja obično manje od 7 dana.",
+          "en": "Installation in one working day; from sign-up to first charge usually under 7 days.",
+          "ru": "Монтаж — 1 рабочий день; от заявки до первой зарядки обычно меньше недели."
+        }
+      },
+      {
+        "title": {
+          "sr": "Iznajmljena garaža",
+          "en": "A rented garage",
+          "ru": "Арендованный гараж"
+        },
+        "text": {
+          "sr": "Plus saglasnost vlasnika — realno 1–2 nedelje ukupno. Šablon saglasnosti dajemo mi.",
+          "en": "Add the owner's consent — realistically 1–2 weeks in total. We provide the consent template.",
+          "ru": "Плюс согласие владельца — реально 1–2 недели всего. Шаблон согласия даём мы."
+        }
+      },
+      {
+        "title": {
+          "sr": "Uz odluku skupštine",
+          "en": "With an assembly decision",
+          "ru": "Через решение собрания"
+        },
+        "text": {
+          "sr": "4–10 nedelja ukupno — vreme odlazi na proceduru, ne na radove. Šablone za skupštinu dajemo mi, a odluku donose stanari.",
+          "en": "4–10 weeks in total — the time goes into the procedure, not the work. We give you the assembly templates; the residents make the decision.",
+          "ru": "4–10 недель в целом — время уходит на процедуру, а не на работы. Шаблоны для собрания даём мы, а решение принимают жильцы."
+        }
+      }
+    ]
+  },
+  "subscription": {
+    "kicker": {
+      "sr": "Pretplata",
+      "en": "Subscription",
+      "ru": "Подписка"
+    },
+    "title": {
+      "sr": "Punjač bez brige",
+      "en": "A charger you never think about",
+      "ru": "Зарядка без забот"
+    },
+    "priceRSD": 990,
+    "freeMonths": 2,
+    "text": {
+      "sr": "990 RSD/mes · prva 2 meseca 0 RSD. Komplet radi i bez pretplate — uz pretplatu o njemu ne razmišljaš. Pokriva ono što se ne vidi na dan ugradnje:",
+      "en": "990 RSD/month · first 2 months 0 RSD. The kit works without a subscription too — with one, you don't have to think about it. It covers what you can't see on installation day:",
+      "ru": "990 RSD/мес · первые 2 месяца 0 RSD. Комплект работает и без подписки — с подпиской о нём не нужно думать. Она покрывает то, что не видно в день установки:"
+    },
+    "items": [
+      {
+        "title": {
+          "sr": "Mesečni obračun + izveštaj",
+          "en": "Monthly statement + report",
+          "ru": "Ежемесячный расчёт + отчёт"
+        },
+        "text": {
+          "sr": "Tačan iznos po ceni struje iz tvog računa EPS-a, bez marže — i dokument koji stavljaš na sto pred vlasnika ili zgradu.",
+          "en": "The exact amount at the electricity price on your EPS bill, with no markup — and a document you can put in front of the owner or the building.",
+          "ru": "Точная сумма по цене электроэнергии из твоего счёта EPS, без наценки, — и документ, который можно положить на стол владельцу или дому."
+        }
+      },
+      {
+        "title": {
+          "sr": "Nadzor sa alarmima",
+          "en": "Monitoring with alerts",
+          "ru": "Мониторинг с оповещениями"
+        },
+        "text": {
+          "sr": "Pratimo rad kompleta na daljinu — za kvar najčešće znamo pre tebe, i javljamo se mi tebi.",
+          "en": "We watch the kit remotely — we usually know about a fault before you do, and we are the ones who call.",
+          "ru": "Следим за работой комплекта удалённо — о поломке чаще всего знаем раньше тебя и сами выходим на связь."
+        }
+      },
+      {
+        "title": {
+          "sr": "Prioritetni servis za 48h",
+          "en": "Priority service in 48 hours",
+          "ru": "Сервис за 48 часов"
+        },
+        "text": {
+          "sr": "Ako nešto zapne, izlazak na teren u roku od 48 sati — bez čekanja u redu.",
+          "en": "If something breaks, an engineer is out within 48 hours — no queue.",
+          "ru": "Если что-то не так — выезд мастера в течение 48 часов, без очереди."
+        }
+      },
+      {
+        "title": {
+          "sr": "Zimska provera",
+          "en": "Winter check-up",
+          "ru": "Зимняя проверка"
+        },
+        "text": {
+          "sr": "Jednom godišnje, pred sezonu: pregled instalacije, spojeva i zaštite.",
+          "en": "Once a year, before the season: we inspect the wiring, connections and protection.",
+          "ru": "Раз в год перед сезоном: осмотр линии, соединений и защиты."
+        }
+      },
+      {
+        "title": {
+          "sr": "Produžena garancija",
+          "en": "Extended warranty",
+          "ru": "Продлённая гарантия"
+        },
+        "text": {
+          "sr": "Standardna garancija je 2 godine — dok pretplata traje, garancija traje sa njom.",
+          "en": "The standard warranty is 2 years — as long as you subscribe, the warranty keeps running.",
+          "ru": "Стандартная гарантия — 2 года. Пока действует подписка, действует и гарантия."
+        }
+      },
+      {
+        "title": {
+          "sr": "Prenos i primopredaja",
+          "en": "Transfer & handover",
+          "ru": "Перенос и передача"
+        },
+        "text": {
+          "sr": "Selidba ili novi korisnik? Prenos kompleta i prevezivanje obračuna — u roku od 72h.",
+          "en": "Moving out, or a new user taking over? We transfer the kit and switch the billing within 72 hours.",
+          "ru": "Переезд или новый пользователь? Перенесём комплект и переоформим расчёты за 72 часа."
+        }
+      }
+    ],
+    "termsTitle": {
+      "sr": "Bez ugovorne obaveze",
+      "en": "No contract",
+      "ru": "Без договора на срок"
+    },
+    "terms": {
+      "sr": "— otkazuješ bilo kog meseca. Pauza do 3 meseca godišnje. Prva 2 meseca 0 RSD — plaćaš tek od trećeg, ako ti se svidi kako radi.",
+      "en": "— cancel any month. Pause up to 3 months a year. First 2 months 0 RSD — you pay only from the third, if you like how it works.",
+      "ru": "— отменяешь в любой месяц. Пауза до 3 месяцев в году. Первые 2 месяца — 0 RSD: платишь только с третьего, если понравится, как всё работает."
+    }
+  },
+  "finePrint": {
+    "title": {
+      "sr": "Bez sitnih slova",
+      "en": "No small print",
+      "ru": "Без мелкого шрифта"
+    },
+    "text": {
+      "sr": "Cena paketa uključuje PDV i osnovnu ugradnju: punjač na zidu pored razvodne table, do 2 m kabla, FID zaštitu i automat. Ako je tvoje mesto dalje od table, kabl, kanalice, prolaz kroz zid ili novu tablu računamo posebno — na proceni, pre početka radova, pa iznos znaš unapred. Šabloni papira su uz to.",
+      "en": "The kit price includes VAT and basic installation: the charger on the wall next to the distribution board, up to 2 m of cable, RCD protection and breaker. If your spot is further from the board, we price the cable, trunking, a wall passage or a new board separately — at the assessment, before any work starts, so you know the amount in advance. Document templates included.",
+      "ru": "Цена пакета включает НДС и базовый монтаж: зарядка на стене рядом со щитком, до 2 м кабеля, УЗО и автомат. Если твоё место дальше от щитка, кабель, кабель-каналы, проход через стену или новый щиток считаем отдельно — на оценке, до начала работ, так что сумму ты знаешь заранее. Шаблоны документов в комплекте."
+    }
+  },
+  "steps": {
+    "kicker": {
+      "sr": "Kako radi",
+      "en": "How it works",
+      "ru": "Как это работает"
+    },
+    "title": {
+      "sr": "Tri koraka. Manje od 7 dana.",
+      "en": "Three steps. Under 7 days.",
+      "ru": "Три шага. Меньше недели."
+    },
+    "items": [
+      {
+        "title": {
+          "sr": "Procena u roku od 48h",
+          "en": "A survey within 48 hours",
+          "ru": "Выезд инженера за 48 часов"
+        },
+        "text": {
+          "sr": "Tačna ponuda posle izlaska na lokaciju — 3.500 RSD, uračunava se u cenu ugradnje.",
+          "en": "An exact quote after we visit your spot — 3.500 RSD, credited toward the installation.",
+          "ru": "Точная смета после выезда на место — 3.500 RSD, засчитываются в стоимость монтажа."
+        }
+      },
+      {
+        "title": {
+          "sr": "Ugradnja za 1 dan",
+          "en": "Installation in 1 day",
+          "ru": "Монтаж за один день"
+        },
+        "text": {
+          "sr": "Punjač i osnovna ugradnja pored razvodne table: do 2 m kabla, FID zaštita i automat. Sve preko toga — posle procene.",
+          "en": "The charger and basic installation next to the distribution board: up to 2 m of cable, RCD protection and breaker. Anything beyond that — after the assessment.",
+          "ru": "Зарядка и базовый монтаж рядом со щитком: до 2 м кабеля, УЗО и автомат. Всё сверх этого — после оценки."
+        }
+      },
+      {
+        "title": {
+          "sr": "Obračun do dinara",
+          "en": "Billing to the dinar",
+          "ru": "Расчёт до динара"
+        },
+        "text": {
+          "sr": "Svakog meseca automatski — po ceni struje iz računa EPS-a.",
+          "en": "Automatic, every month — at the electricity price from the EPS bill.",
+          "ru": "Каждый месяц автоматически — по цене электричества из счёта EPS."
+        }
+      }
+    ]
+  },
+  "quiz": {
+    "title": {
+      "sr": "Proveri svoju garažu ili parking mesto",
+      "en": "Check your garage or parking spot",
+      "ru": "Проверь свой гараж или парковочное место"
+    },
+    "text": {
+      "sr": "3 pitanja, pola minuta. Vidiš koji komplet ti odgovara i kolika je ušteda — pa se čujemo.",
+      "en": "3 questions, half a minute. You see which kit suits you and how much you save — then we talk.",
+      "ru": "3 вопроса, полминуты. Увидишь, какой комплект тебе подходит и какая будет экономия, — а дальше свяжемся."
+    },
+    "reassurance": {
+      "sr": "Ne brini ako nisi siguran — na proceni sve proverimo za 30 minuta.",
+      "en": "Don't worry if you're not sure — we check everything during a 30-minute assessment.",
+      "ru": "Не переживай, если не уверен, — на оценке мы всё проверим за 30 минут."
+    },
+    "resultTitle": {
+      "sr": "Evo šta ima smisla u tvojoj situaciji:",
+      "en": "Here's what makes sense in your situation:",
+      "ru": "Вот что имеет смысл в твоей ситуации:"
+    },
+    "questions": [
+      {
+        "id": "tip",
+        "title": {
+          "sr": "Gde auto noći?",
+          "en": "Where does the car sleep?",
+          "ru": "Где ночует машина?"
+        },
+        "options": [
+          {
+            "id": "iznajmljena",
+            "title": {
+              "sr": "Iznajmljena garaža ili boks",
+              "en": "A rented garage or box",
+              "ru": "Арендованный гараж или бокс"
+            }
+          },
+          {
+            "id": "svoja",
+            "title": {
+              "sr": "Moja garaža / moje mesto u zgradi",
+              "en": "My garage / my spot in the building",
+              "ru": "Мой гараж / моё место в доме"
+            }
+          },
+          {
+            "id": "zajednicka",
+            "title": {
+              "sr": "Parking mesto u zajedničkoj garaži zgrade",
+              "en": "A spot in the building's shared garage",
+              "ru": "Место в общем паркинге дома"
+            }
+          },
+          {
+            "id": "kuca",
+            "title": {
+              "sr": "Dvorište ili kuća",
+              "en": "A house or a yard",
+              "ru": "Частный дом или двор"
+            }
+          },
+          {
+            "id": "kompanija",
+            "title": {
+              "sr": "Firma — službena vozila",
+              "en": "Company — fleet vehicles",
+              "ru": "Компания — служебные машины"
+            }
+          }
+        ]
+      },
+      {
+        "id": "grad",
+        "title": {
+          "sr": "U kom si gradu?",
+          "en": "Which city are you in?",
+          "ru": "В каком ты городе?"
+        },
+        "options": [
+          {
+            "id": "beograd",
+            "title": {
+              "sr": "Beograd (sa okolinom)",
+              "en": "Belgrade (and around)",
+              "ru": "Белград (и окрестности)"
+            }
+          },
+          {
+            "id": "novisad",
+            "title": {
+              "sr": "Novi Sad",
+              "en": "Novi Sad",
+              "ru": "Нови-Сад"
+            }
+          },
+          {
+            "id": "vojvodina",
+            "title": {
+              "sr": "Vojvodina — drugo mesto",
+              "en": "Vojvodina — another town",
+              "ru": "Воеводина — другой город"
+            }
+          },
+          {
+            "id": "ostatak",
+            "title": {
+              "sr": "Ostatak Srbije",
+              "en": "Elsewhere in Serbia",
+              "ru": "Другой регион Сербии"
+            }
+          }
+        ]
+      },
+      {
+        "id": "struja",
+        "title": {
+          "sr": "Ima li struje blizu tvog mesta?",
+          "en": "Is there power near your spot?",
+          "ru": "Есть ли электричество рядом с твоим местом?"
+        },
+        "options": [
+          {
+            "id": "blizu",
+            "title": {
+              "sr": "Da — utičnica ili razvodna tabla je blizu",
+              "en": "Yes — a socket or a panel is close by",
+              "ru": "Да — розетка или щиток рядом"
+            }
+          },
+          {
+            "id": "dalje",
+            "title": {
+              "sr": "Struja postoji, ali dalje od mesta",
+              "en": "There is power, but further away",
+              "ru": "Есть, но не рядом"
+            }
+          },
+          {
+            "id": "nema",
+            "title": {
+              "sr": "Nema struje u garaži",
+              "en": "No power in the garage",
+              "ru": "В гараже электричества нет"
+            }
+          },
+          {
+            "id": "neznam",
+            "title": {
+              "sr": "Ne znam",
+              "en": "I'm not sure",
+              "ru": "Не знаю"
+            }
+          }
+        ]
+      }
+    ],
+    "results": {
+      "start": {
+        "title": {
+          "sr": "Tvoj komplet: START — 39.000 RSD sa PDV.",
+          "en": "Your kit: START — 39.000 RSD incl. VAT.",
+          "ru": "Твой комплект: START — 39.000 RSD с НДС."
+        },
+        "text": {
+          "sr": "Za iznajmljene garaže: pojačana utičnica, MID brojilo i šablon saglasnosti za vlasnika — a svakog meseca mu prosleđuješ tačan obračun, do dinara. Do 180 km dometa preko noći.",
+          "en": "For rented garages: a reinforced socket, a MID meter and a consent template for the owner — and every month you forward them an exact statement, down to the dinar. Up to 180 km of range overnight.",
+          "ru": "Для арендованных гаражей: усиленная розетка, MID-счётчик и шаблон согласия для владельца — а каждый месяц ты пересылаешь ему точный расчёт, до динара. До 180 км запаса хода за ночь."
+        },
+        "extra": {
+          "sr": "Ako garaža ima trofaznu struju, može i WALLBOX 11 kW — vidimo na proceni.",
+          "en": "If the garage has three-phase power, the 11 kW WALLBOX is an option too — we'll see at the survey.",
+          "ru": "Если в гараже есть трёхфазная сеть, возможен и WALLBOX 11 кВт — увидим на осмотре."
+        }
+      },
+      "wallbox": {
+        "title": {
+          "sr": "Tvoj komplet: WALLBOX 11 kW — od 94.000 RSD sa PDV.",
+          "en": "Your kit: WALLBOX 11 kW — from 94.000 RSD incl. VAT.",
+          "ru": "Твой комплект: WALLBOX 11 кВт — от 94.000 RSD с НДС."
+        },
+        "text": {
+          "sr": "Smart punjač na tvom mestu: pun auto za jednu noć, struja podešena prema tvojoj snazi i, kad treba, MID brojilo za obračun do dinara. Ako se na proceni ispostavi da nema trofazne struje — START radi i bez nje, wallbox može kasnije.",
+          "en": "A smart charger at your spot: a full car overnight, the current set to your supply and, where needed, a MID meter for billing to the dinar. If the assessment shows there is no three-phase supply — START works without it, the wallbox can come later.",
+          "ru": "Смарт-зарядка на твоём месте: полная машина за ночь, ток под твою мощность и, когда нужно, MID-счётчик для расчёта до динара. Если на оценке окажется, что трёхфазного подключения нет — START работает и без него, wallbox можно позже."
+        },
+        "extra": null
+      },
+      "zgrada": {
+        "title": {
+          "sr": "Kad u garaži nema struje — rešava se zajedno.",
+          "en": "No power in the garage? It gets solved together.",
+          "ru": "Если в паркинге нет электричества — решается сообща."
+        },
+        "text": {
+          "sr": "Dovod struje do garaže je najveći deo posla i nema smisla plaćati ga za jedno mesto. Zato radimo paket ZGRADA: 2–6 mesta odjednom, od 96.000 RSD po mestu, šablone za skupštinu dajemo mi, a zgradu to ne košta ništa. Ako si jedini zainteresovan, na proceni računamo i pojedinačnu varijantu.",
+          "en": "Running power to the garage is the biggest part of the job, and paying for it for a single spot makes no sense. That's why we offer the ZGRADA kit: 2–6 spots at once, from 96.000 RSD per spot; we give you the assembly templates, and it costs the building nothing. If you're the only one interested, we'll also price a single-spot option at the assessment.",
+          "ru": "Подвод электричества к гаражу — самая большая часть работы, и платить за него ради одного места нет смысла. Поэтому у нас есть пакет ZGRADA: 2–6 мест сразу, от 96.000 RSD за место, шаблоны для собрания даём мы, а дому это ничего не стоит. Если заинтересован только ты, на оценке посчитаем и вариант для одного места."
+        },
+        "extra": null
+      },
+      "b2b": {
+        "title": {
+          "sr": "Za firme pravimo ponudu po meri.",
+          "en": "For companies, we quote case by case.",
+          "ru": "Для компаний считаем индивидуально."
+        },
+        "text": {
+          "sr": "Službena vozila se pune kod kuće zaposlenih ili na vašem parkingu, a knjigovodstvo dobija jedan mesečni izveštaj — po sertifikovanom MID merenju. Ostavite kontakt, javljamo se sa predlogom.",
+          "en": "Fleet cars charge at employees' homes or at your car park, and accounting gets a single monthly report — based on certified MID metering. Leave your details and we'll come back with a proposal.",
+          "ru": "Служебные машины заряжаются дома у сотрудников или на вашей парковке, а бухгалтерия получает один отчёт в месяц — по данным сертифицированного счётчика. Оставьте контакт — вернёмся с предложением."
+        },
+        "extra": null
+      },
+      "wait": {
+        "title": {
+          "sr": "Još nismo stigli do tebe — ali stižemo.",
+          "en": "We have not reached you yet — but we are coming.",
+          "ru": "До тебя мы ещё не добрались — но доберёмся."
+        },
+        "text": {
+          "sr": "Trenutno radimo u Beogradu, Novom Sadu i Vojvodini, a širimo se na celu Srbiju. Ostavi kontakt: čim krenemo u tvom gradu, prvi si na spisku.",
+          "en": "We currently work in Belgrade, Novi Sad and Vojvodina, and we're expanding across Serbia. Leave your contact: as soon as we start in your city, you're first on the list.",
+          "ru": "Сейчас мы работаем в Белграде, Нови-Саде и Воеводине и расширяемся на всю Сербию. Оставь контакт: как только начнём в твоём городе, ты первый в списке."
+        },
+        "extra": null
+      }
+    },
+    "buildingAlternative": {
+      "title": {
+        "sr": "Ima li komšija sa električnim autom?",
+        "en": "Any neighbours with an EV?",
+        "ru": "Есть соседи с электромобилем?"
+      },
+      "text": {
+        "sr": "Kad se u istoj garaži rešava 2–6 mesta odjednom, cena pada na od 96.000 RSD po mestu — jedan izlazak, jedna odluka skupštine, a zgradu ne košta ništa. Ako znaš još nekog iz ulaza, reci nam na proceni.",
+        "en": "When 2–6 spots in the same garage are done at once, the price starts at 96.000 RSD per spot — one visit, one assembly decision, and it costs the building nothing. If you know anyone else in your entrance, tell us at the assessment.",
+        "ru": "Когда в одном гараже делают сразу 2–6 мест, цена падает до 96.000 RSD за место — один выезд, одно решение собрания, а дому это ничего не стоит. Если знаешь кого-то ещё из подъезда, скажи нам на оценке."
+      }
+    }
+  },
+  "calculator": {
+    "nightRateRSDPerKWh": 6,
+    "sourceText": {
+      "sr": "Sa svim naknadama ≈ 6 RSD/kWh.",
+      "en": "With all fees ≈ 6 RSD/kWh.",
+      "ru": "Со всеми надбавками ≈ 6 RSD/кВт·ч."
+    }
+  },
+  "standardInstallation": {
+    "sr": "Cena paketa pokriva opremu i osnovnu ugradnju pored razvodne table: do 2 m kabla, FID zaštitu i automat. Ako je tvoje mesto dalje od table, kabl do mesta, kanalice, prolaz kroz zid ili novu tablu računamo posebno — na proceni, pre početka radova, pa iznos znaš unapred, a ne tek na fakturi.",
+    "en": "The kit price covers the equipment and basic installation next to the distribution board: up to 2 m of cable, RCD protection and breaker. If your spot is further from the board, we price the cable to your spot, trunking, a wall passage or a new board separately — at the assessment, before any work starts, so you know the amount in advance, not from the invoice.",
+    "ru": "Цена пакета покрывает оборудование и базовый монтаж рядом со щитком: до 2 м кабеля, УЗО и автомат. Если твоё место дальше от щитка, кабель до места, кабель-каналы, проход через стену или новый щиток считаем отдельно — на оценке, до начала работ, так что сумму ты знаешь заранее, а не из счёта."
+  }
+}

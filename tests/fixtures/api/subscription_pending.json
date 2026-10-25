@@ -1,0 +1,10 @@
+{
+  "state": {
+    "type": "trial",
+    "until": "2027-02-22T00:00:00+01:00"
+  },
+  "endsOn": null,
+  "history": [],
+  "startedAt": "2026-10-08T00:00:00+02:00",
+  "trialStartsBy": "2026-10-22T00:00:00+02:00"
+}

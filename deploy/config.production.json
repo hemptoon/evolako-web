@@ -1,0 +1,9 @@
+{
+  "apiBase": "https://evolako-api.mr-smekhov.workers.dev",
+  "publishableKey": "sb_publishable_xhAXVMpvcSw8IAvzeJvmfw_ilynbAaz",
+  "demo": true,
+  "googleClientId": "936328602255-httlmmrs4ktooaechkqrslmvduh6t0pg.apps.googleusercontent.com",
+  "googleOrigins": [
+    "https://app.evolako.rs"
+  ]
+}

@@ -1,0 +1,15 @@
+--- a/backend/worker/src/index.ts
++++ b/backend/worker/src/index.ts
+@@ -25,7 +25,11 @@
+ 
+ function cors(req: Request): Record<string, string> {
+   const o = req.headers.get("origin") ?? "";
+-  const ok = /^https:\/\/(www\.|app\.)?evolako\.rs$/.test(o) || /^http:\/\/localhost:\d+$/.test(o);
++  // Moj Evolako (web) is served by Cloudflare Pages: the production alias and its preview deployments
++  // (<hash>.evolako-app.pages.dev, <branch>.evolako-app.pages.dev) until app.evolako.rs points at it.
++  const ok = /^https:\/\/(www\.|app\.)?evolako\.rs$/.test(o)
++    || /^https:\/\/([a-z0-9-]+\.)?evolako-app\.pages\.dev$/.test(o)
++    || /^http:\/\/localhost:\d+$/.test(o);
+   return ok ? {
+     "access-control-allow-origin": o, "access-control-allow-credentials": "false",
+     "access-control-allow-headers": "authorization, apikey, content-type, x-client-info, x-install-id, prefer, range, x-upsert",

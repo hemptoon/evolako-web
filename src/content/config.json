@@ -1,0 +1,83 @@
+{
+  "schema": "evolako.config/1",
+  "note": "Snimak app_config iz backend/supabase/migrations/20260925000300_content.sql — rezerva kad sadržaja sa servera nema.",
+  "values": {
+    "minVersion": {
+      "ios": "1.0",
+      "android": "1.0",
+      "web": "1.0"
+    },
+    "recommendedVersion": {
+      "ios": "1.8",
+      "android": "1.0",
+      "web": "1.0"
+    },
+    "updateMessage": {
+      "sr": "Stigla je nova verzija aplikacije. Ažuriraj je da bi sve radilo kako treba.",
+      "en": "A new version of the app is available. Update it so everything keeps working.",
+      "ru": "Вышла новая версия приложения. Обнови его, чтобы всё работало как нужно."
+    },
+    "maintenance": {
+      "active": false,
+      "sr": "",
+      "en": "",
+      "ru": ""
+    },
+    "support": {
+      "email": "hello@evolako.com",
+      "responseHours": 48,
+      "phone": null,
+      "viber": null,
+      "whatsapp": null,
+      "telegram": null
+    },
+    "pricing": {
+      "currency": "RSD",
+      "subscriptionMonthly": 990,
+      "trialMonths": 2,
+      "assessmentFee": 3500,
+      "assessmentCredited": true,
+      "paymentDueDay": 15,
+      "pauseMonthsPerYear": 3
+    },
+    "referral": {
+      "enabled": true,
+      "friendBonusMonths": 2,
+      "referrerMonthsPerFriend": 2,
+      "referrerCap": null,
+      "baseURL": "https://www.evolako.rs/preporuka"
+    },
+    "calculator": {
+      "nightRateRSDPerKWh": 6
+    },
+    "map": {
+      "networkListsEnabled": false,
+      "checkinsEnabled": false,
+      "checkinsApi": "https://www.blokvolt.rs/api",
+      "stalePriceDays": 365
+    },
+    "features": {
+      "guestShop": true,
+      "phoneLogin": false,
+      "appleLogin": false,
+      "googleLogin": false,
+      "leadsOnline": true,
+      "tickets": true,
+      "meterPhoto": true
+    },
+    "analytics": {
+      "enabled": true,
+      "sampleRate": 1.0,
+      "requireConsent": false
+    },
+    "links": {
+      "site": "https://www.evolako.rs",
+      "paketi": "https://www.evolako.rs/paketi-i-cene",
+      "kviz": "https://www.evolako.rs/proveri-svoju-garazu",
+      "faq": "https://www.evolako.rs/cesta-pitanja",
+      "privacy": "https://www.evolako.rs/politika-privatnosti",
+      "preporuka": "https://www.evolako.rs/preporuka"
+    }
+  },
+  "banners": []
+}

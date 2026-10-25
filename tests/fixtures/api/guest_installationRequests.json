@@ -1,0 +1,24 @@
+[
+  {
+    "id": "113409b1-20cb-4789-9020-42f647b739e7",
+    "draft": {
+      "car": "Renault Zoe",
+      "city": "beograd",
+      "name": "Ana",
+      "email": "",
+      "phone": "+381 60 123 45 67",
+      "address": "Cara Dušana 5",
+      "comment": "",
+      "package": "start",
+      "parking": "iznajmljena",
+      "referralCode": "",
+      "acceptsPrivacyPolicy": true
+    },
+    "status": "assessmentScheduled",
+    "createdAt": "2026-09-25T06:29:30+02:00",
+    "requestNo": "Z-1003",
+    "updatedAt": "2026-09-25T06:29:30+02:00",
+    "assessmentAt": "2026-09-28T10:00:00+02:00",
+    "installationAt": null
+  }
+]

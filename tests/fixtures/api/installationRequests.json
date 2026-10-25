@@ -1,0 +1,24 @@
+[
+  {
+    "id": "a780ec07-9357-4877-85c2-fd5558615295",
+    "draft": {
+      "car": "Renault Zoe",
+      "city": "novisad",
+      "name": "Mila Ilić",
+      "email": "mila@example.com",
+      "phone": "+381 60 123 45 67",
+      "address": "Bulevar oslobođenja 12",
+      "comment": "Garaža −1, mesto 14",
+      "package": "wallbox",
+      "parking": "zajednicka",
+      "referralCode": "",
+      "acceptsPrivacyPolicy": true
+    },
+    "status": "installed",
+    "createdAt": "2026-09-25T06:29:30+02:00",
+    "requestNo": "Z-1001",
+    "updatedAt": "2026-09-25T06:29:30+02:00",
+    "assessmentAt": null,
+    "installationAt": null
+  }
+]

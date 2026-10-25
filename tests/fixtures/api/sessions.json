@@ -1,0 +1,26 @@
+[
+  {
+    "id": "eccdcab1-e566-4956-9ec2-3a2301a18d62",
+    "tag": null,
+    "energy": {
+      "dayKWh": 0.0,
+      "nightKWh": 28.6
+    },
+    "endedAt": "2026-09-21T03:30:00+02:00",
+    "trigger": "auto",
+    "startedAt": "2026-09-20T23:00:00+02:00",
+    "chargePointID": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5"
+  },
+  {
+    "id": "d04958a0-2089-4518-9db1-675ba5c5d781",
+    "tag": null,
+    "energy": {
+      "dayKWh": 2.0,
+      "nightKWh": 19.0
+    },
+    "endedAt": "2026-09-11T02:10:00+02:00",
+    "trigger": "manual",
+    "startedAt": "2026-09-10T22:40:00+02:00",
+    "chargePointID": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5"
+  }
+]

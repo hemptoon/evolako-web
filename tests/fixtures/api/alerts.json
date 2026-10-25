@@ -1,0 +1,62 @@
+[
+  {
+    "id": "faed42f0-6ad3-49ff-92ce-2522e7866562",
+    "kind": {
+      "type": "chargeStarted"
+    },
+    "isRead": false,
+    "timestamp": "2026-09-25T06:29:30+02:00",
+    "chargePointID": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5"
+  },
+  {
+    "id": "0e849240-9c96-4129-aa82-8c6e85562126",
+    "kind": {
+      "kWh": 21.0,
+      "type": "chargeFinished"
+    },
+    "isRead": false,
+    "timestamp": "2026-09-25T06:29:30+02:00",
+    "chargePointID": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5"
+  },
+  {
+    "id": "924adc60-360e-40b4-89b4-b82b8b7a1d12",
+    "kind": {
+      "type": "autostartExecuted"
+    },
+    "isRead": false,
+    "timestamp": "2026-09-25T06:29:30+02:00",
+    "chargePointID": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5"
+  },
+  {
+    "id": "16bf2435-8e93-4beb-90d7-480a2646db67",
+    "kind": {
+      "kWh": 28.6,
+      "type": "chargeFinished"
+    },
+    "isRead": false,
+    "timestamp": "2026-09-25T06:29:30+02:00",
+    "chargePointID": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5"
+  },
+  {
+    "id": "e68120a4-4a13-4635-a385-e1d50a58edde",
+    "kind": {
+      "type": "statementReady",
+      "month": {
+        "year": 2026,
+        "month": 9
+      }
+    },
+    "isRead": false,
+    "timestamp": "2026-09-25T06:29:30+02:00",
+    "chargePointID": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5"
+  },
+  {
+    "id": "78fee152-7ea6-488d-a843-0c9edadde06c",
+    "kind": {
+      "type": "chargeStarted"
+    },
+    "isRead": false,
+    "timestamp": "2026-09-25T06:29:30+02:00",
+    "chargePointID": "9efd2948-b5ec-465e-bc8a-efa6bb8e4aa5"
+  }
+]
