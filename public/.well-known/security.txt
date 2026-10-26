@@ -1,0 +1,4 @@
+Contact: mailto:hello@evolako.com
+Expires: 2027-09-30T00:00:00Z
+Preferred-Languages: sr, en, ru
+Canonical: https://app.evolako.rs/.well-known/security.txt
