@@ -1,6 +1,6 @@
 {
  "base": "https://www.evolako.rs",
- "taken": "2026-10-27T02:15:06Z",
+ "taken": "2026-10-27T02:54:12Z",
  "pages": [
   {
    "path": "/",
@@ -15774,775 +15774,6 @@
    "live": true
   },
   {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Bold/0-255.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Bold/0-255.pbf",
-   "status": 200,
-   "bytes": 81170,
-   "type": "application/x-protobuf",
-   "sha256": "f60ce4cb899455c2203bd8293b550394ade53ffce8032bf9cc7f59255e49259c",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Bold/1024-1279.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Bold/1024-1279.pbf",
-   "status": 200,
-   "bytes": 135287,
-   "type": "application/x-protobuf",
-   "sha256": "f0ab5cecbf1b1d04e8d38c7d64451a20b5707ab1fc8aa8dbbc1b660905cd4142",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Bold/11520-11775.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Bold/11520-11775.pbf",
-   "status": 200,
-   "bytes": 70860,
-   "type": "application/x-protobuf",
-   "sha256": "6bf57a70928ed201a01fe50e616961897bc3428de25a2d34916ff8f69d4d342b",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Bold/1280-1535.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Bold/1280-1535.pbf",
-   "status": 200,
-   "bytes": 83785,
-   "type": "application/x-protobuf",
-   "sha256": "4e509159894445662d970e1769facbeb68e8aa56bbf19f62a43096f6fdb5627e",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Bold/1536-1791.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Bold/1536-1791.pbf",
-   "status": 200,
-   "bytes": 102128,
-   "type": "application/x-protobuf",
-   "sha256": "ddce73e051bd2e32b1441e15a8184909e6f7279d5b5e3ca29e9501f9d6e9d90d",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Bold/256-511.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Bold/256-511.pbf",
-   "status": 200,
-   "bytes": 134545,
-   "type": "application/x-protobuf",
-   "sha256": "77c830f114b84a58f8829ca1eac4627a6a688bbce4bdb6a04de00f98fa74bb52",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Bold/4096-4351.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Bold/4096-4351.pbf",
-   "status": 200,
-   "bytes": 130310,
-   "type": "application/x-protobuf",
-   "sha256": "23a87dfef6047d32102973aaf736fa4203eb66cbc3c4f46871a80d410efe2ef3",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Bold/512-767.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Bold/512-767.pbf",
-   "status": 200,
-   "bytes": 101458,
-   "type": "application/x-protobuf",
-   "sha256": "c0f1fee1a46851224f1c962c6f3d35bd450122125ed18870f39e82d0b962a545",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Bold/768-1023.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Bold/768-1023.pbf",
-   "status": 200,
-   "bytes": 78937,
-   "type": "application/x-protobuf",
-   "sha256": "3c7ea7f7b52a97c75bfc123a303badd4fd7c5eaa1bfe66ebaba38cf3fce16ee7",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Italic/0-255.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Italic/0-255.pbf",
-   "status": 200,
-   "bytes": 79907,
-   "type": "application/x-protobuf",
-   "sha256": "ae9c8894b4d2b6297da76a2e875685046f1f037f1a571ae006160a5540406086",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Italic/1024-1279.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Italic/1024-1279.pbf",
-   "status": 200,
-   "bytes": 127434,
-   "type": "application/x-protobuf",
-   "sha256": "de4d66d14fc94ea09e2c4f7f61a8b63a88beb0ed9a493136aa1c7e770a85bd6b",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Italic/11520-11775.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Italic/11520-11775.pbf",
-   "status": 200,
-   "bytes": 66618,
-   "type": "application/x-protobuf",
-   "sha256": "d07115794e20746cca5727f0d7578016544f3f05f500497e221c301b228ee15b",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Italic/1536-1791.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Italic/1536-1791.pbf",
-   "status": 200,
-   "bytes": 96132,
-   "type": "application/x-protobuf",
-   "sha256": "31586f948723b4dbe2e22a2e7a7996b6323efbe21a37680930e0857fd6a3e305",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Italic/256-511.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Italic/256-511.pbf",
-   "status": 200,
-   "bytes": 132406,
-   "type": "application/x-protobuf",
-   "sha256": "82be737a8568cc3ef2beaa3f137d8698740ffef1b880076f21c2796c9e0c8c00",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Italic/768-1023.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Italic/768-1023.pbf",
-   "status": 200,
-   "bytes": 75983,
-   "type": "application/x-protobuf",
-   "sha256": "1d818e823729580b3f6185748b79ae50e73da5eb5bc753e82eb22acca17d817c",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Italic/8192-8447.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Italic/8192-8447.pbf",
-   "status": 200,
-   "bytes": 34787,
-   "type": "application/x-protobuf",
-   "sha256": "da51f9be11f7bddc1c5ea052c1305eb9440790ad7cb79bf27e57f7a04c952427",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Regular/0-255.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Regular/0-255.pbf",
-   "status": 200,
-   "bytes": 76580,
-   "type": "application/x-protobuf",
-   "sha256": "ef1f38a3f1978591e846e9eaddf8a54f7047f546fc6aaed7872cc53151a5de78",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Regular/1024-1279.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Regular/1024-1279.pbf",
-   "status": 200,
-   "bytes": 125222,
-   "type": "application/x-protobuf",
-   "sha256": "834adb7f3ea9944ea530214841ee098e5482e85180f14df85036939261e0ffbb",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Regular/11520-11775.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Regular/11520-11775.pbf",
-   "status": 200,
-   "bytes": 66619,
-   "type": "application/x-protobuf",
-   "sha256": "69b80c3d3699d8a6b706f2d600d4b2d34a97ec2068301e50a6e2e2b8e965fc3c",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Regular/1280-1535.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Regular/1280-1535.pbf",
-   "status": 200,
-   "bytes": 77856,
-   "type": "application/x-protobuf",
-   "sha256": "0f4f3f76dd76836efbcdf3c35219449aa46defb1d3e8e0f9b51153a539e64454",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Regular/1536-1791.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Regular/1536-1791.pbf",
-   "status": 200,
-   "bytes": 96133,
-   "type": "application/x-protobuf",
-   "sha256": "50d81369a7ec80d4a77efa83e63bbb250ec3337f997a39f5e17c76ae7ab74ae8",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Regular/256-511.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Regular/256-511.pbf",
-   "status": 200,
-   "bytes": 127219,
-   "type": "application/x-protobuf",
-   "sha256": "992557f9e2574cfb9a75e16c7b52832578849772b7c9a6e480d6213fb008fe5d",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Regular/4096-4351.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Regular/4096-4351.pbf",
-   "status": 200,
-   "bytes": 126418,
-   "type": "application/x-protobuf",
-   "sha256": "aeb80cf9bd04db8b8efbdf9a106053503ccfb8817c6a4813f1e2a9a9854eae6d",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Regular/512-767.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Regular/512-767.pbf",
-   "status": 200,
-   "bytes": 95728,
-   "type": "application/x-protobuf",
-   "sha256": "a4c5cdf9623cb0bf7e9c6b0e8be4bf38b524bc29819dd2276c8ca63d5e43dd21",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Regular/768-1023.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Regular/768-1023.pbf",
-   "status": 200,
-   "bytes": 74752,
-   "type": "application/x-protobuf",
-   "sha256": "6e27cdd6edce5b11c469a24b333ecefc0d4b082491b71d6924ce0be6eeba71c3",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
-   "url": "https://tiles.openfreemap.org/fonts/Noto%20Sans%20Regular/8192-8447.pbf",
-   "file": "assets/tiles.openfreemap.org/fonts/Noto_Sans_Regular/8192-8447.pbf",
-   "status": 200,
-   "bytes": 34070,
-   "type": "application/x-protobuf",
-   "sha256": "f061e5b4e42e5925228534d8822b423a029569263db09f5ce44573600d45295f",
-   "kinds": [
-    "fetch"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"
-   ],
-   "live": true
-  },
-  {
    "url": "https://tiles.openfreemap.org/planet",
    "file": "assets/tiles.openfreemap.org/planet",
    "status": 200,
@@ -17262,14 +16493,14 @@
  "errors": [],
  "summary": {
   "pages": 38,
-  "assets": 530,
-  "asset_bytes": 14001659,
+  "assets": 504,
+  "asset_bytes": 11569315,
   "errors": 0,
   "runtime_files": 191,
-  "runtime_live_files": 40
+  "runtime_live_files": 14
  },
  "runtime": {
-  "taken": "2026-10-27T02:25:25Z",
+  "taken": "2026-10-27T02:58:09Z",
   "tool": "site/tools/snapshot_runtime.py",
   "browser": "chromium 153.0.8010.12",
   "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
@@ -17285,11 +16516,11 @@
   ],
   "pages": 38,
   "loads": 304,
-  "seconds": 231,
+  "seconds": 209,
   "saved": 191,
   "saved_bytes": 1971905,
-  "saved_live": 40,
-  "saved_live_bytes": 3095969,
+  "saved_live": 14,
+  "saved_live_bytes": 663625,
   "completed_by_reference": 6,
   "completion_failed": [],
   "html_lang_by_mode": {
@@ -17319,7 +16550,7 @@
    "fonts.googleapis.com": 2,
    "fonts.gstatic.com": 6,
    "smcsmkkzdksocvroqekl.supabase.co": 2,
-   "tiles.openfreemap.org": 36,
+   "tiles.openfreemap.org": 12,
    "www.blokvolt.rs": 8,
    "www.evolako.rs": 152
   },
@@ -17345,7 +16576,206 @@
   },
   "not_200": [],
   "static_bytes_differ": [],
-  "errors": [],
+  "errors": [
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/36/23.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/35/22.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/35/23.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/36/22.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/5/17/11.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/5/18/11.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/35/22.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "en"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/36/23.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "en"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/35/23.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "en"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/36/22.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "en"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/5/18/11.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "en"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/5/17/11.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "en"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/9/5.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "en"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/8/5.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "en"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/36/23.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "ru"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/35/23.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "ru"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/35/22.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "ru"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/36/22.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "ru"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/5/17/11.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "ru"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/5/18/11.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "ru"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/5/18/11.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "ru"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/5/17/11.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "ru"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/9/5.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "ru"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/8/5.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "ru"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/35/23.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr-cyrl"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/36/23.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr-cyrl"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/35/22.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr-cyrl"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/6/36/22.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr-cyrl"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/5/17/11.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr-cyrl"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/5/17/11.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr-cyrl"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/5/18/11.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr-cyrl"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/8/5.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr-cyrl"
+   },
+   {
+    "url": "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/9/5.pbf",
+    "error": "route: [Errno 20] Not a directory: 'site/snapshot/assets/tiles.openfreemap.org/planet/20261025_080012_pt'",
+    "page": "/mapa-punjaca",
+    "mode": "sr-cyrl"
+   }
+  ],
   "replay": false
  }
 }
