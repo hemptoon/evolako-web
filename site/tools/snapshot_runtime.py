@@ -88,6 +88,15 @@ DOM_REFS_JS = """() => {
 }"""
 
 
+def flat_path(url):
+    """assets/<host>/<path with / as __>[__<query hash>]: live-service files (only QA reads them) and any file whose
+    nested path would collide with another file (e.g. the map's TileJSON /planet and its tiles /planet/6/35/23.pbf)."""
+    rel = local_path(url)
+    host = urllib.parse.urlsplit(url).netloc
+    rest = rel[len('assets/%s/' % host):]
+    return 'assets/%s/%s' % (host, rest.replace('/', '__'))
+
+
 def url_key(u):
     p = urllib.parse.urlsplit(u)
     return p.netloc.lower() + urllib.parse.unquote(p.path) + ('?' + p.query if p.query else '')
@@ -156,10 +165,12 @@ class State:
             return st
         e = self.new.get(key)
         if e is None:
-            rel = local_path(url)
+            rel = flat_path(url) if kind == 'live' else local_path(url)
             if rel in self.files:                   # same local path, other URL spelling: keep both apart
                 stem, dot, ext = rel.rpartition('.')
                 rel = '%s__rt%s.%s' % (stem, digest[:8], ext) if dot and '/' not in ext else rel + '__rt' + digest[:8]
+            if self.collides(rel):
+                rel = flat_path(url)
             full = os.path.join(self.snapshot, rel)
             os.makedirs(os.path.dirname(full), exist_ok=True)
             with open(full, 'wb') as f:
@@ -185,6 +196,18 @@ class State:
             if i and i not in e['initiators'] and len(e['initiators']) < 12:
                 e['initiators'].append(i)
         return e
+
+    def collides(self, rel):
+        """True when rel cannot be written: a parent folder of it is a file, or rel itself is a folder."""
+        full = os.path.join(self.snapshot, rel)
+        if os.path.isdir(full):
+            return True
+        parent = os.path.dirname(full)
+        while parent and parent != self.snapshot and not os.path.isdir(parent):
+            if os.path.isfile(parent):
+                return True
+            parent = os.path.dirname(parent)
+        return any(f.startswith(rel + '/') for f in self.files)
 
     def known(self, url):
         k = url_key(url)
