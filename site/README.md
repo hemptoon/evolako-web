@@ -10,8 +10,8 @@ Plan (details in the project document "Evolako — переезд с Webflow"):
 1. **Snapshot** — the workflow `.github/workflows/site-snapshot.yml` (branch `site-migration`) copies the published
    site into `snapshot/` (see below). Done; repeat right before the switch.
 2. **Build** — `build.py` turns the snapshot into `dist/`: own copies of every file, no Webflow or Google at runtime,
-   own form endpoint, CSP. Done (steps 2 and 2b). Still to come: real `/en/` and `/ru/` pages prerendered from the
-   dictionaries, sitemap with hreflang.
+   own form endpoint, CSP (steps 2 and 2b), real `/en/` and `/ru/` pages prerendered from the dictionaries, sitemap
+   with hreflang (step 3, see "Languages"). Done.
 3. **Preview** — a separate Cloudflare Pages project (`evolako-site`, noindex on `*.pages.dev`), compared page by
    page with the live site.
 4. **Switch** — only on the founders' word: custom domains www.evolako.rs and evolako.rs move to the new project;
@@ -50,8 +50,9 @@ them itself now, so the build no longer takes anything from there.)
 `python3 site/build.py` — snapshot → `site/dist/` (never committed; standard library only; the same snapshot gives a
 byte-identical dist):
 
-- every page at its current URL (`kontakt.html` serves `/kontakt`), `<html lang="sr">` static (the i18n engine still
-  switches EN/RU/Cyrillic in the browser), every file under `/_a/<host>/<path>` with every reference rewritten
+- every page at its current URL (`kontakt.html` serves `/kontakt`), `<html lang="sr">` static (Cyrillic stays a
+  browser mode of the Serbian page), plus `en/<slug>.html` and `ru/<slug>.html` (see "Languages"), every file under
+  `/_a/<host>/<path>` with every reference rewritten
 - **runtime URLs**: scripts that build Webflow CDN URLs from a base + `<assetId>%2F<name>-1.0.0.js` get the local base
   `/_a/cdn.prod.website-files.com/<site>/<folder>/` and real slashes (no local path depends on an encoded `%2F`);
   the runtime files a built page or a copied file starts are copied; the build checks every `<assetId>/<name>` entry
@@ -82,6 +83,52 @@ GA4 property, their hosts (`https://*.g.doubleclick.net`, `https://*.google.com`
 added too — mind the 2,000-character line limit. The Webflow editor and badge code inside `webflow.js` is still in the file but never runs here
 (it needs `?edit` / a `*.webflow.io` domain) and the CSP blocks it.
 
+## Languages (step 3)
+
+On the Webflow site every page has one URL and the i18n engine (an inline script in the head) swaps Serbian text for
+English or Russian in the browser, so search engines only ever see Serbian. The build now writes each page three
+times: `/<slug>` (Serbian, as before), `/en/<slug>` and `/ru/<slug>` (home: `/`, `/en/`, `/ru/`), same slugs.
+
+- **Text** — `prerender.py` applies, at build time, the dictionaries the live page really has in that language:
+  `i18n/harvest.json`, the engine's final dictionaries per page and language, captured by `tools/i18n_harvest.py`
+  from the snapshot replay (fixed load order, two delays; a key whose value depends on timing stops the build if a
+  page uses it). Lookup, normalization and skip rules are the engine's own (`tools/i18n_selftest.py` runs the engine's
+  functions in node against the Python copy). What the live site never translated (titles, meta descriptions,
+  JSON-LD, a few texts) comes from `i18n/en.json` and `i18n/ru.json` — keyed by the engine's hash of the Serbian
+  text, each entry with its Serbian source (the build checks the key) — and is used only where the live dictionaries
+  have nothing. `i18n/keep.json` lists texts that stay as they are (brands, package names, language names, titles of
+  Serbian sources …) with the reason. **The build stops** if a static text of an `/en/` or `/ru/` page has no
+  translation and is not in `keep.json` (it writes `site/i18n-missing.json`, not committed; `--allow-missing` only
+  for development), if an own translation uses a word the copy rules ban (atest, discount/скидка, 24/7, Plug&Charge,
+  "immediately"/«сразу», "we handle the paperwork"-type phrases) or drops a number of the Serbian text.
+- **Head** — static `<html lang="en|ru">`, translated `<title>`, meta description, og/twitter texts, `og:locale`
+  (sr_RS / en_US / ru_RU), canonical to itself, `hreflang` sr/en/ru + `x-default` (Serbian) on all three versions,
+  `og:url` of the page. JSON-LD in the page language: strings translated, page URLs and `@id`s moved to the
+  language's URLs (`/#org`, `/#organization`, `/#website` and the organization's own url stay shared),
+  `inLanguage` = the page language; the FAQPage of `/en/` and `/ru/cesta-pitanja` is generated from the questions
+  and answers the page shows. `sitemap.xml`: every page in sr, en, ru with `xhtml:link` alternates; `robots.txt`
+  unchanged; the 404 stays Serbian-only.
+- **Engine on `/en/`, `/ru/`** — still runs (widgets write Serbian text at runtime) but locked to the page language;
+  it also consults the own translations last (`_a/evo-i18n/<lang>.<sha>.js`). Scripts that read the page path see
+  the Serbian one (`window.EVO_PATH`), so the bot (`Stranica`), the visit counter, GA page paths and the career
+  backend get the same values as today; `Jezik` in the forms is the page language. Internal links on `/en/` and
+  `/ru/` pages point to the same language (static and at runtime).
+- **Switching = navigation** — the language menu (header and footer chips) links to the same page in the other
+  language; Cyrillic stays a mode of the Serbian page (`?lang=sr-cyrl`). Old links `?lang=en|ru` on a Serbian path
+  get a **301** to `/en/…` or `/ru/…` from `functions/_middleware.js`, other parameters kept (`?paket=wallbox`,
+  `?ref=…`); `?lang=sr-cyrl` passes. No Accept-Language or IP redirect. **A remembered choice** (`localStorage bvl`
+  = en/ru, set by an earlier visit) moves a visitor who arrives on a Serbian page from outside (another site, a
+  bookmark, typed) to the matching `/en/` or `/ru/` URL; clicking "Srpski" on an English or Russian page counts as
+  choosing Serbian, and reload/back/forward never redirect. Reason: the URL always tells the language (shareable
+  links, no Serbian URL showing English), and there is one English and one Russian rendering to maintain and test.
+  Crawlers have no remembered choice, so they always get the page of the URL.
+- **Updating translations** — when the live texts change: new snapshot (workflow), `python3 site/tools/i18n_harvest.py`
+  (~4 min), `python3 site/build.py`; add what the build reports as missing to `i18n/en.json` / `i18n/ru.json`
+  (key = `prerender.key_of(serbian text)`), build again, run the checks below.
+- Scripts the build patches for this (exact strings, each applied exactly as often as expected or the build stops):
+  `ENGINE_PATCHES`, `INLINE_PATCHES`, `FILE_PATCHES` in `prerender.py`. The patched copied files keep their names —
+  if one of them changes later, give it a new name (the `/_a/` cache is immutable).
+
 ## Forms
 
 - `webflow.js` (local copy) posts to `/f/6ab19bf9a3bb86f8fb7bba00` instead of `https://webflow.com/api/v1/form/…`,
@@ -94,8 +141,9 @@ added too — mind the 2,000-character line limit. The Webflow editor and badge 
   `{"triggerType":"form_submission","payload":{"siteId":"6ab19bf9a3bb86f8fb7bba00","id":"<24 hex>","name":"<data-name>","data":{…},"submittedAt":"<ISO>","source":"evolako.rs"}}`.
   The bot does not change (it dedupes by `id`, routes by `Tip` / form name). The answer `{"code":200}` shows the
   success block; any refusal or bot error shows the failure block.
-- Accepted forms: `Kontakt`, `Kviz prijava`, `Preporuka prijava`, `Prijava zgrade`, `B2B upit` (9 pages); the build
-  stops if a page has another sendable Webflow form. The home calculator ("Html Form") can never be sent. The four
+- Accepted forms: `Kontakt`, `Kviz prijava`, `Preporuka prijava`, `Prijava zgrade`, `B2B upit` (9 pages, each also
+  at `/en/` and `/ru/`: same form names and fields, `Jezik` = the page language where the form has it — the `Kontakt`
+  form has never sent `Jezik`, in any language); the build stops if a page has another sendable Webflow form. The home calculator ("Html Form") can never be sent. The four
   career forms keep posting to `app.evolako.rs/kr` (not Webflow forms).
 - Anti-spam without secrets: Origin must be `https://www.evolako.rs` or `https://evolako.rs` (and `Sec-Fetch-Site:
   same-origin` when sent); body ≤ 32 KB, ≤ 40 fields, names ≤ 80 and values ≤ 5,000 characters; a hidden honeypot
@@ -126,11 +174,22 @@ Without `BOT` or `HOOK` every form shows the failure block (nothing is lost sile
   calculator never sends, that an invalid referral code blocks, the honeypot, and the refused origin. Needs wrangler
   (`WRANGLER=<binary>` or `npx --yes wrangler@4.151.0`).
 - `python3 site/tools/qa_dist.py --shots <folder outside the repo> [--shard 1/2]` — every page + 404 × 1440/390 ×
-  4 modes: status, console errors, failed local requests, CSP violations (the `_headers` rules applied as Pages applies
-  them), requests to forbidden hosts (Webflow, its CDNs, Google Fonts/ajax, jsDelivr; the BlokVolt embed's own
-  requests are listed apart), links, fonts, and text + pixels against the original page replayed from the snapshot
-  in the same mode. `--merge part*.json` joins shards.
-- `site/functions/_middleware.js` — `X-Robots-Tag: noindex, nofollow` on every host except www.evolako.rs and
-  evolako.rs. Pages project: root directory `site`, output `dist` (`wrangler pages deploy dist` must run from `site/`,
+  4 versions (Serbian, Serbian Cyrillic, `/en/`, `/ru/`): status, `<html lang>`, console errors, failed local
+  requests, CSP violations (the `_headers` rules applied as Pages applies them), requests to forbidden hosts (Webflow,
+  its CDNs, Google Fonts/ajax, jsDelivr; the BlokVolt embed's own requests are listed apart), links incl. canonical
+  and hreflang, app links with the page's `?lang=`, fonts, JSON-LD (parses; FAQPage = visible FAQ), Serbian left on
+  `/en/` and `/ru/` (texts the BlokVolt map embed renders from its own data — station names, addresses — are
+  listed apart), and text + pixels against the original page replayed from the snapshot in the same language
+  (`?lang=`); a text difference counts as explained only where an own translation, a load-timing variant or the
+  hidden legal-data placeholder turns the original's words into exactly the built ones. Then interactions: language switching by both menus on five pages, the `?lang=` redirects, the
+  remembered choice, back/forward, Cyrillic, cookie banner, A4 notice, map search. `--merge part*.json` joins shards.
+- `python3 site/tools/compare_builds.py --old <dist built from the previous commit>` — the Serbian pages and every
+  other file equal the earlier build except for exactly the step-3 changes (engine/script patches, language menu as
+  links, hreflang, `_headers`, `sitemap.xml`, new `en/`, `ru/`, `_a/evo-i18n/`).
+- `python3 site/tools/i18n_selftest.py` — the prerender's copy of the engine's text functions equals the engine.
+- `node site/tools/middleware_unit.mjs` — the `?lang=` redirects (parameters kept, `sr-cyrl` untouched, GET/HEAD only)
+  and the noindex header.
+- `site/functions/_middleware.js` — 301 for old `?lang=en|ru` links (see "Languages"); `X-Robots-Tag: noindex,
+  nofollow` on every host except www.evolako.rs and evolako.rs. Pages project: root directory `site`, output `dist` (`wrangler pages deploy dist` must run from `site/`,
   so that `functions/` is picked up). Rocket Loader must stay off for evolako.rs: it rewrites the script tags and the
   CSP hashes would no longer match.

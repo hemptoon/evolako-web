@@ -1,0 +1,249 @@
+{
+ "_about": "Texts that stay as they are on the /en/ and /ru/ pages (brand, product and package names, language names, abbreviations, names in examples, titles of Serbian sources, the media kit's texts in the other languages …), each with the reason. Key as in en.json. A translation in en.json / ru.json wins over an entry here (e.g. Novi Sad stays in English, Нови-Сад in Russian). QA counts a kept text as allowed, never as \"Serbian left\".",
+ "entries": {
+  "11vuy5y": {
+   "sr": "Telegram",
+   "why": "brand"
+  },
+  "12bfbw4": {
+   "sr": "Example text",
+   "why": "Webflow's default placeholder of the calculator's range slider; never displayed"
+  },
+  "12mvu03": {
+   "sr": "B92 — Potrošnja struje moći će da se prati po satima: Sve više domova u Srbiji ima pametna brojila, 23.09.2026",
+   "why": "title of a Serbian-language source, cited as published (/novosti)"
+  },
+  "13ksmqi": {
+   "sr": "Wallbox Plus",
+   "why": "package name"
+  },
+  "15yj81d": {
+   "sr": "Viber",
+   "why": "brand"
+  },
+  "19jxmhn": {
+   "sr": "Charge&GO",
+   "why": "charging network brand (map filter)"
+  },
+  "1agii65": {
+   "sr": "Marko",
+   "why": "example first name in a form placeholder"
+  },
+  "1bc0c7z": {
+   "sr": "Evolako installs home chargers for electric cars in apartment-building garages and houses — with a MID-certified meter (in START and ZGRADA, optional with a wallbox) and monthly electricity billing with no markup. With the kit, residents get templates for the residents’ assembly and the garage owner.",
+   "why": "the media kit gives its boilerplate in Serbian, English and Russian"
+  },
+  "1bs8hg1": {
+   "sr": "Facebook",
+   "why": "brand"
+  },
+  "1bz82rg": {
+   "sr": "PNG",
+   "why": "file format"
+  },
+  "1ca7mnp": {
+   "sr": "PDF",
+   "why": "file format"
+  },
+  "1d5zzif": {
+   "sr": "WhatsApp",
+   "why": "brand"
+  },
+  "1dv9ne7": {
+   "sr": "RTS — Pametna brojila stižu u sve više domova – potrošnja struje moći će da se prati po satima, 23.09.2026",
+   "why": "title of a Serbian-language source, cited as published (/novosti)"
+  },
+  "1gs4s2m": {
+   "sr": "YouTube",
+   "why": "brand"
+  },
+  "1jdr5k2": {
+   "sr": "EVO-XXXXX",
+   "why": "format of a referral code"
+  },
+  "1jo11wz": {
+   "sr": "TikTok",
+   "why": "brand"
+  },
+  "1txdcke": {
+   "sr": "Wallbox 11 kW",
+   "why": "package name"
+  },
+  "1u9xo74": {
+   "sr": "latinica",
+   "why": "Serbian script name in the language menu"
+  },
+  "1y5qj30": {
+   "sr": "[PRAVNI-PODACI: poslovno ime · sedište · MB · PIB] · hello@evolako.com",
+   "why": "placeholder for the legal data of the business (hidden on the page until they are filled in)"
+  },
+  "1ym8wsv": {
+   "sr": "Serbia",
+   "why": "already English in the Serbian page (Russian: Сербия)"
+  },
+  "30xvgf": {
+   "sr": "Start",
+   "why": "package name"
+  },
+  "3ad97m": {
+   "sr": "Српски",
+   "why": "language name, written in its own language (language menu)"
+  },
+  "3rniv3": {
+   "sr": "START",
+   "why": "package name"
+  },
+  "4bnti3": {
+   "sr": "Instagram",
+   "why": "brand"
+  },
+  "4uznwq": {
+   "sr": "Evolako",
+   "why": "brand"
+  },
+  "5piaox": {
+   "sr": "WALLBOX — 94.000",
+   "why": "package name and price"
+  },
+  "7nql6j": {
+   "sr": "English",
+   "why": "language name, written in its own language (language menu, media kit)"
+  },
+  "8xje9h": {
+   "sr": "Wallbox Pulsar Max",
+   "why": "product name"
+  },
+  "93lo3u": {
+   "sr": "EN",
+   "why": "language code in the language menu"
+  },
+  "95lhlz": {
+   "sr": "Evolako ugrađuje kućne punjače za električne automobile u garažama stambenih zgrada i kućama — sa MID brojilom (u START i ZGRADA, uz wallbox po izboru) i mesečnim obračunom struje bez marže. Uz komplet stanari dobijaju šablone za skupštinu i vlasnika garaže.",
+   "why": "the media kit gives its boilerplate in Serbian, English and Russian"
+  },
+  "9kzw7d": {
+   "sr": "Avatar 1024 px",
+   "why": "already English in the Serbian page"
+  },
+  "aro7c9": {
+   "sr": "Wallbox Premium — Wallbox Pulsar Max",
+   "why": "product names (Wallbox Premium — Wallbox Pulsar Max)"
+  },
+  "azti8w": {
+   "sr": "Font: Onest (SIL Open Font License)",
+   "why": "already English in the Serbian page"
+  },
+  "bou7k1": {
+   "sr": "SVG",
+   "why": "file format"
+  },
+  "bv60ps": {
+   "sr": "Zgrada",
+   "why": "package name ZGRADA as the live Russian dictionary writes it (English: Building)"
+  },
+  "c6aykd": {
+   "sr": "Srpski",
+   "why": "language name, written in its own language (language menu, media kit)"
+  },
+  "c7y0z8": {
+   "sr": "Evolako устанавливает домашние зарядки для электромобилей в гаражах многоквартирных домов и в частных домах — с MID-счётчиком (в START и ZGRADA, к wallbox — по желанию) и ежемесячным расчётом за электричество без наценки. Вместе с комплектом жильцы получают шаблоны для собрания жильцов и владельца гаража.",
+   "why": "the media kit gives its boilerplate in Serbian, English and Russian"
+  },
+  "col5at": {
+   "sr": "Danas — Od danas skuplja struja: Kako izgleda novi cenovnik po tarifama i zonama?, 01.10.2025",
+   "why": "title of a Serbian-language source, cited as published (/novosti)"
+  },
+  "d4yke7": {
+   "sr": "LinkedIn",
+   "why": "brand"
+  },
+  "d9t6cp": {
+   "sr": "Vojvodina",
+   "why": "province name, the same in English (Russian: Воеводина)"
+  },
+  "dsrlbk": {
+   "sr": "E-mail",
+   "why": "used as is in English and Russian"
+  },
+  "e17gff": {
+   "sr": "ћирилица",
+   "why": "Serbian script name in the language menu"
+  },
+  "g2vsvw": {
+   "sr": "Danas — Poskupljenje struje čeka izbore, 31.08.2026",
+   "why": "title of a Serbian-language source, cited as published (/novosti)"
+  },
+  "hfim9n": {
+   "sr": "FAQ",
+   "why": "English abbreviation (Russian has its own translation)"
+  },
+  "ieqfjb": {
+   "sr": "Copy email to clipboard",
+   "why": "already English in the Serbian page (Russian has a translation)"
+  },
+  "j1sac1": {
+   "sr": "Map",
+   "why": "already English in the Serbian page"
+  },
+  "j67ooh": {
+   "sr": "Agencija za energetiku Republike Srbije (AERS) — Troškovi energije za grejanje stambenog prostora, grejna sezona 2026/2027, 29.09.2026",
+   "why": "title of a Serbian-language source, cited as published (/novosti)"
+  },
+  "l8n0en": {
+   "sr": "Wallbox Premium",
+   "why": "package name"
+  },
+  "n2fqm0": {
+   "sr": "Evolako решает вопрос зарядки электромобиля для тех, кто живёт в многоквартирных домах. На парковочное место или в гараж устанавливается усиленная розетка с сертифицированным MID-счётчиком или wallbox на 11 кВт (MID-счётчик по желанию); Evolako даёт шаблоны документов для собрания жильцов или владельца гаража и каждый месяц рассчитывает электричество по цене из счёта EPS, без наценки. Пакеты с базовым монтажом рядом со щитком — от 39 000 RSD с НДС, установка занимает один рабочий день. Evolako работает в Белграде, Нови-Саде и Воеводине.",
+   "why": "the media kit gives its boilerplate in Serbian, English and Russian"
+  },
+  "o5jmq2": {
+   "sr": "021.rs — Srbija obećala MMF-u poskupljenje struje u oktobru: Ekonomisti o tome da li će i ispuniti dogovoreno, 13.09.2026",
+   "why": "title of a Serbian-language source, cited as published (/novosti)"
+  },
+  "rjoks7": {
+   "sr": "Evolako rešava punjenje električnog automobila za ljude koji žive u zgradama. Na parking mesto ili u garažu ugrađuje pojačanu utičnicu sa sertifikovanim MID brojilom ili wallbox 11 kW (MID brojilo po izboru), daje šablone papira za skupštinu stanara ili vlasnika garaže i svakog meseca obračunava struju po ceni sa računa EPS-a, bez marže. Paketi sa osnovnom ugradnjom pored razvodne table koštaju od 39.000 RSD sa PDV-om, a ugradnja traje jedan radni dan. Evolako radi u Beogradu, Novom Sadu i Vojvodini.",
+   "why": "the media kit gives its boilerplate in Serbian, English and Russian"
+  },
+  "s0yn2o": {
+   "sr": "SR",
+   "why": "language code in the language menu"
+  },
+  "snxqoj": {
+   "sr": "START — 39.000",
+   "why": "package name and price"
+  },
+  "sv0lnk": {
+   "sr": "RU",
+   "why": "language code in the language menu"
+  },
+  "t3w94j": {
+   "sr": "Русский",
+   "why": "language name, written in its own language (language menu, media kit)"
+  },
+  "v3yiqf": {
+   "sr": "CRM",
+   "why": "abbreviation"
+  },
+  "wkfe1w": {
+   "sr": "Bonus",
+   "why": "already English in the Serbian page"
+  },
+  "xr1b5j": {
+   "sr": "Novi Sad",
+   "why": "city name, the same in English (Russian: Нови-Сад)"
+  },
+  "xtroox": {
+   "sr": "Evolako logo",
+   "why": "already English in the Serbian page (Russian has a translation)"
+  },
+  "y5xav3": {
+   "sr": "CSV",
+   "why": "file format"
+  },
+  "z84w6b": {
+   "sr": "Evolako solves electric car charging for people who live in apartment buildings. At a parking space or in a garage it installs a heavy-duty socket with a MID-certified meter or an 11 kW wallbox (MID meter optional), provides document templates for the residents’ assembly or the garage owner, and every month bills electricity at the price on the EPS bill, with no markup. Packages with basic installation next to the distribution board start at RSD 39,000 including VAT, and installation takes one working day. Evolako works in Belgrade, Novi Sad and Vojvodina.",
+   "why": "the media kit gives its boilerplate in Serbian, English and Russian"
+  }
+ }
+}

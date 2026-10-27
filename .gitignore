@@ -17,7 +17,11 @@ __pycache__/
 site/dist/
 site/.wrangler/
 site/tools/fake_bot/.wrangler/
+/.wrangler/
 # ...but a "dist" folder inside the site snapshot mirror is a CDN path (cdn.jsdelivr.net/npm/gsap@3.15/dist/),
 # not build output: the rule "dist/" above made the snapshot commit lose the GSAP files
 !site/snapshot/**/dist/
 !site/snapshot-fill/**/dist/
+
+# list of EN/RU texts the build could not translate (site/build.py writes it next to dist)
+site/i18n-missing.json

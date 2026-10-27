@@ -122,8 +122,20 @@ SCENARIOS = [
 ] + [b2b(p, expect={'Segment': s}) for p, s in sorted(SEGMENTS.items()) if p != 'punjaci-za-hotele'] + [
     b2b('punjaci-za-hotele', mode='ru', expect={'Segment': 'hotel'}),
 ]
-# one more language: the building sign-up in English
-SCENARIOS.append(dict(SCENARIOS[4], id='zgrada-en', mode='en', expect=dict(SCENARIOS[4]['expect'], Jezik='en')))
+# the /en/ and /ru/ pages (step 3): the built page at its own URL, the original page with ?lang= as the reference;
+# Jezik = the page's language, Stranica stays the Serbian path (what the bot got from the original page)
+SCENARIOS[-1].update(dist_path='/ru/punjaci-za-hotele')
+SCENARIOS.append(dict(SCENARIOS[4], id='zgrada-en', mode='en', dist_path='/en/prijavi-zgradu',
+                      expect=dict(SCENARIOS[4]['expect'], Jezik='en')))
+SCENARIOS.append(dict(SCENARIOS[4], id='zgrada-ru', mode='ru', dist_path='/ru/prijavi-zgradu',
+                      expect=dict(SCENARIOS[4]['expect'], Jezik='ru')))
+SCENARIOS.append(dict(SCENARIOS[0], id='kontakt-en', mode='en', dist_path='/en/kontakt?paket=wallbox'))
+SCENARIOS.append(dict(SCENARIOS[1], id='kviz-ru', mode='ru', dist_path='/ru/proveri-svoju-garazu',
+                      expect=dict(SCENARIOS[1]['expect'], Jezik='ru')))
+SCENARIOS.append(dict(b2b('punjaci-za-hotele', mode='en', expect={'Segment': 'hotel'}), id='b2b-punjaci-za-hotele-en',
+                      dist_path='/en/punjaci-za-hotele'))
+SCENARIOS.append(dict(SCENARIOS[3], id='preporuka-en', mode='en', dist_path='/en/preporuka?ref=EVO-7K2QX',
+                      expect=dict(SCENARIOS[3]['expect'], Jezik='en')))
 
 
 # ------------------------------------------------------------------------------------------------ processes
@@ -238,7 +250,8 @@ def run(browser, base, sc, side, answers, ip=None, steps=None, submit=True, befo
     page.on('console', lambda m: rec['console_errors'].append(m.text[:200]) if m.type == 'error' and
             'ERR_BLOCKED_BY_CLIENT' not in m.text else None)
     q = '' if sc.get('mode', 'sr') == 'sr' else ('&' if '?' in sc['path'] else '?') + 'lang=' + sc['mode']
-    page.goto(base + sc['path'] + q, wait_until='load', timeout=60000)
+    target = sc['dist_path'] if side == 'dist' and sc.get('dist_path') else sc['path'] + q
+    page.goto(base + target, wait_until='load', timeout=60000)
     t0 = time.time()
     page.wait_for_timeout(400)
     for st in (steps if steps is not None else sc['steps']):
@@ -276,7 +289,8 @@ def run(browser, base, sc, side, answers, ip=None, steps=None, submit=True, befo
         const vis = e => !!e && getComputedStyle(e).display !== 'none';
         const share = Array.from(document.querySelectorAll('.evs-share a')).map(a => a.textContent.trim());
         return {done: vis(w && w.querySelector('.w-form-done')), fail: vis(w && w.querySelector('.w-form-fail')),
-                form: vis(f), url: location.pathname + location.search, share,
+                form: vis(f), url: location.pathname + location.search, share, lang: document.documentElement.lang,
+                doneText: ((w && w.querySelector('.w-form-done')) || {}).innerText || '',
                 side: (document.getElementById('evb-sg-side') || {}).innerText || ''}; }""", form_sel)
     ctx.close()
     rec['external_blocked'] = sorted(h for h in rec['external_blocked'] if h)
@@ -372,6 +386,8 @@ def main():
                 if calls and ref['webflow']:
                     p2, payload = check_payload(calls[0], sc, ref_name, ref_fields)
                     problems += p2
+                if d['state'].get('lang') != {'sr': 'sr', 'en': 'en', 'ru': 'ru'}[sc.get('mode', 'sr')]:
+                    problems.append('built page: html lang %s' % d['state'].get('lang'))
                 csp = [c for c in d['console_errors'] if 'Content Security Policy' in c or 'Refused to' in c]
                 if csp:
                     problems.append('built page: CSP blocked something: %s' % csp[:2])
@@ -390,7 +406,8 @@ def main():
                                                                                 ref['state']['side'][:80]))
                 failures += bool(problems)
                 shown = dict(payload or {}, id='<24 hex>', submittedAt='<ISO time>') if payload else None
-                results.append({'id': sc['id'], 'path': sc['path'], 'mode': sc.get('mode', 'sr'), 'form': sc['form'],
+                results.append({'id': sc['id'], 'path': sc.get('dist_path') or sc['path'], 'mode': sc.get('mode', 'sr'),
+                                'form': sc['form'],
                                 'ok': not problems, 'problems': problems, 'payload': shown,
                                 'webflow_fields': ref_fields, 'dist_console_errors': d['console_errors'][:5],
                                 'blocked_external': d['external_blocked']})

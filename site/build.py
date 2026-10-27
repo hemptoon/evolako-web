@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
-"""Static build of www.evolako.rs from the Webflow snapshot (steps 2 and 2b of moving the site off Webflow).
+"""Static build of www.evolako.rs from the Webflow snapshot (steps 2, 2b and 3 of moving the site off Webflow).
 
 Reads site/snapshot/ (static crawl + runtime capture, both taken on the GitHub runner by the workflow "Site snapshot")
 and writes site/dist/ for Cloudflare Pages. The built site needs neither Webflow nor Google at runtime.
 
   <slug>.html              every page at the URL it has today, without a trailing slash (Pages serves /kontakt from
-                           kontakt.html); index.html is /. <html lang="sr"> is static now; the i18n engine still switches
-                           to EN/RU/Cyrillic in the browser (?lang=, the language menu, the remembered choice)
+                           kontakt.html); index.html is /. <html lang="sr">; Cyrillic stays a mode of the Serbian page
+                           in the browser (?lang=sr-cyrl, the language menu)
+  en/<slug>.html,          step 3: the same page prerendered in English / Russian at /en/<slug> and /ru/<slug> (home:
+  ru/<slug>.html           /en/, /ru/) — static <html lang>, text, title, meta, canonical, hreflang, JSON-LD in that
+                           language (site/prerender.py; dictionaries in site/i18n/); the menu links to the other
+                           languages, old ?lang=en|ru links get a 301 from site/functions/_middleware.js
+  _a/evo-i18n/<lang>.<sha>.js  the own translations (site/i18n/<lang>.json) for the engine of the /en/, /ru/ pages
   _a/<host>/<path>         every file the built pages use, at the same relative path as in snapshot/assets/ (a file
                            the snapshot saved without an extension gets one from its content type, e.g. the Google Fonts
                            CSS); every reference rewritten to that root-relative path — HTML attributes, srcset, inline
@@ -14,7 +19,9 @@ and writes site/dist/ for Cloudflare Pages. The built site needs neither Webflow
                            Also the files the pages only load at runtime (manifest entries "runtime": true) when a built
                            page or a copied file started them (their "initiators")
   404.html                 own "page not found" built from the markup of /vodici (navigation, footer, shared CSS/JS)
-  robots.txt, sitemap.xml  as published (URLs stay on https://www.evolako.rs)
+  robots.txt               as published
+  sitemap.xml              the published one (order, lastmod) with every page in sr, en and ru and xhtml:link
+                           alternates (URLs stay on https://www.evolako.rs)
   _headers, _routes.json   cache and security headers incl. a Content-Security-Policy per page; Pages Functions
                            (site/functions/: noindex middleware, the form endpoint /f/<site>) run for pages, not /_a/
 
@@ -58,6 +65,9 @@ import sys
 import urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+import prerender as PR  # noqa: E402  (site/prerender.py: the /en/ and /ru/ pages)
+
 SITE = 'https://www.evolako.rs'
 SITE_ID = '6ab19bf9a3bb86f8fb7bba00'
 ASSET_DIR = '_a'
@@ -88,6 +98,10 @@ HONEYPOT_HTML = ('<div aria-hidden="true" style="position:absolute;left:-10000px
                  'overflow:hidden"><input type="text" name="%s" value="" tabindex="-1" autocomplete="off"/></div>'
                  % HONEYPOT)
 FONT_LICENSE = os.path.join(HERE, 'licenses', 'Onest-OFL.txt')
+I18N_DIR = os.path.join(HERE, 'i18n')                # harvest.json (live dictionaries), en.json / ru.json (own),
+HARVEST = os.path.join(I18N_DIR, 'harvest.json')      # keep.json (texts that stay as they are)
+LANGS = PR.LANGS                                      # prerendered languages besides Serbian
+EXTRA_DIR = ASSET_DIR + '/evo-i18n'                   # the site's own translations as scripts for the engine
 WEBFLOW_COMMENT = '<!-- This site was created in Webflow. https://webflow.com -->'
 
 COPY_404 = {
@@ -164,6 +178,16 @@ HEADERS_TOP = """\
   Cache-Control: public, max-age=300, must-revalidate
   ! Content-Security-Policy
   Content-Security-Policy: {cspindex}
+
+# /en/ and /ru/: the same pages in English and Russian, with the same scripts, so each shares the policy of its
+# Serbian page (":lang" is one path segment; /en/x and /ru/x are the only pages it can match)
+/:lang/:page
+  Cache-Control: public, max-age=300, must-revalidate
+
+/:lang/
+  Cache-Control: public, max-age=300, must-revalidate
+  ! Content-Security-Policy
+  Content-Security-Policy: {cspindex}
 """
 HEADERS_BOTTOM = """
 # *.pages.dev (production alias and every preview) is never indexed; site/functions/_middleware.js does the same
@@ -215,6 +239,17 @@ def is_forbidden(host):
 
 def page_path(slug):
     return '/' if slug == 'index' else '/' + slug
+
+
+def page_file(path):
+    """dist file that serves a page path (/, /x, /en/, /en/x), or None for anything else."""
+    if path == '/':
+        return 'index.html'
+    m = re.fullmatch(r'/(en|ru)/([a-z0-9-]*)', path)
+    if m:
+        return '%s/%s.html' % (m.group(1), m.group(2) or 'index')
+    m = re.fullmatch(r'/([a-z0-9-]+)', path)
+    return m.group(1) + '.html' if m else None
 
 
 JS_TYPES = ('', 'text/javascript', 'application/javascript', 'module', 'text/ecmascript', 'application/ecmascript')
@@ -270,8 +305,9 @@ class Asset:
 
 
 class Build:
-    def __init__(self, snapshot, fill, out):
+    def __init__(self, snapshot, fill, out, allow_missing=False):
         self.snapshot, self.fill, self.out = snapshot, fill, out
+        self.allow_missing = allow_missing
         mpath = os.path.join(snapshot, 'manifest.json')
         if not os.path.exists(mpath):
             fail('no manifest at ' + mpath)
@@ -288,6 +324,9 @@ class Build:
         self.turnstile_removed = 0
         self.hints_dropped = {}
         self.form_url_patched = None
+        self.file_patches = {}      # copied script -> dist paths patched for /en/ and /ru/ (PR.FILE_PATCHES)
+        self.inline_patches = {}    # inline patch name -> count over all pages (PR.INLINE_PATCHES)
+        self.engines_patched = 0
         self.load_assets()
         self.live_hosts = LIVE_HOSTS | {host_of(e['url']) for e in self.live.values()}
         hosts = {a.host for a in self.assets.values()} | self.live_hosts
@@ -457,6 +496,12 @@ class Build:
                         fail('two webflow.js files: %s and %s' % (self.form_url_patched, a.dist_rel))
                     text = text.replace(WEBFLOW_FORM_URL, LOCAL_FORM_URL)
                     self.form_url_patched = a.dist_rel
+                for name, old, new in PR.FILE_PATCHES:
+                    if a.dist_rel.rsplit('/', 1)[-1] == name:
+                        if text.count(old) != 1:
+                            fail('%s: path patch expected once, found %d: %s' % (a.dist_rel, text.count(old), old))
+                        text = text.replace(old, new)
+                        self.file_patches.setdefault(name, []).append(a.dist_rel)
                 out = self.rewrite_text(text, page=a.dist_rel, refs=refs)
             else:
                 continue
@@ -593,6 +638,14 @@ class Build:
         text, fams = self.replace_webfont_loader(page, text)
         text = self.drop_hints(page, text)
         text = self.rewrite_inline_scripts(page, text)
+        try:
+            text, n = PR.patch_engine(text, page)
+        except ValueError as e:
+            fail(str(e))
+        if not n:
+            fail('%s: the i18n engine (%s) is missing' % (page, PR.ENGINE_MARKER))
+        self.engines_patched += n
+        text = PR.patch_inline(text, self.inline_patches)
         text = self.prepare_forms(page, text)
         text = self.set_lang(page, text)
         text = self.rewrite_text(text, page=page, absolute_spans=self.absolute_spans(text), counts=counts, refs=refs)
@@ -697,6 +750,10 @@ class Build:
         if seen_forms != self.form_names:
             fail('forms on the pages %s and FORM_NAMES of the endpoint %s differ' % (sorted(seen_forms),
                                                                                    sorted(self.form_names)))
+        # languages: hreflang alternates and real language-menu links on the Serbian pages, then /en/ and /ru/
+        self.languages()
+        for (lang, slug), text in self.lang_out.items():
+            page_refs[(lang, slug)] = set(page_refs[slug])
 
         # files to copy: everything the pages reference, plus what those CSS/JS files reference, plus the runtime
         # files a built page or a copied file starts (repeated until nothing new is added)
@@ -727,6 +784,130 @@ class Build:
         self.csp = self.content_security_policies()
         self.write(need)
         self.report(need, fams_seen)
+
+    # ---------------------------------------------------------------- languages
+    def check_patches(self):
+        for name, rx, fn, minimum in PR.INLINE_PATCHES:
+            if self.inline_patches.get(name, 0) < minimum:
+                fail('inline patch "%s" applied %d times, expected at least %d' % (
+                    name, self.inline_patches.get(name, 0), minimum))
+        for name, old, new in PR.FILE_PATCHES:
+            if name not in self.file_patches:
+                fail('path patch for %s: file not in the build' % name)
+        if sum(len(v) for v in self.file_patches.values()) != len(PR.FILE_PATCHES):
+            fail('path patches applied %d times, expected %d' % (sum(len(v) for v in self.file_patches.values()),
+                                                                 len(PR.FILE_PATCHES)))
+        if self.engines_patched != len(self.page_out) - 1:
+            fail('i18n engine patched on %d of %d pages' % (self.engines_patched, len(self.page_out) - 1))
+        left = {}
+        for slug, text in self.page_out.items():
+            for _, body in inline_scripts(text):
+                for m in re.finditer(r'.{0,60}location\.pathname.{0,40}', body):
+                    if 'replaceState' not in m.group(0) and 'EVO_PATH' not in m.group(0) and 'location.origin+location.pathname+(L()' not in m.group(0) and 'var EP=' not in m.group(0):
+                        left.setdefault(m.group(0).strip()[:100], set()).add(slug)
+        self.pathname_left = left
+
+    def load_harvest(self):
+        if not os.path.isfile(HARVEST):
+            fail('%s is missing: run python3 site/tools/i18n_harvest.py (needs Playwright) and commit it' %
+                 os.path.relpath(HARVEST))
+        with open(HARVEST, encoding='utf-8') as f:
+            h = json.load(f)
+        with open(os.path.join(self.snapshot, 'manifest.json'), 'rb') as f:
+            sha = sha256(f.read())
+        if h.get('snapshot_manifest_sha256') != sha:
+            fail('%s was taken from another snapshot (manifest %s, snapshot %s): run python3 '
+                 'site/tools/i18n_harvest.py again and commit it' % (os.path.relpath(HARVEST),
+                                                                     (h.get('snapshot_manifest_sha256') or '?')[:12],
+                                                                     sha[:12]))
+        sys.path.insert(0, os.path.join(HERE, 'tools'))
+        from i18n_harvest import expand
+        pages = expand(h)
+        missing = [s for s in self.page_out if s != '404' and not all(l in pages.get(s, {}) for l in LANGS)]
+        if missing:
+            fail('the harvest lacks pages %s: run python3 site/tools/i18n_harvest.py' % missing)
+        return pages
+
+    def languages(self):
+        self.check_patches()
+        harvest = self.load_harvest()
+        try:
+            self.keep = PR.load_keep(I18N_DIR)
+            self.extra = {}
+            for lang in LANGS:
+                self.extra[lang], src = PR.load_i18n(I18N_DIR, lang)
+                bad = [(k, src[k][:50], p) for k, v in self.extra[lang].items()
+                       for p in PR.copy_problems(lang, src[k], v)]
+                if bad:
+                    fail('site/i18n/%s.json breaks the copy rules: %s' % (lang, bad[:8]))
+        except ValueError as e:
+            fail(str(e))
+        slugs = sorted(s for s in self.page_out if s != '404')
+        alts = 0
+        for slug in slugs:
+            text, n_menu, n_chips = PR.language_menu(self.page_out[slug], slug)
+            if n_menu != 4 or n_chips != 3:
+                fail('/%s: language menu has %d entries in the header and %d chips in the footer (expected 4 and 3)'
+                     % (slug, n_menu, n_chips))
+            canon = re.findall(r'<link\b[^>]*\brel="canonical"[^>]*>', text)
+            if len(canon) != 1:
+                fail('/%s: expected one canonical link, found %d' % (slug, len(canon)))
+            text = text.replace(canon[0], canon[0] + PR.alternates(SITE, slug), 1)
+            alts += 1
+            self.page_out[slug] = text
+        self.extra_files = {}
+        for lang in LANGS:
+            js = PR.extra_script(lang, self.extra[lang]).encode('utf-8')
+            self.extra_files[lang] = ('%s/%s.%s.js' % (EXTRA_DIR, lang, sha256(js)[:10]), js)
+        self.lang_out, self.lang_report = {}, {}
+        missing_head = []
+        for lang in LANGS:
+            for slug in slugs:
+                hv = harvest[slug][lang]
+                tr = PR.Translator(lang, hv['dicts'], self.extra[lang])
+                try:
+                    doc, rep = PR.make_lang_page(self.page_out[slug], slug, lang, tr, self.keep, SITE,
+                                                 '/' + self.extra_files[lang][0], PR.ENGINE_MARKER)
+                except ValueError as e:
+                    fail(str(e))
+                title = html.unescape(re.search(r'<title>(.*?)</title>', self.page_out[slug], re.S).group(1))
+                if (tr.live(title) or PR.nm(title)) != hv['title']:
+                    fail('/%s/%s: the engine titled the live page %r, the build computes %r' % (
+                        lang, slug, hv['title'], tr.live(title)))
+                if rep.get('chains'):
+                    fail('/%s/%s: translations the engine would translate again at runtime: %s' % (
+                        lang, slug, rep['chains'][:5]))
+                bad = {k for d in (hv.get('unstable') or {}).values() for k in d} & tr.used_live
+                if bad:
+                    fail('/%s/%s uses dictionary keys whose live value depends on load timing: %s' % (
+                        lang, slug, sorted(bad)))
+                self.lang_out[(lang, slug)] = doc
+                body = html.unescape(re.sub(r'<[^>]+>', ' ', re.sub(r'<(script|style)\b.*?</\1>', ' ',
+                                                                     doc[doc.find('<body'):], flags=re.S)))
+                rep['banned_live'] = sorted({m.group(0) for p in PR.BANNED[lang]
+                                             for m in re.finditer(r'[^.!?\n]{0,60}' + p + r'[^.!?\n]{0,40}', body,
+                                                                  re.I)})
+                rep['hits'] = dict(tr.hits)
+                rep['extra_used'] = sorted(tr.used_extra)
+                self.lang_report[(lang, slug)] = rep
+                missing_head += [(lang, slug, k, v) for k, v in rep['missing_head']]
+        self.alternates_added = alts
+        if missing_head:
+            self.write_missing(missing_head)
+            msg = ('%d title/meta/JSON-LD texts of the /en/ and /ru/ pages have no translation (list: %s); add them '
+                   'to site/i18n/<lang>.json' % (len(missing_head), os.path.relpath(self.missing_path)))
+            if not self.allow_missing:
+                fail(msg)
+            print('WARNING (--allow-missing, never for a release): ' + msg, file=sys.stderr)
+
+    def write_missing(self, items):
+        out = {}
+        for lang, slug, kind, sr in items:
+            e = out.setdefault(lang, {}).setdefault(PR.key_of(sr), {'sr': sr, 'where': []})
+            e['where'].append('/%s %s' % (slug, kind))
+        self.missing_path = os.path.join(os.path.dirname(os.path.abspath(self.out)), 'i18n-missing.json')  # ignored
+        with open(self.missing_path, 'w', encoding='utf-8') as f:
+            json.dump(out, f, ensure_ascii=False, indent=1, sort_keys=True)
 
     def check_manifest_coverage(self, page_refs):
         """Every (page, asset) pair from the static manifest is either rewritten on that page or explained."""
@@ -784,6 +965,7 @@ class Build:
     def content_security_policies(self):
         live = self.page_live_sources()
         policies = {}
+        self.csp_hashes = {}
         for slug, text in self.page_out.items():
             pol = [(d, list(s)) for d, s in CSP_BASE]
             idx = {d: i for i, (d, _) in enumerate(pol)}
@@ -815,13 +997,21 @@ class Build:
             if re.search(r'\son[a-z]+\s*=\s*["\']|href="javascript:', text):
                 fail('%s: an inline event handler or javascript: URL — the CSP would block it' % slug)
             policies[slug] = (value, len(hashes))
+            self.csp_hashes[slug] = hashes
+        for (lang, slug), text in sorted(self.lang_out.items()):
+            hashes = sorted({csp_hash(body) for _, body in inline_scripts(text)})
+            if hashes != self.csp_hashes[slug]:
+                fail('/%s/%s: its inline scripts differ from /%s (the policy is shared)' % (lang, slug, slug))
+            if re.search(r'\son[a-z]+\s*=\s*["\']|href="javascript:', text):
+                fail('/%s/%s: an inline event handler or javascript: URL' % (lang, slug))
         return policies
 
     def headers_file(self):
         parts = [HEADERS_TOP.format(csp404=self.csp['404'][0], cspindex=self.csp['index'][0])]
         for slug in sorted(s for s in self.csp if s not in ('404', 'index')):
-            parts.append('\n%s\n  ! Content-Security-Policy\n  Content-Security-Policy: %s\n' % (page_path(slug),
-                                                                                            self.csp[slug][0]))
+            for path in (page_path(slug), '/:lang' + page_path(slug)):
+                parts.append('\n%s\n  ! Content-Security-Policy\n  Content-Security-Policy: %s\n' % (
+                    path, self.csp[slug][0]))
         parts.append(HEADERS_BOTTOM)
         text = ''.join(parts)
         rules = len(re.findall(r'^\S', text, re.M)) - len(re.findall(r'^#', text, re.M))
@@ -862,6 +1052,10 @@ class Build:
 
         for slug in sorted(self.page_out):
             put(slug + '.html', self.page_out[slug].encode('utf-8'))
+        for (lang, slug), text in sorted(self.lang_out.items()):
+            put('%s/%s.html' % (lang, slug), text.encode('utf-8'))
+        for lang, (rel, js) in sorted(self.extra_files.items()):
+            put(rel, js)
         by_rel = {a.dist_rel: a for a in self.assets.values() if a.src}
         for rel in sorted(need):
             put(rel, by_rel[rel].data)
@@ -869,26 +1063,101 @@ class Build:
         with open(FONT_LICENSE, 'rb') as f:
             put(lic, f.read())
         self.font_license = lic
-        for name in ('robots.txt', 'sitemap.xml'):
-            p = os.path.join(self.snapshot, 'extra', name)
-            if not os.path.isfile(p):
-                fail('missing snapshot/extra/' + name)
-            with open(p, 'rb') as f:
-                put(name, f.read())
+        p = os.path.join(self.snapshot, 'extra', 'robots.txt')
+        if not os.path.isfile(p):
+            fail('missing snapshot/extra/robots.txt')
+        with open(p, 'rb') as f:
+            put('robots.txt', f.read())
+        put('sitemap.xml', self.sitemap().encode('utf-8'))
         put('_headers', self.headers_file().encode('utf-8'))
         put('_routes.json', (json.dumps(ROUTES, indent=2, sort_keys=True) + '\n').encode('utf-8'))
         self.verify(out, need)
+
+    def sitemap(self):
+        """The published sitemap's pages (same order, same lastmod), each in Serbian, English and Russian, every URL
+        with its xhtml:link alternates (the same four links as in the pages' heads)."""
+        p = os.path.join(self.snapshot, 'extra', 'sitemap.xml')
+        if not os.path.isfile(p):
+            fail('missing snapshot/extra/sitemap.xml')
+        with open(p, encoding='utf-8') as f:
+            src = f.read()
+        entries = []
+        for m in re.finditer(r'<url>(.*?)</url>', src, re.S):
+            loc = re.search(r'<loc>\s*([^<\s]+)\s*</loc>', m.group(1)).group(1)
+            lm = re.search(r'<lastmod>\s*([^<\s]+)\s*</lastmod>', m.group(1))
+            slug = urllib.parse.urlsplit(loc).path.strip('/') or 'index'
+            entries.append((slug, lm.group(1) if lm else None))
+        lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+                 'xmlns:xhtml="http://www.w3.org/1999/xhtml">']
+        for slug, lastmod in entries:
+            for lang in ('sr',) + LANGS:
+                lines.append('    <url>')
+                lines.append('        <loc>%s</loc>' % PR.page_url(SITE, lang, slug))
+                if lastmod:
+                    lines.append('        <lastmod>%s</lastmod>' % lastmod)
+                for h, l in (('sr', 'sr'), ('en', 'en'), ('ru', 'ru'), ('x-default', 'sr')):
+                    lines.append('        <xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (
+                        h, PR.page_url(SITE, l, slug)))
+                lines.append('    </url>')
+        lines.append('</urlset>')
+        self.sitemap_urls = len(entries) * (1 + len(LANGS))
+        return '\n'.join(lines) + '\n'
 
     def verify(self, out, need):
         # sitemap and pages describe the same URLs
         with open(os.path.join(out, 'sitemap.xml'), encoding='utf-8') as f:
             locs = re.findall(r'<loc>\s*([^<\s]+)\s*</loc>', f.read())
-        sm = sorted(urllib.parse.urlsplit(u).path.strip('/') or 'index' for u in locs)
-        built = sorted(s for s in self.page_out if s != '404')
-        if sm != built:
-            fail('sitemap URLs and built pages differ: %s' % sorted(set(sm) ^ set(built)))
+        built = sorted(PR.page_url(SITE, 'sr', s) for s in self.page_out if s != '404') + sorted(
+            PR.page_url(SITE, l, s) for (l, s) in self.lang_out)
+        if sorted(locs) != sorted(built):
+            fail('sitemap URLs and built pages differ: %s' % sorted(set(locs) ^ set(built))[:10])
         if not all(u.startswith(SITE) for u in locs):
             fail('sitemap URL outside ' + SITE)
+        # every page version names the same four alternates, each of them a built page that names it back
+        files = {}
+        for slug in self.page_out:
+            if slug != '404':
+                files[PR.page_url(SITE, 'sr', slug)] = self.page_out[slug]
+        for (lang, slug), text in self.lang_out.items():
+            files[PR.page_url(SITE, lang, slug)] = text
+        self.hreflang_checked = 0
+        for url, text in files.items():
+            head = text[:text.find('</head>')]
+            alts = dict((h, u) for h, u in re.findall(r'<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/>',
+                                                      head))
+            canon = re.findall(r'<link\b[^>]*\brel="canonical"[^>]*>', head)
+            if len(canon) != 1 or 'href="%s"' % url not in canon[0]:
+                fail('%s: canonical is not the page itself: %s' % (url, canon))
+            if set(alts) != {'sr', 'en', 'ru', 'x-default'} or url not in alts.values():
+                fail('%s: hreflang alternates %s' % (url, alts))
+            for h, u in alts.items():
+                if u not in files:
+                    fail('%s: hreflang %s points to %s, which is not built' % (url, h, u))
+                back = re.findall(r'<link rel="alternate" hreflang="[^"]+" href="([^"]+)"/>',
+                                  files[u][:files[u].find('</head>')])
+                if url not in back:
+                    fail('%s: %s does not name it back' % (url, u))
+                self.hreflang_checked += 1
+        # internal links of the /en/ and /ru/ pages stay in their language and resolve (the language menu excepted)
+        self.lang_links_checked = 0
+        for (lang, slug), text in self.lang_out.items():
+            if '<html lang="%s"' % lang not in text:
+                fail('/%s/%s: no static lang' % (lang, slug))
+            markup = re.sub(r'(<script\b[^>]*>).*?(</script>)', r'\1\2', text, flags=re.S)   # links scripts build
+            for tag in re.findall(r'<a\b[^>]*>', markup):                                        # are the engine's
+                href = re.search(r'\shref="([^"]*)"', tag)
+                if not href or not href.group(1).startswith('/') or href.group(1).startswith('//'):
+                    continue
+                path = urllib.parse.urlsplit(href.group(1)).path
+                f = page_file(path)
+                if f is None:
+                    continue
+                if not os.path.isfile(os.path.join(out, f)):
+                    fail('/%s/%s links to %s, which is not built' % (lang, slug, href.group(1)))
+                if 'hreflang=' not in tag and not path.startswith('/%s/' % lang):
+                    fail('/%s/%s links to %s, another language' % (lang, slug, href.group(1)))
+                self.lang_links_checked += 1
         # every local reference resolves, every integrity attribute matches, nothing copyable is left absolute
         for slug, text in sorted(self.page_out.items()):
             for ref in re.findall(r'(?:%s)?/%s/[^\s"\'<>()\\,`#?]+' % (re.escape(SITE), ASSET_DIR), text):
@@ -909,6 +1178,17 @@ class Build:
                     fail('/%s still has an absolute URL of a copied file: %s' % (slug, m.group(0)[:120]))
             if '<html lang="sr"' not in text:
                 fail('/%s: no static lang' % slug)
+        for (lang, slug), text in sorted(self.lang_out.items()):
+            where = '%s/%s' % (lang, slug)
+            for ref in re.findall(r'(?:%s)?/%s/[^\s"\'<>()\\,`#?]+' % (re.escape(SITE), ASSET_DIR), text):
+                rel = ref[len(SITE) + 1:] if ref.startswith(SITE) else ref[1:]
+                if rel.startswith(LOCAL_RUNTIME_BASE[1:]) and rel.endswith('/'):
+                    continue
+                if not os.path.isfile(os.path.join(out, rel)):
+                    fail('/%s references %s, which is not in dist' % (where, ref))
+            for m in self.tok.finditer(text):
+                if self.lookup(m.group(0)):
+                    fail('/%s still has an absolute URL of a copied file: %s' % (where, m.group(0)[:120]))
         for rel in sorted(need):
             data = open(os.path.join(out, rel), 'rb').read()
             if rel.endswith(('.css', '.js')):
@@ -978,6 +1258,7 @@ class Build:
         if self.embed_dependencies:
             print('   files the BlokVolt embed loads itself (stay external, allowed on its page): %s' % ', '.join(
                 self.embed_dependencies[:6]) + (' …' if len(self.embed_dependencies) > 6 else ''))
+        self.report_languages()
         changed = sorted(a.dist_rel for a in by_rel.values() if a.changed and a.dist_rel in need)
         print('copied files changed by the build (%d): %s' % (len(changed), ', '.join(changed)))
         fill = sorted(a.dist_rel for a in by_rel.values() if a.from_fill and a.dist_rel in need)
@@ -1014,6 +1295,58 @@ class Build:
             print('left as is on %s (%d distinct): %s' % (host, len(items), '; '.join(
                 '%s [%d]' % (t, n) for t, n in items[:6]) + (' …' if len(items) > 6 else '')))
 
+    def report_languages(self):
+        n = len({s for _, s in self.lang_out})
+        print('languages: /en/ and /ru/ for %d pages (%d files) — static <html lang>, title, meta, canonical, og:url, '
+              'og:locale, JSON-LD in the page language; hreflang sr/en/ru/x-default on %d Serbian pages and all /en/, '
+              '/ru/ pages (%d alternates checked both ways); sitemap.xml %d URLs with xhtml:link alternates' % (
+                  n, len(self.lang_out), self.alternates_added, self.hreflang_checked, self.sitemap_urls))
+        for lang in LANGS:
+            reps = [r for (l, _), r in self.lang_report.items() if l == lang]
+            hits = {}
+            for r in reps:
+                for k, v in r['hits'].items():
+                    hits[k] = hits.get(k, 0) + v
+            left = {}
+            for (l, s), r in self.lang_report.items():
+                if l == lang:
+                    for kind, sr in r['left']:
+                        left.setdefault(sr, set()).add(s)
+            own = {k for r in reps for k in r['extra_used']}
+            print('   %s: %d text nodes + %d attributes translated, %d internal links -> /%s/; lookups: live %d '
+                  '(%s2 %d, month %d, %s %d), own %d (%d distinct of %d in site/i18n/%s.json, script %s); '
+                  'static texts left as they are (not in keep.json): %d distinct%s' % (
+                      lang, sum(r['text'] for r in reps), sum(r['attrs'] for r in reps), sum(r['links'] for r in reps),
+                      lang, hits.get('d2', 0) + hits.get('month', 0) + hits.get('d1', 0), lang, hits.get('d2', 0),
+                      hits.get('month', 0), lang, hits.get('d1', 0), hits.get('extra', 0), len(own),
+                      len(self.extra[lang]), lang, self.extra_files[lang][0], len(left),
+                      (': ' + '; '.join('%r (%d)' % (k[:50], len(v)) for k, v in sorted(left.items())[:12]) +
+                       (' …' if len(left) > 12 else '')) if left else ''))
+        for (lang, slug), r in sorted(self.lang_report.items()):
+            if r.get('faq') and lang == LANGS[0]:
+                exact = sum(1 for q, v, sq, sa in r['faq'] if sq == 1 and sa == 1)
+                print('   FAQPage of /%s/%s, /%s/%s from the visible FAQ: %d questions (%d equal to the Serbian structured '
+                      'data, the others matched by text: %s)' % (
+                          LANGS[0], slug, LANGS[1], slug, len(r['faq']), exact, '; '.join(
+                              '%r -> %r (%.2f/%.2f)' % (q[:40], v[:40], sq, sa) for q, v, sq, sa in r['faq']
+                              if sq < 1 or sa < 1)))
+        for lang in LANGS:
+            shown = {}
+            for (l, s), r in self.lang_report.items():
+                if l == lang:
+                    for x in r.get('banned_live') or []:
+                        shown.setdefault(PR.nm(x), set()).add(s)
+            if shown:
+                print('   %s: words the copy rules ban, in live translations the prerendered pages show (static text; '
+                      'the Serbian page has them too or the live dictionary added them): %s' % (lang, '; '.join(
+                          '%r (%s)' % (k[:110], ', '.join(sorted(v))[:60]) for k, v in sorted(shown.items()))))
+        print('   i18n engine patched on %d pages; scripts that read the path see the Serbian one: inline %s; files %s'
+              % (self.engines_patched, ', '.join('%s %d' % kv for kv in sorted(self.inline_patches.items())),
+                 ', '.join(sorted(self.file_patches))))
+        if self.pathname_left:
+            print('   location.pathname still read as is (real path) by: %s' % '; '.join(
+                '%s [%d]' % (k, len(v)) for k, v in sorted(self.pathname_left.items())[:6]))
+
     def csp_extras(self, slug):
         if slug not in self.csp:
             return 'none'
@@ -1032,8 +1365,10 @@ def main():
     ap.add_argument('--snapshot', default=os.path.join(HERE, 'snapshot'))
     ap.add_argument('--fill', default=os.path.join(HERE, 'snapshot-fill'))
     ap.add_argument('--out', default=os.path.join(HERE, 'dist'))
+    ap.add_argument('--allow-missing', action='store_true',
+                    help='development only: build even if a title/meta/JSON-LD text has no EN/RU translation')
     args = ap.parse_args()
-    Build(args.snapshot, args.fill, args.out).run()
+    Build(args.snapshot, args.fill, args.out, args.allow_missing).run()
 
 
 if __name__ == '__main__':

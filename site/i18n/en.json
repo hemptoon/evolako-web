@@ -1,0 +1,653 @@
+{
+ "_about": "English for the Serbian texts the live dictionaries of www.evolako.rs do not translate. Key = the i18n engine's key of the Serbian text: FNV-1a 32-bit (base36) of the whitespace-normalized text, with Evolako hashed as BlokVolt (site/prerender.py key_of; the build checks every key against its \"sr\"). The build uses an entry only where the live dictionaries have nothing (titles, meta and JSON-LD of the /en/ pages, texts left in Serbian), and ships all entries to the engine of the /en/ pages as its last dictionary. American English, plain product language; prices, numbers and units as in the Serbian text. Never: atest, discount, 24/7, Plug&Charge, \"immediately\" as a promise, savings percentages, surcharge amounts, or wording that says Evolako handles the paperwork (it provides templates).",
+ "entries": {
+  "10cpc6e": {
+   "en": "Putevi Srbije · A1 · Belgrade–Niš",
+   "sr": "Putevi Srbije · A1 · Beograd–Niš"
+  },
+  "10s6iox": {
+   "en": "Company car chargers at home and at work",
+   "sr": "Punjač za službena vozila kod kuće i u firmi"
+  },
+  "10ufaht": {
+   "en": "Public garage",
+   "sr": "Javna garaža"
+  },
+  "116oovw": {
+   "en": "per parking spot",
+   "sr": "po parking mestu"
+  },
+  "1367beu": {
+   "en": "How many kW a garage needs for 10, 20 or 50 chargers with power management: the overnight math, rules of thumb from EU practice and when you need a power upgrade.",
+   "sr": "Koliko kW treba garaži za 10, 20 ili 50 punjača uz upravljanje snagom: noćna računica, pravila iz prakse u EU i kada je potrebno povećanje snage."
+  },
+  "13d4w5i": {
+   "en": "A short quiz: find out which kit fits your garage or parking spot and how much you save.",
+   "sr": "Kratki upitnik: saznaj koji komplet odgovara tvojoj garaži ili parking mestu i koliko štediš."
+  },
+  "13rzykg": {
+   "en": "Charging station",
+   "sr": "Punjač"
+  },
+  "13vht6c": {
+   "en": "How a company meters electricity for a company car charged at an employee's home: a MID meter at the spot, a monthly statement in kWh and questions for the accountant.",
+   "sr": "Kako firma meri struju za službeni auto koji se puni kod zaposlenog: MID brojilo na mestu, mesečni obračun u kWh i pitanja za knjigovođu."
+  },
+  "141n2or": {
+   "en": "Preševo toll station",
+   "sr": "Naplatna stanica Preševo"
+  },
+  "14b8bxb": {
+   "en": "A reinforced line or an 11 kW smart wallbox with a certified MID meter, a technical description of the installation and document templates for the building assembly — installed in 1 day.",
+   "sr": "Pojačana linija ili smart wallbox 11 kW sa sertifikovanim MID brojilom, tehničkim opisom ugradnje i šablonima papira za skupštinu — ugradnja za 1 dan."
+  },
+  "14sdqhc": {
+   "en": "Someone recommended Evolako to you — 2 more months of subscription free",
+   "sr": "Neko ti je preporučio Evolako — još 2 meseca pretplate besplatno"
+  },
+  "15e1lfi": {
+   "en": "The kit for each spot, the shared infrastructure and a power upgrade: example prices for a hotel, a garage, a business, a new build and an apartment building, with VAT.",
+   "sr": "Paket za mesto, zajednička infrastruktura i povećanje snage: primeri cena za hotel, garažu, firmu, novogradnju i stambenu zgradu, sa PDV-om."
+  },
+  "16j2hz8": {
+   "en": "Home charger sales rep — Evolako",
+   "sr": "Prodavac kućnih punjača — Evolako"
+  },
+  "16kh11q": {
+   "en": "Once five residents of a building sign up, we assess the garage and make an offer. Everyone pays for their own spot and a share of the common line, and for electricity by their own MID meter.",
+   "sr": "Kad se iz zgrade prijavi pet stanara, radimo procenu garaže i ponudu. Svako plaća svoje mesto i deo zajedničke linije, a struju po svom MID brojilu."
+  },
+  "16okqqj": {
+   "en": "3 questions, half a minute: find out which kit fits your garage or parking spot and how much you save. A recommendation on screen, no commitment.",
+   "sr": "3 pitanja, pola minuta: saznaj koji komplet odgovara tvojoj garaži ili parking mestu i koliko štediš. Preporuka na ekranu, bez obaveza."
+  },
+  "16pi9pn": {
+   "en": "Šimanovci toll station",
+   "sr": "Naplatna stanica Šimanovci"
+  },
+  "16xbbx5": {
+   "en": "Putevi Srbije · A2 · Belgrade–Čačak",
+   "sr": "Putevi Srbije · A2 · Beograd–Čačak"
+  },
+  "17wezjt": {
+   "en": "Facts, ready-made copy in three languages, logos and colors — and how we can work together.",
+   "sr": "Činjenice, gotovi tekstovi na tri jezika, logotipi i boje — i kako da sarađujemo."
+  },
+  "187x08a": {
+   "en": "Contact — Evolako",
+   "sr": "Kontakt — Evolako"
+  },
+  "18xm492": {
+   "en": "The lower tariff lasts eight hours and starts at 22:00, 23:00 or 24:00, depending on the region. How to set the timer in your car or on the charger.",
+   "sr": "Niža tarifa traje osam sati i počinje u 22, 23 ili 24 časa, zavisno od regiona. Kako da podesiš tajmer u autu ili na punjaču."
+  },
+  "191uwm9": {
+   "en": "Iocharger 11 kW smart wallbox (OCPP, Type 2, 5 m cable) with basic installation next to the distribution board (up to 2 m of cable, RCD protection and a circuit breaker): 94.000 RSD; 104.000 RSD with a MID meter for billing. Document templates included. All prices with VAT.",
+   "sr": "Iocharger 11 kW smart wallbox (OCPP, Type 2, kabl 5 m) sa osnovnom ugradnjom pored razvodne table (do 2 m kabla, FID zaštita i automat): 94.000 RSD; 104.000 RSD uz MID brojilo za obračun. Šabloni papira su uz to. Sve sa PDV-om."
+  },
+  "19fy39l": {
+   "en": "The service layer for home EV charging in apartment buildings in Serbia: certified MID metering, templates for the building assembly and a subscription with monitoring, service and an extended warranty.",
+   "sr": "Servisni sloj kućnog punjenja električnih automobila u stambenim zgradama u Srbiji: sertifikovano MID merenje, šabloni za skupštinu i pretplata sa monitoringom, servisom i produženom garancijom."
+  },
+  "19w7vgm": {
+   "en": "City beach, Čačak",
+   "sr": "Gradska plaža Čačak"
+  },
+  "1a279sb": {
+   "en": "Referral sign-up",
+   "sr": "Preporuka prijava"
+  },
+  "1aebgll": {
+   "en": "Wallbox Pulsar Max with basic installation next to the distribution board: 155.000 RSD; with the PowerBoost meter (dynamic power management and charging from solar panels) 195.000 RSD. MID meter +10.000 RSD. All prices with VAT.",
+   "sr": "Wallbox Pulsar Max sa osnovnom ugradnjom pored razvodne table: 155.000 RSD; sa PowerBoost brojilom (dinamičko upravljanje snagom i punjenje iz solarnih panela) 195.000 RSD. MID brojilo +10.000 RSD. Sve sa PDV-om."
+  },
+  "1celc8z": {
+   "en": "Building sign-up",
+   "sr": "Prijava zgrade"
+  },
+  "1d86mbz": {
+   "en": "A plan for building managers: resident sign-ups, a garage assessment, templates and the assembly decision, installation and billing by MID meter. The participants cover the costs, not the building.",
+   "sr": "Plan za upravnike: prijave stanara, procena garaže, šabloni i odluka skupštine, ugradnja i obračun po MID brojilu. Troškove snose učesnici, ne zgrada."
+  },
+  "1d9jbab": {
+   "en": "60.000 RSD fixed + 4.000 RSD per paid installation. Inbound inquiries and a client base we have already built. Belgrade or Novi Sad. Apply through the form.",
+   "sr": "60.000 RSD fiksno + 4.000 RSD po plaćenoj ugradnji. Dolazni upiti i već prikupljena baza klijenata. Beograd ili Novi Sad. Prijavi se preko forme."
+  },
+  "1dxtri5": {
+   "en": "EV chargers for garages, company parking lots and rental garages: a MID meter at every spot, power management and monthly billing per user, with no markup.",
+   "sr": "Punjači za garaže, parkinge firmi i garaže za izdavanje: MID brojilo na svakom mestu, upravljanje snagom i mesečni obračun po korisniku, bez marže."
+  },
+  "1eiynf1": {
+   "en": "Kapija Svrljiga restaurant",
+   "sr": "Restoran Kapija Svrljiga"
+  },
+  "1em1aj2": {
+   "en": "Installation of EV chargers with MID metering",
+   "sr": "Ugradnja punjača za električna vozila sa MID merenjem"
+  },
+  "1etc6z": {
+   "en": "Home",
+   "sr": "Početna"
+  },
+  "1eytcl0": {
+   "en": "Home EV charger installation in apartment buildings",
+   "sr": "Ugradnja kućnog punjača za električni auto u zgradi"
+  },
+  "1f1hrjo": {
+   "en": "Charging map for electric cars in Serbia",
+   "sr": "Mapa punjača za električne automobile u Srbiji"
+  },
+  "1f28qrx": {
+   "en": "Fast DC and AC chargers on one map — with the network's price, date and source. Still, the cheapest is at home, overnight.",
+   "sr": "Brzi DC i AC punjači na jednoj mapi — sa cenom mreže, datumom i izvorom. Najjeftinije je ipak kod kuće, noću."
+  },
+  "1f2sc7t": {
+   "en": "Installation only from 24.000, START 39.000, WALLBOX 11 kW from 94.000 and ZGRADA from 96.000 RSD per spot, with basic installation next to the distribution board.",
+   "sr": "Samo ugradnja od 24.000, START 39.000, WALLBOX 11 kW od 94.000 i ZGRADA od 96.000 RSD po mestu, uz osnovnu ugradnju pored razvodne table."
+  },
+  "1fh3fqk": {
+   "en": "Wallbox Plus — 4G, RFID and a display",
+   "sr": "Wallbox Plus — 4G, RFID i ekran"
+  },
+  "1g2ihem": {
+   "en": "Evolako in the field",
+   "sr": "Evolako na terenu"
+  },
+  "1g8qjsm": {
+   "en": "11 kW chargers for hotels and apartments: guests charge overnight, and a MID meter at every spot measures consumption. Prices with VAT and an on-site assessment.",
+   "sr": "Punjači 11 kW za hotele i apartmane: gost puni auto preko noći, a MID brojilo na svakom mestu meri potrošnju. Cene sa PDV-om i procena na objektu."
+  },
+  "1gaa6ye": {
+   "en": "A home charger for the buyers of your electric cars: assessment, installation and document templates in Belgrade, Novi Sad and Vojvodina. Public prices with VAT.",
+   "sr": "Kućni punjač za kupce vaših električnih automobila: procena, ugradnja i šabloni papira u Beogradu, Novom Sadu i Vojvodini. Javne cene sa PDV-om."
+  },
+  "1gf5e2p": {
+   "en": "How to equip a rental garage with a charger: consents, a MID meter at the spot and electricity the tenant pays with the rent, with no markup.",
+   "sr": "Kako da garažu za izdavanje opremite punjačem: saglasnosti, MID brojilo na mestu i struja koju zakupac plaća uz kiriju, bez marže."
+  },
+  "1h1l89p": {
+   "en": "Building sign-up not sent",
+   "sr": "Prijava zgrade failure"
+  },
+  "1hcff0w": {
+   "en": "Shared power infrastructure for the garage and equipment for each parking spot, from 96.000 RSD per spot with VAT.",
+   "sr": "Zajednička napojna infrastruktura garaže i oprema po parking mestu, od 96.000 RSD po mestu sa PDV-om."
+  },
+  "1hiymq5": {
+   "en": "EV charger installation electrician — Evolako",
+   "sr": "Električar za ugradnju punjača — Evolako"
+  },
+  "1hwyj5e": {
+   "en": "Colleagues at Evolako",
+   "sr": "Kolege iz Evolako"
+  },
+  "1i08v21": {
+   "en": "Sava Centar (Delta congress center)",
+   "sr": "Sava Centar (Delta kongresni centar)"
+  },
+  "1ibw45x": {
+   "en": "Privacy policy and terms of use",
+   "sr": "Politika privatnosti i uslovi korišćenja"
+  },
+  "1jtg00k": {
+   "en": "EV chargers for apartment buildings — for building managers",
+   "sr": "Punjači za stambene zgrade — za upravnike"
+  },
+  "1ku7ica": {
+   "en": "Short news that changes home charging in Serbia: electricity prices, rules for buildings and garages, subsidies and Evolako updates, with source and date.",
+   "sr": "Kratke vesti koje menjaju punjenje kod kuće u Srbiji: cene struje, propisi za zgrade i garaže, subvencije i novosti u Evolako, sa izvorom i datumom."
+  },
+  "1kwz1dm": {
+   "en": "With a referral code: 4 months of billing, monitoring and service for 0 RSD. Check your garage in half a minute.",
+   "sr": "Uz kod preporuke: 4 meseca obračuna, nadzora i servisa za 0 RSD. Proveri svoju garažu za pola minuta."
+  },
+  "1l82vjz": {
+   "en": "Lalinci rest area",
+   "sr": "Odmorište Lalinci"
+  },
+  "1le6kgu": {
+   "en": "EV chargers for businesses, buildings and hotels in Serbia",
+   "sr": "Punjači za firme, zgrade i hotele u Srbiji"
+  },
+  "1llnnka": {
+   "en": "A MID meter at every spot, power management, monthly billing and templates for the building assembly — for hotels, garages, buildings and businesses, with public prices.",
+   "sr": "MID brojilo na svakom mestu, upravljanje snagom, mesečni obračun i šabloni za skupštinu — za hotele, garaže, zgrade i firme, sa javnim cenama."
+  },
+  "1log5dt": {
+   "en": "Installation and maintenance of home EV chargers in apartment buildings",
+   "sr": "Ugradnja i održavanje kućnih EV punjača u stambenim zgradama"
+  },
+  "1lwjipl": {
+   "en": "How many kWh a car takes a month, how EPS zones move you from green to blue or red, and why a nighttime kWh is several times cheaper.",
+   "sr": "Koliko kWh auto uzme mesečno, kako ga zone EPS-a pomeraju iz zelene u plavu ili crvenu i zašto je noćni kWh nekoliko puta jeftiniji."
+  },
+  "1lx4obl": {
+   "en": "Stara Pazova toll station",
+   "sr": "Naplatna stanica Stara Pazova"
+  },
+  "1m05j6e": {
+   "en": "How many kW your car takes, how much power an apartment has and why 11 kW is enough for overnight charging — and often a 3,7 kW reinforced socket is too.",
+   "sr": "Koliko kW prima tvoj auto, koliko snage ima stan i zašto je za noćno punjenje dovoljno 11 kW, a često i pojačana utičnica od 3,7 kW."
+  },
+  "1m55a8d": {
+   "en": "A charger with a MID meter at the employee's home and in the company parking lot. One monthly statement for all spots: kWh and the amount at the electricity price at each address, in PDF and CSV.",
+   "sr": "Punjač sa MID brojilom kod kuće zaposlenog i na parkingu firme. Jedan mesečni obračun za sva mesta: kWh i iznos po ceni struje na svakoj adresi, u PDF i CSV formatu."
+  },
+  "1n9ezth": {
+   "en": "60.000 RSD fixed + 4.000 RSD per paid installation. Belgrade or Novi Sad.",
+   "sr": "60.000 RSD fiksno + 4.000 RSD po plaćenoj ugradnji. Beograd ili Novi Sad."
+  },
+  "1nb3kvk": {
+   "en": "For media and partners — media kit",
+   "sr": "Za medije i partnere — medija kit"
+  },
+  "1ngvyoc": {
+   "en": "Lot at the former Niš toll station",
+   "sr": "Plato bivše naplatne stanice Niš"
+  },
+  "1o6euy3": {
+   "en": "Evolako — media kit for media and partners",
+   "sr": "Evolako — medija kit za medije i partnere"
+  },
+  "1p5bqj4": {
+   "en": "Short guides to charging an electric car at home and in an apartment building: power, electricity and the bill, the meter, the building assembly, safety and how to make the battery last.",
+   "sr": "Kratki vodiči o punjenju električnog auta kod kuće i u zgradi: snaga, struja i račun, brojilo, skupština, bezbednost i kako da baterija traje."
+  },
+  "1pxkg4b": {
+   "en": "EV chargers for hotels",
+   "sr": "Punjači za električne automobile za hotele"
+  },
+  "1pz628j": {
+   "en": "How Evolako processes personal data (ZZPL): what we collect, why, how long we keep it and what rights you have.",
+   "sr": "Kako Evolako obrađuje podatke o ličnosti (ZZPL): koje podatke prikupljamo, zašto, koliko ih čuvamo i koja prava imaš."
+  },
+  "1q07coz": {
+   "en": "Sign up your building's address for chargers in its garage. Once five residents sign up, we assess the garage and make an offer for the whole building. It costs the building nothing.",
+   "sr": "Prijavi adresu svoje zgrade za punjače u garaži. Kad se prijavi pet stanara, radimo procenu garaže i ponudu za celu zgradu. Zgradu to ne košta ništa."
+  },
+  "1q9afv9": {
+   "en": "You can charge a car from a Schuko socket, but slowly: about 108 km per night at 10 A. When it's safe, when it's enough and what's better.",
+   "sr": "Smeš da puniš auto na šuko utičnicu, ali sporo: oko 108 km za noć na 10 A. Kada je to bezbedno, kada je dovoljno i šta je bolje."
+  },
+  "1qoyk4z": {
+   "en": "A company car charges at the employee's home or in the company parking lot. A MID meter measures consumption, and the company gets a monthly statement per spot for its accounting.",
+   "sr": "Službeni auto se puni kod kuće zaposlenog ili na parkingu firme. MID brojilo meri potrošnju, a firma dobija mesečni obračun po mestu za knjigovodstvo."
+  },
+  "1rq02z2": {
+   "en": "Toplik rest area",
+   "sr": "Odmorište Toplik"
+  },
+  "1s3cuja": {
+   "en": "Start with 2–4 spots at 11 kW and prepare the cable route for more. How hotels in Serbia charge for charging and how a MID meter shows the cost at the price on your bill.",
+   "sr": "Počnite sa 2–4 mesta od 11 kW i pripremite trasu za više. Kako hoteli u Srbiji naplaćuju punjenje i kako MID brojilo pokazuje trošak po ceni sa vašeg računa."
+  },
+  "1se3839": {
+   "en": "Putevi Srbije · A2 · Čačak–Belgrade",
+   "sr": "Putevi Srbije · A2 · Čačak–Beograd"
+  },
+  "1siprtb": {
+   "en": "Referral: 2 more months of subscription free",
+   "sr": "Preporuka: još 2 meseca pretplate besplatno"
+  },
+  "1smo5gc": {
+   "en": "Power, electricity and the bill, the MID meter, the building assembly and safety — short and with sources, for charging in a garage or at a building parking spot.",
+   "sr": "Snaga, struja i račun, MID brojilo, skupština i bezbednost — kratko i sa izvorima, za punjenje u garaži i na parking mestu zgrade."
+  },
+  "1tht6x1": {
+   "en": "Monthly billing with a statement, monitoring with alerts, priority service within 72 hours, a winter check, an extended warranty and moving the kit when you move. First 2 months 0 RSD, no commitment.",
+   "sr": "Mesečni obračun sa izveštajem, monitoring sa alarmima, prioritetni servis za 72h, zimska provera, produžena garancija i prenos kompleta pri selidbi. Prva 2 meseca 0 RSD, bez obaveza."
+  },
+  "1trwv74": {
+   "en": "Putevi Srbije · A8 · Belgrade–Ruma",
+   "sr": "Putevi Srbije · A8 · Beograd–Ruma"
+  },
+  "1u4wc3t": {
+   "en": "Electricity prices, rules for buildings and garages, subsidies and Evolako updates — short, with source and date.",
+   "sr": "Cene struje, propisi za zgrade i garaže, subvencije i novosti u Evolako — kratko, sa izvorom i datumom."
+  },
+  "1uidaam": {
+   "en": "Šid toll station",
+   "sr": "Naplatna stanica Šid"
+  },
+  "1uqoalc": {
+   "en": "A MID meter at every spot and billing per user, with no markup. Power management spreads the power of the existing connection across several spots.",
+   "sr": "MID brojilo na svakom mestu i obračun po korisniku, bez marže. Upravljanje snagom raspoređuje snagu postojećeg priključka na više mesta."
+  },
+  "1v96d8e": {
+   "en": "EV charger price calculator for buildings, hotels and businesses",
+   "sr": "Kalkulator cene punjača za zgradu, hotel i firmu"
+  },
+  "1vjb6ze": {
+   "en": "We prepare every spot in the garage while the building goes up, and apartment buyers order a charger later at the kit price. After handover, we run the electricity billing.",
+   "sr": "Pripremamo sva mesta u garaži dok se zgrada gradi, a kupci stanova kasnije naručuju punjač po ceni paketa. Posle predaje zgrade obračun struje vodimo mi."
+  },
+  "1vljhyz": {
+   "en": "A charger in your garage or at your spot in the building, installed next to the distribution board, with an optional MID meter. From 39.000 RSD. Belgrade, Novi Sad, Vojvodina.",
+   "sr": "Punjač u garaži ili na mestu u zgradi, sa ugradnjom pored razvodne table, MID brojilo po izboru. Od 39.000 RSD. Beograd, Novi Sad, Vojvodina."
+  },
+  "1vu4mx5": {
+   "en": "Charger price per parking space",
+   "sr": "Cena punjača po parking mestu"
+  },
+  "1w3gv4f": {
+   "en": "What goes into the price of a charging spot in a building, hotel or business: the kit with a MID meter, the shared part, the subscription and example prices with VAT.",
+   "sr": "Šta ulazi u cenu mesta za punjenje u zgradi, hotelu i firmi: paket sa MID brojilom, zajednički deo, pretplata i primeri cena sa PDV-om."
+  },
+  "1wh8fwy": {
+   "en": "Ćićevac toll station",
+   "sr": "Naplatna stanica Ćićevac"
+  },
+  "1x2bklf": {
+   "en": "Published operating lease terms don't mention the charger or electricity. Whose charger it is when the car goes back, how the electricity is metered and what to ask the leasing company.",
+   "sr": "Objavljeni uslovi operativnog lizinga ne pominju punjač ni struju. Čiji je punjač kad se auto vrati, kako se meri struja i šta pitati lizing kuću."
+  },
+  "1xlq2dc": {
+   "en": "A buyer who lives in an apartment building asks where they'll charge the car. Send them to us: we get back within 48 hours, do the assessment and send an exact quote. START kit 39.000 RSD, WALLBOX from 94.000 RSD, with VAT.",
+   "sr": "Kupac iz zgrade pita gde će puniti auto. Uputite ga nama: javljamo se u roku od 48h, radimo procenu i šaljemo tačnu ponudu. Paket START 39.000 RSD, WALLBOX od 94.000 RSD, sa PDV-om."
+  },
+  "1y97i0n": {
+   "en": "Sales, installation and legal. Clear terms, Belgrade and Novi Sad.",
+   "sr": "Prodaja, ugradnja i pravo. Jasni uslovi, Beograd i Novi Sad."
+  },
+  "21zgwp": {
+   "en": "Evolako subscription",
+   "sr": "Pretplata Evolako"
+  },
+  "25rmc": {
+   "en": "Open positions at Evolako: home charger sales rep, installation electrician and legal counsel. Belgrade and Novi Sad; apply through the form, reply within 48 hours.",
+   "sr": "Otvorene pozicije u Evolako: prodavac kućnih punjača, električar za ugradnju i pravnik. Beograd i Novi Sad, prijava preko forme, odgovor u roku od 48h."
+  },
+  "2gtx6i": {
+   "en": "What the Law on Planning and Construction requires of plans, what a prepared spot means and what preparation costs per spot in a garage with 40 or 100 spaces.",
+   "sr": "Šta Zakon o planiranju i izgradnji traži od planova, šta znači pripremljeno mesto i koliko priprema košta po mestu u garaži sa 40 ili 100 mesta."
+  },
+  "30b0l9": {
+   "en": "We bring the clients, the materials and the quotes — you do the installation. Belgrade or Novi Sad.",
+   "sr": "Klijente, materijal i ponude obezbeđujemo mi — ti radiš instalaciju. Beograd ili Novi Sad."
+  },
+  "4l0noe": {
+   "en": "Putevi Srbije · A8 · Belgrade–Šabac",
+   "sr": "Putevi Srbije · A8 · Beograd–Šabac"
+  },
+  "5bm6bi": {
+   "en": "Write to hello@evolako.com, on WhatsApp, Viber or Telegram — we work every day and reply within 48 hours. We speak Serbian, Russian and English.",
+   "sr": "Piši na hello@evolako.com, u WhatsApp, Viber ili Telegram — radimo svakog dana, a odgovor stiže u roku od 48h. Govorimo srpski, ruski i engleski."
+  },
+  "5o4igz": {
+   "en": "IKEA Beograd — free charging",
+   "sr": "IKEA Beograd — besplatni punjači"
+  },
+  "5wxoph": {
+   "en": "Belgrade toll station",
+   "sr": "Naplatna stanica Beograd"
+  },
+  "6dq1iq": {
+   "en": "Rules of thumb from EU practice, the overnight math from 17,25 kW and a table for 10, 20 and 50 spots. The real figure comes from the property's approved power and the assessment.",
+   "sr": "Pravila iz prakse u EU, noćna računica od 17,25 kW i tabela za 10, 20 i 50 mesta. Stvarnu brojku daju odobrena snaga objekta i procena."
+  },
+  "6evf04": {
+   "en": "Referral sign-up sent",
+   "sr": "Preporuka prijava success"
+  },
+  "73cap5": {
+   "en": "Fee by agreement. Buildings, companies, the electricity distribution company and contracts in Serbian. Belgrade or Novi Sad, partly remote. Apply through the form.",
+   "sr": "Honorar po dogovoru. Zgrade, firme, elektrodistribucija i ugovori na srpskom. Beograd ili Novi Sad, delom na daljinu. Prijavi se preko forme."
+  },
+  "803mbm": {
+   "en": "Evolako kits",
+   "sr": "Evolako paketi"
+  },
+  "8jjrew": {
+   "en": "In a car park, a car sits for hours or days, so slow charging is enough. A MID meter at every spot shows how much each car used.",
+   "sr": "Na parkingu auto stoji satima ili danima, pa je dovoljno sporo punjenje. MID brojilo na svakom mestu pokazuje koliko je koji auto potrošio."
+  },
+  "90goz5": {
+   "en": "A MID meter at the charging spot, a monthly statement in kWh, the electricity price at the employee's address and questions for the accountant before the first reimbursement.",
+   "sr": "MID brojilo na mestu za punjenje, mesečni obračun u kWh, cena struje na adresi zaposlenog i pitanja za knjigovođu pre prve naknade."
+  },
+  "992z0s": {
+   "en": "The Evolako team",
+   "sr": "Tim Evolako"
+  },
+  "9e6k97": {
+   "en": "Installation of a charger you already have (CE marking and 6 mA DC fault current protection) next to the distribution board: up to 2 m of cable, RCD protection and a circuit breaker — 24.000 RSD. All prices with VAT.",
+   "sr": "Ugradnja punjača koji već imaš (CE oznaka i zaštita od DC struje kvara 6 mA) pored razvodne table: do 2 m kabla, FID zaštita i automat — 24.000 RSD. Sve sa PDV-om."
+  },
+  "9vcjxt": {
+   "en": "Belgrade",
+   "sr": "Beograd"
+  },
+  "a2x7ze": {
+   "en": "Charging a company car at home",
+   "sr": "Punjenje službenog automobila kod kuće"
+  },
+  "a2zvak": {
+   "en": "Putevi Srbije · A1 · Subotica–Belgrade",
+   "sr": "Putevi Srbije · A1 · Subotica–Beograd"
+  },
+  "ae1ly6": {
+   "en": "EV chargers for gated car parks and long-stay parking at airports and stations: charging while the car is parked, a MID meter at every spot and chargers on pedestals.",
+   "sr": "Punjači za parkinge sa rampom i dugoročni parking kod aerodroma i stanica: punjenje dok auto stoji, MID brojilo na svakom mestu i punjači na stubovima."
+  },
+  "aqqhya": {
+   "en": "Estimate the price of chargers for a building, hotel, garage or business by the number of spots and the distance from the distribution board. With VAT; the exact quote comes after the assessment.",
+   "sr": "Izračunajte okvirnu cenu punjača za zgradu, hotel, garažu ili firmu po broju mesta i udaljenosti razvodne table. Sa PDV-om, tačna ponuda posle procene."
+  },
+  "b0ixd1": {
+   "en": "Referral sign-up not sent",
+   "sr": "Preporuka prijava failure"
+  },
+  "b1wflj": {
+   "en": "Public charger, Gornji Milanovac",
+   "sr": "Javni punjač Gornji Milanovac"
+  },
+  "bc0b6q": {
+   "en": "Careers at Evolako — 3 open positions",
+   "sr": "Karijera u Evolako — 3 otvorene pozicije"
+  },
+  "busfe3": {
+   "en": "Dimitrovgrad toll station",
+   "sr": "Naplatna stanica Dimitrovgrad"
+  },
+  "bv9f3z": {
+   "en": "Evolako media kit: facts, kits and prices, copy in Serbian, English and Russian, logos and colors, and partnerships with building managers, sellers and companies.",
+   "sr": "Medija kit Evolako: činjenice, paketi i cene, tekstovi na srpskom, engleskom i ruskom, logotipi i boje, saradnja sa upravnicima, prodavcima i firmama."
+  },
+  "c9dnu8": {
+   "en": "Open positions at Evolako",
+   "sr": "Otvorene pozicije u Evolako"
+  },
+  "co20fm": {
+   "en": "EV chargers in a building garage: a 5-step plan",
+   "sr": "Punjači u garaži stambene zgrade: plan u 5 koraka"
+  },
+  "cw3xlv": {
+   "en": "Kits and prices — home charger with installation",
+   "sr": "Paketi i cene — kućni punjač sa ugradnjom"
+  },
+  "dy8haq": {
+   "en": "Jerina rest area",
+   "sr": "Odmorište Jerina"
+  },
+  "e434pv": {
+   "en": "When the lower tariff starts in Belgrade, Vojvodina and the rest of Serbia, how to set scheduled charging in the car and on the charger, and what to check on the first night.",
+   "sr": "Kada počinje niža tarifa u Beogradu, Vojvodini i ostatku Srbije, kako se podešava punjenje po rasporedu u autu i na punjaču i šta proveriti prve noći."
+  },
+  "ey5f7h": {
+   "en": "Putevi Srbije · A3 · Šid–Belgrade",
+   "sr": "Putevi Srbije · A3 · Šid–Beograd"
+  },
+  "eyisph": {
+   "en": "Only the participating residents pay: their own spot and a share of the common line, from 96.000 RSD per spot. We provide the assembly templates, and every spot has its own MID meter.",
+   "sr": "Plaćaju samo stanari koji učestvuju: svoje mesto i deo zajedničke linije, od 96.000 RSD po mestu. Šablone za skupštinu dajemo mi, a svako mesto ima svoje MID brojilo."
+  },
+  "f0ysq": {
+   "en": "Check your garage — can it take a home charger?",
+   "sr": "Proveri svoju garažu — da li može kućni punjač?"
+  },
+  "fdk8m3": {
+   "en": "Hrtkovci toll station",
+   "sr": "Naplatna stanica Hrtkovci"
+  },
+  "fkd3ke": {
+   "en": "WALLBOX — 11 kW smart wallbox",
+   "sr": "WALLBOX — smart wallbox 11 kW"
+  },
+  "fynd7b": {
+   "en": "Trstenik toll station",
+   "sr": "Naplatna stanica Trstenik"
+  },
+  "g8fnwn": {
+   "en": "Vrnjačka Banja toll station",
+   "sr": "Naplatna stanica Vrnjačka Banja"
+  },
+  "ghpp5i": {
+   "en": "START — reinforced socket + MID meter",
+   "sr": "START — pojačana utičnica + MID brojilo"
+  },
+  "i2wn3m": {
+   "en": "Our voice in legal and formal conversations in Serbian. Fee by agreement.",
+   "sr": "Naš glas u pravnim i formalnim razgovorima na srpskom. Honorar po dogovoru."
+  },
+  "j4j9kh": {
+   "en": "Putevi Srbije · A3 · Belgrade–Šid",
+   "sr": "Putevi Srbije · A3 · Beograd–Šid"
+  },
+  "j9olxk": {
+   "en": "How a developer prepares a garage for chargers: a cable route and a box at every spot, power management, MID meters, the law and the price per prepared spot.",
+   "sr": "Kako investitor priprema garažu za punjače: trasa i kutija kod svakog mesta, upravljanje snagom, MID brojila, zakon i cena po pripremljenom mestu."
+  },
+  "kct6bz": {
+   "en": "Orion eMobility · On the E-70 motorway between Adaševci and Kuzmin, Adaševci",
+   "sr": "Orion eMobility · Na Autoputu E-70 na relaciji Adaševci-Kuzmin, Adaševci"
+  },
+  "lzgm5m": {
+   "en": "Iocharger 22 kW set to 11 kW, with 4G, RFID cards and a display, with basic installation next to the distribution board: 115.000 RSD with a Type 2 socket, 127.000 RSD with a 5 m cable. MID meter +10.000 RSD. All prices with VAT.",
+   "sr": "Iocharger 22 kW podešen na 11 kW, sa 4G vezom, RFID karticama i ekranom, sa osnovnom ugradnjom pored razvodne table: 115.000 RSD sa Type 2 utičnicom, 127.000 RSD sa kablom 5 m. MID brojilo +10.000 RSD. Sve sa PDV-om."
+  },
+  "mssd5o": {
+   "en": "Koševi toll station",
+   "sr": "Naplatna stanica Koševi"
+  },
+  "n6f4o0": {
+   "en": "Paid per installation at market rates, paid site visits for assessments, and we supply the materials. Belgrade or Novi Sad. Apply through the form.",
+   "sr": "Plaćanje po ugradnji, po tržišnim cenama, plaćen izlazak na procenu, materijal obezbeđujemo mi. Beograd ili Novi Sad. Prijavi se preko forme."
+  },
+  "otf0tw": {
+   "en": "With a referral code you get 2 more months of subscription free — 4 months for 0 RSD in total. Check your garage in half a minute and leave your contact.",
+   "sr": "Uz kod preporuke dobijaš još 2 meseca pretplate besplatno, ukupno 4 meseca za 0 RSD. Proveri svoju garažu za pola minuta i ostavi kontakt."
+  },
+  "ovp1t0": {
+   "en": "The charger goes on your meter, a MID meter measures consumption, and the tenant pays for electricity with the rent at the price on your bill. What to agree in writing and what to ask your accountant.",
+   "sr": "Punjač ide na vaše brojilo, MID brojilo meri potrošnju, a zakupac struju plaća uz kiriju po ceni sa vašeg računa. Šta dogovoriti pisano i šta pitati knjigovođu."
+  },
+  "pe24p2": {
+   "en": "How much an ordinary socket charges, why long charging heats up old contacts and when you need a dedicated line with a reinforced socket or a wallbox.",
+   "sr": "Koliko puni obična utičnica, zašto dugo punjenje greje stare kontakte i kada ti treba namenska linija sa pojačanom utičnicom ili wallbox."
+  },
+  "phwvq3": {
+   "en": "Kruševac West toll station",
+   "sr": "Naplatna stanica Kruševac zapad"
+  },
+  "qdjylr": {
+   "en": "A guest arrives in the evening and has a full battery by morning: an 11 kW wallbox with a MID meter at every spot, at public prices with VAT.",
+   "sr": "Gost stiže uveče, a ujutru ima pun auto: wallbox 11 kW sa MID brojilom na svakom mestu, po javnim cenama sa PDV-om."
+  },
+  "qkkqvh": {
+   "en": "Subotica toll station",
+   "sr": "Naplatna stanica Subotica"
+  },
+  "qt2ga3": {
+   "en": "EV chargers for hotels, garages, new builds, apartment buildings and businesses: a MID meter at every spot, power management and monthly billing. Public prices with VAT.",
+   "sr": "Punjači za hotele, garaže, novogradnju, stambene zgrade i firme: MID brojilo na svakom mestu, upravljanje snagom i mesečni obračun. Javne cene sa PDV-om."
+  },
+  "rsm0io": {
+   "en": "From the first resident sign-ups to charging in the garage: a power assessment, templates and the assembly decision, installation and billing by MID meter. The project costs the building nothing.",
+   "sr": "Od prvih prijava stanara do punjenja u garaži: procena snage, šabloni i odluka skupštine, ugradnja i obračun po MID brojilu. Zgradu projekat ne košta ništa."
+  },
+  "rtzvau": {
+   "en": "Boljkovci rest area",
+   "sr": "Odmorište Boljkovci"
+  },
+  "slzlu6": {
+   "en": "Ruma toll station",
+   "sr": "Naplatna stanica Ruma"
+  },
+  "umu582": {
+   "en": "Chargers in an apartment building's garage at no cost to the building: templates for the assembly, a MID meter at every spot, electricity with no markup. From 96.000 RSD per spot.",
+   "sr": "Punjači u garaži stambene zgrade bez troška za zgradu: šabloni za skupštinu, MID brojilo na svakom mestu, struja bez marže. Od 96.000 RSD po mestu."
+  },
+  "v068e3": {
+   "en": "A leased car goes back when the contract ends, but the charging spot stays. How a company plans the charger, the MID meter and billing independently of the car.",
+   "sr": "Auto na lizing se po isteku ugovora vraća, a mesto za punjenje ostaje. Kako firma planira punjač, MID brojilo i obračun nezavisno od automobila."
+  },
+  "v0fxwp": {
+   "en": "How many charging spots a hotel needs, why 11 kW is enough for guests, how hotels in Serbia charge for charging and how the electricity is calculated.",
+   "sr": "Koliko mesta za punjenje treba hotelu, zašto je gostima dovoljno 11 kW, kako hoteli u Srbiji naplaćuju punjenje i kako se računa struja."
+  },
+  "v39abc": {
+   "en": "EV chargers for new builds and developers",
+   "sr": "Punjači za novogradnju i investitore"
+  },
+  "vt8kqb": {
+   "en": "ZGRADA — shared infrastructure for 2–6 spots",
+   "sr": "ZGRADA — zajednička infrastruktura za 2–6 mesta"
+  },
+  "wtm3rj": {
+   "en": "Installation only — installing your charger",
+   "sr": "Samo ugradnja — ugradnja tvog punjača"
+  },
+  "x52ub3": {
+   "en": "Charger installation",
+   "sr": "Ugradnja punjača"
+  },
+  "x8oqwp": {
+   "en": "A new-build garage ready for chargers: a cable route and a box at every spot, plus power management. For 40 spots, about 20.000–30.000 RSD per prepared spot.",
+   "sr": "Garaža u novogradnji spremna za punjače: trasa i kutija kod svakog mesta i upravljanje snagom. Za 40 mesta oko 20.000–30.000 RSD po pripremljenom mestu."
+  },
+  "x9m7hu": {
+   "en": "For charging at home, 11 kW is enough: a 22 kW charger needs 32 A per phase, more than an apartment has, and most cars take 11 kW at most.",
+   "sr": "Za punjenje kod kuće dovoljno je 11 kW: punjač od 22 kW traži 32 A po fazi, više nego što stan ima, a većina auta prima najviše 11 kW."
+  },
+  "xe2yvj": {
+   "en": "Newsletter",
+   "sr": "Pismo"
+  },
+  "xf8brf": {
+   "en": "A rough price for the whole property: charging spots, shared infrastructure and the subscription. Examples for a hotel, a garage, an apartment building and a new build, with VAT.",
+   "sr": "Okvirna cena za ceo objekat: mesta za punjenje, zajednička infrastruktura i pretplata. Primeri za hotel, garažu, stambenu zgradu i novogradnju, sa PDV-om."
+  },
+  "xfqw8c": {
+   "en": "Essent (NL) · Charger, Belgrade",
+   "sr": "Essent (NL) · Punjač, Beograd"
+  },
+  "ymm3xi": {
+   "en": "Public EV chargers in Serbia on one map: fast DC and AC, network prices with date and source. Plus what charging at home costs, overnight.",
+   "sr": "Javni punjači za električni auto u Srbiji na jednoj mapi: brzi DC i AC, cene mreža sa datumom i izvorom. I koliko košta punjenje kod kuće, noću."
+  },
+  "ys1cdd": {
+   "en": "A reinforced socket on a dedicated line, RCD protection (Type A + DC), a certified MID meter and basic installation next to the distribution board (up to 2 m of cable); document templates included. Cable to a spot farther away and any other work — quoted at the assessment, before work starts. All prices with VAT.",
+   "sr": "Pojačana utičnica na namenskoj liniji, FID zaštita (tip A + DC), sertifikovano MID brojilo i osnovna ugradnja pored razvodne table (do 2 m kabla); šabloni papira su uz to. Kabl do udaljenijeg mesta i ostali radovi — po proceni, pre početka radova. Sve sa PDV-om."
+  },
+  "yzqj2k": {
+   "en": "Building sign-up sent",
+   "sr": "Prijava zgrade success"
+  },
+  "z6j4lo": {
+   "en": "Šabac toll station",
+   "sr": "Naplatna stanica Šabac"
+  },
+  "zertke": {
+   "en": "At 30–80 km a day, a car uses 180–480 kWh a month. The math by EPS zones and tariffs: what that costs at night and what it costs during the day.",
+   "sr": "Za 30–80 km dnevno auto uzme 180–480 kWh mesečno. Računica po zonama i tarifama EPS-a: koliko to košta noću, a koliko danju."
+  },
+  "zinna6": {
+   "en": "Legal counsel for partnerships and contracts — Evolako",
+   "sr": "Pravnik za saradnju i ugovore — Evolako"
+  },
+  "zs762h": {
+   "en": "Who pays for the electricity, what the building assembly decides, what it costs and what the subscription covers — straight answers to 28 questions about charging an electric car at home in an apartment building.",
+   "sr": "Ko plaća struju, šta kaže skupština, koliko košta i šta pokriva pretplata — otvoreni odgovori na 28 pitanja o kućnom punjenju električnog auta u zgradi."
+  }
+ }
+}
