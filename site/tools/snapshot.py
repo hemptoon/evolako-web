@@ -140,10 +140,19 @@ def page_file(path):
     return 'pages/' + (path or 'index') + '.html'
 
 
+# Where a reference comes from decides whether a file on any host is copied: images and CSS-referenced files are
+# copied wherever they live (some hero images sit on a third-party CDN), scripts and links only from ASSET_HOSTS.
+ANY_HOST_KINDS = ('img[', 'source[', 'video[', 'style', 'css', 'meta[', 'link[icon', 'link[shortcut icon',
+                  'link[apple-touch-icon')
+SKIP_LINK_RELS = ('link[preconnect', 'link[dns-prefetch', 'link[canonical', 'link[alternate')
+
+
 def is_asset(url, kind):
     p = urllib.parse.urlsplit(url)
-    if p.scheme not in ('http', 'https') or (p.netloc not in ASSET_HOSTS and p.netloc not in OWN):
+    if p.scheme not in ('http', 'https') or not p.path.strip('/') or kind.startswith(SKIP_LINK_RELS):
         return False
+    if p.netloc not in ASSET_HOSTS and p.netloc not in OWN:
+        return kind.startswith(ANY_HOST_KINDS) or kind.endswith('[style]')
     if p.netloc in OWN:
         # own pages are pages, not assets; only files on the own domain count
         return bool(FILE_RE.search(p.path))
@@ -261,7 +270,7 @@ def main():
                             continue
                         v = urllib.parse.urljoin(u, ref.strip()).split('#')[0]
                         h = urllib.parse.urlsplit(v).netloc
-                        if v not in done and v not in refs and (h in ASSET_HOSTS or h in OWN):
+                        if v not in done and v not in refs and h and urllib.parse.urlsplit(v).path.strip('/'):
                             refs[v] = {'kinds': {'css'}, 'pages': set(info['pages'])}
                             new.append(v)
                 print(f'asset {st} {len(body):>9} {u}')
