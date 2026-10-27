@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];BVQ.push(["en2","1du8k8q§Car parks with a barrier: chargers on pedestals and a MID meter at every spot.§fvr4xw§Chargers for guarded and long-stay car parks"]);BVQ.push(["ru2","1du8k8q§Парковки со шлагбаумом: зарядки на стойках и MID-счётчик на каждом месте.§fvr4xw§Зарядки для охраняемых и долгосрочных парковок"]);

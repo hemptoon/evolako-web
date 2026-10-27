@@ -1,0 +1,2 @@
+/* Evolako 10.10.2026: QA-018 MID (tajmer) */
+window.BVQ=window.BVQ||[];BVQ.push(["en2","vam382§Evolako START has a MID meter at your space, and with WALLBOX you can add one (RSD 104,000), so you see exactly how much electricity your car took. All packages are on the page"]);BVQ.push(["ru2","vam382§У Evolako START на твоём месте стоит MID-счётчик, а к WALLBOX его можно добавить (104 000 RSD), — так ты точно видишь, сколько электричества взял твой автомобиль. Все пакеты — на странице"]);

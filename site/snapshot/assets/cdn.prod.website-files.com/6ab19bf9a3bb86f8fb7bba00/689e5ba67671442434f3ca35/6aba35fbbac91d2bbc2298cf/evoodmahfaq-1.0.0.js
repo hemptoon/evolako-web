@@ -1,0 +1,4 @@
+/* Evolako 28.09.2026: FAQ bez odmah; EN/RU, kljuc = FNV-1a(srpski) */
+var BVQ=window.BVQ=window.BVQ||[];
+BVQ.push(["en2","1opf7ba§You can: START works on a regular single-phase installation (2,3–3,7 kW), which gives 100–180 km of range overnight — enough for a week of city driving. WALLBOX 11 kW needs a three-phase connection; we check whether you have one during the assessment. Even if you don’t, START works without it and the wallbox can come later.§bqkair§Write to us — we reply within 48 hours. Or check what’s possible in your garage."]);
+BVQ.push(["ru2","1opf7ba§Можно: START работает от обычной однофазной сети (2,3–3,7 кВт) — это 100–180 км запаса хода за ночь, хватает на неделю городской езды. WALLBOX 11 кВт требует трёхфазного подключения; есть ли оно у тебя, проверим на оценке. Даже если нет — START работает и без него, а wallbox можно поставить позже.§bqkair§Напиши нам — отвечаем в течение 48 часов. Или проверь, что возможно в твоём гараже."]);

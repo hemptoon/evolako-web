@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];BVQ.push(["en2","1auuatf§A car showroom with an electric car and a wall charger§1cqtyfr§Apartment building garage with wall-mounted chargers and electric cars"]);BVQ.push(["ru2","1auuatf§Автосалон с электромобилем и настенной зарядкой§1cqtyfr§Гараж жилого дома с настенными зарядками и электромобилями"]);

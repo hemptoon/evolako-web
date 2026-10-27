@@ -1,0 +1,2 @@
+/* Evolako 07.10.2026: paketi v4 — osnovna ugradnja (mk) */
+window.BVQ=window.BVQ||[];BVQ.push(["en2","1eqtjed§Installation only from RSD 24,000 · START RSD 39,000 · WALLBOX 11 kW from RSD 94,000 · ZGRADA from RSD 96,000 per space. All including VAT and basic installation next to the distribution board; document templates included."]);BVQ.push(["ru2","1eqtjed§Только установка от 24 000 RSD · START 39 000 RSD · WALLBOX 11 кВт от 94 000 RSD · ZGRADA от 96 000 RSD за место. Всё с НДС и базовым монтажом рядом со щитком; шаблоны документов в комплекте."]);

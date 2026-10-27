@@ -1,0 +1,1 @@
+/* Evolako 08.10.2026: B2B paketi v3 */window.BVQ=window.BVQ||[];BVQ.push(["en2","8en8or§11 kW wallbox: 145.000–191.000 RSD per participant"]);BVQ.push(["ru2","8en8or§Wallbox 11 кВт: 145.000–191.000 RSD на участника"]);

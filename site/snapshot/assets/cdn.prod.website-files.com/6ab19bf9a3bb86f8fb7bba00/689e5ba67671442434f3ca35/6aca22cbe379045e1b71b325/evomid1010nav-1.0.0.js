@@ -1,0 +1,2 @@
+/* Evolako 10.10.2026: QA-018 MID (nav) */
+window.BVQ=window.BVQ||[];BVQ.push(["en2","6oanqd§Charger and basic installation, optional MID meter, document templates"]);BVQ.push(["ru2","6oanqd§Зарядка и базовый монтаж, MID-счётчик по желанию, шаблоны документов"]);

@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];window.BVQ.push(['en2','hdppjm§3 questions, half a minute — an instant recommendation, no strings attached.']);

@@ -1,0 +1,2 @@
+/* Evolako 07.10.2026: paketi v4 — osnovna ugradnja (11-22kw) */
+window.BVQ=window.BVQ||[];BVQ.push(["en2","upv5qb§Evolako START, a reinforced socket with a MID meter, costs 39.000 RSD incl. VAT, and WALLBOX 11 kW with a MID meter costs 104.000 RSD incl. VAT. The on-site assessment is 3.500 RSD and is credited toward the installation price."]);BVQ.push(["ru2","upv5qb§Evolako START, усиленная розетка с MID-счётчиком, стоит 39.000 RSD с НДС, а WALLBOX 11 кВт с MID-счётчиком — 104.000 RSD с НДС. Оценка на месте стоит 3.500 RSD и засчитывается в цену установки."]);

@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];window.BVQ.push(['ru2','15yj81d§Viber§1d5zzif§WhatsApp§11vuy5y§Telegram']);

@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];BVQ.push(["en2","1t0wfs6§990 RSD per month§rn6ymp§Optional subscription: 3.960 RSD per month for 4 spots"]);BVQ.push(["ru2","1t0wfs6§990 RSD в месяц§rn6ymp§Подписка по желанию: 3.960 RSD в месяц за 4 места"]);

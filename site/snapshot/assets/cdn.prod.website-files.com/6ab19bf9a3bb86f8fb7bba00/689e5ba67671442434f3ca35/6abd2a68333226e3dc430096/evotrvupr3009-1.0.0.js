@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];BVQ.push(["en2","cw3iif§A garage floor plan, a tablet and coffee on a manager’s desk"]);BVQ.push(["ru2","cw3iif§План гаража, планшет и кофе на столе управляющего"]);

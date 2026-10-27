@@ -1,0 +1,4 @@
+/* Evolako 28.09.2026: kviz i preporuka bez odmah; EN/RU, kljuc = FNV-1a(srpski) */
+var BVQ=window.BVQ=window.BVQ||[];
+BVQ.push(["en2","2zfbfj§No commitment. You see the recommendation on screen.§vmxg22§A smart charger at your spot: a full car in a single night, dynamic load management and a MID meter for billing down to the dinar. If the assessment shows there is no three-phase supply — START works without it, the wallbox can come later."]);
+BVQ.push(["ru2","2zfbfj§Ни к чему не обязывает. Рекомендацию увидишь на экране.§vmxg22§Умная зарядка на твоём месте: полный заряд за одну ночь, динамическое управление мощностью и MID-счётчик для расчёта до динара. Если на оценке окажется, что трёхфазного подключения нет — START работает и без него, wallbox можно позже."]);

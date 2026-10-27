@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];BVQ.push(["en2","1uyplhg§Parking spaces with two chargers and boxes for future chargers"]);BVQ.push(["ru2","1uyplhg§Парковочные места с двумя зарядками и коробками для будущих зарядок"]);

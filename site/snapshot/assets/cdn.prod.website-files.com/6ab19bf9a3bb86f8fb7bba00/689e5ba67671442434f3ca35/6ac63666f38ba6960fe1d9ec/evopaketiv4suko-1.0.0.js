@@ -1,0 +1,2 @@
+/* Evolako 07.10.2026: paketi v4 — osnovna ugradnja (suko) */
+window.BVQ=window.BVQ||[];BVQ.push(["en2","115or6n§Evolako START is a reinforced socket with a MID meter, 2,3–3,7 kW and up to about 180 km in one night, for 39.000 RSD incl. VAT. The on-site assessment is 3.500 RSD and counts toward the installation price."]);BVQ.push(["ru2","115or6n§Evolako START — это усиленная розетка с MID-счётчиком, 2,3–3,7 кВт и до примерно 180 км за одну ночь, за 39.000 RSD с НДС. Оценка на месте стоит 3.500 RSD и засчитывается в цену установки."]);

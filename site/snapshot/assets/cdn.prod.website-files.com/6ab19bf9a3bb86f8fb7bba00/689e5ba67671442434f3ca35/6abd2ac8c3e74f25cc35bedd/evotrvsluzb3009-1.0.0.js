@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];BVQ.push(["en2","1iukzev§An employee plugging a company car into a charger in a home garage"]);BVQ.push(["ru2","1iukzev§Сотрудник подключает служебный автомобиль к зарядке в домашнем гараже"]);

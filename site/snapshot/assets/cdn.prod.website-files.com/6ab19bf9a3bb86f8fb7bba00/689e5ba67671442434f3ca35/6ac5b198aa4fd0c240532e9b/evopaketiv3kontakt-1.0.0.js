@@ -1,0 +1,2 @@
+/* Evolako 07.10.2026: paketi v3 (kontakt) */
+window.BVQ=window.BVQ||[];BVQ.push(["en2","1xcnerq§Your choice:§1oi98uh§installation only"]);BVQ.push(["ru2","1xcnerq§Твой выбор:§1oi98uh§только установка"]);

@@ -1,0 +1,2 @@
+/* Evolako 07.10.2026: paketi v3 (paketic) */
+window.BVQ=window.BVQ||[];BVQ.push(["en2","1kvbkbt§24.000 on an existing line, 42.000 with a new line up to 7 m, RCD protection and breaker.§b62vlv§The charger must carry the CE mark and have DC fault protection (6 mA). If it doesn't, we add a Type B RCD to the quote."]);BVQ.push(["ru2","1kvbkbt§24.000 на уже проведённую линию, 42.000 с новой линией до 7 м, УЗО и автоматом.§b62vlv§У зарядки должна быть маркировка CE и защита от постоянного тока утечки (6 мА). Если её нет, добавим в предложение УЗО типа B."]);

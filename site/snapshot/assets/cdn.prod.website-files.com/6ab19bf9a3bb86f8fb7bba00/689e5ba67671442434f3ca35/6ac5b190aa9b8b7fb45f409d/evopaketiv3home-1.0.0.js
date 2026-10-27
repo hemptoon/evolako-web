@@ -1,0 +1,2 @@
+/* Evolako 07.10.2026: paketi v3 (home) */
+window.BVQ=window.BVQ||[];BVQ.push(["en2","97g161§from 94.000§yi0g3m§No tripped breakers — current set to your supply§1qamkeh§WALLBOX — 115.000§gzudxf§All with VAT and installation; document templates included. The price you see is the price you pay."]);BVQ.push(["ru2","97g161§от 94.000§yi0g3m§Не выбивает автоматы — ток под твою мощность§1qamkeh§WALLBOX — 115.000§gzudxf§Всё с НДС и установкой; шаблоны документов в комплекте. Цена, которую ты видишь, — это цена, которую ты платишь."]);

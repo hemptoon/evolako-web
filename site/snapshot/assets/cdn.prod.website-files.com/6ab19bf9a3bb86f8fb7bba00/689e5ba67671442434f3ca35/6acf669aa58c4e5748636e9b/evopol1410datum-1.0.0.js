@@ -1,0 +1,1 @@
+(function(){var Q=window.BVQ=window.BVQ||[];Q.push(["en2","lp2hkz§We update the policy as needed; the current version is always on this page. Effective from: 14.10.2026."]);Q.push(["ru2","lp2hkz§Политику обновляем по мере необходимости; действующая версия всегда на этой странице. Действует с: 14.10.2026."]);})();

@@ -1,0 +1,2 @@
+/* Evolako 07.10.2026: paketi v4 — osnovna ugradnja (tajmer) */
+window.BVQ=window.BVQ||[];BVQ.push(["en2","xvz8dv§Evolako START is a reinforced socket with a MID meter, 2.3–3.7 kW and up to about 180 km in one night, for 39.000 RSD incl. VAT. The 11 kW WALLBOX with a MID meter costs 104.000 RSD incl. VAT."]);BVQ.push(["ru2","xvz8dv§Evolako START — это усиленная розетка со счётчиком MID, 2,3–3,7 кВт и до примерно 180 км за одну ночь, за 39.000 RSD с НДС. WALLBOX на 11 кВт со счётчиком MID стоит 104.000 RSD с НДС."]);

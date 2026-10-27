@@ -1,0 +1,1 @@
+/* Evolako 08.10.2026: B2B paketi v3 */window.BVQ=window.BVQ||[];BVQ.push(["en2","nl5fmc§Updated: October 8, 2026"]);BVQ.push(["ru2","nl5fmc§Обновлено: 8 октября 2026 г."]);

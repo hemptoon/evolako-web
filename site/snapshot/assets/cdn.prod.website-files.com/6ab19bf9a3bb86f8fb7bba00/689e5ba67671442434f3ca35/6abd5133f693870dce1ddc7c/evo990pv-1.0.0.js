@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];BVQ.push(["en2","1t0wfs6§990 RSD per month"]);BVQ.push(["ru2","1t0wfs6§990 RSD в месяц"]);

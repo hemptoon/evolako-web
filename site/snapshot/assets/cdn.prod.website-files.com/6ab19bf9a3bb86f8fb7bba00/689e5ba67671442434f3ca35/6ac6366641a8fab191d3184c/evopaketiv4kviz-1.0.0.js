@@ -1,0 +1,2 @@
+/* Evolako 07.10.2026: paketi v4 — osnovna ugradnja (kviz + preporuka) */
+window.BVQ=window.BVQ||[];BVQ.push(["en2","f5pjkj§Your kit: START — 39.000 RSD incl. VAT."]);BVQ.push(["ru2","f5pjkj§Твой комплект: START — 39.000 RSD с НДС."]);

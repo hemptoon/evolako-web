@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];window.BVQ.push(['en2','1d5zzif§WhatsApp§11vuy5y§Telegram']);

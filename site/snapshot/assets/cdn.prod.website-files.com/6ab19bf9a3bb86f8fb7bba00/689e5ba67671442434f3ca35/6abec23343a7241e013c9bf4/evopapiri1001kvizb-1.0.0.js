@@ -1,0 +1,4 @@
+/* Evolako 01.10.2026: papiri -> sabloni (kviz i preporuka) */
+var BVQ=window.BVQ=window.BVQ||[];
+BVQ.push(["en2","1r5fus4§Spots in the courtyard are shared, so the residents' assembly decides where charging goes. The ZGRADA kit brings a shared line, a MID meter for every user and templates for the assembly, and it costs the building nothing. Outdoors the charger stands on a post, so you get the exact price after the assessment."]);
+BVQ.push(["ru2","1r5fus4§Места во дворе общие, поэтому место для зарядки определяет собрание жильцов. Пакет ZGRADA — это общая линия, MID-счётчик для каждого пользователя и шаблоны для собрания, а дому это ничего не стоит. На открытом месте зарядка стоит на стойке, поэтому точную цену ты получаешь после оценки."]);

@@ -1,0 +1,2 @@
+/* Evolako 10.10.2026: QA-018 MID (kw) */
+window.BVQ=window.BVQ||[];BVQ.push(["en2","1mhf1wo§For an apartment Evolako has two packages: START, a reinforced 2.3–3.7 kW socket with a MID meter, and WALLBOX, a three-phase 11 kW charger with an optional MID meter. What's included is on the page"]);BVQ.push(["ru2","1mhf1wo§Для квартиры у Evolako два пакета: START — усиленная розетка 2,3–3,7 кВт с MID-счётчиком, и WALLBOX — трёхфазная зарядка на 11 кВт, к которой MID-счётчик можно добавить по желанию. Что входит в пакеты — на странице"]);

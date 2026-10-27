@@ -1,0 +1,4 @@
+/* Evolako 01.10.2026: papiri -> sabloni (mapa punjaca) */
+var BVQ=window.BVQ=window.BVQ||[];
+BVQ.push(["en2","wdjvo7§If you park in your building’s garage, the charger can be right there: a dedicated line, a MID meter and document templates for the residents’ assembly — from 59.000 RSD VAT included, installed in one day. You pay for electricity at the price on your EPS bill, with no markup."]);
+BVQ.push(["ru2","wdjvo7§Если паркуешься в гараже дома, зарядка может быть прямо там: отдельная линия, счётчик MID и шаблоны документов для собрания жильцов — от 59.000 RSD с НДС, монтаж за один день. За электричество платишь по цене из счёта EPS, без наценки."]);

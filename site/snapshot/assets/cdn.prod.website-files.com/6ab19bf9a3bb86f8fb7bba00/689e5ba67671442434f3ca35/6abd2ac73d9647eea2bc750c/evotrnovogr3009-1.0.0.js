@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];BVQ.push(["en2","q8f9c7§A new garage with junction boxes at the parking spaces and the first charger§8s6f79§A residential building site with an underground garage"]);BVQ.push(["ru2","q8f9c7§Новый гараж с распределительными коробками у мест и первой зарядкой§8s6f79§Стройка жилого дома с подземным гаражом"]);

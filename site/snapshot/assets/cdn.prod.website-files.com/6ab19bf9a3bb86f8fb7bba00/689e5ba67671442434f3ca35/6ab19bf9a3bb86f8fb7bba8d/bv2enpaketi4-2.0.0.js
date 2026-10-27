@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];window.BVQ.push(['en2','l4s90o§All prices are final — VAT, installation and paperwork included. Only a non-standard location can change them (say, a long cable run) — and you learn that at the survey, before signing, not on the invoice.']);

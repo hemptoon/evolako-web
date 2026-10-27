@@ -1,0 +1,4 @@
+/* Evolako 28.09.2026: politika bez trekera 3/3; EN/RU, kljuc = FNV-1a(srpski) */
+var BVQ=window.BVQ=window.BVQ||[];
+BVQ.push(["en2","1r4w5r8§We update this policy as needed; the current version is always on this page. Effective from: 28.09.2026.§1qg9n03§The evolako.rs website is run by Evolako (“Evolako”); registration details will be added once the business is registered. By using the site you accept these terms."]);
+BVQ.push(["ru2","1r4w5r8§Политику обновляем по мере необходимости; действующая версия всегда на этой странице. Действует с: 28.09.2026.§1qg9n03§Сайт evolako.rs ведёт Evolako («Evolako»); регистрационные данные добавим после регистрации. Пользуясь сайтом, ты принимаешь эти условия."]);

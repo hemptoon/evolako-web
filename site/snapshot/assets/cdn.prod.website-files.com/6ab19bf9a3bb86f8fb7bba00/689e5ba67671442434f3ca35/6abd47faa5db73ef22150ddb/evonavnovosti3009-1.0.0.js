@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];BVQ.push(["en2","178yper§Charging at home and in your building§hjkc8d§News§1l1snsw§Electricity prices, rules and what's new at Evolako"]);BVQ.push(["ru2","178yper§Зарядка дома и в многоквартирном доме§hjkc8d§Новости§1l1snsw§Цены на электричество, правила и новое в Evolako"]);

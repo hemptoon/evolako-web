@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];BVQ.push(["en2","11hscc6§An electrician assessing the distribution board and the garage§1wf5voe§3.500 RSD§b169t6§on-site assessment, credited toward the installation"]);BVQ.push(["ru2","11hscc6§Электрик оценивает распределительный щит и гараж§1wf5voe§3.500 RSD§b169t6§оценка на объекте, засчитывается в стоимость монтажа"]);

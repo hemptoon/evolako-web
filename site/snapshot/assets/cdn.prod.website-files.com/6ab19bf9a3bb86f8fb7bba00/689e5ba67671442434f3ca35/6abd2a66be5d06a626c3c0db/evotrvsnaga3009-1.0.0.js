@@ -1,0 +1,1 @@
+window.BVQ=window.BVQ||[];BVQ.push(["en2","155abon§An electrician measuring current with a clamp meter in a distribution board"]);BVQ.push(["ru2","155abon§Электрик измеряет ток токовыми клещами в щите"]);

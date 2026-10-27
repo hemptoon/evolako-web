@@ -1,0 +1,2 @@
+/* Evolako 10.10.2026: QA-018 MID (sluzb) */
+window.BVQ=window.BVQ||[];BVQ.push(["en2","1wk74es§For a space the company meters, choose one of two packages with a MID meter and basic installation next to the distribution board (up to 2 m of cable, RCD protection and breaker):"]);BVQ.push(["ru2","1wk74es§Для места, которое компания учитывает, выбирают один из двух пакетов с MID-счётчиком и базовым монтажом рядом со щитком (до 2 м кабеля, УЗО и автомат):"]);
