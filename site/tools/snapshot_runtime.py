@@ -234,9 +234,29 @@ async def load_one(browser, args, state, job, replay):
         if replay is not None:                       # offline dry run: answer from the given snapshot
             hit = replay.get(url_key(req.url))
             if hit:
+                if d == 'live':
+                    state.add(req.url, hit[0], hit[1], 'live', page=path, mode=mode, viewport=vps,
+                              rtype=req.resource_type, initiators=sorted(state.initiators.get(req.url, ())))
                 return await r.fulfill(status=200, body=hit[0], headers={'content-type': hit[1],
                                                                          'access-control-allow-origin': '*'})
             return await r.fulfill(status=404, body=b'not in the replay snapshot')
+        if d == 'live':
+            # live services are fetched here and saved from the route: requests of web workers (the map tiles the
+            # MapLibre worker loads) never reach page.on('response')
+            try:
+                resp = await r.fetch()
+                body = await resp.body()
+            except Exception as e:  # noqa: BLE001
+                state.errors.append({'url': req.url, 'error': 'fetch: %s' % str(e)[:120], 'page': path, 'mode': mode})
+                return await r.abort('failed')
+            rec = state.requests.get(req.url)
+            if rec is not None:
+                rec['status'].add(resp.status)
+            if resp.status == 200:
+                state.add(req.url, body, resp.headers.get('content-type', ''), 'live', page=path, mode=mode,
+                          viewport=vps, rtype=req.resource_type,
+                          initiators=sorted(state.initiators.get(req.url, ())))
+            return await r.fulfill(response=resp, body=body)
         return await r.continue_()
 
     async def save(resp):
@@ -245,8 +265,8 @@ async def load_one(browser, args, state, job, replay):
         rec = state.requests.get(req.url)
         if rec is not None:
             rec['status'].add(resp.status)
-        if d not in ('copy', 'live', 'own') or req.method != 'GET' or resp.status != 200:
-            return
+        if d not in ('copy', 'own') or req.method != 'GET' or resp.status != 200:
+            return                                   # live services are saved by the route handler
         if d == 'own' and (req.resource_type == 'document' or not FILE_RE.search(urllib.parse.urlsplit(req.url).path)):
             return
         try:
