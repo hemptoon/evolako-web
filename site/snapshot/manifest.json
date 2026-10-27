@@ -1,6 +1,6 @@
 {
  "base": "https://www.evolako.rs",
- "taken": "2026-10-27T00:35:49Z",
+ "taken": "2026-10-27T00:38:10Z",
  "pages": [
   {
    "path": "/",
@@ -398,6 +398,21 @@
    "page_count": 37
   },
   {
+   "url": "https://app-assets.website-files.com/static/favicon_designer.88fce7c7f8.png",
+   "file": "assets/app-assets.website-files.com/static/favicon_designer.88fce7c7f8.png",
+   "status": 200,
+   "bytes": 688,
+   "type": "image/png",
+   "sha256": "e3e8d727e818ce2b05175ae721a17651ab71696bc10969319f87b6798d73e87a",
+   "kinds": [
+    "link[shortcut icon]"
+   ],
+   "pages": [
+    "/__snapshot-404-probe"
+   ],
+   "page_count": 1
+  },
+  {
    "url": "https://app.evolako.rs/embed/evo-fx-15888fadaa.js",
    "file": "assets/app.evolako.rs/embed/evo-fx-15888fadaa.js",
    "status": 200,
@@ -447,21 +462,6 @@
     "/vodici"
    ],
    "page_count": 37
-  },
-  {
-   "url": "https://cdn.jsdelivr.net",
-   "file": "assets/cdn.jsdelivr.net/index",
-   "status": 200,
-   "bytes": 48904,
-   "type": "text/html",
-   "sha256": "efc7a70b9a113751689482dba134c5fd424129d4405b57025186857ef2b0ca80",
-   "kinds": [
-    "link[preconnect]"
-   ],
-   "pages": [
-    "/mapa-punjaca"
-   ],
-   "page_count": 1
   },
   {
    "url": "https://cdn.jsdelivr.net/npm/gsap@3.15/dist/DrawSVGPlugin.min.js",
@@ -525,57 +525,6 @@
     "/prijavi-zgradu"
    ],
    "page_count": 1
-  },
-  {
-   "url": "https://cdn.prod.website-files.com",
-   "file": null,
-   "status": 403,
-   "bytes": 243,
-   "type": "application/xml",
-   "sha256": "6eec0a6cef272d1909736126fc7c98c5f6819f248d1400e01bcd3f89b36ec497",
-   "kinds": [
-    "link[preconnect]"
-   ],
-   "pages": [
-    "/",
-    "/cena-punjaca-po-parking-mestu",
-    "/cesta-pitanja",
-    "/garaza-za-izdavanje-sa-punjacem",
-    "/kalkulator-cene-punjaca",
-    "/karijera",
-    "/karijera-elektricar",
-    "/karijera-pravnik",
-    "/karijera-prodaja",
-    "/koliko-elektricni-auto-podize-racun-za-struju",
-    "/koliko-punjaca-treba-hotelu",
-    "/koliko-snage-treba-garazi-za-punjace",
-    "/kontakt",
-    "/mapa-punjaca",
-    "/medija-kit",
-    "/novogradnja-garaza-spremna-za-punjace",
-    "/novosti",
-    "/operativni-lizing-elektricnog-automobila-punjenje",
-    "/paketi-i-cene",
-    "/politika-privatnosti",
-    "/preporuka",
-    "/prijavi-zgradu",
-    "/proveri-svoju-garazu",
-    "/punjac-11-ili-22-kw",
-    "/punjaci-u-garazi-zgrade-plan-za-upravnike",
-    "/punjaci-za-auto-salone",
-    "/punjaci-za-firme",
-    "/punjaci-za-hotele",
-    "/punjaci-za-novogradnju",
-    "/punjaci-za-parking-garaze",
-    "/punjaci-za-parkinge",
-    "/punjaci-za-sluzbena-vozila",
-    "/punjaci-za-stambene-zgrade",
-    "/punjenje-nocu-tajmer",
-    "/punjenje-preko-suko-uticnice",
-    "/punjenje-sluzbenog-automobila-kod-kuce",
-    "/vodici"
-   ],
-   "page_count": 37
   },
   {
    "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00%2F689e5ba67671442434f3ca35%2F6ab19bf9a3bb86f8fb7bba81%2Fbv2ruhome1-2.0.0.js",
@@ -6040,55 +5989,81 @@
    "page_count": 37
   },
   {
-   "url": "https://fonts.googleapis.com",
-   "file": null,
-   "status": 404,
-   "bytes": 1621,
-   "type": "text/html",
-   "sha256": "efa69c9a25484eb4e67bdb35955d30019f4575f2282a8538063e6aa6494b59fa",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FM7Qei6HMfZNdHxGMvPdz3BwTf/hf_20260723_185054_63816cb9-bf90-4452-afa1-7e586a50f09b_min.webp",
+   "file": "assets/d8j0ntlcm91z4.cloudfront.net/user_3FM7Qei6HMfZNdHxGMvPdz3BwTf/hf_20260723_185054_63816cb9-bf90-4452-afa1-7e586a50f09b_min.webp",
+   "status": 200,
+   "bytes": 109878,
+   "type": "image/webp",
+   "sha256": "0e9fec72a29757710d519869f407436849d5c5d4ae34c64350cd8f6fe7eeac39",
    "kinds": [
-    "link[preconnect]"
+    "style"
+   ],
+   "pages": [
+    "/paketi-i-cene"
+   ],
+   "page_count": 1
+  },
+  {
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FM7Qei6HMfZNdHxGMvPdz3BwTf/hf_20260723_185103_b37396ca-8d91-4080-87c5-0d493b1b9c7a_min.webp",
+   "file": "assets/d8j0ntlcm91z4.cloudfront.net/user_3FM7Qei6HMfZNdHxGMvPdz3BwTf/hf_20260723_185103_b37396ca-8d91-4080-87c5-0d493b1b9c7a_min.webp",
+   "status": 200,
+   "bytes": 216494,
+   "type": "image/webp",
+   "sha256": "3dfb2049575b6f1f0e5b958340ca42c864bf23aea5142d97d2bdf278f5399d21",
+   "kinds": [
+    "style"
    ],
    "pages": [
     "/",
-    "/cena-punjaca-po-parking-mestu",
     "/cesta-pitanja",
-    "/garaza-za-izdavanje-sa-punjacem",
-    "/kalkulator-cene-punjaca",
-    "/karijera",
-    "/karijera-elektricar",
-    "/karijera-pravnik",
-    "/karijera-prodaja",
-    "/koliko-elektricni-auto-podize-racun-za-struju",
-    "/koliko-punjaca-treba-hotelu",
-    "/koliko-snage-treba-garazi-za-punjace",
-    "/kontakt",
-    "/mapa-punjaca",
-    "/medija-kit",
-    "/novogradnja-garaza-spremna-za-punjace",
-    "/novosti",
-    "/operativni-lizing-elektricnog-automobila-punjenje",
-    "/paketi-i-cene",
-    "/politika-privatnosti",
-    "/preporuka",
-    "/prijavi-zgradu",
-    "/proveri-svoju-garazu",
-    "/punjac-11-ili-22-kw",
-    "/punjaci-u-garazi-zgrade-plan-za-upravnike",
-    "/punjaci-za-auto-salone",
-    "/punjaci-za-firme",
-    "/punjaci-za-hotele",
-    "/punjaci-za-novogradnju",
-    "/punjaci-za-parking-garaze",
-    "/punjaci-za-parkinge",
-    "/punjaci-za-sluzbena-vozila",
-    "/punjaci-za-stambene-zgrade",
-    "/punjenje-nocu-tajmer",
-    "/punjenje-preko-suko-uticnice",
-    "/punjenje-sluzbenog-automobila-kod-kuce",
-    "/vodici"
+    "/paketi-i-cene"
    ],
-   "page_count": 37
+   "page_count": 3
+  },
+  {
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FM7Qei6HMfZNdHxGMvPdz3BwTf/hf_20260723_185655_80263d50-100e-41d3-8dc0-68911ba26da3_min.webp",
+   "file": "assets/d8j0ntlcm91z4.cloudfront.net/user_3FM7Qei6HMfZNdHxGMvPdz3BwTf/hf_20260723_185655_80263d50-100e-41d3-8dc0-68911ba26da3_min.webp",
+   "status": 200,
+   "bytes": 99140,
+   "type": "image/webp",
+   "sha256": "0333150d7bcc14a7f3c1f3a1a94007bb1677c858b732f23d5b10fdbbb87e3d7c",
+   "kinds": [
+    "style"
+   ],
+   "pages": [
+    "/"
+   ],
+   "page_count": 1
+  },
+  {
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FM7Qei6HMfZNdHxGMvPdz3BwTf/hf_20260723_185659_d2353850-483c-48fe-bb0d-b022df8e0921_min.webp",
+   "file": "assets/d8j0ntlcm91z4.cloudfront.net/user_3FM7Qei6HMfZNdHxGMvPdz3BwTf/hf_20260723_185659_d2353850-483c-48fe-bb0d-b022df8e0921_min.webp",
+   "status": 200,
+   "bytes": 157100,
+   "type": "image/webp",
+   "sha256": "941e8071dabdb02fe063bb81c872556465a44a7ede6ec57f632fa7da54ac9e0c",
+   "kinds": [
+    "style"
+   ],
+   "pages": [
+    "/"
+   ],
+   "page_count": 1
+  },
+  {
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FM7Qei6HMfZNdHxGMvPdz3BwTf/hf_20260723_220037_a28c6744-45ac-45bc-9ea8-29fc54cbb0f7_min.webp",
+   "file": "assets/d8j0ntlcm91z4.cloudfront.net/user_3FM7Qei6HMfZNdHxGMvPdz3BwTf/hf_20260723_220037_a28c6744-45ac-45bc-9ea8-29fc54cbb0f7_min.webp",
+   "status": 200,
+   "bytes": 35182,
+   "type": "image/webp",
+   "sha256": "903bc81d765715357ca90eae86271c7a60fdb66c8efe519f2a8049ffcdfdd79b",
+   "kinds": [
+    "style"
+   ],
+   "pages": [
+    "/"
+   ],
+   "page_count": 1
   },
   {
    "url": "https://fonts.googleapis.com/css2?family=Onest:wght@300..900&display=swap",
@@ -6099,57 +6074,6 @@
    "sha256": "6dceac10023e91c4638692bdd42879e887717a8081bef2bf8f21ec19c55e18a4",
    "kinds": [
     "style"
-   ],
-   "pages": [
-    "/",
-    "/cena-punjaca-po-parking-mestu",
-    "/cesta-pitanja",
-    "/garaza-za-izdavanje-sa-punjacem",
-    "/kalkulator-cene-punjaca",
-    "/karijera",
-    "/karijera-elektricar",
-    "/karijera-pravnik",
-    "/karijera-prodaja",
-    "/koliko-elektricni-auto-podize-racun-za-struju",
-    "/koliko-punjaca-treba-hotelu",
-    "/koliko-snage-treba-garazi-za-punjace",
-    "/kontakt",
-    "/mapa-punjaca",
-    "/medija-kit",
-    "/novogradnja-garaza-spremna-za-punjace",
-    "/novosti",
-    "/operativni-lizing-elektricnog-automobila-punjenje",
-    "/paketi-i-cene",
-    "/politika-privatnosti",
-    "/preporuka",
-    "/prijavi-zgradu",
-    "/proveri-svoju-garazu",
-    "/punjac-11-ili-22-kw",
-    "/punjaci-u-garazi-zgrade-plan-za-upravnike",
-    "/punjaci-za-auto-salone",
-    "/punjaci-za-firme",
-    "/punjaci-za-hotele",
-    "/punjaci-za-novogradnju",
-    "/punjaci-za-parking-garaze",
-    "/punjaci-za-parkinge",
-    "/punjaci-za-sluzbena-vozila",
-    "/punjaci-za-stambene-zgrade",
-    "/punjenje-nocu-tajmer",
-    "/punjenje-preko-suko-uticnice",
-    "/punjenje-sluzbenog-automobila-kod-kuce",
-    "/vodici"
-   ],
-   "page_count": 37
-  },
-  {
-   "url": "https://fonts.gstatic.com",
-   "file": null,
-   "status": 404,
-   "bytes": 1561,
-   "type": "text/html",
-   "sha256": "23926e9185d8d43c02807a838ffb373cc1977726094a4e46807c66ada9dd7660",
-   "kinds": [
-    "link[preconnect]"
    ],
    "pages": [
     "/",
@@ -6554,7 +6478,6 @@
   {
    "host": "app-assets.website-files.com",
    "kinds": [
-    "link[shortcut icon]",
     "link[stylesheet]"
    ]
   },
@@ -6587,8 +6510,15 @@
    ]
   },
   {
+   "host": "cdn.jsdelivr.net",
+   "kinds": [
+    "link[preconnect]"
+   ]
+  },
+  {
    "host": "cdn.prod.website-files.com",
    "kinds": [
+    "link[preconnect]",
     "script"
    ]
   },
@@ -6597,12 +6527,6 @@
    "kinds": [
     "a[href]",
     "script"
-   ]
-  },
-  {
-   "host": "d8j0ntlcm91z4.cloudfront.net",
-   "kinds": [
-    "style"
    ]
   },
   {
@@ -6624,6 +6548,18 @@
    "kinds": [
     "a[href]",
     "script"
+   ]
+  },
+  {
+   "host": "fonts.googleapis.com",
+   "kinds": [
+    "link[preconnect]"
+   ]
+  },
+  {
+   "host": "fonts.gstatic.com",
+   "kinds": [
+    "link[preconnect]"
    ]
   },
   {
@@ -6894,24 +6830,11 @@
    ]
   }
  ],
- "errors": [
-  {
-   "url": "https://cdn.prod.website-files.com",
-   "status": 403
-  },
-  {
-   "url": "https://fonts.googleapis.com",
-   "status": 404
-  },
-  {
-   "url": "https://fonts.gstatic.com",
-   "status": 404
-  }
- ],
+ "errors": [],
  "summary": {
   "pages": 38,
-  "assets": 294,
-  "asset_bytes": 8849122,
-  "errors": 3
+  "assets": 299,
+  "asset_bytes": 9418700,
+  "errors": 0
  }
 }
