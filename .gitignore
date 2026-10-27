@@ -12,3 +12,11 @@ _patches/
 # python caches (site/tools)
 __pycache__/
 *.pyc
+
+# www.evolako.rs static build (site/build.py output) — never committed; local state of `wrangler pages dev` in site/
+site/dist/
+site/.wrangler/
+# ...but a "dist" folder inside the site snapshot mirror is a CDN path (cdn.jsdelivr.net/npm/gsap@3.15/dist/),
+# not build output: the rule "dist/" above made the snapshot commit lose the GSAP files
+!site/snapshot/**/dist/
+!site/snapshot-fill/**/dist/
