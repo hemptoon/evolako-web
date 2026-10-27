@@ -1,0 +1,16 @@
+# Python packages of the runtime capture (site/tools/snapshot_runtime.py), installed by the "Site snapshot" workflow
+# with: pip install --no-deps --require-hashes -r site/tools/requirements-snapshot.txt
+# Exact versions with sha256 of the files PyPI serves (Linux x86_64, CPython 3.12-3.14), all released at least a
+# week before they were pinned (playwright 1.63.0: 15.09.2026). To update: take a release at least a week old and
+# copy the hashes from https://pypi.org/pypi/<name>/<version>/json. Playwright downloads its own Chromium build
+# (python -m playwright install), which matches this version.
+playwright==1.63.0 \
+    --hash=sha256:ad21bc07516b187965a7521c5cf0df0bd657b17482eaad74335272d35a2b07de
+pyee==13.0.1 \
+    --hash=sha256:af2f8fede4171ef667dfded53f96e2ed0d6e6bd7ee3bb46437f77e3b57689228
+greenlet==3.5.6 \
+    --hash=sha256:975736b002ed080d124cf81a79cb7e05cb26d6b3f5c7a7b651c0fcce70353aa1 \
+    --hash=sha256:f98e8215e172f567ce80eeaed9107fb4d32b6c44f26983d9b8334658136a205a \
+    --hash=sha256:9a09d59bef1db94f384b5bcc2d523694d338f3df6b757aeeaf7baca5d0c0be88
+typing-extensions==4.16.0 \
+    --hash=sha256:481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8

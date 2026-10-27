@@ -1,15 +1,25 @@
-# Step 1 of moving www.evolako.rs off Webflow (decision 27.10.2026): copy the published site — every page from the
-# sitemap, the CSS/JS/images/fonts/files they use, robots.txt, sitemap.xml — into site/snapshot/ on the branch
-# site-migration. Only the runner can reach the live site, so the copy is made here and committed back.
-# Runs on a push to site-migration that touches the tool, this file or site/snapshot.request (edit that file to take
-# a fresh copy). Nothing is deployed and the live site is not changed. Pushes made with GITHUB_TOKEN do not start
-# new runs, so there is no loop. Actions are pinned to commit hashes (same pins as deploy.yml).
+# Moving www.evolako.rs off Webflow (decision 27.10.2026): copy the published site into site/snapshot/ on the branch
+# site-migration, so the static build (site/build.py) never needs Webflow or Google at runtime. Only the runner can
+# reach the live site, so the copy is made here and committed back.
+#   1. static crawl (site/tools/snapshot.py): every page from the sitemap, the CSS/JS/images/fonts/files the HTML and
+#      CSS name, robots.txt, sitemap.xml
+#   2. runtime capture (site/tools/snapshot_runtime.py, Playwright 1.63.0 + its Chromium): every page and the 404 in
+#      the four language modes (sr, ?lang=en, ?lang=ru, ?lang=sr-cyrl) at 1440 and 390 px; what the browser loads is
+#      saved too (dictionaries and the consent pack built from base URLs by scripts, font subsets, ...). During the
+#      capture nothing is sent or counted: non-GET requests, the visit counter, Cloudflare Web Analytics, Turnstile,
+#      webflow.com endpoints and analytics are aborted, no form is submitted, the cookie banner is never answered.
+# Runs on a push to site-migration that touches the tools, this file or site/snapshot.request (edit that file to take
+# a fresh copy — also the final one right before the switch), or by hand (Actions → Site snapshot → Run workflow).
+# Nothing is deployed and the live site is not changed. Pushes made with GITHUB_TOKEN do not start new runs, so there
+# is no loop. Actions are pinned to commit hashes (same pins as deploy.yml), Python packages to versions + sha256.
 name: Site snapshot
 on:
   push:
     branches: [site-migration]
     paths:
       - site/tools/snapshot.py
+      - site/tools/snapshot_runtime.py
+      - site/tools/requirements-snapshot.txt
       - site/snapshot.request
       - .github/workflows/site-snapshot.yml
   workflow_dispatch:
@@ -21,12 +31,12 @@ concurrency:
 jobs:
   snapshot:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
           ref: site-migration
-      - name: Copy the live site
+      - name: Copy the live site (static crawl)
         run: |
           rm -rf site/snapshot
           python3 site/tools/snapshot.py --base https://www.evolako.rs --out site/snapshot | tee /tmp/snapshot.log | tail -40
@@ -39,11 +49,44 @@ jobs:
           if s['pages'] < 10:
               raise SystemExit('too few pages — sitemap or site unreachable')
           EOF
+      - name: Install the capture browser (Playwright 1.63.0, hash-pinned)
+        run: |
+          python3 -m venv /tmp/capture-venv || { sudo apt-get install -y -q python3-venv && python3 -m venv /tmp/capture-venv; }
+          /tmp/capture-venv/bin/pip install --quiet --no-deps --require-hashes -r site/tools/requirements-snapshot.txt
+          /tmp/capture-venv/bin/python -m playwright install --with-deps --only-shell chromium
+      - name: Capture what the pages load at runtime
+        run: |
+          /tmp/capture-venv/bin/python site/tools/snapshot_runtime.py --base https://www.evolako.rs \
+            --snapshot site/snapshot --workers 6 | tee /tmp/runtime.log | tail -60
+      - name: Check the copy
+        run: |
+          python3 - <<'EOF'
+          import json, re
+          m = json.load(open('site/snapshot/manifest.json'))
+          r = m['runtime']
+          print('runtime:', {k: r[k] for k in ('loads', 'saved', 'saved_live', 'completed_by_reference', 'seconds')})
+          problems = []
+          if r['loads'] < 4 * 2 * m['summary']['pages']:
+              problems.append('not every page was loaded in every mode and width')
+          if r['saved'] < 50:
+              problems.append('the runtime capture saved fewer than 50 files')
+          for mode, want in (('en', 'en'), ('ru', 'ru'), ('sr-cyrl', 'sr-Cyrl'), ('sr', 'sr')):
+              if want not in r['html_lang_by_mode'].get(mode, []):
+                  problems.append('mode %s never set <html lang=%s>' % (mode, want))
+          css = [a for a in m['assets'] if a['url'].startswith('https://fonts.googleapis.com/css2') and a.get('file')]
+          if not css or not all('woff2' in open('site/snapshot/' + a['file'], encoding='utf-8').read() for a in css):
+              problems.append('Google Fonts CSS without woff2 — the browser User-Agent did not apply')
+          if r['errors']:
+              print('load errors:', r['errors'][:10])
+          if problems:
+              raise SystemExit('; '.join(problems))
+          EOF
       - name: Commit the copy
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A site/snapshot
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
-          git commit -q -m "Site snapshot of www.evolako.rs, $(date -u +%Y-%m-%d\ %H:%M) UTC [skip deploy]"
+          git commit -q -m "Site snapshot of www.evolako.rs (static + runtime), $(date -u +%Y-%m-%d\ %H:%M) UTC [skip deploy]"
+          git pull -q --rebase origin site-migration   # commits pushed meanwhile never touch site/snapshot
           git push -q origin HEAD:site-migration

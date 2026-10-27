@@ -12,6 +12,11 @@ only. Writes (relative to --out, default site/snapshot):
   manifest.json           pages and assets: source URL, local file, HTTP status, bytes, content type, sha256, and
                           which pages use each asset — the map the build step uses to rewrite URLs
 
+Google Fonts answers by User-Agent (static TTF for unknown clients, variable woff2 for browsers), so its CSS is
+requested with a Chrome User-Agent: the copy then holds the same woff2 files the visitors' browsers get.
+Files the pages only load at runtime (URLs built by scripts) are added by tools/snapshot_runtime.py, which the
+workflow runs right after this crawl.
+
 Nothing here is deployed and the live site is not changed. Usage:
   python3 site/tools/snapshot.py [--base https://www.evolako.rs] [--out site/snapshot]
 """
@@ -29,6 +34,11 @@ import urllib.request
 from html.parser import HTMLParser
 
 UA = 'EvolakoSiteSnapshot/1.0 (+https://www.evolako.rs)'
+# What a visitor's Chrome sends; used where the answer depends on the browser (Google Fonts: woff2, variable axes)
+# and by the runtime capture, so both passes get the same bytes for the same URL.
+CHROME_UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 '
+             'Safari/537.36')
+BROWSER_UA_HOSTS = {'fonts.googleapis.com'}
 # Hosts whose files are copied. Anything else (YouTube, maps tiles, analytics) is only listed in the manifest.
 ASSET_HOSTS = {
     'cdn.prod.website-files.com', 'assets-global.website-files.com', 'uploads-ssl.webflow.com',
@@ -46,9 +56,10 @@ OWN = {'www.evolako.rs', 'evolako.rs'}  # plus the --base host, set in main()
 def fetch(url, tries=4):
     """GET url → (status, content_type, bytes, final_url). Retries network errors and 5xx/429 with backoff."""
     last = None
+    ua = CHROME_UA if urllib.parse.urlsplit(url).netloc.lower() in BROWSER_UA_HOSTS else UA
     for i in range(tries):
         try:
-            req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': '*/*'})
+            req = urllib.request.Request(url, headers={'User-Agent': ua, 'Accept': '*/*'})
             with urllib.request.urlopen(req, timeout=60) as r:
                 return r.status, r.headers.get('Content-Type', ''), r.read(), r.geturl()
         except urllib.error.HTTPError as e:
