@@ -95,8 +95,8 @@ Playwright uses `$PW_CHROMIUM` or the sandbox's Chromium in `/opt/pw-browsers`. 
 { "apiBase": "", "publishableKey": "", "demo": true }
 ```
 
-- **`apiBase`**: the API origin, without a trailing slash. It is `https://api.evolako.rs`, or the Worker's
-  `https://evolako-api.mr-smekhov.workers.dev` before the DNS move. Empty means demo-only mode.
+- **`apiBase`**: the API origin, without a trailing slash. It is `https://api.evolako.rs` (since 27.10.2026; before
+  that the Worker's own `workers.dev` address). Empty means demo-only mode.
 - **`publishableKey`**: the Supabase publishable key (`sb_publishable_…`), sent as `apikey`. Sign-in is offered only
   when **both** `apiBase` and `publishableKey` are set.
 - **`demo`**: `false` hides the demo once real sign-in exists. It is ignored while sign-in is not configured, because

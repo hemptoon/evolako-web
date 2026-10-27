@@ -29,8 +29,8 @@ There are two stages:
 | Stage | `dist/config.json` |
 | --- | --- |
 | A — demo only | `{"apiBase": "", "publishableKey": "", "demo": true}` (as built) |
-| B — live, before the DNS move | `{"apiBase": "https://evolako-api.mr-smekhov.workers.dev", "publishableKey": "sb_publishable_…", "demo": true}` |
-| B — live, after `api.evolako.rs` works | `{"apiBase": "https://api.evolako.rs", "publishableKey": "sb_publishable_…", "demo": true}` |
+| B — live, before the DNS move (until 27.10.2026) | `{"apiBase": "<the API Worker's workers.dev address>", "publishableKey": "sb_publishable_…", "demo": true}` |
+| B — live, after `api.evolako.rs` works (production since 27.10.2026) | `{"apiBase": "https://api.evolako.rs", "publishableKey": "sb_publishable_…", "demo": true}` |
 | B + Google (13.10.2026) | the line above plus `"googleClientId": "936328602255-httlmmrs4ktooaechkqrslmvduh6t0pg.apps.googleusercontent.com", "googleOrigins": ["https://app.evolako.rs"]` |
 
 - `demo: false` hides the demo once real accounts should be the only way in.
@@ -145,7 +145,7 @@ domain is active or for previews.
   # access-control-allow-origin: https://evolako-app.pages.dev
   ```
 
-  Use the `workers.dev` address instead of `api.evolako.rs` until the DNS move.
+  (Before the DNS move the check used the Worker's `workers.dev` address; since 27.10.2026 production uses `api.evolako.rs`.)
 - [ ] Once everyone uses `app.evolako.rs`, the `pages.dev` entry can stay (only this Cloudflare account can
   publish there) or be reverted.
 
