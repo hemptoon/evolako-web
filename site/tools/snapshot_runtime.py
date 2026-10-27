@@ -218,8 +218,20 @@ async def load_one(browser, args, state, job, replay):
                                     service_workers='block')
     pending = []
     decided = {}
+    fetching = [0]                                   # live-service fetches still running in route handlers
 
     async def route(r):
+        try:
+            await route_inner(r)
+        except Exception as e:  # noqa: BLE001 — never leave a request hanging
+            state.errors.append({'url': r.request.url[:200], 'error': 'route: %s' % str(e)[:160], 'page': path,
+                                 'mode': mode})
+            try:
+                await r.abort('failed')
+            except Exception:  # noqa: BLE001
+                pass
+
+    async def route_inner(r):
         req = r.request
         u = urllib.parse.urlsplit(req.url)
         host = (u.hostname or '').lower()
@@ -243,12 +255,15 @@ async def load_one(browser, args, state, job, replay):
         if d == 'live':
             # live services are fetched here and saved from the route: requests of web workers (the map tiles the
             # MapLibre worker loads) never reach page.on('response')
+            fetching[0] += 1
             try:
                 resp = await r.fetch()
                 body = await resp.body()
             except Exception as e:  # noqa: BLE001
                 state.errors.append({'url': req.url, 'error': 'fetch: %s' % str(e)[:120], 'page': path, 'mode': mode})
                 return await r.abort('failed')
+            finally:
+                fetching[0] -= 1
             rec = state.requests.get(req.url)
             if rec is not None:
                 rec['status'].add(resp.status)
@@ -333,9 +348,17 @@ async def load_one(browser, args, state, job, replay):
     except Exception as e:  # noqa: BLE001
         state.errors.append({'url': page_url, 'error': 'load: %s' % str(e)[:200], 'page': path, 'mode': mode,
                              'viewport': vps})
+    for _ in range(100):                             # let running fetches of the route handlers finish (10 s max)
+        if not fetching[0]:
+            break
+        await asyncio.sleep(0.1)
     if pending:
         await asyncio.gather(*pending, return_exceptions=True)
-    await ctx.close()
+    try:
+        await ctx.unroute_all(behavior='ignoreErrors')
+        await ctx.close()
+    except Exception as e:  # noqa: BLE001 — a context that cannot close cleanly must not stop the capture
+        state.errors.append({'url': page_url, 'error': 'close: %s' % str(e)[:160], 'page': path, 'mode': mode})
     state.loads += 1
 
 

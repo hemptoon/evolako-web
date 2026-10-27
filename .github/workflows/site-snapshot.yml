@@ -55,15 +55,19 @@ jobs:
           /tmp/capture-venv/bin/pip install --quiet --no-deps --require-hashes -r site/tools/requirements-snapshot.txt
           /tmp/capture-venv/bin/python -m playwright install --with-deps --only-shell chromium
       - name: Capture what the pages load at runtime
+        shell: bash   # bash -eo pipefail: a crash of the capture fails this step, not only the next one
         run: |
           /tmp/capture-venv/bin/python site/tools/snapshot_runtime.py --base https://www.evolako.rs \
-            --snapshot site/snapshot --workers 6 | tee /tmp/runtime.log | tail -60
+            --snapshot site/snapshot --workers 6 2>&1 | tee /tmp/runtime.log | tail -60
       - name: Check the copy
         run: |
           python3 - <<'EOF'
           import json, re
           m = json.load(open('site/snapshot/manifest.json'))
-          r = m['runtime']
+          r = m.get('runtime')
+          if not r:
+              print('::error title=snapshot check::the runtime capture wrote no summary — it stopped early')
+              raise SystemExit(1)
           print('runtime:', {k: r[k] for k in ('loads', 'saved', 'saved_live', 'completed_by_reference', 'seconds')})
           problems = []
           if r['loads'] < 4 * 2 * m['summary']['pages']:
@@ -78,9 +82,18 @@ jobs:
               problems.append('Google Fonts CSS without woff2 — the browser User-Agent did not apply')
           if r['errors']:
               print('load errors:', r['errors'][:10])
+          print('::notice title=runtime capture::loads %(loads)s, saved %(saved)s + %(saved_live)s live, %(seconds)ss' % r)
           if problems:
-              raise SystemExit('; '.join(problems))
+              print('::error title=snapshot check::' + '; '.join(problems))
+              raise SystemExit(1)
           EOF
+      - name: Show the end of the logs (annotations, readable with gh run view)
+        if: failure()
+        run: |
+          for f in /tmp/runtime.log /tmp/snapshot.log; do
+            test -f "$f" || continue
+            echo "::error title=$(basename $f)::$(tail -25 "$f" | cut -c1-300 | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')"
+          done
       - name: Commit the copy
         run: |
           git config user.name "github-actions[bot]"
