@@ -8,3 +8,7 @@ playwright-report/
 test-results/
 tests/e2e/.out/
 _patches/
+
+# python caches (site/tools)
+__pycache__/
+*.pyc

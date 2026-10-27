@@ -1,0 +1,49 @@
+# Step 1 of moving www.evolako.rs off Webflow (decision 27.10.2026): copy the published site — every page from the
+# sitemap, the CSS/JS/images/fonts/files they use, robots.txt, sitemap.xml — into site/snapshot/ on the branch
+# site-migration. Only the runner can reach the live site, so the copy is made here and committed back.
+# Runs on a push to site-migration that touches the tool, this file or site/snapshot.request (edit that file to take
+# a fresh copy). Nothing is deployed and the live site is not changed. Pushes made with GITHUB_TOKEN do not start
+# new runs, so there is no loop. Actions are pinned to commit hashes (same pins as deploy.yml).
+name: Site snapshot
+on:
+  push:
+    branches: [site-migration]
+    paths:
+      - site/tools/snapshot.py
+      - site/snapshot.request
+      - .github/workflows/site-snapshot.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: site-snapshot
+  cancel-in-progress: false
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          ref: site-migration
+      - name: Copy the live site
+        run: |
+          rm -rf site/snapshot
+          python3 site/tools/snapshot.py --base https://www.evolako.rs --out site/snapshot | tee /tmp/snapshot.log | tail -40
+          test -s site/snapshot/manifest.json
+          python3 - <<'EOF'
+          import json
+          m = json.load(open('site/snapshot/manifest.json'))
+          s = m['summary']
+          print('summary', s)
+          if s['pages'] < 10:
+              raise SystemExit('too few pages — sitemap or site unreachable')
+          EOF
+      - name: Commit the copy
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A site/snapshot
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -q -m "Site snapshot of www.evolako.rs, $(date -u +%Y-%m-%d\ %H:%M) UTC [skip deploy]"
+          git push -q origin HEAD:site-migration
