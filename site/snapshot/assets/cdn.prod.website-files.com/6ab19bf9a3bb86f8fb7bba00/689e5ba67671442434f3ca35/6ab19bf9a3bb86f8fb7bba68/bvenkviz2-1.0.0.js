@@ -1,0 +1,1 @@
+(window.BVQ=window.BVQ||[]).push(['en','3xrw1m§Quiz application§1rx8p0p§Quiz application success§19yzcbo§Quiz application failure'])

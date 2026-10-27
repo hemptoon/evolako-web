@@ -1,0 +1,1 @@
+(window.BVQ=window.BVQ||[]).push(['ru','1lysjek§Форма контакта — успех§qnzwr1§Форма контакта — ошибка§1y5qj30§[PRAVNI-PODACI: наименование компании · юридический адрес · MB · PIB] · hello@blokvolt.com'])

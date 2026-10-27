@@ -1,0 +1,1 @@
+(function(){var s="bui7q1§Leave your number — we’ll message you§vbsay1§Where we work: Belgrade and surroundings · Novi Sad · Vojvodina. All of Serbia soon — if you’re in another city, leave your contact and you’ll be among the first we message.";function p(){(window.BVQ=window.BVQ||[]).push(["en2",s])}p();addEventListener("load",p)})();

@@ -1,0 +1,1 @@
+(window.BVQ=window.BVQ||[]).push(['ru','1478zor§Твой выбор: пакет§iy70fv§Изменить'])

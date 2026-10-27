@@ -1,0 +1,1 @@
+(function(){var s="1hdxrmi§Agreeing by message and a rough estimate";function p(){(window.BVQ=window.BVQ||[]).push(["en2",s])}p();addEventListener("load",p)})();

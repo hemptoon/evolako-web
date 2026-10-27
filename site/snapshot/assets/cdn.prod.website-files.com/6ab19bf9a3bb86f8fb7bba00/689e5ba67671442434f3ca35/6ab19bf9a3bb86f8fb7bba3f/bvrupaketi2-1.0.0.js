@@ -1,0 +1,1 @@
+(window.BVQ=window.BVQ||[]).push(['ru','h6a8hq§Пакеты и цены — домашняя зарядка с монтажом от 59.000 RSD | BlokVolt']);

@@ -1,0 +1,1 @@
+(function(){var s="15vjb43§Смета с точной ценой и сроками§zmttpg§Монтаж и ежемесячный расчёт§1rxpaxk§Зарядки для отеля: сколько мест, какая мощность и как считать электричество";function p(){(window.BVQ=window.BVQ||[]).push(["ru2",s])}p();addEventListener("load",p)})();

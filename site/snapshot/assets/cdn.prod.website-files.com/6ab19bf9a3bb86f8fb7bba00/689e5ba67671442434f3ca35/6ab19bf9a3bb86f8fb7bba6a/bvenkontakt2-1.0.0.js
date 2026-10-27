@@ -1,0 +1,1 @@
+(window.BVQ=window.BVQ||[]).push(['en','1lysjek§Contact form success§qnzwr1§Contact form failure§1y5qj30§[LEGAL-DATA: company name · registered office · MB · PIB] · hello@blokvolt.com'])

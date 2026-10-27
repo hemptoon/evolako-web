@@ -1,0 +1,1 @@
+(function(){var s="23zbn0§После заявки получишь ссылку, которой можно поделиться в Viber, WhatsApp и Telegram, и объявление для доски в подъезде. Счётчик растёт с каждой новой заявкой с твоего адреса.";function p(){(window.BVQ=window.BVQ||[]).push(["ru2",s])}p();addEventListener("load",p)})();
