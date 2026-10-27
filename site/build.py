@@ -1,25 +1,45 @@
 #!/usr/bin/env python3
-"""Static build of www.evolako.rs from the Webflow snapshot — step 2 of moving the site off Webflow ("parity build").
+"""Static build of www.evolako.rs from the Webflow snapshot (steps 2 and 2b of moving the site off Webflow).
 
-Reads site/snapshot/ (taken by tools/snapshot.py on the GitHub runner) and writes site/dist/ for Cloudflare Pages:
+Reads site/snapshot/ (static crawl + runtime capture, both taken on the GitHub runner by the workflow "Site snapshot")
+and writes site/dist/ for Cloudflare Pages. The built site needs neither Webflow nor Google at runtime.
 
   <slug>.html              every page at the URL it has today, without a trailing slash (Pages serves /kontakt from
-                           kontakt.html); index.html is /
+                           kontakt.html); index.html is /. <html lang="sr"> is static now; the i18n engine still switches
+                           to EN/RU/Cyrillic in the browser (?lang=, the language menu, the remembered choice)
   _a/<host>/<path>         every file the built pages use, at the same relative path as in snapshot/assets/ (a file
                            the snapshot saved without an extension gets one from its content type, e.g. the Google Fonts
                            CSS); every reference rewritten to that root-relative path — HTML attributes, srcset, inline
-                           <style>/<script>, url()/@import inside the CSS, absolute URLs of other copied files inside JS
+                           <style>/<script>, url()/@import inside the CSS, absolute URLs of other copied files inside JS.
+                           Also the files the pages only load at runtime (manifest entries "runtime": true) when a built
+                           page or a copied file started them (their "initiators")
   404.html                 own "page not found" built from the markup of /vodici (navigation, footer, shared CSS/JS)
   robots.txt, sitemap.xml  as published (URLs stay on https://www.evolako.rs)
-  _headers, _routes.json   cache and security headers; Pages Functions (site/functions/) run for pages, not for /_a/
+  _headers, _routes.json   cache and security headers incl. a Content-Security-Policy per page; Pages Functions
+                           (site/functions/: noindex middleware, the form endpoint /f/<site>) run for pages, not /_a/
 
 Rules (see the report printed at the end):
   * og:image / twitter:image and JSON-LD keep absolute URLs, on https://www.evolako.rs/_a/... (crawlers need them).
-  * Links on app.evolako.rs (live services: /s/p, /zgrada/broj, /kr/..., /embed/...) stay absolute and are not copied.
-  * The Google WebFont loader (ajax.googleapis.com) is replaced by a <link> to the local copy of the Google Fonts CSS,
-    whose url() point at the local font files; preconnect hints to the font hosts are dropped.
-  * Everything else stays byte-for-byte as Webflow published it: data-wf-* attributes, jQuery, webflow.js, forms
-    (still Webflow forms in this step). SRI hashes are recomputed only for files whose content changed here.
+  * Live services stay absolute and are never copied: app.evolako.rs (evo-fx, the visit counter /s/p, /zgrada/broj,
+    /kr/...), the exchange-rate file evo-fx reads (Supabase), the BlokVolt map embed on /mapa-punjaca and what it
+    loads (manifest entries "live": true, or started by such a file).
+  * Runtime-built URLs: script code that builds Webflow CDN URLs from a base + '<assetId>%2F<name>-1.0.0.js' (the
+    i18n engine, its loader, the dictionary loaders of /preporuka and /mapa-punjaca, the consent loader, the i18n fix
+    loader) gets the local base /_a/cdn.prod.website-files.com/<site>/<folder>/ and real slashes instead of %2F, so no
+    local path depends on an encoded slash.
+  * Fonts: the Google WebFont loader is replaced by a <link> to the local copy of the Google Fonts CSS (variable woff2,
+    one face per subset over the whole weight range, so Onest 350/550 render as such); the OFL licence of Onest ships
+    next to the font files; preconnect / dns-prefetch hints to hosts the built site does not use are dropped.
+  * Forms: the local webflow.js posts to /f/<site> (site/functions/f/[site].js hands the form to the CRM bot through
+    the service binding BOT) instead of https://webflow.com/api/v1/form/; Webflow's Turnstile sitekey is removed (it
+    held the real submit back until a Turnstile token arrived); every form the endpoint accepts gets a hidden honeypot
+    field "website". Fields, hidden fields, widgets and success/failure blocks stay as published.
+  * CSP per page: sha256 of every inline script as the browser sees it after these rewrites, 'self', the live hosts
+    the page uses (runtime capture: by resource type) plus the few endpoints that only an interaction reaches.
+    'unsafe-inline' only for styles (406 <style> blocks and style="" attributes). /* (unknown paths -> 404.html)
+    carries the 404 policy; each page rule replaces it ("! Content-Security-Policy", then its own policy).
+  * Everything else stays byte-for-byte as Webflow published it: data-wf-* attributes, jQuery, webflow.js (apart from
+    the form URL). SRI hashes are recomputed only for files whose content changed here.
   * A file the manifest lists but the committed snapshot lacks is taken from site/snapshot-fill/ (same layout) only if
     its sha256 equals the manifest's — the copy is then provably the bytes the live site served.
 
@@ -37,10 +57,17 @@ import shutil
 import sys
 import urllib.parse
 
+HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://www.evolako.rs'
+SITE_ID = '6ab19bf9a3bb86f8fb7bba00'
 ASSET_DIR = '_a'
 LIVE_HOSTS = {'app.evolako.rs'}                       # live services: absolute links, nothing copied
-FONT_HOSTS = {'fonts.googleapis.com', 'fonts.gstatic.com'}  # served locally after the build: hints are dropped
+FONT_HOSTS = {'fonts.googleapis.com', 'fonts.gstatic.com'}
+# Hosts the built site must never request (QA checks the same list); resource hints to them are dropped
+FORBIDDEN_HOSTS = {'cdn.prod.website-files.com', 'd3e54v103j8qbb.cloudfront.net', 'd8j0ntlcm91z4.cloudfront.net',
+                   'fonts.googleapis.com', 'fonts.gstatic.com', 'ajax.googleapis.com', 'cdn.jsdelivr.net',
+                   'webflow.com', 'assets-global.website-files.com', 'uploads-ssl.webflow.com',
+                   'app-assets.website-files.com'}
 ABS_META = {'og:image', 'og:image:url', 'og:image:secure_url', 'twitter:image', 'twitter:image:src'}
 TEMPLATE_404 = 'vodici'                               # page whose navigation/footer the 404 page reuses
 EXT_BY_TYPE = {'text/css': '.css', 'application/javascript': '.js', 'text/javascript': '.js', 'image/png': '.png',
@@ -48,6 +75,20 @@ EXT_BY_TYPE = {'text/css': '.css', 'application/javascript': '.js', 'text/javasc
                'font/woff2': '.woff2', 'font/woff': '.woff', 'application/pdf': '.pdf'}
 # Words that must never appear in Evolako copy (checked on the text this build writes itself, i.e. the 404 page)
 BANNED_WORDS = re.compile(r'atest|popust|24/7|odmah', re.I)
+
+# Runtime-built Webflow CDN URLs: base + '<assetId>%2F<name>-1.0.0.js' -> local folder with real slashes
+RUNTIME_BASE = 'https://cdn.prod.website-files.com/%s%%2F689e5ba67671442434f3ca35%%2F' % SITE_ID
+LOCAL_RUNTIME_BASE = '/%s/cdn.prod.website-files.com/%s/689e5ba67671442434f3ca35/' % (ASSET_DIR, SITE_ID)
+# webflow.js: the form backend
+WEBFLOW_FORM_URL = '"https://webflow.com/api/v1/form/"'
+LOCAL_FORM_URL = '"/f/"'
+FORM_FUNCTION = os.path.join(HERE, 'functions', 'f', '[site].js')
+HONEYPOT = 'website'
+HONEYPOT_HTML = ('<div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;'
+                 'overflow:hidden"><input type="text" name="%s" value="" tabindex="-1" autocomplete="off"/></div>'
+                 % HONEYPOT)
+FONT_LICENSE = os.path.join(HERE, 'licenses', 'Onest-OFL.txt')
+WEBFLOW_COMMENT = '<!-- This site was created in Webflow. https://webflow.com -->'
 
 COPY_404 = {
     'title': 'Stranica ne postoji | Evolako',
@@ -58,28 +99,73 @@ COPY_404 = {
     'paketi': 'Paketi i cene',
 }
 
-HEADERS = """\
+# Content-Security-Policy: what every page needs (beyond the hashes of its inline scripts)
+CSP_BASE = [
+    ('default-src', ["'self'"]),
+    # evo-fx (app.evolako.rs/embed), Cloudflare Web Analytics (beacon, loaded by the consent loader on every page)
+    ('script-src', ["'self'", 'https://app.evolako.rs', 'https://static.cloudflareinsights.com']),
+    ('style-src', ["'self'", "'unsafe-inline'"]),
+    ('img-src', ["'self'", 'data:', 'blob:']),
+    ('font-src', ["'self'", 'data:']),
+    # visit counter /s/p, /zgrada/broj, career forms /kr (app.evolako.rs); evo-fx exchange rates (Supabase);
+    # Web Analytics beacon; 'self' = the form endpoint /f/
+    ('connect-src', ["'self'", 'https://app.evolako.rs', 'https://smcsmkkzdksocvroqekl.supabase.co',
+                     'https://cloudflareinsights.com']),
+    ('object-src', ["'none'"]),
+    ('base-uri', ["'self'"]),
+    ('form-action', ["'self'"]),
+    ('frame-ancestors', ["'self'"]),
+]
+# Only after a visitor clicks "Dozvoli" in the cookie banner, the consent pack (evoconsent1210, decision of 11.10.2026)
+# loads Google Analytics 4 and the Meta pixel, as on the Webflow site. Their hosts (Google's and Meta's published CSP
+# lists) are allowed on every page that has the banner; without them the CSP would silently switch that analytics
+# off. To run with no Google/Meta at all, empty this list (the banner then only stores the choice).
+CSP_CONSENT_ANALYTICS = [
+    ('script-src', ['https://*.googletagmanager.com', 'https://connect.facebook.net']),
+    ('img-src', ['https://*.google-analytics.com', 'https://*.googletagmanager.com', 'https://www.facebook.com']),
+    ('connect-src', ['https://*.google-analytics.com', 'https://*.analytics.google.com',
+                     'https://*.googletagmanager.com', 'https://www.facebook.com']),
+]
+CONSENT_PACK = 'evocfconsent1210'                     # script name that loads the cookie banner and the consent pack
+# Sources only an interaction reaches (no passive load shows them), by page
+CSP_INTERACTION = {
+    # BlokVolt map embed: MapLibre runs its worker from a blob: URL; address search and routes on demand
+    'mapa-punjaca': [('worker-src', ["'self'", 'blob:']),
+                     ('connect-src', ['https://photon.komoot.io', 'https://routing.openstreetmap.de'])],
+}
+CSP_DIRECTIVE_BY_KIND = {'script': 'script-src', 'stylesheet': 'style-src', 'image': 'img-src', 'font': 'font-src',
+                         'media': 'media-src', 'fetch': 'connect-src', 'xhr': 'connect-src', 'other': 'connect-src',
+                         'eventsource': 'connect-src', 'websocket': 'connect-src', 'texttrack': 'media-src',
+                         'document': 'frame-src', 'manifest': 'manifest-src'}
+HEADERS_MAX_LINE = 2000                               # Cloudflare Pages: characters per _headers line
+
+HEADERS_TOP = """\
 # www.evolako.rs on Cloudflare Pages — written by site/build.py (edit the build, not this file).
-# No Content-Security-Policy yet: see "CSP inputs" printed by site/build.py and the external requests (with their
-# resource types) listed by site/tools/qa_dist.py.
+# Rules apply in this order; "! Name" removes a header an earlier rule set. Every page replaces the CSP of /* (which
+# unknown paths get with 404.html) with its own: the sha256 of its inline scripts, 'self' and the hosts it uses.
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: SAMEORIGIN
   Strict-Transport-Security: max-age=31536000
   Permissions-Policy: camera=(), microphone=(), payment=(), usb=(), geolocation=(self)
+  Content-Security-Policy: {csp404}
+
+# copied files: names change whenever the content changes (Webflow hashes, versioned scripts); no CSP on files
+/_a/*
+  Cache-Control: public, max-age=31536000, immutable
+  ! Content-Security-Policy
 
 # pages, robots.txt, sitemap.xml: short browser cache (the edge revalidates on every deploy)
-/
-  Cache-Control: public, max-age=300, must-revalidate
-
 /:page
   Cache-Control: public, max-age=300, must-revalidate
 
-# copied files: names change whenever the content changes (Webflow hashes, versioned scripts)
-/_a/*
-  Cache-Control: public, max-age=31536000, immutable
-
+/
+  Cache-Control: public, max-age=300, must-revalidate
+  ! Content-Security-Policy
+  Content-Security-Policy: {cspindex}
+"""
+HEADERS_BOTTOM = """
 # *.pages.dev (production alias and every preview) is never indexed; site/functions/_middleware.js does the same
 # for any host other than www.evolako.rs / evolako.rs
 https://:project.pages.dev/*
@@ -119,6 +205,41 @@ def sri(b, algo):
     return algo + '-' + base64.b64encode(hashlib.new(algo, b).digest()).decode()
 
 
+def host_of(u):
+    return (urllib.parse.urlsplit(u).hostname or '').lower()
+
+
+def is_forbidden(host):
+    return any(host == h or host.endswith('.' + h) for h in FORBIDDEN_HOSTS)
+
+
+def page_path(slug):
+    return '/' if slug == 'index' else '/' + slug
+
+
+JS_TYPES = ('', 'text/javascript', 'application/javascript', 'module', 'text/ecmascript', 'application/ecmascript')
+
+
+def inline_scripts(text):
+    """(attributes, body) of every inline script the browser executes (no src, a JavaScript type)."""
+    out = []
+    for m in re.finditer(r'<script\b([^>]*)>(.*?)</script>', text, re.S | re.I):
+        attrs = m.group(1)
+        if re.search(r'\ssrc\s*=', attrs):
+            continue
+        t = re.search(r'\btype\s*=\s*["\']?([^"\'\s>]+)', attrs)
+        if (t.group(1).lower() if t else '') not in JS_TYPES:
+            continue
+        out.append((attrs, m.group(2)))
+    return out
+
+
+def csp_hash(body):
+    # the HTML parser turns CR LF / CR into LF before the script text exists
+    b = body.replace('\r\n', '\n').replace('\r', '\n').encode('utf-8')
+    return "'sha256-%s'" % base64.b64encode(hashlib.sha256(b).digest()).decode()
+
+
 class Asset:
     def __init__(self, entry, src, dist_rel):
         self.url = entry['url']
@@ -126,6 +247,8 @@ class Asset:
         self.type = entry.get('type') or ''
         self.pages = entry.get('pages') or []
         self.kinds = entry.get('kinds') or []
+        self.runtime = bool(entry.get('runtime'))
+        self.initiators = entry.get('initiators') or []
         self.src = src              # file to read, or None when it cannot be found
         self.dist_rel = dist_rel    # path inside dist, e.g. _a/cdn.prod.website-files.com/...
         self.data = None            # bytes written to dist (rewritten for CSS/JS)
@@ -155,12 +278,19 @@ class Build:
         with open(mpath, encoding='utf-8') as f:
             self.manifest = json.load(f)
         self.assets = {}            # url_key -> Asset (copyable)
-        self.live = {}              # url_key -> manifest entry (live host, not copied)
+        self.live = {}              # url_key -> manifest entry (live service, not copied)
         self.missing = []           # manifest entries with no usable file
         self.unmapped = {}          # (host, url) -> pages/files: absolute URLs on asset hosts that match no asset
         self.page_counts = {}       # page -> counts of rewritten references (total, absolute, per spelling)
+        self.runtime_bases = []     # (page or file, number of runtime bases rewritten)
+        self.runtime_tokens = {}    # '<assetId>/<name>' pieces of runtime URL maps -> where they were found
+        self.forms = []             # (page, data-name) of the forms that post to /f/
+        self.turnstile_removed = 0
+        self.hints_dropped = {}
+        self.form_url_patched = None
         self.load_assets()
-        hosts = {a.host for a in self.assets.values()} | LIVE_HOSTS
+        self.live_hosts = LIVE_HOSTS | {host_of(e['url']) for e in self.live.values()}
+        hosts = {a.host for a in self.assets.values()} | self.live_hosts
         alt = '|'.join(re.escape(h) for h in sorted(hosts, key=len, reverse=True))
         # an absolute (or protocol-relative) URL on one of the asset hosts, also JSON-escaped (https:\/\/...), up to a
         # quote, space, bracket, comma or backtick
@@ -175,7 +305,7 @@ class Build:
                 continue
             key = url_key(e['url'])
             host = urllib.parse.urlsplit(e['url']).netloc.lower()
-            if host in LIVE_HOSTS:
+            if host in LIVE_HOSTS or e.get('live'):
                 self.live[key] = e
                 continue
             rel = e['file']
@@ -233,7 +363,7 @@ class Build:
             plain = tok.replace('\\/', '/')
             host = urllib.parse.urlsplit(('https:' + plain) if plain.startswith('//') else plain).netloc.lower()
             if not hit:
-                if host not in LIVE_HOSTS and page is not None:
+                if host not in self.live_hosts and page is not None:
                     self.unmapped.setdefault((host, tok[:160]), set()).add(page)
                 return tok
             n, asset, frag = hit
@@ -256,6 +386,23 @@ class Build:
             return new + tok[n:]
         return self.tok.sub(repl, text)
 
+    def rewrite_runtime_bases(self, text, where):
+        """Script code that builds Webflow CDN URLs at runtime: the base becomes the local folder and the %2F
+        separators of the pieces it concatenates ('<assetId>%2F<name>', '%2Fbv...') real slashes."""
+        n = text.count(RUNTIME_BASE)
+        if not n:
+            return text, 0
+        t = text.replace(RUNTIME_BASE, LOCAL_RUNTIME_BASE)
+        t = re.sub(r'(?<=[0-9a-f]{24})%2F', '/', t)
+        t = re.sub(r'(["\'])%2F(?=[A-Za-z])', r'\1/', t)
+        left = re.findall(r'.{0,50}%2[Ff].{0,30}', t)
+        if left:
+            fail('%s: an encoded slash is left after rewriting the runtime CDN base: %s' % (where, left[:3]))
+        for m in re.finditer(r'["\']([0-9a-f]{24}/[A-Za-z0-9_.-]+)["\']', t):
+            self.runtime_tokens.setdefault(m.group(1), set()).add(where)
+        self.runtime_bases.append((where, n))
+        return t, n
+
     def rewrite_css(self, a):
         css = a.data.decode('utf-8')
         refs = set()
@@ -269,7 +416,7 @@ class Build:
             if b is not None and b.src:
                 refs.add(b.dist_rel)
                 return b.local_url
-            if k and not k.startswith(tuple(LIVE_HOSTS)):
+            if k and not k.startswith(tuple(self.live_hosts)):
                 self.unmapped.setdefault((urllib.parse.urlsplit(urllib.parse.urljoin(a.url, r)).netloc, r[:160]),
                                          set()).add(a.dist_rel)
             return None
@@ -286,6 +433,9 @@ class Build:
         out = re.sub(r'@import\s+([\'"])([^\'"]+)\1', imp_repl, out, flags=re.I)
         return out, refs
 
+    def is_webflow_js(self, a):
+        return a.host == 'cdn.prod.website-files.com' and re.search(r'/js/webflow\.[^/]+\.js$', a.dist_rel)
+
     def rewrite_assets(self):
         for a in sorted(self.assets.values(), key=lambda x: x.dist_rel):
             if a.data is None:
@@ -298,6 +448,15 @@ class Build:
                 except UnicodeDecodeError:
                     continue
                 refs = set()
+                text, _ = self.rewrite_runtime_bases(text, a.dist_rel)
+                if self.is_webflow_js(a):
+                    if text.count(WEBFLOW_FORM_URL) != 1:
+                        fail('%s: expected the form URL %s once, found %d' % (a.dist_rel, WEBFLOW_FORM_URL,
+                                                                             text.count(WEBFLOW_FORM_URL)))
+                    if self.form_url_patched:
+                        fail('two webflow.js files: %s and %s' % (self.form_url_patched, a.dist_rel))
+                    text = text.replace(WEBFLOW_FORM_URL, LOCAL_FORM_URL)
+                    self.form_url_patched = a.dist_rel
                 out = self.rewrite_text(text, page=a.dist_rel, refs=refs)
             else:
                 continue
@@ -308,9 +467,11 @@ class Build:
 
     # ---------------------------------------------------------------- pages
     def font_css_asset(self):
-        cands = [a for a in self.assets.values() if a.host == 'fonts.googleapis.com' and a.src]
+        """The Google Fonts stylesheet the pages use (the runtime capture may add others, e.g. the CSS the WebFont
+        loader asked for — that loader is not part of the build)."""
+        cands = [a for a in self.assets.values() if a.host == 'fonts.googleapis.com' and a.src and not a.runtime]
         if len(cands) != 1:
-            fail('expected exactly one Google Fonts stylesheet in the snapshot, found %d' % len(cands))
+            fail('expected exactly one Google Fonts stylesheet in the static snapshot, found %d' % len(cands))
         return cands[0]
 
     def replace_webfont_loader(self, page, text):
@@ -331,12 +492,64 @@ class Build:
             fail(page + ': WebFont still referenced after replacing the loader')
         return text, fams
 
-    def drop_font_hints(self, text):
+    def drop_hints(self, page, text):
+        """preconnect / dns-prefetch to hosts the built site no longer loads from (Webflow CDN, fonts, jsDelivr)."""
         def repl(m):
             href = re.search(r'\bhref="([^"]*)"', m.group(0))
             host = urllib.parse.urlsplit(href.group(1)).netloc.lower() if href else ''
-            return '' if host in FONT_HOSTS else m.group(0)
+            if is_forbidden(host):
+                self.hints_dropped[host] = self.hints_dropped.get(host, 0) + 1
+                return ''
+            return m.group(0)
         return re.sub(r'<link\b[^>]*\brel="(?:preconnect|dns-prefetch)"[^>]*>', repl, text, flags=re.I)
+
+    def rewrite_inline_scripts(self, page, text):
+        def repl(m):
+            attrs, body = m.group(1), m.group(2)
+            if re.search(r'\ssrc\s*=', attrs):
+                return m.group(0)
+            new, n = self.rewrite_runtime_bases(body, page)
+            return '<script' + attrs + '>' + new + '</script>' if n else m.group(0)
+        return re.sub(r'<script\b([^>]*)>(.*?)</script>', repl, text, flags=re.S | re.I)
+
+    def prepare_forms(self, page, text):
+        """No Turnstile; a honeypot in every form the endpoint accepts; nothing else changes."""
+        out, pos = [], 0
+        for m in re.finditer(r'<form\b[^>]*>', text):
+            end = text.find('</form>', m.end())
+            if end < 0:
+                fail('%s: unclosed <form>' % page)
+            tag = m.group(0)
+            body = text[m.end():end]
+            new_tag, k = re.subn(r'\s+data-turnstile-sitekey="[^"]*"', '', tag)
+            self.turnstile_removed += k
+            dn = re.search(r'\bdata-name="([^"]*)"', tag)
+            name = html.unescape(dn.group(1)) if dn else None
+            can_submit = bool(re.search(r'<input\b[^>]*\btype="submit"', body) or re.search(r'<button\b', body))
+            if name in self.form_names:
+                if re.search(r'\bname="%s"' % HONEYPOT, body):
+                    fail('%s: the form %s already has a field named %s' % (page, name, HONEYPOT))
+                body += HONEYPOT_HTML
+                self.forms.append((page, name))
+            elif name is not None and can_submit:
+                fail('%s: Webflow form "%s" can be sent but the form endpoint does not accept it (FORM_NAMES in %s)'
+                     % (page, name, os.path.relpath(FORM_FUNCTION, HERE)))
+            out.append(text[pos:m.start()] + new_tag + body)
+            pos = end
+        out.append(text[pos:])
+        text = ''.join(out)
+        if 'data-turnstile-sitekey' in text:
+            fail(page + ': a Turnstile sitekey is left')
+        return text
+
+    @staticmethod
+    def set_lang(page, text):
+        tags = re.findall(r'<html\b[^>]*>', text, re.I)
+        if len(tags) != 1:
+            fail('%s: expected one <html> tag, found %d' % (page, len(tags)))
+        tag = tags[0]
+        new = re.sub(r'\slang="[^"]*"', ' lang="sr"', tag) if re.search(r'\slang=', tag) else '<html lang="sr"' + tag[5:]
+        return text.replace(tag, new, 1)
 
     @staticmethod
     def absolute_spans(text):
@@ -376,8 +589,12 @@ class Build:
     def build_page(self, page, text):
         counts = {'rewritten': 0, 'absolute': 0, 'pct2F': 0, 'amp': 0, 'json_slash': 0, 'protocol_relative': 0}
         refs = set()
+        text = text.replace(WEBFLOW_COMMENT, '', 1)
         text, fams = self.replace_webfont_loader(page, text)
-        text = self.drop_font_hints(text)
+        text = self.drop_hints(page, text)
+        text = self.rewrite_inline_scripts(page, text)
+        text = self.prepare_forms(page, text)
+        text = self.set_lang(page, text)
         text = self.rewrite_text(text, page=page, absolute_spans=self.absolute_spans(text), counts=counts, refs=refs)
         text, sri_changed = self.fix_integrity(page, text)
         counts['sri_updated'] = len(sri_changed)
@@ -434,12 +651,30 @@ class Build:
         return inl or set(), srcs or set()
 
     # ---------------------------------------------------------------- run
+    def read_form_names(self):
+        try:
+            with open(FORM_FUNCTION, encoding='utf-8') as f:
+                src = f.read()
+        except OSError:
+            fail('form endpoint %s is missing' % FORM_FUNCTION)
+        m = re.search(r'export const FORM_NAMES = \[(.*?)\];', src, re.S)
+        hp = re.search(r"export const HONEYPOT = '([^']+)';", src)
+        sid = re.search(r"export const SITE_ID = '([^']+)';", src)
+        if not m or not hp or not sid:
+            fail('%s: FORM_NAMES, HONEYPOT or SITE_ID not found' % FORM_FUNCTION)
+        if hp.group(1) != HONEYPOT or sid.group(1) != SITE_ID:
+            fail('%s: HONEYPOT / SITE_ID differ from the build' % FORM_FUNCTION)
+        return set(re.findall(r"'([^']*)'", m.group(1)))
+
     def run(self):
         pages = sorted(self.manifest['pages'], key=lambda p: p['path'])
         published = [p for p in pages if p['path'] != '404']
         if not published:
             fail('no pages in the manifest')
+        self.form_names = self.read_form_names()
         self.rewrite_assets()
+        if not self.form_url_patched:
+            fail('webflow.js not found in the snapshot — the form URL could not be pointed at /f/')
         self.page_out, page_refs, fams_seen = {}, {}, {}
         for p in published:
             slug = p['path'].strip('/') or 'index'
@@ -458,25 +693,47 @@ class Build:
         self.page_out['404'] = self.page_404(self.page_out[TEMPLATE_404])
         page_refs['404'] = {r for r in page_refs[TEMPLATE_404]
                             if ('/' + r) in self.page_out['404'] or (SITE + '/' + r) in self.page_out['404']}
+        seen_forms = {n for _, n in self.forms}
+        if seen_forms != self.form_names:
+            fail('forms on the pages %s and FORM_NAMES of the endpoint %s differ' % (sorted(seen_forms),
+                                                                                   sorted(self.form_names)))
 
-        # files to copy: everything the pages reference, plus what those CSS/JS files reference
+        # files to copy: everything the pages reference, plus what those CSS/JS files reference, plus the runtime
+        # files a built page or a copied file starts (repeated until nothing new is added)
         by_rel = {a.dist_rel: a for a in self.assets.values() if a.src}
-        need, todo = set(), sorted(set().union(*page_refs.values()))
-        while todo:
-            r = todo.pop()
-            if r in need:
-                continue
-            need.add(r)
-            todo.extend(sorted(by_rel[r].refs - need))
+        need = set()
+
+        def close(todo):
+            todo = sorted(todo)
+            while todo:
+                r = todo.pop()
+                if r in need:
+                    continue
+                need.add(r)
+                todo.extend(sorted(by_rel[r].refs - need))
+        close(set().union(*page_refs.values()))
+        page_urls = {url_key(SITE + page_path(s)) for s in self.page_out if s != '404'}
+        runtime = sorted((a for a in by_rel.values() if a.runtime), key=lambda a: a.dist_rel)
+        while True:
+            copied = page_urls | {url_key(by_rel[r].url) for r in need}
+            add = [a.dist_rel for a in runtime if a.dist_rel not in need
+                   and any(url_key(i) in copied for i in a.initiators)]
+            if not add:
+                break
+            close(add)
+        self.runtime_unused = [a for a in runtime if a.dist_rel not in need]
 
         self.check_manifest_coverage(page_refs)
+        self.csp = self.content_security_policies()
         self.write(need)
         self.report(need, fams_seen)
 
     def check_manifest_coverage(self, page_refs):
-        """Every (page, asset) pair from the manifest is either rewritten on that page or explained."""
+        """Every (page, asset) pair from the static manifest is either rewritten on that page or explained."""
         self.not_rewritten = []
         for a in self.assets.values():
+            if a.runtime:
+                continue
             for path in a.pages:
                 slug = path.strip('/') or 'index'
                 if slug == '404' or slug not in page_refs:
@@ -490,6 +747,104 @@ class Build:
             for slug, u in self.not_rewritten[:20]:
                 print('  not rewritten on /%s: %s' % (slug, u), file=sys.stderr)
             fail('%d manifest references were not rewritten' % len(self.not_rewritten))
+
+    # ---------------------------------------------------------------- CSP
+    def page_live_sources(self):
+        """Per page: (directive, origin) of every live-service request the runtime capture saw, and of the files those
+        services loaded from other hosts (e.g. the map library the BlokVolt embed takes from jsDelivr)."""
+        live_urls = {url_key(e['url']) for e in self.live.values()}
+        embed = list(self.live.values())
+        # runtime files not copied, started by a live service (or by such a file): they stay external too
+        keys = live_urls
+        pending = [a for a in self.runtime_unused]
+        while True:
+            more = [a for a in pending if any(url_key(i) in keys or host_of(i) in self.live_hosts
+                                              for i in a.initiators)]
+            if not more:
+                break
+            for a in more:
+                pending.remove(a)
+                embed.append({'url': a.url, 'kinds': a.kinds, 'pages': a.pages})
+            keys = keys | {url_key(a.url) for a in more}
+        self.embed_dependencies = sorted(e['url'] for e in embed if url_key(e['url']) not in live_urls)
+        out = {}
+        for e in embed:
+            p = urllib.parse.urlsplit(e['url'])
+            origin = '%s://%s' % (p.scheme, p.netloc.lower())
+            for kind in e.get('kinds') or []:
+                d = CSP_DIRECTIVE_BY_KIND.get(kind.split('[')[0].split(':')[0])
+                if kind.startswith('script[') or kind == 'script':
+                    d = 'script-src'
+                if not d:
+                    continue
+                for page in e.get('pages') or []:
+                    out.setdefault(page.strip('/') or 'index', set()).add((d, origin))
+        return out
+
+    def content_security_policies(self):
+        live = self.page_live_sources()
+        policies = {}
+        for slug, text in self.page_out.items():
+            pol = [(d, list(s)) for d, s in CSP_BASE]
+            idx = {d: i for i, (d, _) in enumerate(pol)}
+
+            def add(d, srcs):
+                if d not in idx:                      # a directive the base leaves to default-src 'self'
+                    idx[d] = len(pol)
+                    pol.insert(len(pol) - 4, (d, ["'self'"]))
+                    idx.update({x: i for i, (x, _) in enumerate(pol)})
+                cur = pol[idx[d]][1]
+                for s in srcs:
+                    if s not in cur:
+                        cur.append(s)
+            hashes = sorted({csp_hash(body) for _, body in inline_scripts(text)})
+            script = pol[idx['script-src']][1]
+            pol[idx['script-src']] = ('script-src', script[:1] + hashes + script[1:])
+            for d, origin in sorted(live.get(slug, ())):
+                add(d, [origin])
+            if CONSENT_PACK in text:
+                for d, srcs in CSP_CONSENT_ANALYTICS:
+                    add(d, srcs)
+            for d, srcs in CSP_INTERACTION.get(slug, []):
+                add(d, srcs)
+            value = '; '.join('%s %s' % (d, ' '.join(s)) for d, s in pol)
+            line = '  Content-Security-Policy: ' + value
+            if len(line) > HEADERS_MAX_LINE:
+                fail('CSP of /%s is %d characters, Pages allows %d per _headers line' % (slug, len(line),
+                                                                                      HEADERS_MAX_LINE))
+            if re.search(r'\son[a-z]+\s*=\s*["\']|href="javascript:', text):
+                fail('%s: an inline event handler or javascript: URL — the CSP would block it' % slug)
+            policies[slug] = (value, len(hashes))
+        return policies
+
+    def headers_file(self):
+        parts = [HEADERS_TOP.format(csp404=self.csp['404'][0], cspindex=self.csp['index'][0])]
+        for slug in sorted(s for s in self.csp if s not in ('404', 'index')):
+            parts.append('\n%s\n  ! Content-Security-Policy\n  Content-Security-Policy: %s\n' % (page_path(slug),
+                                                                                            self.csp[slug][0]))
+        parts.append(HEADERS_BOTTOM)
+        text = ''.join(parts)
+        rules = len(re.findall(r'^\S', text, re.M)) - len(re.findall(r'^#', text, re.M))
+        if rules > 100:
+            fail('_headers has %d rules, Pages allows 100' % rules)
+        self.header_rules = rules
+        return text
+
+    # ---------------------------------------------------------------- write
+    def font_files(self, need):
+        css = self.font_css_asset()
+        text = css.data.decode('utf-8')
+        faces = re.findall(r'@font-face\s*\{([^}]*)\}', text)
+        woff2 = sorted({r for r in css.refs if r.endswith('.woff2')})
+        if not faces or not woff2 or 'format(\'woff2\')' not in text or len(woff2) != len(css.refs):
+            fail('the Google Fonts CSS in the snapshot is not woff2 (take a fresh snapshot: snapshot.py asks Google '
+                 'Fonts with a browser User-Agent)')
+        weights = set(re.findall(r'font-weight:\s*([0-9]+(?: [0-9]+)?)', text))
+        self.font_report = {'css': css.dist_rel, 'faces': len(faces), 'files': woff2, 'weights': sorted(weights),
+                            'subsets': re.findall(r'/\* ([a-z-]+) \*/', text)}
+        if weights != {'300 900'}:
+            fail('expected one variable weight range 300 900 in the font CSS, found %s' % sorted(weights))
+        return os.path.dirname(woff2[0]) + '/OFL.txt'
 
     def write(self, need):
         out = os.path.abspath(self.out)
@@ -510,13 +865,17 @@ class Build:
         by_rel = {a.dist_rel: a for a in self.assets.values() if a.src}
         for rel in sorted(need):
             put(rel, by_rel[rel].data)
+        lic = self.font_files(need)
+        with open(FONT_LICENSE, 'rb') as f:
+            put(lic, f.read())
+        self.font_license = lic
         for name in ('robots.txt', 'sitemap.xml'):
             p = os.path.join(self.snapshot, 'extra', name)
             if not os.path.isfile(p):
                 fail('missing snapshot/extra/' + name)
             with open(p, 'rb') as f:
                 put(name, f.read())
-        put('_headers', HEADERS.encode('utf-8'))
+        put('_headers', self.headers_file().encode('utf-8'))
         put('_routes.json', (json.dumps(ROUTES, indent=2, sort_keys=True) + '\n').encode('utf-8'))
         self.verify(out, need)
 
@@ -534,6 +893,8 @@ class Build:
         for slug, text in sorted(self.page_out.items()):
             for ref in re.findall(r'(?:%s)?/%s/[^\s"\'<>()\\,`#?]+' % (re.escape(SITE), ASSET_DIR), text):
                 rel = ref[len(SITE) + 1:] if ref.startswith(SITE) else ref[1:]
+                if rel.startswith(LOCAL_RUNTIME_BASE[1:]) and rel.endswith('/'):
+                    continue                              # the runtime base itself
                 if not os.path.isfile(os.path.join(out, rel)):
                     fail('/%s references %s, which is not in dist' % (slug, ref))
             for m in re.finditer(r'<(?:script|link)\b[^>]*\bintegrity="([^"]+)"[^>]*>', text):
@@ -546,12 +907,29 @@ class Build:
             for m in self.tok.finditer(text):
                 if self.lookup(m.group(0)):
                     fail('/%s still has an absolute URL of a copied file: %s' % (slug, m.group(0)[:120]))
+            if '<html lang="sr"' not in text:
+                fail('/%s: no static lang' % slug)
         for rel in sorted(need):
             data = open(os.path.join(out, rel), 'rb').read()
             if rel.endswith(('.css', '.js')):
                 for m in self.tok.finditer(data.decode('utf-8', 'replace')):
                     if self.lookup(m.group(0)):
                         fail('%s still has an absolute URL of a copied file: %s' % (rel, m.group(0)[:120]))
+        # runtime URL maps: '<assetId>/<name>' pieces the scripts append '-1.0.0.js' to
+        self.runtime_missing = sorted(t for t in self.runtime_tokens
+                                      if not os.path.isfile(os.path.join(out, LOCAL_RUNTIME_BASE[1:] + t +
+                                                                         '-1.0.0.js')))
+        # what is still written with a forbidden host in the built files (only code paths that never run here)
+        self.forbidden_text = {}
+        for root, _, files in os.walk(out):
+            for fn in files:
+                if not fn.endswith(('.html', '.css', '.js')):
+                    continue
+                p = os.path.join(root, fn)
+                text = open(p, encoding='utf-8', errors='replace').read()
+                for m in re.finditer(r'(?:https?:)?//([a-z0-9.-]+\.[a-z]{2,})', text):
+                    if is_forbidden(m.group(1)):
+                        self.forbidden_text.setdefault(os.path.relpath(p, out), set()).add(m.group(1))
 
     # ---------------------------------------------------------------- report
     def report(self, need, fams_seen):
@@ -563,63 +941,69 @@ class Build:
                 files += 1
         by_rel = {a.dist_rel: a for a in self.assets.values() if a.src}
         asset_bytes = sum(len(by_rel[r].data) for r in need)
-        print('dist: %s — %d files, %.1f MB (%d pages + 404, %d assets %.1f MB)' % (
-            os.path.relpath(out), files, total / 1e6, len(self.page_out) - 1, len(need), asset_bytes / 1e6))
+        runtime_copied = sorted(r for r in need if by_rel[r].runtime)
+        print('dist: %s — %d files, %.1f MB (%d pages + 404, %d assets %.1f MB, of them %d loaded at runtime)' % (
+            os.path.relpath(out), files, total / 1e6, len(self.page_out) - 1, len(need), asset_bytes / 1e6,
+            len(runtime_copied)))
         tot = {k: sum(c[k] for c in self.page_counts.values()) for k in next(iter(self.page_counts.values()))}
         print('references rewritten in pages: %(rewritten)d (absolute on %(site)s: %(absolute)d; written with %%2F: '
               '%(pct2F)d, with &amp;: %(amp)d, JSON-escaped: %(json_slash)d, protocol-relative: %(protocol_relative)d); '
               'SRI recomputed: %(sri_updated)d' % dict(tot, site=SITE))
+        where = sorted({w for w, _ in self.runtime_bases})
+        print('runtime CDN base rewritten to %s in %d places (%d inline scripts on %d pages, files: %s); '
+              '%d <assetId>/<name> map entries, without a file in dist: %d%s' % (
+                  LOCAL_RUNTIME_BASE, sum(n for _, n in self.runtime_bases),
+                  len([w for w, _ in self.runtime_bases if '/' not in w]), len({w for w in where if '/' not in w}),
+                  ', '.join(sorted(os.path.basename(w) for w in where if '/' in w)) or 'none',
+                  len(self.runtime_tokens), len(self.runtime_missing),
+                  (' (' + ', '.join(self.runtime_missing[:8]) + ')') if self.runtime_missing else ''))
+        print('forms: webflow.js (%s) posts to /f/%s; %d forms with a honeypot: %s; Turnstile sitekeys removed: %d' % (
+            self.form_url_patched, SITE_ID, len(self.forms),
+            ', '.join('%s (%d)' % (n, sum(1 for _, x in self.forms if x == n)) for n in sorted(self.form_names)),
+            self.turnstile_removed))
+        fr = self.font_report
+        print('fonts: %s — %d @font-face (%s), weights %s, %d woff2 files; licence %s' % (
+            fr['css'], fr['faces'], ', '.join(fr['subsets']), ', '.join(fr['weights']), len(fr['files']),
+            self.font_license))
+        for fams, slugs in sorted(fams_seen.items()):
+            print('   %d pages asked the WebFont loader for %s (now covered by the variable faces)' % (
+                len(slugs), ', '.join(fams)))
+        print('resource hints dropped: %s' % (', '.join('%s %d' % kv for kv in sorted(self.hints_dropped.items()))
+                                              or 'none'))
+        hs = [n for _, n in self.csp.values()]
+        lens = [len(v) for v, _ in self.csp.values()]
+        print('CSP: %d policies (%d header rules), %d-%d inline script hashes per page, %d-%d characters; '
+              'map page extras: %s' % (len(self.csp), self.header_rules, min(hs), max(hs), min(lens), max(lens),
+                                       self.csp_extras('mapa-punjaca')))
+        if self.embed_dependencies:
+            print('   files the BlokVolt embed loads itself (stay external, allowed on its page): %s' % ', '.join(
+                self.embed_dependencies[:6]) + (' …' if len(self.embed_dependencies) > 6 else ''))
         changed = sorted(a.dist_rel for a in by_rel.values() if a.changed and a.dist_rel in need)
         print('copied files changed by the build (%d): %s' % (len(changed), ', '.join(changed)))
         fill = sorted(a.dist_rel for a in by_rel.values() if a.from_fill and a.dist_rel in need)
         if fill:
             print('taken from snapshot-fill (sha256 = manifest) (%d): %s' % (len(fill), ', '.join(fill)))
-        skipped = sorted(a.url for a in by_rel.values() if a.dist_rel not in need)
-        print('manifest files not copied (%d):' % (len(skipped) + len(self.live)))
+        skipped = sorted(a.url for a in by_rel.values() if a.dist_rel not in need and not a.runtime)
+        print('manifest files not copied (%d static, %d runtime, %d live):' % (len(skipped), len(self.runtime_unused),
+                                                                            len(self.live)))
         for u in skipped:
             print('   unused after the build: ' + u)
-        for e in sorted(self.live.values(), key=lambda x: x['url']):
-            print('   live host, link kept absolute: ' + e['url'])
+        for a in self.runtime_unused[:12]:
+            print('   runtime, not started by the built site: %s (by %s)' % (a.url[:110], ', '.join(
+                i[:70] for i in a.initiators[:2]) or '?'))
+        if len(self.runtime_unused) > 12:
+            print('   … %d more runtime files not started by the built site' % (len(self.runtime_unused) - 12))
+        hosts = {}
+        for e in self.live.values():
+            hosts[host_of(e['url'])] = hosts.get(host_of(e['url']), 0) + 1
+        print('   live services, kept absolute: %s' % ', '.join('%s (%d files)' % kv for kv in sorted(hosts.items())))
         for u, why in self.missing:
             print('   MISSING: %s (%s)' % (u, why))
-        # fonts: what the pages ask the WebFont loader for vs. what the copied Google Fonts CSS has
-        font = self.font_css_asset()
-        faces = re.findall(r"@font-face\s*\{[^}]*font-family:\s*'?([^;']+)'?;[^}]*font-weight:\s*([0-9 ]+);", font.data
-                           .decode('utf-8'))
-        have = {}
-        for fam, w in faces:
-            have.setdefault(fam.strip(), set()).update(w.split())
-        for fams, slugs in sorted(fams_seen.items()):
-            for spec in fams:
-                parts = spec.split(':')
-                fam, weights = parts[0], parts[1].split(',') if len(parts) > 1 else ['400']
-                lack = [w for w in weights if w.rstrip('i') not in have.get(fam, set())]
-                print('fonts: %d pages ask WebFont for %s; local CSS has %s %s -> %s' % (
-                    len(slugs), spec, fam, ','.join(sorted(have.get(fam, set()))),
-                    'missing weights: ' + ','.join(lack) if lack else 'all requested weights present'))
-        # what a Content-Security-Policy would have to allow, as far as the HTML shows it (runtime loads: qa_dist.py)
-        inline, per_page, style_blocks, style_attrs, src_hosts = set(), [], 0, 0, set()
-        for slug, text in sorted(self.page_out.items()):
-            n = 0
-            for m in re.finditer(r'<script\b([^>]*)>(.*?)</script>', text, re.S):
-                if 'src=' in m.group(1):
-                    src = re.search(r'\bsrc="(https?://[^"]+)"', m.group(1))
-                    if src:
-                        src_hosts.add(urllib.parse.urlsplit(src.group(1)).netloc)
-                elif 'ld+json' not in m.group(1):
-                    n += 1
-                    inline.add(sha256(m.group(2).encode()))
-            per_page.append(n)
-            style_blocks += len(re.findall(r'<style\b', text))
-            style_attrs += len(re.findall(r'\sstyle="', text))
-        print('CSP inputs: %d-%d inline <script> per page (%d distinct, hashable at build time), %d inline <style> '
-              'blocks and %d style="" attributes in all pages (style-src needs \'unsafe-inline\'), no inline event '
-              'handlers or javascript: URLs; <script src> on other hosts: %s; CSS data: fonts/images (font-src and '
-              'img-src need data:)' % (min(per_page), max(per_page), len(inline), style_blocks, style_attrs,
-                                        ', '.join(sorted(src_hosts)) or 'none'))
-        if re.search(r'\son[a-z]+="|href="javascript:', ''.join(self.page_out.values())):
-            print('   note: an inline event handler or javascript: URL appeared — CSP would need \'unsafe-inline\'')
-        # absolute URLs on asset hosts that are not files (runtime-built URLs, bare hosts), in pages and copied files
+        if self.forbidden_text:
+            print('forbidden hosts still written in built files (never requested by the pages; QA checks requests):')
+            for f, hs in sorted(self.forbidden_text.items()):
+                print('   %s: %s' % (f, ', '.join(sorted(hs))))
+        # absolute URLs on asset hosts that are not files (bare hosts, unknown runtime URLs), in pages and copied files
         by_host = {}
         for (host, tok), where in self.unmapped.items():
             where = {w for w in where if w in self.page_out or w in need}
@@ -630,13 +1014,24 @@ class Build:
             print('left as is on %s (%d distinct): %s' % (host, len(items), '; '.join(
                 '%s [%d]' % (t, n) for t, n in items[:6]) + (' …' if len(items) > 6 else '')))
 
+    def csp_extras(self, slug):
+        if slug not in self.csp:
+            return 'none'
+        base = {d: set(s) for d, s in CSP_BASE}
+        extra = []
+        for part in self.csp[slug][0].split('; '):
+            d, _, rest = part.partition(' ')
+            add = [s for s in rest.split() if s not in base.get(d, set()) and not s.startswith("'sha256-")]
+            if add:
+                extra.append('%s %s' % (d, ' '.join(add)))
+        return '; '.join(extra) or 'none'
+
 
 def main():
-    here = os.path.dirname(os.path.abspath(__file__))
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
-    ap.add_argument('--snapshot', default=os.path.join(here, 'snapshot'))
-    ap.add_argument('--fill', default=os.path.join(here, 'snapshot-fill'))
-    ap.add_argument('--out', default=os.path.join(here, 'dist'))
+    ap.add_argument('--snapshot', default=os.path.join(HERE, 'snapshot'))
+    ap.add_argument('--fill', default=os.path.join(HERE, 'snapshot-fill'))
+    ap.add_argument('--out', default=os.path.join(HERE, 'dist'))
     args = ap.parse_args()
     Build(args.snapshot, args.fill, args.out).run()
 
