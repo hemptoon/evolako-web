@@ -78,5 +78,30 @@ eq('POST is never redirected', r6.status, 200);
 const r7 = await onRequest(ctx(B + '/kontakt?lang=en', 'HEAD'));
 eq('HEAD redirected', r7.status, 301);
 
+// the bare domain: one 301 to www (with the ?lang= target when there is one), GET/HEAD only
+const A = 'https://evolako.rs';
+for (const [path, want] of [
+  ['/', 'https://www.evolako.rs/'],
+  ['/kontakt?paket=wallbox', 'https://www.evolako.rs/kontakt?paket=wallbox'],
+  ['/kontakt?lang=en&paket=wallbox', 'https://www.evolako.rs/en/kontakt?paket=wallbox'],
+  ['/ru/paketi-i-cene', 'https://www.evolako.rs/ru/paketi-i-cene'],
+  ['/kontakt?lang=sr-cyrl', 'https://www.evolako.rs/kontakt?lang=sr-cyrl'],
+  ['/robots.txt', 'https://www.evolako.rs/robots.txt'],
+  ['/nema-ove-stranice', 'https://www.evolako.rs/nema-ove-stranice'],
+]) {
+  const r = await onRequest(ctx(A + path));
+  eq('bare ' + path + ' status', r.status, 301);
+  eq('bare ' + path + ' Location', r.headers.get('location'), want);
+  eq('bare ' + path + ' no noindex', r.headers.get('x-robots-tag'), null);
+}
+const r8 = await onRequest(ctx(A + '/kontakt', 'HEAD'));
+eq('bare HEAD redirected', r8.status, 301);
+const r9 = await onRequest(ctx(A + '/f/6ab19bf9a3bb86f8fb7bba00', 'POST'));
+eq('bare POST is never redirected', r9.status, 200);
+const r10 = await onRequest(ctx(B + '/kontakt'));
+eq('www is not redirected', r10.status, 200);
+const r11 = await onRequest(ctx('https://evolako.rs.:443/kontakt'.replace(':443', '')));
+eq('bare with a trailing dot', r11.status, 301);
+
 console.log(`${passed} passed, ${failed} failed`);
 process.exit(failed ? 1 : 0);

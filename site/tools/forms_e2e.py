@@ -15,7 +15,8 @@ snapshot, where Turnstile is stubbed and the POST to webflow.com is caught in th
   * one POST https://evolako-bot.internal/wf/<HOOK> per send, body {"triggerType":"form_submission","payload":
     {"siteId","id","name","data","submittedAt","source"}} with the site id, a 24-hex id, an ISO time, "evolako.rs"
   * name = the form's data-name, data = exactly the fields webflow.js sent to Webflow from the original page (same
-    names, values and order; only the honeypot field is gone) and the expected values of each scenario
+    names, values and order; only the honeypot field is gone; the Kontakt form also sends the hidden Jezik the build
+    adds, last) and the expected values of each scenario
   * the success block is shown and the form hidden; /prijavi-zgradu also shows the invite/share links
   * the home calculator form never sends anything; an invalid referral code blocks the send; a filled honeypot gets
     the success block but nothing reaches the bot; without FORMS_ALLOW_PREVIEW the local origin is refused (failure
@@ -79,7 +80,8 @@ SCENARIOS = [
     {'id': 'kontakt', 'path': '/kontakt?paket=wallbox', 'form': 'Kontakt',
      'steps': [('fill', '#email-form [name="%s"]' % k, v) for k, v in PERSON.items()] +
               [('fill', '#email-form [name="Grad"]', 'Novi Sad'), ('check', '#email-form [name="Saglasnost"]')],
-     'expect': {'Paket': 'wallbox', 'Ime': 'Marko Petrović', 'Grad': 'Novi Sad', 'Saglasnost': 'true'}},
+     'expect': {'Paket': 'wallbox', 'Ime': 'Marko Petrović', 'Grad': 'Novi Sad', 'Saglasnost': 'true'},
+     'added': {'Jezik': 'sr'}},
     {'id': 'kviz', 'path': '/proveri-svoju-garazu', 'form': 'Kviz prijava',
      'steps': quiz(('tip', 'svoja'), ('grad', 'novisad'), ('struja', 'blizu')) +
               [('fill', '#email-form [name="%s"]' % k, v) for k, v in PERSON.items()] +
@@ -129,7 +131,8 @@ SCENARIOS.append(dict(SCENARIOS[4], id='zgrada-en', mode='en', dist_path='/en/pr
                       expect=dict(SCENARIOS[4]['expect'], Jezik='en')))
 SCENARIOS.append(dict(SCENARIOS[4], id='zgrada-ru', mode='ru', dist_path='/ru/prijavi-zgradu',
                       expect=dict(SCENARIOS[4]['expect'], Jezik='ru')))
-SCENARIOS.append(dict(SCENARIOS[0], id='kontakt-en', mode='en', dist_path='/en/kontakt?paket=wallbox'))
+SCENARIOS.append(dict(SCENARIOS[0], id='kontakt-en', mode='en', dist_path='/en/kontakt?paket=wallbox',
+                      added={'Jezik': 'en'}))
 SCENARIOS.append(dict(SCENARIOS[1], id='kviz-ru', mode='ru', dist_path='/ru/proveri-svoju-garazu',
                       expect=dict(SCENARIOS[1]['expect'], Jezik='ru')))
 SCENARIOS.append(dict(b2b('punjaci-za-hotele', mode='en', expect={'Segment': 'hotel'}), id='b2b-punjaci-za-hotele-en',
@@ -322,11 +325,13 @@ def check_payload(call, sc, ref_name, ref_fields):
     data = p.get('data') or {}
     if HONEYPOT in data:
         problems.append('honeypot field forwarded')
-    if list(data.items()) != list(ref_fields):
-        a, b = dict(ref_fields), data
+    # fields the built form adds on purpose (the hidden Jezik of the Kontakt form), after the original ones
+    want = list(ref_fields) + list((sc.get('added') or {}).items())
+    if list(data.items()) != want:
+        a, b = dict(want), data
         problems.append('data differs from what Webflow got: missing %s, extra %s, changed %s, order %s' % (
             sorted(set(a) - set(b)), sorted(set(b) - set(a)),
-            sorted(k for k in set(a) & set(b) if a[k] != b[k]), [k for k, _ in ref_fields] != list(b)))
+            sorted(k for k in set(a) & set(b) if a[k] != b[k]), [k for k, _ in want] != list(b)))
     for k, v in sc['expect'].items():
         if k not in data:
             problems.append('%s missing' % k)

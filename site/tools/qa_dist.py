@@ -33,7 +33,8 @@ Content-Security-Policy, and the redirects of site/functions/_middleware.js (old
     site/i18n/keep.json lists it (brand, unit, address, legal name …, each with a reason); texts the BlokVolt map
     embed (#evm on /mapa-punjaca, a live service) renders from its own data are listed apart
   * links to the app (app.evolako.rs) carry the page's language (?lang=sr|en|ru)
-  * JSON-LD: every block parses; FAQPage questions and answers equal the visible ones (<details>)
+  * JSON-LD: every block parses; FAQPage questions and answers equal the visible ones (<details>) in sr, en, ru (the
+    Cyrillic mode keeps the Latin JSON-LD of the Serbian page)
   * fonts: width of a test string in Onest 300/350/400/500/550/600/800 (a variable font gives 7 different widths),
     weight and width of the wordmark "evo" (Onest 350)
   * forms: what the DOM holds after the page scripts ran (fields incl. hidden ones, honeypot, Turnstile left?)
@@ -1181,7 +1182,8 @@ def check_languages(r, langs):
     visible = {q: a for q, a in faq}
     for b in blocks:
         for node in _nodes(b):
-            if node.get('@type') == 'FAQPage':
+            # Cyrillic is the Serbian page transliterated in the browser: its JSON-LD stays Latin by design
+            if node.get('@type') == 'FAQPage' and r['mode'] != 'sr-cyrl':
                 for qn in node.get('mainEntity') or []:
                     q = PR.nm(qn.get('name') or '')
                     a = PR.nm(((qn.get('acceptedAnswer') or {}).get('text')) or '')
@@ -1196,7 +1198,7 @@ def check_languages(r, langs):
                 issues.append('JSON-LD inLanguage %s' % lang_v)
     if r.get('faq_mismatch'):
         msg = '%d FAQPage questions/answers differ from the visible ones' % len(r['faq_mismatch'])
-        (issues if r['mode'] in ('en', 'ru') else notes).append(msg)
+        issues.append(msg)  # every language builds its FAQPage from the visible FAQ
     if r['mode'] in ('en', 'ru') and r['page'] != '404':
         left, kept, embed = {}, {}, {}
         for item in r.get('strings') or []:

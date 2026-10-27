@@ -1,0 +1,90 @@
+# Moving www.evolako.rs off Webflow (decision 27.10.2026): build site/ and upload it to the Cloudflare Pages project
+# "evolako-site" for the founders to look at — the PREVIEW of the plan, at https://evolako-site.pages.dev.
+#   * Runs ONLY when site/preview.request changes on the branch site-migration (each preview is a founder's word),
+#     never on other pushes and never on main. Nothing here touches www.evolako.rs: the project has no custom domain
+#     until the switch (also only on the founders' word, in the dashboard), and every *.pages.dev host is answered with
+#     "X-Robots-Tag: noindex, nofollow" (site/functions/_middleware.js, dist/_headers).
+#   * The first run creates the project (production branch "main"); later runs upload a new deployment.
+#   * Forms: the project needs the service binding BOT (the CRM bot worker) and the secret HOOK (the bot's own value)
+#     in Settings → Variables and Secrets / Bindings — set there by hand, never in this repository. Without them every
+#     form shows its failure block. FORMS_ALLOW_PREVIEW=1 only for one deliberate test send, then remove it.
+# Before the upload the same offline checks as on a laptop run (build, form endpoint, middleware, i18n engine copy);
+# after it, a smoke test of the uploaded site (statuses, noindex, the ?lang= and bare-domain rules, cache headers).
+# Secrets (repo Settings → Secrets → Actions, the same as deploy.yml): CLOUDFLARE_API_TOKEN ("Account · Cloudflare
+# Pages · Edit" only), CLOUDFLARE_ACCOUNT_ID. Actions pinned to commit hashes, wrangler to an exact version.
+name: Site preview
+on:
+  push:
+    branches: [site-migration]
+    paths:
+      - site/preview.request
+permissions:
+  contents: read
+concurrency:
+  group: site-preview
+  cancel-in-progress: false
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'   # wrangler 4.151+ needs Node 22
+      - name: Build (offline, byte-reproducible) and the offline checks
+        shell: bash   # -eo pipefail: a failing build fails the step even behind | tail
+        run: |
+          python3 site/build.py | tail -30
+          cp -a site/dist /tmp/dist-first && python3 site/build.py > /dev/null
+          diff -r site/dist /tmp/dist-first > /dev/null || { echo "the build is not reproducible"; exit 1; }
+          node site/tools/forms_unit.mjs
+          node site/tools/middleware_unit.mjs
+          python3 site/tools/i18n_selftest.py
+          test -f site/dist/index.html && test -f site/dist/en/index.html && test -f site/dist/ru/index.html
+          test -f site/dist/_headers && test -f site/dist/_routes.json && test -f site/dist/sitemap.xml
+      - name: Create the Pages project on the first run
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if npx --yes wrangler@4.151.0 pages project list | grep -qw evolako-site; then
+            echo "project evolako-site exists"
+          else
+            npx --yes wrangler@4.151.0 pages project create evolako-site --production-branch=main
+          fi
+      - name: Upload to evolako-site (https://evolako-site.pages.dev, noindex)
+        working-directory: site   # functions/ next to dist/, so the middleware and the form endpoint are uploaded
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: >
+          npx --yes wrangler@4.151.0 pages deploy dist --project-name=evolako-site --branch=main
+          --commit-hash="$GITHUB_SHA" --commit-message="$(git log -1 --pretty=%s | cut -c1-300)" --commit-dirty=true
+      - name: Smoke test of the uploaded site
+        shell: bash
+        run: |
+          B=https://evolako-site.pages.dev
+          for i in $(seq 1 30); do curl -fsS -o /dev/null "$B/" && break; sleep 5; done
+          fail=0
+          check() { # url, expected status, header regex (or -)
+            out=$(curl -sS -o /dev/null -D - --max-redirs 0 "$1" | tr -d '\r')
+            st=$(echo "$out" | head -1 | awk '{print $2}')
+            if [ "$st" != "$2" ]; then echo "FAIL $1: status $st, expected $2"; fail=1; return; fi
+            if [ "$3" != "-" ] && ! echo "$out" | grep -qiE "$3"; then echo "FAIL $1: no header /$3/"; fail=1; return; fi
+            echo "ok   $1 -> $st"
+          }
+          check "$B/" 200 '^x-robots-tag: noindex, nofollow'
+          check "$B/en/" 200 '^x-robots-tag: noindex, nofollow'
+          check "$B/ru/paketi-i-cene" 200 '^content-security-policy: '
+          check "$B/kontakt" 200 '^cache-control: public, max-age=300'
+          check "$B/kontakt?lang=en&paket=wallbox" 301 '^location: /en/kontakt\?paket=wallbox'
+          check "$B/kontakt?lang=sr-cyrl" 200 -
+          check "$B/nema-ove-stranice" 404 '^x-robots-tag: noindex, nofollow'
+          check "$B/sitemap.xml" 200 -
+          check "$B/robots.txt" 200 -
+          css=$(grep -o -m1 '/_a/cdn.prod.website-files.com/[^"]*\.h[0-9a-f]\{10\}\.css' site/dist/index.html)
+          check "$B$css" 200 '^cache-control: public, max-age=31536000, immutable'
+          exit $fail

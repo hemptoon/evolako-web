@@ -47,6 +47,16 @@ Rules (see the report printed at the end):
     carries the 404 policy; each page rule replaces it ("! Content-Security-Policy", then its own policy).
   * Everything else stays byte-for-byte as Webflow published it: data-wf-* attributes, jQuery, webflow.js (apart from
     the form URL). SRI hashes are recomputed only for files whose content changed here.
+  * Names of changed files: /_a/* is cached as immutable, so a path must never serve other bytes. A copied file whose
+    bytes this build changes (the Webflow CSS after its url() rewrite, webflow.js, the scripts with a rewritten CDN
+    base or a path patch, the Google Fonts CSS) gets the sha256 of its new content in its name —
+    <name>.h<10 hex><ext>, or <name>.h<10 hex>-1.0.0.js for the scripts that runtime URL maps load as
+    '<assetId>/<name>' + '-1.0.0.js' (those maps are rewritten to the new names). Unchanged copies keep their names:
+    the same bytes as on the original CDN. Names and contents depend on each other (a file names the files it loads),
+    so the rewrite repeats until no name moves; a changed runtime file no map names stops the build.
+  * FAQPage of the Serbian /cesta-pitanja: each structured question gets the text of the visible <details> block it
+    stands for (as on /en/ and /ru/), so the structured data equals what the page shows.
+  * The Kontakt form gets the hidden field Jezik (the page language: sr, en, ru), like the other forms.
   * A file the manifest lists but the committed snapshot lacks is taken from site/snapshot-fill/ (same layout) only if
     its sha256 equals the manifest's — the copy is then provably the bytes the live site served.
 
@@ -89,6 +99,9 @@ BANNED_WORDS = re.compile(r'atest|popust|24/7|odmah', re.I)
 # Runtime-built Webflow CDN URLs: base + '<assetId>%2F<name>-1.0.0.js' -> local folder with real slashes
 RUNTIME_BASE = 'https://cdn.prod.website-files.com/%s%%2F689e5ba67671442434f3ca35%%2F' % SITE_ID
 LOCAL_RUNTIME_BASE = '/%s/cdn.prod.website-files.com/%s/689e5ba67671442434f3ca35/' % (ASSET_DIR, SITE_ID)
+RUNTIME_SUFFIX = '-1.0.0.js'                          # what the runtime URL maps append to '<assetId>/<name>'
+RUNTIME_TOKEN = re.compile(r'(["\'])([0-9a-f]{24}/[A-Za-z0-9_-]+)(["\'])')   # an original '<assetId>/<name>' piece
+HASH_LEN = 10                                         # hex digits of sha256 in the names of changed files
 # webflow.js: the form backend
 WEBFLOW_FORM_URL = '"https://webflow.com/api/v1/form/"'
 LOCAL_FORM_URL = '"/f/"'
@@ -97,6 +110,10 @@ HONEYPOT = 'website'
 HONEYPOT_HTML = ('<div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;'
                  'overflow:hidden"><input type="text" name="%s" value="" tabindex="-1" autocomplete="off"/></div>'
                  % HONEYPOT)
+# forms that never sent the page language get the hidden field Jezik (sr / en / ru, set per page at build time; the
+# other forms fill Jezik in their own scripts), so the CRM card says in which language to answer
+JEZIK_FORMS = {'Kontakt'}
+JEZIK_HTML = '<input type="hidden" name="Jezik" data-name="Jezik" data-evo-jezik="page" value="%s"/>'
 FONT_LICENSE = os.path.join(HERE, 'licenses', 'Onest-OFL.txt')
 I18N_DIR = os.path.join(HERE, 'i18n')                # harvest.json (live dictionaries), en.json / ru.json (own),
 HARVEST = os.path.join(I18N_DIR, 'harvest.json')      # keep.json (texts that stay as they are)
@@ -165,7 +182,8 @@ HEADERS_TOP = """\
   Permissions-Policy: camera=(), microphone=(), payment=(), usb=(), geolocation=(self)
   Content-Security-Policy: {csp404}
 
-# copied files: names change whenever the content changes (Webflow hashes, versioned scripts); no CSP on files
+# copied files: names change whenever the content changes (Webflow hashes, versioned scripts, and .h<sha256> in the
+# names of the files the build changes); no CSP on files
 /_a/*
   Cache-Control: public, max-age=31536000, immutable
   ! Content-Security-Policy
@@ -219,6 +237,21 @@ def url_key(u):
     if p.scheme not in ('http', 'https') or not p.netloc:
         return None
     return p.netloc.lower() + urllib.parse.unquote(p.path) + ('?' + p.query if p.query else '')
+
+
+def hashed_rel(rel, data):
+    """Path of a copied file whose bytes the build changed: the sha256 of the new bytes in the name, before the
+    extension (webflow.x.js -> webflow.x.h0123456789.js) or before '-1.0.0.js' (evobanner1210-1.0.0.js ->
+    evobanner1210.h0123456789-1.0.0.js, so a runtime map entry '<assetId>/<name>' + '-1.0.0.js' can name it)."""
+    folder, name = rel.rsplit('/', 1)
+    tag = '.h' + hashlib.sha256(data).hexdigest()[:HASH_LEN]
+    m = re.fullmatch(r'(.+?)(-\d+\.\d+\.\d+\.js)', name)
+    if m:
+        name = m.group(1) + tag + m.group(2)
+    else:
+        root, ext = os.path.splitext(name)
+        name = root + tag + ext
+    return folder + '/' + name
 
 
 def sha256(b):
@@ -285,7 +318,9 @@ class Asset:
         self.runtime = bool(entry.get('runtime'))
         self.initiators = entry.get('initiators') or []
         self.src = src              # file to read, or None when it cannot be found
-        self.dist_rel = dist_rel    # path inside dist, e.g. _a/cdn.prod.website-files.com/...
+        self.dist_rel = dist_rel    # path inside dist, e.g. _a/cdn.prod.website-files.com/... (.h<sha256> if changed)
+        self.orig_rel = dist_rel    # the path the original file maps to (the name before any content hash)
+        self.orig_data = None       # bytes as the snapshot saved them
         self.data = None            # bytes written to dist (rewritten for CSS/JS)
         self.refs = set()           # dist paths this file references (CSS/JS after rewriting)
         self.changed = False
@@ -326,6 +361,8 @@ class Build:
         self.form_url_patched = None
         self.file_patches = {}      # copied script -> dist paths patched for /en/ and /ru/ (PR.FILE_PATCHES)
         self.inline_patches = {}    # inline patch name -> count over all pages (PR.INLINE_PATCHES)
+        self.sr_faq = {}            # Serbian page -> FAQPage questions rewritten from the visible FAQ
+        self.jezik_added = []       # pages whose Kontakt form got the hidden field Jezik
         self.engines_patched = 0
         self.load_assets()
         self.live_hosts = LIVE_HOSTS | {host_of(e['url']) for e in self.live.values()}
@@ -368,7 +405,7 @@ class Build:
                         if is_fill:
                             fail('fill file %s does not match the manifest sha256' % p)
                         fail('snapshot file %s does not match the manifest sha256' % p)
-                    a.src, a.data, a.from_fill = p, data, is_fill
+                    a.src, a.data, a.orig_data, a.from_fill = p, data, data, is_fill
                     break
             if a.src is None:
                 self.missing.append((e['url'], 'listed in the manifest, file not in the snapshot or the fill'))
@@ -437,13 +474,30 @@ class Build:
         left = re.findall(r'.{0,50}%2[Ff].{0,30}', t)
         if left:
             fail('%s: an encoded slash is left after rewriting the runtime CDN base: %s' % (where, left[:3]))
+        t = self.rename_runtime_tokens(t)
         for m in re.finditer(r'["\']([0-9a-f]{24}/[A-Za-z0-9_.-]+)["\']', t):
             self.runtime_tokens.setdefault(m.group(1), set()).add(where)
         self.runtime_bases.append((where, n))
         return t, n
 
+    def rename_runtime_tokens(self, text):
+        """'<assetId>/<name>' pieces of runtime URL maps that load a file whose name now carries its content hash:
+        '<assetId>/<name>.h<hash>', so base + piece + '-1.0.0.js' is the new path."""
+        def repl(m):
+            a = self.by_orig.get(LOCAL_RUNTIME_BASE[1:] + m.group(2) + RUNTIME_SUFFIX)
+            if a is None:
+                return m.group(0)
+            self.token_targets.add(a.orig_rel)
+            if a.dist_rel == a.orig_rel:
+                return m.group(0)
+            new = a.dist_rel[len(LOCAL_RUNTIME_BASE) - 1:-len(RUNTIME_SUFFIX)]
+            if not (a.dist_rel.endswith(RUNTIME_SUFFIX) and new.startswith(m.group(2) + '.h')):
+                fail('runtime map entry %s: the renamed file %s cannot be named by the map' % (m.group(2), a.dist_rel))
+            return m.group(1) + new + m.group(3)
+        return RUNTIME_TOKEN.sub(repl, text)
+
     def rewrite_css(self, a):
-        css = a.data.decode('utf-8')
+        css = a.orig_data.decode('utf-8')
         refs = set()
 
         def fix(ref):
@@ -473,17 +527,21 @@ class Build:
         return out, refs
 
     def is_webflow_js(self, a):
-        return a.host == 'cdn.prod.website-files.com' and re.search(r'/js/webflow\.[^/]+\.js$', a.dist_rel)
+        return a.host == 'cdn.prod.website-files.com' and re.search(r'/js/webflow\.[^/]+\.js$', a.orig_rel)
 
     def rewrite_assets(self):
-        for a in sorted(self.assets.values(), key=lambda x: x.dist_rel):
-            if a.data is None:
+        """One pass over the copied CSS/JS, always from the snapshot bytes, with the current names of the files they
+        reference (see name_changed_files)."""
+        self.file_patches, self.form_url_patched, self.runtime_bases, self.runtime_tokens = {}, None, [], {}
+        self.unmapped, self.token_targets = {}, set()
+        for a in sorted(self.assets.values(), key=lambda x: x.orig_rel):
+            if a.orig_data is None:
                 continue
             if a.is_css:
                 out, refs = self.rewrite_css(a)
             elif a.is_js:
                 try:
-                    text = a.data.decode('utf-8')
+                    text = a.orig_data.decode('utf-8')
                 except UnicodeDecodeError:
                     continue
                 refs = set()
@@ -497,18 +555,47 @@ class Build:
                     text = text.replace(WEBFLOW_FORM_URL, LOCAL_FORM_URL)
                     self.form_url_patched = a.dist_rel
                 for name, old, new in PR.FILE_PATCHES:
-                    if a.dist_rel.rsplit('/', 1)[-1] == name:
+                    if a.orig_rel.rsplit('/', 1)[-1] == name:
                         if text.count(old) != 1:
-                            fail('%s: path patch expected once, found %d: %s' % (a.dist_rel, text.count(old), old))
+                            fail('%s: path patch expected once, found %d: %s' % (a.orig_rel, text.count(old), old))
                         text = text.replace(old, new)
-                        self.file_patches.setdefault(name, []).append(a.dist_rel)
+                        self.file_patches.setdefault(name, []).append(a.orig_rel)
                 out = self.rewrite_text(text, page=a.dist_rel, refs=refs)
             else:
                 continue
             new = out.encode('utf-8')
             a.refs = refs
-            if new != a.data:
-                a.data, a.changed = new, True
+            a.data, a.changed = new, new != a.orig_data
+
+    def name_changed_files(self):
+        """Give every copied file whose bytes the build changes a name with the hash of its new content, and rewrite
+        everything that references it. A name depends on the content, and the content on the names of the files it
+        references, so the pass repeats until nothing moves (one pass more than the deepest chain of changed files).
+        Returns (passes, renamed files)."""
+        self.by_orig = {a.orig_rel: a for a in self.assets.values() if a.src}
+        for passes in range(1, 13):
+            self.rewrite_assets()
+            moved = 0
+            for a in self.by_orig.values():
+                want = hashed_rel(a.orig_rel, a.data) if a.changed else a.orig_rel
+                if want != a.dist_rel:
+                    a.dist_rel, moved = want, moved + 1
+            if not moved:
+                break
+        else:
+            fail('the names of the changed files do not settle (do two changed files reference each other?)')
+        renamed = sorted(a.dist_rel for a in self.by_orig.values() if a.dist_rel != a.orig_rel)
+        if len({a.dist_rel for a in self.by_orig.values()}) != len(self.by_orig):
+            fail('two copied files would get the same name')
+        return passes, renamed
+
+    def check_renamed_runtime(self, need, by_rel):
+        """After the pages are built: a copied runtime-loaded file whose name changed must be named by a runtime URL
+        map the build rewrote (in a copied script or an inline script of a page), or nothing could load it."""
+        lost = sorted(r for r in need if by_rel[r].runtime and by_rel[r].changed
+                      and by_rel[r].orig_rel not in self.token_targets)
+        if lost:
+            fail('changed runtime files that no runtime URL map names (they could not be loaded): %s' % lost)
 
     # ---------------------------------------------------------------- pages
     def font_css_asset(self):
@@ -574,6 +661,11 @@ class Build:
             if name in self.form_names:
                 if re.search(r'\bname="%s"' % HONEYPOT, body):
                     fail('%s: the form %s already has a field named %s' % (page, name, HONEYPOT))
+                if name in JEZIK_FORMS:
+                    if re.search(r'\b(?:data-)?name="Jezik"', body):
+                        fail('%s: the form %s has its own field Jezik now — drop it from JEZIK_FORMS' % (page, name))
+                    body += JEZIK_HTML % 'sr'
+                    self.jezik_added.append(page)
                 body += HONEYPOT_HTML
                 self.forms.append((page, name))
             elif name is not None and can_submit:
@@ -725,7 +817,7 @@ class Build:
         if not published:
             fail('no pages in the manifest')
         self.form_names = self.read_form_names()
-        self.rewrite_assets()
+        self.name_passes, self.renamed = self.name_changed_files()
         if not self.form_url_patched:
             fail('webflow.js not found in the snapshot — the form URL could not be pointed at /f/')
         self.page_out, page_refs, fams_seen = {}, {}, {}
@@ -779,6 +871,7 @@ class Build:
                 break
             close(add)
         self.runtime_unused = [a for a in runtime if a.dist_rel not in need]
+        self.check_renamed_runtime(need, by_rel)
 
         self.check_manifest_coverage(page_refs)
         self.csp = self.content_security_policies()
@@ -854,6 +947,12 @@ class Build:
                 fail('/%s: expected one canonical link, found %d' % (slug, len(canon)))
             text = text.replace(canon[0], canon[0] + PR.alternates(SITE, slug), 1)
             alts += 1
+            try:
+                text, faq = PR.faq_sr_from_visible(text)
+            except ValueError as e:
+                fail('/%s: %s' % (slug, e))
+            if faq:
+                self.sr_faq[slug] = faq
             self.page_out[slug] = text
         self.extra_files = {}
         for lang in LANGS:
@@ -870,6 +969,11 @@ class Build:
                                                  '/' + self.extra_files[lang][0], PR.ENGINE_MARKER)
                 except ValueError as e:
                     fail(str(e))
+                jz = self.page_out[slug].count(JEZIK_HTML % 'sr')
+                if jz:
+                    if doc.count(JEZIK_HTML % 'sr') != jz:
+                        fail('/%s/%s: the hidden field Jezik of the Kontakt form changed in the prerender' % (lang, slug))
+                    doc = doc.replace(JEZIK_HTML % 'sr', JEZIK_HTML % lang)
                 title = html.unescape(re.search(r'<title>(.*?)</title>', self.page_out[slug], re.S).group(1))
                 if (tr.live(title) or PR.nm(title)) != hv['title']:
                     fail('/%s/%s: the engine titled the live page %r, the build computes %r' % (
@@ -1237,10 +1341,11 @@ class Build:
                   ', '.join(sorted(os.path.basename(w) for w in where if '/' in w)) or 'none',
                   len(self.runtime_tokens), len(self.runtime_missing),
                   (' (' + ', '.join(self.runtime_missing[:8]) + ')') if self.runtime_missing else ''))
-        print('forms: webflow.js (%s) posts to /f/%s; %d forms with a honeypot: %s; Turnstile sitekeys removed: %d' % (
-            self.form_url_patched, SITE_ID, len(self.forms),
-            ', '.join('%s (%d)' % (n, sum(1 for _, x in self.forms if x == n)) for n in sorted(self.form_names)),
-            self.turnstile_removed))
+        print('forms: webflow.js (%s) posts to /f/%s; %d forms with a honeypot: %s; Turnstile sitekeys removed: %d; '
+              'hidden field Jezik added to %s on %s (+ /en/, /ru/)' % (
+                  self.form_url_patched, SITE_ID, len(self.forms),
+                  ', '.join('%s (%d)' % (n, sum(1 for _, x in self.forms if x == n)) for n in sorted(self.form_names)),
+                  self.turnstile_removed, ', '.join(sorted(JEZIK_FORMS)), ', '.join(self.jezik_added) or 'no page'))
         fr = self.font_report
         print('fonts: %s — %d @font-face (%s), weights %s, %d woff2 files; licence %s' % (
             fr['css'], fr['faces'], ', '.join(fr['subsets']), ', '.join(fr['weights']), len(fr['files']),
@@ -1260,7 +1365,11 @@ class Build:
                 self.embed_dependencies[:6]) + (' …' if len(self.embed_dependencies) > 6 else ''))
         self.report_languages()
         changed = sorted(a.dist_rel for a in by_rel.values() if a.changed and a.dist_rel in need)
-        print('copied files changed by the build (%d): %s' % (len(changed), ', '.join(changed)))
+        print('copied files changed by the build (%d, named by the sha256 of their content; names settled after %d '
+              'passes): %s' % (len(changed), self.name_passes, ', '.join(changed)))
+        unnamed = [r for r in changed if not re.search(r'\.h[0-9a-f]{%d}(?:-\d+\.\d+\.\d+)?\.[a-z0-9]+$' % HASH_LEN, r)]
+        if unnamed:
+            fail('changed copied files without a content hash in the name: %s' % unnamed)
         fill = sorted(a.dist_rel for a in by_rel.values() if a.from_fill and a.dist_rel in need)
         if fill:
             print('taken from snapshot-fill (sha256 = manifest) (%d): %s' % (len(fill), ', '.join(fill)))
@@ -1322,6 +1431,12 @@ class Build:
                       len(self.extra[lang]), lang, self.extra_files[lang][0], len(left),
                       (': ' + '; '.join('%r (%d)' % (k[:50], len(v)) for k, v in sorted(left.items())[:12]) +
                        (' …' if len(left) > 12 else '')) if left else ''))
+        for slug, faq in sorted(self.sr_faq.items()):
+            print('   FAQPage of /%s from the visible FAQ: %d questions, %d of them worded differently in the Webflow '
+                  'structured data (now the visible text: %s)' % (
+                      slug, len(faq), sum(1 for q, v, sq, sa in faq if sq < 1 or sa < 1), '; '.join(
+                          '%r -> %r (%.2f/%.2f)' % (q[:40], v[:40], sq, sa) for q, v, sq, sa in faq
+                          if sq < 1 or sa < 1)))
         for (lang, slug), r in sorted(self.lang_report.items()):
             if r.get('faq') and lang == LANGS[0]:
                 exact = sum(1 for q, v, sq, sa in r['faq'] if sq == 1 and sa == 1)

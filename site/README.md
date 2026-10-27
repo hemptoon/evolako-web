@@ -11,7 +11,9 @@ Plan (details in the project document "Evolako — переезд с Webflow"):
    site into `snapshot/` (see below). Done; repeat right before the switch.
 2. **Build** — `build.py` turns the snapshot into `dist/`: own copies of every file, no Webflow or Google at runtime,
    own form endpoint, CSP (steps 2 and 2b), real `/en/` and `/ru/` pages prerendered from the dictionaries, sitemap
-   with hreflang (step 3, see "Languages"). Done.
+   with hreflang (step 3, see "Languages"). Done. Before the switch (done 27.10): content hash in the names of the
+   files the build changes, the Serbian FAQPage from the visible FAQ, the hidden `Jezik` in the Kontakt form, the bare
+   domain → www.
 3. **Preview** — a separate Cloudflare Pages project (`evolako-site`, noindex on `*.pages.dev`), compared page by
    page with the live site.
 4. **Switch** — only on the founders' word: custom domains www.evolako.rs and evolako.rs move to the new project;
@@ -53,6 +55,15 @@ byte-identical dist):
 - every page at its current URL (`kontakt.html` serves `/kontakt`), `<html lang="sr">` static (Cyrillic stays a
   browser mode of the Serbian page), plus `en/<slug>.html` and `ru/<slug>.html` (see "Languages"), every file under
   `/_a/<host>/<path>` with every reference rewritten
+- **names of changed files**: `/_a/*` is cached as immutable for a year, so a path must never serve other bytes.
+  Every copied file whose bytes the build changes (the Webflow CSS after its `url()` rewrite, `webflow.js`, the
+  scripts with a rewritten CDN base or a path patch, the Google Fonts CSS — 13 files now) gets the sha256 of its new
+  content in its name: `<name>.h<10 hex><ext>`, or `<name>.h<10 hex>-1.0.0.js` for the scripts that runtime URL maps
+  load as `'<assetId>/<name>' + '-1.0.0.js'` (the map entries are rewritten to the new names). Unchanged copies keep
+  their names — the same bytes as on the original CDN. Names and contents depend on each other (a file names the files
+  it loads), so the rewrite repeats until no name moves (3 passes now); the build stops if a changed runtime file is
+  loaded some other way (e.g. the engine's dictionary files, which it names by pieces — if one of them ever needs a
+  patch, the engine's map has to learn the new name first)
 - **runtime URLs**: scripts that build Webflow CDN URLs from a base + `<assetId>%2F<name>-1.0.0.js` get the local base
   `/_a/cdn.prod.website-files.com/<site>/<folder>/` and real slashes (no local path depends on an encoded `%2F`);
   the runtime files a built page or a copied file starts are copied; the build checks every `<assetId>/<name>` entry
@@ -105,8 +116,9 @@ times: `/<slug>` (Serbian, as before), `/en/<slug>` and `/ru/<slug>` (home: `/`,
   (sr_RS / en_US / ru_RU), canonical to itself, `hreflang` sr/en/ru + `x-default` (Serbian) on all three versions,
   `og:url` of the page. JSON-LD in the page language: strings translated, page URLs and `@id`s moved to the
   language's URLs (`/#org`, `/#organization`, `/#website` and the organization's own url stay shared),
-  `inLanguage` = the page language; the FAQPage of `/en/` and `/ru/cesta-pitanja` is generated from the questions
-  and answers the page shows. `sitemap.xml`: every page in sr, en, ru with `xhtml:link` alternates; `robots.txt`
+  `inLanguage` = the page language; the FAQPage of `/cesta-pitanja`, `/en/` and `/ru/cesta-pitanja` is generated
+  from the questions and answers the page shows (each structured question of the Webflow embed takes the text of the
+  visible `<details>` block it stands for; on the live site 5 of the 8 were worded differently). `sitemap.xml`: every page in sr, en, ru with `xhtml:link` alternates; `robots.txt`
   unchanged; the 404 stays Serbian-only.
 - **Engine on `/en/`, `/ru/`** — still runs (widgets write Serbian text at runtime) but locked to the page language;
   it also consults the own translations last (`_a/evo-i18n/<lang>.<sha>.js`). Scripts that read the page path see
@@ -126,8 +138,8 @@ times: `/<slug>` (Serbian, as before), `/en/<slug>` and `/ru/<slug>` (home: `/`,
   (~4 min), `python3 site/build.py`; add what the build reports as missing to `i18n/en.json` / `i18n/ru.json`
   (key = `prerender.key_of(serbian text)`), build again, run the checks below.
 - Scripts the build patches for this (exact strings, each applied exactly as often as expected or the build stops):
-  `ENGINE_PATCHES`, `INLINE_PATCHES`, `FILE_PATCHES` in `prerender.py`. The patched copied files keep their names —
-  if one of them changes later, give it a new name (the `/_a/` cache is immutable).
+  `ENGINE_PATCHES`, `INLINE_PATCHES`, `FILE_PATCHES` in `prerender.py`. The patched copied files get a content hash
+  in their names (see "Build"), so a later change to a patch reaches returning visitors.
 
 ## Forms
 
@@ -142,8 +154,9 @@ times: `/<slug>` (Serbian, as before), `/en/<slug>` and `/ru/<slug>` (home: `/`,
   The bot does not change (it dedupes by `id`, routes by `Tip` / form name). The answer `{"code":200}` shows the
   success block; any refusal or bot error shows the failure block.
 - Accepted forms: `Kontakt`, `Kviz prijava`, `Preporuka prijava`, `Prijava zgrade`, `B2B upit` (9 pages, each also
-  at `/en/` and `/ru/`: same form names and fields, `Jezik` = the page language where the form has it — the `Kontakt`
-  form has never sent `Jezik`, in any language); the build stops if a page has another sendable Webflow form. The home calculator ("Html Form") can never be sent. The four
+  at `/en/` and `/ru/`: same form names and fields, `Jezik` = the page language; the `Kontakt` form, which never had
+  `Jezik`, gets it as a hidden field set at build time — `sr`, `en`, `ru` — so the CRM card shows in which language to
+  answer); the build stops if a page has another sendable Webflow form. The home calculator ("Html Form") can never be sent. The four
   career forms keep posting to `app.evolako.rs/kr` (not Webflow forms).
 - Anti-spam without secrets: Origin must be `https://www.evolako.rs` or `https://evolako.rs` (and `Sec-Fetch-Site:
   same-origin` when sent); body ≤ 32 KB, ≤ 40 fields, names ≤ 80 and values ≤ 5,000 characters; a hidden honeypot
@@ -187,9 +200,13 @@ Without `BOT` or `HOOK` every form shows the failure block (nothing is lost sile
   other file equal the earlier build except for exactly the step-3 changes (engine/script patches, language menu as
   links, hreflang, `_headers`, `sitemap.xml`, new `en/`, `ru/`, `_a/evo-i18n/`).
 - `python3 site/tools/i18n_selftest.py` — the prerender's copy of the engine's text functions equals the engine.
-- `node site/tools/middleware_unit.mjs` — the `?lang=` redirects (parameters kept, `sr-cyrl` untouched, GET/HEAD only)
-  and the noindex header.
-- `site/functions/_middleware.js` — 301 for old `?lang=en|ru` links (see "Languages"); `X-Robots-Tag: noindex,
-  nofollow` on every host except www.evolako.rs and evolako.rs. Pages project: root directory `site`, output `dist` (`wrangler pages deploy dist` must run from `site/`,
+- `node site/tools/middleware_unit.mjs` — the `?lang=` redirects (parameters kept, `sr-cyrl` untouched, GET/HEAD only),
+  the bare domain → www and the noindex header.
+- `python3 site/tools/diff_builds.py --old <earlier dist> --expect <pattern> …` — for every later change: what the new
+  build changes against an earlier one, with the content hash taken out of names and contents (a file that only moved
+  because a file it names moved does not count); exit code 1 if a file outside the `--expect` patterns differs.
+- `site/functions/_middleware.js` — 301 for old `?lang=en|ru` links (see "Languages"); 301 from the bare domain
+  evolako.rs to the same path on https://www.evolako.rs (GET/HEAD; one step with the `?lang=` target);
+  `X-Robots-Tag: noindex, nofollow` on every host except www.evolako.rs and evolako.rs. Pages project: root directory `site`, output `dist` (`wrangler pages deploy dist` must run from `site/`,
   so that `functions/` is picked up). Rocket Loader must stay off for evolako.rs: it rewrites the script tags and the
   CSP hashes would no longer match.

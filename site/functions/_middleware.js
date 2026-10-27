@@ -13,9 +13,13 @@
 // 2. Any host other than the production domains — the *.pages.dev alias, every preview deployment, a test domain —
 //    gets "X-Robots-Tag: noindex, nofollow", so a copy of the site is never indexed next to www.evolako.rs.
 //    Production responses pass through untouched (the cache and security headers come from dist/_headers).
+// 3. The bare domain evolako.rs: every GET/HEAD gets a 301 to the same path and query on https://www.evolako.rs (the
+//    canonical host, as on Webflow), in one step with the ?lang= redirect of 1. Other methods are not redirected.
 // dist/_routes.json keeps /_a/* (copied files) out of Functions; dist/_headers marks *.pages.dev for those.
 
 const PRODUCTION_HOSTS = new Set(['www.evolako.rs', 'evolako.rs']);
+const CANONICAL_ORIGIN = 'https://www.evolako.rs';
+const BARE_HOST = 'evolako.rs';
 const LANG_PARAM = /^(sr-cyrl|sr-latn|cyr|cy|sr|en|ru)$/i;
 
 // The URL (path + query) a page request with ?lang= should go to, or null when it stays where it is.
@@ -57,6 +61,11 @@ export async function onRequest(context) {
   const production = PRODUCTION_HOSTS.has(host);
   if (request.method === 'GET' || request.method === 'HEAD') {
     const to = langRedirect(request.url);
+    if (host === BARE_HOST) {
+      const u = new URL(request.url);
+      const target = CANONICAL_ORIGIN + (to !== null ? to : u.pathname + u.search);
+      return new Response(null, { status: 301, headers: { Location: target, 'Cache-Control': 'public, max-age=3600' } });
+    }
     if (to !== null) {
       const r = new Response(null, { status: 301, headers: { Location: to, 'Cache-Control': 'public, max-age=3600' } });
       if (!production) r.headers.set('X-Robots-Tag', 'noindex, nofollow');

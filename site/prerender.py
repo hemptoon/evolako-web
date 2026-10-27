@@ -978,6 +978,29 @@ def faq_from_visible(obj, faq_sr, faq_lang):
     return log
 
 
+def faq_sr_from_visible(doc):
+    """The Serbian page's own FAQPage, the same way: each structured question takes the visible text of the Serbian
+    <details> block it stands for (on the live site the embed's wording differs from the page in some questions).
+    Returns (doc, [(structured question, matched visible question, question similarity, answer similarity)])."""
+    faq = visible_faq(doc)
+    if not faq:
+        return doc, []
+    out, pos, log = [], 0, []
+    for m in re.finditer(r'(<script\b[^>]*application/ld\+json[^>]*>)(.*?)(</script>)', doc, re.S):
+        body = m.group(2)
+        obj = json.loads(body)
+        if not any(n.get('@type') == 'FAQPage' for n in _jsonld_nodes(obj)):
+            continue
+        log += faq_from_visible(obj, faq, faq)
+        pretty = '\n' in body.strip()
+        lead = body[:len(body) - len(body.lstrip())]
+        trail = body[len(body.rstrip()):]
+        out.append(doc[pos:m.start(2)] + lead + jsonld_dump(obj, pretty) + trail)
+        pos = m.end(2)
+    out.append(doc[pos:])
+    return ''.join(out), log
+
+
 def _jsonld_nodes(x):
     if isinstance(x, dict):
         yield x
