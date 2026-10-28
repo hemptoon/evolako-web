@@ -804,7 +804,7 @@ ENGINE_PATCHES = [
      "else if(q==='en'||q==='ru'){L='sr';go=pu(q)}\n"
      "else if(q){L=q;sv(L)}\n"
      "else{rf=rp();\n"
-     " if(rf!==null&&/^\\/(?:en|ru)(?:\\/|$)/.test(rf)){L='sr';if(st!=='sr')sv('sr')}\n"
+     " if(rf!==null&&/^\\/(?:en|ru)(?:\\/|$)/.test(rf)&&nt()){L='sr';if(st!=='sr')sv('sr')}\n"
      " else if((st==='en'||st==='ru')&&rf===null&&nt()){L='sr';go=pu(st)}\n"
      " else L=st==='cy'?'cy':'sr'}\n"
      "if(go){try{location.replace(jn(go,QS)+location.hash)}catch(e){}}\n"

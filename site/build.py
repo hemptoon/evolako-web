@@ -167,8 +167,10 @@ CONSENT_PACK = 'evocfconsent1210'                     # script name that loads t
 # Sources only an interaction reaches (no passive load shows them), by page
 CSP_INTERACTION = {
     # BlokVolt map embed: MapLibre runs its worker from a blob: URL; address search and routes on demand
+    # network logos in the station card come from www.blokvolt.rs (/assets/logos/…)
     'mapa-punjaca': [('worker-src', ["'self'", 'blob:']),
-                     ('connect-src', ['https://photon.komoot.io', 'https://routing.openstreetmap.de'])],
+                     ('connect-src', ['https://photon.komoot.io', 'https://routing.openstreetmap.de']),
+                     ('img-src', ['https://www.blokvolt.rs'])],
 }
 CSP_DIRECTIVE_BY_KIND = {'script': 'script-src', 'stylesheet': 'style-src', 'image': 'img-src', 'font': 'font-src',
                          'media': 'media-src', 'fetch': 'connect-src', 'xhr': 'connect-src', 'other': 'connect-src',

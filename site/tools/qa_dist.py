@@ -865,6 +865,18 @@ def step_menu_then_back(code):
     return step
 
 
+def step_menu_then_reload(code):
+    """Choose a language in the header menu, wait for that page, then reload it (the choice must survive)."""
+    def step(page):
+        page.locator('.mega-nav__bar-action.is--lang [data-evo-lang] .evo-lang__btn').first.click()
+        page.locator('[data-evo-lang].is-open .evo-lang__opt[data-l="%s"]' % code).first.click()
+        page.wait_for_function('(l) => document.documentElement.lang === l', arg=HTML_OF_CODE[code], timeout=15000)
+        page.wait_for_load_state('load')
+        page.wait_for_timeout(500)
+        page.reload(wait_until='load')
+    return step
+
+
 def act_consent_allow(page):
     """Cookie banner: "Dozvoli" loads GA4 and the Meta pixel (stubbed here; the CSP must let them load)."""
     page.locator('#evo-ck .y').click()
@@ -902,6 +914,24 @@ def act_map_search(page):
     return []
 
 
+# the card zooms the map: tiles the snapshot does not hold are answered empty (a valid empty vector tile)
+MAP_STATION_STUBS = {'www.blokvolt.rs/assets/logos/': (b'\x89PNG\r\n\x1a\n', 'image/png'),
+                     'tiles.openfreemap.org/planet/': (b'', 'application/x-protobuf')}
+
+
+def act_map_station(page):
+    """/mapa-punjaca: open a station card of a network with a logo (the logo comes from www.blokvolt.rs; the page's
+    CSP must allow that image — a violation is reported by the load like every CSP problem)."""
+    try:
+        page.wait_for_selector('.evm-st', timeout=15000)
+    except Exception:  # noqa: BLE001
+        return ['map station list missing']
+    page.locator('.evm-st', has_text='Charge&GO').first.click()
+    page.wait_for_timeout(2000)
+    shown = page.evaluate("() => Array.from(document.querySelectorAll('#evm img')).map(i => i.getAttribute('src'))")
+    return [] if any('/logos/' in (s or '') for s in shown) else ['no network logo in the station card: %s' % shown[:3]]
+
+
 INTERACTIONS = [
     # (name, path, action, stubs, widths, options: storage / referer path / no_middleware)
     ('consent-allow', '/kontakt', act_consent_allow, {'googletagmanager.com/gtag/js': GA_STUB,
@@ -916,6 +946,8 @@ INTERACTIONS = [
      None, {}),
     ('map-search', '/mapa-punjaca', act_map_search, {'photon.komoot.io/': PHOTON_STUB}, None, {}),
     ('map-search', '/en/mapa-punjaca', act_map_search, {'photon.komoot.io/': PHOTON_STUB}, None, {}),
+    ('map-station', '/mapa-punjaca', act_map_station, MAP_STATION_STUBS, [1440], {}),
+    ('map-station', '/ru/mapa-punjaca', act_map_station, MAP_STATION_STUBS, [390], {}),
     # a remembered choice (localStorage bvl, as the old site stored it)
     ('stored en, from outside', '/kontakt?paket=wallbox', act_paket_note('/en/kontakt', 'en', 'WALLBOX'), {}, None,
      {'storage': {'bvl': 'en'}}),
@@ -929,6 +961,13 @@ INTERACTIONS = [
      {'storage': {'bvl': 'sr'}}),
     ('menu en, then back', '/kontakt', act_expect('/kontakt', 'sr', 'en', step_menu_then_back('en')), {}, [1440],
      {'storage': {'bvl': 'sr'}}),
+    # Cyrillic chosen on an English or Russian page survives a reload (the referrer of the reload is still /en/…)
+    ('menu cy from /en/, reload', '/en/kontakt', act_expect('/kontakt', 'sr-Cyrl', 'cy', step_menu_then_reload('cy')),
+     {}, [1440], {}),
+    ('menu cy from /ru/, reload', '/ru/paketi-i-cene',
+     act_expect('/paketi-i-cene', 'sr-Cyrl', 'cy', step_menu_then_reload('cy')), {}, [1440], {}),
+    ('menu sr from /en/, reload', '/en/kontakt', act_expect('/kontakt', 'sr', 'sr', step_menu_then_reload('sr')),
+     {}, [1440], {}),
     ('stored cy', '/kontakt', act_expect('/kontakt', 'sr-Cyrl', 'cy'), {}, None, {'storage': {'bvl': 'cy'}}),
     ('stored ru, on /en/', '/en/kontakt', act_expect('/en/kontakt', 'en', 'en'), {}, [1440],
      {'storage': {'bvl': 'ru'}}),
