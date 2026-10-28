@@ -1,13 +1,13 @@
 {
  "base": "https://www.evolako.rs",
- "taken": "2026-10-27T03:00:21Z",
+ "taken": "2026-10-28T09:12:31Z",
  "pages": [
   {
    "path": "/",
    "file": "pages/index.html",
    "status": 200,
    "bytes": 200599,
-   "sha256": "2ca69feadc401f11f07564aa9b5eb9310dd727afbb392fe0c7a8b4c2268c1271",
+   "sha256": "e93725a3f7274311f838bdd58ca95721cfc0cf805a64aa373d941c84757da9a3",
    "title": "Kućni punjač za električni auto sa ugradnjom | Evolako",
    "final_url": "https://www.evolako.rs/"
   },
@@ -16,7 +16,7 @@
    "file": "pages/cena-punjaca-po-parking-mestu.html",
    "status": 200,
    "bytes": 176836,
-   "sha256": "9f712ea58dd600920837213c9239ae1c85233dd0f9d694b4789c414fa02e9572",
+   "sha256": "51eea71c7e7a6b78295e58d179f770cc3d63d16fc8b9059b1f6e365b6934972d",
    "title": "Cena punjača po parking mestu: šta ulazi u cenu | Evolako",
    "final_url": "https://www.evolako.rs/cena-punjaca-po-parking-mestu"
   },
@@ -25,7 +25,7 @@
    "file": "pages/cesta-pitanja.html",
    "status": 200,
    "bytes": 175568,
-   "sha256": "546279e4de82ea5e0e083a1c681eb8b93ad2a0dce445ed1dd6690425be10d4c2",
+   "sha256": "ab69685839d7ac7eaa40f314cd92b907ec3632ff13b62b01f1b83bb6900a6bd2",
    "title": "Česta pitanja: punjač u zgradi, struja i skupština | Evolako",
    "final_url": "https://www.evolako.rs/cesta-pitanja"
   },
@@ -34,7 +34,7 @@
    "file": "pages/garaza-za-izdavanje-sa-punjacem.html",
    "status": 200,
    "bytes": 187203,
-   "sha256": "d9af1bc575b47c1bde4015977e70fb66cd99d4097ee0070d73d0795381c526fc",
+   "sha256": "2d9e1f91777056fb9612ed76456c6761dff771380bf804917ff9251a3cf815fa",
    "title": "Garaža za izdavanje sa punjačem: struja uz kiriju | Evolako",
    "final_url": "https://www.evolako.rs/garaza-za-izdavanje-sa-punjacem"
   },
@@ -43,7 +43,7 @@
    "file": "pages/kalkulator-cene-punjaca.html",
    "status": 200,
    "bytes": 215006,
-   "sha256": "5360a2d13c776bb5b1204cbde612d44e25ac536935db6093971b76786053b11a",
+   "sha256": "c0e849092e5a406dcc6e102dc17dabb84454e6ef4e4233a6ba2cdcd3bc5e4aea",
    "title": "Kalkulator cene punjača: zgrada, hotel, firma | Evolako",
    "final_url": "https://www.evolako.rs/kalkulator-cene-punjaca"
   },
@@ -52,7 +52,7 @@
    "file": "pages/karijera.html",
    "status": 200,
    "bytes": 221304,
-   "sha256": "727916fba347115d8a3fd16bf4fcaee525aa796f52891504f46df3e4420223f6",
+   "sha256": "dc96c67d100a5d2e19c64ae641eba83e3758eb212d2718e3d97c8e47b5fb4d26",
    "title": "Karijera u Evolako: prodaja, ugradnja i pravo",
    "final_url": "https://www.evolako.rs/karijera"
   },
@@ -60,8 +60,8 @@
    "path": "/karijera-elektricar",
    "file": "pages/karijera-elektricar.html",
    "status": 200,
-   "bytes": 205952,
-   "sha256": "b0b522dd50d84f2508f31589fa78690fb53decce1ec230ac103b228191a40c52",
+   "bytes": 206044,
+   "sha256": "82c5f6eeff1c3bb3b211203ce7ceb90216019078df7d2ea4c0262e48609aa759",
    "title": "Električar za ugradnju punjača — posao u Evolako",
    "final_url": "https://www.evolako.rs/karijera-elektricar"
   },
@@ -69,8 +69,8 @@
    "path": "/karijera-pravnik",
    "file": "pages/karijera-pravnik.html",
    "status": 200,
-   "bytes": 204922,
-   "sha256": "dd9ffddda599b15e8fb728fc76010d089d6f2082739f0376dc629500f1afe879",
+   "bytes": 205014,
+   "sha256": "d87062c2e4c905fd3ae7cead58d1673ccdf0ae7c84f328bc8b2d15e4daf58ce7",
    "title": "Pravnik za saradnju i ugovore — posao u Evolako",
    "final_url": "https://www.evolako.rs/karijera-pravnik"
   },
@@ -78,8 +78,8 @@
    "path": "/karijera-prodaja",
    "file": "pages/karijera-prodaja.html",
    "status": 200,
-   "bytes": 206942,
-   "sha256": "285776d81b7e37503a34957c61cec144ca365cf2000b276f513da117709cfafe",
+   "bytes": 207034,
+   "sha256": "a734624d9d523ad483bbb6103067bb1157dde2d740a17dc9a831915ac27c3527",
    "title": "Prodavac kućnih punjača — posao u Evolako",
    "final_url": "https://www.evolako.rs/karijera-prodaja"
   },
@@ -88,7 +88,7 @@
    "file": "pages/koliko-elektricni-auto-podize-racun-za-struju.html",
    "status": 200,
    "bytes": 172953,
-   "sha256": "a2c5db016752776c1890f7a767255f2dde93f5661e15b88978e7ad228f3d47db",
+   "sha256": "26ba95d1c5c33cd3cebcee9dea0a6d7d763607cb349423c80d29fe47786e7a16",
    "title": "Koliko električni auto podiže račun za struju | Evolako",
    "final_url": "https://www.evolako.rs/koliko-elektricni-auto-podize-racun-za-struju"
   },
@@ -97,7 +97,7 @@
    "file": "pages/koliko-punjaca-treba-hotelu.html",
    "status": 200,
    "bytes": 180106,
-   "sha256": "54fd15d59d283b25a28615ec9ad1785e225256b9f09836d23dca076b8f74029d",
+   "sha256": "32bf9612b708339f675ebb4791e3a70c5047b31e7d563c538cc4e2878e9594f1",
    "title": "Punjači za hotel: koliko mesta i koja snaga | Evolako",
    "final_url": "https://www.evolako.rs/koliko-punjaca-treba-hotelu"
   },
@@ -106,16 +106,25 @@
    "file": "pages/koliko-snage-treba-garazi-za-punjace.html",
    "status": 200,
    "bytes": 178434,
-   "sha256": "d5aab15805e897bd0830ec18f8955f3a9e672429c15c8c5e3c2e693dfa3cb4b2",
+   "sha256": "c89edfad8d77ea4e60a5cd68006b39cc78e81b585001760067777a392916fc93",
    "title": "Koliko snage treba garaži za 10, 20 ili 50 punjača | Evolako",
    "final_url": "https://www.evolako.rs/koliko-snage-treba-garazi-za-punjace"
+  },
+  {
+   "path": "/komsija-puni-iz-zajednicke-uticnice",
+   "file": "pages/komsija-puni-iz-zajednicke-uticnice.html",
+   "status": 200,
+   "bytes": 173518,
+   "sha256": "47590580a12e1132397ee370cc93fdd5352410e3f7c1a02f8844e317f97ae1f3",
+   "title": "Komšija puni auto iz zajedničke utičnice | Evolako",
+   "final_url": "https://www.evolako.rs/komsija-puni-iz-zajednicke-uticnice"
   },
   {
    "path": "/kontakt",
    "file": "pages/kontakt.html",
    "status": 200,
    "bytes": 158044,
-   "sha256": "782ce4d1f6381beae342f78bcfbc9a956bbb9a3747fb2e5503d82c827e69b5e5",
+   "sha256": "7ea17eb87745b80aee650cd8ab9389501bd9ff631421e516e2d60a7cce4a7828",
    "title": "Kontakt — Evolako | Beograd · Novi Sad · Vojvodina",
    "final_url": "https://www.evolako.rs/kontakt"
   },
@@ -124,7 +133,7 @@
    "file": "pages/mapa-punjaca.html",
    "status": 200,
    "bytes": 179069,
-   "sha256": "07bdf73c7f0472a314293360b087ba9b5cfb512a2274815ac0399e444c42d343",
+   "sha256": "68ff4941b00bda153e4b01fc0aaca73855e8aa446b57d65d2047f7a8a1505a6b",
    "title": "Mapa punjača za električne automobile u Srbiji | Evolako",
    "final_url": "https://www.evolako.rs/mapa-punjaca"
   },
@@ -133,7 +142,7 @@
    "file": "pages/medija-kit.html",
    "status": 200,
    "bytes": 165193,
-   "sha256": "4c967816d917672949f01bfb58a669d9353a64c733f88aba0f109f92484afc8e",
+   "sha256": "8ab137e30b984d0827f40e04475e2ec739c67f848aa94e78c9df19a79ad73207",
    "title": "Za medije i partnere — medija kit | Evolako",
    "final_url": "https://www.evolako.rs/medija-kit"
   },
@@ -142,7 +151,7 @@
    "file": "pages/novogradnja-garaza-spremna-za-punjace.html",
    "status": 200,
    "bytes": 177815,
-   "sha256": "a0c02e679265dd3e2a2a6a1f71d3a5025df77fdb5221cf7faa2341189dfbc3a2",
+   "sha256": "4a444400734563bf9fa9a54ac7da22d153caebdeb88819bdccc3d0cb6c755ddd",
    "title": "Priprema garaže za punjače u novogradnji | Evolako",
    "final_url": "https://www.evolako.rs/novogradnja-garaza-spremna-za-punjace"
   },
@@ -151,7 +160,7 @@
    "file": "pages/novosti.html",
    "status": 200,
    "bytes": 155709,
-   "sha256": "f3dd210849f1847119b317a973d50a8a633da452806ac1c5386d492adb5a42cb",
+   "sha256": "9596f165e62d9d50f3e0e04d72bb13004191c6fd49b032d0d8f05c1421ced0c8",
    "title": "Novosti o punjenju kod kuće i u zgradi | Evolako",
    "final_url": "https://www.evolako.rs/novosti"
   },
@@ -160,7 +169,7 @@
    "file": "pages/operativni-lizing-elektricnog-automobila-punjenje.html",
    "status": 200,
    "bytes": 179902,
-   "sha256": "9aa5c85553a6506f7a83ed07773921986f077d6f3a5f37a0c4df515896df73f3",
+   "sha256": "a8ca3f4166cbb774bd36a00d15e11d8d87c9514cededb064df038b16c9cde830",
    "title": "Električni auto na operativni lizing i punjač | Evolako",
    "final_url": "https://www.evolako.rs/operativni-lizing-elektricnog-automobila-punjenje"
   },
@@ -169,7 +178,7 @@
    "file": "pages/paketi-i-cene.html",
    "status": 200,
    "bytes": 173837,
-   "sha256": "75321c713e0b75495625cb447093d80ea1a38652fba75d335c69e544687870b6",
+   "sha256": "5f6f6e7ac3cf1250442818a0bd46504a532fcd895621f4bf90c11f4a05e6a9da",
    "title": "Cena kućnog punjača sa ugradnjom: paketi | Evolako",
    "final_url": "https://www.evolako.rs/paketi-i-cene"
   },
@@ -178,16 +187,25 @@
    "file": "pages/politika-privatnosti.html",
    "status": 200,
    "bytes": 170327,
-   "sha256": "94746901cc09a660b18468f2bba72ccfe8299fa66a45e29b3e065bc1d8f56743",
+   "sha256": "b525c3484f4ae552633228e7aaf38c907448fc20c057cec6ac359376574b8c3e",
    "title": "Politika privatnosti i uslovi korišćenja | Evolako",
    "final_url": "https://www.evolako.rs/politika-privatnosti"
+  },
+  {
+   "path": "/povecanje-snage-struje-eds",
+   "file": "pages/povecanje-snage-struje-eds.html",
+   "status": 200,
+   "bytes": 196772,
+   "sha256": "359f7cc7ebcac33786644f53005ece11a2dbacd6dc8029caa715113772a3c26a",
+   "title": "Povećanje snage struje kod EDS-a — korak po korak | Evolako",
+   "final_url": "https://www.evolako.rs/povecanje-snage-struje-eds"
   },
   {
    "path": "/preporuka",
    "file": "pages/preporuka.html",
    "status": 200,
    "bytes": 175495,
-   "sha256": "5c3ceaacbba62cbd607b55acae3725d37e51942348bcd414cbf29e1a04da3b53",
+   "sha256": "ba8bad6412a61f76443f82292450a6edf1a205e5e4e2a0928c297fb6cfd1cba8",
    "title": "Preporuka: još 2 meseca pretplate besplatno | Evolako",
    "final_url": "https://www.evolako.rs/preporuka"
   },
@@ -196,7 +214,7 @@
    "file": "pages/prijavi-zgradu.html",
    "status": 200,
    "bytes": 205091,
-   "sha256": "b9effa07e6ebeecf915b972bf2e15680542be0ad929bd59301639ec7cab126e8",
+   "sha256": "792dcf614abd044865ddbf3b877835048e79831cd477326b2c69da55315d3643",
    "title": "Prijavi svoju zgradu za punjače | Evolako",
    "final_url": "https://www.evolako.rs/prijavi-zgradu"
   },
@@ -205,7 +223,7 @@
    "file": "pages/proveri-svoju-garazu.html",
    "status": 200,
    "bytes": 167282,
-   "sha256": "7fbde5cb3ff9a648bd825009cbd820be65181ad89c283ced137b1ce42e04f970",
+   "sha256": "08dd1f5b5daf632a036238bad18b9f3121b06370a8790d5b953de18de17c1b2a",
    "title": "Proveri svoju garažu — da li može kućni punjač? | Evolako",
    "final_url": "https://www.evolako.rs/proveri-svoju-garazu"
   },
@@ -214,7 +232,7 @@
    "file": "pages/punjac-11-ili-22-kw.html",
    "status": 200,
    "bytes": 169902,
-   "sha256": "6fa62a1ca35935678620a54c35cd628cf133f3a2559647240bb70e9981d93a6b",
+   "sha256": "f26c7619fa51070c7a274e6cfab85556ba51cd2f0aff79fbb6bce88369e08a4a",
    "title": "Punjač 11 ili 22 kW: koliko snage treba kod kuće | Evolako",
    "final_url": "https://www.evolako.rs/punjac-11-ili-22-kw"
   },
@@ -223,7 +241,7 @@
    "file": "pages/punjaci-u-garazi-zgrade-plan-za-upravnike.html",
    "status": 200,
    "bytes": 181682,
-   "sha256": "609c4598c0c38020612d61186eef34cc19e0353bfc156e1ef1ef84e0afb06e70",
+   "sha256": "edf38ddec5aecd21ac36b1321ad7e3e71ebb913f88b881949886be6aeacd7259",
    "title": "Punjači u garaži zgrade: 5 koraka za upravnike | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-u-garazi-zgrade-plan-za-upravnike"
   },
@@ -232,7 +250,7 @@
    "file": "pages/punjaci-za-auto-salone.html",
    "status": 200,
    "bytes": 197241,
-   "sha256": "f6cabb46cae1947c9f09382d5327f99835fcccb421c2e8669b54a4b5181c6388",
+   "sha256": "1bd9595e7aba4a94bbae5a94f5bc611fc4d698ddb2e445ad71df8a146f7ea3ac",
    "title": "Punjači za auto salone i njihove kupce | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-auto-salone"
   },
@@ -241,7 +259,7 @@
    "file": "pages/punjaci-za-firme.html",
    "status": 200,
    "bytes": 213418,
-   "sha256": "e73ab6bf3db55a26d191ae48c12b63d16ab1584dc72120c2dc67350a069842f3",
+   "sha256": "7cb3d9595517429d35093632d95bbe2a68c0d18893d2f00ba83c4d7f87b37918",
    "title": "Punjači za firme, zgrade i hotele u Srbiji | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-firme"
   },
@@ -250,7 +268,7 @@
    "file": "pages/punjaci-za-hotele.html",
    "status": 200,
    "bytes": 200075,
-   "sha256": "2b68d4602cc940958eba150360bdf462a5ebf070ee8f3f7ad5fdfc1b5067c318",
+   "sha256": "6dde998ec13eae3d544cad2346065eaf7d7ccd983818196e2ac2d250ec8a8e51",
    "title": "Punjači za električne automobile za hotele | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-hotele"
   },
@@ -259,7 +277,7 @@
    "file": "pages/punjaci-za-novogradnju.html",
    "status": 200,
    "bytes": 204342,
-   "sha256": "6fe71ec3756f58ff8145602e8730a94298d85e0ee61074b34e54f718889bcc47",
+   "sha256": "b7e7b8d2309db60a50167262be533cfbe187c9d311c0ff70e4e1be12fa1cbce0",
    "title": "Punjači za novogradnju i investitore | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-novogradnju"
   },
@@ -268,7 +286,7 @@
    "file": "pages/punjaci-za-parking-garaze.html",
    "status": 200,
    "bytes": 203148,
-   "sha256": "5e7b64eb6c375b526f6f756e3f9f2fd4235e44ce432514ee6dbda196490e26a6",
+   "sha256": "54fb9b8a24bb8c14fd1d1f7e990ed1b0e7e6ad7f297a45cff4c72b92ea7b08d9",
    "title": "Punjači za parking garaže i parkinge firmi | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-parking-garaze"
   },
@@ -277,7 +295,7 @@
    "file": "pages/punjaci-za-parkinge.html",
    "status": 200,
    "bytes": 205612,
-   "sha256": "8f0875f0d7fab13c9fe14ed3bb54b8f18ecca91356bb070c73016a7bb93d010c",
+   "sha256": "acdad3731fb63acd44b2eb32a6d7508e359c1e48e0764a96dbd375121e314f38",
    "title": "Punjači za čuvane i dugoročne parkinge | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-parkinge"
   },
@@ -286,7 +304,7 @@
    "file": "pages/punjaci-za-sluzbena-vozila.html",
    "status": 200,
    "bytes": 204434,
-   "sha256": "a86ed14bc14e0413c88984d33a2adc80f8d3146e15634b4892c5a225c21c1931",
+   "sha256": "cf3e560cff2e46e83c90abd0b5288034c93284ac6f0b71163bdf65b30ba08968",
    "title": "Punjač za službena vozila kod kuće i u firmi | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-sluzbena-vozila"
   },
@@ -295,7 +313,7 @@
    "file": "pages/punjaci-za-stambene-zgrade.html",
    "status": 200,
    "bytes": 211299,
-   "sha256": "40fff6b60c6faceb04006a592b8b28c4961567bb89192d07bcb7aba2ea2875f3",
+   "sha256": "c7a477bbf8696bf280ab81efc3fbd9f44d956d9a59cfdd815d0c7260fc6ea517",
    "title": "Punjači za stambene zgrade — za upravnike | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-stambene-zgrade"
   },
@@ -304,7 +322,7 @@
    "file": "pages/punjenje-nocu-tajmer.html",
    "status": 200,
    "bytes": 171254,
-   "sha256": "86296ea050c6a5c4b0445a4ac11222693725c49e33bece7bcde81ea65c4e1315",
+   "sha256": "86e7e97dd9586cbbd082014d41ed4fd3888e226489e11b2929a1a553d22526cd",
    "title": "Kako da auto puni samo noću: tajmer | Evolako",
    "final_url": "https://www.evolako.rs/punjenje-nocu-tajmer"
   },
@@ -313,7 +331,7 @@
    "file": "pages/punjenje-preko-suko-uticnice.html",
    "status": 200,
    "bytes": 174801,
-   "sha256": "c82f90324ac1e130ef6bcb1cbac7f197ed019d5dd9e1c0e2c8907b7f57ec9f0a",
+   "sha256": "57316dfc0e51f45aa0574a87d08e626dfbca72400a86065580af27253d5e4514",
    "title": "Punjenje auta na šuko utičnicu: koliko puni | Evolako",
    "final_url": "https://www.evolako.rs/punjenje-preko-suko-uticnice"
   },
@@ -322,7 +340,7 @@
    "file": "pages/punjenje-sluzbenog-automobila-kod-kuce.html",
    "status": 200,
    "bytes": 178310,
-   "sha256": "1b41e6816e881c49c18c3b91ea4bd8d3b3f7a2a71ca197a87ce35067a2aea4ff",
+   "sha256": "327f965bd9031444f9c7fd840a1744245d7e6c53c01cac889f28e04f55ff56d8",
    "title": "Punjenje službenog automobila kod kuće | Evolako",
    "final_url": "https://www.evolako.rs/punjenje-sluzbenog-automobila-kod-kuce"
   },
@@ -330,8 +348,8 @@
    "path": "/vodici",
    "file": "pages/vodici.html",
    "status": 200,
-   "bytes": 147675,
-   "sha256": "ee0587dc03c650625e0b7caebbb59ed46153da8227d6484f63e4cfdebd9face7",
+   "bytes": 149937,
+   "sha256": "fff89169aa39d4152642d9ba1a521e3f6c1750f0f878de9def4c3f3abef398b8",
    "title": "Vodiči: punjenje električnog auta kod kuće | Evolako",
    "final_url": "https://www.evolako.rs/vodici"
   },
@@ -369,6 +387,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -377,6 +396,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -395,7 +415,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -638,6 +658,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -646,6 +667,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -664,7 +686,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -788,7 +810,7 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-702837fd45.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
    ]
   },
   {
@@ -817,7 +839,7 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-702837fd45.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
    ]
   },
   {
@@ -2981,6 +3003,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -2989,6 +3012,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -3007,7 +3031,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -3044,6 +3068,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -3052,6 +3077,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -3070,7 +3096,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "en"
@@ -3106,6 +3132,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -3114,6 +3141,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -3132,7 +3160,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "en"
@@ -3168,6 +3196,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -3176,6 +3205,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -3194,7 +3224,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "ru"
@@ -3230,6 +3260,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -3238,6 +3269,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -3256,7 +3288,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "ru"
@@ -3292,6 +3324,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -3300,6 +3333,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -3318,7 +3352,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -3355,6 +3389,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -3363,6 +3398,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -3381,7 +3417,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -3635,6 +3671,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -3643,6 +3680,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -3661,7 +3699,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -3698,6 +3736,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -3706,6 +3745,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -3724,7 +3764,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -3761,6 +3801,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -3769,6 +3810,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -3787,7 +3829,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -3824,6 +3866,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -3832,6 +3875,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -3850,7 +3894,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -3914,6 +3958,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -3922,6 +3967,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -3940,7 +3986,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -4059,6 +4105,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -4067,6 +4114,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -4085,7 +4133,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -4662,6 +4710,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -4670,6 +4719,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -4688,7 +4738,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -6163,6 +6213,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -6171,6 +6222,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -6189,7 +6241,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -7308,6 +7360,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -7316,6 +7369,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -7334,7 +7388,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -10638,6 +10692,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -10646,6 +10701,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -10664,7 +10720,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "sr",
@@ -10801,6 +10857,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -10809,6 +10866,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -10827,7 +10885,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "sr",
@@ -11428,6 +11486,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -11436,6 +11495,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -11454,7 +11514,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "sr",
@@ -11493,6 +11553,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -11501,6 +11562,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -11519,7 +11581,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "sr",
@@ -11558,6 +11620,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -11566,6 +11629,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -11584,7 +11648,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "sr",
@@ -11623,6 +11687,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -11631,6 +11696,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -11649,7 +11715,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "sr",
@@ -11688,6 +11754,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -11696,6 +11763,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -11714,7 +11782,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "sr",
@@ -11780,6 +11848,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -11788,6 +11857,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -11806,7 +11876,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -11925,6 +11995,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -11933,6 +12004,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -11951,7 +12023,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -12015,6 +12087,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -12023,6 +12096,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -12041,7 +12115,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -12078,6 +12152,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -12086,6 +12161,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -12104,7 +12180,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37
+   "page_count": 39
   },
   {
    "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6ab1a78efaeb0f44b4aa5553_b14f711f2775a8b710866b21cc049b59_evolako-wallbox-closeup-p-1600.webp",
@@ -12129,6 +12205,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -12137,6 +12214,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -12155,7 +12233,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -12191,6 +12269,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -12199,6 +12278,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -12217,7 +12297,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37
+   "page_count": 39
   },
   {
    "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6ab1a78efaeb0f44b4aa5553_b14f711f2775a8b710866b21cc049b59_evolako-wallbox-closeup-p-2600.webp",
@@ -12242,6 +12322,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -12250,6 +12331,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -12268,7 +12350,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37
+   "page_count": 39
   },
   {
    "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6ab1a78efaeb0f44b4aa5553_b14f711f2775a8b710866b21cc049b59_evolako-wallbox-closeup-p-500.webp",
@@ -12293,6 +12375,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -12301,6 +12384,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -12319,7 +12403,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -12355,6 +12439,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -12363,6 +12448,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -12381,7 +12467,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37
+   "page_count": 39
   },
   {
    "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6ab1a78efaeb0f44b4aa5553_b14f711f2775a8b710866b21cc049b59_evolako-wallbox-closeup.webp",
@@ -12407,6 +12493,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -12415,6 +12502,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -12433,7 +12521,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37
+   "page_count": 39
   },
   {
    "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6ab1cb17c537112e338825ac_evolako-icon-512-blue.png",
@@ -12473,6 +12561,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -12481,6 +12570,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -12499,7 +12589,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37
+   "page_count": 39
   },
   {
    "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6ab1cb92938a0173d8433a11_icon-512.png",
@@ -12524,6 +12614,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -12532,6 +12623,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -12550,7 +12642,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37
+   "page_count": 39
   },
   {
    "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6ab1cb92cfb16a364ad8bbd8_icon-512.png",
@@ -12575,6 +12667,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -12583,6 +12676,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -12601,7 +12695,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37
+   "page_count": 39
   },
   {
    "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6ab1cb92d1ca9dd33c2b7acf_icon-512.png",
@@ -12626,6 +12720,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -12634,6 +12729,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -12652,7 +12748,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37
+   "page_count": 39
   },
   {
    "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6ab1cb92e5ee0e7b764ff914_icon-512.png",
@@ -12677,6 +12773,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -12685,6 +12782,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -12703,7 +12801,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37
+   "page_count": 39
   },
   {
    "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6ab6465322c68280e1efc5d0_evolako-hero-wallbox-v2.webp",
@@ -13142,6 +13240,34 @@
    }
   },
   {
+   "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6abd1ea719faec11491b5484_evolako-komsije-prijava-zgrade.webp",
+   "file": "assets/cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6abd1ea719faec11491b5484_evolako-komsije-prijava-zgrade.webp",
+   "status": 200,
+   "bytes": 144428,
+   "type": "image/webp",
+   "sha256": "ccac3ae0169b76d47091de66ceab7ad09a532aa9fa377c5503d6a4a2b33e39d4",
+   "kinds": [
+    "img[src]",
+    "script"
+   ],
+   "pages": [
+    "/komsija-puni-iz-zajednicke-uticnice"
+   ],
+   "page_count": 1,
+   "runtime_seen": {
+    "modes": [
+     "sr",
+     "en",
+     "ru",
+     "sr-cyrl"
+    ],
+    "viewports": [
+     "1440x900",
+     "390x844"
+    ]
+   }
+  },
+  {
    "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6abd1ea719faec11491b552b_evolako-hotel-punjenje-nocu.webp",
    "file": "assets/cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6abd1ea719faec11491b552b_evolako-hotel-punjenje-nocu.webp",
    "status": 200,
@@ -13154,6 +13280,34 @@
    ],
    "pages": [
     "/koliko-punjaca-treba-hotelu"
+   ],
+   "page_count": 1,
+   "runtime_seen": {
+    "modes": [
+     "sr",
+     "en",
+     "ru",
+     "sr-cyrl"
+    ],
+    "viewports": [
+     "1440x900",
+     "390x844"
+    ]
+   }
+  },
+  {
+   "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6abd1ea729f47364b3fc3225_evolako-procena-na-lokaciji.webp",
+   "file": "assets/cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6abd1ea729f47364b3fc3225_evolako-procena-na-lokaciji.webp",
+   "status": 200,
+   "bytes": 136068,
+   "type": "image/webp",
+   "sha256": "fa7c20cf7b569e6ed38bee7fc4c50775ed39d106ab8354b13e5c43fedbf09cc8",
+   "kinds": [
+    "img[src]",
+    "script"
+   ],
+   "pages": [
+    "/povecanje-snage-struje-eds"
    ],
    "page_count": 1,
    "runtime_seen": {
@@ -13793,11 +13947,12 @@
    ],
    "pages": [
     "/koliko-elektricni-auto-podize-racun-za-struju",
+    "/povecanje-snage-struje-eds",
     "/punjaci-za-auto-salone",
     "/punjaci-za-novogradnju",
     "/vodici"
    ],
-   "page_count": 4,
+   "page_count": 5,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -13852,6 +14007,7 @@
    ],
    "pages": [
     "/koliko-elektricni-auto-podize-racun-za-struju",
+    "/povecanje-snage-struje-eds",
     "/punjac-11-ili-22-kw",
     "/punjaci-za-auto-salone",
     "/punjaci-za-sluzbena-vozila",
@@ -13859,7 +14015,7 @@
     "/punjenje-preko-suko-uticnice",
     "/vodici"
    ],
-   "page_count": 7,
+   "page_count": 8,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -13884,9 +14040,10 @@
     "img[src]"
    ],
    "pages": [
-    "/punjaci-za-stambene-zgrade"
+    "/punjaci-za-stambene-zgrade",
+    "/vodici"
    ],
-   "page_count": 1,
+   "page_count": 2,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -13914,6 +14071,7 @@
     "/cena-punjaca-po-parking-mestu",
     "/garaza-za-izdavanje-sa-punjacem",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/novogradnja-garaza-spremna-za-punjace",
     "/punjaci-za-firme",
     "/punjaci-za-stambene-zgrade",
@@ -13921,7 +14079,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 9,
+   "page_count": 10,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -13947,9 +14105,10 @@
    ],
    "pages": [
     "/punjaci-za-novogradnju",
-    "/punjaci-za-stambene-zgrade"
+    "/punjaci-za-stambene-zgrade",
+    "/vodici"
    ],
-   "page_count": 2,
+   "page_count": 3,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -13976,8 +14135,10 @@
    "pages": [
     "/garaza-za-izdavanje-sa-punjacem",
     "/koliko-punjaca-treba-hotelu",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/novogradnja-garaza-spremna-za-punjace",
     "/operativni-lizing-elektricnog-automobila-punjenje",
+    "/povecanje-snage-struje-eds",
     "/punjac-11-ili-22-kw",
     "/punjaci-u-garazi-zgrade-plan-za-upravnike",
     "/punjaci-za-firme",
@@ -13987,7 +14148,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 12,
+   "page_count": 14,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -14339,6 +14500,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -14347,6 +14509,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -14364,7 +14527,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 36
+   "page_count": 38
   },
   {
    "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6aca2b38e91902f29e9fdcd3_evolako-medija-kit-sr.pdf",
@@ -14655,12 +14818,12 @@
    }
   },
   {
-   "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/css/evolako.webflow.shared.8600cde9e.css",
-   "file": "assets/cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/css/evolako.webflow.shared.8600cde9e.css",
+   "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/css/evolako.webflow.shared.6952b74df.css",
+   "file": "assets/cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/css/evolako.webflow.shared.6952b74df.css",
    "status": 200,
-   "bytes": 129600,
+   "bytes": 130110,
    "type": "text/css",
-   "sha256": "1b49b3063ae5143c2d2e7faaa892b3fd9556c17b663f9143247a266722035648",
+   "sha256": "832e02d55eb8441e1398f35dd89022dda5fad2b0b848538020dbf443874f0fbf",
    "kinds": [
     "link[stylesheet]"
    ],
@@ -14677,6 +14840,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -14685,6 +14849,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -14703,7 +14868,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -14740,6 +14905,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -14748,6 +14914,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -14766,7 +14933,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -14803,6 +14970,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -14811,6 +14979,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -14829,7 +14998,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [],
    "viewports": [],
@@ -14860,6 +15029,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -14868,6 +15038,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -14886,7 +15057,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [],
    "viewports": [],
@@ -14917,6 +15088,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -14925,6 +15097,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -14943,7 +15116,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -14980,6 +15153,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -14988,6 +15162,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -15006,7 +15181,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37
+   "page_count": 39
   },
   {
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FM7Qei6HMfZNdHxGMvPdz3BwTf/hf_20260723_185054_63816cb9-bf90-4452-afa1-7e586a50f09b_min.webp",
@@ -15108,6 +15283,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -15116,6 +15292,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -15134,7 +15311,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -15152,9 +15329,9 @@
    "url": "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext",
    "file": "assets/fonts.googleapis.com/css__7d635e1e",
    "status": 200,
-   "bytes": 22435,
+   "bytes": 24305,
    "type": "text/css",
-   "sha256": "5afe485789643d2be7a6f49cbe864a3c01435ac8a499627ca4118fbe3bf1bde3",
+   "sha256": "bb09384d4c9f52e3f058125c01d1fc0064820ae425dbcfeaca4773c0bc22f37c",
    "kinds": [
     "stylesheet"
    ],
@@ -15171,6 +15348,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -15179,6 +15357,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -15197,7 +15376,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "sr",
@@ -15213,6 +15392,467 @@
     "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
    ],
    "varies": true
+  },
+  {
+   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_VY-05A&skey=45f9610178ce01c5&v=v11",
+   "file": "assets/fonts.gstatic.com/l/font__7831151d",
+   "status": 200,
+   "bytes": 36184,
+   "type": "font/woff2",
+   "sha256": "69c1f4ea44b6e44b48f9ef487cc92d875ad8838b440d5be9f510011d89f7117b",
+   "kinds": [
+    "css-ref"
+   ],
+   "pages": [
+    "/",
+    "/cena-punjaca-po-parking-mestu",
+    "/cesta-pitanja",
+    "/garaza-za-izdavanje-sa-punjacem",
+    "/kalkulator-cene-punjaca",
+    "/karijera",
+    "/karijera-elektricar",
+    "/karijera-pravnik",
+    "/karijera-prodaja",
+    "/koliko-elektricni-auto-podize-racun-za-struju",
+    "/koliko-punjaca-treba-hotelu",
+    "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
+    "/kontakt",
+    "/mapa-punjaca",
+    "/medija-kit",
+    "/novogradnja-garaza-spremna-za-punjace",
+    "/novosti",
+    "/operativni-lizing-elektricnog-automobila-punjenje",
+    "/paketi-i-cene",
+    "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
+    "/preporuka",
+    "/prijavi-zgradu",
+    "/proveri-svoju-garazu",
+    "/punjac-11-ili-22-kw",
+    "/punjaci-u-garazi-zgrade-plan-za-upravnike",
+    "/punjaci-za-auto-salone",
+    "/punjaci-za-firme",
+    "/punjaci-za-hotele",
+    "/punjaci-za-novogradnju",
+    "/punjaci-za-parking-garaze",
+    "/punjaci-za-parkinge",
+    "/punjaci-za-sluzbena-vozila",
+    "/punjaci-za-stambene-zgrade",
+    "/punjenje-nocu-tajmer",
+    "/punjenje-preko-suko-uticnice",
+    "/punjenje-sluzbenog-automobila-kod-kuce",
+    "/vodici"
+   ],
+   "page_count": 39,
+   "runtime": true,
+   "modes": [
+    "sr",
+    "en",
+    "ru",
+    "sr-cyrl"
+   ],
+   "viewports": [],
+   "initiators": [
+    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
+   ]
+  },
+  {
+   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_VZ205A&skey=45f9610178ce01c5&v=v11",
+   "file": "assets/fonts.gstatic.com/l/font__ef5038d3",
+   "status": 200,
+   "bytes": 37388,
+   "type": "font/woff2",
+   "sha256": "d38c05a4615f745c3b4f00005c8750e427222cd6b796c5f75d00e17bad8b88f1",
+   "kinds": [
+    "css-ref"
+   ],
+   "pages": [
+    "/",
+    "/cena-punjaca-po-parking-mestu",
+    "/cesta-pitanja",
+    "/garaza-za-izdavanje-sa-punjacem",
+    "/kalkulator-cene-punjaca",
+    "/karijera",
+    "/karijera-elektricar",
+    "/karijera-pravnik",
+    "/karijera-prodaja",
+    "/koliko-elektricni-auto-podize-racun-za-struju",
+    "/koliko-punjaca-treba-hotelu",
+    "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
+    "/kontakt",
+    "/mapa-punjaca",
+    "/medija-kit",
+    "/novogradnja-garaza-spremna-za-punjace",
+    "/novosti",
+    "/operativni-lizing-elektricnog-automobila-punjenje",
+    "/paketi-i-cene",
+    "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
+    "/preporuka",
+    "/prijavi-zgradu",
+    "/proveri-svoju-garazu",
+    "/punjac-11-ili-22-kw",
+    "/punjaci-u-garazi-zgrade-plan-za-upravnike",
+    "/punjaci-za-auto-salone",
+    "/punjaci-za-firme",
+    "/punjaci-za-hotele",
+    "/punjaci-za-novogradnju",
+    "/punjaci-za-parking-garaze",
+    "/punjaci-za-parkinge",
+    "/punjaci-za-sluzbena-vozila",
+    "/punjaci-za-stambene-zgrade",
+    "/punjenje-nocu-tajmer",
+    "/punjenje-preko-suko-uticnice",
+    "/punjenje-sluzbenog-automobila-kod-kuce",
+    "/vodici"
+   ],
+   "page_count": 39,
+   "runtime": true,
+   "modes": [
+    "sr",
+    "en",
+    "ru",
+    "sr-cyrl"
+   ],
+   "viewports": [],
+   "initiators": [
+    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
+   ]
+  },
+  {
+   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_Ve-05A&skey=45f9610178ce01c5&v=v11",
+   "file": "assets/fonts.gstatic.com/l/font__1c25e1f3",
+   "status": 200,
+   "bytes": 52328,
+   "type": "font/woff2",
+   "sha256": "8223753210420b30728da78f845d5f4c218519c13af41ace93bea8a617f24a4e",
+   "kinds": [
+    "font"
+   ],
+   "pages": [
+    "/"
+   ],
+   "page_count": 1,
+   "runtime": true,
+   "modes": [
+    "ru"
+   ],
+   "viewports": [
+    "390x844"
+   ],
+   "initiators": [
+    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
+   ]
+  },
+  {
+   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_Ve605A&skey=45f9610178ce01c5&v=v11",
+   "file": "assets/fonts.gstatic.com/l/font__c876b2f3",
+   "status": 200,
+   "bytes": 42104,
+   "type": "font/woff2",
+   "sha256": "7caa13148e791e79eb966c3137b933686b4747c1854620415c6188b194b72487",
+   "kinds": [
+    "css-ref"
+   ],
+   "pages": [
+    "/",
+    "/cena-punjaca-po-parking-mestu",
+    "/cesta-pitanja",
+    "/garaza-za-izdavanje-sa-punjacem",
+    "/kalkulator-cene-punjaca",
+    "/karijera",
+    "/karijera-elektricar",
+    "/karijera-pravnik",
+    "/karijera-prodaja",
+    "/koliko-elektricni-auto-podize-racun-za-struju",
+    "/koliko-punjaca-treba-hotelu",
+    "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
+    "/kontakt",
+    "/mapa-punjaca",
+    "/medija-kit",
+    "/novogradnja-garaza-spremna-za-punjace",
+    "/novosti",
+    "/operativni-lizing-elektricnog-automobila-punjenje",
+    "/paketi-i-cene",
+    "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
+    "/preporuka",
+    "/prijavi-zgradu",
+    "/proveri-svoju-garazu",
+    "/punjac-11-ili-22-kw",
+    "/punjaci-u-garazi-zgrade-plan-za-upravnike",
+    "/punjaci-za-auto-salone",
+    "/punjaci-za-firme",
+    "/punjaci-za-hotele",
+    "/punjaci-za-novogradnju",
+    "/punjaci-za-parking-garaze",
+    "/punjaci-za-parkinge",
+    "/punjaci-za-sluzbena-vozila",
+    "/punjaci-za-stambene-zgrade",
+    "/punjenje-nocu-tajmer",
+    "/punjenje-preko-suko-uticnice",
+    "/punjenje-sluzbenog-automobila-kod-kuce",
+    "/vodici"
+   ],
+   "page_count": 39,
+   "runtime": true,
+   "modes": [
+    "sr",
+    "en",
+    "ru",
+    "sr-cyrl"
+   ],
+   "viewports": [],
+   "initiators": [
+    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
+   ]
+  },
+  {
+   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_VeG05A&skey=45f9610178ce01c5&v=v11",
+   "file": "assets/fonts.gstatic.com/l/font__236a9676",
+   "status": 200,
+   "bytes": 34748,
+   "type": "font/woff2",
+   "sha256": "4c5810f07432a86a369bc0c10972f94f3849129d865a52a6d09a7cd69ce178f9",
+   "kinds": [
+    "font"
+   ],
+   "pages": [
+    "/"
+   ],
+   "page_count": 1,
+   "runtime": true,
+   "modes": [
+    "ru"
+   ],
+   "viewports": [
+    "390x844"
+   ],
+   "initiators": [
+    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
+   ]
+  },
+  {
+   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_VeW05A&skey=45f9610178ce01c5&v=v11",
+   "file": "assets/fonts.gstatic.com/l/font__e206f05e",
+   "status": 200,
+   "bytes": 47428,
+   "type": "font/woff2",
+   "sha256": "61542a2096dad23640ba9e163f8b382d034129f304c054eb62753ece99fd1c89",
+   "kinds": [
+    "font"
+   ],
+   "pages": [
+    "/"
+   ],
+   "page_count": 1,
+   "runtime": true,
+   "modes": [
+    "ru"
+   ],
+   "viewports": [
+    "390x844"
+   ],
+   "initiators": [
+    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
+   ]
+  },
+  {
+   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_Vey05A&skey=45f9610178ce01c5&v=v11",
+   "file": "assets/fonts.gstatic.com/l/font__89a62c67",
+   "status": 200,
+   "bytes": 51852,
+   "type": "font/woff2",
+   "sha256": "f94378028e8fc370988aa3922ae0294db91db0e03ab4458363098fb0a92e2af3",
+   "kinds": [
+    "css-ref"
+   ],
+   "pages": [
+    "/",
+    "/cena-punjaca-po-parking-mestu",
+    "/cesta-pitanja",
+    "/garaza-za-izdavanje-sa-punjacem",
+    "/kalkulator-cene-punjaca",
+    "/karijera",
+    "/karijera-elektricar",
+    "/karijera-pravnik",
+    "/karijera-prodaja",
+    "/koliko-elektricni-auto-podize-racun-za-struju",
+    "/koliko-punjaca-treba-hotelu",
+    "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
+    "/kontakt",
+    "/mapa-punjaca",
+    "/medija-kit",
+    "/novogradnja-garaza-spremna-za-punjace",
+    "/novosti",
+    "/operativni-lizing-elektricnog-automobila-punjenje",
+    "/paketi-i-cene",
+    "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
+    "/preporuka",
+    "/prijavi-zgradu",
+    "/proveri-svoju-garazu",
+    "/punjac-11-ili-22-kw",
+    "/punjaci-u-garazi-zgrade-plan-za-upravnike",
+    "/punjaci-za-auto-salone",
+    "/punjaci-za-firme",
+    "/punjaci-za-hotele",
+    "/punjaci-za-novogradnju",
+    "/punjaci-za-parking-garaze",
+    "/punjaci-za-parkinge",
+    "/punjaci-za-sluzbena-vozila",
+    "/punjaci-za-stambene-zgrade",
+    "/punjenje-nocu-tajmer",
+    "/punjenje-preko-suko-uticnice",
+    "/punjenje-sluzbenog-automobila-kod-kuce",
+    "/vodici"
+   ],
+   "page_count": 39,
+   "runtime": true,
+   "modes": [
+    "sr",
+    "en",
+    "ru",
+    "sr-cyrl"
+   ],
+   "viewports": [],
+   "initiators": [
+    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
+   ]
+  },
+  {
+   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0b-_VY-05A&skey=45f9610178ce01c5&v=v11",
+   "file": "assets/fonts.gstatic.com/l/font__66fb5493",
+   "status": 200,
+   "bytes": 37412,
+   "type": "font/woff2",
+   "sha256": "b8b741b5e2c6a80e17bd0d2db38956fe9d3a71741021a14567d73619ae6fc705",
+   "kinds": [
+    "font"
+   ],
+   "pages": [
+    "/cesta-pitanja",
+    "/koliko-snage-treba-garazi-za-punjace",
+    "/kontakt",
+    "/operativni-lizing-elektricnog-automobila-punjenje",
+    "/punjaci-za-auto-salone"
+   ],
+   "page_count": 5,
+   "runtime": true,
+   "modes": [
+    "sr",
+    "en",
+    "ru",
+    "sr-cyrl"
+   ],
+   "viewports": [
+    "1440x900",
+    "390x844"
+   ],
+   "initiators": [
+    "https://fonts.googleapis.com/css2?family=Onest:wght@300..900&display=swap"
+   ]
+  },
+  {
+   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0b-_Ve-05A&skey=45f9610178ce01c5&v=v11",
+   "file": "assets/fonts.gstatic.com/l/font__9458f333",
+   "status": 200,
+   "bytes": 53280,
+   "type": "font/woff2",
+   "sha256": "3c8d780b16afad41df28e2dd11ebe3ecd86f80b9e08d11e75d6fb19e8220022e",
+   "kinds": [
+    "font"
+   ],
+   "pages": [
+    "/cesta-pitanja",
+    "/koliko-snage-treba-garazi-za-punjace",
+    "/kontakt",
+    "/punjaci-za-auto-salone"
+   ],
+   "page_count": 4,
+   "runtime": true,
+   "modes": [
+    "sr",
+    "en",
+    "ru"
+   ],
+   "viewports": [
+    "1440x900",
+    "390x844"
+   ],
+   "initiators": [
+    "https://fonts.googleapis.com/css2?family=Onest:wght@300..900&display=swap"
+   ]
+  },
+  {
+   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0b-_VeG05A&skey=45f9610178ce01c5&v=v11",
+   "file": "assets/fonts.gstatic.com/l/font__810d6b8e",
+   "status": 200,
+   "bytes": 35428,
+   "type": "font/woff2",
+   "sha256": "2883ee9e00cd96141bd74eb62f936e71a9fd8eb1007ebb2cf887041a0325c94b",
+   "kinds": [
+    "font"
+   ],
+   "pages": [
+    "/cesta-pitanja",
+    "/koliko-snage-treba-garazi-za-punjace",
+    "/kontakt",
+    "/operativni-lizing-elektricnog-automobila-punjenje",
+    "/punjaci-za-auto-salone"
+   ],
+   "page_count": 5,
+   "runtime": true,
+   "modes": [
+    "sr",
+    "en",
+    "ru",
+    "sr-cyrl"
+   ],
+   "viewports": [
+    "1440x900",
+    "390x844"
+   ],
+   "initiators": [
+    "https://fonts.googleapis.com/css2?family=Onest:wght@300..900&display=swap"
+   ]
+  },
+  {
+   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0b-_VeW05A&skey=45f9610178ce01c5&v=v11",
+   "file": "assets/fonts.gstatic.com/l/font__c48ac958",
+   "status": 200,
+   "bytes": 47756,
+   "type": "font/woff2",
+   "sha256": "2ea4bb3f07fffd5e0b5cedc1928d3a4d3a40258f3841c2fc3074104c5e18b640",
+   "kinds": [
+    "font"
+   ],
+   "pages": [
+    "/cesta-pitanja",
+    "/koliko-snage-treba-garazi-za-punjace",
+    "/kontakt",
+    "/operativni-lizing-elektricnog-automobila-punjenje",
+    "/punjaci-za-auto-salone"
+   ],
+   "page_count": 5,
+   "runtime": true,
+   "modes": [
+    "sr",
+    "en",
+    "ru",
+    "sr-cyrl"
+   ],
+   "viewports": [
+    "1440x900",
+    "390x844"
+   ],
+   "initiators": [
+    "https://fonts.googleapis.com/css2?family=Onest:wght@300..900&display=swap"
+   ]
   },
   {
    "url": "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmQ-HY6EQ.woff2",
@@ -15237,6 +15877,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -15245,6 +15886,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -15263,7 +15905,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -15299,6 +15941,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -15307,6 +15950,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -15325,7 +15969,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -15362,6 +16006,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -15370,6 +16015,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -15388,7 +16034,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37
+   "page_count": 39
   },
   {
    "url": "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmb-HY6EQ.woff2",
@@ -15413,6 +16059,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -15421,6 +16068,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -15439,7 +16087,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -15476,6 +16124,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -15484,6 +16133,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -15502,7 +16152,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -15539,6 +16189,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -15547,6 +16198,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -15565,7 +16217,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -15602,6 +16254,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -15610,6 +16263,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -15628,7 +16282,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime_seen": {
     "modes": [
      "sr",
@@ -15643,12 +16297,12 @@
    }
   },
   {
-   "url": "https://smcsmkkzdksocvroqekl.supabase.co/storage/v1/object/public/content/v1/fx.394432dd29e6.json",
-   "file": "assets/smcsmkkzdksocvroqekl.supabase.co/storage__v1__object__public__content__v1__fx.394432dd29e6.json",
+   "url": "https://smcsmkkzdksocvroqekl.supabase.co/storage/v1/object/public/content/v1/fx.8e94c296ae88.json",
+   "file": "assets/smcsmkkzdksocvroqekl.supabase.co/storage__v1__object__public__content__v1__fx.8e94c296ae88.json",
    "status": 200,
-   "bytes": 150,
+   "bytes": 151,
    "type": "application/json",
-   "sha256": "394432dd29e614e0cbd6531cc8513c2deeaad34283f7aa57dcb8e46e7bfa0b5b",
+   "sha256": "8e94c296ae88a1dfbec43c309c87e66e6780393ff5086794ed1a1539c7ea2542",
    "kinds": [
     "fetch"
    ],
@@ -15665,6 +16319,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -15673,6 +16328,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -15691,7 +16347,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "sr",
@@ -15714,7 +16370,7 @@
    "status": 200,
    "bytes": 1335,
    "type": "application/json",
-   "sha256": "44a5440767fe382ccf32c1f5d0e548f7b45d2eda1c06d148aae34e4ba32819cd",
+   "sha256": "ef1dd679bc0c9142e7dbde5c506de06f42d41cdee816972aea2bb219ac1b4bd3",
    "kinds": [
     "fetch"
    ],
@@ -15731,6 +16387,7 @@
     "/koliko-elektricni-auto-podize-racun-za-struju",
     "/koliko-punjaca-treba-hotelu",
     "/koliko-snage-treba-garazi-za-punjace",
+    "/komsija-puni-iz-zajednicke-uticnice",
     "/kontakt",
     "/mapa-punjaca",
     "/medija-kit",
@@ -15739,6 +16396,7 @@
     "/operativni-lizing-elektricnog-automobila-punjenje",
     "/paketi-i-cene",
     "/politika-privatnosti",
+    "/povecanje-snage-struje-eds",
     "/preporuka",
     "/prijavi-zgradu",
     "/proveri-svoju-garazu",
@@ -15757,7 +16415,7 @@
     "/punjenje-sluzbenog-automobila-kod-kuce",
     "/vodici"
    ],
-   "page_count": 37,
+   "page_count": 39,
    "runtime": true,
    "modes": [
     "sr",
@@ -16831,7 +17489,7 @@
    "status": 200,
    "bytes": 3207,
    "type": "application/json",
-   "sha256": "514521d1afccd84722e31c2bd3e0bfbc53be1a1a39b76eb72bb410f0f7a86e06",
+   "sha256": "ea1cbe4062fbd992dedcfac6b834b08f47959bd45f7e9d45eabc94c190a2582d",
    "kinds": [
     "fetch"
    ],
@@ -16851,17 +17509,17 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-702837fd45.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
    ],
    "live": true
   },
   {
-   "url": "https://www.blokvolt.rs/assets/app/v1/data.json?v=6d375013ab",
-   "file": "assets/www.blokvolt.rs/assets__app__v1__data__172ab051.json",
+   "url": "https://www.blokvolt.rs/assets/app/v1/data.json?v=c1cb1f8099",
+   "file": "assets/www.blokvolt.rs/assets__app__v1__data__f11d02cd.json",
    "status": 200,
    "bytes": 83594,
    "type": "application/json",
-   "sha256": "6d375013ab433b883d999e81f487a45471779fdb4b04e2e01f09c3ae52b94dda",
+   "sha256": "c1cb1f809902de05feb0c8998026c819965f0f67af462c3e00b607bf0ae52ecc",
    "kinds": [
     "fetch"
    ],
@@ -16881,17 +17539,17 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-702837fd45.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
    ],
    "live": true
   },
   {
-   "url": "https://www.blokvolt.rs/assets/embed/evomap-702837fd45.js",
-   "file": "assets/www.blokvolt.rs/assets__embed__evomap-702837fd45.js",
+   "url": "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js",
+   "file": "assets/www.blokvolt.rs/assets__embed__evomap-2e49e6f753.js",
    "status": 200,
-   "bytes": 158427,
+   "bytes": 158611,
    "type": "application/javascript",
-   "sha256": "702837fd4510801fdad68ea6bd5b3f9d98094693ed9e3da2ff47e705c6c1ebc3",
+   "sha256": "2e49e6f75375ca77fa46aedb22b4ecd7aabfe59e3809e36ed8c28be6de4bfe87",
    "kinds": [
     "script"
    ],
@@ -16916,12 +17574,12 @@
    "live": true
   },
   {
-   "url": "https://www.blokvolt.rs/assets/map/cene.json?v=1bbc919a13",
-   "file": "assets/www.blokvolt.rs/assets__map__cene__e005219b.json",
+   "url": "https://www.blokvolt.rs/assets/map/cene.json?v=240c8c797b",
+   "file": "assets/www.blokvolt.rs/assets__map__cene__c53a6b4a.json",
    "status": 200,
-   "bytes": 19833,
+   "bytes": 20009,
    "type": "application/json",
-   "sha256": "1bbc919a13b636a8b269bcc8a99e0986d9cfe799dfc50697bcee1485086ecb05",
+   "sha256": "240c8c797be3d054aeaa8828e66c2ba522b0c76ac57d1645ed19c6864777d013",
    "kinds": [
     "fetch"
    ],
@@ -16941,7 +17599,7 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-702837fd45.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
    ],
    "live": true
   },
@@ -16971,17 +17629,17 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-702837fd45.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
    ],
    "live": true
   },
   {
-   "url": "https://www.blokvolt.rs/assets/map/mreze.json?v=6a306edd3f",
-   "file": "assets/www.blokvolt.rs/assets__map__mreze__1fbed3f6.json",
+   "url": "https://www.blokvolt.rs/assets/map/mreze.json?v=4ae3580e08",
+   "file": "assets/www.blokvolt.rs/assets__map__mreze__0a6d2717.json",
    "status": 200,
-   "bytes": 122688,
+   "bytes": 121754,
    "type": "application/json",
-   "sha256": "6a306edd3fc79a1a3397026293000df37a4a4bfe91416a296695f5ae6b2b72f4",
+   "sha256": "4ae3580e08b0db1ac50f149dea25b019e5e05d3a0f11e5f0782deca80d02a2bd",
    "kinds": [
     "fetch"
    ],
@@ -17001,17 +17659,17 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-702837fd45.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
    ],
    "live": true
   },
   {
-   "url": "https://www.blokvolt.rs/assets/map/punjaci.json?v=b0e6c85634",
-   "file": "assets/www.blokvolt.rs/assets__map__punjaci__16b76cfc.json",
+   "url": "https://www.blokvolt.rs/assets/map/punjaci.json?v=0995a180f2",
+   "file": "assets/www.blokvolt.rs/assets__map__punjaci__26d4a79f.json",
    "status": 200,
-   "bytes": 69149,
+   "bytes": 69789,
    "type": "application/json",
-   "sha256": "b0e6c8563442f0aade7fe3373c137474fa3d0514ac1553e93a46ea196312493e",
+   "sha256": "0995a180f2704ff922e258846cdc0c14b1ecb2bf13b9c90c94cbce01f1259a5a",
    "kinds": [
     "fetch"
    ],
@@ -17031,17 +17689,17 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-702837fd45.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
    ],
    "live": true
   },
   {
-   "url": "https://www.blokvolt.rs/assets/map/tx.json?v=087506a814",
-   "file": "assets/www.blokvolt.rs/assets__map__tx__71df01c8.json",
+   "url": "https://www.blokvolt.rs/assets/map/tx.json?v=3d7b8b136f",
+   "file": "assets/www.blokvolt.rs/assets__map__tx__1651fa29.json",
    "status": 200,
-   "bytes": 76984,
+   "bytes": 77205,
    "type": "application/json",
-   "sha256": "087506a8143e05ac83245e202e7029678953ac99c991e807b53bf615b6a72734",
+   "sha256": "3d7b8b136f74920412b9309f0a5ccf4c3e7f30a460f78b69cb46c9dd7c354c9c",
    "kinds": [
     "fetch"
    ],
@@ -17061,7 +17719,7 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-702837fd45.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
    ],
    "live": true
   }
@@ -17129,6 +17787,13 @@
    ]
   },
   {
+   "host": "energetskiportal.rs",
+   "kinds": [
+    "a[href]",
+    "script"
+   ]
+  },
+  {
    "host": "europcar.rs",
    "kinds": [
     "a[href]",
@@ -17152,6 +17817,13 @@
    "host": "fonts.gstatic.com",
    "kinds": [
     "link[preconnect]"
+   ]
+  },
+  {
+   "host": "forum.beobuild.rs",
+   "kinds": [
+    "a[href]",
+    "script"
    ]
   },
   {
@@ -17204,6 +17876,13 @@
    ]
   },
   {
+   "host": "prosperitet.rs",
+   "kinds": [
+    "a[href]",
+    "script"
+   ]
+  },
+  {
    "host": "rs.bloombergadria.com",
    "kinds": [
     "a[href]",
@@ -17231,9 +17910,23 @@
    ]
   },
   {
+   "host": "tehnis.privreda.gov.rs",
+   "kinds": [
+    "a[href]",
+    "script"
+   ]
+  },
+  {
    "host": "tiles.openfreemap.org",
    "kinds": [
     "link[preconnect]"
+   ]
+  },
+  {
+   "host": "vreme.com",
+   "kinds": [
+    "a[href]",
+    "script"
    ]
   },
   {
@@ -17335,6 +18028,13 @@
    ]
   },
   {
+   "host": "www.kamatica.com",
+   "kinds": [
+    "a[href]",
+    "script"
+   ]
+  },
+  {
    "host": "www.kia.com",
    "kinds": [
     "a[href]",
@@ -17349,6 +18049,13 @@
   },
   {
    "host": "www.paragraf.rs",
+   "kinds": [
+    "a[href]",
+    "script"
+   ]
+  },
+  {
+   "host": "www.pravniportal.com",
    "kinds": [
     "a[href]",
     "script"
@@ -17424,15 +18131,15 @@
  ],
  "errors": [],
  "summary": {
-  "pages": 38,
-  "assets": 536,
-  "asset_bytes": 16643832,
+  "pages": 40,
+  "assets": 549,
+  "asset_bytes": 17402904,
   "errors": 0,
-  "runtime_files": 191,
+  "runtime_files": 202,
   "runtime_live_files": 46
  },
  "runtime": {
-  "taken": "2026-10-27T03:11:03Z",
+  "taken": "2026-10-28T09:17:24Z",
   "tool": "site/tools/snapshot_runtime.py",
   "browser": "chromium 153.0.8010.12",
   "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
@@ -17446,14 +18153,14 @@
    "1440x900",
    "390x844"
   ],
-  "pages": 38,
-  "loads": 304,
-  "seconds": 214,
-  "saved": 191,
-  "saved_bytes": 1971905,
+  "pages": 40,
+  "loads": 320,
+  "seconds": 269,
+  "saved": 202,
+  "saved_bytes": 2449683,
   "saved_live": 46,
-  "saved_live_bytes": 5738142,
-  "completed_by_reference": 6,
+  "saved_live_bytes": 5738430,
+  "completed_by_reference": 10,
   "completion_failed": [],
   "html_lang_by_mode": {
    "en": [
@@ -17477,14 +18184,14 @@
    "app-assets.website-files.com": 3,
    "app.evolako.rs": 1,
    "cdn.jsdelivr.net": 5,
-   "cdn.prod.website-files.com": 436,
+   "cdn.prod.website-files.com": 438,
    "d3e54v103j8qbb.cloudfront.net": 1,
    "fonts.googleapis.com": 2,
-   "fonts.gstatic.com": 6,
+   "fonts.gstatic.com": 13,
    "smcsmkkzdksocvroqekl.supabase.co": 2,
    "tiles.openfreemap.org": 36,
    "www.blokvolt.rs": 8,
-   "www.evolako.rs": 152
+   "www.evolako.rs": 160
   },
   "aborted": {
    "challenges.cloudflare.com": {
@@ -17497,7 +18204,7 @@
     ]
    },
    "static.cloudflareinsights.com": {
-    "requests": 296,
+    "requests": 312,
     "why": [
      "analytics/beacon/challenge host"
     ],
@@ -17507,8 +18214,33 @@
    }
   },
   "not_200": [],
-  "static_bytes_differ": [],
-  "errors": [],
+  "static_bytes_differ": [
+   {
+    "url": "https://fonts.googleapis.com/css2?family=Onest:wght@300..900&display=swap",
+    "static_sha256": "d34ff71a7025db854c6fea6c689f6c3943e4b0cbf70c8cdda0c9af3c51edc21f",
+    "runtime_sha256": "f369fc5574850791d9ae454aa33b193e7f01fd198146d6a71a69168b568a38c5"
+   }
+  ],
+  "errors": [
+   {
+    "url": "https://app.evolako.rs/embed/evo-fx-15888fadaa.js",
+    "error": "fetch: Route.fetch: Timeout 30000ms exceeded.\nCall log:\n  - → GET https://app.evolako.rs/embed/evo-fx-15888fadaa.js\n    - user-",
+    "page": "/karijera",
+    "mode": "sr"
+   },
+   {
+    "url": "https://app.evolako.rs/embed/evo-fx-15888fadaa.js",
+    "error": "fetch: Route.fetch: read ECONNRESET\nCall log:\n  - → GET https://app.evolako.rs/embed/evo-fx-15888fadaa.js\n    - user-agent: Moz",
+    "page": "/karijera-prodaja",
+    "mode": "ru"
+   },
+   {
+    "url": "https://app.evolako.rs/embed/evo-fx-15888fadaa.js",
+    "error": "fetch: Route.fetch: Timeout 30000ms exceeded.\nCall log:\n  - → GET https://app.evolako.rs/embed/evo-fx-15888fadaa.js\n    - user-",
+    "page": "/punjaci-za-hotele",
+    "mode": "ru"
+   }
+  ],
   "replay": false
  }
 }

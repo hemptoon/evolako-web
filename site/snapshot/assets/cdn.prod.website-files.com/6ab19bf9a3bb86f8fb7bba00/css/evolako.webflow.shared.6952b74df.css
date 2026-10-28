@@ -4405,14 +4405,15 @@ textarea.w-input, textarea.w-select {
 
 .mega-nav__card-visual {
   width: 100%;
-  height: 16.25em;
+  height: auto;
   position: relative;
 }
 
 .mega-nav__card-img {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
 }
 
 .mega-nav__card-content {
@@ -5545,10 +5546,12 @@ textarea.w-input, textarea.w-select {
 }
 
 .evb2-himg {
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 28px;
-  width: 100%;
-  height: 460px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 560px;
   display: block;
   box-shadow: 0 40px 90px -40px #000c;
 }
@@ -5614,9 +5617,10 @@ textarea.w-input, textarea.w-select {
 }
 
 .evb2-segimg {
+  aspect-ratio: 3 / 2;
   object-fit: cover;
   width: 100%;
-  height: 200px;
+  height: auto;
   display: block;
 }
 
@@ -5669,10 +5673,12 @@ textarea.w-input, textarea.w-select {
 }
 
 .evb2-featimg {
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 28px;
-  width: 100%;
-  height: 560px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 620px;
   display: block;
 }
 
@@ -5797,10 +5803,14 @@ textarea.w-input, textarea.w-select {
 }
 
 .evb2-gimg {
-  object-fit: cover;
+  object-fit: contain;
+  object-position: 50% 50%;
   border-radius: 14px;
+  flex-shrink: 0;
   width: 120px;
-  height: 80px;
+  max-width: 120px;
+  height: auto;
+  max-height: 80px;
   display: block;
 }
 
@@ -5830,10 +5840,12 @@ textarea.w-input, textarea.w-select {
 }
 
 .evb2-psimg {
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 28px;
-  width: 100%;
-  height: 440px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 560px;
   display: block;
 }
 
@@ -6158,11 +6170,12 @@ textarea.w-input, textarea.w-select {
 }
 
 .evb2-cv {
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 24px;
-  width: 100%;
-  max-width: 1000px;
-  height: 420px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 620px;
   display: block;
 }
 
@@ -6534,7 +6547,8 @@ textarea.w-input, textarea.w-select {
   }
 
   .evb2-himg {
-    height: 380px;
+    height: auto;
+    max-height: 480px;
   }
 
   .evb2-hbadge {
@@ -6562,7 +6576,8 @@ textarea.w-input, textarea.w-select {
   }
 
   .evb2-featimg {
-    height: 360px;
+    height: auto;
+    max-height: 520px;
   }
 
   .evb2-ps {
@@ -6571,7 +6586,8 @@ textarea.w-input, textarea.w-select {
   }
 
   .evb2-psimg {
-    height: 320px;
+    height: auto;
+    max-height: 480px;
   }
 
   .evb2-roles {
@@ -6595,7 +6611,8 @@ textarea.w-input, textarea.w-select {
   }
 
   .evb2-cv {
-    height: 340px;
+    height: auto;
+    max-height: 520px;
   }
 
   .evb2-segk {
@@ -6707,7 +6724,8 @@ textarea.w-input, textarea.w-select {
   }
 
   .evb2-himg {
-    height: 260px;
+    height: auto;
+    max-height: 420px;
   }
 
   .evb2-h1.evb2-h1s {
@@ -6720,11 +6738,12 @@ textarea.w-input, textarea.w-select {
   }
 
   .evb2-segimg {
-    height: 190px;
+    height: auto;
   }
 
   .evb2-featimg {
-    height: 260px;
+    height: auto;
+    max-height: 460px;
   }
 
   .evb2-flist, .evb2-cta {
@@ -6754,11 +6773,14 @@ textarea.w-input, textarea.w-select {
 
   .evb2-gimg {
     width: 88px;
-    height: 66px;
+    max-width: 88px;
+    height: auto;
+    max-height: 66px;
   }
 
   .evb2-psimg {
-    height: 240px;
+    height: auto;
+    max-height: 420px;
   }
 
   .evb2-note {
@@ -6786,7 +6808,8 @@ textarea.w-input, textarea.w-select {
   }
 
   .evb2-cv {
-    height: 220px;
+    height: auto;
+    max-height: 460px;
   }
 }
 
@@ -6830,7 +6853,8 @@ textarea.w-input, textarea.w-select {
   }
 
   .evb2-himg {
-    height: 220px;
+    height: auto;
+    max-height: 380px;
   }
 
   .evb2-hbadge {
