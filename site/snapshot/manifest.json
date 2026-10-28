@@ -1,13 +1,13 @@
 {
  "base": "https://www.evolako.rs",
- "taken": "2026-10-28T09:12:31Z",
+ "taken": "2026-10-28T13:18:08Z",
  "pages": [
   {
    "path": "/",
    "file": "pages/index.html",
    "status": 200,
    "bytes": 200599,
-   "sha256": "e93725a3f7274311f838bdd58ca95721cfc0cf805a64aa373d941c84757da9a3",
+   "sha256": "6fac7737d5b85c3da146fe968a17d1d31f435561c636bdbb40772e8a88de1367",
    "title": "Kućni punjač za električni auto sa ugradnjom | Evolako",
    "final_url": "https://www.evolako.rs/"
   },
@@ -16,7 +16,7 @@
    "file": "pages/cena-punjaca-po-parking-mestu.html",
    "status": 200,
    "bytes": 176836,
-   "sha256": "51eea71c7e7a6b78295e58d179f770cc3d63d16fc8b9059b1f6e365b6934972d",
+   "sha256": "23a2a466f77aa85f32615de8023411b17bea67f9cfa89f8c166243da3a6fd0df",
    "title": "Cena punjača po parking mestu: šta ulazi u cenu | Evolako",
    "final_url": "https://www.evolako.rs/cena-punjaca-po-parking-mestu"
   },
@@ -25,7 +25,7 @@
    "file": "pages/cesta-pitanja.html",
    "status": 200,
    "bytes": 175568,
-   "sha256": "ab69685839d7ac7eaa40f314cd92b907ec3632ff13b62b01f1b83bb6900a6bd2",
+   "sha256": "e10144a380ec9e09ad45f534c2a2836bf7c6f48391f1fdb9eb680519036e0753",
    "title": "Česta pitanja: punjač u zgradi, struja i skupština | Evolako",
    "final_url": "https://www.evolako.rs/cesta-pitanja"
   },
@@ -34,7 +34,7 @@
    "file": "pages/garaza-za-izdavanje-sa-punjacem.html",
    "status": 200,
    "bytes": 187203,
-   "sha256": "2d9e1f91777056fb9612ed76456c6761dff771380bf804917ff9251a3cf815fa",
+   "sha256": "a1a59b3d5d877db53e5fcaa37d53b109d4e681f7dace497f17a470735115eedf",
    "title": "Garaža za izdavanje sa punjačem: struja uz kiriju | Evolako",
    "final_url": "https://www.evolako.rs/garaza-za-izdavanje-sa-punjacem"
   },
@@ -43,7 +43,7 @@
    "file": "pages/kalkulator-cene-punjaca.html",
    "status": 200,
    "bytes": 215006,
-   "sha256": "c0e849092e5a406dcc6e102dc17dabb84454e6ef4e4233a6ba2cdcd3bc5e4aea",
+   "sha256": "ebbf80ef1bad2db81db314f9ce06d75bfb853e691acfec924c7142fdc1dac078",
    "title": "Kalkulator cene punjača: zgrada, hotel, firma | Evolako",
    "final_url": "https://www.evolako.rs/kalkulator-cene-punjaca"
   },
@@ -52,7 +52,7 @@
    "file": "pages/karijera.html",
    "status": 200,
    "bytes": 221304,
-   "sha256": "dc96c67d100a5d2e19c64ae641eba83e3758eb212d2718e3d97c8e47b5fb4d26",
+   "sha256": "85a6db7aaf90fdf009715e5cdf3f65ca79b6e029b098d2cb029673a0a2d95ee4",
    "title": "Karijera u Evolako: prodaja, ugradnja i pravo",
    "final_url": "https://www.evolako.rs/karijera"
   },
@@ -61,7 +61,7 @@
    "file": "pages/karijera-elektricar.html",
    "status": 200,
    "bytes": 206044,
-   "sha256": "82c5f6eeff1c3bb3b211203ce7ceb90216019078df7d2ea4c0262e48609aa759",
+   "sha256": "6e13d842464c20c05dbc11322d8d1efac78c322db3a8d22691fdb4d48a0de73e",
    "title": "Električar za ugradnju punjača — posao u Evolako",
    "final_url": "https://www.evolako.rs/karijera-elektricar"
   },
@@ -70,7 +70,7 @@
    "file": "pages/karijera-pravnik.html",
    "status": 200,
    "bytes": 205014,
-   "sha256": "d87062c2e4c905fd3ae7cead58d1673ccdf0ae7c84f328bc8b2d15e4daf58ce7",
+   "sha256": "71be405afa946390127087bc58b0862d710bb57c026cbbfbe40b1faa4402088a",
    "title": "Pravnik za saradnju i ugovore — posao u Evolako",
    "final_url": "https://www.evolako.rs/karijera-pravnik"
   },
@@ -79,7 +79,7 @@
    "file": "pages/karijera-prodaja.html",
    "status": 200,
    "bytes": 207034,
-   "sha256": "a734624d9d523ad483bbb6103067bb1157dde2d740a17dc9a831915ac27c3527",
+   "sha256": "825374aba7df89b654c621dbaafed0c5853acd44665e9d39c779a7e10979a2b2",
    "title": "Prodavac kućnih punjača — posao u Evolako",
    "final_url": "https://www.evolako.rs/karijera-prodaja"
   },
@@ -88,7 +88,7 @@
    "file": "pages/koliko-elektricni-auto-podize-racun-za-struju.html",
    "status": 200,
    "bytes": 172953,
-   "sha256": "26ba95d1c5c33cd3cebcee9dea0a6d7d763607cb349423c80d29fe47786e7a16",
+   "sha256": "d68040d8fec580c3e918ff3940c3040a9b414343fdc02fa5a286bb8c01e484e2",
    "title": "Koliko električni auto podiže račun za struju | Evolako",
    "final_url": "https://www.evolako.rs/koliko-elektricni-auto-podize-racun-za-struju"
   },
@@ -97,7 +97,7 @@
    "file": "pages/koliko-punjaca-treba-hotelu.html",
    "status": 200,
    "bytes": 180106,
-   "sha256": "32bf9612b708339f675ebb4791e3a70c5047b31e7d563c538cc4e2878e9594f1",
+   "sha256": "cf96248b131a8a4346cfab77a76f6b27c9daf1c20ff1272428d78ff26b5ce32d",
    "title": "Punjači za hotel: koliko mesta i koja snaga | Evolako",
    "final_url": "https://www.evolako.rs/koliko-punjaca-treba-hotelu"
   },
@@ -106,7 +106,7 @@
    "file": "pages/koliko-snage-treba-garazi-za-punjace.html",
    "status": 200,
    "bytes": 178434,
-   "sha256": "c89edfad8d77ea4e60a5cd68006b39cc78e81b585001760067777a392916fc93",
+   "sha256": "6c48f26052072116de45d78d095b02c57f01b42f8a1095d5cf48bd1d5e8304de",
    "title": "Koliko snage treba garaži za 10, 20 ili 50 punjača | Evolako",
    "final_url": "https://www.evolako.rs/koliko-snage-treba-garazi-za-punjace"
   },
@@ -115,7 +115,7 @@
    "file": "pages/komsija-puni-iz-zajednicke-uticnice.html",
    "status": 200,
    "bytes": 173518,
-   "sha256": "47590580a12e1132397ee370cc93fdd5352410e3f7c1a02f8844e317f97ae1f3",
+   "sha256": "8b08d2cabe43a4495984cd0c6b7a088f33c698a4636b47ad1eb48d9a1387bffc",
    "title": "Komšija puni auto iz zajedničke utičnice | Evolako",
    "final_url": "https://www.evolako.rs/komsija-puni-iz-zajednicke-uticnice"
   },
@@ -124,7 +124,7 @@
    "file": "pages/kontakt.html",
    "status": 200,
    "bytes": 158044,
-   "sha256": "7ea17eb87745b80aee650cd8ab9389501bd9ff631421e516e2d60a7cce4a7828",
+   "sha256": "890437c02e8856d9935f02f74a9fa70b680153868cd8c461048ccba89e95ba90",
    "title": "Kontakt — Evolako | Beograd · Novi Sad · Vojvodina",
    "final_url": "https://www.evolako.rs/kontakt"
   },
@@ -133,7 +133,7 @@
    "file": "pages/mapa-punjaca.html",
    "status": 200,
    "bytes": 179069,
-   "sha256": "68ff4941b00bda153e4b01fc0aaca73855e8aa446b57d65d2047f7a8a1505a6b",
+   "sha256": "4952b8689fedfc2fa6c1e6d9ce202e4cdf65b306420789ad2c78d1b02f982c58",
    "title": "Mapa punjača za električne automobile u Srbiji | Evolako",
    "final_url": "https://www.evolako.rs/mapa-punjaca"
   },
@@ -142,7 +142,7 @@
    "file": "pages/medija-kit.html",
    "status": 200,
    "bytes": 165193,
-   "sha256": "8ab137e30b984d0827f40e04475e2ec739c67f848aa94e78c9df19a79ad73207",
+   "sha256": "6c5ba530205823779f1198417ee643208dd2172f06e54d26becbbe239ec1e431",
    "title": "Za medije i partnere — medija kit | Evolako",
    "final_url": "https://www.evolako.rs/medija-kit"
   },
@@ -151,7 +151,7 @@
    "file": "pages/novogradnja-garaza-spremna-za-punjace.html",
    "status": 200,
    "bytes": 177815,
-   "sha256": "4a444400734563bf9fa9a54ac7da22d153caebdeb88819bdccc3d0cb6c755ddd",
+   "sha256": "0f79dd9a092967826fe5356cddd8504a79692c7c261eb065ba7c5a06158106bb",
    "title": "Priprema garaže za punjače u novogradnji | Evolako",
    "final_url": "https://www.evolako.rs/novogradnja-garaza-spremna-za-punjace"
   },
@@ -160,7 +160,7 @@
    "file": "pages/novosti.html",
    "status": 200,
    "bytes": 155709,
-   "sha256": "9596f165e62d9d50f3e0e04d72bb13004191c6fd49b032d0d8f05c1421ced0c8",
+   "sha256": "9f86376fb5dadb62a6e006c86091981768e18892223b078b16896153418df343",
    "title": "Novosti o punjenju kod kuće i u zgradi | Evolako",
    "final_url": "https://www.evolako.rs/novosti"
   },
@@ -169,7 +169,7 @@
    "file": "pages/operativni-lizing-elektricnog-automobila-punjenje.html",
    "status": 200,
    "bytes": 179902,
-   "sha256": "a8ca3f4166cbb774bd36a00d15e11d8d87c9514cededb064df038b16c9cde830",
+   "sha256": "8e90990ac73a886d3bb2b75043095541353e66075146cfb85d34c09d78654b03",
    "title": "Električni auto na operativni lizing i punjač | Evolako",
    "final_url": "https://www.evolako.rs/operativni-lizing-elektricnog-automobila-punjenje"
   },
@@ -178,7 +178,7 @@
    "file": "pages/paketi-i-cene.html",
    "status": 200,
    "bytes": 173837,
-   "sha256": "5f6f6e7ac3cf1250442818a0bd46504a532fcd895621f4bf90c11f4a05e6a9da",
+   "sha256": "c98bc61022f4ab04bc17d66615554d9de9b88af4609394782fc9e53491a53e79",
    "title": "Cena kućnog punjača sa ugradnjom: paketi | Evolako",
    "final_url": "https://www.evolako.rs/paketi-i-cene"
   },
@@ -187,7 +187,7 @@
    "file": "pages/politika-privatnosti.html",
    "status": 200,
    "bytes": 170327,
-   "sha256": "b525c3484f4ae552633228e7aaf38c907448fc20c057cec6ac359376574b8c3e",
+   "sha256": "20163e276b67ecbdeb917dbabb21adc8103258b3932e201089189e5273c23745",
    "title": "Politika privatnosti i uslovi korišćenja | Evolako",
    "final_url": "https://www.evolako.rs/politika-privatnosti"
   },
@@ -196,7 +196,7 @@
    "file": "pages/povecanje-snage-struje-eds.html",
    "status": 200,
    "bytes": 196772,
-   "sha256": "359f7cc7ebcac33786644f53005ece11a2dbacd6dc8029caa715113772a3c26a",
+   "sha256": "6b298646018f93dc4e0287391a1030da2a19bee50ea2a2019d1eecc3936aba89",
    "title": "Povećanje snage struje kod EDS-a — korak po korak | Evolako",
    "final_url": "https://www.evolako.rs/povecanje-snage-struje-eds"
   },
@@ -205,7 +205,7 @@
    "file": "pages/preporuka.html",
    "status": 200,
    "bytes": 175495,
-   "sha256": "ba8bad6412a61f76443f82292450a6edf1a205e5e4e2a0928c297fb6cfd1cba8",
+   "sha256": "34dd465add2627271d52a60227089aa576538cc9f0d3214483e2fd8aaeb8f67c",
    "title": "Preporuka: još 2 meseca pretplate besplatno | Evolako",
    "final_url": "https://www.evolako.rs/preporuka"
   },
@@ -214,7 +214,7 @@
    "file": "pages/prijavi-zgradu.html",
    "status": 200,
    "bytes": 205091,
-   "sha256": "792dcf614abd044865ddbf3b877835048e79831cd477326b2c69da55315d3643",
+   "sha256": "b3a4e89d1efdd0029cea499591d40f57fce1848fc683bf108263505e342683aa",
    "title": "Prijavi svoju zgradu za punjače | Evolako",
    "final_url": "https://www.evolako.rs/prijavi-zgradu"
   },
@@ -223,7 +223,7 @@
    "file": "pages/proveri-svoju-garazu.html",
    "status": 200,
    "bytes": 167282,
-   "sha256": "08dd1f5b5daf632a036238bad18b9f3121b06370a8790d5b953de18de17c1b2a",
+   "sha256": "4b155b3262583c3ecd174e759365cffca91b37ae00ea95b63f18aeabe84f970a",
    "title": "Proveri svoju garažu — da li može kućni punjač? | Evolako",
    "final_url": "https://www.evolako.rs/proveri-svoju-garazu"
   },
@@ -232,7 +232,7 @@
    "file": "pages/punjac-11-ili-22-kw.html",
    "status": 200,
    "bytes": 169902,
-   "sha256": "f26c7619fa51070c7a274e6cfab85556ba51cd2f0aff79fbb6bce88369e08a4a",
+   "sha256": "457a43c43a0abb384725eb59170feaa1df1b7779b8a869950dcb81ed2fd06879",
    "title": "Punjač 11 ili 22 kW: koliko snage treba kod kuće | Evolako",
    "final_url": "https://www.evolako.rs/punjac-11-ili-22-kw"
   },
@@ -241,7 +241,7 @@
    "file": "pages/punjaci-u-garazi-zgrade-plan-za-upravnike.html",
    "status": 200,
    "bytes": 181682,
-   "sha256": "edf38ddec5aecd21ac36b1321ad7e3e71ebb913f88b881949886be6aeacd7259",
+   "sha256": "e98fed8f092fcaa25ca359d324f134d7be8cd083509cda110fad63478862d659",
    "title": "Punjači u garaži zgrade: 5 koraka za upravnike | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-u-garazi-zgrade-plan-za-upravnike"
   },
@@ -250,7 +250,7 @@
    "file": "pages/punjaci-za-auto-salone.html",
    "status": 200,
    "bytes": 197241,
-   "sha256": "1bd9595e7aba4a94bbae5a94f5bc611fc4d698ddb2e445ad71df8a146f7ea3ac",
+   "sha256": "95a6a6d9f42447e667e8a7e6f7a6e746697ca82cbca15f486108b157421f2d5f",
    "title": "Punjači za auto salone i njihove kupce | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-auto-salone"
   },
@@ -259,7 +259,7 @@
    "file": "pages/punjaci-za-firme.html",
    "status": 200,
    "bytes": 213418,
-   "sha256": "7cb3d9595517429d35093632d95bbe2a68c0d18893d2f00ba83c4d7f87b37918",
+   "sha256": "6d3f644f228450e96553c91d1cad9549dc960d85ad72944d1e8517aa1e891013",
    "title": "Punjači za firme, zgrade i hotele u Srbiji | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-firme"
   },
@@ -268,7 +268,7 @@
    "file": "pages/punjaci-za-hotele.html",
    "status": 200,
    "bytes": 200075,
-   "sha256": "6dde998ec13eae3d544cad2346065eaf7d7ccd983818196e2ac2d250ec8a8e51",
+   "sha256": "d007c2de9a46bb8ec24cc757ad7ffe6e935eec7396a8ba361289332d0e4a01d7",
    "title": "Punjači za električne automobile za hotele | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-hotele"
   },
@@ -277,7 +277,7 @@
    "file": "pages/punjaci-za-novogradnju.html",
    "status": 200,
    "bytes": 204342,
-   "sha256": "b7e7b8d2309db60a50167262be533cfbe187c9d311c0ff70e4e1be12fa1cbce0",
+   "sha256": "2049edee4abbb8281f51175b9a9cd4ce93f8d50d78a9377c8b09075d6d71caba",
    "title": "Punjači za novogradnju i investitore | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-novogradnju"
   },
@@ -286,7 +286,7 @@
    "file": "pages/punjaci-za-parking-garaze.html",
    "status": 200,
    "bytes": 203148,
-   "sha256": "54fb9b8a24bb8c14fd1d1f7e990ed1b0e7e6ad7f297a45cff4c72b92ea7b08d9",
+   "sha256": "ec1bfa53c8d611c178c01d2240237dfc8b142549fc378e0283a93363b16e8b24",
    "title": "Punjači za parking garaže i parkinge firmi | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-parking-garaze"
   },
@@ -295,7 +295,7 @@
    "file": "pages/punjaci-za-parkinge.html",
    "status": 200,
    "bytes": 205612,
-   "sha256": "acdad3731fb63acd44b2eb32a6d7508e359c1e48e0764a96dbd375121e314f38",
+   "sha256": "b4de4b4ddbf006fb482513abe22726523b2954b957a4c03832876ab50434044c",
    "title": "Punjači za čuvane i dugoročne parkinge | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-parkinge"
   },
@@ -304,7 +304,7 @@
    "file": "pages/punjaci-za-sluzbena-vozila.html",
    "status": 200,
    "bytes": 204434,
-   "sha256": "cf3e560cff2e46e83c90abd0b5288034c93284ac6f0b71163bdf65b30ba08968",
+   "sha256": "d604e0f5bd6c0dc0f75186889e3487ad0c2fd953cb91cd598ccfde3e44b38e14",
    "title": "Punjač za službena vozila kod kuće i u firmi | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-sluzbena-vozila"
   },
@@ -313,7 +313,7 @@
    "file": "pages/punjaci-za-stambene-zgrade.html",
    "status": 200,
    "bytes": 211299,
-   "sha256": "c7a477bbf8696bf280ab81efc3fbd9f44d956d9a59cfdd815d0c7260fc6ea517",
+   "sha256": "7971bf82499adfe41b702270e7bc73e895a96ea832094115fce580b0f6554f27",
    "title": "Punjači za stambene zgrade — za upravnike | Evolako",
    "final_url": "https://www.evolako.rs/punjaci-za-stambene-zgrade"
   },
@@ -322,7 +322,7 @@
    "file": "pages/punjenje-nocu-tajmer.html",
    "status": 200,
    "bytes": 171254,
-   "sha256": "86e7e97dd9586cbbd082014d41ed4fd3888e226489e11b2929a1a553d22526cd",
+   "sha256": "20ab40a9f272edcdcc7d9cb4a5ba352306c4cfef0b4785a709d1f9f83e6bb64d",
    "title": "Kako da auto puni samo noću: tajmer | Evolako",
    "final_url": "https://www.evolako.rs/punjenje-nocu-tajmer"
   },
@@ -331,7 +331,7 @@
    "file": "pages/punjenje-preko-suko-uticnice.html",
    "status": 200,
    "bytes": 174801,
-   "sha256": "57316dfc0e51f45aa0574a87d08e626dfbca72400a86065580af27253d5e4514",
+   "sha256": "631ede265e526c4702b43303589be6cbe7360f10c626317a2593913322192038",
    "title": "Punjenje auta na šuko utičnicu: koliko puni | Evolako",
    "final_url": "https://www.evolako.rs/punjenje-preko-suko-uticnice"
   },
@@ -340,7 +340,7 @@
    "file": "pages/punjenje-sluzbenog-automobila-kod-kuce.html",
    "status": 200,
    "bytes": 178310,
-   "sha256": "327f965bd9031444f9c7fd840a1744245d7e6c53c01cac889f28e04f55ff56d8",
+   "sha256": "984315372aa528fa235be19d6d98753cae0ad2e5e962a529ba48741ec19ed613",
    "title": "Punjenje službenog automobila kod kuće | Evolako",
    "final_url": "https://www.evolako.rs/punjenje-sluzbenog-automobila-kod-kuce"
   },
@@ -349,7 +349,7 @@
    "file": "pages/vodici.html",
    "status": 200,
    "bytes": 149937,
-   "sha256": "fff89169aa39d4152642d9ba1a521e3f6c1750f0f878de9def4c3f3abef398b8",
+   "sha256": "9532b5f5c2ae473a860c141f2a90350d162afc733af54eb3a313cc81d0671dec",
    "title": "Vodiči: punjenje električnog auta kod kuće | Evolako",
    "final_url": "https://www.evolako.rs/vodici"
   },
@@ -810,7 +810,7 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-3aafca1c3b.js"
    ]
   },
   {
@@ -839,7 +839,7 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-3aafca1c3b.js"
    ]
   },
   {
@@ -14818,12 +14818,12 @@
    }
   },
   {
-   "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/css/evolako.webflow.shared.6952b74df.css",
-   "file": "assets/cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/css/evolako.webflow.shared.6952b74df.css",
+   "url": "https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/css/evolako.webflow.shared.b954b0947.css",
+   "file": "assets/cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/css/evolako.webflow.shared.b954b0947.css",
    "status": 200,
-   "bytes": 130110,
+   "bytes": 130140,
    "type": "text/css",
-   "sha256": "832e02d55eb8441e1398f35dd89022dda5fad2b0b848538020dbf443874f0fbf",
+   "sha256": "3012e2996dafc356ea8b0c559b0e0db9213d0991b400fcd3544abd19a217128d",
    "kinds": [
     "link[stylesheet]"
    ],
@@ -15329,9 +15329,9 @@
    "url": "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext",
    "file": "assets/fonts.googleapis.com/css__7d635e1e",
    "status": 200,
-   "bytes": 24305,
+   "bytes": 22435,
    "type": "text/css",
-   "sha256": "bb09384d4c9f52e3f058125c01d1fc0064820ae425dbcfeaca4773c0bc22f37c",
+   "sha256": "5afe485789643d2be7a6f49cbe864a3c01435ac8a499627ca4118fbe3bf1bde3",
    "kinds": [
     "stylesheet"
    ],
@@ -15392,467 +15392,6 @@
     "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
    ],
    "varies": true
-  },
-  {
-   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_VY-05A&skey=45f9610178ce01c5&v=v11",
-   "file": "assets/fonts.gstatic.com/l/font__7831151d",
-   "status": 200,
-   "bytes": 36184,
-   "type": "font/woff2",
-   "sha256": "69c1f4ea44b6e44b48f9ef487cc92d875ad8838b440d5be9f510011d89f7117b",
-   "kinds": [
-    "css-ref"
-   ],
-   "pages": [
-    "/",
-    "/cena-punjaca-po-parking-mestu",
-    "/cesta-pitanja",
-    "/garaza-za-izdavanje-sa-punjacem",
-    "/kalkulator-cene-punjaca",
-    "/karijera",
-    "/karijera-elektricar",
-    "/karijera-pravnik",
-    "/karijera-prodaja",
-    "/koliko-elektricni-auto-podize-racun-za-struju",
-    "/koliko-punjaca-treba-hotelu",
-    "/koliko-snage-treba-garazi-za-punjace",
-    "/komsija-puni-iz-zajednicke-uticnice",
-    "/kontakt",
-    "/mapa-punjaca",
-    "/medija-kit",
-    "/novogradnja-garaza-spremna-za-punjace",
-    "/novosti",
-    "/operativni-lizing-elektricnog-automobila-punjenje",
-    "/paketi-i-cene",
-    "/politika-privatnosti",
-    "/povecanje-snage-struje-eds",
-    "/preporuka",
-    "/prijavi-zgradu",
-    "/proveri-svoju-garazu",
-    "/punjac-11-ili-22-kw",
-    "/punjaci-u-garazi-zgrade-plan-za-upravnike",
-    "/punjaci-za-auto-salone",
-    "/punjaci-za-firme",
-    "/punjaci-za-hotele",
-    "/punjaci-za-novogradnju",
-    "/punjaci-za-parking-garaze",
-    "/punjaci-za-parkinge",
-    "/punjaci-za-sluzbena-vozila",
-    "/punjaci-za-stambene-zgrade",
-    "/punjenje-nocu-tajmer",
-    "/punjenje-preko-suko-uticnice",
-    "/punjenje-sluzbenog-automobila-kod-kuce",
-    "/vodici"
-   ],
-   "page_count": 39,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [],
-   "initiators": [
-    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
-   ]
-  },
-  {
-   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_VZ205A&skey=45f9610178ce01c5&v=v11",
-   "file": "assets/fonts.gstatic.com/l/font__ef5038d3",
-   "status": 200,
-   "bytes": 37388,
-   "type": "font/woff2",
-   "sha256": "d38c05a4615f745c3b4f00005c8750e427222cd6b796c5f75d00e17bad8b88f1",
-   "kinds": [
-    "css-ref"
-   ],
-   "pages": [
-    "/",
-    "/cena-punjaca-po-parking-mestu",
-    "/cesta-pitanja",
-    "/garaza-za-izdavanje-sa-punjacem",
-    "/kalkulator-cene-punjaca",
-    "/karijera",
-    "/karijera-elektricar",
-    "/karijera-pravnik",
-    "/karijera-prodaja",
-    "/koliko-elektricni-auto-podize-racun-za-struju",
-    "/koliko-punjaca-treba-hotelu",
-    "/koliko-snage-treba-garazi-za-punjace",
-    "/komsija-puni-iz-zajednicke-uticnice",
-    "/kontakt",
-    "/mapa-punjaca",
-    "/medija-kit",
-    "/novogradnja-garaza-spremna-za-punjace",
-    "/novosti",
-    "/operativni-lizing-elektricnog-automobila-punjenje",
-    "/paketi-i-cene",
-    "/politika-privatnosti",
-    "/povecanje-snage-struje-eds",
-    "/preporuka",
-    "/prijavi-zgradu",
-    "/proveri-svoju-garazu",
-    "/punjac-11-ili-22-kw",
-    "/punjaci-u-garazi-zgrade-plan-za-upravnike",
-    "/punjaci-za-auto-salone",
-    "/punjaci-za-firme",
-    "/punjaci-za-hotele",
-    "/punjaci-za-novogradnju",
-    "/punjaci-za-parking-garaze",
-    "/punjaci-za-parkinge",
-    "/punjaci-za-sluzbena-vozila",
-    "/punjaci-za-stambene-zgrade",
-    "/punjenje-nocu-tajmer",
-    "/punjenje-preko-suko-uticnice",
-    "/punjenje-sluzbenog-automobila-kod-kuce",
-    "/vodici"
-   ],
-   "page_count": 39,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [],
-   "initiators": [
-    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
-   ]
-  },
-  {
-   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_Ve-05A&skey=45f9610178ce01c5&v=v11",
-   "file": "assets/fonts.gstatic.com/l/font__1c25e1f3",
-   "status": 200,
-   "bytes": 52328,
-   "type": "font/woff2",
-   "sha256": "8223753210420b30728da78f845d5f4c218519c13af41ace93bea8a617f24a4e",
-   "kinds": [
-    "font"
-   ],
-   "pages": [
-    "/"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "ru"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
-   ]
-  },
-  {
-   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_Ve605A&skey=45f9610178ce01c5&v=v11",
-   "file": "assets/fonts.gstatic.com/l/font__c876b2f3",
-   "status": 200,
-   "bytes": 42104,
-   "type": "font/woff2",
-   "sha256": "7caa13148e791e79eb966c3137b933686b4747c1854620415c6188b194b72487",
-   "kinds": [
-    "css-ref"
-   ],
-   "pages": [
-    "/",
-    "/cena-punjaca-po-parking-mestu",
-    "/cesta-pitanja",
-    "/garaza-za-izdavanje-sa-punjacem",
-    "/kalkulator-cene-punjaca",
-    "/karijera",
-    "/karijera-elektricar",
-    "/karijera-pravnik",
-    "/karijera-prodaja",
-    "/koliko-elektricni-auto-podize-racun-za-struju",
-    "/koliko-punjaca-treba-hotelu",
-    "/koliko-snage-treba-garazi-za-punjace",
-    "/komsija-puni-iz-zajednicke-uticnice",
-    "/kontakt",
-    "/mapa-punjaca",
-    "/medija-kit",
-    "/novogradnja-garaza-spremna-za-punjace",
-    "/novosti",
-    "/operativni-lizing-elektricnog-automobila-punjenje",
-    "/paketi-i-cene",
-    "/politika-privatnosti",
-    "/povecanje-snage-struje-eds",
-    "/preporuka",
-    "/prijavi-zgradu",
-    "/proveri-svoju-garazu",
-    "/punjac-11-ili-22-kw",
-    "/punjaci-u-garazi-zgrade-plan-za-upravnike",
-    "/punjaci-za-auto-salone",
-    "/punjaci-za-firme",
-    "/punjaci-za-hotele",
-    "/punjaci-za-novogradnju",
-    "/punjaci-za-parking-garaze",
-    "/punjaci-za-parkinge",
-    "/punjaci-za-sluzbena-vozila",
-    "/punjaci-za-stambene-zgrade",
-    "/punjenje-nocu-tajmer",
-    "/punjenje-preko-suko-uticnice",
-    "/punjenje-sluzbenog-automobila-kod-kuce",
-    "/vodici"
-   ],
-   "page_count": 39,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [],
-   "initiators": [
-    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
-   ]
-  },
-  {
-   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_VeG05A&skey=45f9610178ce01c5&v=v11",
-   "file": "assets/fonts.gstatic.com/l/font__236a9676",
-   "status": 200,
-   "bytes": 34748,
-   "type": "font/woff2",
-   "sha256": "4c5810f07432a86a369bc0c10972f94f3849129d865a52a6d09a7cd69ce178f9",
-   "kinds": [
-    "font"
-   ],
-   "pages": [
-    "/"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "ru"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
-   ]
-  },
-  {
-   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_VeW05A&skey=45f9610178ce01c5&v=v11",
-   "file": "assets/fonts.gstatic.com/l/font__e206f05e",
-   "status": 200,
-   "bytes": 47428,
-   "type": "font/woff2",
-   "sha256": "61542a2096dad23640ba9e163f8b382d034129f304c054eb62753ece99fd1c89",
-   "kinds": [
-    "font"
-   ],
-   "pages": [
-    "/"
-   ],
-   "page_count": 1,
-   "runtime": true,
-   "modes": [
-    "ru"
-   ],
-   "viewports": [
-    "390x844"
-   ],
-   "initiators": [
-    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
-   ]
-  },
-  {
-   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0Za_Vey05A&skey=45f9610178ce01c5&v=v11",
-   "file": "assets/fonts.gstatic.com/l/font__89a62c67",
-   "status": 200,
-   "bytes": 51852,
-   "type": "font/woff2",
-   "sha256": "f94378028e8fc370988aa3922ae0294db91db0e03ab4458363098fb0a92e2af3",
-   "kinds": [
-    "css-ref"
-   ],
-   "pages": [
-    "/",
-    "/cena-punjaca-po-parking-mestu",
-    "/cesta-pitanja",
-    "/garaza-za-izdavanje-sa-punjacem",
-    "/kalkulator-cene-punjaca",
-    "/karijera",
-    "/karijera-elektricar",
-    "/karijera-pravnik",
-    "/karijera-prodaja",
-    "/koliko-elektricni-auto-podize-racun-za-struju",
-    "/koliko-punjaca-treba-hotelu",
-    "/koliko-snage-treba-garazi-za-punjace",
-    "/komsija-puni-iz-zajednicke-uticnice",
-    "/kontakt",
-    "/mapa-punjaca",
-    "/medija-kit",
-    "/novogradnja-garaza-spremna-za-punjace",
-    "/novosti",
-    "/operativni-lizing-elektricnog-automobila-punjenje",
-    "/paketi-i-cene",
-    "/politika-privatnosti",
-    "/povecanje-snage-struje-eds",
-    "/preporuka",
-    "/prijavi-zgradu",
-    "/proveri-svoju-garazu",
-    "/punjac-11-ili-22-kw",
-    "/punjaci-u-garazi-zgrade-plan-za-upravnike",
-    "/punjaci-za-auto-salone",
-    "/punjaci-za-firme",
-    "/punjaci-za-hotele",
-    "/punjaci-za-novogradnju",
-    "/punjaci-za-parking-garaze",
-    "/punjaci-za-parkinge",
-    "/punjaci-za-sluzbena-vozila",
-    "/punjaci-za-stambene-zgrade",
-    "/punjenje-nocu-tajmer",
-    "/punjenje-preko-suko-uticnice",
-    "/punjenje-sluzbenog-automobila-kod-kuce",
-    "/vodici"
-   ],
-   "page_count": 39,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [],
-   "initiators": [
-    "https://fonts.googleapis.com/css?family=Onest:300,400,500,600,800&subset=cyrillic,latin,latin-ext"
-   ]
-  },
-  {
-   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0b-_VY-05A&skey=45f9610178ce01c5&v=v11",
-   "file": "assets/fonts.gstatic.com/l/font__66fb5493",
-   "status": 200,
-   "bytes": 37412,
-   "type": "font/woff2",
-   "sha256": "b8b741b5e2c6a80e17bd0d2db38956fe9d3a71741021a14567d73619ae6fc705",
-   "kinds": [
-    "font"
-   ],
-   "pages": [
-    "/cesta-pitanja",
-    "/koliko-snage-treba-garazi-za-punjace",
-    "/kontakt",
-    "/operativni-lizing-elektricnog-automobila-punjenje",
-    "/punjaci-za-auto-salone"
-   ],
-   "page_count": 5,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://fonts.googleapis.com/css2?family=Onest:wght@300..900&display=swap"
-   ]
-  },
-  {
-   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0b-_Ve-05A&skey=45f9610178ce01c5&v=v11",
-   "file": "assets/fonts.gstatic.com/l/font__9458f333",
-   "status": 200,
-   "bytes": 53280,
-   "type": "font/woff2",
-   "sha256": "3c8d780b16afad41df28e2dd11ebe3ecd86f80b9e08d11e75d6fb19e8220022e",
-   "kinds": [
-    "font"
-   ],
-   "pages": [
-    "/cesta-pitanja",
-    "/koliko-snage-treba-garazi-za-punjace",
-    "/kontakt",
-    "/punjaci-za-auto-salone"
-   ],
-   "page_count": 4,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://fonts.googleapis.com/css2?family=Onest:wght@300..900&display=swap"
-   ]
-  },
-  {
-   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0b-_VeG05A&skey=45f9610178ce01c5&v=v11",
-   "file": "assets/fonts.gstatic.com/l/font__810d6b8e",
-   "status": 200,
-   "bytes": 35428,
-   "type": "font/woff2",
-   "sha256": "2883ee9e00cd96141bd74eb62f936e71a9fd8eb1007ebb2cf887041a0325c94b",
-   "kinds": [
-    "font"
-   ],
-   "pages": [
-    "/cesta-pitanja",
-    "/koliko-snage-treba-garazi-za-punjace",
-    "/kontakt",
-    "/operativni-lizing-elektricnog-automobila-punjenje",
-    "/punjaci-za-auto-salone"
-   ],
-   "page_count": 5,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://fonts.googleapis.com/css2?family=Onest:wght@300..900&display=swap"
-   ]
-  },
-  {
-   "url": "https://fonts.gstatic.com/l/font?kit=gNMsW3F-SZuj7zOT0IfSjTS16cPhqx_7uTO8mflDT3RN0b-_VeW05A&skey=45f9610178ce01c5&v=v11",
-   "file": "assets/fonts.gstatic.com/l/font__c48ac958",
-   "status": 200,
-   "bytes": 47756,
-   "type": "font/woff2",
-   "sha256": "2ea4bb3f07fffd5e0b5cedc1928d3a4d3a40258f3841c2fc3074104c5e18b640",
-   "kinds": [
-    "font"
-   ],
-   "pages": [
-    "/cesta-pitanja",
-    "/koliko-snage-treba-garazi-za-punjace",
-    "/kontakt",
-    "/operativni-lizing-elektricnog-automobila-punjenje",
-    "/punjaci-za-auto-salone"
-   ],
-   "page_count": 5,
-   "runtime": true,
-   "modes": [
-    "sr",
-    "en",
-    "ru",
-    "sr-cyrl"
-   ],
-   "viewports": [
-    "1440x900",
-    "390x844"
-   ],
-   "initiators": [
-    "https://fonts.googleapis.com/css2?family=Onest:wght@300..900&display=swap"
-   ]
   },
   {
    "url": "https://fonts.gstatic.com/s/onest/v11/gNMKW3F-SZuj7xmQ-HY6EQ.woff2",
@@ -17489,7 +17028,7 @@
    "status": 200,
    "bytes": 3207,
    "type": "application/json",
-   "sha256": "ea1cbe4062fbd992dedcfac6b834b08f47959bd45f7e9d45eabc94c190a2582d",
+   "sha256": "3ed2a2a4d98dc468a00da6be1c2f6d7fc75e1162027857513a493d14cc50a6db",
    "kinds": [
     "fetch"
    ],
@@ -17509,17 +17048,17 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-3aafca1c3b.js"
    ],
    "live": true
   },
   {
-   "url": "https://www.blokvolt.rs/assets/app/v1/data.json?v=c1cb1f8099",
-   "file": "assets/www.blokvolt.rs/assets__app__v1__data__f11d02cd.json",
+   "url": "https://www.blokvolt.rs/assets/app/v1/data.json?v=82d0bda67e",
+   "file": "assets/www.blokvolt.rs/assets__app__v1__data__e1273983.json",
    "status": 200,
    "bytes": 83594,
    "type": "application/json",
-   "sha256": "c1cb1f809902de05feb0c8998026c819965f0f67af462c3e00b607bf0ae52ecc",
+   "sha256": "82d0bda67e95b59fb4a4baf9f6d8ca3f7d9ebece044988d928e46501cf259391",
    "kinds": [
     "fetch"
    ],
@@ -17539,17 +17078,17 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-3aafca1c3b.js"
    ],
    "live": true
   },
   {
-   "url": "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js",
-   "file": "assets/www.blokvolt.rs/assets__embed__evomap-2e49e6f753.js",
+   "url": "https://www.blokvolt.rs/assets/embed/evomap-3aafca1c3b.js",
+   "file": "assets/www.blokvolt.rs/assets__embed__evomap-3aafca1c3b.js",
    "status": 200,
-   "bytes": 158611,
+   "bytes": 161682,
    "type": "application/javascript",
-   "sha256": "2e49e6f75375ca77fa46aedb22b4ecd7aabfe59e3809e36ed8c28be6de4bfe87",
+   "sha256": "3aafca1c3b5ced5901cca241e980f7202bd1ee3fa382fbd2d27504320b6088ae",
    "kinds": [
     "script"
    ],
@@ -17599,7 +17138,7 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-3aafca1c3b.js"
    ],
    "live": true
   },
@@ -17629,17 +17168,17 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-3aafca1c3b.js"
    ],
    "live": true
   },
   {
-   "url": "https://www.blokvolt.rs/assets/map/mreze.json?v=4ae3580e08",
-   "file": "assets/www.blokvolt.rs/assets__map__mreze__0a6d2717.json",
+   "url": "https://www.blokvolt.rs/assets/map/mreze.json?v=7fe7e3a571",
+   "file": "assets/www.blokvolt.rs/assets__map__mreze__3706bc8e.json",
    "status": 200,
-   "bytes": 121754,
+   "bytes": 123047,
    "type": "application/json",
-   "sha256": "4ae3580e08b0db1ac50f149dea25b019e5e05d3a0f11e5f0782deca80d02a2bd",
+   "sha256": "7fe7e3a571e690454c4136bf8f2276c62c68ff4850100635ecf2ccf493fdeb93",
    "kinds": [
     "fetch"
    ],
@@ -17659,7 +17198,7 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-3aafca1c3b.js"
    ],
    "live": true
   },
@@ -17689,17 +17228,17 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-3aafca1c3b.js"
    ],
    "live": true
   },
   {
-   "url": "https://www.blokvolt.rs/assets/map/tx.json?v=3d7b8b136f",
-   "file": "assets/www.blokvolt.rs/assets__map__tx__1651fa29.json",
+   "url": "https://www.blokvolt.rs/assets/map/tx.json?v=a8bd7bbf60",
+   "file": "assets/www.blokvolt.rs/assets__map__tx__2ba3658a.json",
    "status": 200,
-   "bytes": 77205,
+   "bytes": 80101,
    "type": "application/json",
-   "sha256": "3d7b8b136f74920412b9309f0a5ccf4c3e7f30a460f78b69cb46c9dd7c354c9c",
+   "sha256": "a8bd7bbf602f957f33a52f780b61477e9233aed41be2fe93bab8b91b55dcc9a7",
    "kinds": [
     "fetch"
    ],
@@ -17719,7 +17258,7 @@
     "390x844"
    ],
    "initiators": [
-    "https://www.blokvolt.rs/assets/embed/evomap-2e49e6f753.js"
+    "https://www.blokvolt.rs/assets/embed/evomap-3aafca1c3b.js"
    ],
    "live": true
   }
@@ -18132,14 +17671,14 @@
  "errors": [],
  "summary": {
   "pages": 40,
-  "assets": 549,
-  "asset_bytes": 17402904,
+  "assets": 538,
+  "asset_bytes": 16932416,
   "errors": 0,
-  "runtime_files": 202,
+  "runtime_files": 191,
   "runtime_live_files": 46
  },
  "runtime": {
-  "taken": "2026-10-28T09:17:24Z",
+  "taken": "2026-10-28T13:22:25Z",
   "tool": "site/tools/snapshot_runtime.py",
   "browser": "chromium 153.0.8010.12",
   "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
@@ -18155,12 +17694,12 @@
   ],
   "pages": 40,
   "loads": 320,
-  "seconds": 269,
-  "saved": 202,
-  "saved_bytes": 2449683,
+  "seconds": 234,
+  "saved": 191,
+  "saved_bytes": 1971905,
   "saved_live": 46,
-  "saved_live_bytes": 5738430,
-  "completed_by_reference": 10,
+  "saved_live_bytes": 5745690,
+  "completed_by_reference": 6,
   "completion_failed": [],
   "html_lang_by_mode": {
    "en": [
@@ -18187,7 +17726,7 @@
    "cdn.prod.website-files.com": 438,
    "d3e54v103j8qbb.cloudfront.net": 1,
    "fonts.googleapis.com": 2,
-   "fonts.gstatic.com": 13,
+   "fonts.gstatic.com": 6,
    "smcsmkkzdksocvroqekl.supabase.co": 2,
    "tiles.openfreemap.org": 36,
    "www.blokvolt.rs": 8,
@@ -18214,33 +17753,8 @@
    }
   },
   "not_200": [],
-  "static_bytes_differ": [
-   {
-    "url": "https://fonts.googleapis.com/css2?family=Onest:wght@300..900&display=swap",
-    "static_sha256": "d34ff71a7025db854c6fea6c689f6c3943e4b0cbf70c8cdda0c9af3c51edc21f",
-    "runtime_sha256": "f369fc5574850791d9ae454aa33b193e7f01fd198146d6a71a69168b568a38c5"
-   }
-  ],
-  "errors": [
-   {
-    "url": "https://app.evolako.rs/embed/evo-fx-15888fadaa.js",
-    "error": "fetch: Route.fetch: Timeout 30000ms exceeded.\nCall log:\n  - → GET https://app.evolako.rs/embed/evo-fx-15888fadaa.js\n    - user-",
-    "page": "/karijera",
-    "mode": "sr"
-   },
-   {
-    "url": "https://app.evolako.rs/embed/evo-fx-15888fadaa.js",
-    "error": "fetch: Route.fetch: read ECONNRESET\nCall log:\n  - → GET https://app.evolako.rs/embed/evo-fx-15888fadaa.js\n    - user-agent: Moz",
-    "page": "/karijera-prodaja",
-    "mode": "ru"
-   },
-   {
-    "url": "https://app.evolako.rs/embed/evo-fx-15888fadaa.js",
-    "error": "fetch: Route.fetch: Timeout 30000ms exceeded.\nCall log:\n  - → GET https://app.evolako.rs/embed/evo-fx-15888fadaa.js\n    - user-",
-    "page": "/punjaci-za-hotele",
-    "mode": "ru"
-   }
-  ],
+  "static_bytes_differ": [],
+  "errors": [],
   "replay": false
  }
 }

@@ -292,8 +292,9 @@ input.w-button {
   padding: 0;
 }
 
-.w-popover {
-  position-anchor: none;
+:where(.w-popover) {
+  position-anchor: auto;
+  position-area: top;
 }
 
 :where(.w-popover[data-w-popover-backdrop-animated], .w-modal[data-w-popover-backdrop-animated])::backdrop {
