@@ -81,6 +81,10 @@
    "ru": "Wallbox Pulsar Max с базовым монтажом рядом с электрощитом: 155.000 RSD; со счётчиком PowerBoost (динамическое управление мощностью и зарядка от солнечных панелей) — 195.000 RSD. MID-счётчик +10.000 RSD. Все цены с НДС.",
    "sr": "Wallbox Pulsar Max sa osnovnom ugradnjom pored razvodne table: 155.000 RSD; sa PowerBoost brojilom (dinamičko upravljanje snagom i punjenje iz solarnih panela) 195.000 RSD. MID brojilo +10.000 RSD. Sve sa PDV-om."
   },
+  "1b5ound": {
+   "ru": "Общая розетка подключена к счётчику дома, поэтому за зарядку соседа платят все. Что может собрание жильцов, почему основа договорённости — MID-счётчик и как дому договориться за пять шагов.",
+   "sr": "Zajednička utičnica je na brojilu zgrade, pa komšijino punjenje plaćaju svi. Šta može skupština, zašto je MID brojilo osnova dogovora i kako da se zgrada dogovori u pet koraka."
+  },
   "1celc8z": {
    "ru": "Заявка от дома",
    "sr": "Prijava zgrade"
@@ -156,6 +160,10 @@
   "1hwyj5e": {
    "ru": "Коллеги из Evolako",
    "sr": "Kolege iz Evolako"
+  },
+  "1i3fx6i": {
+   "ru": "Нужна ли тебе для зарядки большая мощность, как проходит процедура в EDS, какие нужны документы и что ты платишь разово, а что ежемесячно.",
+   "sr": "Da li ti za punjač treba veća snaga, kako teče postupak kod EDS-a, koja dokumenta trebaju i šta plaćaš jednokratno, a šta mesečno."
   },
   "1ibw45x": {
    "ru": "Политика конфиденциальности и условия использования",
@@ -421,6 +429,10 @@
    "ru": "Скопировать адрес e-mail",
    "sr": "Copy email to clipboard"
   },
+  "imimvp": {
+   "ru": "Кто платит за электричество, когда сосед заряжает машину от общей розетки, что говорит Закон о жилье и содержании зданий и как дому договориться с отдельным счётчиком.",
+   "sr": "Ko plaća struju kad komšija puni auto iz zajedničke utičnice, šta kaže Zakon o stanovanju i kako da se zgrada dogovori uz odvojeno brojilo."
+  },
   "j9olxk": {
    "ru": "Как застройщик готовит паркинг под зарядки: трасса и коробка у каждого места, управление мощностью, MID-счётчики, закон и цена за подготовленное место.",
    "sr": "Kako investitor priprema garažu za punjače: trasa i kutija kod svakog mesta, upravljanje snagom, MID brojila, zakon i cena po pripremljenom mestu."
@@ -460,6 +472,10 @@
   "rsm0io": {
    "ru": "От первых заявок жильцов до зарядки в гараже: оценка мощности, шаблоны и решение собрания, монтаж и расчёт по MID-счётчику. Дому проект ничего не стоит.",
    "sr": "Od prvih prijava stanara do punjenja u garaži: procena snage, šabloni i odluka skupštine, ugradnja i obračun po MID brojilu. Zgradu projekat ne košta ništa."
+  },
+  "ru35d8": {
+   "ru": "Как увеличить разрешённую мощность в EDS: когда это нужно, какие документы, что ты платишь разово, а что ежемесячно, сколько это занимает и что делать, если EDS задерживает.",
+   "sr": "Kako se povećava odobrena snaga kod EDS-a: kada ti treba, koja dokumenta, šta plaćaš jednokratno, a šta mesečno, koliko traje i šta ako EDS kasni."
   },
   "umu582": {
    "ru": "Зарядки в гараже многоквартирного дома без затрат для дома: шаблоны для собрания жильцов, MID-счётчик на каждом месте, электричество без наценки. От 96.000 RSD за место.",

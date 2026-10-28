@@ -101,6 +101,10 @@
    "en": "Wallbox Pulsar Max with basic installation next to the distribution board: 155.000 RSD; with the PowerBoost meter (dynamic power management and charging from solar panels) 195.000 RSD. MID meter +10.000 RSD. All prices with VAT.",
    "sr": "Wallbox Pulsar Max sa osnovnom ugradnjom pored razvodne table: 155.000 RSD; sa PowerBoost brojilom (dinamičko upravljanje snagom i punjenje iz solarnih panela) 195.000 RSD. MID brojilo +10.000 RSD. Sve sa PDV-om."
   },
+  "1b5ound": {
+   "en": "A shared socket runs on the building's meter, so everyone pays for a neighbor's charging. What the building assembly can do, why a MID meter is the basis of an agreement and how a building agrees in five steps.",
+   "sr": "Zajednička utičnica je na brojilu zgrade, pa komšijino punjenje plaćaju svi. Šta može skupština, zašto je MID brojilo osnova dogovora i kako da se zgrada dogovori u pet koraka."
+  },
   "1celc8z": {
    "en": "Building sign-up",
    "sr": "Prijava zgrade"
@@ -184,6 +188,10 @@
   "1i08v21": {
    "en": "Sava Centar (Delta congress center)",
    "sr": "Sava Centar (Delta kongresni centar)"
+  },
+  "1i3fx6i": {
+   "en": "Whether your charger needs more power, how the procedure with EDS goes, which documents you need and what you pay once and what monthly.",
+   "sr": "Da li ti za punjač treba veća snaga, kako teče postupak kod EDS-a, koja dokumenta trebaju i šta plaćaš jednokratno, a šta mesečno."
   },
   "1ibw45x": {
    "en": "Privacy policy and terms of use",
@@ -509,6 +517,10 @@
    "en": "Our voice in legal and formal conversations in Serbian. Fee by agreement.",
    "sr": "Naš glas u pravnim i formalnim razgovorima na srpskom. Honorar po dogovoru."
   },
+  "imimvp": {
+   "en": "Who pays for the electricity when a neighbor charges a car from a shared socket, what the Law on Housing and Building Maintenance says and how a building can settle it with a separate meter.",
+   "sr": "Ko plaća struju kad komšija puni auto iz zajedničke utičnice, šta kaže Zakon o stanovanju i kako da se zgrada dogovori uz odvojeno brojilo."
+  },
   "j4j9kh": {
    "en": "Putevi Srbije · A3 · Belgrade–Šid",
    "sr": "Putevi Srbije · A3 · Beograd–Šid"
@@ -568,6 +580,10 @@
   "rtzvau": {
    "en": "Boljkovci rest area",
    "sr": "Odmorište Boljkovci"
+  },
+  "ru35d8": {
+   "en": "How to increase your approved power with EDS: when you need it, which documents, what you pay once and what monthly, how long it takes and what if EDS is late.",
+   "sr": "Kako se povećava odobrena snaga kod EDS-a: kada ti treba, koja dokumenta, šta plaćaš jednokratno, a šta mesečno, koliko traje i šta ako EDS kasni."
   },
   "slzlu6": {
    "en": "Ruma toll station",
