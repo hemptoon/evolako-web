@@ -203,7 +203,9 @@ Without `BOT` or `HOOK` every form shows the failure block (nothing is lost sile
   listed apart), and text + pixels against the original page replayed from the snapshot in the same language
   (`?lang=`); a text difference counts as explained only where an own translation, a load-timing variant or the
   hidden legal-data placeholder turns the original's words into exactly the built ones. Then interactions: language switching by both menus on five pages, the `?lang=` redirects, the
-  remembered choice, back/forward, Cyrillic, cookie banner, A4 notice, map search. `--merge part*.json` joins shards.
+  remembered choice, back/forward, Cyrillic (also when chosen on an /en/ or /ru/ page and reloaded), cookie banner, A4
+  notice, map search, the map's station card (its network logo from www.blokvolt.rs must pass the CSP).
+  `--merge part*.json` joins shards.
 - `python3 site/tools/compare_builds.py --old <dist built from the previous commit>` — the Serbian pages and every
   other file equal the earlier build except for exactly the step-3 changes (engine/script patches, language menu as
   links, hreflang, `_headers`, `sitemap.xml`, new `en/`, `ru/`, `_a/evo-i18n/`).
