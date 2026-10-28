@@ -48,7 +48,14 @@
      }
     },
     "title": "FAQ: a charger in your building, power and the building assembly | Evolako",
-    "unstable": {}
+    "unstable": {
+     "en": {
+      "1qbtlvx": [
+       "Safety and certification",
+       "Safety and the certificate"
+      ]
+     }
+    }
    },
    "ru": {
     "keys": {
@@ -64,7 +71,7 @@
       "z8nhh0": "Написать нам"
      }
     },
-    "pushes": 178,
+    "pushes": 186,
     "timing": {
      "ru": {
       "1qbtlvx": [
@@ -73,7 +80,14 @@
      }
     },
     "title": "Частые вопросы: зарядка в доме, электричество и собрание жильцов | Evolako",
-    "unstable": {}
+    "unstable": {
+     "ru": {
+      "1qbtlvx": [
+       "Безопасность и акт проверки",
+       "Безопасность и атест"
+      ]
+     }
+    }
    }
   },
   "garaza-za-izdavanje-sa-punjacem": {
@@ -154,7 +168,7 @@
       "qjzavo": "Оставить заявку от дома →"
      }
     },
-    "pushes": 177,
+    "pushes": 185,
     "timing": {
      "ru": {
       "fd5k5o": [
@@ -416,7 +430,7 @@
       "sh4qjh": "No spam, no selling your data — we only get in touch about your request."
      }
     },
-    "pushes": 137,
+    "pushes": 143,
     "timing": {},
     "title": "Contact — Evolako | Belgrade · Novi Sad · Vojvodina",
     "unstable": {}
@@ -586,7 +600,7 @@
       "fnfucc": "No small print"
      }
     },
-    "pushes": 176,
+    "pushes": 182,
     "timing": {},
     "title": "Home EV charger price with installation: kits | Evolako",
     "unstable": {}
@@ -1193,7 +1207,7 @@
    }
   }
  },
- "snapshot_manifest_sha256": "0d0f13d049da0e4ec554126349fabb670c1a997a4d50689a633a654a0c6697ef",
+ "snapshot_manifest_sha256": "390f176372b0508528f16da0ddf51b8bedfef97547c8ea79ff349c58225292cb",
  "tool": "site/tools/i18n_harvest.py",
  "values": {
   "en": {

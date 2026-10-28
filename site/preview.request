@@ -5,3 +5,4 @@
 2026-10-28 preview 3: the HOOK secret is set (word: «HOOK готов, отправляй тестовую», 28.10.2026 08:52)
 2026-10-28 preview 4: fresh snapshot (Webflow republished 27.10.2026 21:16 UTC: guides /povecanje-snage-struje-eds and /komsija-puni-iz-zajednicke-uticnice, new image sizes), map station logos allowed by the CSP, Cyrillic kept after a reload from /en/ or /ru/ — found by the live/preview comparison (word: «проверь всё же еще раз КАЖДЫЙ раздел», 28.10.2026 08:52)
 2026-10-28 preview 5: the legal-data placeholder stays hidden in Cyrillic too (a page opened in Cyrillic showed "[ПРАВНИ-ПОДАЦИ: …]") — found by the live/preview comparison (word: «проверь всё же еще раз КАЖДЫЙ раздел», 28.10.2026 08:52)
+2026-10-28 preview 6: final pre-switch build — snapshot 28.10 13:22 UTC (Webflow published 13:16 UTC: map build evomap-3aafca1c3b with the price labels), dictionaries harvested again (owner: «давай финальную проверку до переключения сайта», 28.10.2026 14:08)
