@@ -50,6 +50,22 @@ published are read back from the snapshot, rendered again and must come out iden
 - photos: only those of the kits' table that the snapshot holds (`FULL_FALLBACK` replaces the five full-size photos it
   lacks); sitemap.xml gets the new pages and the new lastmod of the changed hubs.
 
+## Changing a published page (code or snapshot)
+
+Pages of the Webflow era live in `snapshot/pages/<slug>.html`; the build makes `/en/` and `/ru/` from them. A change
+there (a text, a script tag) is a production deploy: `python3 site/build.py` (no `BUILD ERROR`), `python3
+site/tools/qa_dist.py --shots /tmp/evo-shots --pages <slug> --no-reference` (0 issues), a line in `deploy.request`, push
+to `site-migration` — only on the founders' word. New Serbian text needs its EN/RU pairs in `i18n/en.json` and
+`i18n/ru.json`: the build stops on text it cannot translate.
+
+**The BlokVolt map embed on `/mapa-punjaca`** (the "evomap" of github.com/hemptoon/blokvolt-rs, its RUNBOOK 3.25): the
+tag is near the end of `snapshot/pages/mapa-punjaca.html` —
+`<script src="https://www.blokvolt.rs/assets/embed/evomap-<10 hex>.js" integrity="sha384-…" crossorigin="anonymous">`.
+A new build of the map: blokvolt.rs is deployed first (the new file next to the old ones), then only `src` and
+`integrity` change here (the head `<style>` block "Mapa punjača — izgled (evomap)" only if `evomap.css` changed),
+build + QA, a `deploy.request` line, push on the founders' word, then check the live tag and its SRI. The CSP allows
+`https://www.blokvolt.rs` as a host, so a new file name needs no CSP change.
+
 ## Snapshot (what the workflow copies)
 
 Only the GitHub runner reaches the live site, so the copy is made there and committed back to `site-migration`.
