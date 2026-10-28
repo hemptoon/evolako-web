@@ -23,7 +23,7 @@ Content-Security-Policy, and the redirects of site/functions/_middleware.js (old
     way (same width; Serbian, ?lang=sr-cyrl, ?lang=en or ?lang=ru), every file it asks for answered from the snapshot
     (static + runtime + live). Text differences are compared word by word and classified: a translation the site adds
     (site/i18n/<lang>.json), a text whose live value depends on load timing (site/i18n/harvest.json "timing"), the
-    legal-data placeholder hidden on the /en/ page as on the Serbian one — each only where it turns the original's
+    legal-data placeholder hidden on the /en/ page and in Cyrillic as on the Serbian page — each only where it turns the original's
     words into exactly the built ones — or unexplained
   * links: every root-relative href/src in the rendered page and every absolute link to www.evolako.rs (canonical,
     hreflang alternates) resolves in dist
@@ -1113,7 +1113,8 @@ class Languages:
         replacement of several words fits) counts as explained only if the known reasons turn the reference stretch
         into exactly the built one: a translation the site adds (site/i18n/<lang>.json) for a text the live page left
         in Serbian, a text whose live value depends on load timing (harvest.json "timing": the build uses the
-        first-visit value), the legal-data placeholder (hidden on the /en/ page as on the Serbian one). Nothing is
+        first-visit value), the legal-data placeholder (hidden on the /en/ page and in Cyrillic as on the Serbian
+        page). Nothing is
         replaced anywhere else, so a word that both versions keep (an address, a name) never becomes a difference."""
         import difflib
         pairs = sorted(((self.own_sr[k], v) for k, v in self.own.get(lang, {}).items()), key=lambda x: -len(x[0]))
@@ -1135,8 +1136,9 @@ class Languages:
                         why.append(('own translation', sr, tr))
                         x = new
             # the legal-data placeholder: the Serbian page hides it until the data are filled in; on the live English
-            # page the engine translated it before the hiding script ran, so it shows — the /en/ page hides it too
-            for m in list(re.finditer(r'\[LEGAL-DATA:[^\]]*\](?: · [^ ]+@[^ ]+)?', x)):
+            # page (and the live page opened in Cyrillic) the engine translated it before the hiding script ran, so it
+            # shows — the /en/ page and the Cyrillic page hide it too (also after a switch in place on the live site)
+            for m in list(re.finditer(r'\[(?:LEGAL-DATA|PRAVNI-PODACI|ПРАВНИ-ПОДАЦИ):[^\]]*\](?: · [^ ]+@[^ ]+)?', x)):
                 if m.group(0) not in y:
                     x = x.replace(m.group(0), '', 1)
                     why.append(('legal-data placeholder hidden, as on the Serbian page', m.group(0), ''))

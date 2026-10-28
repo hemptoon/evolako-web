@@ -840,9 +840,11 @@ INLINE_PATCHES = [
     ('careers: form field page', re.escape('page:location.pathname'), lambda m: 'page:' + EP_JS, 4),
     ('careers: in-page links also as /en/ and /ru/ links', re.escape('.kr a[href^="/karijera#"]\''),
      lambda m: '.kr a[href^="/karijera#"],.kr a[href^="/en/karijera#"],.kr a[href^="/ru/karijera#"]\'', 4),
-    # the paragraph with the not yet filled legal data stays hidden on /en/ pages, where its text is the English one
-    ('legal-data placeholder hidden in English too', re.escape(r"if(/\[PRAVNI|000 00 00/.test(p.textContent))"),
-     lambda m: r"if(/\[PRAVNI|\[LEGAL-DATA|000 00 00/.test(p.textContent))", 37),
+    # the paragraph with the not yet filled legal data stays hidden on /en/ pages, where its text is the English one,
+    # and in Cyrillic, where the engine has transliterated it before the hiding script runs (the live site shows
+    # "[ПРАВНИ-ПОДАЦИ: …]" on a page opened in Cyrillic, but not after switching to Cyrillic on the page)
+    ('legal-data placeholder hidden in English and Cyrillic too', re.escape(r"if(/\[PRAVNI|000 00 00/.test(p.textContent))"),
+     lambda m: r"if(/\[PRAVNI|\[LEGAL-DATA|\[ПРАВНИ|000 00 00/.test(p.textContent))", 37),
 ]
 FILE_PATCHES = [
     # (file name, old, new) — exactly once in that file
