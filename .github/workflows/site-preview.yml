@@ -67,7 +67,10 @@ jobs:
         shell: bash
         run: |
           B=https://evolako-site.pages.dev
-          for i in $(seq 1 30); do curl -fsS -o /dev/null "$B/" && break; sleep 5; done
+          css=$(grep -o -m1 '/_a/cdn.prod.website-files.com/[^"]*\.h[0-9a-f]\{10\}\.css' site/dist/index.html)
+          # the address serves a new upload after a short delay: wait (at most 3 minutes) for this build's
+          # content-hashed stylesheet too — a new snapshot changes it, and the old upload answers it with 404
+          for i in $(seq 1 36); do curl -fsS -o /dev/null "$B/" && curl -fsS -o /dev/null "$B$css" && break; sleep 5; done
           fail=0
           check() { # url, expected status, header regex (or -)
             out=$(curl -sS -o /dev/null -D - --max-redirs 0 "$1" | tr -d '\r')
@@ -85,6 +88,5 @@ jobs:
           check "$B/nema-ove-stranice" 404 '^x-robots-tag: noindex, nofollow'
           check "$B/sitemap.xml" 200 -
           check "$B/robots.txt" 200 -
-          css=$(grep -o -m1 '/_a/cdn.prod.website-files.com/[^"]*\.h[0-9a-f]\{10\}\.css' site/dist/index.html)
           check "$B$css" 200 '^cache-control: public, max-age=31536000, immutable'
           exit $fail
