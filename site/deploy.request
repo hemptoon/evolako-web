@@ -1,2 +1,3 @@
 # One line per production deploy of code or snapshot changes of www.evolako.rs (branch site-migration) — only on the
 # founders' word. Publications (site/content/**) deploy by themselves and need no line here.
+2026-10-28 deploy 1: publishing of guides, news and B2B guides from site/content (site/content.py, the kits, content self-test, production smoke test of www.evolako.rs in this workflow, snapshot workflow by hand only) — no visible change on the site, no content yet (word: «деплой эволако», 28.10.2026 19:06)
