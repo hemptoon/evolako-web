@@ -1,6 +1,14 @@
 {
  "_about": "Русский для сербских текстов, которые живые словари www.evolako.rs не переводят. Ключ = ключ i18n-движка для сербского текста: FNV-1a 32 бит (base36) от текста с нормализованными пробелами, Evolako хешируется как BlokVolt (site/prerender.py key_of; сборка сверяет каждый ключ с полем \"sr\"). Запись используется только там, где живых переводов нет (title, meta и JSON-LD страниц /ru/, оставшиеся сербские тексты), и все записи уходят в движок страниц /ru/ как его последний словарь. Неформальное «ты»; цены и числа как в сербском тексте. Никогда: атест, скидка, 24/7, Plug&Charge, «сразу» как обещание, проценты экономии, суммы доплат, формулировки, будто Evolako оформляет документы (Evolako даёт шаблоны).",
  "entries": {
+  "10234ey": {
+   "ru": "Контакты — Evolako | Вся Сербия",
+   "sr": "Kontakt — Evolako | Cela Srbija"
+  },
+  "102q1m4": {
+   "ru": "Сербия",
+   "sr": "Srbija"
+  },
   "10s6iox": {
    "ru": "Зарядка для служебных машин дома и в компании",
    "sr": "Punjač za službena vozila kod kuće i u firmi"
@@ -12,6 +20,10 @@
   "116oovw": {
    "ru": "за парковочное место",
    "sr": "po parking mestu"
+  },
+  "12067bi": {
+   "ru": "Работаем по всей Сербии",
+   "sr": "Radimo u celoj Srbiji"
   },
   "1367beu": {
    "ru": "Сколько кВт нужно гаражу на 10, 20 или 50 зарядок с управлением мощностью: ночной расчёт, правила из практики ЕС и когда нужно увеличение мощности.",
@@ -36,6 +48,10 @@
   "15e1lfi": {
    "ru": "Комплект для места, общая инфраструктура и увеличение мощности: примеры цен для отеля, гаража, компании, новостройки и многоквартирного дома, с НДС.",
    "sr": "Paket za mesto, zajednička infrastruktura i povećanje snage: primeri cena za hotel, garažu, firmu, novogradnju i stambenu zgradu, sa PDV-om."
+  },
+  "16hmcu2": {
+   "ru": "Evolako ставит зарядку с MID-счётчиком дома у сотрудника или на парковке компании — по всей Сербии. По подписке компания каждый месяц получает расчёт по каждому месту в PDF и CSV.",
+   "sr": "Evolako ugrađuje punjač sa MID brojilom na adresi zaposlenog ili na parkingu firme, u celoj Srbiji. Uz pretplatu firma svakog meseca dobija obračun po mestu u PDF i CSV formatu."
   },
   "16j2hz8": {
    "ru": "Менеджер по продажам домашних зарядок — Evolako",
@@ -125,6 +141,10 @@
    "ru": "Только монтаж — от 24.000, START — 39.000, WALLBOX 11 кВт — от 94.000 и ZGRADA — от 96.000 RSD за место, с базовым монтажом рядом с электрощитом.",
    "sr": "Samo ugradnja od 24.000, START 39.000, WALLBOX 11 kW od 94.000 i ZGRADA od 96.000 RSD po mestu, uz osnovnu ugradnju pored razvodne table."
   },
+  "1ff4d9l": {
+   "ru": "Работаем по всей Сербии. Монтаж одного места — один рабочий день, а остальной срок в основном зависит от того, когда соберётся собрание жильцов.",
+   "sr": "Radimo u celoj Srbiji. Ugradnja jednog mesta traje jedan radni dan, a ostatak vremena uglavnom zavisi od sazivanja skupštine."
+  },
   "1fh3fqk": {
    "ru": "Wallbox Plus — 4G, RFID и экран",
    "sr": "Wallbox Plus — 4G, RFID i ekran"
@@ -169,6 +189,10 @@
    "ru": "Политика конфиденциальности и условия использования",
    "sr": "Politika privatnosti i uslovi korišćenja"
   },
+  "1iyv3gq": {
+   "ru": "Оплата за каждую установку по рыночным ценам, оплачиваемый выезд на оценку, материалы — наши. Вся Сербия. Откликнись через форму.",
+   "sr": "Plaćanje po ugradnji, po tržišnim cenama, plaćen izlazak na procenu, materijal obezbeđujemo mi. Cela Srbija. Prijavi se preko forme."
+  },
   "1jtg00k": {
    "ru": "Зарядки для многоквартирных домов — для управляющих",
    "sr": "Punjači za stambene zgrade — za upravnike"
@@ -180,6 +204,10 @@
   "1kwz1dm": {
    "ru": "С кодом рекомендации: 4 месяца расчёта, мониторинга и сервиса за 0 RSD. Проверь свой гараж за полминуты.",
    "sr": "Uz kod preporuke: 4 meseca obračuna, nadzora i servisa za 0 RSD. Proveri svoju garažu za pola minuta."
+  },
+  "1lb3vb4": {
+   "ru": "Где работаем: по всей Сербии. Напиши из любого города и пришли фото электрощита и места для зарядки — предварительная оценка по фото бесплатная, а выезд на оценку договоримся в переписке.",
+   "sr": "Gde radimo: u celoj Srbiji. Iz bilo kog mesta pošalji poruku sa fotografijama razvodne table i mesta za punjač — predprocena po fotografijama je besplatna, a procenu na licu mesta dogovaramo u poruci."
   },
   "1le6kgu": {
    "ru": "Зарядки для компаний, домов и отелей в Сербии",
@@ -245,6 +273,10 @@
    "ru": "Начни с 2–4 мест по 11 кВт и подготовь трассу под расширение. Как отели в Сербии берут плату за зарядку и как MID-счётчик показывает затраты по цене из твоего счёта.",
    "sr": "Počnite sa 2–4 mesta od 11 kW i pripremite trasu za više. Kako hoteli u Srbiji naplaćuju punjenje i kako MID brojilo pokazuje trošak po ceni sa vašeg računa."
   },
+  "1shlx7o": {
+   "ru": "Зарядка в гараже или на парковочном месте в доме, с монтажом рядом с электрощитом, MID-счётчик — по желанию. От 39.000 RSD. Работаем по всей Сербии.",
+   "sr": "Punjač u garaži ili na mestu u zgradi, sa ugradnjom pored razvodne table, MID brojilo po izboru. Od 39.000 RSD. Radimo u celoj Srbiji."
+  },
   "1siprtb": {
    "ru": "Рекомендация: ещё 2 месяца подписки бесплатно",
    "sr": "Preporuka: još 2 meseca pretplate besplatno"
@@ -260,6 +292,10 @@
   "1u4wc3t": {
    "ru": "Цены на электричество, правила для домов и гаражей, субсидии и новости Evolako — коротко, с источником и датой.",
    "sr": "Cene struje, propisi za zgrade i garaže, subvencije i novosti u Evolako — kratko, sa izvorom i datumom."
+  },
+  "1ua3i02": {
+   "ru": "Открытые вакансии в Evolako: менеджер по продажам домашних зарядок и юрист (Белград или Нови-Сад) и электрик по установке (вся Сербия). Отклик через форму, ответ в течение 48 часов.",
+   "sr": "Otvorene pozicije u Evolako: prodavac kućnih punjača i pravnik (Beograd ili Novi Sad) i električar za ugradnju (cela Srbija). Prijava preko forme, odgovor u roku od 48h."
   },
   "1uqoalc": {
    "ru": "MID-счётчик на каждом месте и расчёт по каждому пользователю, без наценки. Управление мощностью распределяет мощность существующего подключения на несколько мест.",
@@ -289,6 +325,10 @@
    "ru": "Опубликованные условия операционного лизинга не упоминают ни зарядку, ни электричество. Чья зарядка, когда машину возвращают, как учитывается электричество и что спросить у лизинговой компании.",
    "sr": "Objavljeni uslovi operativnog lizinga ne pominju punjač ni struju. Čiji je punjač kad se auto vrati, kako se meri struja i šta pitati lizing kuću."
   },
+  "1xhrwoc": {
+   "ru": "Да, работаем по всей Сербии. Если покупатель из любого города, пришли нам его контакт — выезд на оценку договоримся в переписке.",
+   "sr": "Da, radimo u celoj Srbiji. Za kupca iz bilo kog mesta pošaljite nam kontakt, a procenu na licu mesta dogovaramo u poruci."
+  },
   "1xlq2dc": {
    "ru": "Покупатель из многоквартирного дома спрашивает, где он будет заряжать машину. Направь его к нам: мы отвечаем в течение 48 часов, проводим оценку и присылаем точное предложение. Пакет START — 39.000 RSD, WALLBOX — от 94.000 RSD, с НДС.",
    "sr": "Kupac iz zgrade pita gde će puniti auto. Uputite ga nama: javljamo se u roku od 48h, radimo procenu i šaljemo tačnu ponudu. Paket START 39.000 RSD, WALLBOX od 94.000 RSD, sa PDV-om."
@@ -317,6 +357,10 @@
    "ru": "Клиенты, материалы и сметы — от нас, монтаж — от тебя. Белград или Нови-Сад.",
    "sr": "Klijente, materijal i ponude obezbeđujemo mi — ti radiš instalaciju. Beograd ili Novi Sad."
   },
+  "4p1ppb": {
+   "ru": "Вся Сербия",
+   "sr": "Cela Srbija"
+  },
   "5bm6bi": {
    "ru": "Пиши на hello@evolako.com, в WhatsApp, Viber или Telegram — работаем каждый день, ответ приходит в течение 48 часов. Говорим по-сербски, по-русски и по-английски.",
    "sr": "Piši na hello@evolako.com, u WhatsApp, Viber ili Telegram — radimo svakog dana, a odgovor stiže u roku od 48h. Govorimo srpski, ruski i engleski."
@@ -336,6 +380,10 @@
   "803mbm": {
    "ru": "Пакеты Evolako",
    "sr": "Evolako paketi"
+  },
+  "85rr7e": {
+   "ru": "Работаем и в твоём городе.",
+   "sr": "Radimo i u tvom gradu."
   },
   "8jjrew": {
    "ru": "На парковке машина стоит часами или днями, поэтому достаточно медленной зарядки. MID-счётчик на каждом месте показывает, сколько израсходовала каждая машина.",
@@ -360,6 +408,10 @@
   "a2x7ze": {
    "ru": "Зарядка служебной машины дома",
    "sr": "Punjenje službenog automobila kod kuće"
+  },
+  "a3nk56": {
+   "ru": "Домашняя зарядка для покупателей твоих электромобилей: оценка, монтаж и шаблоны документов по всей Сербии. Открытые цены с НДС.",
+   "sr": "Kućni punjač za kupce vaših električnih automobila: procena, ugradnja i šabloni papira u celoj Srbiji. Javne cene sa PDV-om."
   },
   "ae1ly6": {
    "ru": "Зарядки для парковок со шлагбаумом и долгосрочных стоянок у аэропортов и вокзалов: зарядка, пока машина стоит, MID-счётчик на каждом месте и зарядки на стойках.",
@@ -397,9 +449,17 @@
    "ru": "Пакеты и цены — домашняя зарядка с монтажом",
    "sr": "Paketi i cene — kućni punjač sa ugradnjom"
   },
+  "cxmdqw": {
+   "ru": "Команда — в этих двух городах. Устанавливаем по всей Сербии, поэтому электриков ищем и в других городах.",
+   "sr": "Tim je u ova dva grada. Ugradnje radimo u celoj Srbiji, pa električare tražimo i u drugim gradovima."
+  },
   "d9t6cp": {
    "ru": "Воеводина",
    "sr": "Vojvodina"
+  },
+  "dsy4hc": {
+   "ru": "Установку выполняют лицензированные электрики — по нашему стандарту, с нашим чек-листом и техническим описанием установки. Если вы лицензированный электрик в любом городе Сербии и хотите работать с нами, напишите нам.",
+   "sr": "Ugradnje rade licencirani električari, po našem standardu, uz našu čeklistu i tehnički opis ugradnje. Ako ste licencirani električar bilo gde u Srbiji i želite da radite sa nama, pišite nam."
   },
   "e434pv": {
    "ru": "Когда начинается ночной тариф в Белграде, Воеводине и остальной Сербии, как настроить зарядку по расписанию в машине и на зарядке и что проверить в первую ночь.",
@@ -421,6 +481,14 @@
    "ru": "START — усиленная розетка + MID-счётчик",
    "sr": "START — pojačana utičnica + MID brojilo"
   },
+  "hnb9wg": {
+   "ru": "Работаем по всей Сербии.",
+   "sr": "Radimo u celoj Srbiji."
+  },
+  "hr1y9b": {
+   "ru": "Где работаем: по всей Сербии. Для объекта в любом городе пришли адрес и фото электрощита, а выезд на оценку договоримся в переписке.",
+   "sr": "Gde radimo: u celoj Srbiji. Za objekat u bilo kom mestu pošaljite adresu i fotografije razvodne table, a procenu na licu mesta dogovaramo u poruci."
+  },
   "i2wn3m": {
    "ru": "Наш голос в юридических и официальных разговорах на сербском. Гонорар по договорённости.",
    "sr": "Naš glas u pravnim i formalnim razgovorima na srpskom. Honorar po dogovoru."
@@ -436,6 +504,10 @@
   "j9olxk": {
    "ru": "Как застройщик готовит паркинг под зарядки: трасса и коробка у каждого места, управление мощностью, MID-счётчики, закон и цена за подготовленное место.",
    "sr": "Kako investitor priprema garažu za punjače: trasa i kutija kod svakog mesta, upravljanje snagom, MID brojila, zakon i cena po pripremljenom mestu."
+  },
+  "jzsw43": {
+   "ru": "Клиенты, материалы и сметы — от нас, монтаж — от тебя. Вся Сербия.",
+   "sr": "Klijente, materijal i ponude obezbeđujemo mi — ti radiš instalaciju. Cela Srbija."
   },
   "kct6bz": {
    "ru": "Orion eMobility · На автомагистрали E-70, участок Адашевци — Кузмин, Адашевци",
@@ -461,6 +533,10 @@
    "ru": "Сколько даёт обычная розетка, почему долгая зарядка нагревает старые контакты и когда нужна отдельная линия с усиленной розеткой или wallbox.",
    "sr": "Koliko puni obična utičnica, zašto dugo punjenje greje stare kontakte i kada ti treba namenska linija sa pojačanom utičnicom ili wallbox."
   },
+  "pttt79": {
+   "ru": "Зарядка с MID-счётчиком там, где служебная машина стоит ночью, — у сотрудника дома или на парковке компании, по всей Сербии. Оценка на месте стоит 2.990 RSD с НДС и засчитывается в стоимость установки; отвечаем в течение 48 часов.",
+   "sr": "Punjač sa MID brojilom na mestu gde službeni auto stoji noću — kod zaposlenog ili na parkingu firme, u celoj Srbiji. Procena na licu mesta košta 2.990 RSD sa PDV-om i uračunava se u cenu ugradnje; javljamo se u roku od 48h."
+  },
   "qdjylr": {
    "ru": "Гость приезжает вечером, а утром машина заряжена: wallbox 11 кВт с MID-счётчиком на каждом месте, по открытым ценам с НДС.",
    "sr": "Gost stiže uveče, a ujutru ima pun auto: wallbox 11 kW sa MID brojilom na svakom mestu, po javnim cenama sa PDV-om."
@@ -476,6 +552,10 @@
   "ru35d8": {
    "ru": "Как увеличить разрешённую мощность в EDS: когда это нужно, какие документы, что ты платишь разово, а что ежемесячно, сколько это занимает и что делать, если EDS задерживает.",
    "sr": "Kako se povećava odobrena snaga kod EDS-a: kada ti treba, koja dokumenta, šta plaćaš jednokratno, a šta mesečno, koliko traje i šta ako EDS kasni."
+  },
+  "s4wngf": {
+   "ru": "По всей Сербии. Говорим по-сербски, по-русски и по-английски.",
+   "sr": "U celoj Srbiji. Govorimo srpski, ruski i engleski."
   },
   "umu582": {
    "ru": "Зарядки в гараже многоквартирного дома без затрат для дома: шаблоны для собрания жильцов, MID-счётчик на каждом месте, электричество без наценки. От 96.000 RSD за место.",
@@ -521,13 +601,29 @@
    "ru": "Ориентировочная цена для всего объекта: места для зарядки, общая инфраструктура и подписка. Примеры для отеля, гаража, многоквартирного дома и новостройки, с НДС.",
    "sr": "Okvirna cena za ceo objekat: mesta za punjenje, zajednička infrastruktura i pretplata. Primeri za hotel, garažu, stambenu zgradu i novogradnju, sa PDV-om."
   },
+  "xpkql7": {
+   "ru": "© 2026 Evolako · Работаем по всей Сербии · Говорим по-сербски, по-русски и по-английски",
+   "sr": "© 2026 Evolako · Radimo u celoj Srbiji · Govorimo srpski, ruski i engleski"
+  },
   "xr1b5j": {
    "ru": "Нови-Сад",
    "sr": "Novi Sad"
   },
+  "xuhxmu": {
+   "ru": "По всей Сербии. Команда — в Белграде и Нови-Саде.",
+   "sr": "U celoj Srbiji. Tim je u Beogradu i Novom Sadu."
+  },
+  "ygyty1": {
+   "ru": "Evolako работает по всей Сербии. Оставь контакт и пришли фото электрощита и места для зарядки — предварительная оценка по фото бесплатная.",
+   "sr": "Evolako radi u celoj Srbiji. Ostavi kontakt i pošalji fotografije razvodne table i mesta za punjač — predprocena po fotografijama je besplatna."
+  },
   "ymm3xi": {
    "ru": "Публичные зарядки для электромобилей в Сербии на одной карте: быстрые DC и AC, цены сетей с датой и источником. И сколько стоит зарядка дома, ночью.",
    "sr": "Javni punjači za električni auto u Srbiji na jednoj mapi: brzi DC i AC, cene mreža sa datumom i izvorom. I koliko košta punjenje kod kuće, noću."
+  },
+  "ymn8sg": {
+   "ru": "Сниженный тариф действует 8 часов: в Белграде 00–08, в Воеводине 23–07, в остальной Сербии 22–06. В синей зоне со всеми надбавками ≈ 6 RSD/кВт·ч.",
+   "sr": "Niža tarifa traje 8 sati: u Beogradu 00–08h, u Vojvodini 23–07h, u ostatku Srbije 22–06h. U plavoj zoni, sa svim naknadama, ≈ 6 RSD/kWh."
   },
   "ys1cdd": {
    "ru": "Усиленная розетка на отдельной линии, УЗО (тип A + DC), сертифицированный MID-счётчик и базовый монтаж рядом с электрощитом (до 2 м кабеля); шаблоны документов в комплекте. Кабель до более удалённого места и прочие работы — по оценке, до начала работ. Все цены с НДС.",

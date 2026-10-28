@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""evc.py — Evolako consumer kit, v1.3 · 26.10.2026 (og:image and Article image for new guides; v1.2 the same day: template ids): home-charging guides ("vodiči", tone «ti») and the news page.
+"""evc.py — Evolako consumer kit, v1.4 · 28.10.2026 (JSON-LD areaServed: Srbija — work in the whole country, decision 27.10; v1.3 26.10: og:image and Article image for new guides; v1.2 the same day: template ids): home-charging guides ("vodiči", tone «ti») and the news page.
 
 Guides use the same content schema and page template as the B2B kit (evb_vodic.py), with the consumer rules:
 tone «ti» (RU «ты»), links to the consumer money pages, the hub /vodici (cards newest first, hub dictionary
@@ -427,7 +427,7 @@ def jsonld(d, date, cov):
     return {'@context': 'https://schema.org', '@graph': [
         {'@type': 'Organization', '@id': SITE + '/#org', 'name': 'Evolako', 'url': SITE + '/', 'email': 'hello@evolako.com',
          'sameAs': SAME_AS,
-         'areaServed': [{'@type': 'City', 'name': 'Beograd'}, {'@type': 'City', 'name': 'Novi Sad'}, {'@type': 'AdministrativeArea', 'name': 'Vojvodina'}],
+         'areaServed': [{'@type': 'Country', 'name': 'Srbija'}],  # v1.4: the whole country (decision 27.10.2026)
          'knowsLanguage': ['sr', 'ru', 'en']},
         {'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
             {'@type': 'ListItem', 'position': 1, 'name': 'Početna', 'item': SITE + '/'},

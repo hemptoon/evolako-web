@@ -129,6 +129,13 @@ OG_DIR = os.path.join(HERE, 'og')
 OG_OUT_DIR = ASSET_DIR + '/evo-og'
 OG_DEFAULT = SITE + '/' + ASSET_DIR + '/cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/' \
                                       '6ac75fd012abe8aa7733ad65_evolako-og-sr-blue-v3.png'
+# Since 28.10.2026 the Serbian pages get the same drawing with today's text too (site/og/evolako-og-sr.png): the Webflow
+# picture names three cities ("BEOGRAD · NOVI SAD · VOJVODINA") and Evolako works in the whole country (decision 27.10).
+OG_LANGS = ('sr',) + tuple(PR.LANGS)
+# Snapshot pages whose <title> changed after the snapshot: slug -> the title the snapshot (and its i18n harvest) had.
+# The build checks that the harvest's /en/ and /ru/ title is that old one and takes the new title from the own
+# dictionaries (site/i18n/en.json, ru.json), which must translate it.
+RETITLED = {'kontakt': 'Kontakt — Evolako | Beograd · Novi Sad · Vojvodina'}
 WEBFLOW_COMMENT = '<!-- This site was created in Webflow. https://webflow.com -->'
 
 COPY_404 = {
@@ -1020,7 +1027,7 @@ class Build:
             js = PR.extra_script(lang, self.extra[lang]).encode('utf-8')
             self.extra_files[lang] = ('%s/%s.%s.js' % (EXTRA_DIR, lang, sha256(js)[:10]), js)
         self.og_files, self.og_replaced = {}, {}
-        for lang in LANGS:
+        for lang in OG_LANGS:
             p = os.path.join(OG_DIR, 'evolako-og-%s.png' % lang)
             if not os.path.isfile(p):
                 fail('%s is missing: run python3 site/tools/og_images.py and commit it' % os.path.relpath(p, HERE))
@@ -1030,6 +1037,12 @@ class Build:
                 fail('%s is not a PNG' % p)
             self.og_files[lang] = ('%s/evolako-og-%s.%s.png' % (OG_OUT_DIR, lang, sha256(png)[:10]), png)
             self.og_replaced[lang] = 0
+        # the Serbian pages (and the 404) get the drawn Serbian picture in place of the Webflow original
+        self.og_sr = SITE + '/' + self.og_files['sr'][0]
+        for slug in sorted(self.page_out):
+            if OG_DEFAULT in self.page_out[slug]:
+                self.page_out[slug] = self.page_out[slug].replace(OG_DEFAULT, self.og_sr)
+                self.og_replaced['sr'] += 1
         self.lang_out, self.lang_report = {}, {}
         missing_head = []
         for lang in LANGS:
@@ -1046,11 +1059,18 @@ class Build:
                     if doc.count(JEZIK_HTML % 'sr') != jz:
                         fail('/%s/%s: the hidden field Jezik of the Kontakt form changed in the prerender' % (lang, slug))
                     doc = doc.replace(JEZIK_HTML % 'sr', JEZIK_HTML % lang)
-                if OG_DEFAULT in doc:
-                    doc = doc.replace(OG_DEFAULT, SITE + '/' + self.og_files[lang][0])
+                if self.og_sr in doc:
+                    doc = doc.replace(self.og_sr, SITE + '/' + self.og_files[lang][0])
                     self.og_replaced[lang] += 1
                 title = html.unescape(re.search(r'<title>(.*?)</title>', self.page_out[slug], re.S).group(1))
-                if (tr.live(title) or PR.nm(title)) != hv['title']:
+                if slug in RETITLED:
+                    old = PR.Translator(lang, hv['dicts']).live(RETITLED[slug]) or PR.nm(RETITLED[slug])
+                    if old != hv['title']:
+                        fail('/%s/%s: RETITLED names %r, but the harvest has the title %r' % (
+                            lang, slug, RETITLED[slug], hv['title']))
+                    if PR.Translator(lang, hv['dicts'], self.extra[lang]).tr(title, record=False) is None:
+                        fail('/%s/%s: the new title %r has no translation in site/i18n/%s.json' % (lang, slug, title, lang))
+                elif (tr.live(title) or PR.nm(title)) != hv['title']:
                     fail('/%s/%s: the engine titled the live page %r, the build computes %r' % (
                         lang, slug, hv['title'], tr.live(title)))
                 if rep.get('chains'):
@@ -1380,7 +1400,9 @@ class Build:
                     if not os.path.isfile(os.path.join(out, c.group(1)[len(SITE) + 1:])):
                         fail('%s: og/twitter image %s is not in dist' % (url, c.group(1)))
                     self.og_checked += 1
-            if url.startswith((SITE + '/en/', SITE + '/ru/')) and OG_DEFAULT in text:
+            if OG_DEFAULT in text:
+                fail('%s still names the Webflow social image (three cities on it)' % url)
+            if url.startswith((SITE + '/en/', SITE + '/ru/')) and self.og_sr in text:
                 fail('%s still names the Serbian social image' % url)
         for url, text in files.items():
             head = text[:text.find('</head>')]
@@ -1592,7 +1614,8 @@ class Build:
                       (': ' + '; '.join('%r (%d)' % (k[:50], len(v)) for k, v in sorted(left.items())[:12]) +
                        (' …' if len(left) > 12 else '')) if left else ''))
         print('   social image: %s; og/twitter images checked on all pages: %d' % (
-            ', '.join('/%s/ %d pages → %s' % (l, self.og_replaced[l], self.og_files[l][0]) for l in LANGS),
+            ', '.join('%s %d pages → %s' % ('Serbian' if l == 'sr' else '/%s/' % l, self.og_replaced[l],
+                                             self.og_files[l][0]) for l in OG_LANGS),
             self.og_checked))
         for slug, faq in sorted(self.sr_faq.items()):
             print('   FAQPage of /%s from the visible FAQ: %d questions, %d of them worded differently in the Webflow '

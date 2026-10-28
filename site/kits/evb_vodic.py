@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""evb_vodic.py — Evolako B2B guide ("vodič") kit, v1.3 · 26.10.2026 (og:image and Article image for new guides; v1.2 10.10: new id of the template "Ažurirano" line; v1.1 30.09: parking segment, photo 2 v2, no subscription price).
+"""evb_vodic.py — Evolako B2B guide ("vodič") kit, v1.4 · 28.10.2026 (JSON-LD areaServed: Srbija — work in the whole country, decision 27.10; v1.3 26.10: og:image and Article image for new guides; v1.2 10.10: new id of the template "Ažurirano" line; v1.1 30.09: parking segment, photo 2 v2, no subscription price).
 
 Validates an article written in the B2B content schema (sr/en/ru JSON with identical structure),
 renders it exactly like the 6 starter guides on www.evolako.rs, and writes ready-to-run Webflow MCP
@@ -416,7 +416,7 @@ def jsonld(d, date, cov):
     return {'@context': 'https://schema.org', '@graph': [
         {'@type': 'Organization', '@id': SITE + '/#org', 'name': 'Evolako', 'url': SITE + '/', 'email': 'hello@evolako.com',
          'sameAs': SAME_AS,
-         'areaServed': [{'@type': 'City', 'name': 'Beograd'}, {'@type': 'City', 'name': 'Novi Sad'}, {'@type': 'AdministrativeArea', 'name': 'Vojvodina'}],
+         'areaServed': [{'@type': 'Country', 'name': 'Srbija'}],  # v1.4: the whole country (decision 27.10.2026)
          'knowsLanguage': ['sr', 'ru', 'en']},
         {'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
             {'@type': 'ListItem', 'position': 1, 'name': 'Početna', 'item': SITE + '/'},

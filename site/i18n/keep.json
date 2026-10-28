@@ -1,6 +1,10 @@
 {
  "_about": "Texts that stay as they are on the /en/ and /ru/ pages (brand, product and package names, language names, abbreviations, names in examples, titles of Serbian sources, the media kit's texts in the other languages …), each with the reason. Key as in en.json. A translation in en.json / ru.json wins over an entry here (e.g. Novi Sad stays in English, Нови-Сад in Russian). QA counts a kept text as allowed, never as \"Serbian left\".",
  "entries": {
+  "11ljhe3": {
+   "sr": "Evolako rešava punjenje električnog automobila za ljude koji žive u zgradama. Na parking mesto ili u garažu ugrađuje pojačanu utičnicu sa sertifikovanim MID brojilom ili wallbox 11 kW (MID brojilo po izboru), daje šablone papira za skupštinu stanara ili vlasnika garaže i svakog meseca obračunava struju po ceni sa računa EPS-a, bez marže. Paketi sa osnovnom ugradnjom pored razvodne table koštaju od 39.000 RSD sa PDV-om, a ugradnja traje jedan radni dan. Evolako radi u celoj Srbiji.",
+   "why": "the media kit gives its boilerplate in Serbian, English and Russian"
+  },
   "11vuy5y": {
    "sr": "Telegram",
    "why": "brand"
@@ -68,6 +72,10 @@
   "1jo11wz": {
    "sr": "TikTok",
    "why": "brand"
+  },
+  "1s2jplc": {
+   "sr": "Evolako solves electric car charging for people who live in apartment buildings. At a parking space or in a garage it installs a heavy-duty socket with a MID-certified meter or an 11 kW wallbox (MID meter optional), provides document templates for the residents’ assembly or the garage owner, and every month bills electricity at the price on the EPS bill, with no markup. Packages with basic installation next to the distribution board start at RSD 39,000 including VAT, and installation takes one working day. Evolako works all over Serbia.",
+   "why": "the media kit gives its boilerplate in Serbian, English and Russian"
   },
   "1txdcke": {
    "sr": "Wallbox 11 kW",
@@ -177,6 +185,10 @@
    "sr": "Danas — Poskupljenje struje čeka izbore, 31.08.2026",
    "why": "title of a Serbian-language source, cited as published (/novosti)"
   },
+  "gl3za7": {
+   "sr": "Evolako решает вопрос зарядки электромобиля для тех, кто живёт в многоквартирных домах. На парковочное место или в гараж устанавливается усиленная розетка с сертифицированным MID-счётчиком или wallbox на 11 кВт (MID-счётчик по желанию); Evolako даёт шаблоны документов для собрания жильцов или владельца гаража и каждый месяц рассчитывает электричество по цене из счёта EPS, без наценки. Пакеты с базовым монтажом рядом со щитком — от 39 000 RSD с НДС, установка занимает один рабочий день. Evolako работает по всей Сербии.",
+   "why": "the media kit gives its boilerplate in Serbian, English and Russian"
+  },
   "hfim9n": {
    "sr": "FAQ",
    "why": "English abbreviation (Russian has its own translation)"
@@ -197,17 +209,9 @@
    "sr": "Wallbox Premium",
    "why": "package name"
   },
-  "n2fqm0": {
-   "sr": "Evolako решает вопрос зарядки электромобиля для тех, кто живёт в многоквартирных домах. На парковочное место или в гараж устанавливается усиленная розетка с сертифицированным MID-счётчиком или wallbox на 11 кВт (MID-счётчик по желанию); Evolako даёт шаблоны документов для собрания жильцов или владельца гаража и каждый месяц рассчитывает электричество по цене из счёта EPS, без наценки. Пакеты с базовым монтажом рядом со щитком — от 39 000 RSD с НДС, установка занимает один рабочий день. Evolako работает в Белграде, Нови-Саде и Воеводине.",
-   "why": "the media kit gives its boilerplate in Serbian, English and Russian"
-  },
   "o5jmq2": {
    "sr": "021.rs — Srbija obećala MMF-u poskupljenje struje u oktobru: Ekonomisti o tome da li će i ispuniti dogovoreno, 13.09.2026",
    "why": "title of a Serbian-language source, cited as published (/novosti)"
-  },
-  "rjoks7": {
-   "sr": "Evolako rešava punjenje električnog automobila za ljude koji žive u zgradama. Na parking mesto ili u garažu ugrađuje pojačanu utičnicu sa sertifikovanim MID brojilom ili wallbox 11 kW (MID brojilo po izboru), daje šablone papira za skupštinu stanara ili vlasnika garaže i svakog meseca obračunava struju po ceni sa računa EPS-a, bez marže. Paketi sa osnovnom ugradnjom pored razvodne table koštaju od 39.000 RSD sa PDV-om, a ugradnja traje jedan radni dan. Evolako radi u Beogradu, Novom Sadu i Vojvodini.",
-   "why": "the media kit gives its boilerplate in Serbian, English and Russian"
   },
   "s0yn2o": {
    "sr": "SR",
@@ -244,10 +248,6 @@
   "y5xav3": {
    "sr": "CSV",
    "why": "file format"
-  },
-  "z84w6b": {
-   "sr": "Evolako solves electric car charging for people who live in apartment buildings. At a parking space or in a garage it installs a heavy-duty socket with a MID-certified meter or an 11 kW wallbox (MID meter optional), provides document templates for the residents’ assembly or the garage owner, and every month bills electricity at the price on the EPS bill, with no markup. Packages with basic installation next to the distribution board start at RSD 39,000 including VAT, and installation takes one working day. Evolako works in Belgrade, Novi Sad and Vojvodina.",
-   "why": "the media kit gives its boilerplate in Serbian, English and Russian"
   }
  }
 }

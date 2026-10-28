@@ -1,6 +1,14 @@
 {
  "_about": "English for the Serbian texts the live dictionaries of www.evolako.rs do not translate. Key = the i18n engine's key of the Serbian text: FNV-1a 32-bit (base36) of the whitespace-normalized text, with Evolako hashed as BlokVolt (site/prerender.py key_of; the build checks every key against its \"sr\"). The build uses an entry only where the live dictionaries have nothing (titles, meta and JSON-LD of the /en/ pages, texts left in Serbian), and ships all entries to the engine of the /en/ pages as its last dictionary. American English, plain product language; prices, numbers and units as in the Serbian text. Never: atest, discount, 24/7, Plug&Charge, \"immediately\" as a promise, savings percentages, surcharge amounts, or wording that says Evolako handles the paperwork (it provides templates).",
  "entries": {
+  "10234ey": {
+   "en": "Contact — Evolako | All of Serbia",
+   "sr": "Kontakt — Evolako | Cela Srbija"
+  },
+  "102q1m4": {
+   "en": "Serbia",
+   "sr": "Srbija"
+  },
   "10cpc6e": {
    "en": "Putevi Srbije · A1 · Belgrade–Niš",
    "sr": "Putevi Srbije · A1 · Beograd–Niš"
@@ -16,6 +24,10 @@
   "116oovw": {
    "en": "per parking spot",
    "sr": "po parking mestu"
+  },
+  "12067bi": {
+   "en": "We work all over Serbia",
+   "sr": "Radimo u celoj Srbiji"
   },
   "1367beu": {
    "en": "How many kW a garage needs for 10, 20 or 50 chargers with power management: the overnight math, rules of thumb from EU practice and when you need a power upgrade.",
@@ -48,6 +60,10 @@
   "15e1lfi": {
    "en": "The kit for each spot, the shared infrastructure and a power upgrade: example prices for a hotel, a garage, a business, a new build and an apartment building, with VAT.",
    "sr": "Paket za mesto, zajednička infrastruktura i povećanje snage: primeri cena za hotel, garažu, firmu, novogradnju i stambenu zgradu, sa PDV-om."
+  },
+  "16hmcu2": {
+   "en": "Evolako installs chargers with MID meters at employees’ homes or in the company parking lot, anywhere in Serbia. With a subscription, the company receives a per-spot statement in PDF and CSV format every month.",
+   "sr": "Evolako ugrađuje punjač sa MID brojilom na adresi zaposlenog ili na parkingu firme, u celoj Srbiji. Uz pretplatu firma svakog meseca dobija obračun po mestu u PDF i CSV formatu."
   },
   "16j2hz8": {
    "en": "Home charger sales rep — Evolako",
@@ -149,6 +165,10 @@
    "en": "Installation only from 24.000, START 39.000, WALLBOX 11 kW from 94.000 and ZGRADA from 96.000 RSD per spot, with basic installation next to the distribution board.",
    "sr": "Samo ugradnja od 24.000, START 39.000, WALLBOX 11 kW od 94.000 i ZGRADA od 96.000 RSD po mestu, uz osnovnu ugradnju pored razvodne table."
   },
+  "1ff4d9l": {
+   "en": "We work all over Serbia. Installing one spot takes one working day; the rest of the time mostly depends on convening the residents’ assembly.",
+   "sr": "Radimo u celoj Srbiji. Ugradnja jednog mesta traje jedan radni dan, a ostatak vremena uglavnom zavisi od sazivanja skupštine."
+  },
   "1fh3fqk": {
    "en": "Wallbox Plus — 4G, RFID and a display",
    "sr": "Wallbox Plus — 4G, RFID i ekran"
@@ -197,6 +217,10 @@
    "en": "Privacy policy and terms of use",
    "sr": "Politika privatnosti i uslovi korišćenja"
   },
+  "1iyv3gq": {
+   "en": "Paid per installation at market rates, paid site visits for assessments, and we supply the materials. All of Serbia. Apply through the form.",
+   "sr": "Plaćanje po ugradnji, po tržišnim cenama, plaćen izlazak na procenu, materijal obezbeđujemo mi. Cela Srbija. Prijavi se preko forme."
+  },
   "1jtg00k": {
    "en": "EV chargers for apartment buildings — for building managers",
    "sr": "Punjači za stambene zgrade — za upravnike"
@@ -212,6 +236,10 @@
   "1l82vjz": {
    "en": "Lalinci rest area",
    "sr": "Odmorište Lalinci"
+  },
+  "1lb3vb4": {
+   "en": "Where we work: all of Serbia. Message us from anywhere with photos of your distribution board and the spot for the charger — the estimate from photos is free, and we arrange the on-site assessment by message.",
+   "sr": "Gde radimo: u celoj Srbiji. Iz bilo kog mesta pošalji poruku sa fotografijama razvodne table i mesta za punjač — predprocena po fotografijama je besplatna, a procenu na licu mesta dogovaramo u poruci."
   },
   "1le6kgu": {
    "en": "EV chargers for businesses, buildings and hotels in Serbia",
@@ -293,6 +321,10 @@
    "en": "Putevi Srbije · A2 · Čačak–Belgrade",
    "sr": "Putevi Srbije · A2 · Čačak–Beograd"
   },
+  "1shlx7o": {
+   "en": "A charger in your garage or at your spot in the building, installed next to the distribution board, with an optional MID meter. From 39.000 RSD. We work all over Serbia.",
+   "sr": "Punjač u garaži ili na mestu u zgradi, sa ugradnjom pored razvodne table, MID brojilo po izboru. Od 39.000 RSD. Radimo u celoj Srbiji."
+  },
   "1siprtb": {
    "en": "Referral: 2 more months of subscription free",
    "sr": "Preporuka: još 2 meseca pretplate besplatno"
@@ -312,6 +344,10 @@
   "1u4wc3t": {
    "en": "Electricity prices, rules for buildings and garages, subsidies and Evolako updates — short, with source and date.",
    "sr": "Cene struje, propisi za zgrade i garaže, subvencije i novosti u Evolako — kratko, sa izvorom i datumom."
+  },
+  "1ua3i02": {
+   "en": "Open positions at Evolako: home charger sales rep and legal counsel (Belgrade or Novi Sad) and installation electrician (all of Serbia). Apply through the form, reply within 48 hours.",
+   "sr": "Otvorene pozicije u Evolako: prodavac kućnih punjača i pravnik (Beograd ili Novi Sad) i električar za ugradnju (cela Srbija). Prijava preko forme, odgovor u roku od 48h."
   },
   "1uidaam": {
    "en": "Šid toll station",
@@ -349,6 +385,10 @@
    "en": "Published operating lease terms don't mention the charger or electricity. Whose charger it is when the car goes back, how the electricity is metered and what to ask the leasing company.",
    "sr": "Objavljeni uslovi operativnog lizinga ne pominju punjač ni struju. Čiji je punjač kad se auto vrati, kako se meri struja i šta pitati lizing kuću."
   },
+  "1xhrwoc": {
+   "en": "Yes, we work all over Serbia. For a buyer anywhere in the country, send us their contact details and we’ll arrange the on-site assessment by message.",
+   "sr": "Da, radimo u celoj Srbiji. Za kupca iz bilo kog mesta pošaljite nam kontakt, a procenu na licu mesta dogovaramo u poruci."
+  },
   "1xlq2dc": {
    "en": "A buyer who lives in an apartment building asks where they'll charge the car. Send them to us: we get back within 48 hours, do the assessment and send an exact quote. START kit 39.000 RSD, WALLBOX from 94.000 RSD, with VAT.",
    "sr": "Kupac iz zgrade pita gde će puniti auto. Uputite ga nama: javljamo se u roku od 48h, radimo procenu i šaljemo tačnu ponudu. Paket START 39.000 RSD, WALLBOX od 94.000 RSD, sa PDV-om."
@@ -376,6 +416,10 @@
   "4l0noe": {
    "en": "Putevi Srbije · A8 · Belgrade–Šabac",
    "sr": "Putevi Srbije · A8 · Beograd–Šabac"
+  },
+  "4p1ppb": {
+   "en": "All of Serbia",
+   "sr": "Cela Srbija"
   },
   "5bm6bi": {
    "en": "Write to hello@evolako.com, on WhatsApp, Viber or Telegram — we work every day and reply within 48 hours. We speak Serbian, Russian and English.",
@@ -405,6 +449,10 @@
    "en": "Evolako kits",
    "sr": "Evolako paketi"
   },
+  "85rr7e": {
+   "en": "We work in your city too.",
+   "sr": "Radimo i u tvom gradu."
+  },
   "8jjrew": {
    "en": "In a car park, a car sits for hours or days, so slow charging is enough. A MID meter at every spot shows how much each car used.",
    "sr": "Na parkingu auto stoji satima ili danima, pa je dovoljno sporo punjenje. MID brojilo na svakom mestu pokazuje koliko je koji auto potrošio."
@@ -432,6 +480,10 @@
   "a2zvak": {
    "en": "Putevi Srbije · A1 · Subotica–Belgrade",
    "sr": "Putevi Srbije · A1 · Subotica–Beograd"
+  },
+  "a3nk56": {
+   "en": "A home charger for the buyers of your electric cars: assessment, installation and document templates anywhere in Serbia. Public prices with VAT.",
+   "sr": "Kućni punjač za kupce vaših električnih automobila: procena, ugradnja i šabloni papira u celoj Srbiji. Javne cene sa PDV-om."
   },
   "ae1ly6": {
    "en": "EV chargers for gated car parks and long-stay parking at airports and stations: charging while the car is parked, a MID meter at every spot and chargers on pedestals.",
@@ -473,6 +525,14 @@
    "en": "Kits and prices — home charger with installation",
    "sr": "Paketi i cene — kućni punjač sa ugradnjom"
   },
+  "cxmdqw": {
+   "en": "The team is based in these two cities. We install all over Serbia, so we’re looking for electricians in other cities too.",
+   "sr": "Tim je u ova dva grada. Ugradnje radimo u celoj Srbiji, pa električare tražimo i u drugim gradovima."
+  },
+  "dsy4hc": {
+   "en": "Installations are done by licensed electricians, to our standard, with our checklist and installation description. If you are a licensed electrician anywhere in Serbia and would like to work with us, write to us.",
+   "sr": "Ugradnje rade licencirani električari, po našem standardu, uz našu čeklistu i tehnički opis ugradnje. Ako ste licencirani električar bilo gde u Srbiji i želite da radite sa nama, pišite nam."
+  },
   "dy8haq": {
    "en": "Jerina rest area",
    "sr": "Odmorište Jerina"
@@ -513,6 +573,14 @@
    "en": "START — reinforced socket + MID meter",
    "sr": "START — pojačana utičnica + MID brojilo"
   },
+  "hnb9wg": {
+   "en": "We work all over Serbia.",
+   "sr": "Radimo u celoj Srbiji."
+  },
+  "hr1y9b": {
+   "en": "Where we work: all of Serbia. For a property anywhere in the country, send us the address and photos of the distribution board, and we’ll arrange the on-site assessment by message.",
+   "sr": "Gde radimo: u celoj Srbiji. Za objekat u bilo kom mestu pošaljite adresu i fotografije razvodne table, a procenu na licu mesta dogovaramo u poruci."
+  },
   "i2wn3m": {
    "en": "Our voice in legal and formal conversations in Serbian. Fee by agreement.",
    "sr": "Naš glas u pravnim i formalnim razgovorima na srpskom. Honorar po dogovoru."
@@ -528,6 +596,10 @@
   "j9olxk": {
    "en": "How a developer prepares a garage for chargers: a cable route and a box at every spot, power management, MID meters, the law and the price per prepared spot.",
    "sr": "Kako investitor priprema garažu za punjače: trasa i kutija kod svakog mesta, upravljanje snagom, MID brojila, zakon i cena po pripremljenom mestu."
+  },
+  "jzsw43": {
+   "en": "We bring the clients, the materials and the quotes — you do the installation. All of Serbia.",
+   "sr": "Klijente, materijal i ponude obezbeđujemo mi — ti radiš instalaciju. Cela Srbija."
   },
   "kct6bz": {
    "en": "Orion eMobility · On the E-70 motorway between Adaševci and Kuzmin, Adaševci",
@@ -561,6 +633,10 @@
    "en": "Kruševac West toll station",
    "sr": "Naplatna stanica Kruševac zapad"
   },
+  "pttt79": {
+   "en": "A charger with a MID meter where the company car spends the night — at the employee’s home or in the company car park, anywhere in Serbia. An on-site assessment costs 2.990 RSD with VAT and is credited toward the installation; we reply within 48 hours.",
+   "sr": "Punjač sa MID brojilom na mestu gde službeni auto stoji noću — kod zaposlenog ili na parkingu firme, u celoj Srbiji. Procena na licu mesta košta 2.990 RSD sa PDV-om i uračunava se u cenu ugradnje; javljamo se u roku od 48h."
+  },
   "qdjylr": {
    "en": "A guest arrives in the evening and has a full battery by morning: an 11 kW wallbox with a MID meter at every spot, at public prices with VAT.",
    "sr": "Gost stiže uveče, a ujutru ima pun auto: wallbox 11 kW sa MID brojilom na svakom mestu, po javnim cenama sa PDV-om."
@@ -584,6 +660,10 @@
   "ru35d8": {
    "en": "How to increase your approved power with EDS: when you need it, which documents, what you pay once and what monthly, how long it takes and what if EDS is late.",
    "sr": "Kako se povećava odobrena snaga kod EDS-a: kada ti treba, koja dokumenta, šta plaćaš jednokratno, a šta mesečno, koliko traje i šta ako EDS kasni."
+  },
+  "s4wngf": {
+   "en": "All over Serbia. We speak Serbian, Russian and English.",
+   "sr": "U celoj Srbiji. Govorimo srpski, ruski i engleski."
   },
   "slzlu6": {
    "en": "Ruma toll station",
@@ -637,9 +717,25 @@
    "en": "Essent (NL) · Charger, Belgrade",
    "sr": "Essent (NL) · Punjač, Beograd"
   },
+  "xpkql7": {
+   "en": "© 2026 Evolako · We work all over Serbia · We speak Serbian, Russian and English",
+   "sr": "© 2026 Evolako · Radimo u celoj Srbiji · Govorimo srpski, ruski i engleski"
+  },
+  "xuhxmu": {
+   "en": "All over Serbia. The team is based in Belgrade and Novi Sad.",
+   "sr": "U celoj Srbiji. Tim je u Beogradu i Novom Sadu."
+  },
+  "ygyty1": {
+   "en": "Evolako works all over Serbia. Leave your contact and send photos of your distribution board and the spot for the charger — the estimate from photos is free.",
+   "sr": "Evolako radi u celoj Srbiji. Ostavi kontakt i pošalji fotografije razvodne table i mesta za punjač — predprocena po fotografijama je besplatna."
+  },
   "ymm3xi": {
    "en": "Public EV chargers in Serbia on one map: fast DC and AC, network prices with date and source. Plus what charging at home costs, overnight.",
    "sr": "Javni punjači za električni auto u Srbiji na jednoj mapi: brzi DC i AC, cene mreža sa datumom i izvorom. I koliko košta punjenje kod kuće, noću."
+  },
+  "ymn8sg": {
+   "en": "The lower tariff lasts 8 hours: in Belgrade 00–08h, in Vojvodina 23–07h, in the rest of Serbia 22–06h. In the blue zone, with all fees, ≈ 6 RSD/kWh.",
+   "sr": "Niža tarifa traje 8 sati: u Beogradu 00–08h, u Vojvodini 23–07h, u ostatku Srbije 22–06h. U plavoj zoni, sa svim naknadama, ≈ 6 RSD/kWh."
   },
   "ys1cdd": {
    "en": "A reinforced socket on a dedicated line, RCD protection (Type A + DC), a certified MID meter and basic installation next to the distribution board (up to 2 m of cable); document templates included. Cable to a spot farther away and any other work — quoted at the assessment, before work starts. All prices with VAT.",
