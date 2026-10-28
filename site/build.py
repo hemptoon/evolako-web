@@ -20,6 +20,8 @@ and writes site/dist/ for Cloudflare Pages. The built site needs neither Webflow
                            page or a copied file started them (their "initiators")
   404.html                 own "page not found" built from the markup of /vodici (navigation, footer, shared CSS/JS)
   robots.txt               as published
+  llms.txt                 site/llms.txt (llmstxt.org, 28.10.2026): what Evolako is and its main pages, for AI
+                           assistants; written by hand, checked against the built pages (links, RSD amounts, words)
   sitemap.xml              the published one (order, lastmod) with every page in sr, en and ru and xhtml:link
                            alternates (URLs stay on https://www.evolako.rs)
   _headers, _routes.json   cache and security headers incl. a Content-Security-Policy per page; Pages Functions
@@ -218,6 +220,10 @@ HEADERS_TOP = """\
   Content-Security-Policy: {cspindex}
 """
 HEADERS_BOTTOM = """
+# /llms.txt (llmstxt.org): plain UTF-8 text for AI assistants
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+
 # *.pages.dev (production alias and every preview) is never indexed; site/functions/_middleware.js does the same
 # for any host other than www.evolako.rs / evolako.rs
 https://:project.pages.dev/*
@@ -1275,10 +1281,39 @@ class Build:
             fail('missing snapshot/extra/robots.txt')
         with open(p, 'rb') as f:
             put('robots.txt', f.read())
+        put('llms.txt', self.llms_txt())
         put('sitemap.xml', self.sitemap().encode('utf-8'))
         put('_headers', self.headers_file().encode('utf-8'))
         put('_routes.json', (json.dumps(ROUTES, indent=2, sort_keys=True) + '\n').encode('utf-8'))
         self.verify(out, need)
+
+    def llms_txt(self):
+        """site/llms.txt (llmstxt.org, 28.10.2026): what Evolako is, its packages and main pages, for AI assistants. Written
+        by hand in English and checked here so it cannot drift from the site: every link is a built page (or the Moj
+        Evolako account), every RSD amount is shown on the built Serbian /paketi-i-cene or home page, and none of the
+        words the copy never uses appears."""
+        p = os.path.join(HERE, 'llms.txt')
+        if not os.path.isfile(p):
+            fail('missing site/llms.txt')
+        with open(p, 'rb') as f:
+            data = f.read()
+        text = data.decode('utf-8')
+        pages = {PR.page_url(SITE, 'sr', s) for s in self.page_out if s != '404'}
+        pages |= {PR.page_url(SITE, l, s) for (l, s) in self.lang_out} | {SITE + '/'}
+        links = re.findall(r'\]\((https?://[^)\s]+)\)', text)
+        for u in links:
+            if u != 'https://app.evolako.rs/' and u not in pages:
+                fail('site/llms.txt links to %s, which is not a built page' % u)
+        shown = ' '.join(html.unescape(re.sub(r'<[^>]+>', ' ', self.page_out[s])) for s in ('paketi-i-cene', 'index'))
+        shown = ' '.join(shown.split())
+        for amount in sorted(set(re.findall(r'(?<![\d.,])\d{1,3}\.\d{3}(?![\d.,])', text))):
+            if not re.search(r'(?<![\d.,])' + re.escape(amount) + r'(?![\d,]|\.\d)', shown):
+                fail('site/llms.txt names %s RSD, which the built /paketi-i-cene and / do not show' % amount)
+        bad = re.search(r'(?i)\b(?:atest\w*|popust\w*|discount\w*|plug ?& ?charge|odmah|immediately)\b|24/7', text)
+        if bad:
+            fail('site/llms.txt uses "%s", which the copy never uses' % bad.group(0))
+        self.llms_links = len(links)
+        return data
 
     def sitemap(self):
         """The published sitemap's pages (same order, same lastmod), each in Serbian, English and Russian, every URL

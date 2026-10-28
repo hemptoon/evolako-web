@@ -115,6 +115,7 @@ jobs:
           }
           check "$W/" 200 '^content-security-policy: ' '^x-robots-tag'
           check "$W/en/" 200 '^content-security-policy: ' '^x-robots-tag'
+          check "$W/llms.txt" 200 '^content-type: text/plain; charset=utf-8' '^x-robots-tag'
           check "$W/kontakt?lang=ru" 301 '^location: /ru/kontakt' -
           check "https://evolako.rs/vodici" 301 '^location: https://www.evolako.rs/vodici' -
           check "$W$css" 200 '^cache-control: public, max-age=31536000, immutable' -

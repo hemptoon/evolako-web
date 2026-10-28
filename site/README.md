@@ -169,7 +169,9 @@ times: `/<slug>` (Serbian, as before), `/en/<slug>` and `/ru/<slug>` (home: `/`,
   `/cesta-pitanja`, `/en/` and `/ru/cesta-pitanja` is generated
   from the questions and answers the page shows (each structured question of the Webflow embed takes the text of the
   visible `<details>` block it stands for; on the live site 5 of the 8 were worded differently). `sitemap.xml`: every page in sr, en, ru with `xhtml:link` alternates; `robots.txt`
-  unchanged; the 404 stays Serbian-only.
+  unchanged; the 404 stays Serbian-only. `llms.txt` (llmstxt.org, 28.10.2026) — `site/llms.txt`, written by hand in
+  English and checked by the build against the built pages (links, RSD amounts, words the copy never uses); edit it
+  together with the prices and pages it names.
 - **Engine on `/en/`, `/ru/`** — still runs (widgets write Serbian text at runtime) but locked to the page language;
   it also consults the own translations last (`_a/evo-i18n/<lang>.<sha>.js`). Scripts that read the page path see
   the Serbian one (`window.EVO_PATH`), so the bot (`Stranica`), the visit counter, GA page paths and the career

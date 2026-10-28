@@ -46,6 +46,7 @@ const CASES = [
   ['/_a/cdn.prod.website-files.com/x.js?lang=en', null],
   ['/f/6ab19bf9a3bb86f8fb7bba00?lang=en', null],
   ['/robots.txt?lang=en', null],
+  ['/llms.txt?lang=ru', null],
   ['/sitemap.xml?lang=ru', null],
   ['/kontakt/?lang=en', null],
   ['/ru-novosti?lang=en', '/en/ru-novosti'],

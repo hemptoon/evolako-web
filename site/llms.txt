@@ -1,0 +1,56 @@
+# Evolako
+
+> Evolako installs home EV chargers in Serbia, mainly for people who live in apartment buildings, and also for houses, rented garages and businesses. A package is a charger (or a reinforced socket) with basic installation next to the distribution board, a MID sub-meter where needed and an optional monthly statement. Evolako does not sell electricity: the MID meter measures what the charger uses and the cost is passed on at the price from the EPS bill, without markup. Service area: all of Serbia. Languages: Serbian (Latin), English (/en/), Russian (/ru/).
+
+## Packages and prices (RSD, as published on /paketi-i-cene)
+
+Every package includes basic installation next to the distribution board: up to 2 m of cable, an RCD (FID) and a breaker. Anything beyond that is quoted after the on-site assessment, before any work starts.
+
+- START — 39.000: a reinforced socket with a MID meter; works on an ordinary single-phase installation (2,3–3,7 kW)
+- WALLBOX 11 kW — from 94.000; 104.000 with a MID meter, which is required when the charger runs on someone else's meter (a building's or a garage owner's)
+- PLUS — 115.000 with a Type 2 socket, 127.000 with a 5 m cable; MID meter +10.000
+- PREMIUM — 155.000; 195.000 with a PowerBoost meter (dynamic power management and charging from solar panels); MID meter +10.000
+- ZGRADA (buildings) — from 96.000 per parking space: a shared line with MID metering for every user
+- UGRADNJA (installing a charger you already have) — from 24.000
+
+## How it works
+
+- A rough estimate from photos is free; the on-site assessment (procena) costs 2.990 RSD and is credited in full against the installation if you go ahead
+- The installation itself takes one working day; when a building assembly has to decide, the whole process usually takes 4–10 weeks
+- Building paperwork: Evolako gives a technical description of the installation and templates (draft assembly decision, agenda item, owner's consent, answers to residents' questions); the residents decide and submit them — Evolako does not attend assemblies or run the procedure
+- Optional subscription, 990 RSD per month: a monthly statement by the MID meter at the EPS price, priority service, the warranty kept for as long as the subscription runs, help when moving; the first 2 months cost 0 RSD and it can be cancelled in any month; the charger works without it
+- Standard warranty: 2 years, on the equipment and the installation
+- Replies within 48 h. Contact by messages only (no calls): +381 65 381 6083 on Viber, WhatsApp and Telegram (@evolako_rs); e-mail hello@evolako.com
+
+## Main pages
+
+- [Home](https://www.evolako.rs/): what Evolako does, the packages and how an installation goes
+- [Paketi i cene](https://www.evolako.rs/paketi-i-cene): packages, prices and the subscription
+- [Proveri svoju garažu](https://www.evolako.rs/proveri-svoju-garazu): three questions, a recommended package and a request form
+- [Česta pitanja](https://www.evolako.rs/cesta-pitanja): who pays for the electricity, the building assembly, technical questions
+- [Kontakt](https://www.evolako.rs/kontakt): request form and messengers
+- [Mapa punjača](https://www.evolako.rs/mapa-punjaca): public chargers in Serbia with prices (data from BlokVolt)
+- [Vodiči](https://www.evolako.rs/vodici): guides on charging at home and in apartment buildings
+- [Novosti](https://www.evolako.rs/novosti): news that matter for charging at home (EPS tariffs, EDS, regulations)
+- [Preporuka](https://www.evolako.rs/preporuka): referral — with a friend's code you get 2 more months of the subscription at 0 RSD
+- [Medija kit](https://www.evolako.rs/medija-kit): facts, packages, texts and logos for media and partners
+- [Politika privatnosti](https://www.evolako.rs/politika-privatnosti): privacy policy and terms of use
+- [Moj Evolako](https://app.evolako.rs/): the customer account on the web
+
+## Businesses and buildings
+
+- [Punjači za firme](https://www.evolako.rs/punjaci-za-firme): chargers for businesses and buildings
+- [Stambene zgrade](https://www.evolako.rs/punjaci-za-stambene-zgrade): chargers in apartment-building garages, for building managers
+- [Novogradnja](https://www.evolako.rs/punjaci-za-novogradnju): new buildings and developers
+- [Hoteli](https://www.evolako.rs/punjaci-za-hotele): hotels and apartments, charging for guests
+- [Parking garaže](https://www.evolako.rs/punjaci-za-parking-garaze): parking garages and company car parks
+- [Parkinzi](https://www.evolako.rs/punjaci-za-parkinge): guarded and long-term car parks
+- [Auto saloni](https://www.evolako.rs/punjaci-za-auto-salone): car dealers and home chargers for their buyers
+- [Službena vozila](https://www.evolako.rs/punjaci-za-sluzbena-vozila): company cars, charged at home and at the company car park
+- [Kalkulator cene punjača](https://www.evolako.rs/kalkulator-cene-punjaca): what chargers cost for a building, a hotel or a company
+- [Prijavi zgradu](https://www.evolako.rs/prijavi-zgradu): register a building's interest
+
+## Other languages
+
+- [English](https://www.evolako.rs/en/): the same pages in English, at /en/<page>
+- [Русский](https://www.evolako.rs/ru/): те же страницы на русском, по адресу /ru/<page>
