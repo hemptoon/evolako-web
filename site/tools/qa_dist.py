@@ -724,7 +724,7 @@ def main():
                 r['reference']['external_unanswered'] = sorted({x['host'] for x in ref['external']
                                                                 if not x['answered']})
                 ref_text = ref.get('text') or ''
-                if mode in ('en', 'ru'):
+                if mode in ('en', 'ru', 'sr-cyrl'):   # sr-cyrl: the legal-data placeholder hidden in Cyrillic too
                     ref_text, r['explained'] = langs.explain(slug, mode, ref_text, r.get('text') or '')
                 r['text_ratio_reference'] = round(r.get('text_len', 0) / max(1, len(ref_text) or 1), 3)
                 r['text_same_as_reference'] = r.get('text') == ref_text
