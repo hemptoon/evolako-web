@@ -79,7 +79,8 @@ jobs:
           for i in $(seq 1 36); do curl -fsS -o /dev/null "$B/" && curl -fsS -o /dev/null "$B$css" && break; sleep 5; done
           fail=0
           check() { # url, expected status, header regex (or -)
-            out=$(curl -sS -o /dev/null -D - --max-redirs 0 "$1" | tr -d '\r')
+            # the last header block only: Cloudflare may answer "103 Early Hints" before the response itself
+            out=$(curl -sS -o /dev/null -D - --max-redirs 0 "$1" | tr -d '\r' | awk '/^HTTP\//{b=""} {b=b $0 "\n"} END{printf "%s", b}')
             st=$(echo "$out" | head -1 | awk '{print $2}')
             if [ "$st" != "$2" ]; then echo "FAIL $1: status $st, expected $2"; fail=1; return; fi
             if [ "$3" != "-" ] && ! echo "$out" | grep -qiE "$3"; then echo "FAIL $1: no header /$3/"; fail=1; return; fi
@@ -104,7 +105,8 @@ jobs:
           for i in $(seq 1 36); do curl -fsS -o /dev/null "$W$css" && break; sleep 5; done
           fail=0
           check() { # url, expected status, header regex (or -), forbidden header regex (or -)
-            out=$(curl -sS -o /dev/null -D - --max-redirs 0 "$1" | tr -d '\r')
+            # the last header block only: Cloudflare may answer "103 Early Hints" before the response itself
+            out=$(curl -sS -o /dev/null -D - --max-redirs 0 "$1" | tr -d '\r' | awk '/^HTTP\//{b=""} {b=b $0 "\n"} END{printf "%s", b}')
             st=$(echo "$out" | head -1 | awk '{print $2}')
             if [ "$st" != "$2" ]; then echo "FAIL $1: status $st, expected $2"; fail=1; return; fi
             if [ "$3" != "-" ] && ! echo "$out" | grep -qiE "$3"; then echo "FAIL $1: no header /$3/"; fail=1; return; fi

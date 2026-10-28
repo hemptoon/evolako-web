@@ -1,3 +1,4 @@
 # One line per production deploy of code or snapshot changes of www.evolako.rs (branch site-migration) — only on the
 # founders' word. Publications (site/content/**) deploy by themselves and need no line here.
 2026-10-28 deploy 1: publishing of guides, news and B2B guides from site/content (site/content.py, the kits, content self-test, production smoke test of www.evolako.rs in this workflow, snapshot workflow by hand only) — no visible change on the site, no content yet (word: «деплой эволако», 28.10.2026 19:06)
+2026-10-28 deploy 1, second run: the smoke test now reads the final response — the first run failed its check of evolako-site.pages.dev/en/ on "103 Early Hints" that Cloudflare sends before the page (the site itself was fine); the same build, no visible change on the site (word: «деплой эволако», 28.10.2026 19:06)
