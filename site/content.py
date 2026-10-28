@@ -7,6 +7,8 @@ deploys the site, .github/workflows/site-preview.yml); nothing is written to Web
   site/content/vodici/<page>/sr.json en.json ru.json meta.json   guide for residents (kit site/kits/evc.py, tone «ti»)
   site/content/b2b/<page>/sr.json en.json ru.json meta.json      B2B guide (kit site/kits/evb_vodic.py, tone «vi»)
   site/content/novosti/<id>.json                                 one news item {"sr": …, "en": …, "ru": …} (evc.py)
+  site/content/gradovi/gradovi.json                              city pages /ugradnja-punjaca-<grad> and the hub
+                                                                 /ugradnja-punjaca (site/gradovi.py; 28.10.2026)
   meta.json = {"date": "YYYY-MM-DD"} — the publication date ("Ažurirano: …", the transparency line, JSON-LD dates).
 
 The texts follow the same JSON schema and copy rules as on Webflow (the kits' check() and newscheck() run unchanged;
@@ -48,6 +50,10 @@ def _kit(name):
 
 EVC = _kit('evc')          # residents: guides (tone «ti») and news
 EVB = _kit('evb_vodic')    # B2B guides (tone «vi»)
+_spec = importlib.util.spec_from_file_location('evo_gradovi', os.path.join(HERE, 'gradovi.py'))
+GR = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(GR)   # city pages: texts, data, checks (site/gradovi.py)
+GR.SAME_AS = EVC.SAME_AS
 # One photo table for both kits: evb's (photo 2 v2 — the first version must never be shown again — and photos 17, 18).
 EVC.IMG, EVC.ALT, EVC.thumb_idx = EVB.IMG, EVB.ALT, EVB.thumb_idx
 EVC.THUMB = dict(EVC.THUMB, **{'/punjaci-za-parkinge': 17})
@@ -234,6 +240,7 @@ class Content:
             self.only = {os.path.realpath(p) for p in only}
         else:
             self.only = None
+        self.gradovi = GR.load(content_dir) if os.path.isdir(content_dir) else None
         self.validate()
         if self.errors():
             return
@@ -241,6 +248,8 @@ class Content:
             self.add_guide(g)
         self.apply_cards()
         self.apply_news()
+        if self.gradovi:
+            self.add_gradovi()
 
     def errors(self):
         return [(i, t) for i, k, t in self.messages if k == 'error']
@@ -264,6 +273,22 @@ class Content:
         for page in (HUB_VODICI, NEWS_PAGE, HUB_B2B):
             if page not in self.sources:
                 self.say('build', 'error', 'page /%s is missing in the snapshot' % page)
+        if self.gradovi:
+            slugs = [GR.HUB] + [GR.PREFIX + c['slug'] for c in self.gradovi['cities']]
+            for s in slugs:
+                if s in self.sources or '/' + s in seen:
+                    self.say('/' + s, 'error', 'slug /%s is already a page of the site' % s)
+            if len(set(slugs)) != len(slugs):
+                self.say('gradovi', 'error', 'a city slug is used twice')
+            for c in self.gradovi['cities']:
+                if c['region'] not in GR.REGION_NAMES or c['tariff'] not in ('beograd', 'vojvodina', 'centralna'):
+                    self.say(c['slug'], 'error', 'unknown region or tariff area')
+                if not re.fullmatch(r'[a-z0-9]+(-[a-z0-9]+)*', c['slug']) or 'public' not in c:
+                    self.say(c['slug'], 'error', 'slug must be lowercase ASCII and "public" must be filled '
+                                                 '(site/tools/gradovi_data.py)')
+            if not re.fullmatch(r'20\d\d-\d\d-\d\d', str(self.gradovi.get('date'))) or \
+                    not self.gradovi.get('map', {}).get('checked'):
+                self.say('gradovi', 'error', 'gradovi.json needs "date" (YYYY-MM-DD) and "map.checked"')
         b2c = dict(B2C_SNAPSHOT)
         b2c.update({g.slug: g.cover() for g in self.guides if g.kind == 'vodic'})
         b2b = dict(B2B_SNAPSHOT_EXTRA)
@@ -394,6 +419,58 @@ class Content:
             raise ContentError('%s: the template slug /%s is still on the page' % (g.slug, tpl))
         return t
 
+    # ---------------------------------------------------------------- city pages (site/gradovi.py)
+    def add_gradovi(self):
+        data = self.gradovi
+        EVC.THUMB.setdefault('/' + GR.HUB, 9)               # its card in "Pročitaj i ovo": the on-site assessment
+        self.set_kit_links(EVC, self.b2c_cover, self.b2b_segment, None)
+        allowed = set(self.sources) | set(self.new_pages) | {GR.HUB} | {GR.PREFIX + c['slug'] for c in data['cities']}
+        allowed |= {s.split('#')[0] for s in ('index',)}
+        pages = [(GR.HUB, GR.hub_texts(data), GR.COVER_HUB, None)]
+        pages += [(GR.PREFIX + c['slug'], GR.city_texts(c, data), GR.COVER_CITY, c) for c in data['cities']]
+        tpl_slug = TEMPLATE['vodic']
+        for slug, (docs, ld_names), cov, city in pages:
+            errs = GR.check(docs, EVC, allowed)
+            for x in errs:
+                self.say('/' + slug, 'error', x)
+            if errs:
+                continue
+            p = EVC.Page(docs)
+            d = p.sr
+            kicker, h1 = p.t(['hero', 'kicker']), p.t(['hero', 'h1'])
+            lead, updated = p.t(['hero', 'lead']), p.t(['hero', 'updated'])
+            p.t(['seo', 'title'])
+            trans = GR.trans_line(data['date'])
+            parts = []
+            for si, sec in enumerate(d['sections']):
+                if sec['type'] == 'article':
+                    parts += [h for _, h in GR.render_article(p, si, sec)]
+                else:
+                    parts += [h for _, h in EVC.render_section(p, si, trans)]
+            cov = full_cover(cov)
+            p.pairs.append(tuple(EVC.ALT[cov]))
+            for k in ('description', 'og_title', 'og_description'):
+                p.pairs.append(pairs_of(docs, ['seo', k]))
+            p.pairs += ld_names
+            body = wf(''.join(parts))
+            for src in re.findall(r'<img src="([^"]+)"', body):
+                self.image(src, '/' + slug)
+            cover_url = self.image(EVC.IMG[cov][1], '/' + slug + ' cover')
+            ld = GR.city_jsonld(city, docs) if city else GR.hub_jsonld(data, docs)
+            g = type('Page', (), {'slug': '/' + slug})()
+            t = self.retarget(self.sources[tpl_slug], tpl_slug, g, d, ld, kicker, h1, lead, updated, cover_url,
+                              EVC.ALT[cov][0], body)
+            if slug == GR.HUB:                   # the footer link "Ugradnja po gradovima" is the current page here
+                cur = '<a href="/%s">' % GR.HUB
+                if t.count(cur) == 1:
+                    t = t.replace(cur, '<a href="/%s" aria-current="page" class="w--current">' % GR.HUB)
+            self.new_pages[slug] = t
+            self.template_of[slug] = tpl_slug
+            self.add_pairs(slug, p.pairs)
+            self.lastmod[slug] = data['date']
+        self.say('gradovi', 'info', 'city pages %s: the hub and %d cities (map of %s)' % (
+            data['date'], len(data['cities']), data['map']['checked']))
+
     # ---------------------------------------------------------------- cards
     def card(self, g):
         kit = g.kit
@@ -521,9 +598,12 @@ class Content:
     def summary(self):
         g = [x for x in self.guides if x.kind == 'vodic']
         b = [x for x in self.guides if x.kind == 'b2b']
-        return ('content (site/content): %d guides, %d B2B guides, %d news items — new pages: %s; changed pages: %s' % (
-            len(g), len(b), len(self.news), ', '.join('/' + s for s in sorted(self.new_pages)) or 'none',
-            ', '.join('/' + s for s in sorted(self.patched)) or 'none'))
+        cities = len(self.gradovi['cities']) if self.gradovi else 0
+        new = sorted(s for s in self.new_pages if not s.startswith(GR.HUB))
+        return ('content (site/content): %d guides, %d B2B guides, %d news items, %s — new pages: %s; changed pages: %s' % (
+            len(g), len(b), len(self.news), ('the city hub and %d city pages (/%s, /%s<grad>)' % (
+                cities, GR.HUB, GR.PREFIX)) if cities else 'no city pages',
+            ', '.join('/' + s for s in new) or 'none', ', '.join('/' + s for s in sorted(self.patched)) or 'none'))
 
 
 # ------------------------------------------------------------------------------------------------ CLI

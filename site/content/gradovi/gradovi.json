@@ -1,0 +1,956 @@
+{
+ "_about": "City pages /ugradnja-punjaca-<slug> and the hub /ugradnja-punjaca of www.evolako.rs (site/gradovi.py). The cities are Belgrade and the 27 cities of the Law on territorial organisation (art. 20) in Vojvodina and central Serbia; names, locatives (sr: \"u <loc>\", ru with its preposition), regions (NSTJ 2) and the night-tariff area are written by hand; \"public\" and \"map\" are refreshed by site/tools/gradovi_data.py from the BlokVolt charger map. \"date\" is the date the page shows (\"Ažurirano\"), sitemap lastmod and JSON-LD.",
+ "date": "2026-10-28",
+ "map": {
+  "checked": "28.10.2026",
+  "date": "2026-10-28",
+  "source": "hemptoon/blokvolt-rs 29bc5f7",
+  "stations": 398
+ },
+ "cities": [
+  {
+   "slug": "beograd",
+   "name": "Beograd",
+   "loc": "Beogradu",
+   "region": "beograd",
+   "tariff": "beograd",
+   "lat": 44.8125,
+   "lon": 20.4612,
+   "en": {
+    "name": "Belgrade"
+   },
+   "ru": {
+    "name": "Белград",
+    "loc": "в Белграде"
+   },
+   "note": {
+    "text": {
+     "sr": "U Beogradu nema besplatnog parkinga za električne automobile. U garaži „Obilićev venac“ električna vozila su po podacima iz 2021. plaćala 100 RSD na sat umesto 120, uz besplatnu struju; za 2026. to nije potvrđeno.",
+     "en": "Belgrade has no free parking for electric cars. In the Obilićev venac garage, electric vehicles paid 100 RSD an hour instead of 120, with free electricity, according to 2021 data; this has not been confirmed for 2026.",
+     "ru": "Бесплатной парковки для электромобилей в Белграде нет. В гараже «Обиличев венац» электромобили, по данным 2021 года, платили 100 RSD в час вместо 120, а электричество было бесплатным; на 2026 год это не подтверждено."
+    },
+    "source": {
+     "sr": "Putarina i parking za električni automobil u Srbiji 2026 (22.09.2026.)",
+     "en": "Tolls and parking for electric cars in Serbia 2026 (22.09.2026)",
+     "ru": "Платные дороги и парковка для электромобилей в Сербии 2026 (22.09.2026)"
+    },
+    "url": "https://www.blokvolt.rs/podaci/putarina-i-parking/"
+   },
+   "public": {
+    "n": 89,
+    "n_dc50": 29,
+    "nets": [
+     "Charge&GO",
+     "Orion eMobility",
+     "Tesla",
+     "eDrive",
+     "Yesla",
+     "Emobility Spectra",
+     "Lidl eCharge",
+     "Parking servis Beograd",
+     "Putevi Srbije"
+    ],
+    "best": {
+     "name": "Tesla Supercharger Beograd",
+     "net": "Tesla",
+     "dc": 250,
+     "km": 13.6,
+     "town": "Beograd"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/beograd/"
+   }
+  },
+  {
+   "slug": "novi-sad",
+   "name": "Novi Sad",
+   "loc": "Novom Sadu",
+   "region": "vojvodina",
+   "tariff": "vojvodina",
+   "lat": 45.2671,
+   "lon": 19.8335,
+   "en": {
+    "name": "Novi Sad"
+   },
+   "ru": {
+    "name": "Нови-Сад",
+    "loc": "в Нови-Саде"
+   },
+   "note": {
+    "text": {
+     "sr": "Od 13. jula 2026. parking na mestu sa javnim punjačem u Novom Sadu košta 500 RSD za 60 minuta, zajedno sa strujom.",
+     "en": "Since July 13, 2026, parking at a public charger spot in Novi Sad costs 500 RSD for 60 minutes, electricity included.",
+     "ru": "С 13 июля 2026 года парковка на месте с общественной зарядкой в Нови-Саде стоит 500 RSD за 60 минут вместе с электричеством."
+    },
+    "source": {
+     "sr": "Putarina i parking za električni automobil u Srbiji 2026 (22.09.2026.)",
+     "en": "Tolls and parking for electric cars in Serbia 2026 (22.09.2026)",
+     "ru": "Платные дороги и парковка для электромобилей в Сербии 2026 (22.09.2026)"
+    },
+    "url": "https://www.blokvolt.rs/podaci/putarina-i-parking/"
+   },
+   "public": {
+    "n": 31,
+    "n_dc50": 5,
+    "nets": [
+     "Charge&GO",
+     "Emobility Spectra",
+     "Orion eMobility",
+     "Lidl eCharge"
+    ],
+    "best": {
+     "name": "Super Vero Novi Sad",
+     "net": "Charge&GO",
+     "dc": 150,
+     "km": 0.7,
+     "town": "Novi Sad"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/novi-sad/"
+   }
+  },
+  {
+   "slug": "nis",
+   "name": "Niš",
+   "loc": "Nišu",
+   "region": "jug",
+   "tariff": "centralna",
+   "lat": 43.3209,
+   "lon": 21.8958,
+   "en": {
+    "name": "Niš"
+   },
+   "ru": {
+    "name": "Ниш",
+    "loc": "в Нише"
+   },
+   "note": {
+    "text": {
+     "sr": "U Nišu nema besplatnog parkinga za električne automobile.",
+     "en": "Niš has no free parking for electric cars.",
+     "ru": "Бесплатной парковки для электромобилей в Нише нет."
+    },
+    "source": {
+     "sr": "Putarina i parking za električni automobil u Srbiji 2026 (22.09.2026.)",
+     "en": "Tolls and parking for electric cars in Serbia 2026 (22.09.2026)",
+     "ru": "Платные дороги и парковка для электромобилей в Сербии 2026 (22.09.2026)"
+    },
+    "url": "https://www.blokvolt.rs/podaci/putarina-i-parking/"
+   },
+   "public": {
+    "n": 20,
+    "n_dc50": 7,
+    "nets": [
+     "Charge&GO",
+     "Orion eMobility",
+     "Putevi Srbije"
+    ],
+    "best": {
+     "name": "OMV Niš 4",
+     "net": "Charge&GO",
+     "dc": 140,
+     "km": 2.4,
+     "town": "Niš"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/nis/"
+   }
+  },
+  {
+   "slug": "kragujevac",
+   "name": "Kragujevac",
+   "loc": "Kragujevcu",
+   "region": "sumadija",
+   "tariff": "centralna",
+   "lat": 44.0128,
+   "lon": 20.9114,
+   "en": {
+    "name": "Kragujevac"
+   },
+   "ru": {
+    "name": "Крагуевац",
+    "loc": "в Крагуеваце"
+   },
+   "public": {
+    "n": 11,
+    "n_dc50": 2,
+    "nets": [
+     "Charge&GO",
+     "Orion eMobility",
+     "Emobility Spectra"
+    ],
+    "best": {
+     "name": "OMV Kragujevac",
+     "net": "Charge&GO",
+     "dc": 150,
+     "km": 1.9,
+     "town": "Kragujevac"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/kragujevac/"
+   }
+  },
+  {
+   "slug": "subotica",
+   "name": "Subotica",
+   "loc": "Subotici",
+   "region": "vojvodina",
+   "tariff": "vojvodina",
+   "lat": 46.1003,
+   "lon": 19.6658,
+   "en": {
+    "name": "Subotica"
+   },
+   "ru": {
+    "name": "Суботица",
+    "loc": "в Суботице"
+   },
+   "public": {
+    "n": 14,
+    "n_dc50": 5,
+    "nets": [
+     "Charge&GO",
+     "Orion eMobility",
+     "Emobility Spectra",
+     "Putevi Srbije"
+    ],
+    "best": {
+     "name": "Stop Shop Subotica",
+     "net": "Charge&GO",
+     "dc": 120,
+     "km": 2.5,
+     "town": "Subotica"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/subotica/"
+   }
+  },
+  {
+   "slug": "zrenjanin",
+   "name": "Zrenjanin",
+   "loc": "Zrenjaninu",
+   "region": "vojvodina",
+   "tariff": "vojvodina",
+   "lat": 45.3816,
+   "lon": 20.3906,
+   "en": {
+    "name": "Zrenjanin"
+   },
+   "ru": {
+    "name": "Зренянин",
+    "loc": "в Зренянине"
+   },
+   "public": {
+    "n": 8,
+    "n_dc50": 4,
+    "nets": [
+     "Orion eMobility",
+     "Charge&GO",
+     "Emobility Spectra"
+    ],
+    "best": {
+     "name": "BIG Zrenjanin",
+     "net": "Charge&GO",
+     "dc": 150,
+     "km": 2.9,
+     "town": "Zrenjanin"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/zrenjanin/"
+   }
+  },
+  {
+   "slug": "pancevo",
+   "name": "Pančevo",
+   "loc": "Pančevu",
+   "region": "vojvodina",
+   "tariff": "vojvodina",
+   "lat": 44.8708,
+   "lon": 20.6403,
+   "en": {
+    "name": "Pančevo"
+   },
+   "ru": {
+    "name": "Панчево",
+    "loc": "в Панчево"
+   },
+   "public": {
+    "n": 5,
+    "n_dc50": 4,
+    "nets": [
+     "Charge&GO",
+     "Orion eMobility"
+    ],
+    "best": {
+     "name": "OMV Pančevo",
+     "net": "Charge&GO",
+     "dc": 150,
+     "km": 1.8,
+     "town": "Pančevo"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/pancevo/"
+   }
+  },
+  {
+   "slug": "cacak",
+   "name": "Čačak",
+   "loc": "Čačku",
+   "region": "sumadija",
+   "tariff": "centralna",
+   "lat": 43.8914,
+   "lon": 20.3497,
+   "en": {
+    "name": "Čačak"
+   },
+   "ru": {
+    "name": "Чачак",
+    "loc": "в Чачаке"
+   },
+   "public": {
+    "n": 14,
+    "n_dc50": 8,
+    "nets": [
+     "Charge&GO",
+     "Orion eMobility",
+     "eDrive"
+    ],
+    "best": {
+     "name": "OMV Čačak 1",
+     "net": "Charge&GO",
+     "dc": 140,
+     "km": 2.2,
+     "town": "Čačak"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/cacak/"
+   }
+  },
+  {
+   "slug": "kraljevo",
+   "name": "Kraljevo",
+   "loc": "Kraljevu",
+   "region": "sumadija",
+   "tariff": "centralna",
+   "lat": 43.7258,
+   "lon": 20.6896,
+   "en": {
+    "name": "Kraljevo"
+   },
+   "ru": {
+    "name": "Кралево",
+    "loc": "в Кралево"
+   },
+   "public": {
+    "n": 3,
+    "n_dc50": 1,
+    "nets": [
+     "Charge&GO",
+     "Orion eMobility"
+    ],
+    "best": {
+     "name": "OMV Kraljevo 2",
+     "net": "Charge&GO",
+     "dc": 70,
+     "km": 6.1,
+     "town": "Kraljevo"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/kraljevo/"
+   }
+  },
+  {
+   "slug": "novi-pazar",
+   "name": "Novi Pazar",
+   "loc": "Novom Pazaru",
+   "region": "sumadija",
+   "tariff": "centralna",
+   "lat": 43.1367,
+   "lon": 20.5122,
+   "en": {
+    "name": "Novi Pazar"
+   },
+   "ru": {
+    "name": "Нови-Пазар",
+    "loc": "в Нови-Пазаре"
+   },
+   "public": {
+    "n": 3,
+    "n_dc50": 1,
+    "nets": [
+     "Orion eMobility"
+    ],
+    "best": {
+     "name": "Next Charge",
+     "net": "Orion eMobility",
+     "dc": 100,
+     "km": 2.5,
+     "town": "Novi Pazar"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/novi-pazar/"
+   }
+  },
+  {
+   "slug": "smederevo",
+   "name": "Smederevo",
+   "loc": "Smederevu",
+   "region": "jug",
+   "tariff": "centralna",
+   "lat": 44.6628,
+   "lon": 20.93,
+   "en": {
+    "name": "Smederevo"
+   },
+   "ru": {
+    "name": "Смедерево",
+    "loc": "в Смедерево"
+   },
+   "public": {
+    "n": 7,
+    "n_dc50": 4,
+    "nets": [
+     "Charge&GO",
+     "eDrive",
+     "Putevi Srbije",
+     "Yesla"
+    ],
+    "best": {
+     "name": "GOLD PARK",
+     "net": "Yesla",
+     "dc": 160,
+     "km": 2.3,
+     "town": "Smederevo"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/smederevo/"
+   }
+  },
+  {
+   "slug": "leskovac",
+   "name": "Leskovac",
+   "loc": "Leskovcu",
+   "region": "jug",
+   "tariff": "centralna",
+   "lat": 42.9981,
+   "lon": 21.9461,
+   "en": {
+    "name": "Leskovac"
+   },
+   "ru": {
+    "name": "Лесковац",
+    "loc": "в Лесковаце"
+   },
+   "public": {
+    "n": 3,
+    "n_dc50": 2,
+    "nets": [
+     "Charge&GO"
+    ],
+    "best": {
+     "name": "Stop Shop Leskovac",
+     "net": "Charge&GO",
+     "dc": 60,
+     "km": 0.5,
+     "town": "Leskovac"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/leskovac/"
+   }
+  },
+  {
+   "slug": "valjevo",
+   "name": "Valjevo",
+   "loc": "Valjevu",
+   "region": "sumadija",
+   "tariff": "centralna",
+   "lat": 44.2751,
+   "lon": 19.8982,
+   "en": {
+    "name": "Valjevo"
+   },
+   "ru": {
+    "name": "Валево",
+    "loc": "в Валево"
+   },
+   "public": {
+    "n": 7,
+    "n_dc50": 3,
+    "nets": [
+     "eDrive",
+     "Charge&GO",
+     "Emobility Spectra"
+    ],
+    "best": {
+     "name": "Battery Magic",
+     "net": "Emobility Spectra",
+     "dc": 120,
+     "km": 3.3,
+     "town": "Valjevo"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/valjevo/"
+   }
+  },
+  {
+   "slug": "krusevac",
+   "name": "Kruševac",
+   "loc": "Kruševcu",
+   "region": "sumadija",
+   "tariff": "centralna",
+   "lat": 43.58,
+   "lon": 21.3339,
+   "en": {
+    "name": "Kruševac"
+   },
+   "ru": {
+    "name": "Крушевац",
+    "loc": "в Крушеваце"
+   },
+   "public": {
+    "n": 6,
+    "n_dc50": 5,
+    "nets": [
+     "Putevi Srbije",
+     "Charge&GO"
+    ],
+    "best": {
+     "name": "BIG Kruševac",
+     "net": "Charge&GO",
+     "dc": 180,
+     "km": 1.2,
+     "town": "Kruševac"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/krusevac/"
+   }
+  },
+  {
+   "slug": "vranje",
+   "name": "Vranje",
+   "loc": "Vranju",
+   "region": "jug",
+   "tariff": "centralna",
+   "lat": 42.5514,
+   "lon": 21.9003,
+   "en": {
+    "name": "Vranje"
+   },
+   "ru": {
+    "name": "Вранье",
+    "loc": "во Вранье"
+   },
+   "public": {
+    "n": 1,
+    "n_dc50": 1,
+    "nets": [
+     "Charge&GO"
+    ],
+    "best": {
+     "name": "OMV Vranje",
+     "net": "Charge&GO",
+     "dc": 120,
+     "km": 0.8,
+     "town": "Vranje"
+    },
+    "bv_url": null
+   }
+  },
+  {
+   "slug": "sabac",
+   "name": "Šabac",
+   "loc": "Šapcu",
+   "region": "sumadija",
+   "tariff": "centralna",
+   "lat": 44.7489,
+   "lon": 19.6908,
+   "en": {
+    "name": "Šabac"
+   },
+   "ru": {
+    "name": "Шабац",
+    "loc": "в Шабаце"
+   },
+   "public": {
+    "n": 9,
+    "n_dc50": 3,
+    "nets": [
+     "Orion eMobility",
+     "Charge&GO",
+     "Putevi Srbije"
+    ],
+    "best": {
+     "name": "Naplatna stanica Šabac",
+     "net": "Putevi Srbije",
+     "dc": 120.0,
+     "km": 7.0,
+     "town": "Šabac"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/sabac/"
+   }
+  },
+  {
+   "slug": "uzice",
+   "name": "Užice",
+   "loc": "Užicu",
+   "region": "sumadija",
+   "tariff": "centralna",
+   "lat": 43.8586,
+   "lon": 19.8488,
+   "en": {
+    "name": "Užice"
+   },
+   "ru": {
+    "name": "Ужице",
+    "loc": "в Ужице"
+   },
+   "public": {
+    "n": 1,
+    "n_dc50": 0,
+    "nets": [
+     "Orion eMobility"
+    ],
+    "best": null,
+    "bv_url": null,
+    "nearest_dc50": {
+     "name": "BMW TO Zlatibor",
+     "net": "Orion eMobility",
+     "dc": 50,
+     "km": 18.5,
+     "town": "Zlatibor"
+    }
+   }
+  },
+  {
+   "slug": "sombor",
+   "name": "Sombor",
+   "loc": "Somboru",
+   "region": "vojvodina",
+   "tariff": "vojvodina",
+   "lat": 45.7742,
+   "lon": 19.1122,
+   "en": {
+    "name": "Sombor"
+   },
+   "ru": {
+    "name": "Сомбор",
+    "loc": "в Сомборе"
+   },
+   "public": {
+    "n": 2,
+    "n_dc50": 1,
+    "nets": [
+     "Charge&GO",
+     "Orion eMobility"
+    ],
+    "best": {
+     "name": "Stop Shop Sombor",
+     "net": "Charge&GO",
+     "dc": 120,
+     "km": 1.5,
+     "town": "Sombor"
+    },
+    "bv_url": null
+   }
+  },
+  {
+   "slug": "pozarevac",
+   "name": "Požarevac",
+   "loc": "Požarevcu",
+   "region": "jug",
+   "tariff": "centralna",
+   "lat": 44.6194,
+   "lon": 21.1869,
+   "en": {
+    "name": "Požarevac"
+   },
+   "ru": {
+    "name": "Пожаревац",
+    "loc": "в Пожареваце"
+   },
+   "public": {
+    "n": 2,
+    "n_dc50": 1,
+    "nets": [
+     "Charge&GO"
+    ],
+    "best": {
+     "name": "OMV Požarevac",
+     "net": "Charge&GO",
+     "dc": 100,
+     "km": 2.3,
+     "town": "Požarevac"
+    },
+    "bv_url": null
+   }
+  },
+  {
+   "slug": "pirot",
+   "name": "Pirot",
+   "loc": "Pirotu",
+   "region": "jug",
+   "tariff": "centralna",
+   "lat": 43.1531,
+   "lon": 22.5861,
+   "en": {
+    "name": "Pirot"
+   },
+   "ru": {
+    "name": "Пирот",
+    "loc": "в Пироте"
+   },
+   "public": {
+    "n": 5,
+    "n_dc50": 1,
+    "nets": [
+     "Charge&GO",
+     "Orion eMobility"
+    ],
+    "best": {
+     "name": "Bela Palanka",
+     "net": "Charge&GO",
+     "dc": 75,
+     "km": 23.9,
+     "town": "Pirot"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/pirot/"
+   }
+  },
+  {
+   "slug": "zajecar",
+   "name": "Zaječar",
+   "loc": "Zaječaru",
+   "region": "jug",
+   "tariff": "centralna",
+   "lat": 43.9036,
+   "lon": 22.2847,
+   "en": {
+    "name": "Zaječar"
+   },
+   "ru": {
+    "name": "Заечар",
+    "loc": "в Заечаре"
+   },
+   "public": {
+    "n": 3,
+    "n_dc50": 2,
+    "nets": [
+     "Charge&GO",
+     "Orion eMobility"
+    ],
+    "best": {
+     "name": "Stop Shop Zaječar",
+     "net": "Charge&GO",
+     "dc": 60,
+     "km": 1.3,
+     "town": "Zaječar"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/zajecar/"
+   }
+  },
+  {
+   "slug": "kikinda",
+   "name": "Kikinda",
+   "loc": "Kikindi",
+   "region": "vojvodina",
+   "tariff": "vojvodina",
+   "lat": 45.8297,
+   "lon": 20.4653,
+   "en": {
+    "name": "Kikinda"
+   },
+   "ru": {
+    "name": "Кикинда",
+    "loc": "в Кикинде"
+   },
+   "public": {
+    "n": 2,
+    "n_dc50": 1,
+    "nets": [
+     "Charge&GO"
+    ],
+    "best": {
+     "name": "OMV Kikinda",
+     "net": "Charge&GO",
+     "dc": 60,
+     "km": 1.2,
+     "town": "Kikinda"
+    },
+    "bv_url": null
+   }
+  },
+  {
+   "slug": "sremska-mitrovica",
+   "name": "Sremska Mitrovica",
+   "loc": "Sremskoj Mitrovici",
+   "region": "vojvodina",
+   "tariff": "vojvodina",
+   "lat": 44.9764,
+   "lon": 19.6122,
+   "en": {
+    "name": "Sremska Mitrovica"
+   },
+   "ru": {
+    "name": "Сремска-Митровица",
+    "loc": "в Сремска-Митровице"
+   },
+   "public": {
+    "n": 5,
+    "n_dc50": 1,
+    "nets": [
+     "Charge&GO",
+     "Orion eMobility"
+    ],
+    "best": {
+     "name": "OMV Martinci 1",
+     "net": "Charge&GO",
+     "dc": 180,
+     "km": 14.4,
+     "town": "Sremska Mitrovica"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/sremska-mitrovica/"
+   }
+  },
+  {
+   "slug": "jagodina",
+   "name": "Jagodina",
+   "loc": "Jagodini",
+   "region": "sumadija",
+   "tariff": "centralna",
+   "lat": 43.9771,
+   "lon": 21.2612,
+   "en": {
+    "name": "Jagodina"
+   },
+   "ru": {
+    "name": "Ягодина",
+    "loc": "в Ягодине"
+   },
+   "public": {
+    "n": 3,
+    "n_dc50": 2,
+    "nets": [
+     "Orion eMobility",
+     "Charge&GO"
+    ],
+    "best": {
+     "name": "OMV Jagodina",
+     "net": "Charge&GO",
+     "dc": 110,
+     "km": 2.0,
+     "town": "Jagodina"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/jagodina/"
+   }
+  },
+  {
+   "slug": "vrsac",
+   "name": "Vršac",
+   "loc": "Vršcu",
+   "region": "vojvodina",
+   "tariff": "vojvodina",
+   "lat": 45.1167,
+   "lon": 21.3036,
+   "en": {
+    "name": "Vršac"
+   },
+   "ru": {
+    "name": "Вршац",
+    "loc": "в Вршаце"
+   },
+   "public": {
+    "n": 3,
+    "n_dc50": 1,
+    "nets": [
+     "Charge&GO"
+    ],
+    "best": {
+     "name": "Stop Shop Vršac",
+     "net": "Charge&GO",
+     "dc": 120,
+     "km": 2.2,
+     "town": "Vršac"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/vrsac/"
+   }
+  },
+  {
+   "slug": "bor",
+   "name": "Bor",
+   "loc": "Boru",
+   "region": "jug",
+   "tariff": "centralna",
+   "lat": 44.0747,
+   "lon": 22.0959,
+   "en": {
+    "name": "Bor"
+   },
+   "ru": {
+    "name": "Бор",
+    "loc": "в Боре"
+   },
+   "public": {
+    "n": 0,
+    "n_dc50": 0,
+    "nets": [],
+    "best": null,
+    "bv_url": null,
+    "nearest_dc50": {
+     "name": "Stop Shop Zaječar",
+     "net": "Charge&GO",
+     "dc": 60,
+     "km": 23.6,
+     "town": "Zaječar"
+    }
+   }
+  },
+  {
+   "slug": "prokuplje",
+   "name": "Prokuplje",
+   "loc": "Prokuplju",
+   "region": "jug",
+   "tariff": "centralna",
+   "lat": 43.2342,
+   "lon": 21.5881,
+   "en": {
+    "name": "Prokuplje"
+   },
+   "ru": {
+    "name": "Прокупле",
+    "loc": "в Прокупле"
+   },
+   "public": {
+    "n": 2,
+    "n_dc50": 1,
+    "nets": [
+     "Charge&GO"
+    ],
+    "best": {
+     "name": "Penta Park Prokuplje",
+     "net": "Charge&GO",
+     "dc": 60,
+     "km": 1.8,
+     "town": "Prokuplje"
+    },
+    "bv_url": null
+   }
+  },
+  {
+   "slug": "loznica",
+   "name": "Loznica",
+   "loc": "Loznici",
+   "region": "sumadija",
+   "tariff": "centralna",
+   "lat": 44.5339,
+   "lon": 19.2247,
+   "en": {
+    "name": "Loznica"
+   },
+   "ru": {
+    "name": "Лозница",
+    "loc": "в Лознице"
+   },
+   "public": {
+    "n": 2,
+    "n_dc50": 1,
+    "nets": [
+     "Charge&GO"
+    ],
+    "best": {
+     "name": "OMV Loznica",
+     "net": "Charge&GO",
+     "dc": 120,
+     "km": 4.7,
+     "town": "Loznica"
+    },
+    "bv_url": null
+   }
+  }
+ ]
+}

@@ -12,7 +12,8 @@
 #     never in this repository). Without them every form shows its failure block.
 # Before the upload the same offline checks as on a laptop run (build incl. site/content, the content self-test, form
 # endpoint, middleware, i18n engine copy); after it, a smoke test of the production domains: statuses, headers, the
-# ?lang= and bare-domain rules, and every page of site/content (its H1, the news ids on /novosti) on www.evolako.rs.
+# ?lang= and bare-domain rules, and every page of site/content (its H1 — guides and the city pages —, the news ids on
+# /novosti) on www.evolako.rs.
 # Secrets (repo Settings → Secrets → Actions, the same as deploy.yml): CLOUDFLARE_API_TOKEN ("Account · Cloudflare
 # Pages · Edit" only), CLOUDFLARE_ACCOUNT_ID. Actions pinned to commit hashes, wrangler to an exact version.
 name: Site preview
@@ -119,18 +120,19 @@ jobs:
           check "$W/kontakt?lang=ru" 301 '^location: /ru/kontakt' -
           check "https://evolako.rs/vodici" 301 '^location: https://www.evolako.rs/vodici' -
           check "$W$css" 200 '^cache-control: public, max-age=31536000, immutable' -
-          # every page of site/content is live with its H1 (Serbian, English, Russian), every news item on /novosti
+          # every page of site/content (guides, B2B guides, the city pages and their hub) is live with its H1 (Serbian,
+          # English, Russian), every news item on /novosti
           python3 - <<'EOF' > /tmp/content-urls.txt
           import html, json, os, re, sys
           sys.path.insert(0, 'site')
           import content as CT
           sources, assets = CT.snapshot_sources('site/snapshot')
           c = CT.Content(sources, assets)
-          for g in c.guides:
+          for slug in sorted(c.new_pages):
               for lang in ('', '/en', '/ru'):
-                  page = open('site/dist%s%s.html' % (lang or '', g.slug), encoding='utf-8').read()
+                  page = open('site/dist%s/%s.html' % (lang or '', slug), encoding='utf-8').read()
                   h1 = html.unescape(re.search(r'<h1>(.*?)</h1>', page).group(1))
-                  print('%s%s\t%s' % (lang, g.slug, h1))
+                  print('%s/%s\t%s' % (lang, slug, h1))
           for n in c.news:
               print('/novosti\tid="%s"' % n.id)
           EOF

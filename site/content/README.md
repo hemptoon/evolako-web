@@ -11,6 +11,7 @@ a laptop and with a smoke test of every page of this folder on www.evolako.rs.
 | `vodici/<page>/` | guide for residents, tone «ti» | `site/kits/evc.py` | new page `/<page>` (+ `/en/`, `/ru/`), card first on `/vodici`, sitemap |
 | `b2b/<page>/` | B2B guide, tone «vi» | `site/kits/evb_vodic.py` | new page `/<page>`, card last on `/punjaci-za-firme` and first on the segment page of its CTA |
 | `novosti/<id>.json` | news item | `site/kits/evc.py` (`newscheck`) | first on `/novosti` (newest first), its JSON-LD |
+| `gradovi/gradovi.json` | city pages (28.10.2026) | `site/gradovi.py` (texts and `check()`) | `/ugradnja-punjaca` (all cities by region) and `/ugradnja-punjaca-<grad>` (+ `/en/`, `/ru/`), sitemap; footer link «Ugradnja po gradovima» and `/kontakt` link to the hub |
 
 A guide folder holds `sr.json`, `en.json`, `ru.json` (the schema of the project document
 `claude/Evolako_B2B_Vodici_Pipeline_2026-09-30.md` §5, guides for residents: `claude/Evolako_Vodici_Novosti_Pipeline_2026-09-30.md`
@@ -52,3 +53,28 @@ A correction is a commit that changes the item (and its `date` if the change is 
 done by a founder (Claude deletes nothing). Photos: only the photos of the kits' table that the frozen snapshot holds
 (a full-size photo it lacks is replaced by a close one, `FULL_FALLBACK` in `site/content.py`); new images are not
 supported yet.
+
+## City pages (`gradovi/gradovi.json`, since 28.10.2026)
+
+Evolako works in the whole country (decision 27.10.2026). `gradovi.json` holds Belgrade and the 27 cities of
+the Law on territorial organisation (art. 20) in Vojvodina and central Serbia: slug, names and locatives (sr «u
+<loc>», en, ru with its preposition), region (NSTJ 2) and night-tariff area — written by hand — and, per city, the
+public-charging facts of the BlokVolt charger map (`public`, `map`), which only `site/tools/gradovi_data.py` writes.
+The texts are templates in `site/gradovi.py` (sr «ti», en, ru «ты»), filled with each city's own data (its public
+chargers within 25 km, the strongest one or the nearest fast one, the networks, the lower-tariff hours of its area,
+local parking facts for Belgrade, Novi Sad and Niš), so no page is a copy with another city name. `check()` keeps the
+copy rules (and no visit deadline, no "PDV", no local-electrician claim, every number of the Serbian text in the
+translations); the build stops on an error.
+
+Refresh the facts (monthly, or after a big change of the map), then build, QA, commit as a content change:
+
+```
+git clone --depth 1 https://github.com/hemptoon/blokvolt-rs /tmp/bv           # read-only
+python3 site/tools/gradovi_data.py --blokvolt /tmp/bv --date <YYYY-MM-DD>      # "date" = Ažurirano on the pages
+python3 site/content.py check && python3 site/build.py | tail -5
+python3 site/tools/qa_dist.py --shots /tmp/evo-shots --pages ugradnja-punjaca,ugradnja-punjaca-beograd,ugradnja-punjaca-bor --no-reference --no-interactions
+```
+
+A new city: add it to `cities` (the name must be a town of BlokVolt `scripts/map_data.py` TOWNS), run the tool, check
+its page in the three languages. Prices in the texts follow `/paketi-i-cene`: when a package price changes, change
+`PRICES_ROWS` / `PRICES_MORE` in `site/gradovi.py` in the same commit.

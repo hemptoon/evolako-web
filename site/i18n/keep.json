@@ -21,13 +21,45 @@
    "sr": "Wallbox Plus",
    "why": "package name"
   },
+  "14wa3qp": {
+   "sr": "Kruševac",
+   "why": "city name, the same in English (Russian: Крушевац)"
+  },
+  "15cmuww": {
+   "sr": "ZGRADA",
+   "why": "package name"
+  },
+  "15t6dv7": {
+   "sr": "Novi Pazar",
+   "why": "city name, the same in English (Russian: Нови-Пазар)"
+  },
   "15yj81d": {
    "sr": "Viber",
    "why": "brand"
   },
+  "17uskp": {
+   "sr": "Smederevo",
+   "why": "city name, the same in English (Russian: Смедерево)"
+  },
+  "17zrqfk": {
+   "sr": "N1 — Jeftinija struja noću: tri zone u Srbiji (08.09.2023.)",
+   "why": "title of a Serbian-language source, cited as published (city pages /ugradnja-punjaca-*)"
+  },
   "19jxmhn": {
    "sr": "Charge&GO",
    "why": "charging network brand (map filter)"
+  },
+  "19kaxnn": {
+   "sr": "Zaječar",
+   "why": "city name, the same in English (Russian: Заечар)"
+  },
+  "19sncyp": {
+   "sr": "Prokuplje",
+   "why": "city name, the same in English (Russian: Прокупле)"
+  },
+  "1adxj6r": {
+   "sr": "Sremska Mitrovica",
+   "why": "city name, the same in English (Russian: Сремска-Митровица)"
   },
   "1agii65": {
    "sr": "Marko",
@@ -61,6 +93,10 @@
    "sr": "YouTube",
    "why": "brand"
   },
+  "1gzosi1": {
+   "sr": "Pančevo",
+   "why": "city name, the same in English (Russian: Панчево)"
+  },
   "1hvikgd": {
    "sr": "EDS",
    "why": "company abbreviation (Elektrodistribucija Srbije, the grid operator), the same in every language"
@@ -73,9 +109,29 @@
    "sr": "TikTok",
    "why": "brand"
   },
+  "1me9boy": {
+   "sr": "Valjevo",
+   "why": "city name, the same in English (Russian: Валево)"
+  },
+  "1o986ep": {
+   "sr": "Užice",
+   "why": "city name, the same in English (Russian: Ужице)"
+  },
+  "1ocz3m8": {
+   "sr": "Vršac",
+   "why": "city name, the same in English (Russian: Вршац)"
+  },
+  "1ozgz0k": {
+   "sr": "Bor",
+   "why": "city name, the same in English (Russian: Бор)"
+  },
   "1s2jplc": {
    "sr": "Evolako solves electric car charging for people who live in apartment buildings. At a parking space or in a garage it installs a heavy-duty socket with a MID-certified meter or an 11 kW wallbox (MID meter optional), provides document templates for the residents’ assembly or the garage owner, and every month bills electricity at the price on the EPS bill, with no markup. Packages with basic installation next to the distribution board start at RSD 39,000 including VAT, and installation takes one working day. Evolako works all over Serbia.",
    "why": "the media kit gives its boilerplate in Serbian, English and Russian"
+  },
+  "1thqzpw": {
+   "sr": "Zrenjanin",
+   "why": "city name, the same in English (Russian: Зренянин)"
   },
   "1txdcke": {
    "sr": "Wallbox 11 kW",
@@ -84,6 +140,10 @@
   "1u9xo74": {
    "sr": "latinica",
    "why": "Serbian script name in the language menu"
+  },
+  "1x9e01k": {
+   "sr": "Šabac",
+   "why": "city name, the same in English (Russian: Шабац)"
   },
   "1y5qj30": {
    "sr": "[PRAVNI-PODACI: poslovno ime · sedište · MB · PIB] · hello@evolako.com",
@@ -101,9 +161,17 @@
    "sr": "Српски",
    "why": "language name, written in its own language (language menu)"
   },
+  "3bd3pj": {
+   "sr": "Loznica",
+   "why": "city name, the same in English (Russian: Лозница)"
+  },
   "3rniv3": {
    "sr": "START",
    "why": "package name"
+  },
+  "3x1ozt": {
+   "sr": "Subotica",
+   "why": "city name, the same in English (Russian: Суботица)"
   },
   "4bnti3": {
    "sr": "Instagram",
@@ -117,9 +185,17 @@
    "sr": "WALLBOX — 94.000",
    "why": "package name and price"
   },
+  "6c3tr2": {
+   "sr": "WALLBOX 11 kW",
+   "why": "package name"
+  },
   "7nql6j": {
    "sr": "English",
    "why": "language name, written in its own language (language menu, media kit)"
+  },
+  "7xj93t": {
+   "sr": "Leskovac",
+   "why": "city name, the same in English (Russian: Лесковац)"
   },
   "8xje9h": {
    "sr": "Wallbox Pulsar Max",
@@ -136,6 +212,10 @@
   "9kzw7d": {
    "sr": "Avatar 1024 px",
    "why": "already English in the Serbian page"
+  },
+  "alao67": {
+   "sr": "Vranje",
+   "why": "city name, the same in English (Russian: Вранье)"
   },
   "aro7c9": {
    "sr": "Wallbox Premium — Wallbox Pulsar Max",
@@ -160,6 +240,10 @@
   "c7y0z8": {
    "sr": "Evolako устанавливает домашние зарядки для электромобилей в гаражах многоквартирных домов и в частных домах — с MID-счётчиком (в START и ZGRADA, к wallbox — по желанию) и ежемесячным расчётом за электричество без наценки. Вместе с комплектом жильцы получают шаблоны для собрания жильцов и владельца гаража.",
    "why": "the media kit gives its boilerplate in Serbian, English and Russian"
+  },
+  "cmytjm": {
+   "sr": "Kikinda",
+   "why": "city name, the same in English (Russian: Кикинда)"
   },
   "col5at": {
    "sr": "Danas — Od danas skuplja struja: Kako izgleda novi cenovnik po tarifama i zonama?, 01.10.2025",
@@ -189,6 +273,14 @@
    "sr": "Evolako решает вопрос зарядки электромобиля для тех, кто живёт в многоквартирных домах. На парковочное место или в гараж устанавливается усиленная розетка с сертифицированным MID-счётчиком или wallbox на 11 кВт (MID-счётчик по желанию); Evolako даёт шаблоны документов для собрания жильцов или владельца гаража и каждый месяц рассчитывает электричество по цене из счёта EPS, без наценки. Пакеты с базовым монтажом рядом со щитком — от 39 000 RSD с НДС, установка занимает один рабочий день. Evolako работает по всей Сербии.",
    "why": "the media kit gives its boilerplate in Serbian, English and Russian"
   },
+  "gxkg10": {
+   "sr": "Jagodina",
+   "why": "city name, the same in English (Russian: Ягодина)"
+  },
+  "hea38p": {
+   "sr": "Čačak",
+   "why": "city name, the same in English (Russian: Чачак)"
+  },
   "hfim9n": {
    "sr": "FAQ",
    "why": "English abbreviation (Russian has its own translation)"
@@ -205,17 +297,37 @@
    "sr": "Agencija za energetiku Republike Srbije (AERS) — Troškovi energije za grejanje stambenog prostora, grejna sezona 2026/2027, 29.09.2026",
    "why": "title of a Serbian-language source, cited as published (/novosti)"
   },
+  "jcbo9k": {
+   "sr": "Kurir — Tokom ovih sati struja je jeftinija: noćna tarifa nije ista za sve (05.01.2026.)",
+   "why": "title of a Serbian-language source, cited as published (city pages /ugradnja-punjaca-*)"
+  },
+  "kad2jz": {
+   "sr": "Kraljevo",
+   "why": "city name, the same in English (Russian: Кралево)"
+  },
   "l8n0en": {
    "sr": "Wallbox Premium",
    "why": "package name"
+  },
+  "lzym76": {
+   "sr": "Požarevac",
+   "why": "city name, the same in English (Russian: Пожаревац)"
   },
   "o5jmq2": {
    "sr": "021.rs — Srbija obećala MMF-u poskupljenje struje u oktobru: Ekonomisti o tome da li će i ispuniti dogovoreno, 13.09.2026",
    "why": "title of a Serbian-language source, cited as published (/novosti)"
   },
+  "osrkb": {
+   "sr": "Pirot",
+   "why": "city name, the same in English (Russian: Пирот)"
+  },
   "s0yn2o": {
    "sr": "SR",
    "why": "language code in the language menu"
+  },
+  "shgckk": {
+   "sr": "Kragujevac",
+   "why": "city name, the same in English (Russian: Крагуевац)"
   },
   "snxqoj": {
    "sr": "START — 39.000",
@@ -233,6 +345,10 @@
    "sr": "CRM",
    "why": "abbreviation"
   },
+  "wik5m3": {
+   "sr": "Niš",
+   "why": "city name, the same in English (Russian: Ниш)"
+  },
   "wkfe1w": {
    "sr": "Bonus",
    "why": "already English in the Serbian page"
@@ -248,6 +364,10 @@
   "y5xav3": {
    "sr": "CSV",
    "why": "file format"
+  },
+  "y72bx5": {
+   "sr": "Sombor",
+   "why": "city name, the same in English (Russian: Сомбор)"
   }
  }
 }

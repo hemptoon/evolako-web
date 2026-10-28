@@ -206,7 +206,7 @@
    "sr": "Uz kod preporuke: 4 meseca obračuna, nadzora i servisa za 0 RSD. Proveri svoju garažu za pola minuta."
   },
   "1lb3vb4": {
-   "ru": "Где работаем: по всей Сербии. Напиши из любого города и пришли фото электрощита и места для зарядки — предварительная оценка по фото бесплатная, а выезд на оценку договоримся в переписке.",
+   "ru": "Где работаем: по всей Сербии. Напиши из любого города и пришли фото электрощита и места для зарядки — предварительная оценка по фото бесплатная, а о выезде на оценку договоримся в переписке.",
    "sr": "Gde radimo: u celoj Srbiji. Iz bilo kog mesta pošalji poruku sa fotografijama razvodne table i mesta za punjač — predprocena po fotografijama je besplatna, a procenu na licu mesta dogovaramo u poruci."
   },
   "1le6kgu": {
@@ -326,7 +326,7 @@
    "sr": "Objavljeni uslovi operativnog lizinga ne pominju punjač ni struju. Čiji je punjač kad se auto vrati, kako se meri struja i šta pitati lizing kuću."
   },
   "1xhrwoc": {
-   "ru": "Да, работаем по всей Сербии. Если покупатель из любого города, пришли нам его контакт — выезд на оценку договоримся в переписке.",
+   "ru": "Да, работаем по всей Сербии. Если покупатель из любого города, пришли нам его контакт — о выезде на оценку договоримся в переписке.",
    "sr": "Da, radimo u celoj Srbiji. Za kupca iz bilo kog mesta pošaljite nam kontakt, a procenu na licu mesta dogovaramo u poruci."
   },
   "1xlq2dc": {
@@ -405,6 +405,10 @@
    "ru": "Белград",
    "sr": "Beograd"
   },
+  "a26ita": {
+   "ru": "Установка по городам",
+   "sr": "Ugradnja po gradovima"
+  },
   "a2x7ze": {
    "ru": "Зарядка служебной машины дома",
    "sr": "Punjenje službenog automobila kod kuće"
@@ -440,6 +444,10 @@
   "c9dnu8": {
    "ru": "Открытые вакансии в Evolako",
    "sr": "Otvorene pozicije u Evolako"
+  },
+  "ccvx5k": {
+   "ru": "Список городов →",
+   "sr": "Spisak gradova →"
   },
   "co20fm": {
    "ru": "Зарядки в гараже многоквартирного дома: план из 5 шагов",
@@ -486,7 +494,7 @@
    "sr": "Radimo u celoj Srbiji."
   },
   "hr1y9b": {
-   "ru": "Где работаем: по всей Сербии. Для объекта в любом городе пришли адрес и фото электрощита, а выезд на оценку договоримся в переписке.",
+   "ru": "Где работаем: по всей Сербии. Для объекта в любом городе пришли адрес и фото электрощита, а о выезде на оценку договоримся в переписке.",
    "sr": "Gde radimo: u celoj Srbiji. Za objekat u bilo kom mestu pošaljite adresu i fotografije razvodne table, a procenu na licu mesta dogovaramo u poruci."
   },
   "i2wn3m": {

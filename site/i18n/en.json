@@ -473,6 +473,10 @@
    "en": "Belgrade",
    "sr": "Beograd"
   },
+  "a26ita": {
+   "en": "Installation by city",
+   "sr": "Ugradnja po gradovima"
+  },
   "a2x7ze": {
    "en": "Charging a company car at home",
    "sr": "Punjenje službenog automobila kod kuće"
@@ -516,6 +520,10 @@
   "c9dnu8": {
    "en": "Open positions at Evolako",
    "sr": "Otvorene pozicije u Evolako"
+  },
+  "ccvx5k": {
+   "en": "List of cities →",
+   "sr": "Spisak gradova →"
   },
   "co20fm": {
    "en": "EV chargers in a building garage: a 5-step plan",

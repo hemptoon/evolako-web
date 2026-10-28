@@ -14,7 +14,8 @@ How the site is made (details below):
    `.github/workflows/site-snapshot.yml` runs only by hand and stops while www.evolako.rs is the own build.
 2. **Content** — guides, news and B2B guides published after the switch are JSON in `content/` (format and the
    publishing steps: `content/README.md`; code: `content.py`, rules: the kits in `kits/`). The scheduled tasks publish
-   by committing there.
+   by committing there. Since 28.10.2026 also the city pages (`content/gradovi/gradovi.json`, texts in `gradovi.py`,
+   facts by `tools/gradovi_data.py`): `/ugradnja-punjaca` and `/ugradnja-punjaca-<grad>` for every city of Serbia.
 3. **Build** — `build.py` turns snapshot + content into `dist/`: own copies of every file, no Webflow or Google at
    runtime, own form endpoint, CSP, real `/en/` and `/ru/` pages prerendered from the dictionaries, sitemap with
    hreflang.
