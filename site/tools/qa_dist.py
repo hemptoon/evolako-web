@@ -710,10 +710,16 @@ def main():
                      False, probe_fonts=(mode == 'sr'), collect_strings=(mode in ('en', 'ru')))
             r.update({'page': slug, 'path': dist_path(slug, mode), 'mode': mode, 'viewport': '%dx%d' % vp})
             classify_external(r, live, embed)
+            # a page of site/content (published after the switch) has no original in the snapshot: its static text
+            # is that of the built Serbian page, and there is nothing to replay as the reference
+            snap_page = os.path.join(snapshot, 'pages', slug + '.html')
+            own_page = slug != '404' and not os.path.isfile(snap_page)
             if slug != '404':
-                r['text_static_snapshot'] = static_text_len(os.path.join(snapshot, 'pages', slug + '.html'))
+                r['text_static_snapshot'] = static_text_len(os.path.join(dist, slug + '.html') if own_page else snap_page)
                 r['text_ratio_static'] = round(r.get('text_len', 0) / max(1, r['text_static_snapshot']), 3)
-            if not args.no_reference and slug != '404':
+                if own_page:
+                    r['content_page'] = True
+            if not args.no_reference and slug != '404' and not own_page:
                 ref_shot = os.path.join(shots, tag + '__reference.png')
                 ref = load(browser, 'http://127.0.0.1:%d%s' % (ref_port, ref_path(slug, mode)), vp, ref_shot, ref_port,
                            snap, True, probe_fonts=(mode == 'sr'))

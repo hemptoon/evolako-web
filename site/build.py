@@ -65,6 +65,7 @@ Usage: python3 site/build.py [--snapshot site/snapshot] [--fill site/snapshot-fi
 """
 import argparse
 import base64
+import copy
 import hashlib
 import html
 import json
@@ -77,6 +78,7 @@ import urllib.parse
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import prerender as PR  # noqa: E402  (site/prerender.py: the /en/ and /ru/ pages)
+import content as CT    # noqa: E402  (site/content.py: guides, news and B2B guides published after the switch)
 
 SITE = 'https://www.evolako.rs'
 SITE_ID = '6ab19bf9a3bb86f8fb7bba00'
@@ -348,9 +350,10 @@ class Asset:
 
 
 class Build:
-    def __init__(self, snapshot, fill, out, allow_missing=False):
+    def __init__(self, snapshot, fill, out, allow_missing=False, content_dir=CT.CONTENT_DIR):
         self.snapshot, self.fill, self.out = snapshot, fill, out
         self.allow_missing = allow_missing
+        self.content_dir = content_dir
         mpath = os.path.join(snapshot, 'manifest.json')
         if not os.path.exists(mpath):
             fail('no manifest at ' + mpath)
@@ -829,12 +832,32 @@ class Build:
         if not self.form_url_patched:
             fail('webflow.js not found in the snapshot — the form URL could not be pointed at /f/')
         self.page_out, page_refs, fams_seen = {}, {}, {}
+        sources = {}
         for p in published:
             slug = p['path'].strip('/') or 'index'
             if not re.fullmatch(r'[a-z0-9-]+', slug):
                 fail('unexpected page path ' + p['path'])
             with open(os.path.join(self.snapshot, p['file']), encoding='utf-8') as f:
-                src = f.read()
+                sources[slug] = f.read()
+        # own content (site/content): new guide pages from a template page, cards and news on the hubs
+        try:
+            self.content = CT.Content(dict(sources), {a.url for a in self.assets.values() if a.src}, self.content_dir)
+        except CT.ContentError as e:
+            fail('site/content: %s' % e)
+        errs = self.content.errors()
+        if errs:
+            for item, text in errs[:30]:
+                print('  content %s: %s' % (item, text), file=sys.stderr)
+            fail('site/content has %d errors (python3 site/content.py check <item> shows them with the warnings)'
+                 % len(errs))
+        sources.update(self.content.patched)
+        for slug, src in self.content.new_pages.items():
+            if slug in sources:
+                fail('site/content: /%s is already a page' % slug)
+            sources[slug] = src
+        order = [p['path'].strip('/') or 'index' for p in published] + sorted(self.content.new_pages)
+        for slug in order:
+            src = sources[slug]
             out, refs, counts, fams = self.build_page(slug, src)
             self.page_out[slug] = out
             page_refs[slug] = refs
@@ -924,10 +947,34 @@ class Build:
         sys.path.insert(0, os.path.join(HERE, 'tools'))
         from i18n_harvest import expand
         pages = expand(h)
+        self.content_harvest(pages)
         missing = [s for s in self.page_out if s != '404' and not all(l in pages.get(s, {}) for l in LANGS)]
         if missing:
             fail('the harvest lacks pages %s: run python3 site/tools/i18n_harvest.py' % missing)
         return pages
+
+    def content_harvest(self, pages):
+        """site/content in the dictionaries of the prerender: a new page starts from what the engine held on its template
+        page (the shared navigation and footer texts), and every page the content changed gets the pairs of its new
+        texts on top (the guide, the card, the news item), so its /en/ and /ru/ versions are complete. New pages carry
+        no dictionary script of their own: on Webflow the engine translated in the browser, here those versions are
+        static pages."""
+        for slug, tpl in sorted(self.content.template_of.items()):
+            if tpl not in pages:
+                fail('the harvest lacks the template page /%s of /%s' % (tpl, slug))
+            pages[slug] = {lang: {'title': None, 'pushes': 0, 'dicts': copy.deepcopy(pages[tpl][lang]['dicts']),
+                                  'unstable': copy.deepcopy(pages[tpl][lang].get('unstable') or {}), 'timing': {}}
+                           for lang in LANGS}
+        for slug, pairs in sorted(self.content.pairs.items()):
+            for i, lang in enumerate(LANGS):
+                d2 = pages[slug][lang]['dicts'].setdefault(lang + '2', {})
+                for sr, en, ru in pairs:
+                    d2[PR.key_of(sr)] = (en, ru)[i]
+        for slug in sorted(self.content.template_of):
+            title = html.unescape(re.search(r'<title>(.*?)</title>', self.page_out[slug], re.S).group(1))
+            for lang in LANGS:
+                hv = pages[slug][lang]
+                hv['title'] = PR.Translator(lang, hv['dicts']).live(title) or PR.nm(title)
 
     def languages(self):
         self.check_patches()
@@ -1090,7 +1137,9 @@ class Build:
 
     def content_security_policies(self):
         live = self.page_live_sources()
-        policies = {}
+        for slug, tpl in self.content.template_of.items():     # a new page runs exactly the scripts of its template
+            live[slug] = set(live.get(tpl, ()))
+        policies, pols = {}, {}
         self.csp_hashes = {}
         for slug, text in self.page_out.items():
             pol = [(d, list(s)) for d, s in CSP_BASE]
@@ -1123,7 +1172,9 @@ class Build:
             if re.search(r'\son[a-z]+\s*=\s*["\']|href="javascript:', text):
                 fail('%s: an inline event handler or javascript: URL — the CSP would block it' % slug)
             policies[slug] = (value, len(hashes))
+            pols[slug] = pol
             self.csp_hashes[slug] = hashes
+        self.csp_shared = self.share_policies(policies, pols)
         for (lang, slug), text in sorted(self.lang_out.items()):
             hashes = sorted({csp_hash(body) for _, body in inline_scripts(text)})
             if hashes != self.csp_hashes[slug]:
@@ -1132,9 +1183,37 @@ class Build:
                 fail('/%s/%s: an inline event handler or javascript: URL' % (lang, slug))
         return policies
 
+    def share_policies(self, policies, pols):
+        """Pages of site/content need no _headers rule of their own (Pages allows 100 rules; every page takes two): a
+        new page whose policy differs from the 404 policy only by the hashes of its inline scripts (it runs the scripts
+        of a published page, without a dictionary script of its own) is served with the policy of /* — the 404 policy
+        plus those hashes. A hash allows exactly one script body, so the 404 page itself is not loosened; a page that
+        needs another host keeps its own rule."""
+        def plain(pol):
+            return [(d, [s for s in srcs if not s.startswith("'sha256-")]) for d, srcs in pol]
+        default = [(d, list(srcs)) for d, srcs in pols['404']]
+        shared = set()
+        for slug in sorted(self.content.new_pages):
+            if plain(pols[slug]) != plain(default):
+                continue
+            shared.add(slug)
+            for (d, srcs), (_, mine) in zip(default, pols[slug]):
+                srcs.extend(s for s in mine if s not in srcs)
+        if shared:
+            for i, (d, srcs) in enumerate(default):
+                if d == 'script-src':
+                    default[i] = (d, srcs[:1] + sorted(s for s in srcs if s.startswith("'sha256-")) +
+                                  [s for s in srcs[1:] if not s.startswith("'sha256-")])
+            value = '; '.join('%s %s' % (d, ' '.join(s)) for d, s in default)
+            if len('  Content-Security-Policy: ' + value) > HEADERS_MAX_LINE:
+                fail('the shared CSP is %d characters, Pages allows %d per _headers line' % (len(value),
+                                                                                             HEADERS_MAX_LINE))
+            policies['404'] = (value, sum(1 for d, s in default for x in s if x.startswith("'sha256-")))
+        return shared
+
     def headers_file(self):
         parts = [HEADERS_TOP.format(csp404=self.csp['404'][0], cspindex=self.csp['index'][0])]
-        for slug in sorted(s for s in self.csp if s not in ('404', 'index')):
+        for slug in sorted(s for s in self.csp if s not in ('404', 'index') and s not in self.csp_shared):
             for path in (page_path(slug), '/:lang' + page_path(slug)):
                 parts.append('\n%s\n  ! Content-Security-Policy\n  Content-Security-Policy: %s\n' % (
                     path, self.csp[slug][0]))
@@ -1214,7 +1293,13 @@ class Build:
             loc = re.search(r'<loc>\s*([^<\s]+)\s*</loc>', m.group(1)).group(1)
             lm = re.search(r'<lastmod>\s*([^<\s]+)\s*</lastmod>', m.group(1))
             slug = urllib.parse.urlsplit(loc).path.strip('/') or 'index'
-            entries.append((slug, lm.group(1) if lm else None))
+            lastmod = lm.group(1) if lm else None
+            new = self.content.lastmod.get(slug)            # a hub site/content changed: the date of that change
+            if new and (lastmod is None or new > lastmod[:10]):
+                lastmod = new
+            entries.append((slug, lastmod))
+        for slug in sorted(self.content.new_pages, key=lambda s: (self.content.lastmod[s], s)):
+            entries.append((slug, self.content.lastmod[slug]))
         lines = ['<?xml version="1.0" encoding="UTF-8"?>',
                  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
                  'xmlns:xhtml="http://www.w3.org/1999/xhtml">']
@@ -1396,6 +1481,10 @@ class Build:
         print('CSP: %d policies (%d header rules), %d-%d inline script hashes per page, %d-%d characters; '
               'map page extras: %s' % (len(self.csp), self.header_rules, min(hs), max(hs), min(lens), max(lens),
                                        self.csp_extras('mapa-punjaca')))
+        if self.csp_shared:
+            print('   pages of site/content served with the policy of /* (no rule of their own): %s' % ', '.join(
+                '/' + s for s in sorted(self.csp_shared)))
+        print(self.content.summary())
         if self.embed_dependencies:
             print('   files the BlokVolt embed loads itself (stay external, allowed on its page): %s' % ', '.join(
                 self.embed_dependencies[:6]) + (' …' if len(self.embed_dependencies) > 6 else ''))
@@ -1521,8 +1610,10 @@ def main():
     ap.add_argument('--out', default=os.path.join(HERE, 'dist'))
     ap.add_argument('--allow-missing', action='store_true',
                     help='development only: build even if a title/meta/JSON-LD text has no EN/RU translation')
+    ap.add_argument('--content', default=CT.CONTENT_DIR,
+                    help='own content (guides, news, B2B guides); default site/content — another folder only for tests')
     args = ap.parse_args()
-    Build(args.snapshot, args.fill, args.out, args.allow_missing).run()
+    Build(args.snapshot, args.fill, args.out, args.allow_missing, args.content).run()
 
 
 if __name__ == '__main__':

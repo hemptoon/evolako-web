@@ -1,15 +1,18 @@
-# Moving www.evolako.rs off Webflow (decision 27.10.2026): build site/ and upload it to the Cloudflare Pages project
-# "evolako-site" for the founders to look at — the PREVIEW of the plan, at https://evolako-site.pages.dev.
-#   * Runs ONLY when site/preview.request changes on the branch site-migration (each preview is a founder's word),
-#     never on other pushes and never on main. Nothing here touches www.evolako.rs: the project has no custom domain
-#     until the switch (also only on the founders' word, in the dashboard), and every *.pages.dev host is answered with
-#     "X-Robots-Tag: noindex, nofollow" (site/functions/_middleware.js, dist/_headers).
-#   * The first run creates the project (production branch "main"); later runs upload a new deployment.
-#   * Forms: the project needs the service binding BOT (the CRM bot worker) and the secret HOOK (the bot's own value)
-#     in Settings → Variables and Secrets / Bindings — set there by hand, never in this repository. Without them every
-#     form shows its failure block. FORMS_ALLOW_PREVIEW=1 only for one deliberate test send, then remove it.
-# Before the upload the same offline checks as on a laptop run (build, form endpoint, middleware, i18n engine copy);
-# after it, a smoke test of the uploaded site (statuses, noindex, the ?lang= and bare-domain rules, cache headers).
+# www.evolako.rs — build site/ and upload it to the Cloudflare Pages project "evolako-site". Since the switch on
+# 28.10.2026 the custom domains www.evolako.rs and evolako.rs point at this project, so every run of this workflow is a
+# PRODUCTION DEPLOY (the project's production branch "main"; https://evolako-site.pages.dev is its noindex alias).
+#   * Runs only on a push to the branch site-migration that changes
+#       - site/content/**      a guide, news item or B2B guide published by its scheduled task (or by hand) — the
+#                              owner allowed those tasks to publish after their checks (decision 30.09.2026);
+#       - site/deploy.request  a line per deploy of code or snapshot changes — only on the founders' word;
+#       - site/preview.request the same file of the preview phase (kept so an old habit still works).
+#     A content commit deploys whatever else is on the branch too: everything committed to site-migration must be
+#     ready for production.
+#   * Forms: the project has the service binding BOT (the CRM bot worker) and the secret HOOK (set in the dashboard,
+#     never in this repository). Without them every form shows its failure block.
+# Before the upload the same offline checks as on a laptop run (build incl. site/content, the content self-test, form
+# endpoint, middleware, i18n engine copy); after it, a smoke test of the production domains: statuses, headers, the
+# ?lang= and bare-domain rules, and every page of site/content (its H1, the news ids on /novosti) on www.evolako.rs.
 # Secrets (repo Settings → Secrets → Actions, the same as deploy.yml): CLOUDFLARE_API_TOKEN ("Account · Cloudflare
 # Pages · Edit" only), CLOUDFLARE_ACCOUNT_ID. Actions pinned to commit hashes, wrangler to an exact version.
 name: Site preview
@@ -17,6 +20,8 @@ on:
   push:
     branches: [site-migration]
     paths:
+      - site/content/**
+      - site/deploy.request
       - site/preview.request
 permissions:
   contents: read
@@ -40,6 +45,7 @@ jobs:
           python3 site/build.py | tail -30
           cp -a site/dist /tmp/dist-first && python3 site/build.py > /dev/null
           diff -r site/dist /tmp/dist-first > /dev/null || { echo "the build is not reproducible"; exit 1; }
+          python3 site/tools/content_selftest.py
           node site/tools/forms_unit.mjs
           node site/tools/middleware_unit.mjs
           python3 site/tools/i18n_selftest.py
@@ -55,7 +61,7 @@ jobs:
           else
             npx --yes wrangler@4.151.0 pages project create evolako-site --production-branch=main
           fi
-      - name: Upload to evolako-site (https://evolako-site.pages.dev, noindex)
+      - name: Upload to evolako-site (production — www.evolako.rs)
         working-directory: site   # functions/ next to dist/, so the middleware and the form endpoint are uploaded
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -63,7 +69,7 @@ jobs:
         run: >
           npx --yes wrangler@4.151.0 pages deploy dist --project-name=evolako-site --branch=main
           --commit-hash="$GITHUB_SHA" --commit-message="$(git log -1 --pretty=%s | cut -c1-300)" --commit-dirty=true
-      - name: Smoke test of the uploaded site
+      - name: Smoke test of the uploaded site (pages.dev alias)
         shell: bash
         run: |
           B=https://evolako-site.pages.dev
@@ -89,4 +95,48 @@ jobs:
           check "$B/sitemap.xml" 200 -
           check "$B/robots.txt" 200 -
           check "$B$css" 200 '^cache-control: public, max-age=31536000, immutable'
+          exit $fail
+      - name: Smoke test of www.evolako.rs (production) and of every page of site/content
+        shell: bash
+        run: |
+          W=https://www.evolako.rs
+          css=$(grep -o -m1 '/_a/cdn.prod.website-files.com/[^"]*\.h[0-9a-f]\{10\}\.css' site/dist/index.html)
+          for i in $(seq 1 36); do curl -fsS -o /dev/null "$W$css" && break; sleep 5; done
+          fail=0
+          check() { # url, expected status, header regex (or -), forbidden header regex (or -)
+            out=$(curl -sS -o /dev/null -D - --max-redirs 0 "$1" | tr -d '\r')
+            st=$(echo "$out" | head -1 | awk '{print $2}')
+            if [ "$st" != "$2" ]; then echo "FAIL $1: status $st, expected $2"; fail=1; return; fi
+            if [ "$3" != "-" ] && ! echo "$out" | grep -qiE "$3"; then echo "FAIL $1: no header /$3/"; fail=1; return; fi
+            if [ "$4" != "-" ] && echo "$out" | grep -qiE "$4"; then echo "FAIL $1: header /$4/"; fail=1; return; fi
+            echo "ok   $1 -> $st"
+          }
+          check "$W/" 200 '^content-security-policy: ' '^x-robots-tag'
+          check "$W/en/" 200 '^content-security-policy: ' '^x-robots-tag'
+          check "$W/kontakt?lang=ru" 301 '^location: /ru/kontakt' -
+          check "https://evolako.rs/vodici" 301 '^location: https://www.evolako.rs/vodici' -
+          check "$W$css" 200 '^cache-control: public, max-age=31536000, immutable' -
+          # every page of site/content is live with its H1 (Serbian, English, Russian), every news item on /novosti
+          python3 - <<'EOF' > /tmp/content-urls.txt
+          import html, json, os, re, sys
+          sys.path.insert(0, 'site')
+          import content as CT
+          sources, assets = CT.snapshot_sources('site/snapshot')
+          c = CT.Content(sources, assets)
+          for g in c.guides:
+              for lang in ('', '/en', '/ru'):
+                  page = open('site/dist%s%s.html' % (lang or '', g.slug), encoding='utf-8').read()
+                  h1 = html.unescape(re.search(r'<h1>(.*?)</h1>', page).group(1))
+                  print('%s%s\t%s' % (lang, g.slug, h1))
+          for n in c.news:
+              print('/novosti\tid="%s"' % n.id)
+          EOF
+          while IFS=$'\t' read -r path want; do
+            ok=0
+            for i in $(seq 1 12); do
+              body=$(curl -fsS "$W$path?deploy=$GITHUB_SHA") && printf '%s' "$body" | python3 -c "import html,sys; t=sys.stdin.read(); sys.exit(0 if sys.argv[1] in html.unescape(t) else 1)" "$want" && { ok=1; break; }
+              sleep 5
+            done
+            if [ $ok = 1 ]; then echo "ok   $W$path"; else echo "FAIL $W$path: not live or without \"$want\""; fail=1; fi
+          done < /tmp/content-urls.txt
           exit $fail

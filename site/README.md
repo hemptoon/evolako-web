@@ -1,28 +1,54 @@
-# www.evolako.rs — own static site (work in progress)
+# www.evolako.rs — own static site (live since 28.10.2026)
 
 Decision 27.10.2026: www.evolako.rs moves off Webflow to an own static build, like blokvolt.rs (GitHub → Cloudflare
-Pages). This folder is the workspace for that move. **Nothing here is deployed yet**: the live site is still Webflow
-until the founders say the word for the switch, and the app (app.evolako.rs, the rest of this repository) is not
-affected.
+Pages). **Switched on 28.10.2026 (15:36–15:45):** the custom domains www.evolako.rs and evolako.rs point at the
+Cloudflare Pages project `evolako-site`, which this folder builds (branch `site-migration`). The app (app.evolako.rs,
+the rest of this repository) is not affected. Rollback to Webflow is possible only until ≈ 20.11.2026 (its plan is not
+renewed): DNS `www` → CNAME `cdn.webflow.com` (DNS only), apex → A `198.202.211.1`, then remove the custom domains in
+Pages; after that, a rollback is an earlier deployment of `evolako-site` (Pages → Deployments → Rollback).
 
-Plan (details in the project document "Evolako — переезд с Webflow"):
+How the site is made (details below):
 
-1. **Snapshot** — the workflow `.github/workflows/site-snapshot.yml` (branch `site-migration`) copies the published
-   site into `snapshot/` (see below). Done; repeat right before the switch.
-2. **Build** — `build.py` turns the snapshot into `dist/`: own copies of every file, no Webflow or Google at runtime,
-   own form endpoint, CSP (steps 2 and 2b), real `/en/` and `/ru/` pages prerendered from the dictionaries, sitemap
-   with hreflang (step 3, see "Languages"). Done. Before the switch (done 27.10): content hash in the names of the
-   files the build changes, the Serbian FAQPage from the visible FAQ, the hidden `Jezik` in the Kontakt form, the bare
-   domain → www; 28.10: English and Russian social images. Webflow has no 301 redirects (checked 28.10), so the
-   built site needs none besides `?lang=` and the bare domain.
-3. **Preview** — a separate Cloudflare Pages project (`evolako-site`, noindex on `*.pages.dev`), compared page by
-   page with the live site. Upload: change `preview.request` on `site-migration` and push (workflow
-   `.github/workflows/site-preview.yml`: build, offline checks, upload, smoke test) — only on the founders' word.
-   Live since 28.10.2026 at https://evolako-site.pages.dev (service binding `BOT` set; the secret `HOOK` is set by a
-   founder).
-4. **Switch** — only on the founders' word: custom domains www.evolako.rs and evolako.rs move to the new project;
-   rollback = point them back to Webflow (the Webflow plan stays active for a month). The scheduled guide/news tasks
-   move from the Webflow API to commits here at the same time.
+1. **Snapshot** — `snapshot/` is the copy of the published Webflow site of 28.10.2026 13:22 UTC (static crawl + runtime
+   capture). **Frozen since the switch**: a new crawl would copy this build itself, so the workflow
+   `.github/workflows/site-snapshot.yml` runs only by hand and stops while www.evolako.rs is the own build.
+2. **Content** — guides, news and B2B guides published after the switch are JSON in `content/` (format and the
+   publishing steps: `content/README.md`; code: `content.py`, rules: the kits in `kits/`). The scheduled tasks publish
+   by committing there.
+3. **Build** — `build.py` turns snapshot + content into `dist/`: own copies of every file, no Webflow or Google at
+   runtime, own form endpoint, CSP, real `/en/` and `/ru/` pages prerendered from the dictionaries, sitemap with
+   hreflang.
+4. **Deploy** — the workflow `.github/workflows/site-preview.yml` ("Site preview", the name of the preview phase) builds,
+   runs the offline checks, uploads to `evolako-site` (production) and smoke-tests www.evolako.rs. It runs on a push to
+   `site-migration` that changes `content/**` (a publication — allowed to the scheduled tasks after their checks),
+   `deploy.request` (code or snapshot changes — only on the founders' word, one line per deploy) or `preview.request`
+   (the file of the preview phase). Everything committed to `site-migration` must be ready for production: the next
+   content commit deploys it too.
+
+## Publishing guides, news and B2B guides (since 28.10.2026)
+
+The Webflow pipelines (pages duplicated in the Designer, footer dictionaries, publish) are gone. A scheduled task
+writes the item's JSON into `content/` (same schema and copy rules as before — the kits `kits/evc.py` and
+`kits/evb_vodic.py` are the code those pipelines used, now in the repository), checks it (`python3 site/content.py
+check <item>`), builds, runs the offline QA on the new and changed pages and commits; the push deploys. Step by step:
+`content/README.md`.
+
+What `content.py` does with an item (checked by `tools/content_selftest.py`: the guides and news items Webflow
+published are read back from the snapshot, rendered again and must come out identical — 8 guides and 2 news items):
+
+- a guide becomes a copy of the newest published guide of its kind (`komsija-puni-iz-zajednicke-uticnice` for
+  residents, `garaza-za-izdavanje-sa-punjacem` for B2B) with its own head (title, description, og/twitter texts,
+  canonical, og:url, JSON-LD Article), hero, cover photo and sections — the kits' markup written the way Webflow
+  publishes it. Navigation, footer, scripts and styles stay those of the published page;
+- its card goes first into `/vodici` (B2B: last on `/punjaci-za-firme`, first on the segment page of its CTA) and into
+  the hub's JSON-LD ItemList; a news item goes on top of `/novosti` and into its ItemList (the 30 newest);
+- the EN/RU texts of the item go into the build-time dictionaries of the pages that show them, so the `/en/` and `/ru/`
+  versions are complete (the build stops on a missing head/JSON-LD translation, QA on Serbian text left);
+- new pages carry no dictionary script of their own, so their inline scripts are those every guide has: they are
+  served with the policy of `/*` (the 404 policy plus those script hashes) and need no `_headers` rule (Pages allows
+  100; the build reports which pages share it);
+- photos: only those of the kits' table that the snapshot holds (`FULL_FALLBACK` replaces the five full-size photos it
+  lacks); sitemap.xml gets the new pages and the new lastmod of the changed hubs.
 
 ## Snapshot (what the workflow copies)
 
