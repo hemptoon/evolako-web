@@ -13,9 +13,13 @@ Plan (details in the project document "Evolako — переезд с Webflow"):
    own form endpoint, CSP (steps 2 and 2b), real `/en/` and `/ru/` pages prerendered from the dictionaries, sitemap
    with hreflang (step 3, see "Languages"). Done. Before the switch (done 27.10): content hash in the names of the
    files the build changes, the Serbian FAQPage from the visible FAQ, the hidden `Jezik` in the Kontakt form, the bare
-   domain → www.
+   domain → www; 28.10: English and Russian social images. Webflow has no 301 redirects (checked 28.10), so the
+   built site needs none besides `?lang=` and the bare domain.
 3. **Preview** — a separate Cloudflare Pages project (`evolako-site`, noindex on `*.pages.dev`), compared page by
-   page with the live site.
+   page with the live site. Upload: change `preview.request` on `site-migration` and push (workflow
+   `.github/workflows/site-preview.yml`: build, offline checks, upload, smoke test) — only on the founders' word.
+   Live since 28.10.2026 at https://evolako-site.pages.dev (service binding `BOT` set; the secret `HOOK` is set by a
+   founder).
 4. **Switch** — only on the founders' word: custom domains www.evolako.rs and evolako.rs move to the new project;
    rollback = point them back to Webflow (the Webflow plan stays active for a month). The scheduled guide/news tasks
    move from the Webflow API to commits here at the same time.
@@ -116,7 +120,11 @@ times: `/<slug>` (Serbian, as before), `/en/<slug>` and `/ru/<slug>` (home: `/`,
   (sr_RS / en_US / ru_RU), canonical to itself, `hreflang` sr/en/ru + `x-default` (Serbian) on all three versions,
   `og:url` of the page. JSON-LD in the page language: strings translated, page URLs and `@id`s moved to the
   language's URLs (`/#org`, `/#organization`, `/#website` and the organization's own url stay shared),
-  `inLanguage` = the page language; the FAQPage of `/cesta-pitanja`, `/en/` and `/ru/cesta-pitanja` is generated
+  `inLanguage` = the page language; the social image (og:image and the JSON-LD `image`) of the 36 `/en/` and `/ru/`
+  pages that use the default Serbian picture is the same design with English / Russian text — `og/evolako-og-<lang>.png`,
+  drawn with code by `tools/og_images.py` (fonts and logo from `dist`, no model; `--check` compares the Serbian
+  rendering with the original), copied to `/_a/evo-og/` with the content hash in the name; the FAQPage of
+  `/cesta-pitanja`, `/en/` and `/ru/cesta-pitanja` is generated
   from the questions and answers the page shows (each structured question of the Webflow embed takes the text of the
   visible `<details>` block it stands for; on the live site 5 of the 8 were worded differently). `sitemap.xml`: every page in sr, en, ru with `xhtml:link` alternates; `robots.txt`
   unchanged; the 404 stays Serbian-only.

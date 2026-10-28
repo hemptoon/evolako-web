@@ -119,6 +119,12 @@ I18N_DIR = os.path.join(HERE, 'i18n')                # harvest.json (live dictio
 HARVEST = os.path.join(I18N_DIR, 'harvest.json')      # keep.json (texts that stay as they are)
 LANGS = PR.LANGS                                      # prerendered languages besides Serbian
 EXTRA_DIR = ASSET_DIR + '/evo-i18n'                   # the site's own translations as scripts for the engine
+# social image of the /en/ and /ru/ pages: site/og/evolako-og-<lang>.png (site/tools/og_images.py, same layout as the
+# Serbian one) replaces the default Serbian image (Serbian text on it) in og:image and the JSON-LD of those pages
+OG_DIR = os.path.join(HERE, 'og')
+OG_OUT_DIR = ASSET_DIR + '/evo-og'
+OG_DEFAULT = SITE + '/' + ASSET_DIR + '/cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/' \
+                                      '6ac75fd012abe8aa7733ad65_evolako-og-sr-blue-v3.png'
 WEBFLOW_COMMENT = '<!-- This site was created in Webflow. https://webflow.com -->'
 
 COPY_404 = {
@@ -958,6 +964,17 @@ class Build:
         for lang in LANGS:
             js = PR.extra_script(lang, self.extra[lang]).encode('utf-8')
             self.extra_files[lang] = ('%s/%s.%s.js' % (EXTRA_DIR, lang, sha256(js)[:10]), js)
+        self.og_files, self.og_replaced = {}, {}
+        for lang in LANGS:
+            p = os.path.join(OG_DIR, 'evolako-og-%s.png' % lang)
+            if not os.path.isfile(p):
+                fail('%s is missing: run python3 site/tools/og_images.py and commit it' % os.path.relpath(p, HERE))
+            with open(p, 'rb') as f:
+                png = f.read()
+            if png[:8] != b'\x89PNG\r\n\x1a\n':
+                fail('%s is not a PNG' % p)
+            self.og_files[lang] = ('%s/evolako-og-%s.%s.png' % (OG_OUT_DIR, lang, sha256(png)[:10]), png)
+            self.og_replaced[lang] = 0
         self.lang_out, self.lang_report = {}, {}
         missing_head = []
         for lang in LANGS:
@@ -974,6 +991,9 @@ class Build:
                     if doc.count(JEZIK_HTML % 'sr') != jz:
                         fail('/%s/%s: the hidden field Jezik of the Kontakt form changed in the prerender' % (lang, slug))
                     doc = doc.replace(JEZIK_HTML % 'sr', JEZIK_HTML % lang)
+                if OG_DEFAULT in doc:
+                    doc = doc.replace(OG_DEFAULT, SITE + '/' + self.og_files[lang][0])
+                    self.og_replaced[lang] += 1
                 title = html.unescape(re.search(r'<title>(.*?)</title>', self.page_out[slug], re.S).group(1))
                 if (tr.live(title) or PR.nm(title)) != hv['title']:
                     fail('/%s/%s: the engine titled the live page %r, the build computes %r' % (
@@ -1160,6 +1180,8 @@ class Build:
             put('%s/%s.html' % (lang, slug), text.encode('utf-8'))
         for lang, (rel, js) in sorted(self.extra_files.items()):
             put(rel, js)
+        for lang, (rel, png) in sorted(self.og_files.items()):
+            put(rel, png)
         by_rel = {a.dist_rel: a for a in self.assets.values() if a.src}
         for rel in sorted(need):
             put(rel, by_rel[rel].data)
@@ -1226,6 +1248,18 @@ class Build:
         for (lang, slug), text in self.lang_out.items():
             files[PR.page_url(SITE, lang, slug)] = text
         self.hreflang_checked = 0
+        # every social image a page names on this site is a built file; /en/ and /ru/ never keep the Serbian one
+        self.og_checked = 0
+        for url, text in list(files.items()) + [('/404', self.page_out['404'])]:
+            for m in re.finditer(r'<meta\b[^>]*\b(?:property|name)="(?:og:image(?::url|:secure_url)?|twitter:image(?::src)?)"'
+                                 r'[^>]*>', text):
+                c = re.search(r'\bcontent="([^"]+)"', m.group(0))
+                if c and c.group(1).startswith(SITE + '/'):
+                    if not os.path.isfile(os.path.join(out, c.group(1)[len(SITE) + 1:])):
+                        fail('%s: og/twitter image %s is not in dist' % (url, c.group(1)))
+                    self.og_checked += 1
+            if url.startswith((SITE + '/en/', SITE + '/ru/')) and OG_DEFAULT in text:
+                fail('%s still names the Serbian social image' % url)
         for url, text in files.items():
             head = text[:text.find('</head>')]
             alts = dict((h, u) for h, u in re.findall(r'<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/>',
@@ -1431,6 +1465,9 @@ class Build:
                       len(self.extra[lang]), lang, self.extra_files[lang][0], len(left),
                       (': ' + '; '.join('%r (%d)' % (k[:50], len(v)) for k, v in sorted(left.items())[:12]) +
                        (' …' if len(left) > 12 else '')) if left else ''))
+        print('   social image: %s; og/twitter images checked on all pages: %d' % (
+            ', '.join('/%s/ %d pages → %s' % (l, self.og_replaced[l], self.og_files[l][0]) for l in LANGS),
+            self.og_checked))
         for slug, faq in sorted(self.sr_faq.items()):
             print('   FAQPage of /%s from the visible FAQ: %d questions, %d of them worded differently in the Webflow '
                   'structured data (now the visible text: %s)' % (
