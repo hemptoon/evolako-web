@@ -146,8 +146,10 @@ def main():
                 else:
                     res = cut(img)
                 res = square(res)
+            big = min(1600, max(800, res.width))   # never blow a small original up past its own size
             for size in SIZES:
-                r = res.resize((size, size), Image.LANCZOS) if res.width >= size else res.resize((size, size), Image.BICUBIC)
+                z = big if size == 1600 else size
+                r = res.resize((z, z), Image.LANCZOS)
                 r.save(os.path.join(od, f'{k}-{size}.webp'), 'WEBP', quality=88 if kind != 'scene' else 82, method=6)
             meta.append(dict(k=k, kind=kind, src=s['url'], page=s.get('src_page'), w=img.width, h=img.height))
             outs.append((k, kind, res))
