@@ -38,7 +38,10 @@ SITE = 'https://www.evolako.rs'
 HOST = 'www.evolako.rs'
 ENDPOINT = 'https://api.indexnow.org/indexnow'
 MANIFEST = 'indexnow-pages.json'
-VERSION = 1                       # of the fingerprint: another version means "no previous manifest"
+# of the manifest: another version means "no previous manifest", so the next deploy submits every URL once.
+# 2 (29.10.2026): the first submission (deploy 4) got 403 SiteVerificationNotCompleted while IndexNow was still
+# verifying the new key, so deploy 5 submits every page again.
+VERSION = 2
 MAX_URLS = 10000                  # per request (protocol limit)
 KEY_RX = re.compile(r'[A-Za-z0-9-]{8,128}')
 UA = 'evolako-site-deploy (+https://www.evolako.rs/)'
