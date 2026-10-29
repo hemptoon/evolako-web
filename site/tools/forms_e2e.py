@@ -54,10 +54,20 @@ B2B = {'Ime': 'Jelena Marković', 'Firma': 'Hotel Dunav d.o.o.', 'Telefon': '+38
        'Poruka': 'Zanima nas punjenje za goste hotela, garaža ispod zgrade.'}
 
 
+CHIP = {'beograd': 'Beograd', 'novisad': 'Novi Sad'}
+
+
 def quiz(*opts):
+    """('grad', zone): the chip of that city on the place question; ('mesto', typed, label): type the place, then
+    pick the suggestion with that label; anything else: the option of that question."""
     steps = [('click', '#kv-start')]
-    for q, v in opts:
-        steps.append(('click', '.v3-kvopt[data-q="%s"][data-val="%s"]' % (q, v)))
+    for o in opts:
+        if o[0] == 'grad':
+            steps.append(('click', 'a.kv-mchip[data-m="%s"]' % CHIP[o[1]]))
+        elif o[0] == 'mesto':
+            steps += [('type', '#kv-mesto-in', o[1]), ('click', '#kv-mesto-list li:has-text("%s")' % o[2])]
+        else:
+            steps.append(('click', '.v3-kvopt[data-q="%s"][data-val="%s"]' % o))
     return steps
 
 
@@ -87,19 +97,19 @@ SCENARIOS = [
               [('fill', '#email-form [name="%s"]' % k, v) for k, v in PERSON.items()] +
               [('check', '#email-form [name="Pismo"]'), ('check', '#email-form [name="Saglasnost"]')],
      'expect': {'Kviz tip': 'svoja', 'Kviz grad': 'novisad', 'Kviz struja': 'blizu', 'Preporuka': 'wallbox',
-                'Jezik': 'sr', 'Pismo': 'true', 'Saglasnost': 'true'}},
+                'Adresa': 'Novi Sad', 'Jezik': 'sr', 'Pismo': 'true', 'Saglasnost': 'true'}},
     {'id': 'kviz-adresa', 'path': '/proveri-svoju-garazu', 'form': 'Kviz prijava',
      'steps': quiz(('tip', 'bezmesta'), ('parking', 'dvoriste'), ('grad', 'beograd')) +
               [('fill', '#email-form [name="%s"]' % k, v) for k, v in PERSON.items()] +
-              [('fill', '#email-form [name="Adresa"]', 'Bulevar oslobođenja 10'),
+              [('fill', '#kv-adresa-in', 'Bulevar oslobođenja 10'),
                ('check', '#email-form [name="Saglasnost"]')],
      'expect': {'Kviz tip': 'dvoriste', 'Kviz grad': 'beograd', 'Kviz struja': '', 'Preporuka': 'zgrada',
-                'Adresa': 'Bulevar oslobođenja 10', 'Pismo': 'false'}},
+                'Adresa': 'Bulevar oslobođenja 10, Beograd', 'Pismo': 'false'}},
     {'id': 'preporuka', 'path': '/preporuka?ref=EVO-7K2QX', 'form': 'Preporuka prijava',
      'steps': quiz(('tip', 'zajednicka'), ('grad', 'beograd'), ('struja', 'dalje')) +
               [('fill', '#preporuka-form [name="%s"]' % k, v) for k, v in PERSON.items()] +
               [('check', '#preporuka-form [name="Saglasnost"]')],
-     'expect': {'Kod preporuke': 'EVO-7K2QX', 'Kviz tip': 'zajednicka', 'Kviz grad': 'beograd',
+     'expect': {'Kod preporuke': 'EVO-7K2QX', 'Kviz tip': 'zajednicka', 'Kviz grad': 'beograd', 'Adresa': 'Beograd',
                 'Kviz struja': 'dalje', 'Jezik': 'sr'}},
     {'id': 'zgrada', 'path': '/prijavi-zgradu', 'form': 'Prijava zgrade',
      'steps': [('fill', '#email-form [name="Ulica"]', 'Bulevar oslobođenja'), ('fill', '#email-form [name="Broj"]', '10'),
@@ -139,6 +149,14 @@ SCENARIOS.append(dict(b2b('punjaci-za-hotele', mode='en', expect={'Segment': 'ho
                       dist_path='/en/punjaci-za-hotele'))
 SCENARIOS.append(dict(SCENARIOS[3], id='preporuka-en', mode='en', dist_path='/en/preporuka?ref=EVO-7K2QX',
                       expect=dict(SCENARIOS[3]['expect'], Jezik='en')))
+# the place typed: in Cyrillic (a town outside the 72 h zone) and, on /ru/, in Latin without diacritics (a village)
+SCENARIOS.append(dict(SCENARIOS[1], id='kviz-cacak',
+                      steps=quiz(('tip', 'svoja'), ('mesto', 'Чачак', 'Čačak'), ('struja', 'blizu')) + SCENARIOS[1]['steps'][4:],
+                      expect=dict(SCENARIOS[1]['expect'], **{'Kviz grad': 'ostatak', 'Adresa': 'Čačak'})))
+SCENARIOS.append(dict(SCENARIOS[1], id='kviz-futog-ru', mode='ru', dist_path='/ru/proveri-svoju-garazu',
+                      steps=quiz(('tip', 'svoja'), ('mesto', 'futog', 'Futog'), ('struja', 'blizu')) + SCENARIOS[1]['steps'][4:],
+                      expect=dict(SCENARIOS[1]['expect'], **{'Kviz grad': 'novisad', 'Adresa': 'Futog — Novi Sad',
+                                                              'Jezik': 'ru'})))
 
 
 # ------------------------------------------------------------------------------------------------ processes
@@ -269,6 +287,9 @@ def run(browser, base, sc, side, answers, ip=None, steps=None, submit=True, befo
             loc.check(force=True)
         elif kind == 'press':
             loc.press(st[2])
+        elif kind == 'type':                     # key by key, as a visitor types (the quiz suggests places)
+            loc.press_sequentially(st[2], delay=60)
+            page.wait_for_timeout(400)
     form_sel = 'form[data-name="%s"]' % sc['form']
     if before_submit:
         page.evaluate(before_submit)

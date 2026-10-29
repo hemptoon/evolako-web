@@ -213,6 +213,19 @@ def check_redirect_port():
 
 
 # ------------------------------------------------------------------------------------------------ local servers
+PUBLIC_DIR = os.path.join(SITE_DIR, 'public')
+
+
+def public_file(path):
+    """A file of site/public (the build copies it to the root of dist): (bytes, type) or None."""
+    p = os.path.realpath(os.path.join(PUBLIC_DIR, path.lstrip('/')))
+    if not p.startswith(os.path.realpath(PUBLIC_DIR) + os.sep) or not os.path.isfile(p):
+        return None
+    with open(p, 'rb') as f:
+        return f.read(), TYPES.get(os.path.splitext(p)[1].lower()) or (
+            mimetypes.guess_type(p)[0] or 'application/octet-stream')
+
+
 def make_handler(root, pages_mode):
     """pages_mode=True: Cloudflare Pages rules on dist. False: the snapshot pages at the same URLs (reference)."""
     root = os.path.realpath(root)
@@ -281,6 +294,7 @@ def make_handler(root, pages_mode):
             else:
                 slug = path.strip('/') or 'index'
                 hit = self.file('pages/%s.html' % slug) if re.fullmatch(r'[a-z0-9-]+', slug) else None
+                hit = hit or public_file(path)     # site/public/* is served at the root by the build too
                 miss = self.file('pages/404.html')
             if hit:
                 return self.send(200, hit[0], hit[1], body=body, path=path)

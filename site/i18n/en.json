@@ -57,6 +57,10 @@
    "en": "Iocharger 22 kW set to 11 kW, with 4G, RFID cards and a display, with basic installation next to the distribution board: 115.000 RSD with a Type 2 socket, 127.000 RSD with a 5 m cable. MID meter +10.000 RSD. Prices are final.",
    "sr": "Iocharger 22 kW podešen na 11 kW, sa 4G vezom, RFID karticama i ekranom, sa osnovnom ugradnjom pored razvodne table: 115.000 RSD sa Type 2 utičnicom, 127.000 RSD sa kablom 5 m. MID brojilo +10.000 RSD. Cene su konačne."
   },
+  "11ueklw": {
+   "en": "The on-site assessment: within 72 h; we agree the exact time by message. It costs 2.990 RSD and is fully credited toward the installation.",
+   "sr": "Procena na licu mesta: u roku od 72 h, a tačan termin dogovaramo u poruci. Košta 2.990 RSD i u celosti se uračunava u cenu ugradnje."
+  },
   "12067bi": {
    "en": "We work all over Serbia",
    "sr": "Radimo u celoj Srbiji"
@@ -481,6 +485,10 @@
    "en": "Apartment buyers don’t pay for a charger they don’t need yet. When they buy an electric car, they order a reinforced socket for 39.000 RSD or an 11 kW wallbox for 104.000 RSD, with a MID meter and installation from the junction box at their space, at the final price.",
    "sr": "Kupac stana ne plaća punjač koji mu još ne treba. Kad kupi električni automobil, naručuje pojačanu utičnicu za 39.000 RSD ili wallbox 11 kW za 104.000 RSD, sa MID brojilom i ugradnjom od kutije kod svog mesta, po konačnoj ceni."
   },
+  "1idtslq": {
+   "en": "List of places: Statistical Office of the Republic of Serbia",
+   "sr": "Spisak mesta: Republički zavod za statistiku"
+  },
   "1iknw9t": {
    "en": "The price per prepared space is the shared part divided by the number of spaces in the garage. The shared part covers the cable route, the sub-panel with load management, preparation of all spaces, the design and the documentation. Two examples with the distribution board 10–30 m from the garage and all spaces prepared, final prices:",
    "sr": "Cena po pripremljenom mestu dobija se kada se zajednički deo podeli na broj mesta u garaži. Zajednički deo čine trasa, podtabla sa upravljanjem snagom, priprema svih mesta, projekat i dokumentacija. Dva primera sa razvodnom tablom na 10–30 m od garaže, sva mesta pripremljena, konačne cene:"
@@ -564,6 +572,10 @@
   "1myhva0": {
    "en": "Because it's a real site visit: in Belgrade, Novi Sad and Vojvodina we come within 72 h; elsewhere we agree the date by message. We check the wiring, power and cable route, and you get an exact quote, not a guess over the phone. The full 2.990 RSD is credited toward the installation, so the assessment is practically free if you go ahead. And before that, you get a free rough estimate from photos of the board and the spot.",
    "sr": "Zato što je to pravi izlazak na teren: u Beogradu, Novom Sadu i Vojvodini dolazimo u roku od 72 h, a u ostalim mestima termin dogovaramo u poruci. Proveravamo instalaciju, snagu i put kabla, i dobijaš tačnu ponudu, a ne procenu preko telefona. Celih 2.990 RSD se uračunava u cenu ugradnje, pa je procena praktično besplatna ako nastaviš. A pre toga, po fotografijama table i mesta, okvirnu procenu dobijaš besplatno."
+  },
+  "1n24nt": {
+   "en": "Next →",
+   "sr": "Dalje →"
   },
   "1n9ezth": {
    "en": "60.000 RSD fixed + 4.000 RSD per paid installation. Belgrade or Novi Sad.",
@@ -749,6 +761,10 @@
    "en": "RSD, final price",
    "sr": "RSD, konačna cena"
   },
+  "1wx6q6u": {
+   "en": "Type the place — a town or a village",
+   "sr": "Upiši mesto — grad ili selo"
+  },
   "1x2bklf": {
    "en": "Published operating lease terms don't mention the charger or electricity. Whose charger it is when the car goes back, how the electricity is metered and what to ask the leasing company.",
    "sr": "Objavljeni uslovi operativnog lizinga ne pominju punjač ni struju. Čiji je punjač kad se auto vrati, kako se meri struja i šta pitati lizing kuću."
@@ -816,6 +832,10 @@
   "2gtx6i": {
    "en": "What the Law on Planning and Construction requires of plans, what a prepared spot means and what preparation costs per spot in a garage with 40 or 100 spaces.",
    "sr": "Šta Zakon o planiranju i izgradnji traži od planova, šta znači pripremljeno mesto i koliko priprema košta po mestu u garaži sa 40 ili 100 mesta."
+  },
+  "2pnz2v": {
+   "en": "Where do you park?",
+   "sr": "Gde je parking?"
   },
   "30b0l9": {
    "en": "We bring the clients, the materials and the quotes — you do the installation. Belgrade or Novi Sad.",
@@ -1097,6 +1117,10 @@
    "en": "WALLBOX — 11 kW smart wallbox",
    "sr": "WALLBOX — smart wallbox 11 kW"
   },
+  "fq0018": {
+   "en": "We agree the date of the on-site assessment by message. It costs 2.990 RSD and is fully credited toward the installation.",
+   "sr": "Termin procene na licu mesta dogovaramo u poruci. Košta 2.990 RSD i u celosti se uračunava u cenu ugradnje."
+  },
   "fynd7b": {
    "en": "Trstenik toll station",
    "sr": "Naplatna stanica Trstenik"
@@ -1217,6 +1241,10 @@
    "en": "Total: 39.000 RSD",
    "sr": "Ukupno 39.000 RSD"
   },
+  "l461sg": {
+   "en": "Not on the list? Type the name and the municipality",
+   "sr": "Nema na spisku? Upiši naziv i opštinu"
+  },
   "ld1hj6": {
    "en": "a spot with an 11 kW wallbox, final price",
    "sr": "mesto sa wallboxom 11 kW, konačna cena"
@@ -1241,6 +1269,10 @@
    "en": "Koševi toll station",
    "sr": "Naplatna stanica Koševi"
   },
+  "n4pkva": {
+   "en": "e.g. Kamenica, municipality of Niš",
+   "sr": "npr. Kamenica, opština Niš"
+  },
   "n6f4o0": {
    "en": "Paid per installation at market rates, paid site visits for assessments, and we supply the materials. Belgrade or Novi Sad. Apply through the form.",
    "sr": "Plaćanje po ugradnji, po tržišnim cenama, plaćen izlazak na procenu, materijal obezbeđujemo mi. Beograd ili Novi Sad. Prijavi se preko forme."
@@ -1260,6 +1292,10 @@
   "owyml3": {
    "en": "final price, optional; first 2 months 0 RSD, no contract lock-in",
    "sr": "konačna cena, opciono; prva 2 meseca 0 RSD, bez ugovorne obaveze"
+  },
+  "p424ug": {
+   "en": "e.g. Čačak or Futog",
+   "sr": "npr. Čačak ili Futog"
   },
   "p6vlns": {
    "en": "Licensed electricians, plus monitoring and priority service with the subscription.",

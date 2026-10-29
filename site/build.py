@@ -251,6 +251,11 @@ HEADERS_INDEXNOW = """
 
 /{manifest}
   X-Robots-Tag: noindex
+
+# the quiz's list of places (tools/naselja_kviz.py): data the quiz loads, not a page to index
+/kviz-naselja.json
+  Content-Type: application/json; charset=utf-8
+  X-Robots-Tag: noindex
 """
 HEADERS_BOTTOM = """
 # /llms.txt (llmstxt.org): plain UTF-8 text for AI assistants
@@ -1152,7 +1157,7 @@ class Build:
                     continue
                 if a.host == 'ajax.googleapis.com':      # WebFont loader, replaced by the local font CSS
                     continue
-                if a.url in RETIRED:                     # no longer linked on purpose; still copied
+                if a.url in RETIRED:                     # no longer linked on purpose (RETIRED above)
                     continue
                 self.not_rewritten.append((slug, a.url))
         if self.not_rewritten:

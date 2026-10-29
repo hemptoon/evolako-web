@@ -79,13 +79,27 @@ Belgrade and Vojvodina (`gradovi.py`: `ZONE_72H`, the city check stops on 72 h e
 tekst» and print; the template texts are Serbian on `/en/` and `/ru/` too (`lang="sr" translate="no"`, QA lists them
 apart). Whoever ties the templates to a package or an offer now says they are free for everyone and links the page.
 
+**Deploy 5 (29.10.2026):** the quiz (`/proveri-svoju-garazu`, `/preporuka`) asks «Gde je parking?» — one field for
+the place, town or village, instead of four regions. `tools/naselja_kviz.py` turns `data/naselja-srbija.json` (the
+4709 naselja of the Republički zavod za statistiku, census 2022; no coordinates) into `public/kviz-naselja.json`
+(~82 KB, ~28 KB gzip), which the quiz loads only when the field gets focus; typing is matched without diacritics and
+in Cyrillic, suggestions read «naselje — opština», synonyms (city districts, other spellings) come from `--syn`. The
+zone the bot gets in «Kviz grad» (beograd / novisad / vojvodina / ostatak) is computed from the place, the place
+itself goes in «Adresa» (after the street when the street flow asks for it), and the result says 72 h inside the zone,
+«termin dogovaramo u poruci» elsewhere. The media kit PDFs are made from the page by `tools/mediakit_pdf.py` and served
+at `/evolako-medija-kit-sr.pdf` / `-en.pdf` (`public/`); the Webflow PDFs are retired (`RETIRED` in `build.py`). The
+B2B calculator's on-site assessment is 2.990 RSD (it still said 3.500 in its note).
+
 **IndexNow (since 29.10.2026, `tools/indexnow.py`):** `public/<key>.txt` is the key file (the build copies `public/*` to
 the root; never over a built file). The build writes `dist/indexnow-pages.json`: every sitemap URL with a fingerprint
 of its content (text, head, JSON-LD, links, images — not scripts, styles or asset names). The deploy workflow keeps the
 live manifest before the upload and, after a green production smoke test, submits every URL that is new, changed or
 gone to api.indexnow.org (Bing, Yandex, Seznam, Naver…; Google reads sitemap.xml). A failure is a workflow warning,
 never a failed deploy. `python3 site/tools/indexnow.py diff --old <manifest>` shows what a deploy would submit;
-`selftest` runs offline. Independent of the IndexNow of www.blokvolt.rs (its own key).
+`selftest` runs offline. Independent of the IndexNow of www.blokvolt.rs (its own key). A submission refused as a whole
+(the first one, deploy 4, got 403 «SiteVerificationNotCompleted» while the new key was being verified) is not retried by
+itself, because the live manifest already counts those pages: raise `VERSION` in `indexnow.py` and the next deploy
+submits every URL once more (done in deploy 5).
 
 **The BlokVolt map embed on `/mapa-punjaca`** (the "evomap" of github.com/hemptoon/blokvolt-rs, its RUNBOOK 3.25): the
 tag is near the end of `snapshot/pages/mapa-punjaca.html` —
