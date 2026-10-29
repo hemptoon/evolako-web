@@ -16,6 +16,9 @@ jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
       - name: Install
@@ -26,11 +29,12 @@ jobs:
         run: |
           MODE=$(python3 -c "import json;print(json.load(open('media/request.json'))['mode'])")
           echo "mode: $MODE"
-          if [ "$MODE" = collect ]; then python3 media/collect.py; else python3 media/process.py; fi
+          mkdir -p media/log
+          if [ "$MODE" = collect ]; then python3 media/collect.py 2>&1 | tee media/log/collect.txt; else python3 media/process.py 2>&1 | tee media/log/process.txt; fi
       - name: Commit results
         run: |
           git config user.name "shop-media bot"
           git config user.email "shop-media@users.noreply.github.com"
-          git add media/candidates media/sheets media/out media/qa 2>/dev/null || true
+          for d in media/candidates media/sheets media/out media/qa media/log; do [ -e "$d" ] && git add "$d"; done
           git commit -q -m "Shop media: results of $(python3 -c "import json;print(json.load(open('media/request.json'))['mode'])") ($GITHUB_RUN_ID)" || { echo "nothing new"; exit 0; }
           for i in 1 2 3; do git pull -q --rebase origin shop-media && git push -q origin HEAD:shop-media && break; sleep 5; done
