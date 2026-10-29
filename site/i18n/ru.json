@@ -277,6 +277,10 @@
    "ru": "Пример: отель с 6 местами на открытой парковке, со стойками и распределительным щитом в 10–30 м, обходится примерно в 1.003.000–1.229.000 RSD без земляных и асфальтовых работ.",
    "sr": "Primer: hotel sa 6 mesta na otvorenom parkingu, sa stubićima i razvodnom tablom na 10–30 m, košta oko 1.003.000–1.229.000 RSD, bez iskopa i asfalta."
   },
+  "1c3lpzm": {
+   "ru": "По состоянию на 29.10.2026",
+   "sr": "Stanje: 29.10.2026"
+  },
   "1c5a3wk": {
    "ru": "Цены итоговые?",
    "sr": "Da li su cene konačne?"
@@ -1388,6 +1392,10 @@
   "zs762h": {
    "ru": "Кто платит за электричество, что решает собрание жильцов, сколько это стоит и что покрывает подписка — прямые ответы на 28 вопросов о домашней зарядке электромобиля в многоквартирном доме.",
    "sr": "Ko plaća struju, šta kaže skupština, koliko košta i šta pokriva pretplata — otvoreni odgovori na 28 pitanja o kućnom punjenju električnog auta u zgradi."
+  },
+  "zt50s4": {
+   "ru": "Используйте и сокращайте их свободно. Цифры — по состоянию на 29.10.2026.",
+   "sr": "Slobodno ih koristite i skraćujte. Brojke važe na dan 29.10.2026."
   }
  }
 }

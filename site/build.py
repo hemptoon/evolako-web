@@ -128,6 +128,14 @@ JEZIK_FORMS = {'Kontakt'}
 JEZIK_HTML = '<input type="hidden" name="Jezik" data-name="Jezik" data-evo-jezik="page" value="%s"/>'
 FONT_LICENSE = os.path.join(HERE, 'licenses', 'Onest-OFL.txt')
 PUBLIC_DIR = os.path.join(HERE, 'public')            # files served at the root as they are (IndexNow key file)
+# snapshot assets a page no longer links on purpose: not reported as "not rewritten" by check_manifest_coverage (and,
+# linked by no page, no longer copied to /_a/; the Webflow CDN copies stay where they were)
+RETIRED = {
+    'https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6aca2b38e91902f29e9fdcd3_evolako-medija-kit-sr.pdf':
+        'media kit PDF of 10.10.2026; /medija-kit links /evolako-medija-kit-sr.pdf (tools/mediakit_pdf.py, 29.10.2026)',
+    'https://cdn.prod.website-files.com/6ab19bf9a3bb86f8fb7bba00/6aca2b38f0c2375ec41288f4_evolako-medija-kit-en.pdf':
+        'media kit PDF of 10.10.2026; /medija-kit links /evolako-medija-kit-en.pdf (tools/mediakit_pdf.py, 29.10.2026)',
+}
 I18N_DIR = os.path.join(HERE, 'i18n')                # harvest.json (live dictionaries), en.json / ru.json (own),
 HARVEST = os.path.join(I18N_DIR, 'harvest.json')      # keep.json (texts that stay as they are)
 LANGS = PR.LANGS                                      # prerendered languages besides Serbian
@@ -1143,6 +1151,8 @@ class Build:
                 if a.dist_rel in page_refs[slug] or a.kinds == ['css']:
                     continue
                 if a.host == 'ajax.googleapis.com':      # WebFont loader, replaced by the local font CSS
+                    continue
+                if a.url in RETIRED:                     # no longer linked on purpose; still copied
                     continue
                 self.not_rewritten.append((slug, a.url))
         if self.not_rewritten:
