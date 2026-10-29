@@ -22,6 +22,10 @@ and writes site/dist/ for Cloudflare Pages. The built site needs neither Webflow
   robots.txt               as published
   llms.txt                 site/llms.txt (llmstxt.org, 28.10.2026): what Evolako is and its main pages, for AI
                            assistants; written by hand, checked against the built pages (links, RSD amounts, words)
+  <key>.txt                site/public/* copied to the root as they are (never over a built file): the IndexNow key
+                           file (site/tools/indexnow.py, 29.10.2026)
+  indexnow-pages.json      every sitemap URL with a fingerprint of its content; the deploy workflow compares it with
+                           the live one and submits the changed URLs to IndexNow (site/tools/indexnow.py)
   sitemap.xml              the published one (order, lastmod) with every page in sr, en and ru and xhtml:link
                            alternates (URLs stay on https://www.evolako.rs)
   _headers, _routes.json   cache and security headers incl. a Content-Security-Policy per page; Pages Functions
@@ -80,6 +84,10 @@ import urllib.parse
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import prerender as PR  # noqa: E402  (site/prerender.py: the /en/ and /ru/ pages)
+import importlib.util   # noqa: E402
+_IX_SPEC = importlib.util.spec_from_file_location('evo_indexnow', os.path.join(HERE, 'tools', 'indexnow.py'))
+IX = importlib.util.module_from_spec(_IX_SPEC)   # site/tools/indexnow.py: key, page fingerprints (IndexNow)
+_IX_SPEC.loader.exec_module(IX)
 import content as CT    # noqa: E402  (site/content.py: guides, news and B2B guides published after the switch)
 
 SITE = 'https://www.evolako.rs'
@@ -119,6 +127,7 @@ HONEYPOT_HTML = ('<div aria-hidden="true" style="position:absolute;left:-10000px
 JEZIK_FORMS = {'Kontakt'}
 JEZIK_HTML = '<input type="hidden" name="Jezik" data-name="Jezik" data-evo-jezik="page" value="%s"/>'
 FONT_LICENSE = os.path.join(HERE, 'licenses', 'Onest-OFL.txt')
+PUBLIC_DIR = os.path.join(HERE, 'public')            # files served at the root as they are (IndexNow key file)
 I18N_DIR = os.path.join(HERE, 'i18n')                # harvest.json (live dictionaries), en.json / ru.json (own),
 HARVEST = os.path.join(I18N_DIR, 'harvest.json')      # keep.json (texts that stay as they are)
 LANGS = PR.LANGS                                      # prerendered languages besides Serbian
@@ -225,6 +234,15 @@ HEADERS_TOP = """\
   Cache-Control: public, max-age=300, must-revalidate
   ! Content-Security-Policy
   Content-Security-Policy: {cspindex}
+"""
+HEADERS_INDEXNOW = """
+# IndexNow (site/tools/indexnow.py): the key file and the fingerprints of the pages; neither is a page to index
+/{key}.txt
+  Content-Type: text/plain; charset=utf-8
+  X-Robots-Tag: noindex
+
+/{manifest}
+  X-Robots-Tag: noindex
 """
 HEADERS_BOTTOM = """
 # /llms.txt (llmstxt.org): plain UTF-8 text for AI assistants
@@ -836,6 +854,10 @@ class Build:
         return set(re.findall(r"'([^']*)'", m.group(1)))
 
     def run(self):
+        try:
+            self.indexnow_key = IX.find_key(PUBLIC_DIR)
+        except ValueError as e:
+            fail(str(e))
         pages = sorted(self.manifest['pages'], key=lambda p: p['path'])
         published = [p for p in pages if p['path'] != '404']
         if not published:
@@ -1243,6 +1265,7 @@ class Build:
             for path in (page_path(slug), '/:lang' + page_path(slug)):
                 parts.append('\n%s\n  ! Content-Security-Policy\n  Content-Security-Policy: %s\n' % (
                     path, self.csp[slug][0]))
+        parts.append(HEADERS_INDEXNOW.format(key=self.indexnow_key, manifest=IX.MANIFEST))
         parts.append(HEADERS_BOTTOM)
         text = ''.join(parts)
         rules = len(re.findall(r'^\S', text, re.M)) - len(re.findall(r'^#', text, re.M))
@@ -1305,6 +1328,22 @@ class Build:
         put('sitemap.xml', self.sitemap().encode('utf-8'))
         put('_headers', self.headers_file().encode('utf-8'))
         put('_routes.json', (json.dumps(ROUTES, indent=2, sort_keys=True) + '\n').encode('utf-8'))
+        # site/public/*: files served at the root as they are (the IndexNow key file); never over a built file
+        self.public_files = []
+        for name in sorted(os.listdir(PUBLIC_DIR)) if os.path.isdir(PUBLIC_DIR) else []:
+            src = os.path.join(PUBLIC_DIR, name)
+            if not os.path.isfile(src) or name.startswith('.'):
+                fail('site/public/%s: only plain files go there' % name)
+            if os.path.exists(os.path.join(out, name)) or name == IX.MANIFEST:
+                fail('site/public/%s would replace a file the build writes' % name)
+            with open(src, 'rb') as f:
+                put(name, f.read())
+            self.public_files.append(name)
+        # IndexNow: the fingerprint of every sitemap URL (the workflow submits the ones that changed)
+        pages = {PR.page_url(SITE, 'sr', s): t for s, t in self.page_out.items() if s != '404'}
+        pages.update({PR.page_url(SITE, l, s): t for (l, s), t in self.lang_out.items()})
+        put(IX.MANIFEST, IX.manifest(pages, self.indexnow_key))
+        self.indexnow_pages = len(pages)
         self.verify(out, need)
 
     def llms_txt(self):
@@ -1542,6 +1581,8 @@ class Build:
             print('   pages of site/content served with the policy of /* (no rule of their own): %s' % ', '.join(
                 '/' + s for s in sorted(self.csp_shared)))
         print(self.content.summary())
+        print('IndexNow: key file /%s.txt (site/public: %s), %s with the fingerprints of %d URLs' % (
+            self.indexnow_key, ', '.join(self.public_files), IX.MANIFEST, self.indexnow_pages))
         if self.embed_dependencies:
             print('   files the BlokVolt embed loads itself (stay external, allowed on its page): %s' % ', '.join(
                 self.embed_dependencies[:6]) + (' …' if len(self.embed_dependencies) > 6 else ''))

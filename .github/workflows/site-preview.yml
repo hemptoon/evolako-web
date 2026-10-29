@@ -11,9 +11,12 @@
 #   * Forms: the project has the service binding BOT (the CRM bot worker) and the secret HOOK (set in the dashboard,
 #     never in this repository). Without them every form shows its failure block.
 # Before the upload the same offline checks as on a laptop run (build incl. site/content, the content self-test, form
-# endpoint, middleware, i18n engine copy); after it, a smoke test of the production domains: statuses, headers, the
-# ?lang= and bare-domain rules, and every page of site/content (its H1 — guides and the city pages —, the news ids on
-# /novosti) on www.evolako.rs.
+# endpoint, middleware, i18n engine copy, IndexNow); after it, a smoke test of the production domains: statuses,
+# headers, the ?lang= and bare-domain rules, the IndexNow key file, and every page of site/content (its H1 — guides and
+# the city pages —, the news ids on /novosti) on www.evolako.rs.
+# IndexNow (29.10.2026, site/tools/indexnow.py): before the upload the workflow keeps the live dist/indexnow-pages.json
+# (page fingerprints); after the production smoke test it submits to api.indexnow.org every URL whose fingerprint
+# changed, is new or is gone. Only after a green smoke test, and a failure there is a warning, never a failed deploy.
 # Secrets (repo Settings → Secrets → Actions, the same as deploy.yml): CLOUDFLARE_API_TOKEN ("Account · Cloudflare
 # Pages · Edit" only), CLOUDFLARE_ACCOUNT_ID. Actions pinned to commit hashes, wrangler to an exact version.
 name: Site preview
@@ -50,8 +53,17 @@ jobs:
           node site/tools/forms_unit.mjs
           node site/tools/middleware_unit.mjs
           python3 site/tools/i18n_selftest.py
+          python3 site/tools/indexnow.py selftest
           test -f site/dist/index.html && test -f site/dist/en/index.html && test -f site/dist/ru/index.html
           test -f site/dist/_headers && test -f site/dist/_routes.json && test -f site/dist/sitemap.xml
+          test -f site/dist/indexnow-pages.json
+      - name: IndexNow — the page fingerprints of the live site, kept before the upload
+        shell: bash
+        run: |
+          # none yet (the first deploy with IndexNow) or not reachable: every URL of this build counts as new
+          curl -fsS --max-time 30 -o /tmp/indexnow-old.json "https://www.evolako.rs/indexnow-pages.json?deploy=$GITHUB_SHA" \
+            || echo '{}' > /tmp/indexnow-old.json
+          python3 site/tools/indexnow.py diff --old /tmp/indexnow-old.json
       - name: Create the Pages project on the first run
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -117,6 +129,10 @@ jobs:
           check "$W/" 200 '^content-security-policy: ' '^x-robots-tag'
           check "$W/en/" 200 '^content-security-policy: ' '^x-robots-tag'
           check "$W/llms.txt" 200 '^content-type: text/plain; charset=utf-8' '^x-robots-tag'
+          key=$(python3 site/tools/indexnow.py key)
+          check "$W/$key.txt" 200 '^content-type: text/plain; charset=utf-8' -
+          [ "$(curl -fsS "$W/$key.txt?deploy=$GITHUB_SHA")" = "$key" ] && echo "ok   the IndexNow key file holds the key" \
+            || { echo "FAIL $W/$key.txt does not hold the key"; fail=1; }
           check "$W/kontakt?lang=ru" 301 '^location: /ru/kontakt' -
           check "https://evolako.rs/vodici" 301 '^location: https://www.evolako.rs/vodici' -
           check "$W$css" 200 '^cache-control: public, max-age=31536000, immutable' -
@@ -145,3 +161,6 @@ jobs:
             if [ $ok = 1 ]; then echo "ok   $W$path"; else echo "FAIL $W$path: not live or without \"$want\""; fail=1; fi
           done < /tmp/content-urls.txt
           exit $fail
+      - name: IndexNow — submit the pages that changed (a failure is a warning, the deploy stands)
+        continue-on-error: true
+        run: python3 site/tools/indexnow.py ping --old /tmp/indexnow-old.json

@@ -68,6 +68,25 @@ JSON-LD `areaServed` (one Country, Srbija — also in the kits), the quiz (other
 list) and the social image (`og/evolako-og-sr.png`, now also on the Serbian pages) were changed in the snapshot pages;
 their EN/RU pairs are in `i18n/en.json` / `ru.json`.
 
+**Deploy 4 (29.10.2026, the owner's word 28.10.2026 23:27):** the preduzetnik is not in the VAT system, so every
+Evolako price reads «konačna cena» / «cene su konačne» (EN «final price», RU «итоговая цена») instead of «sa PDV-om»;
+the B2B pages say «Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a.» PDV stays only where it is about the
+EPS bill, the electricity tariff or a landlord's / a company's own taxes. The B2B calculator (`/kalkulator-cene-punjaca`)
+adds no VAT any more (`vat:0`, no «Bez PDV-a» line) and its examples were recomputed. The on-site assessment: «72 h u
+Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci» — the city pages promise 72 h only in
+Belgrade and Vojvodina (`gradovi.py`: `ZONE_72H`, the city check stops on 72 h elsewhere). New page
+`/sabloni-za-skupstinu` (`sabloni.py`): five templates for the residents' assembly, free for everyone, each with «Kopiraj
+tekst» and print; the template texts are Serbian on `/en/` and `/ru/` too (`lang="sr" translate="no"`, QA lists them
+apart). Whoever ties the templates to a package or an offer now says they are free for everyone and links the page.
+
+**IndexNow (since 29.10.2026, `tools/indexnow.py`):** `public/<key>.txt` is the key file (the build copies `public/*` to
+the root; never over a built file). The build writes `dist/indexnow-pages.json`: every sitemap URL with a fingerprint
+of its content (text, head, JSON-LD, links, images — not scripts, styles or asset names). The deploy workflow keeps the
+live manifest before the upload and, after a green production smoke test, submits every URL that is new, changed or
+gone to api.indexnow.org (Bing, Yandex, Seznam, Naver…; Google reads sitemap.xml). A failure is a workflow warning,
+never a failed deploy. `python3 site/tools/indexnow.py diff --old <manifest>` shows what a deploy would submit;
+`selftest` runs offline. Independent of the IndexNow of www.blokvolt.rs (its own key).
+
 **The BlokVolt map embed on `/mapa-punjaca`** (the "evomap" of github.com/hemptoon/blokvolt-rs, its RUNBOOK 3.25): the
 tag is near the end of `snapshot/pages/mapa-punjaca.html` —
 `<script src="https://www.blokvolt.rs/assets/embed/evomap-<10 hex>.js" integrity="sha384-…" crossorigin="anonymous">`.
@@ -254,8 +273,8 @@ Without `BOT` or `HOOK` every form shows the failure block (nothing is lost sile
   requests, CSP violations (the `_headers` rules applied as Pages applies them), requests to forbidden hosts (Webflow,
   its CDNs, Google Fonts/ajax, jsDelivr; the BlokVolt embed's own requests are listed apart), links incl. canonical
   and hreflang, app links with the page's `?lang=`, fonts, JSON-LD (parses; FAQPage = visible FAQ), Serbian left on
-  `/en/` and `/ru/` (texts the BlokVolt map embed renders from its own data — station names, addresses — are
-  listed apart), and text + pixels against the original page replayed from the snapshot in the same language
+  `/en/` and `/ru/` (texts the BlokVolt map embed renders from its own data — station names, addresses — and texts
+  inside an element marked `lang="sr"` — the assembly templates — are listed apart), and text + pixels against the original page replayed from the snapshot in the same language
   (`?lang=`); a text difference counts as explained only where an own translation, a load-timing variant or the
   hidden legal-data placeholder turns the original's words into exactly the built ones. Then interactions: language switching by both menus on five pages, the `?lang=` redirects, the
   remembered choice, back/forward, Cyrillic (also when chosen on an /en/ or /ru/ page and reloaded), cookie banner, A4
@@ -265,6 +284,9 @@ Without `BOT` or `HOOK` every form shows the failure block (nothing is lost sile
   other file equal the earlier build except for exactly the step-3 changes (engine/script patches, language menu as
   links, hreflang, `_headers`, `sitemap.xml`, new `en/`, `ru/`, `_a/evo-i18n/`).
 - `python3 site/tools/i18n_selftest.py` — the prerender's copy of the engine's text functions equals the engine.
+- `python3 site/tools/indexnow.py selftest` — IndexNow offline: the fingerprint ignores renamed assets and sees text,
+  JSON-LD, canonical and image changes; the diff (new, changed, gone), the payload, batches of 10.000, the key file in
+  `public/` and `dist/`, the manifest = the sitemap URLs with the fingerprints of the built pages.
 - `node site/tools/middleware_unit.mjs` — the `?lang=` redirects (parameters kept, `sr-cyrl` untouched, GET/HEAD only),
   the bare domain → www and the noindex header.
 - `python3 site/tools/diff_builds.py --old <earlier dist> --expect <pattern> …` — for every later change: what the new
