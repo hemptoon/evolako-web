@@ -9,9 +9,29 @@
    "en": "Serbia",
    "sr": "Srbija"
   },
+  "109gckg": {
+   "en": "If you rent out a garage, a tenant with an electric car only needs the START kit: a reinforced socket with a MID meter and basic installation next to the distribution board, 39.000 RSD (final price). It delivers 2,3–3,7 kW, which gives up to about 180 km overnight.",
+   "sr": "Ako izdajete garažu, zakupcu sa električnim autom dovoljan je paket START: pojačana utičnica sa MID brojilom i osnovnom ugradnjom pored razvodne table, 39.000 RSD (konačna cena). Snaga je 2,3–3,7 kW, što daje do oko 180 km preko noći."
+  },
+  "109z55a": {
+   "en": "11 kW wallbox: 154.000–204.000 RSD",
+   "sr": "Wallbox 11 kW: 154.000–204.000 RSD"
+  },
   "10cpc6e": {
    "en": "Putevi Srbije · A1 · Belgrade–Niš",
    "sr": "Putevi Srbije · A1 · Beograd–Niš"
+  },
+  "10hcjbn": {
+   "en": "final price; 2,3–3,7 kW, up to about 180 km overnight",
+   "sr": "konačna cena; 2,3–3,7 kW, do oko 180 km preko noći"
+  },
+  "10k9h76": {
+   "en": "Space preparation and shared infrastructure are spread across all the spaces in the garage, and first-phase chargers are at the kit price. The examples assume a distribution board 10–30 m away. Prices are final, with no VAT: the sole proprietor is not in the VAT system.",
+   "sr": "Priprema mesta i zajednička infrastruktura dele se na sva mesta u garaži, a punjači u prvoj fazi idu po ceni paketa. Primeri važe za razvodnu tablu na 10–30 m. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
+  },
+  "10kbac8": {
+   "en": "About 167.000–205.000 RSD per spot",
+   "sr": "Po mestu oko 167.000–205.000 RSD"
   },
   "10s6iox": {
    "en": "Company car chargers at home and at work",
@@ -21,17 +41,49 @@
    "en": "Public garage",
    "sr": "Javna garaža"
   },
+  "110ed1u": {
+   "en": "final price; Type 2, fits almost all electric cars",
+   "sr": "konačna cena; Type 2, za gotovo sve električne automobile"
+  },
   "116oovw": {
    "en": "per parking spot",
    "sr": "po parking mestu"
+  },
+  "11fplqh": {
+   "en": "Final price",
+   "sr": "Konačna cena"
+  },
+  "11pyont": {
+   "en": "Iocharger 22 kW set to 11 kW, with 4G, RFID cards and a display, with basic installation next to the distribution board: 115.000 RSD with a Type 2 socket, 127.000 RSD with a 5 m cable. MID meter +10.000 RSD. Prices are final.",
+   "sr": "Iocharger 22 kW podešen na 11 kW, sa 4G vezom, RFID karticama i ekranom, sa osnovnom ugradnjom pored razvodne table: 115.000 RSD sa Type 2 utičnicom, 127.000 RSD sa kablom 5 m. MID brojilo +10.000 RSD. Cene su konačne."
   },
   "12067bi": {
    "en": "We work all over Serbia",
    "sr": "Radimo u celoj Srbiji"
   },
+  "12f1nik": {
+   "en": "Your kit: WALLBOX 11 kW — from 94.000 RSD, final price.",
+   "sr": "Tvoj komplet: WALLBOX 11 kW — od 94.000 RSD, konačna cena."
+  },
+  "12qsal5": {
+   "en": "A guest arrives in the evening and has a full battery by morning: an 11 kW wallbox with a MID meter at every spot, at public, final prices.",
+   "sr": "Gost stiže uveče, a ujutru ima pun auto: wallbox 11 kW sa MID brojilom na svakom mestu, po javnim i konačnim cenama."
+  },
+  "12zslep": {
+   "en": "Three main kits and three extra options — final prices with basic installation next to the distribution board; document templates are free for everyone. You know the full price, extras included, before any work starts: we confirm the exact amount at the assessment, before anything is signed. No fine print.",
+   "sr": "Tri glavna paketa i tri dodatne opcije — konačne cene sa osnovnom ugradnjom pored razvodne table; šabloni papira su besplatni za sve. Cenu sa svim dodacima znaš pre početka radova: tačan iznos potvrđujemo na proceni, pre bilo kakvog potpisa. Bez sitnih slova."
+  },
   "1367beu": {
    "en": "How many kW a garage needs for 10, 20 or 50 chargers with power management: the overnight math, rules of thumb from EU practice and when you need a power upgrade.",
    "sr": "Koliko kW treba garaži za 10, 20 ili 50 punjača uz upravljanje snagom: noćna računica, pravila iz prakse u EU i kada je potrebno povećanje snage."
+  },
+  "137oeqk": {
+   "en": "11 kW wallbox — 104.000 RSD, final price: a three-phase charger that fully charges an empty car overnight;",
+   "sr": "wallbox 11 kW — 104.000 RSD, konačna cena: trofazni punjač koji prazan auto napuni preko noći;"
+  },
+  "13bcz7h": {
+   "en": "about 154.000–199.000 RSD",
+   "sr": "oko 154.000–199.000 RSD"
   },
   "13d4w5i": {
    "en": "A short quiz: find out which kit fits your garage or parking spot and how much you save.",
@@ -41,9 +93,17 @@
    "en": "Charging station",
    "sr": "Punjač"
   },
+  "13sgm1x": {
+   "en": "Monthly statement, remote monitoring, priority service, a winter check-up, extended warranty and transfer if you move.",
+   "sr": "Obračun sa izveštajem, nadzor, prioritetni servis, zimska provera, produžena garancija i prenos pri selidbi."
+  },
   "13vht6c": {
    "en": "How a company meters electricity for a company car charged at an employee's home: a MID meter at the spot, a monthly statement in kWh and questions for the accountant.",
    "sr": "Kako firma meri struju za službeni auto koji se puni kod zaposlenog: MID brojilo na mestu, mesečni obračun u kWh i pitanja za knjigovođu."
+  },
+  "13vsgwy": {
+   "en": "Shared infrastructure: 348.000–694.000 RSD",
+   "sr": "Zajednička infrastruktura: 348.000–694.000 RSD"
   },
   "141n2or": {
    "en": "Preševo toll station",
@@ -53,13 +113,53 @@
    "en": "A reinforced line or an 11 kW smart wallbox with a certified MID meter, a technical description of the installation and document templates for the building assembly — installed in 1 day.",
    "sr": "Pojačana linija ili smart wallbox 11 kW sa sertifikovanim MID brojilom, tehničkim opisom ugradnje i šablonima papira za skupštinu — ugradnja za 1 dan."
   },
+  "14dvmm5": {
+   "en": "A charger with a MID meter where the company car spends the night — at the employee’s home or in the company car park, anywhere in Serbia. An on-site assessment costs 2.990 RSD (final price) and is credited toward the installation; we reply within 48 hours.",
+   "sr": "Punjač sa MID brojilom na mestu gde službeni auto stoji noću — kod zaposlenog ili na parkingu firme, u celoj Srbiji. Procena na licu mesta košta 2.990 RSD (konačna cena) i uračunava se u cenu ugradnje; javljamo se u roku od 48h."
+  },
+  "14o3f48": {
+   "en": "Reinforced socket: 96.000–139.000 RSD",
+   "sr": "Pojačana utičnica: 96.000–139.000 RSD"
+  },
+  "14oqkq2": {
+   "en": "With the offer you get a technical description of the installation. The templates for the garage owner or the building assembly — consent, draft decision and agenda item — are free for everyone. You or the building manager fill them in and submit them; we don't represent you before the building, but we give you everything you need for that conversation.",
+   "sr": "Uz ponudu dobijaš tehnički opis ugradnje. Šabloni za vlasnika garaže ili skupštinu — saglasnost, predlog odluke i tačka dnevnog reda — besplatni su za sve. Popunjavaš ih i predaješ ti ili upravnik; mi zgradu ne zastupamo, ali ti damo sve što treba za taj razgovor."
+  },
   "14sdqhc": {
    "en": "Someone recommended Evolako to you — 2 more months of subscription free",
    "sr": "Neko ti je preporučio Evolako — još 2 meseca pretplate besplatno"
   },
+  "14vdd1z": {
+   "en": "At an employee’s home, a spot is priced as a kit. For several spots in the company parking lot, shared infrastructure is added. Prices are final, with no VAT: the sole proprietor is not in the VAT system.",
+   "sr": "Kod kuće zaposlenog mesto košta kao paket. Za više mesta na parkingu firme dodaje se zajednička infrastruktura. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
+  },
+  "14xauk1": {
+   "en": "990 RSD a month, first 2 months 0 RSD, no contract commitment: billing, monitoring, priority service, a winter check-up and extended warranty. The kit works without a subscription too.",
+   "sr": "990 RSD mesečno, prva 2 meseca 0 RSD, bez ugovorne obaveze: obračun, nadzor, prioritetni servis, zimska provera i produžena garancija. Komplet radi i bez pretplate."
+  },
+  "1553yue": {
+   "en": "Examples from the calculator for 11 kW wallboxes, final prices:",
+   "sr": "Primeri iz kalkulatora za wallbox od 11 kW, konačne cene:"
+  },
   "15e1lfi": {
    "en": "The kit for each spot, the shared infrastructure and a power upgrade: example prices for a hotel, a garage, a business, a new build and an apartment building, with VAT.",
    "sr": "Paket za mesto, zajednička infrastruktura i povećanje snage: primeri cena za hotel, garažu, firmu, novogradnju i stambenu zgradu, sa PDV-om."
+  },
+  "15gnzdg": {
+   "en": "Four spots in a garage, with the distribution board 10–30 m away: about 616.000–796.000 RSD, or about 154.000–199.000 RSD per spot.",
+   "sr": "Četiri mesta u garaži, sa razvodnom tablom udaljenom 10–30 m: oko 616.000–796.000 RSD, odnosno oko 154.000–199.000 RSD po mestu."
+  },
+  "15tz5mi": {
+   "en": "Wallbox Pulsar Max with basic installation next to the distribution board: 155.000 RSD; with the PowerBoost meter (dynamic power management and charging from solar panels) 195.000 RSD. MID meter +10.000 RSD. Prices are final.",
+   "sr": "Wallbox Pulsar Max sa osnovnom ugradnjom pored razvodne table: 155.000 RSD; sa PowerBoost brojilom (dinamičko upravljanje snagom i punjenje iz solarnih panela) 195.000 RSD. MID brojilo +10.000 RSD. Cene su konačne."
+  },
+  "15vk0lb": {
+   "en": "Per participant, final price",
+   "sr": "Po učesniku, konačna cena"
+  },
+  "163bubj": {
+   "en": "Shared infrastructure: 200.000–380.000 RSD",
+   "sr": "Zajednička infrastruktura: 200.000–380.000 RSD"
   },
   "16hmcu2": {
    "en": "Evolako installs chargers with MID meters at employees’ homes or in the company parking lot, anywhere in Serbia. With a subscription, the company receives a per-spot statement in PDF and CSV format every month.",
@@ -73,6 +173,10 @@
    "en": "Once five residents of a building sign up, we assess the garage and make an offer. Everyone pays for their own spot and a share of the common line, and for electricity by their own MID meter.",
    "sr": "Kad se iz zgrade prijavi pet stanara, radimo procenu garaže i ponudu. Svako plaća svoje mesto i deo zajedničke linije, a struju po svom MID brojilu."
   },
+  "16mpvex": {
+   "en": "11 kW wallbox with a MID meter, final price, basic installation at the address",
+   "sr": "wallbox 11 kW sa MID brojilom, konačna cena, osnovna ugradnja na adresi"
+  },
   "16okqqj": {
    "en": "3 questions, half a minute: find out which kit fits your garage or parking spot and how much you save. A recommendation on screen, no commitment.",
    "sr": "3 pitanja, pola minuta: saznaj koji komplet odgovara tvojoj garaži ili parking mestu i koliko štediš. Preporuka na ekranu, bez obaveza."
@@ -85,6 +189,22 @@
    "en": "Putevi Srbije · A2 · Belgrade–Čačak",
    "sr": "Putevi Srbije · A2 · Beograd–Čačak"
   },
+  "17cuk0i": {
+   "en": "The kit price is final and includes basic installation: the charger on the wall next to the distribution board, up to 2 m of cable, RCD protection and breaker. If your spot is further from the board, we price the cable, trunking, a wall passage or a new board separately — at the assessment, before any work starts, so you know the amount in advance. Document templates are free for everyone:",
+   "sr": "Cena paketa je konačna i uključuje osnovnu ugradnju: punjač na zidu pored razvodne table, do 2 m kabla, FID zaštitu i automat. Ako je tvoje mesto dalje od table, kabl, kanalice, prolaz kroz zid ili novu tablu računamo posebno — na proceni, pre početka radova, pa iznos znaš unapred. Šabloni papira su besplatni za sve:"
+  },
+  "17jf826": {
+   "en": "Space preparation and shared infrastructure: 1.347.000–2.000.000 RSD",
+   "sr": "Priprema mesta i zajednička infrastruktura: 1.347.000–2.000.000 RSD"
+  },
+  "17kz60s": {
+   "en": "Two spots next to the distribution board: about 218.000–238.000 RSD.",
+   "sr": "Dva mesta pored razvodne table: oko 218.000–238.000 RSD."
+  },
+  "17rov58": {
+   "en": "Installation of a charger you already have (CE marking and 6 mA DC fault current protection) next to the distribution board: up to 2 m of cable, RCD protection and a circuit breaker — 24.000 RSD. Prices are final.",
+   "sr": "Ugradnja punjača koji već imaš (CE oznaka i zaštita od DC struje kvara 6 mA) pored razvodne table: do 2 m kabla, FID zaštita i automat — 24.000 RSD. Cene su konačne."
+  },
   "17wezjt": {
    "en": "Facts, ready-made copy in three languages, logos and colors — and how we can work together.",
    "sr": "Činjenice, gotovi tekstovi na tri jezika, logotipi i boje — i kako da sarađujemo."
@@ -92,6 +212,22 @@
   "187x08a": {
    "en": "Contact — Evolako",
    "sr": "Kontakt — Evolako"
+  },
+  "189x2wl": {
+   "en": "An example from the calculator for a garage with up to 30 spaces and the distribution board 10–30 m away, final price per participant:",
+   "sr": "Primer iz kalkulatora za garažu do 30 mesta, sa razvodnom tablom udaljenom 10–30 m, konačna cena po učesniku:"
+  },
+  "18f77u5": {
+   "en": "Total: about 616.000–796.000 RSD",
+   "sr": "Ukupno oko 616.000–796.000 RSD"
+  },
+  "18qdqeo": {
+   "en": "11 kW wallbox: 138.000–176.000 RSD per participant",
+   "sr": "Wallbox 11 kW: 138.000–176.000 RSD po učesniku"
+  },
+  "18uwyw1": {
+   "en": "Running power to the garage is the biggest part of the job, and paying for it for a single spot makes no sense. That's why we offer the ZGRADA kit: 2–6 spots at once, from 96.000 RSD per spot; the assembly templates are free for everyone, and it costs the building nothing. If you're the only one interested, we'll also price a single-spot option at the assessment.",
+   "sr": "Dovod struje do garaže je najveći deo posla i nema smisla plaćati ga za jedno mesto. Zato radimo paket ZGRADA: 2–6 mesta odjednom, od 96.000 RSD po mestu; šabloni za skupštinu su besplatni za sve, a zgradu to ne košta ništa. Ako si jedini zainteresovan, na proceni računamo i pojedinačnu varijantu."
   },
   "18xm492": {
    "en": "The lower tariff lasts eight hours and starts at 22:00, 23:00 or 24:00, depending on the region. How to set the timer in your car or on the charger.",
@@ -105,6 +241,14 @@
    "en": "The service layer for home EV charging in apartment buildings in Serbia: certified MID metering, templates for the building assembly and a subscription with monitoring, service and an extended warranty.",
    "sr": "Servisni sloj kućnog punjenja električnih automobila u stambenim zgradama u Srbiji: sertifikovano MID merenje, šabloni za skupštinu i pretplata sa monitoringom, servisom i produženom garancijom."
   },
+  "19olyf7": {
+   "en": "Installation only from 24.000 RSD · START 39.000 RSD · WALLBOX 11 kW from 94.000 RSD · ZGRADA from 96.000 RSD per space. Prices are final and include basic installation next to the distribution board; document templates are free for everyone.",
+   "sr": "Samo ugradnja od 24.000 RSD · START 39.000 RSD · WALLBOX 11 kW od 94.000 RSD · ZGRADA od 96.000 RSD po mestu. Cene su konačne i uključuju osnovnu ugradnju pored razvodne table; šabloni papira su besplatni za sve."
+  },
+  "19uhl67": {
+   "en": "About 16.000–25.000 RSD per prepared space",
+   "sr": "Po pripremljenom mestu oko 16.000–25.000 RSD"
+  },
   "19w7vgm": {
    "en": "City beach, Čačak",
    "sr": "Gradska plaža Čačak"
@@ -117,13 +261,69 @@
    "en": "Wallbox Pulsar Max with basic installation next to the distribution board: 155.000 RSD; with the PowerBoost meter (dynamic power management and charging from solar panels) 195.000 RSD. MID meter +10.000 RSD. All prices with VAT.",
    "sr": "Wallbox Pulsar Max sa osnovnom ugradnjom pored razvodne table: 155.000 RSD; sa PowerBoost brojilom (dinamičko upravljanje snagom i punjenje iz solarnih panela) 195.000 RSD. MID brojilo +10.000 RSD. Sve sa PDV-om."
   },
+  "1aigkeh": {
+   "en": "Total: 520.000 RSD",
+   "sr": "Ukupno 520.000 RSD"
+  },
+  "1aoxcd7": {
+   "en": "When some of the cars charge at the company parking lot, each spot there also gets its own MID meter, and load management shares the existing connection’s power among the chargers. Example: 3 spots in the parking lot with the distribution board 10–30 m away, plus 5 employees charging at home, cost about 1.026.000–1.188.000 RSD. For a different number of spots, get an estimated price from the ",
+   "sr": "Kad se deo automobila puni na parkingu firme, i tamo svako mesto dobija svoje MID brojilo, a upravljanje snagom deli snagu postojećeg priključka između punjača. Primer: 3 mesta na parkingu, sa razvodnom tablom udaljenom 10–30 m, i 5 zaposlenih koji pune kod kuće koštaju oko 1.026.000–1.188.000 RSD. Za drugi broj mesta okvirnu cenu daje"
+  },
+  "1arlvy4": {
+   "en": "A parking space owner orders a charger when they buy an electric car. They choose a kit for their space, at the final price: a reinforced socket with a MID meter for 39.000 RSD or an 11 kW wallbox with a MID meter for 104.000 RSD. It’s a basic installation from the junction box at their space and takes one working day. When you sell apartments and parking spaces, this is a concrete answer to the question of where the buyer will charge: the space is prepared, and the charger price is known in advance.",
+   "sr": "Vlasnik parking mesta punjač naručuje kad kupi električni auto. Za svoje mesto bira paket po konačnoj ceni: pojačanu utičnicu sa MID brojilom za 39.000 RSD ili wallbox 11 kW sa MID brojilom za 104.000 RSD. Ugradnja ide od kutije kod njegovog mesta, osnovnom ugradnjom, i traje jedan radni dan. U prodaji stanova i garažnih mesta to je konkretan odgovor na pitanje gde će kupac puniti auto: mesto je pripremljeno, a cena punjača poznata unapred."
+  },
+  "1awl531": {
+   "en": "a spot with a wallbox and MID meter, final price",
+   "sr": "mesto sa wallboxom i MID brojilom, konačna cena"
+  },
   "1b5ound": {
    "en": "A shared socket runs on the building's meter, so everyone pays for a neighbor's charging. What the building assembly can do, why a MID meter is the basis of an agreement and how a building agrees in five steps.",
    "sr": "Zajednička utičnica je na brojilu zgrade, pa komšijino punjenje plaćaju svi. Šta može skupština, zašto je MID brojilo osnova dogovora i kako da se zgrada dogovori u pet koraka."
   },
+  "1b8jm1n": {
+   "en": "In an apartment building garage, only the residents who join pay for the shared line, so it costs the building nothing. Each participant covers the price of their own kit and their portion of the shared line. Example for a garage with up to 30 spaces and the distribution board 10–30 m away, final price per participant:",
+   "sr": "U garaži stambene zgrade zajedničku liniju plaćaju samo stanari koji se priključe, pa zgradu to ne košta ništa. Svaki učesnik snosi cenu svog paketa i svoj deo zajedničke linije. Primer za garažu do 30 mesta i razvodnu tablu na 10–30 m, konačna cena po učesniku:"
+  },
+  "1bjse2t": {
+   "en": "Per participant, final price — the building pays nothing",
+   "sr": "Po učesniku, konačna cena — zgrada ne plaća ništa"
+  },
+  "1bribsw": {
+   "en": "Prices are final, with no VAT: the sole proprietor is not in the VAT system. The kit price includes basic installation next to the distribution board: up to 2 m of cable, RCD protection and a breaker. If the spot is farther from the board, the cable, cable ducts, a wall passage or a new board are priced at the site assessment, before work starts.",
+   "sr": "Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a. Cena paketa uključuje osnovnu ugradnju pored razvodne table: do 2 m kabla, FID zaštitu i automat. Ako je mesto dalje od table, kabl, kanalice, prolaz kroz zid ili novu tablu računamo na proceni, pre početka radova."
+  },
+  "1c0hlv3": {
+   "en": "Example: a hotel with 6 spots in an outdoor parking lot, with pedestals and the distribution board 10–30 m away, costs about 1.003.000–1.229.000 RSD, excluding excavation and asphalt work.",
+   "sr": "Primer: hotel sa 6 mesta na otvorenom parkingu, sa stubićima i razvodnom tablom na 10–30 m, košta oko 1.003.000–1.229.000 RSD, bez iskopa i asfalta."
+  },
+  "1c5a3wk": {
+   "en": "Are the prices final?",
+   "sr": "Da li su cene konačne?"
+  },
+  "1c9ptan": {
+   "en": "A reinforced socket on a dedicated line, RCD protection (Type A + DC), a certified MID meter and basic installation next to the distribution board (up to 2 m of cable); document templates are free for everyone. Cable to a spot farther away and any other work — quoted at the assessment, before work starts. Prices are final.",
+   "sr": "Pojačana utičnica na namenskoj liniji, FID zaštita (tip A + DC), sertifikovano MID brojilo i osnovna ugradnja pored razvodne table (do 2 m kabla); šabloni papira su besplatni za sve. Kabl do udaljenijeg mesta i ostali radovi — po proceni, pre početka radova. Cene su konačne."
+  },
   "1celc8z": {
    "en": "Building sign-up",
    "sr": "Prijava zgrade"
+  },
+  "1cqrcm": {
+   "en": "per spot, with part of the shared line, final price",
+   "sr": "po mestu, sa delom zajedničke linije, konačna cena"
+  },
+  "1cvb0z4": {
+   "en": "Total: about 1.003.000–1.229.000 RSD",
+   "sr": "Ukupno oko 1.003.000–1.229.000 RSD"
+  },
+  "1d6qfma": {
+   "en": "Shared infrastructure in the parking lot, distribution board 10–30 m away: 194.000–356.000 RSD",
+   "sr": "Zajednička infrastruktura na parkingu, razvodna tabla na 10–30 m: 194.000–356.000 RSD"
+  },
+  "1d749va": {
+   "en": "Total: about 1.084.000–1.398.000 RSD",
+   "sr": "Ukupno oko 1.084.000–1.398.000 RSD"
   },
   "1d86mbz": {
    "en": "A plan for building managers: resident sign-ups, a garage assessment, templates and the assembly decision, installation and billing by MID meter. The participants cover the costs, not the building.",
@@ -133,9 +333,25 @@
    "en": "60.000 RSD fixed + 4.000 RSD per paid installation. Inbound inquiries and a client base we have already built. Belgrade or Novi Sad. Apply through the form.",
    "sr": "60.000 RSD fiksno + 4.000 RSD po plaćenoj ugradnji. Dolazni upiti i već prikupljena baza klijenata. Beograd ili Novi Sad. Prijavi se preko forme."
   },
+  "1dcney2": {
+   "en": "Spots in the courtyard are shared, so the residents' assembly decides where charging goes. The ZGRADA kit brings a shared line and a MID meter for every user; the assembly templates are free for everyone, and it costs the building nothing. Outdoors the charger stands on a post, so you get the exact price after the assessment.",
+   "sr": "Mesta u dvorištu su zajednička, pa mesto za punjenje određuje skupština stanara. Paket ZGRADA donosi zajedničku liniju i MID brojilo za svakog korisnika; šabloni za skupštinu su besplatni za sve, a zgradu to ne košta ništa. Na otvorenom punjač stoji na stubiću, pa tačnu cenu dobijaš posle procene."
+  },
+  "1dgteiv": {
+   "en": "From us: a technical description of the installation (what goes in, the cable route, the power and the metering), the installation and billing contract and, after the installation, the as-built documentation. The templates are free for everyone, even if we don’t do your installation, and you fill them in yourself: for the assembly — a draft decision, the agenda item and answers to residents’ questions, with a checklist; for the owner of a rented garage — the consent. Check the draft decision with the building manager before the meeting. All the templates are here:",
+   "sr": "Od nas: tehnički opis ugradnje (šta se ugrađuje, trasa, snaga i merenje), ugovor o ugradnji i obračunu i, posle ugradnje, dokumentaciju o izvedenim radovima. Šabloni su besplatni za sve, i bez ugradnje kod nas, a popunjavaš ih ti: za skupštinu — predlog odluke, tačka dnevnog reda i odgovori na pitanja stanara, uz čeklistu; za vlasnika iznajmljene garaže — saglasnost. Predlog odluke pre sednice proveri sa upravnikom. Svi šabloni su ovde:"
+  },
+  "1dnj5p2": {
+   "en": "The calculator works out the price per spot for a building, hotel, garage, new build or business using the same rules as the examples above. You get the exact price in the quote after the site assessment.",
+   "sr": "Kalkulator računa cenu po mestu za zgradu, hotel, garažu, novogradnju ili firmu, po istim pravilima kao u primerima iznad. Tačnu cenu dobijate u ponudi posle procene."
+  },
   "1dxtri5": {
    "en": "EV chargers for garages, company parking lots and rental garages: a MID meter at every spot, power management and monthly billing per user, with no markup.",
    "sr": "Punjači za garaže, parkinge firmi i garaže za izdavanje: MID brojilo na svakom mestu, upravljanje snagom i mesečni obračun po korisniku, bez marže."
+  },
+  "1e1p1hg": {
+   "en": "11 kW wallbox: 138.000–176.000 RSD",
+   "sr": "Wallbox 11 kW: 138.000–176.000 RSD"
   },
   "1eiynf1": {
    "en": "Kapija Svrljiga restaurant",
@@ -165,6 +381,18 @@
    "en": "Installation only from 24.000, START 39.000, WALLBOX 11 kW from 94.000 and ZGRADA from 96.000 RSD per spot, with basic installation next to the distribution board.",
    "sr": "Samo ugradnja od 24.000, START 39.000, WALLBOX 11 kW od 94.000 i ZGRADA od 96.000 RSD po mestu, uz osnovnu ugradnju pored razvodne table."
   },
+  "1f9yt7o": {
+   "en": "EV chargers for hotels, garages, new builds, apartment buildings and businesses: a MID meter at every spot, power management and monthly billing. Public, final prices.",
+   "sr": "Punjači za hotele, garaže, novogradnju, stambene zgrade i firme: MID brojilo na svakom mestu, upravljanje snagom i mesečni obračun. Javne i konačne cene."
+  },
+  "1fc1syr": {
+   "en": "Total",
+   "sr": "Ukupno"
+  },
+  "1fd4mfm": {
+   "en": "For one or two spots next to the distribution board, no shared part is needed: a hotel with 2 such spots costs about 218.000–238.000 RSD. With more spots, or spots farther from the distribution board, infrastructure that serves all of them is added:",
+   "sr": "Za jedno ili dva mesta pored razvodne table zajednički deo nije potreban: hotel sa 2 takva mesta košta oko 218.000–238.000 RSD. Kad je mesta više ili su dalje od razvodne table, dodaje se infrastruktura koja služi svim mestima:"
+  },
   "1ff4d9l": {
    "en": "We work all over Serbia. Installing one spot takes one working day; the rest of the time mostly depends on convening the residents’ assembly.",
    "sr": "Radimo u celoj Srbiji. Ugradnja jednog mesta traje jedan radni dan, a ostatak vremena uglavnom zavisi od sazivanja skupštine."
@@ -172,6 +400,10 @@
   "1fh3fqk": {
    "en": "Wallbox Plus — 4G, RFID and a display",
    "sr": "Wallbox Plus — 4G, RFID i ekran"
+  },
+  "1fhqpr9": {
+   "en": "Shared infrastructure with pedestals: 536.000–843.000 RSD",
+   "sr": "Zajednička infrastruktura sa stubovima: 536.000–843.000 RSD"
   },
   "1g2ihem": {
    "en": "Evolako in the field",
@@ -185,9 +417,21 @@
    "en": "A home charger for the buyers of your electric cars: assessment, installation and document templates in Belgrade, Novi Sad and Vojvodina. Public prices with VAT.",
    "sr": "Kućni punjač za kupce vaših električnih automobila: procena, ugradnja i šabloni papira u Beogradu, Novom Sadu i Vojvodini. Javne cene sa PDV-om."
   },
+  "1gb92bv": {
+   "en": "Shared power infrastructure for the garage and equipment for each parking spot, from 96.000 RSD per spot, final price.",
+   "sr": "Zajednička napojna infrastruktura garaže i oprema po parking mestu, od 96.000 RSD po mestu, konačna cena."
+  },
+  "1gch999": {
+   "en": "About 138.000–174.000 RSD per spot",
+   "sr": "Po mestu oko 138.000–174.000 RSD"
+  },
   "1gf5e2p": {
    "en": "How to equip a rental garage with a charger: consents, a MID meter at the spot and electricity the tenant pays with the rent, with no markup.",
    "sr": "Kako da garažu za izdavanje opremite punjačem: saglasnosti, MID brojilo na mestu i struja koju zakupac plaća uz kiriju, bez marže."
+  },
+  "1gnjqv9": {
+   "en": "Whole project, 10 sockets: 960.000–1.110.000 RSD",
+   "sr": "Ceo projekat, 10 utičnica: 960.000–1.110.000 RSD"
   },
   "1h1l89p": {
    "en": "Building sign-up not sent",
@@ -209,21 +453,61 @@
    "en": "Sava Centar (Delta congress center)",
    "sr": "Sava Centar (Delta kongresni centar)"
   },
+  "1i0jjrb": {
+   "en": "If the cable runs through common areas of the building, the residents’ assembly has to decide, so the whole process takes 4–10 weeks; the templates for the assembly are free for everyone. When several residents join, the cost of the shared line is split, so the BUILDING kit costs from 96.000 RSD per spot (final price).",
+   "sr": "Ako kabl prolazi kroz zajedničke delove zgrade, potrebna je odluka skupštine, pa ceo postupak traje 4–10 nedelja; šabloni za skupštinu su besplatni za sve. Kad se priključi više stanara, zajednička linija se deli, pa paket ZGRADA košta od 96.000 RSD po mestu (konačna cena)."
+  },
+  "1i0xpdo": {
+   "en": "Home charging: an assessment for 2.990 RSD, credited toward the installation — 72 h in Belgrade, Novi Sad and Vojvodina; elsewhere we agree the date by message; installation in one working day. Companies and buildings: reply within 48 hours, assessment by arrangement. With a building assembly decision: 4–10 weeks.",
+   "sr": "Kućno punjenje: procena za 2.990 RSD, koja se uračunava u cenu ugradnje — 72 h u Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci; ugradnja za jedan radni dan. Firme i zgrade: odgovor u roku od 48h, procena po dogovoru. Sa odlukom skupštine: 4–10 nedelja."
+  },
   "1i3fx6i": {
    "en": "Whether your charger needs more power, how the procedure with EDS goes, which documents you need and what you pay once and what monthly.",
    "sr": "Da li ti za punjač treba veća snaga, kako teče postupak kod EDS-a, koja dokumenta trebaju i šta plaćaš jednokratno, a šta mesečno."
+  },
+  "1i4vebm": {
+   "en": "If you park in your building’s garage, your charger can be there: basic installation next to the distribution board and an optional MID meter — from 39.000 RSD, final price, installed in one day; document templates for the residents’ assembly are free for everyone. You pay for electricity at the EPS bill price, with no markup.",
+   "sr": "Ako parkiraš u garaži zgrade, punjač može da bude tamo: osnovna ugradnja pored razvodne table i MID brojilo po izboru — od 39.000 RSD, konačna cena, ugradnja za jedan dan; šabloni papira za skupštinu stanara su besplatni za sve. Struju plaćaš po ceni iz EPS računa, bez marže."
   },
   "1ibw45x": {
    "en": "Privacy policy and terms of use",
    "sr": "Politika privatnosti i uslovi korišćenja"
   },
+  "1ichucr": {
+   "en": "Apartment buyers don’t pay for a charger they don’t need yet. When they buy an electric car, they order a reinforced socket for 39.000 RSD or an 11 kW wallbox for 104.000 RSD, with a MID meter and installation from the junction box at their space, at the final price.",
+   "sr": "Kupac stana ne plaća punjač koji mu još ne treba. Kad kupi električni automobil, naručuje pojačanu utičnicu za 39.000 RSD ili wallbox 11 kW za 104.000 RSD, sa MID brojilom i ugradnjom od kutije kod svog mesta, po konačnoj ceni."
+  },
+  "1iknw9t": {
+   "en": "The price per prepared space is the shared part divided by the number of spaces in the garage. The shared part covers the cable route, the sub-panel with load management, preparation of all spaces, the design and the documentation. Two examples with the distribution board 10–30 m from the garage and all spaces prepared, final prices:",
+   "sr": "Cena po pripremljenom mestu dobija se kada se zajednički deo podeli na broj mesta u garaži. Zajednički deo čine trasa, podtabla sa upravljanjem snagom, priprema svih mesta, projekat i dokumentacija. Dva primera sa razvodnom tablom na 10–30 m od garaže, sva mesta pripremljena, konačne cene:"
+  },
+  "1iuk9gf": {
+   "en": "In Belgrade, Novi Sad and Vojvodina we come within 72 h; elsewhere we agree the date by message. The visit takes about 30 minutes. We check the wiring, your connection's capacity, the cable route and where the charger goes — and you get an exact quote and a kit recommendation on the spot. Before the visit, you can get a free rough estimate from photos of the board and the spot.",
+   "sr": "U Beogradu, Novom Sadu i Vojvodini dolazimo u roku od 72 h, a u ostalim mestima termin dogovaramo u poruci; pregled traje oko 30 minuta. Proveravamo instalaciju, snagu priključka, put kabla i poziciju punjača — i na licu mesta dobijaš tačnu ponudu i preporuku paketa. Pre izlaska, okvirnu procenu po fotografijama table i mesta dobijaš besplatno."
+  },
   "1iyv3gq": {
    "en": "Paid per installation at market rates, paid site visits for assessments, and we supply the materials. All of Serbia. Apply through the form.",
    "sr": "Plaćanje po ugradnji, po tržišnim cenama, plaćen izlazak na procenu, materijal obezbeđujemo mi. Cela Srbija. Prijavi se preko forme."
   },
+  "1jga2og": {
+   "en": "START 39.000 RSD, WALLBOX from 94.000 RSD — final prices, with basic installation.",
+   "sr": "START 39.000 RSD, WALLBOX od 94.000 RSD — konačne cene, sa osnovnom ugradnjom."
+  },
   "1jtg00k": {
    "en": "EV chargers for apartment buildings — for building managers",
    "sr": "Punjači za stambene zgrade — za upravnike"
+  },
+  "1k427wp": {
+   "en": "11 kW wallbox: 131.000–152.000 RSD",
+   "sr": "Wallbox 11 kW: 131.000–152.000 RSD"
+  },
+  "1k6gtlr": {
+   "en": "Example: five employees charge company cars at home, with a wallbox at each address. The kits cost 5 × 104.000 = 520.000 RSD. The monthly statement comes with the subscription of 990 RSD per spot, 4.950 RSD a month in total. Prices are final, with no VAT: the sole proprietor is not in the VAT system. The first 2 months of the subscription are 0 RSD, with no contractual commitment.",
+   "sr": "Primer: pet zaposlenih puni službene automobile kod kuće, sa wallboxom na svakoj adresi. Paketi koštaju 5 × 104.000 = 520.000 RSD. Mesečni obračun ide uz pretplatu od 990 RSD po mestu, ukupno 4.950 RSD mesečno. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a. Prva 2 meseca pretplata je 0 RSD, bez ugovorne obaveze."
+  },
+  "1kelog1": {
+   "en": "On-site assessment",
+   "sr": "Procena na licu mesta"
   },
   "1ku7ica": {
    "en": "Short news that changes home charging in Serbia: electricity prices, rules for buildings and garages, subsidies and Evolako updates, with source and date.",
@@ -269,6 +553,14 @@
    "en": "A charger with a MID meter at the employee's home and in the company parking lot. One monthly statement for all spots: kWh and the amount at the electricity price at each address, in PDF and CSV.",
    "sr": "Punjač sa MID brojilom kod kuće zaposlenog i na parkingu firme. Jedan mesečni obračun za sva mesta: kWh i iznos po ceni struje na svakoj adresi, u PDF i CSV formatu."
   },
+  "1mlqcug": {
+   "en": "The content of the site is informative. Prices are stated in dinars and are final: the sole proprietor is not in the VAT system. They are indicative until the on-site assessment confirms them; obligations arise only when a contract is concluded. The quiz and the calculator give an estimate based on the data entered and average tariffs — the actual saving depends on consumption, tariffs and charging habits.",
+   "sr": "Sadržaj sajta je informativan. Cene su iskazane u dinarima i konačne su: preduzetnik nije u sistemu PDV-a. Informativne su do potvrde procene na lokaciji; obaveze nastaju tek zaključenjem ugovora. Kviz i kalkulator daju procenu na osnovu unetih podataka i prosečnih tarifa — stvarna ušteda zavisi od potrošnje, tarifa i navika punjenja."
+  },
+  "1myhva0": {
+   "en": "Because it's a real site visit: in Belgrade, Novi Sad and Vojvodina we come within 72 h; elsewhere we agree the date by message. We check the wiring, power and cable route, and you get an exact quote, not a guess over the phone. The full 2.990 RSD is credited toward the installation, so the assessment is practically free if you go ahead. And before that, you get a free rough estimate from photos of the board and the spot.",
+   "sr": "Zato što je to pravi izlazak na teren: u Beogradu, Novom Sadu i Vojvodini dolazimo u roku od 72 h, a u ostalim mestima termin dogovaramo u poruci. Proveravamo instalaciju, snagu i put kabla, i dobijaš tačnu ponudu, a ne procenu preko telefona. Celih 2.990 RSD se uračunava u cenu ugradnje, pa je procena praktično besplatna ako nastaviš. A pre toga, po fotografijama table i mesta, okvirnu procenu dobijaš besplatno."
+  },
   "1n9ezth": {
    "en": "60.000 RSD fixed + 4.000 RSD per paid installation. Belgrade or Novi Sad.",
    "sr": "60.000 RSD fiksno + 4.000 RSD po plaćenoj ugradnji. Beograd ili Novi Sad."
@@ -281,13 +573,29 @@
    "en": "Lot at the former Niš toll station",
    "sr": "Plato bivše naplatne stanice Niš"
   },
+  "1np7b4o": {
+   "en": "Open the free templates →",
+   "sr": "Otvori besplatne šablone →"
+  },
   "1o6euy3": {
    "en": "Evolako — media kit for media and partners",
    "sr": "Evolako — medija kit za medije i partnere"
   },
+  "1p20u0i": {
+   "en": "The chargers in both examples are 11 kW wallboxes with a MID meter, at the kit price of 104.000 RSD (final price). In a larger garage the price per spot is lower, because the sub-board, the route from the distribution board and the documentation are shared across more spots. The exact amount comes after the assessment, which costs 2.990 RSD and is credited toward the installation. For a different number of spots, a rough price is given by the",
+   "sr": "Punjači u oba primera su wallboxi od 11 kW sa MID brojilom, po ceni paketa od 104.000 RSD (konačna cena). U većoj garaži cena po mestu je niža, jer se podtabla, trasa od razvodne table i dokumentacija dele na više mesta. Tačan iznos dolazi posle procene, koja košta 2.990 RSD i uračunava se u cenu ugradnje. Za drugi broj mesta okvirnu cenu daje"
+  },
   "1p5bqj4": {
    "en": "Short guides to charging an electric car at home and in an apartment building: power, electricity and the bill, the meter, the building assembly, safety and how to make the battery last.",
    "sr": "Kratki vodiči o punjenju električnog auta kod kuće i u zgradi: snaga, struja i račun, brojilo, skupština, bezbednost i kako da baterija traje."
+  },
+  "1pb2mil": {
+   "en": "If something breaks, a priority visit with no queue: 72 h in Belgrade, Novi Sad and Vojvodina; elsewhere we agree the date by message.",
+   "sr": "Ako nešto zapne, izlazak na teren bez čekanja u redu: 72 h u Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci."
+  },
+  "1phvavj": {
+   "en": "A spot with a reinforced socket costs 39.000 RSD, and one with an 11 kW wallbox costs 104.000 RSD — both with a MID-certified meter and basic installation next to the distribution board, final prices. The calculator adds the shared infrastructure for your property and shows an estimated range.",
+   "sr": "Mesto sa pojačanom utičnicom košta 39.000 RSD, a sa wallboxom 11 kW 104.000 RSD — oba sa MID brojilom i osnovnom ugradnjom pored razvodne table, konačne cene. Kalkulator dodaje zajedničku infrastrukturu za vaš objekat i pokazuje okvirni raspon."
   },
   "1pxkg4b": {
    "en": "EV chargers for hotels",
@@ -305,13 +613,29 @@
    "en": "You can charge a car from a Schuko socket, but slowly: about 108 km per night at 10 A. When it's safe, when it's enough and what's better.",
    "sr": "Smeš da puniš auto na šuko utičnicu, ali sporo: oko 108 km za noć na 10 A. Kada je to bezbedno, kada je dovoljno i šta je bolje."
   },
+  "1qe23qz": {
+   "en": "The START kit with a reinforced socket costs 39.000 RSD and the WALLBOX 11 kW kit with a MID meter 104.000 RSD, both with basic installation next to the distribution board; prices are final. The buyer gets the exact price, including any cable to the spot, after the site assessment and before installation.",
+   "sr": "Paket START sa pojačanom utičnicom košta 39.000 RSD, a WALLBOX 11 kW sa MID brojilom 104.000 RSD, oba sa osnovnom ugradnjom pored razvodne table; cene su konačne. Tačnu cenu, sa kablom do mesta ako je potreban, kupac dobija posle procene, pre ugradnje."
+  },
   "1qoyk4z": {
    "en": "A company car charges at the employee's home or in the company parking lot. A MID meter measures consumption, and the company gets a monthly statement per spot for its accounting.",
    "sr": "Službeni auto se puni kod kuće zaposlenog ili na parkingu firme. MID brojilo meri potrošnju, a firma dobija mesečni obračun po mestu za knjigovodstvo."
   },
+  "1qylix2": {
+   "en": "It's optional with no contract commitment — cancel in any month. The kit works without it: you charge as usual, read the meter yourself and do your own billing. Without the subscription there is no automatic report, the warranty ends after the standard 2 years, and service visits follow regular scheduling, without priority.",
+   "sr": "Nije obavezna i nema ugovorne obaveze — otkazuješ bilo kog meseca. Komplet radi i bez pretplate: puniš normalno, a brojilo očitavaš sam i sam praviš obračun. Bez pretplate nema automatskog izveštaja, garancija ističe posle standardne 2 godine, a servis ide po redovnim terminima, bez prioriteta."
+  },
   "1rq02z2": {
    "en": "Toplik rest area",
    "sr": "Odmorište Toplik"
+  },
+  "1rudfpr": {
+   "en": "reinforced socket or 11 kW wallbox, with a MID meter, final price; basic installation next to the distribution board: up to 2 m of cable, RCD protection and breaker",
+   "sr": "pojačana utičnica ili wallbox 11 kW, sa MID brojilom, konačna cena; osnovna ugradnja pored razvodne table: do 2 m kabla, FID zaštita i automat"
+  },
+  "1rzvkoj": {
+   "en": "Evolako START is a reinforced socket with a MID meter, 2,3–3,7 kW and up to about 180 km in one night, for 39.000 RSD. The 11 kW WALLBOX with a MID meter costs 104.000 RSD. Prices are final.",
+   "sr": "Evolako START je pojačana utičnica sa MID brojilom, 2,3–3,7 kW i do oko 180 km za jednu noć, za 39.000 RSD. WALLBOX od 11 kW sa MID brojilom košta 104.000 RSD. Cene su konačne."
   },
   "1s3cuja": {
    "en": "Start with 2–4 spots at 11 kW and prepare the cable route for more. How hotels in Serbia charge for charging and how a MID meter shows the cost at the price on your bill.",
@@ -333,13 +657,25 @@
    "en": "Power, electricity and the bill, the MID meter, the building assembly and safety — short and with sources, for charging in a garage or at a building parking spot.",
    "sr": "Snaga, struja i račun, MID brojilo, skupština i bezbednost — kratko i sa izvorima, za punjenje u garaži i na parking mestu zgrade."
   },
+  "1svu0j": {
+   "en": "Monthly billing with a statement, monitoring with alerts, priority service, a winter check, an extended warranty and moving the kit when you move. First 2 months 0 RSD, no commitment.",
+   "sr": "Mesečni obračun sa izveštajem, monitoring sa alarmima, prioritetni servis, zimska provera, produžena garancija i prenos kompleta pri selidbi. Prva 2 meseca 0 RSD, bez obaveza."
+  },
   "1tht6x1": {
    "en": "Monthly billing with a statement, monitoring with alerts, priority service within 72 hours, a winter check, an extended warranty and moving the kit when you move. First 2 months 0 RSD, no commitment.",
    "sr": "Mesečni obračun sa izveštajem, monitoring sa alarmima, prioritetni servis za 72h, zimska provera, produžena garancija i prenos kompleta pri selidbi. Prva 2 meseca 0 RSD, bez obaveza."
   },
+  "1tjlp8g": {
+   "en": "final price, basic installation from the junction box at the space: up to 2 m of cable, RCD protection and breaker",
+   "sr": "konačna cena, osnovna ugradnja od kutije kod mesta: do 2 m kabla, FID zaštita i automat"
+  },
   "1trwv74": {
    "en": "Putevi Srbije · A8 · Belgrade–Ruma",
    "sr": "Putevi Srbije · A8 · Beograd–Ruma"
+  },
+  "1tzcy5s": {
+   "en": "990 RSD per month, final price; first 2 months 0 RSD, no contract lock-in. It includes a monthly statement based on the MID meter (PDF and CSV), a reply within 48 hours, priority service and an annual check of the installation and equipment; the kit works without it too.",
+   "sr": "990 RSD mesečno, konačna cena; prva 2 meseca 0 RSD, bez ugovorne obaveze. Donosi mesečni obračun po MID brojilu (PDF i CSV), odgovor u roku od 48h, prioritetni servis i godišnju proveru instalacije i opreme; komplet radi i bez nje."
   },
   "1u4wc3t": {
    "en": "Electricity prices, rules for buildings and garages, subsidies and Evolako updates — short, with source and date.",
@@ -349,6 +685,10 @@
    "en": "Open positions at Evolako: home charger sales rep and legal counsel (Belgrade or Novi Sad) and installation electrician (all of Serbia). Apply through the form, reply within 48 hours.",
    "sr": "Otvorene pozicije u Evolako: prodavac kućnih punjača i pravnik (Beograd ili Novi Sad) i električar za ugradnju (cela Srbija). Prijava preko forme, odgovor u roku od 48h."
   },
+  "1ug9aci": {
+   "en": "Evolako START, a reinforced socket with a MID meter, costs 39.000 RSD, and WALLBOX 11 kW with a MID meter 104.000 RSD; prices are final. An on-site assessment is 2.990 RSD and is credited toward the installation.",
+   "sr": "Evolako START, pojačana utičnica sa MID brojilom, košta 39.000 RSD, a WALLBOX 11 kW sa MID brojilom 104.000 RSD; cene su konačne. Procena na licu mesta je 2.990 RSD i uračunava se u cenu ugradnje."
+  },
   "1uidaam": {
    "en": "Šid toll station",
    "sr": "Naplatna stanica Šid"
@@ -357,9 +697,17 @@
    "en": "A MID meter at every spot and billing per user, with no markup. Power management spreads the power of the existing connection across several spots.",
    "sr": "MID brojilo na svakom mestu i obračun po korisniku, bez marže. Upravljanje snagom raspoređuje snagu postojećeg priključka na više mesta."
   },
+  "1uxrnyd": {
+   "en": "The shared part grows more slowly than the number of participants: for 5 participants it’s about 250.000–497.000 RSD, and for 20 participants about 556.000–942.000 RSD. Split among the participants, each one’s portion keeps getting smaller. Still, a spot in the ZGRADA kit never costs less than 96.000 RSD: in this example, that’s the price of a reinforced socket from 10 participants on.",
+   "sr": "Zajednički deo raste sporije od broja učesnika: za 5 učesnika iznosi oko 250.000–497.000 RSD, a za 20 učesnika oko 556.000–942.000 RSD. Kad se podeli na učesnike, na svakog pada sve manji deo. Cena mesta u paketu ZGRADA ipak ne pada ispod 96.000 RSD: u ovom primeru toliko košta pojačana utičnica već sa 10 učesnika."
+  },
   "1v96d8e": {
    "en": "EV charger price calculator for buildings, hotels and businesses",
    "sr": "Kalkulator cene punjača za zgradu, hotel i firmu"
+  },
+  "1vh6var": {
+   "en": "reinforced socket with a MID meter — 39.000 RSD, final price: 2,3–3,7 kW, up to about 180 km overnight;",
+   "sr": "pojačana utičnica sa MID brojilom — 39.000 RSD, konačna cena: 2,3–3,7 kW, do oko 180 km preko noći;"
   },
   "1vjb6ze": {
    "en": "We prepare every spot in the garage while the building goes up, and apartment buyers order a charger later at the kit price. After handover, we run the electricity billing.",
@@ -373,33 +721,89 @@
    "en": "Charger price per parking space",
    "sr": "Cena punjača po parking mestu"
   },
+  "1w0two1": {
+   "en": "Templates for the draft decision, agenda item and answers to residents’ questions, plus a checklist, are free for everyone. You or the building manager fill them in and submit them, and with the quote you also get our technical description of the installation.",
+   "sr": "Šabloni predloga odluke, tačke dnevnog reda i odgovora na pitanja stanara, uz čeklistu, besplatni su za sve. Popunjavaš ih i predaješ ti ili upravnik, a uz ponudu dobijaš i naš tehnički opis ugradnje."
+  },
   "1w3gv4f": {
    "en": "What goes into the price of a charging spot in a building, hotel or business: the kit with a MID meter, the shared part, the subscription and example prices with VAT.",
    "sr": "Šta ulazi u cenu mesta za punjenje u zgradi, hotelu i firmi: paket sa MID brojilom, zajednički deo, pretplata i primeri cena sa PDV-om."
+  },
+  "1w3os4n": {
+   "en": "the templates for the residents’ assembly are not part of the price — they are free for everyone.",
+   "sr": "šabloni za skupštinu stambene zajednice ne ulaze u cenu — besplatni su za sve."
+  },
+  "1wdu2fv": {
+   "en": "You get a 2-year warranty on the equipment — and with the subscription the warranty lasts as long as the subscription. On top of that, subscribers get priority service visits: 72 h in Belgrade, Novi Sad and Vojvodina; elsewhere we agree the date by message.",
+   "sr": "Na opremu dobijaš 2 godine garancije — a uz pretplatu garancija traje koliko i pretplata. Uz to, pretplatnici imaju prioritetni izlazak servisa: 72 h u Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci."
   },
   "1wh8fwy": {
    "en": "Ćićevac toll station",
    "sr": "Naplatna stanica Ćićevac"
   },
+  "1wky9kq": {
+   "en": "RSD, final price",
+   "sr": "RSD, konačna cena"
+  },
   "1x2bklf": {
    "en": "Published operating lease terms don't mention the charger or electricity. Whose charger it is when the car goes back, how the electricity is metered and what to ask the leasing company.",
    "sr": "Objavljeni uslovi operativnog lizinga ne pominju punjač ni struju. Čiji je punjač kad se auto vrati, kako se meri struja i šta pitati lizing kuću."
+  },
+  "1x8eo19": {
+   "en": "Estimate the price of chargers for a building, hotel, garage or business by the number of spots and the distance from the distribution board. Prices are final; the exact quote comes after the assessment.",
+   "sr": "Izračunajte okvirnu cenu punjača za zgradu, hotel, garažu ili firmu po broju mesta i udaljenosti razvodne table. Cene su konačne, tačna ponuda posle procene."
+  },
+  "1xf2s2t": {
+   "en": "11 kW wallbox with a MID meter — 104.000 RSD, final price: three-phase, with load management, fully charges an empty car overnight, 2-year warranty;",
+   "sr": "wallbox 11 kW sa MID brojilom — 104.000 RSD, konačna cena: trofazni, sa upravljanjem snagom, prazan auto puni preko noći, garancija 2 godine;"
+  },
+  "1xf91f0": {
+   "en": "The subscription costs 990 RSD per month per spot (final price), with the first 2 months at 0 RSD and no contract lock-in. It includes a monthly MID meter statement in PDF and CSV format, for your accounting or for cost pass-through (re-invoicing) to users with no markup. It also covers a reply within 48 hours, priority service and an annual check of the installation and equipment — and the charger and meter work without a subscription as well.",
+   "sr": "Pretplata po mestu košta 990 RSD mesečno (konačna cena), prva 2 meseca 0 RSD, bez ugovorne obaveze. Uključuje mesečni obračun po MID brojilu u PDF i CSV formatu, za knjigovodstvo ili prefakturisanje korisnicima bez marže. Tu su i odgovor u roku od 48h, prioritetni servis i godišnja provera instalacije i opreme, a punjač i brojilo rade i bez pretplate."
+  },
+  "1xg3bss": {
+   "en": "final price; the floor: a reinforced socket when 10 or more residents take part",
+   "sr": "konačna cena; donja granica: pojačana utičnica kad učestvuje 10 ili više stanara"
   },
   "1xhrwoc": {
    "en": "Yes, we work all over Serbia. For a buyer anywhere in the country, send us their contact details and we’ll arrange the on-site assessment by message.",
    "sr": "Da, radimo u celoj Srbiji. Za kupca iz bilo kog mesta pošaljite nam kontakt, a procenu na licu mesta dogovaramo u poruci."
   },
+  "1xk5ap4": {
+   "en": "The kit for each spot, the shared infrastructure and a power upgrade: example final prices for a hotel, a garage, a business, a new build and an apartment building.",
+   "sr": "Paket za mesto, zajednička infrastruktura i povećanje snage: primeri konačnih cena za hotel, garažu, firmu, novogradnju i stambenu zgradu."
+  },
   "1xlq2dc": {
    "en": "A buyer who lives in an apartment building asks where they'll charge the car. Send them to us: we get back within 48 hours, do the assessment and send an exact quote. START kit 39.000 RSD, WALLBOX from 94.000 RSD, with VAT.",
    "sr": "Kupac iz zgrade pita gde će puniti auto. Uputite ga nama: javljamo se u roku od 48h, radimo procenu i šaljemo tačnu ponudu. Paket START 39.000 RSD, WALLBOX od 94.000 RSD, sa PDV-om."
+  },
+  "1xtvpog": {
+   "en": "assembly templates",
+   "sr": "šabloni za skupštinu"
   },
   "1y97i0n": {
    "en": "Sales, installation and legal. Clear terms, Belgrade and Novi Sad.",
    "sr": "Prodaja, ugradnja i pravo. Jasni uslovi, Beograd i Novi Sad."
   },
+  "1ynaeeg": {
+   "en": "Six concrete things: a monthly statement with a report document (for the garage owner or the building) · kit monitoring with alerts — we often know about a fault before you do · priority service visits · a winter check of the installation · extended equipment warranty while the subscription lasts · moving the kit when you move, or a handover to a new user. Visits and transfers: 72 h in Belgrade, Novi Sad and Vojvodina; elsewhere we agree the date by message.",
+   "sr": "Šest konkretnih stvari: mesečni obračun sa izveštajem-dokumentom (za vlasnika garaže ili zgradu) · nadzor kompleta sa alarmima — za kvar često znamo pre tebe · prioritetni izlazak servisa · zimsku proveru instalacije · produženu garanciju na opremu dok pretplata traje · prenos kompleta pri selidbi ili primopredaju novom korisniku. Izlazak i prenos: 72 h u Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci."
+  },
+  "1ytf19c": {
+   "en": "a spot with a reinforced socket, final price",
+   "sr": "mesto sa pojačanom utičnicom, konačna cena"
+  },
   "21zgwp": {
    "en": "Evolako subscription",
    "sr": "Pretplata Evolako"
+  },
+  "23i5qv": {
+   "en": "We install chargers for hotels, garages and car parks, new builds, apartment buildings and company cars, with a MID meter at every spot and load management, and the quote comes with a technical description of the works. A charging spot costs 39.000 or 104.000 RSD (final price), with basic installation next to the distribution board, and the calculator gives a rough price for the whole property.",
+   "sr": "Ugrađujemo punjače za hotele, garaže i parkinge, novogradnju, stambene zgrade i službena vozila, sa MID brojilom na svakom mestu i upravljanjem snagom, a uz ponudu dajemo tehnički opis radova. Mesto za punjenje košta 39.000 ili 104.000 RSD (konačna cena), sa osnovnom ugradnjom pored razvodne table, a okvirnu cenu za ceo objekat daje kalkulator."
+  },
+  "23qhx": {
+   "en": "A buyer who lives in an apartment building asks where they'll charge the car. Send them to us: we get back within 48 hours, do the assessment and send an exact quote. START kit 39.000 RSD, WALLBOX from 94.000 RSD, final prices.",
+   "sr": "Kupac iz zgrade pita gde će puniti auto. Uputite ga nama: javljamo se u roku od 48h, radimo procenu i šaljemo tačnu ponudu. Paket START 39.000 RSD, WALLBOX od 94.000 RSD, konačne cene."
   },
   "25rmc": {
    "en": "Open positions at Evolako: home charger sales rep, installation electrician and legal counsel. Belgrade and Novi Sad; apply through the form, reply within 48 hours.",
@@ -413,6 +817,26 @@
    "en": "We bring the clients, the materials and the quotes — you do the installation. Belgrade or Novi Sad.",
    "sr": "Klijente, materijal i ponude obezbeđujemo mi — ti radiš instalaciju. Beograd ili Novi Sad."
   },
+  "31hk7l": {
+   "en": "Evolako START is a reinforced socket with a MID meter, 2,3–3,7 kW and up to about 180 km in one night, for 39.000 RSD (final price). An on-site assessment is 2.990 RSD and is credited toward the installation.",
+   "sr": "Evolako START je pojačana utičnica sa MID brojilom, 2,3–3,7 kW i do oko 180 km za jednu noć, za 39.000 RSD (konačna cena). Procena na licu mesta je 2.990 RSD i uračunava se u cenu ugradnje."
+  },
+  "3jii6": {
+   "en": "The price of one charging spot is made up of the kit for that spot, a share of the property’s shared infrastructure and, only when needed, a power increase from EDS, the grid operator. The kit with basic installation next to the distribution board costs 39.000 or 104.000 RSD (final price); the shared part depends on the distance to the distribution board, the number of spots and the type of property.",
+   "sr": "Cena jednog mesta za punjenje sastoji se od paketa za to mesto, udela u zajedničkoj infrastrukturi objekta i, samo kad je potrebno, povećanja snage kod Elektrodistribucije. Paket sa osnovnom ugradnjom pored razvodne table košta 39.000 ili 104.000 RSD (konačna cena), a zajednički deo zavisi od udaljenosti razvodne table, broja mesta i vrste objekta."
+  },
+  "3le19b": {
+   "en": "The calculator adds up the charging spots and the shared infrastructure for your property. You get the exact price in the quote after the site assessment.",
+   "sr": "Kalkulator sabira mesta za punjenje i zajedničku infrastrukturu za vaš objekat. Tačnu cenu dobijate u ponudi posle procene."
+  },
+  "4a67jq": {
+   "en": "assembly templates →",
+   "sr": "šabloni za skupštinu →"
+  },
+  "4af2ke": {
+   "en": "A buyer who lives in an apartment building asks where they'll charge the car before buying. For buyers you refer, we offer a garage assessment — 72 h in Belgrade, Novi Sad and Vojvodina; elsewhere we agree the date by message — and an exact quote before they sign. Terms of cooperation are agreed individually.",
+   "sr": "Kupac koji živi u zgradi pre kupovine pita gde će puniti auto. Kupcima koje uputite nudimo procenu garaže — 72 h u Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci — i tačnu ponudu pre potpisa. Uslove saradnje dogovaramo pojedinačno."
+  },
   "4l0noe": {
    "en": "Putevi Srbije · A8 · Belgrade–Šabac",
    "sr": "Putevi Srbije · A8 · Beograd–Šabac"
@@ -424,6 +848,18 @@
   "5bm6bi": {
    "en": "Write to hello@evolako.com, on WhatsApp, Viber or Telegram — we work every day and reply within 48 hours. We speak Serbian, Russian and English.",
    "sr": "Piši na hello@evolako.com, u WhatsApp, Viber ili Telegram — radimo svakog dana, a odgovor stiže u roku od 48h. Govorimo srpski, ruski i engleski."
+  },
+  "5fqz55": {
+   "en": "About 13.000–20.000 RSD per prepared space",
+   "sr": "Po pripremljenom mestu oko 13.000–20.000 RSD"
+  },
+  "5jy0z9": {
+   "en": "Total: about 1.713.000–2.034.000 RSD",
+   "sr": "Ukupno oko 1.713.000–2.034.000 RSD"
+  },
+  "5nxqum": {
+   "en": "Evolako START is a reinforced socket with a MID meter, 2,3–3,7 kW and up to about 180 km in one night, for 39.000 RSD (final price). Document templates for the assembly are free for everyone, and the on-site assessment is 2.990 RSD and counts toward the installation price.",
+   "sr": "Evolako START je pojačana utičnica sa MID brojilom, 2,3–3,7 kW i do oko 180 km za jednu noć, za 39.000 RSD (konačna cena). Šabloni dokumenata za skupštinu su besplatni za sve, a procena na licu mesta je 2.990 RSD i uračunava se u cenu ugradnje."
   },
   "5o4igz": {
    "en": "IKEA Beograd — free charging",
@@ -441,13 +877,41 @@
    "en": "Referral sign-up sent",
    "sr": "Preporuka prijava success"
   },
+  "6oapzv": {
+   "en": "What goes into the price of a charging spot in a building, hotel or business: the kit with a MID meter, the shared part, the subscription and example final prices.",
+   "sr": "Šta ulazi u cenu mesta za punjenje u zgradi, hotelu i firmi: paket sa MID brojilom, zajednički deo, pretplata i primeri konačnih cena."
+  },
+  "6pkekn": {
+   "en": "Charger and basic installation, optional MID meter, free document templates",
+   "sr": "Punjač i osnovna ugradnja, MID brojilo po izboru, besplatni šabloni papira"
+  },
+  "6qaggg": {
+   "en": "The participants pay for the shared line, so its cost is split among more people. With five participants, a socket spot costs about 96.000–139.000 RSD; with twenty, 96.000 RSD — the lowest price for a spot in the ZGRADA kit.",
+   "sr": "Zajedničku liniju plaćaju učesnici, pa se njena cena deli na više ljudi. Sa pet učesnika mesto sa utičnicom košta oko 96.000–139.000 RSD, a sa dvadeset 96.000 RSD — to je najniža cena mesta u paketu ZGRADA."
+  },
+  "6qatxy": {
+   "en": "A rough price for the whole property: charging spots, shared infrastructure and the subscription. Example final prices for a hotel, a garage, an apartment building and a new build.",
+   "sr": "Okvirna cena za ceo objekat: mesta za punjenje, zajednička infrastruktura i pretplata. Primeri konačnih cena za hotel, garažu, stambenu zgradu i novogradnju."
+  },
   "73cap5": {
    "en": "Fee by agreement. Buildings, companies, the electricity distribution company and contracts in Serbian. Belgrade or Novi Sad, partly remote. Apply through the form.",
    "sr": "Honorar po dogovoru. Zgrade, firme, elektrodistribucija i ugovori na srpskom. Beograd ili Novi Sad, delom na daljinu. Prijavi se preko forme."
   },
+  "7ymsp6": {
+   "en": "The price of a spot equals the kit price, and the shared infrastructure depends on the property. Prices are final, with no VAT: the sole proprietor is not in the VAT system.",
+   "sr": "Cena mesta jednaka je ceni paketa, a zajednička infrastruktura zavisi od objekta. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
+  },
   "803mbm": {
    "en": "Evolako kits",
    "sr": "Evolako paketi"
+  },
+  "81dafa": {
+   "en": "reinforced socket — 39.000 RSD, final price: 2,3–3,7 kW, up to about 180 km overnight.",
+   "sr": "pojačana utičnica — 39.000 RSD, konačna cena: 2,3–3,7 kW, do oko 180 km preko noći."
+  },
+  "824zyu": {
+   "en": "about 16.000–25.000 RSD per prepared space, excluding chargers",
+   "sr": "oko 16.000–25.000 RSD po pripremljenom mestu, bez punjača"
   },
   "85rr7e": {
    "en": "We work in your city too.",
@@ -456,6 +920,14 @@
   "8jjrew": {
    "en": "In a car park, a car sits for hours or days, so slow charging is enough. A MID meter at every spot shows how much each car used.",
    "sr": "Na parkingu auto stoji satima ili danima, pa je dovoljno sporo punjenje. MID brojilo na svakom mestu pokazuje koliko je koji auto potrošio."
+  },
+  "8m65z7": {
+   "en": "A monthly statement, monitoring, priority service, a winter check-up, extended warranty and transfer if you move. 990 RSD/month, no commitment.",
+   "sr": "Obračun sa izveštajem, nadzor, prioritetni servis, zimsku proveru, produženu garanciju i prenos pri selidbi. 990 RSD/mes, bez obaveza."
+  },
+  "8v8hy0": {
+   "en": "The examples are estimated prices from this calculator. Prices are final, with no VAT: the sole proprietor is not in the VAT system.",
+   "sr": "Primeri su okvirne cene iz ovog kalkulatora. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
   },
   "90goz5": {
    "en": "A MID meter at the charging spot, a monthly statement in kWh, the electricity price at the employee's address and questions for the accountant before the first reimbursement.",
@@ -469,6 +941,10 @@
    "en": "Installation of a charger you already have (CE marking and 6 mA DC fault current protection) next to the distribution board: up to 2 m of cable, RCD protection and a circuit breaker — 24.000 RSD. All prices with VAT.",
    "sr": "Ugradnja punjača koji već imaš (CE oznaka i zaštita od DC struje kvara 6 mA) pored razvodne table: do 2 m kabla, FID zaštita i automat — 24.000 RSD. Sve sa PDV-om."
   },
+  "9v5tjo": {
+   "en": "Infrastructure with the cable route and junction boxes for 20 more spots: 673.000–994.000 RSD",
+   "sr": "Infrastruktura sa trasom i kutijama za još 20 mesta: 673.000–994.000 RSD"
+  },
   "9vcjxt": {
    "en": "Belgrade",
    "sr": "Beograd"
@@ -476,6 +952,10 @@
   "a26ita": {
    "en": "Installation by city",
    "sr": "Ugradnja po gradovima"
+  },
+  "a2he9k": {
+   "en": "final price, basic installation next to the distribution board: up to 2 m of cable, RCD protection and breaker",
+   "sr": "konačna cena, osnovna ugradnja pored razvodne table: do 2 m kabla, FID zaštita i automat"
   },
   "a2x7ze": {
    "en": "Charging a company car at home",
@@ -489,6 +969,10 @@
    "en": "A home charger for the buyers of your electric cars: assessment, installation and document templates anywhere in Serbia. Public prices with VAT.",
    "sr": "Kućni punjač za kupce vaših električnih automobila: procena, ugradnja i šabloni papira u celoj Srbiji. Javne cene sa PDV-om."
   },
+  "aa5j0q": {
+   "en": "final price; three-phase, charges an empty car fully overnight; 2-year warranty",
+   "sr": "konačna cena; trofazni, prazan auto pun preko noći; garancija 2 godine"
+  },
   "ae1ly6": {
    "en": "EV chargers for gated car parks and long-stay parking at airports and stations: charging while the car is parked, a MID meter at every spot and chargers on pedestals.",
    "sr": "Punjači za parkinge sa rampom i dugoročni parking kod aerodroma i stanica: punjenje dok auto stoji, MID brojilo na svakom mestu i punjači na stubovima."
@@ -497,6 +981,14 @@
    "en": "Estimate the price of chargers for a building, hotel, garage or business by the number of spots and the distance from the distribution board. With VAT; the exact quote comes after the assessment.",
    "sr": "Izračunajte okvirnu cenu punjača za zgradu, hotel, garažu ili firmu po broju mesta i udaljenosti razvodne table. Sa PDV-om, tačna ponuda posle procene."
   },
+  "as5mmc": {
+   "en": "For 1–2 spots next to an existing distribution board, you pay the kit price: 104.000 RSD for an 11 kW wallbox with a MID meter or 39.000 RSD for a reinforced socket, with basic installation; prices are final. A longer cable to the spot is priced at the site assessment.",
+   "sr": "Za 1–2 mesta pored postojeće razvodne table plaćate cenu paketa: 104.000 RSD za wallbox 11 kW sa MID brojilom ili 39.000 RSD za pojačanu utičnicu, sa osnovnom ugradnjom; cene su konačne. Duži kabl do mesta računamo na proceni."
+  },
+  "astrdf": {
+   "en": "sub-panel with load management, cable route and as-built documentation; the templates for the residents’ assembly are free for everyone",
+   "sr": "podtabla sa upravljanjem snagom, trasa i dokumentacija o izvedenim radovima; šabloni za skupštinu su besplatni za sve"
+  },
   "b0ixd1": {
    "en": "Referral sign-up not sent",
    "sr": "Preporuka prijava failure"
@@ -504,6 +996,14 @@
   "b1wflj": {
    "en": "Public charger, Gornji Milanovac",
    "sr": "Javni punjač Gornji Milanovac"
+  },
+  "b7pn0": {
+   "en": "Yes. Prices are final, with no VAT: the sole proprietor is not in the VAT system. You get the exact price in the quote after the site assessment.",
+   "sr": "Da. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a. Tačnu cenu dobijate u ponudi posle procene."
+  },
+  "b8hnno": {
+   "en": "The assembly templates and the step-by-step checklist are free for everyone, and with the quote you also get our technical description of the installation. The initiator or the building manager fills in the templates and brings them to the assembly; we don’t represent the building, but we give you everything you need for that conversation.",
+   "sr": "Šabloni za skupštinu i čeklista korak po korak besplatni su za sve, a uz ponudu dobijate i naš tehnički opis ugradnje. Šablone popunjava i iznosi na skupštinu inicijator ili upravnik; mi zgradu ne zastupamo, ali dajemo sve što treba za taj razgovor."
   },
   "bc0b6q": {
    "en": "Careers at Evolako — 3 open positions",
@@ -516,6 +1016,10 @@
   "bv9f3z": {
    "en": "Evolako media kit: facts, kits and prices, copy in Serbian, English and Russian, logos and colors, and partnerships with building managers, sellers and companies.",
    "sr": "Medija kit Evolako: činjenice, paketi i cene, tekstovi na srpskom, engleskom i ruskom, logotipi i boje, saradnja sa upravnicima, prodavcima i firmama."
+  },
+  "c8gkhc": {
+   "en": "An exact quote after we visit your spot — 2.990 RSD, credited toward the installation. We come within 72 h in Belgrade, Novi Sad and Vojvodina; elsewhere we agree the date by message. A rough estimate from photos is free.",
+   "sr": "Tačna ponuda posle izlaska na lokaciju — 2.990 RSD, uračunava se u cenu ugradnje. Dolazimo za 72 h u Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci. Okvirnu procenu po fotografijama dobijaš besplatno."
   },
   "c9dnu8": {
    "en": "Open positions at Evolako",
@@ -541,6 +1045,10 @@
    "en": "Installations are done by licensed electricians, to our standard, with our checklist and installation description. If you are a licensed electrician anywhere in Serbia and would like to work with us, write to us.",
    "sr": "Ugradnje rade licencirani električari, po našem standardu, uz našu čeklistu i tehnički opis ugradnje. Ako ste licencirani električar bilo gde u Srbiji i želite da radite sa nama, pišite nam."
   },
+  "dva2kw": {
+   "en": "The kit for each spot, the shared part and a power increase; prices are final.",
+   "sr": "Paket za mesto, zajednički deo i povećanje snage; cene su konačne."
+  },
   "dy8haq": {
    "en": "Jerina rest area",
    "sr": "Odmorište Jerina"
@@ -548,6 +1056,10 @@
   "e434pv": {
    "en": "When the lower tariff starts in Belgrade, Vojvodina and the rest of Serbia, how to set scheduled charging in the car and on the charger, and what to check on the first night.",
    "sr": "Kada počinje niža tarifa u Beogradu, Vojvodini i ostatku Srbije, kako se podešava punjenje po rasporedu u autu i na punjaču i šta proveriti prve noći."
+  },
+  "e77z2t": {
+   "en": "Billing, monitoring and priority service",
+   "sr": "Obračun, nadzor i prioritetni servis"
   },
   "ey5f7h": {
    "en": "Putevi Srbije · A3 · Šid–Belgrade",
@@ -561,9 +1073,21 @@
    "en": "Check your garage — can it take a home charger?",
    "sr": "Proveri svoju garažu — da li može kućni punjač?"
   },
+  "f7t529": {
+   "en": "From 39.000 RSD, final price",
+   "sr": "Od 39.000 RSD, konačna cena"
+  },
+  "f9fwqu": {
+   "en": "reinforced socket with a MID-certified meter, final price",
+   "sr": "pojačana utičnica sa MID brojilom, konačna cena"
+  },
   "fdk8m3": {
    "en": "Hrtkovci toll station",
    "sr": "Naplatna stanica Hrtkovci"
+  },
+  "ffdx52": {
+   "en": "The project costs the building nothing. Each resident who wants a charger pays for their own spot — 39.000 RSD for a reinforced socket or 104.000 RSD for an 11 kW wallbox, with a MID meter, at the final price — plus a share of the shared line: the sub-panel, the cable route and the as-built documentation. In the ZGRADA kit, a spot with its share of the line costs from 96.000 RSD. The templates for the residents’ assembly are free for everyone.",
+   "sr": "Projekat ne košta zgradu ništa. Svaki stanar koji želi punjač plaća svoje mesto — 39.000 RSD za pojačanu utičnicu ili 104.000 RSD za wallbox 11 kW, sa MID brojilom, po konačnoj ceni — i deo zajedničke linije: podtable, trase i dokumentacije o izvedenim radovima. U paketu ZGRADA mesto sa delom linije košta od 96.000 RSD. Šabloni za skupštinu su besplatni za sve."
   },
   "fkd3ke": {
    "en": "WALLBOX — 11 kW smart wallbox",
@@ -581,29 +1105,93 @@
    "en": "START — reinforced socket + MID meter",
    "sr": "START — pojačana utičnica + MID brojilo"
   },
+  "gmj9w0": {
+   "en": "One such solution is Evolako START, a reinforced socket with a MID meter for charging at 2,3–3,7 kW. The meeting and the arrangement with the manager are run by the association itself; you’ll find free templates of the draft decision and other documents for the meeting here:",
+   "sr": "Jedno takvo rešenje je Evolako START, pojačana utičnica sa MID brojilom za punjenje snagom 2,3–3,7 kW. Sednicu i dogovor sa upravnikom vodi sama zajednica, a besplatne šablone predloga odluke i ostalih dokumenata za sednicu naći ćeš ovde:"
+  },
+  "h3nr3r": {
+   "en": "The examples are for a garage with up to 30 spaces and a distribution board 10–30 m from the garage. The price is per participant: a spot with a MID meter plus their part of the shared line. Prices are final, with no VAT: the sole proprietor is not in the VAT system.",
+   "sr": "Primeri važe za garažu do 30 mesta i razvodnu tablu na 10–30 m od garaže. Cena je po učesniku: mesto sa MID brojilom i deo zajedničke linije. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
+  },
+  "h417t1": {
+   "en": "The more participants, the smaller each spot’s share of the line. With 10 participants, for example, the shared line in a garage with up to 30 spaces costs about 345.000–719.000 RSD and is split among all ten. To estimate the price for your garage, use the ",
+   "sr": "Kad je učesnika više, deo linije po mestu je manji. Sa 10 učesnika, na primer, zajednička linija u garaži do 30 mesta košta oko 345.000–719.000 RSD i deli se na svih deset. Za svoju garažu izračunajte okvirnu cenu u"
+  },
   "hnb9wg": {
    "en": "We work all over Serbia.",
    "sr": "Radimo u celoj Srbiji."
+  },
+  "hpcv8x": {
+   "en": "The examples apply when the distribution board is 10–30 m away. The price is per participant and final: a spot with a MID meter plus their part of the shared line.",
+   "sr": "Primeri važe kad je razvodna tabla udaljena 10–30 m. Cena je po učesniku i konačna: mesto sa MID brojilom i deo zajedničke linije."
   },
   "hr1y9b": {
    "en": "Where we work: all of Serbia. For a property anywhere in the country, send us the address and photos of the distribution board, and we’ll arrange the on-site assessment by message.",
    "sr": "Gde radimo: u celoj Srbiji. Za objekat u bilo kom mestu pošaljite adresu i fotografije razvodne table, a procenu na licu mesta dogovaramo u poruci."
   },
+  "hx7sid": {
+   "en": "In a 40-space garage, preparation costs about 16.000–25.000 RSD per space. After move-in, the same work is done in a garage that’s already in use and requires a residents’ assembly decision.",
+   "sr": "U garaži sa 40 mesta priprema košta oko 16.000–25.000 RSD po mestu. Posle useljenja isti posao se radi u garaži koja se već koristi i traži odluku skupštine stambene zajednice."
+  },
+  "hxeivl": {
+   "en": "After the assessment come the quote with the price for each participant and our technical description of the installation. The templates for the residents’ assembly — a draft decision, the agenda item wording and answers to residents’ questions, plus a step-by-step checklist — are free for everyone, even if we don’t do your installation. The initiator or the building manager fills in the templates. All the templates are here:",
+   "sr": "Posle procene stižu ponuda sa cenom za svakog učesnika i naš tehnički opis ugradnje. Šabloni za skupštinu — predlog odluke, tekst tačke dnevnog reda i odgovori na pitanja stanara, uz čeklistu korak po korak — besplatni su za sve, i bez ugradnje kod nas. Šablone popunjava inicijator ili upravnik. Svi šabloni su ovde:"
+  },
+  "hyrc4c": {
+   "en": "The examples are rough estimates for typical conditions, without a subscription. Prices are final, with no VAT: the sole proprietor is not in the VAT system.",
+   "sr": "Primeri su okvirni proračuni za tipične uslove, bez pretplate. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
+  },
   "i2wn3m": {
    "en": "Our voice in legal and formal conversations in Serbian. Fee by agreement.",
    "sr": "Naš glas u pravnim i formalnim razgovorima na srpskom. Honorar po dogovoru."
+  },
+  "i815ek": {
+   "en": "Assembly templates — free for everyone",
+   "sr": "Šabloni za skupštinu — besplatni za sve"
   },
   "imimvp": {
    "en": "Who pays for the electricity when a neighbor charges a car from a shared socket, what the Law on Housing and Building Maintenance says and how a building can settle it with a separate meter.",
    "sr": "Ko plaća struju kad komšija puni auto iz zajedničke utičnice, šta kaže Zakon o stanovanju i kako da se zgrada dogovori uz odvojeno brojilo."
   },
+  "iqgt9t": {
+   "en": "Total: about 1.388.000–1.734.000 RSD",
+   "sr": "Ukupno oko 1.388.000–1.734.000 RSD"
+  },
   "j4j9kh": {
    "en": "Putevi Srbije · A3 · Belgrade–Šid",
    "sr": "Putevi Srbije · A3 · Beograd–Šid"
   },
+  "j8d1bj": {
+   "en": "Free templates →",
+   "sr": "Besplatni šabloni →"
+  },
   "j9olxk": {
    "en": "How a developer prepares a garage for chargers: a cable route and a box at every spot, power management, MID meters, the law and the price per prepared spot.",
    "sr": "Kako investitor priprema garažu za punjače: trasa i kutija kod svakog mesta, upravljanje snagom, MID brojila, zakon i cena po pripremljenom mestu."
+  },
+  "jaicik": {
+   "en": "11 kW wallbox with a MID meter, final price",
+   "sr": "wallbox 11 kW sa MID brojilom, konačna cena"
+  },
+  "jhcl2j": {
+   "en": "Each spot costs the same as the kit. Pedestals, the distribution cabinet with load management, the cable route, documentation and the installation check are priced per car park; in the calculator, choose “Open-air car park”. Prices are final, with no VAT: the sole proprietor is not in the VAT system.",
+   "sr": "Svako mesto košta kao paket. Stubovi, razvodni orman sa upravljanjem snagom, trasa, dokumentacija i provera instalacije računaju se po parkingu; u kalkulatoru izaberite „Na otvorenom parkingu“. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
+  },
+  "jix1lq": {
+   "en": "Six spots in an outdoor parking lot, on pedestals, with the distribution board 10–30 m away: about 1.003.000–1.229.000 RSD, excluding excavation and asphalt work.",
+   "sr": "Šest mesta na otvorenom parkingu, na stubićima, sa razvodnom tablom udaljenom 10–30 m: oko 1.003.000–1.229.000 RSD, bez iskopa i asfalta."
+  },
+  "jlbgsz": {
+   "en": "Moving out, or a new user taking over? We transfer the kit and switch the billing: 72 h in Belgrade, Novi Sad and Vojvodina; elsewhere we agree the date by message.",
+   "sr": "Selidba ili novi korisnik? Prenos kompleta i prevezivanje obračuna: 72 h u Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci."
+  },
+  "jujtwe": {
+   "en": "Shared infrastructure with pedestals: 379.000–605.000 RSD",
+   "sr": "Zajednička infrastruktura sa stubovima: 379.000–605.000 RSD"
+  },
+  "jyxfil": {
+   "en": "A home charger for the buyers of your electric cars: assessment, installation and document templates anywhere in Serbia. Public, final prices.",
+   "sr": "Kućni punjač za kupce vaših električnih automobila: procena, ugradnja i šabloni papira u celoj Srbiji. Javne i konačne cene."
   },
   "jzsw43": {
    "en": "We bring the clients, the materials and the quotes — you do the installation. All of Serbia.",
@@ -613,9 +1201,37 @@
    "en": "Orion eMobility · On the E-70 motorway between Adaševci and Kuzmin, Adaševci",
    "sr": "Orion eMobility · Na Autoputu E-70 na relaciji Adaševci-Kuzmin, Adaševci"
   },
+  "kyuvmy": {
+   "en": "Reinforced socket: 96.000–111.000 RSD per participant",
+   "sr": "Pojačana utičnica: 96.000–111.000 RSD po učesniku"
+  },
+  "kz30ix": {
+   "en": "Total: about 2.387.000–3.040.000 RSD",
+   "sr": "Ukupno oko 2.387.000–3.040.000 RSD"
+  },
+  "l3oxce": {
+   "en": "Total: 39.000 RSD",
+   "sr": "Ukupno 39.000 RSD"
+  },
+  "ld1hj6": {
+   "en": "a spot with an 11 kW wallbox, final price",
+   "sr": "mesto sa wallboxom 11 kW, konačna cena"
+  },
+  "ltqb5m": {
+   "en": "Total about 926.000–1.233.000 RSD, excluding trenching",
+   "sr": "Ukupno oko 926.000–1.233.000 RSD, bez iskopa"
+  },
+  "lx4dir": {
+   "en": "Each spot costs the same as a kit. Shared infrastructure — a sub-panel with load management, the cable route, boxes, as-built documentation and an installation check — is priced per property. Prices are final, with no VAT: the sole proprietor is not in the VAT system.",
+   "sr": "Svako mesto košta kao paket. Zajednička infrastruktura — podtabla sa upravljanjem snagom, trasa, kutije, dokumentacija o izvedenim radovima i provera instalacije — računa se po objektu. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
+  },
   "lzgm5m": {
    "en": "Iocharger 22 kW set to 11 kW, with 4G, RFID cards and a display, with basic installation next to the distribution board: 115.000 RSD with a Type 2 socket, 127.000 RSD with a 5 m cable. MID meter +10.000 RSD. All prices with VAT.",
    "sr": "Iocharger 22 kW podešen na 11 kW, sa 4G vezom, RFID karticama i ekranom, sa osnovnom ugradnjom pored razvodne table: 115.000 RSD sa Type 2 utičnicom, 127.000 RSD sa kablom 5 m. MID brojilo +10.000 RSD. Sve sa PDV-om."
+  },
+  "m6nwzq": {
+   "en": "about 13.000–20.000 RSD",
+   "sr": "oko 13.000–20.000 RSD"
   },
   "mssd5o": {
    "en": "Koševi toll station",
@@ -625,6 +1241,10 @@
    "en": "Paid per installation at market rates, paid site visits for assessments, and we supply the materials. Belgrade or Novi Sad. Apply through the form.",
    "sr": "Plaćanje po ugradnji, po tržišnim cenama, plaćen izlazak na procenu, materijal obezbeđujemo mi. Beograd ili Novi Sad. Prijavi se preko forme."
   },
+  "ol0n2c": {
+   "en": "Anyone who joins later pays only for their own spot and the connection to the existing line, and it costs the building nothing. A monthly statement per spot, a reply within 48 hours, priority service and an annual check of the installation and equipment are part of the subscription at 990 RSD per month per spot (final price). The subscription is 0 RSD for the first 2 months; it’s optional, has no contract lock-in and applies only to spots with a charger.",
+   "sr": "Ko se priključi kasnije, snosi samo cenu svog mesta i priključenja na postojeću liniju, a zgradu to ne košta ništa. Mesečni obračun po mestu, odgovor u roku od 48h, prioritetni servis i godišnja provera instalacije i opreme deo su pretplate od 990 RSD mesečno po mestu (konačna cena). Prva 2 meseca pretplata je 0 RSD; opciona je, bez ugovorne obaveze i računa se samo za mesta sa punjačem."
+  },
   "otf0tw": {
    "en": "With a referral code you get 2 more months of subscription free — 4 months for 0 RSD in total. Check your garage in half a minute and leave your contact.",
    "sr": "Uz kod preporuke dobijaš još 2 meseca pretplate besplatno, ukupno 4 meseca za 0 RSD. Proveri svoju garažu za pola minuta i ostavi kontakt."
@@ -633,9 +1253,25 @@
    "en": "The charger goes on your meter, a MID meter measures consumption, and the tenant pays for electricity with the rent at the price on your bill. What to agree in writing and what to ask your accountant.",
    "sr": "Punjač ide na vaše brojilo, MID brojilo meri potrošnju, a zakupac struju plaća uz kiriju po ceni sa vašeg računa. Šta dogovoriti pisano i šta pitati knjigovođu."
   },
+  "owyml3": {
+   "en": "final price, optional; first 2 months 0 RSD, no contract lock-in",
+   "sr": "konačna cena, opciono; prva 2 meseca 0 RSD, bez ugovorne obaveze"
+  },
+  "p6vlns": {
+   "en": "Licensed electricians, plus monitoring and priority service with the subscription.",
+   "sr": "Licencirani električari, a uz pretplatu nadzor i prioritetni servis."
+  },
+  "pbttw7": {
+   "en": "RSD per spot, final price",
+   "sr": "RSD po mestu, konačna cena"
+  },
   "pe24p2": {
    "en": "How much an ordinary socket charges, why long charging heats up old contacts and when you need a dedicated line with a reinforced socket or a wallbox.",
    "sr": "Koliko puni obična utičnica, zašto dugo punjenje greje stare kontakte i kada ti treba namenska linija sa pojačanom utičnicom ili wallbox."
+  },
+  "pertm": {
+   "en": "Space preparation and shared infrastructure: 668.000–982.000 RSD",
+   "sr": "Priprema mesta i zajednička infrastruktura: 668.000–982.000 RSD"
   },
   "phwvq3": {
    "en": "Kruševac West toll station",
@@ -657,6 +1293,26 @@
    "en": "EV chargers for hotels, garages, new builds, apartment buildings and businesses: a MID meter at every spot, power management and monthly billing. Public prices with VAT.",
    "sr": "Punjači za hotele, garaže, novogradnju, stambene zgrade i firme: MID brojilo na svakom mestu, upravljanje snagom i mesečni obračun. Javne cene sa PDV-om."
   },
+  "qvshp4": {
+   "en": "Total: about 218.000–238.000 RSD",
+   "sr": "Ukupno oko 218.000–238.000 RSD"
+  },
+  "r4in9k": {
+   "en": "about 16.000–25.000 RSD",
+   "sr": "oko 16.000–25.000 RSD"
+  },
+  "r50nl6": {
+   "en": "Prices are final and include basic installation; document templates are free for everyone. You know the full price, extras included, before any work starts.",
+   "sr": "Cene su konačne i uključuju osnovnu ugradnju; šabloni papira su besplatni za sve. Cenu sa svim dodacima znaš pre početka radova."
+  },
+  "rcbica": {
+   "en": "Priority service",
+   "sr": "Prioritetni servis"
+  },
+  "rcin2i": {
+   "en": "The price of a spot is the kit price: 39.000 RSD for a reinforced socket or 104.000 RSD for an 11 kW wallbox, both with a MID meter; prices are final. Basic installation next to the distribution board is included: up to 2 m of cable, RCD protection and a breaker.",
+   "sr": "Cena mesta je cena paketa: 39.000 RSD za pojačanu utičnicu ili 104.000 RSD za wallbox 11 kW, oba sa MID brojilom; cene su konačne. Uključena je osnovna ugradnja pored razvodne table: do 2 m kabla, FID zaštita i automat."
+  },
   "rsm0io": {
    "en": "From the first resident sign-ups to charging in the garage: a power assessment, templates and the assembly decision, installation and billing by MID meter. The project costs the building nothing.",
    "sr": "Od prvih prijava stanara do punjenja u garaži: procena snage, šabloni i odluka skupštine, ugradnja i obračun po MID brojilu. Zgradu projekat ne košta ništa."
@@ -669,13 +1325,57 @@
    "en": "How to increase your approved power with EDS: when you need it, which documents, what you pay once and what monthly, how long it takes and what if EDS is late.",
    "sr": "Kako se povećava odobrena snaga kod EDS-a: kada ti treba, koja dokumenta, šta plaćaš jednokratno, a šta mesečno, koliko traje i šta ako EDS kasni."
   },
+  "s3ekq2": {
+   "en": "Total about 1.003.000–1.229.000 RSD, excluding trenching",
+   "sr": "Ukupno oko 1.003.000–1.229.000 RSD, bez iskopa"
+  },
+  "s3lml3": {
+   "en": "Write to us — you get a technical description of the installation. The assembly templates — a draft decision, the agenda item and answers to residents’ questions — are free for everyone. The solution costs the building nothing.",
+   "sr": "Pišite nam — dobijate tehnički opis ugradnje. Šabloni za skupštinu — predlog odluke, tačka dnevnog reda i odgovori na pitanja stanara — besplatni su za sve. Zgradu rešenje ne košta ništa."
+  },
   "s4wngf": {
    "en": "All over Serbia. We speak Serbian, Russian and English.",
    "sr": "U celoj Srbiji. Govorimo srpski, ruski i engleski."
   },
+  "s7kb0d": {
+   "en": "Total: about 1.026.000–1.188.000 RSD",
+   "sr": "Ukupno oko 1.026.000–1.188.000 RSD"
+  },
+  "scbh5v": {
+   "en": "The car: the equipment works with every EV and plug-in hybrid (Type 2 standard) — you change the car, not the kit. Moving: with a subscription we transfer the kit to the new address, or hand it over to the next user of your garage — handover and re-linking of the billing: 72 h in Belgrade, Novi Sad and Vojvodina; elsewhere we agree the date by message.",
+   "sr": "Auto: oprema radi sa svakim EV i plug-in hibridom (Type 2 standard) — menjaš auto, ne komplet. Selidba: uz pretplatu komplet prenosimo na novu adresu, ili ga predajemo sledećem korisniku tvoje garaže — primopredaja i prevezivanje obračuna: 72 h u Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci."
+  },
   "slzlu6": {
    "en": "Ruma toll station",
    "sr": "Naplatna stanica Ruma"
+  },
+  "sspfzj": {
+   "en": "Your kit: START — 39.000 RSD, final price.",
+   "sr": "Tvoj komplet: START — 39.000 RSD, konačna cena."
+  },
+  "sts1bl": {
+   "en": "Iocharger 11 kW smart wallbox (OCPP, Type 2, 5 m cable) with basic installation next to the distribution board (up to 2 m of cable, RCD protection and a circuit breaker): 94.000 RSD; 104.000 RSD with a MID meter for billing. Document templates are free for everyone. Prices are final.",
+   "sr": "Iocharger 11 kW smart wallbox (OCPP, Type 2, kabl 5 m) sa osnovnom ugradnjom pored razvodne table (do 2 m kabla, FID zaštita i automat): 94.000 RSD; 104.000 RSD uz MID brojilo za obračun. Šabloni papira su besplatni za sve. Cene su konačne."
+  },
+  "sxiift": {
+   "en": "About 92.000–124.000 RSD per spot",
+   "sr": "Po mestu oko 92.000–124.000 RSD"
+  },
+  "t5o3nq": {
+   "en": "11 kW chargers for hotels and apartments: guests charge overnight, and a MID meter at every spot measures consumption. Final prices and an on-site assessment.",
+   "sr": "Punjači 11 kW za hotele i apartmane: gost puni auto preko noći, a MID brojilo na svakom mestu meri potrošnju. Konačne cene i procena na objektu."
+  },
+  "t8kdn6": {
+   "en": "about 138.000–174.000 RSD",
+   "sr": "oko 138.000–174.000 RSD"
+  },
+  "trepuo": {
+   "en": "Openly, final prices with basic installation next to the distribution board: START (reinforced socket + MID meter) — 39.000 RSD; WALLBOX 11 kW — from 94.000 RSD (with a MID meter 104.000); Wallbox Plus with 4G — from 115.000 RSD; Wallbox Premium — 155.000 RSD; installation of your own charger — from 24.000 RSD; the ZGRADA kit for 2–6 spots — from 96.000 RSD per spot. RCD protection, a breaker and document templates are included in every price. A MID meter comes with START and ZGRADA and is optional with WALLBOX (+10.000); with installation only, the charger is yours. Full breakdowns are on the Kits & pricing page. Cable to your spot, trunking, a wall passage or a new board are priced separately, at the assessment, before any work starts.",
+   "sr": "Otvoreno, konačne cene sa osnovnom ugradnjom pored razvodne table: START (pojačana utičnica + MID brojilo) — 39.000 RSD; WALLBOX 11 kW — od 94.000 RSD (sa MID brojilom 104.000); Wallbox Plus sa 4G vezom — od 115.000 RSD; Wallbox Premium — 155.000 RSD; samo ugradnja tvog punjača — od 24.000 RSD; paket ZGRADA za 2–6 mesta — od 96.000 RSD po mestu. U svaku cenu su uključeni FID zaštita, automat i šabloni papira. MID brojilo je u START i ZGRADA, uz WALLBOX po izboru (+10.000); kod samo ugradnje punjač je tvoj. Detaljni sastavi — na stranici Paketi i cene. Kabl do tvog mesta, kanalice, prolaz kroz zid ili nova tabla — posebno, po proceni, pre početka radova."
+  },
+  "u4ifs2": {
+   "en": "About 154.000–199.000 RSD per spot",
+   "sr": "Po mestu oko 154.000–199.000 RSD"
   },
   "umu582": {
    "en": "Chargers in an apartment building's garage at no cost to the building: templates for the assembly, a MID meter at every spot, electricity with no markup. From 96.000 RSD per spot.",
@@ -693,9 +1393,37 @@
    "en": "EV chargers for new builds and developers",
    "sr": "Punjači za novogradnju i investitore"
   },
+  "v7jvbo": {
+   "en": "Each spot costs the same as a kit. For more spots or a distant distribution board, shared infrastructure is added: a sub-panel with load management, the cable route, as-built documentation and an installation check. Prices are final, with no VAT: the sole proprietor is not in the VAT system.",
+   "sr": "Svako mesto košta kao paket. Za više mesta ili udaljenu razvodnu tablu dodaje se zajednička infrastruktura: podtabla sa upravljanjem snagom, trasa, dokumentacija o izvedenim radovima i provera instalacije. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
+  },
+  "v9d9ih": {
+   "en": "final price; 2,3–3,7 kW, for regular users with their own cable",
+   "sr": "konačna cena; 2,3–3,7 kW, za redovne korisnike sa svojim kablom"
+  },
+  "vlrhcz": {
+   "en": "One day. Assessment: 72 h in Belgrade, Novi Sad and Vojvodina; elsewhere we agree the date by message. Document templates are free for everyone.",
+   "sr": "Jedan dan. Procena: 72 h u Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci. Šabloni papira su besplatni za sve."
+  },
+  "vpj380": {
+   "en": "Start, Wallbox 11 kW and Building — final prices",
+   "sr": "Start, Wallbox 11 kW i Zgrada — konačne cene"
+  },
   "vt8kqb": {
    "en": "ZGRADA — shared infrastructure for 2–6 spots",
    "sr": "ZGRADA — zajednička infrastruktura za 2–6 mesta"
+  },
+  "vuphx4": {
+   "en": "An example from the calculator: a garage with 10 chargers at 11 kW and the distribution board 30–60 m away costs about 1.388.000–1.734.000 RSD. With another 20 spaces prepared for later, the price is about 1.713.000–2.034.000 RSD.",
+   "sr": "Primer iz kalkulatora: garaža sa 10 punjača od 11 kW i razvodnom tablom udaljenom 30–60 m košta oko 1.388.000–1.734.000 RSD. Uz još 20 mesta pripremljenih za kasnije, cena je oko 1.713.000–2.034.000 RSD."
+  },
+  "vxmjvi": {
+   "en": "Reinforced socket: 96.000–111.000 RSD",
+   "sr": "Pojačana utičnica: 96.000–111.000 RSD"
+  },
+  "wg268w": {
+   "en": "A new-build garage ready for chargers: a cable route and a box at every spot, plus power management. For 40 spots, about 16.000–25.000 RSD per prepared spot.",
+   "sr": "Garaža u novogradnji spremna za punjače: trasa i kutija kod svakog mesta i upravljanje snagom. Za 40 mesta oko 16.000–25.000 RSD po pripremljenom mestu."
   },
   "wtm3rj": {
    "en": "Installation only — installing your charger",
@@ -720,6 +1448,10 @@
   "xf8brf": {
    "en": "A rough price for the whole property: charging spots, shared infrastructure and the subscription. Examples for a hotel, a garage, an apartment building and a new build, with VAT.",
    "sr": "Okvirna cena za ceo objekat: mesta za punjenje, zajednička infrastruktura i pretplata. Primeri za hotel, garažu, stambenu zgradu i novogradnju, sa PDV-om."
+  },
+  "xffzws": {
+   "en": "Free assembly templates →",
+   "sr": "Besplatni šabloni za skupštinu →"
   },
   "xfqw8c": {
    "en": "Essent (NL) · Charger, Belgrade",
@@ -764,6 +1496,10 @@
   "zinna6": {
    "en": "Legal counsel for partnerships and contracts — Evolako",
    "sr": "Pravnik za saradnju i ugovore — Evolako"
+  },
+  "zku6kk": {
+   "en": "If, along with the 10 chargers, another 20 spaces in the garage are prepared for later with a cable route and junction box, the price is about 1.713.000–2.034.000 RSD. A charger can later go in at any of those 20 spaces as a basic installation, at the kit price.",
+   "sr": "Ako se uz 10 punjača u garaži pripremi još 20 mesta za kasnije, sa trasom i kutijom, cena je oko 1.713.000–2.034.000 RSD. Na svako od tih 20 mesta punjač se kasnije postavlja osnovnom ugradnjom, po ceni paketa."
   },
   "zs762h": {
    "en": "Who pays for the electricity, what the building assembly decides, what it costs and what the subscription covers — straight answers to 28 questions about charging an electric car at home in an apartment building.",

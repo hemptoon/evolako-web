@@ -31,7 +31,8 @@ Content-Security-Policy, and the redirects of site/functions/_middleware.js (old
     the title, meta description and social texts, JSON-LD strings — a text counts as Serbian when it is a Serbian
     source text of the dictionaries or the pages, or looks Serbian (diacritics, Serbian function words), unless
     site/i18n/keep.json lists it (brand, unit, address, legal name …, each with a reason); texts the BlokVolt map
-    embed (#evm on /mapa-punjaca, a live service) renders from its own data are listed apart
+    embed (#evm on /mapa-punjaca, a live service) renders from its own data, and texts inside an element marked
+    lang="sr" (the assembly templates of /sabloni-za-skupstinu, Serbian on purpose) are listed apart
   * links to the app (app.evolako.rs) carry the page's language (?lang=sr|en|ru)
   * JSON-LD: every block parses; FAQPage questions and answers equal the visible ones (<details>) in sr, en, ru (the
     Cyrillic mode keeps the Latin JSON-LD of the Serbian page)
@@ -424,16 +425,19 @@ STRINGS_JS = """() => {
   const out = [], norm = s => (s || '').replace(/\\s+/g, ' ').trim(), SKIP = {SCRIPT: 1, STYLE: 1, NOSCRIPT: 1, TEMPLATE: 1};
   // 4th field: inside the BlokVolt map embed (#evm on /mapa-punjaca, a live service of www.blokvolt.rs)
   const emb = e => !!(e && e.closest && e.closest('#evm'));
+  // 5th field: inside an element marked lang="sr" below <html> — Serbian on purpose on /en/ and /ru/ pages (the
+  // template texts of /sabloni-za-skupstinu: documents for a Serbian residents' assembly, translate="no")
+  const srd = e => !!(e && e.closest && e.closest('[lang|="sr"]:not(html)'));
   const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT,
     {acceptNode: n => (!n.parentNode || SKIP[n.parentNode.nodeName]) ? 2 : 1});
   let n;
   while ((n = w.nextNode())) {
     const t = norm(n.nodeValue); if (t.length < 2) continue;
     let vis = false; try { vis = n.parentElement.checkVisibility({checkVisibilityCSS: true}); } catch (e) {}
-    out.push(['text', t, vis, emb(n.parentElement)]);
+    out.push(['text', t, vis, emb(n.parentElement), srd(n.parentElement)]);
   }
   document.body.querySelectorAll('[alt],[title],[aria-label],[placeholder]').forEach(e => {
-    ['alt', 'title', 'aria-label', 'placeholder'].forEach(a => { const v = norm(e.getAttribute(a)); if (v.length > 1) out.push(['attr:' + a, v, true, emb(e)]); }); });
+    ['alt', 'title', 'aria-label', 'placeholder'].forEach(a => { const v = norm(e.getAttribute(a)); if (v.length > 1) out.push(['attr:' + a, v, true, emb(e), srd(e)]); }); });
   document.body.querySelectorAll('input[type=submit],input[type=button],input[type=reset]').forEach(e => {
     if (norm(e.value).length > 1) out.push(['value', norm(e.value), true]);
     if (norm(e.getAttribute('data-wait')).length > 1) out.push(['data-wait', norm(e.getAttribute('data-wait')), true]); });
@@ -1247,10 +1251,11 @@ def check_languages(r, langs):
         msg = '%d FAQPage questions/answers differ from the visible ones' % len(r['faq_mismatch'])
         issues.append(msg)  # every language builds its FAQPage from the visible FAQ
     if r['mode'] in ('en', 'ru') and r['page'] != '404':
-        left, kept, embed = {}, {}, {}
+        left, kept, embed, srdoc = {}, {}, {}, {}
         for item in r.get('strings') or []:
             kind, text, vis = item[:3]
             in_embed = len(item) > 3 and item[3]
+            in_srdoc = len(item) > 4 and item[4]
             if kind.startswith('json-ld:') and kind[8:] not in ('name', 'description', 'headline', 'text',
                                                                   'serviceType', 'unitText'):
                 continue
@@ -1259,6 +1264,10 @@ def check_languages(r, langs):
                 # the BlokVolt map embed renders its own data (station names, addresses, operators) — a live
                 # service; only that embed, in its own repository, decides its languages. Listed apart, not an issue
                 embed[text] = why
+            elif yes and in_srdoc:
+                # Serbian on purpose: an element marked lang="sr" (the templates of /sabloni-za-skupstinu are
+                # documents for a Serbian assembly; the page chrome around them is translated). Listed apart
+                srdoc[text] = why
             elif yes:
                 left.setdefault(text, {'kinds': set(), 'why': why, 'visible': False})
                 left[text]['kinds'].add(kind.split(':')[0] if not kind.startswith('json-ld') else kind)
@@ -1269,6 +1278,7 @@ def check_languages(r, langs):
                              for t, v in left.items()}
         r['kept'] = kept
         r['embed_serbian'] = embed
+        r['sr_doc_serbian'] = srdoc
         if left:
             issues.append('%d Serbian texts left' % len(left))
         want = PR.page_url(SITE, r['mode'], r['page'])
@@ -1444,6 +1454,10 @@ def summarize(results):
                  for lang in ('en', 'ru')},
         'embed_serbian': {lang: sorted({t for r in results if r['mode'] == lang
                                         for t in (r.get('embed_serbian') or {})}) for lang in ('en', 'ru')},
+        'sr_doc_serbian': {lang: {'texts': len({t for r in results if r['mode'] == lang
+                                                for t in (r.get('sr_doc_serbian') or {})}),
+                                  'pages': sorted({r['page'] for r in results if r['mode'] == lang
+                                                   and r.get('sr_doc_serbian')})} for lang in ('en', 'ru')},
         'explained': explained_summary(results),
         'text_unexplained': [{'load': lid(r), 'chunks': r.get('text_chunks')} for r in results
                              if r.get('text_chunks') and not r.get('interaction')],
@@ -1527,6 +1541,9 @@ def print_summary(s):
         emb = (s.get('embed_serbian') or {}).get(lang) or []
         print('   inside the BlokVolt map embed (its own live data, as on the live page; not counted): %d distinct%s'
               % (len(emb), (', e.g. ' + '; '.join(t[:40] for t in emb[:5])) if emb else ''))
+        sd = (s.get('sr_doc_serbian') or {}).get(lang) or {}
+        print('   inside elements marked lang="sr" (Serbian on purpose, e.g. the assembly templates; not counted): '
+              '%d distinct on %s' % (sd.get('texts', 0), ', '.join(sd.get('pages') or []) or 'no page'))
     for kind, d in (s.get('explained') or {}).items():
         print('explained text differences — %s: %d distinct, e.g. %s' % (kind, len(d), '; '.join(list(d)[:4])))
     print('JSON-LD blocks parsed: %d; FAQPage questions checked against the visible FAQ: %d, differing: %d' % (

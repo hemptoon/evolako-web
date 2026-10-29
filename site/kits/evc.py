@@ -80,7 +80,8 @@ B2B_PAGES = ['/punjaci-za-firme', '/punjaci-za-hotele', '/punjaci-za-parking-gar
              '/punjaci-za-auto-salone', '/punjaci-za-sluzbena-vozila', '/kalkulator-cene-punjaca', '/prijavi-zgradu']
 GUIDES = ['/punjaci-u-garazi-zgrade-plan-za-upravnike', '/koliko-punjaca-treba-hotelu', '/koliko-snage-treba-garazi-za-punjace',
           '/punjenje-sluzbenog-automobila-kod-kuce', '/novogradnja-garaza-spremna-za-punjace', '/cena-punjaca-po-parking-mestu']
-SITE_PAGES = ['/', '/paketi-i-cene', '/proveri-svoju-garazu', '/cesta-pitanja', '/kontakt', '/mapa-punjaca', '/preporuka', '/vodici', '/novosti']
+SITE_PAGES = ['/', '/paketi-i-cene', '/proveri-svoju-garazu', '/cesta-pitanja', '/kontakt', '/mapa-punjaca', '/preporuka', '/vodici', '/novosti',
+              '/sabloni-za-skupstinu']  # the free templates page (site/sabloni.py, 29.10.2026)
 MONEY = ['/proveri-svoju-garazu', '/paketi-i-cene', '/prijavi-zgradu', '/kontakt']  # consumer pages that sell (first-150-words link, callout)
 B2C_GUIDES = []  # consumer guides already on the site (filled from --extra-guides slug=cover; the log keeps the list)
 B2C_COVER = {}   # slug -> photo index (IMG) of that guide's cover, used for its thumbnail

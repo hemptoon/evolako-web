@@ -4,7 +4,7 @@
 
 ## Packages and prices (RSD, as published on /paketi-i-cene)
 
-Every package includes basic installation next to the distribution board: up to 2 m of cable, an RCD (FID) and a breaker. Anything beyond that is quoted after the on-site assessment, before any work starts.
+Prices are final: Evolako is run by a sole proprietor (preduzetnik) who is not in the VAT system, so no VAT is added. Every package includes basic installation next to the distribution board: up to 2 m of cable, an RCD (FID) and a breaker. Anything beyond that is quoted after the on-site assessment, before any work starts.
 
 - START — 39.000: a reinforced socket with a MID meter; works on an ordinary single-phase installation (2,3–3,7 kW)
 - WALLBOX 11 kW — from 94.000; 104.000 with a MID meter, which is required when the charger runs on someone else's meter (a building's or a garage owner's)
@@ -15,9 +15,9 @@ Every package includes basic installation next to the distribution board: up to 
 
 ## How it works
 
-- A rough estimate from photos is free; the on-site assessment (procena) costs 2.990 RSD and is credited in full against the installation if you go ahead
+- A rough estimate from photos is free; the on-site assessment (procena) costs 2.990 RSD and is credited in full against the installation if you go ahead. It takes place within 72 h in Belgrade, Novi Sad and Vojvodina; elsewhere the date is agreed by message
 - The installation itself takes one working day; when a building assembly has to decide, the whole process usually takes 4–10 weeks
-- Building paperwork: Evolako gives a technical description of the installation and templates (draft assembly decision, agenda item, owner's consent, answers to residents' questions); the residents decide and submit them — Evolako does not attend assemblies or run the procedure
+- Building assembly: the templates (a request to the building manager for a meeting and the agenda item, a draft assembly decision, the owner's consent for a rented garage, answers to residents' questions and a checklist) are free for everyone, even without an installation by Evolako, on [Šabloni za skupštinu](https://www.evolako.rs/sabloni-za-skupstinu); with a quote Evolako adds a technical description of the installation. The decision belongs to the building: the residents or the manager fill in and submit the papers — Evolako does not convene or run the assembly, does not negotiate with managers, neighbours or owners, and does not file requests with Elektrodistribucija (EDS) or EPS. The templates are not legal advice
 - Optional subscription, 990 RSD per month: a monthly statement by the MID meter at the EPS price, priority service, the warranty kept for as long as the subscription runs, help when moving; the first 2 months cost 0 RSD and it can be cancelled in any month; the charger works without it
 - Standard warranty: 2 years, on the equipment and the installation
 - Replies within 48 h. Contact by messages only (no calls): +381 65 381 6083 on Viber, WhatsApp and Telegram (@evolako_rs); e-mail hello@evolako.com
@@ -28,6 +28,7 @@ Every package includes basic installation next to the distribution board: up to 
 - [Paketi i cene](https://www.evolako.rs/paketi-i-cene): packages, prices and the subscription
 - [Proveri svoju garažu](https://www.evolako.rs/proveri-svoju-garazu): three questions, a recommended package and a request form
 - [Česta pitanja](https://www.evolako.rs/cesta-pitanja): who pays for the electricity, the building assembly, technical questions
+- [Šabloni za skupštinu](https://www.evolako.rs/sabloni-za-skupstinu): free templates for the residents' assembly, to read, copy or print (in Serbian)
 - [Kontakt](https://www.evolako.rs/kontakt): request form and messengers
 - [Mapa punjača](https://www.evolako.rs/mapa-punjaca): public chargers in Serbia with prices (data from BlokVolt)
 - [Vodiči](https://www.evolako.rs/vodici): guides on charging at home and in apartment buildings

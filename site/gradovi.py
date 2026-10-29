@@ -115,13 +115,13 @@ PRICES_ROWS = [
       ['Только монтаж', 'от 24.000 RSD', 'монтаж зарядки, которая у тебя уже есть']),
 ]
 PRICES_INCLUDED = T(
-    'Cena paketa uključuje punjač i osnovnu ugradnju pored razvodne table: do 2 m kabla, FID zaštitu i automatski '
-    'osigurač. Ako je mesto dalje od table, kabl i ostale radove računamo na proceni, pre početka radova.',
-    'The package price includes the charger and basic installation next to the distribution board: up to 2 m of '
-    'cable, an RCD (FID) and a circuit breaker. If your spot is farther from the board, the cable and other work are '
-    'priced at the assessment, before any work starts.',
-    'В цену пакета входят зарядка и базовый монтаж рядом с электрощитом: до 2 м кабеля, УЗО (FID) и автомат. Если '
-    'место дальше от щита, кабель и остальные работы считаем на оценке, до начала работ.')
+    'Cena paketa je konačna i uključuje punjač i osnovnu ugradnju pored razvodne table: do 2 m kabla, FID zaštitu i '
+    'automatski osigurač. Ako je mesto dalje od table, kabl i ostale radove računamo na proceni, pre početka radova.',
+    'The package price is final and includes the charger and basic installation next to the distribution board: up to '
+    '2 m of cable, an RCD (FID) and a circuit breaker. If your spot is farther from the board, the cable and other work '
+    'are priced at the assessment, before any work starts.',
+    'Цена пакета итоговая: в неё входят зарядка и базовый монтаж рядом с электрощитом — до 2 м кабеля, УЗО (FID) и '
+    'автомат. Если место дальше от щита, кабель и остальные работы считаем на оценке, до начала работ.')
 PRICES_MORE = T(['Wallbox Plus (od 115.000 RSD) i Wallbox Premium (155.000 RSD) opisani su na stranici ',
                  {'a': 'paketi i cene', 'href': '/paketi-i-cene'}, '.'],
                 ['Wallbox Plus (from 115.000 RSD) and Wallbox Premium (155.000 RSD) are described under ',
@@ -133,9 +133,12 @@ STEPS = [
       'Send us a message with photos of the distribution board and the spot for the charger — a rough estimate from '
       'photos is free.',
       'Напиши нам и пришли фото электрощита и места для зарядки — предварительная оценка по фото бесплатная.'),
-    T('Procenu na licu mesta dogovaramo u poruci. Košta 2.990 RSD i u celosti se uračunava u cenu ugradnje.',
-      'We arrange the on-site assessment by message. It costs 2.990 RSD and is fully credited toward the installation.',
-      'О выезде на оценку договоримся в переписке. Он стоит 2.990 RSD и полностью засчитывается в стоимость установки.'),
+    T('Procena na licu mesta: 72 h u Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci. '
+      'Košta 2.990 RSD i u celosti se uračunava u cenu ugradnje.',
+      'The on-site assessment: 72 h in Belgrade, Novi Sad and Vojvodina; elsewhere we agree the date by message. It costs '
+      '2.990 RSD and is fully credited toward the installation.',
+      'Оценка на месте: 72 ч — Белград, Нови-Сад, Воеводина; в других местах срок согласуем в переписке. Она стоит '
+      '2.990 RSD и полностью засчитывается в стоимость установки.'),
     T('Na proceni proveravamo instalaciju, snagu priključka i put kabla, a ti dobijaš tačnu ponudu pre bilo kakvog potpisa.',
       'At the assessment we check the wiring, the connection capacity and the cable route, and you get an exact quote '
       'before you sign anything.',
@@ -148,21 +151,47 @@ STEPS = [
       'The MID meter measures only your charger, so you always know how much electricity went into the car.',
       'MID-счётчик считает только твою зарядку, поэтому ты всегда знаешь, сколько электричества ушло на машину.'),
 ]
+# the assessment step of a city page: inside the 72 h zone (Beograd, Vojvodina) a plain 72 h, elsewhere no promise
+STEP_ZONE = T('Procena na licu mesta: u roku od 72 h, a tačan termin dogovaramo u poruci. Košta 2.990 RSD i u celosti '
+              'se uračunava u cenu ugradnje.',
+              'The on-site assessment: within 72 h; we agree the exact time by message. It costs 2.990 RSD and is fully '
+              'credited toward the installation.',
+              'Оценка на месте — в течение 72 ч, точное время согласуем в переписке. Она стоит 2.990 RSD и полностью '
+              'засчитывается в стоимость установки.')
+STEP_AWAY = T('Termin procene na licu mesta dogovaramo u poruci. Košta 2.990 RSD i u celosti se uračunava u cenu ugradnje.',
+              'We agree the date of the on-site assessment by message. It costs 2.990 RSD and is fully credited toward '
+              'the installation.',
+              'Срок выезда на оценку согласуем в переписке. Она стоит 2.990 RSD и полностью засчитывается в стоимость '
+              'установки.')
+ZONE_72H = ('beograd', 'vojvodina')             # regions where the 72 h of the site hold (decision 28.10.2026)
+SABLONI = '/sabloni-za-skupstinu'
+
+
+def steps_of(c):
+    s = list(STEPS)
+    s[1] = STEP_ZONE if c['region'] in ZONE_72H else STEP_AWAY
+    return s
+
+
 BUILDING = T(
     'U kući punjač ide na tvoju instalaciju i dovoljna je procena. Za mesto u zajedničkoj garaži zgrade treba odluka '
-    'skupštine stambene zajednice: Evolako daje tehnički opis ugradnje i šablone (predlog odluke, tačku dnevnog reda, '
-    'saglasnost vlasnika), a stanari odlučuju i predaju papire sami.',
+    'skupštine stambene zajednice: Evolako daje tehnički opis ugradnje, šabloni (predlog odluke, tačka dnevnog reda, '
+    'saglasnost vlasnika) su besplatni za sve, a stanari odlučuju i predaju papire sami.',
     'In a house, the charger goes on your own installation and the assessment is all it takes. For a space in a '
     'building’s shared garage, the residents’ assembly has to decide: Evolako provides a technical description of the '
-    'installation and templates (a draft decision, an agenda item, the owner’s consent), and the residents decide and '
-    'submit them themselves.',
+    'installation, the templates (a draft decision, an agenda item, the owner’s consent) are free for everyone, and the '
+    'residents decide and submit the papers themselves.',
     'В частном доме зарядка подключается к твоей проводке, и достаточно оценки. Для места в общем гараже многоэтажки '
-    'нужно решение собрания жильцов: Evolako даёт техническое описание монтажа и шаблоны (проект решения, пункт '
-    'повестки, согласие собственника), а жильцы решают и подают их сами.')
-BUILDING_LINK = T(['Kako to ide korak po korak, objašnjeno je na stranici ',
+    'нужно решение собрания жильцов: Evolako даёт техническое описание монтажа, шаблоны (проект решения, пункт '
+    'повестки, согласие собственника) бесплатны для всех, а жильцы решают и подают документы сами.')
+BUILDING_LINK = T(['Šabloni su na stranici ', {'a': 'šabloni za skupštinu', 'href': SABLONI},
+                   ', a kako to ide korak po korak, objašnjeno je na stranici ',
                    {'a': 'punjači za stambene zgrade', 'href': '/punjaci-za-stambene-zgrade'}, '.'],
-                  ['Step by step: see ', {'a': 'chargers for apartment buildings', 'href': '/punjaci-za-stambene-zgrade'}, '.'],
-                  ['По шагам — на странице ', {'a': 'зарядки для жилых домов', 'href': '/punjaci-za-stambene-zgrade'}, '.'])
+                  ['The templates are on the ', {'a': 'assembly templates', 'href': SABLONI},
+                   ' page; step by step: see ', {'a': 'chargers for apartment buildings', 'href': '/punjaci-za-stambene-zgrade'},
+                   '.'],
+                  ['Шаблоны — на странице ', {'a': 'шаблоны для собрания', 'href': SABLONI}, ', а по шагам — на странице ',
+                   {'a': 'зарядки для жилых домов', 'href': '/punjaci-za-stambene-zgrade'}, '.'])
 SUBSCRIPTION = T(
     'Pretplata je opciona: 990 RSD mesečno, a prva 2 meseca su 0 RSD. Uz nju dobijaš mesečni obračun po MID brojilu, '
     'po ceni iz računa EPS-a i bez marže, uz izveštaj za vlasnika garaže ili zgradu, prioritetni servis, zimsku proveru '
@@ -386,7 +415,8 @@ def city_texts(c, data):
     # 4. how it goes
     add('h2', T('Kako ide ugradnja u %s' % loc_sr, 'How the installation goes in %s' % n_en,
                 'Как проходит установка %s' % loc_ru))
-    add('ul', T([s['sr'] for s in STEPS], [s['en'] for s in STEPS], [s['ru'] for s in STEPS]))
+    st = steps_of(c)
+    add('ul', T([s['sr'] for s in st], [s['en'] for s in st], [s['ru'] for s in st]))
     # 5. house or building
     add('h2', T('Kuća ili garaža zgrade', 'A house or a building garage', 'Частный дом или гараж многоэтажки'))
     add('p', BUILDING)
@@ -635,7 +665,8 @@ def render_article(p, si, s):
 
 # ------------------------------------------------------------------------------------------------ checks
 TONE_VI = [r'\b[Vv]i\b', r'\b[Vv]aš\w*', r'\b[Vv]am\b', r'\b[Vv]as\b', r'\bpišite\b', r'\bjavite\b', r'\bproverite\b']
-NO_PROMISE = [r'72\s*h', r'72 sata', r'\bPDV', r'lokaln\w* električar', r'\bodmah\b', r'u roku od 7 dana']
+NO_PROMISE = [r'72 sata', r'\bPDV', r'lokaln\w* električar', r'\bodmah\b', r'u roku od 7 dana']
+ZONE_RX = r'72\s*h(?! u Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci)'
 TR_BANNED = {'en': [r'\batest', r'discount', r'24\s*/\s*7', r'plug\s*&\s*charge', r'\bimmediately\b', r'\bpaperwork\b',
                     r'\bVAT\b', r'72[- ]hour', r'\blocal electrician'],
              'ru': [r'атест', r'скидк', r'24\s*/\s*7', r'plug\s*&\s*charge', r'\bсразу\b', r'оформ\w*\s+документ',
@@ -656,8 +687,9 @@ def texts(doc, path=()):
         yield path, doc
 
 
-def check(docs, kit, allowed_pages):
-    """Errors of one page (a list of strings)."""
+def check(docs, kit, allowed_pages, zone=False):
+    """Errors of one page (a list of strings). zone: a city inside the 72 h zone, whose page may promise a plain 72 h;
+    anywhere else 72 h only comes with the zone wording of the site (deploy 4, 28.10.2026)."""
     errs = []
     sr, en, ru = docs
     seo = sr['seo']
@@ -680,7 +712,7 @@ def check(docs, kit, allowed_pages):
         where = '.'.join(str(x) for x in p)
         if not s.strip() and s != ' ':
             errs.append('%s: empty' % where)
-        for rx in kit.FORBID + NO_PROMISE:
+        for rx in kit.FORBID + NO_PROMISE + ([] if zone else [ZONE_RX]):
             if re.search(rx, s, re.I):
                 errs.append('%s: forbidden /%s/: %s' % (where, rx, s[:80]))
         for rx in TONE_VI:
@@ -707,7 +739,7 @@ def check(docs, kit, allowed_pages):
         elif isinstance(x, str):
             yield key, x
     for key, v in walk(sr):
-        if key == 'href' and v.split('?')[0].strip('/') not in allowed_pages and v != '/':
+        if key == 'href' and not v.startswith('#') and v.split('?')[0].strip('/') not in allowed_pages and v != '/':
             errs.append('link target is not a page of the site: %s' % v)
         if key == 'url' and not v.startswith('https://'):
             errs.append('source url must be https://: %s' % v)

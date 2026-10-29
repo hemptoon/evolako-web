@@ -81,7 +81,8 @@ B2B_PAGES = ['/punjaci-za-firme', '/punjaci-za-hotele', '/punjaci-za-parking-gar
              '/punjaci-za-auto-salone', '/punjaci-za-sluzbena-vozila', '/punjaci-za-parkinge', '/kalkulator-cene-punjaca', '/prijavi-zgradu']
 GUIDES = ['/punjaci-u-garazi-zgrade-plan-za-upravnike', '/koliko-punjaca-treba-hotelu', '/koliko-snage-treba-garazi-za-punjace',
           '/punjenje-sluzbenog-automobila-kod-kuce', '/novogradnja-garaza-spremna-za-punjace', '/cena-punjaca-po-parking-mestu']
-SITE_PAGES = ['/', '/paketi-i-cene', '/proveri-svoju-garazu', '/cesta-pitanja', '/kontakt', '/mapa-punjaca']
+SITE_PAGES = ['/', '/paketi-i-cene', '/proveri-svoju-garazu', '/cesta-pitanja', '/kontakt', '/mapa-punjaca',
+              '/sabloni-za-skupstinu']  # the free templates page (site/sabloni.py, 29.10.2026)
 CALC_TIP = re.compile(r'^/kalkulator-cene-punjaca\?tip=(hotel|garaza|zgrada|novogradnja|flota|salon|drugo)$')
 
 # ---- photos (Webflow assets, uploaded 30.09.2026): index -> [full id, full url, w, h, thumb id, thumb url, w, h] ----

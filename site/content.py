@@ -54,6 +54,9 @@ _spec = importlib.util.spec_from_file_location('evo_gradovi', os.path.join(HERE,
 GR = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(GR)   # city pages: texts, data, checks (site/gradovi.py)
 GR.SAME_AS = EVC.SAME_AS
+_spec = importlib.util.spec_from_file_location('evo_sabloni', os.path.join(HERE, 'sabloni.py'))
+SB = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(SB)   # the free templates for the residents' assembly (site/sabloni.py)
 # One photo table for both kits: evb's (photo 2 v2 — the first version must never be shown again — and photos 17, 18).
 EVC.IMG, EVC.ALT, EVC.thumb_idx = EVB.IMG, EVB.ALT, EVB.thumb_idx
 EVC.THUMB = dict(EVC.THUMB, **{'/punjaci-za-parkinge': 17})
@@ -248,6 +251,7 @@ class Content:
             self.add_guide(g)
         self.apply_cards()
         self.apply_news()
+        self.add_sabloni()
         if self.gradovi:
             self.add_gradovi()
 
@@ -419,18 +423,65 @@ class Content:
             raise ContentError('%s: the template slug /%s is still on the page' % (g.slug, tpl))
         return t
 
+    # ---------------------------------------------------------------- the templates page (site/sabloni.py)
+    def add_sabloni(self):
+        """/sabloni-za-skupstinu: the five templates (Serbian on every language), rendered on the guide template."""
+        slug = SB.SLUG
+        EVC.THUMB.setdefault('/' + slug, SB.COVER)
+        self.set_kit_links(EVC, self.b2c_cover, self.b2b_segment, None)
+        docs, ld_names = SB.texts()
+        allowed = set(self.sources) | set(self.new_pages) | {slug}
+        errs = GR.check(docs, EVC, allowed) + SB.check_docs()
+        for x in errs:
+            self.say('/' + slug, 'error', x)
+        if errs:
+            return
+        p = EVC.Page(docs)
+        d = p.sr
+        kicker, h1 = p.t(['hero', 'kicker']), p.t(['hero', 'h1'])
+        lead, updated = p.t(['hero', 'lead']), p.t(['hero', 'updated'])
+        p.t(['seo', 'title'])
+        trans = GR.trans_line(SB.DATE)
+        parts = []
+        for si, sec in enumerate(d['sections']):
+            if sec['type'] == 'article':
+                parts += [h for _, h in GR.render_article(p, si, sec)]
+            elif sec['type'] == 'doc':
+                parts.append(SB.render_doc(p, si, sec))
+            else:
+                parts += [h for _, h in EVC.render_section(p, si, trans)]
+        cov = full_cover(SB.COVER)
+        p.pairs.append(tuple(EVC.ALT[cov]))
+        for k in ('description', 'og_title', 'og_description'):
+            p.pairs.append(pairs_of(docs, ['seo', k]))
+        p.pairs += ld_names
+        body = SB.CSS + wf(''.join(parts)) + SB.JS
+        for src in re.findall(r'<img src="([^"]+)"', body):
+            self.image(src, '/' + slug)
+        cover_url = self.image(EVC.IMG[cov][1], '/' + slug + ' cover')
+        g = type('Page', (), {'slug': '/' + slug})()
+        tpl_slug = TEMPLATE['vodic']
+        t = self.retarget(self.sources[tpl_slug], tpl_slug, g, d, SB.jsonld(docs, EVC.SAME_AS), kicker, h1, lead, updated,
+                          cover_url, EVC.ALT[cov][0], body)
+        self.new_pages[slug] = t
+        self.template_of[slug] = tpl_slug
+        self.add_pairs(slug, p.pairs)
+        self.lastmod[slug] = SB.DATE
+        self.say('sabloni', 'info', 'templates page /%s: %d templates' % (slug, len(SB.DOCS)))
+
     # ---------------------------------------------------------------- city pages (site/gradovi.py)
     def add_gradovi(self):
         data = self.gradovi
         EVC.THUMB.setdefault('/' + GR.HUB, 9)               # its card in "Pročitaj i ovo": the on-site assessment
         self.set_kit_links(EVC, self.b2c_cover, self.b2b_segment, None)
         allowed = set(self.sources) | set(self.new_pages) | {GR.HUB} | {GR.PREFIX + c['slug'] for c in data['cities']}
+        allowed |= {GR.SABLONI.strip('/')}
         allowed |= {s.split('#')[0] for s in ('index',)}
         pages = [(GR.HUB, GR.hub_texts(data), GR.COVER_HUB, None)]
         pages += [(GR.PREFIX + c['slug'], GR.city_texts(c, data), GR.COVER_CITY, c) for c in data['cities']]
         tpl_slug = TEMPLATE['vodic']
         for slug, (docs, ld_names), cov, city in pages:
-            errs = GR.check(docs, EVC, allowed)
+            errs = GR.check(docs, EVC, allowed, zone=bool(city) and city['region'] in GR.ZONE_72H)
             for x in errs:
                 self.say('/' + slug, 'error', x)
             if errs:
