@@ -49,6 +49,10 @@
    "ru": "Итоговая цена",
    "sr": "Konačna cena"
   },
+  "11klp2m": {
+   "ru": "Магазин зарядок",
+   "sr": "Prodavnica punjača"
+  },
   "11pyont": {
    "ru": "Iocharger 22 кВт, настроенный на 11 кВт, с 4G, RFID-картами и экраном, с базовым монтажом рядом с электрощитом: 115.000 RSD с розеткой Type 2, 127.000 RSD с кабелем 5 м. MID-счётчик +10.000 RSD. Цены итоговые.",
    "sr": "Iocharger 22 kW podešen na 11 kW, sa 4G vezom, RFID karticama i ekranom, sa osnovnom ugradnjom pored razvodne table: 115.000 RSD sa Type 2 utičnicom, 127.000 RSD sa kablom 5 m. MID brojilo +10.000 RSD. Cene su konačne."
@@ -341,6 +345,10 @@
    "ru": "Wallbox 11 кВт: 138.000–176.000 RSD",
    "sr": "Wallbox 11 kW: 138.000–176.000 RSD"
   },
+  "1e5iyvv": {
+   "ru": "Магазин (shop.evolako.rs) — бронь, запрос по модели, запрос от компании и «Сообщить мне»: имя, номер телефона или e-mail, город, если ты его укажешь, выбранные товары и количество, нужен ли монтаж, сообщение, а для запроса от компании — название компании и PIB. Используем их только чтобы подтвердить цену и срок, ответить на запрос и подготовить предложение.",
+   "sr": "Prodavnica (shop.evolako.rs) — rezervacija, upit za model, upit firme i „Obavesti me“: ime, broj telefona ili e-mail, grad ako ga upišeš, izabrani proizvodi i količina, da li želiš i ugradnju, poruka, a za upit firme i naziv firme i PIB. Koristimo ih samo da bismo potvrdili cenu i rok, odgovorili na upit i pripremili ponudu."
+  },
   "1em1aj2": {
    "ru": "Установка зарядок для электромобилей с учётом MID",
    "sr": "Ugradnja punjača za električna vozila sa MID merenjem"
@@ -388,6 +396,10 @@
   "1fhqpr9": {
    "ru": "Общая инфраструктура со стойками: 536.000–843.000 RSD",
    "sr": "Zajednička infrastruktura sa stubovima: 536.000–843.000 RSD"
+  },
+  "1fr1k72": {
+   "ru": "Мы можем изменить условия; действующая версия всегда на этой странице. Применяется право Республики Сербия; споры рассматривает суд в Нови-Саде. Действует с: 29.10.2026.",
+   "sr": "Uslove možemo izmeniti; važeća verzija je uvek na ovoj stranici. Primenjuje se pravo Republike Srbije; za sporove je nadležan sud u Novom Sadu. Važi od: 29.10.2026."
   },
   "1g2ihem": {
    "ru": "Evolako на объекте",
@@ -497,6 +509,10 @@
    "ru": "Короткие новости, которые меняют домашнюю зарядку в Сербии: цены на электричество, правила для домов и гаражей, субсидии и новости Evolako — с источником и датой.",
    "sr": "Kratke vesti koje menjaju punjenje kod kuće u Srbiji: cene struje, propisi za zgrade i garaže, subvencije i novosti u Evolako, sa izvorom i datumom."
   },
+  "1kw4xur": {
+   "ru": "Мы обновляем политику по мере необходимости; действующая версия всегда на этой странице. Действует с: 29.10.2026.",
+   "sr": "Politiku ažuriramo po potrebi; važeća verzija je uvek na ovoj stranici. Važi od: 29.10.2026."
+  },
   "1kwz1dm": {
    "ru": "С кодом рекомендации: 4 месяца расчёта, мониторинга и сервиса за 0 RSD. Проверь свой гараж за полминуты.",
    "sr": "Uz kod preporuke: 4 meseca obračuna, nadzora i servisa za 0 RSD. Proveri svoju garažu za pola minuta."
@@ -568,6 +584,10 @@
   "1pb2mil": {
    "ru": "Если что-то сломалось, выезд без очереди: 72 ч — Белград, Нови-Сад, Воеводина; в других местах срок согласуем в переписке.",
    "sr": "Ako nešto zapne, izlazak na teren bez čekanja u redu: 72 h u Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci."
+  },
+  "1pdn7qr": {
+   "ru": "предприниматель ANDREI SMEKHOV PR NOVI SAD, работающий под обозначением Evolako («Evolako», «мы»), Kopernikova 56, 21000 Novi Sad, Сербия, регистрационный номер 68853834, налоговый номер (PIB) 116047038. Контакт: hello@evolako.com.",
+   "sr": "preduzetnik ANDREI SMEKHOV PR NOVI SAD, koji posluje pod oznakom Evolako („Evolako“, „mi“), Kopernikova 56, 21000 Novi Sad, matični broj 68853834, PIB 116047038. Kontakt: hello@evolako.com."
   },
   "1phvavj": {
    "ru": "Место с усиленной розеткой стоит 39.000 RSD, с wallbox 11 кВт — 104.000 RSD; оба варианта — с MID-счётчиком и базовым монтажом рядом с распределительным щитом, цены итоговые. Калькулятор добавит общую инфраструктуру для вашего объекта и покажет ориентировочный диапазон.",
@@ -705,6 +725,10 @@
    "ru": "Напиши населённый пункт — город или село",
    "sr": "Upiši mesto — grad ili selo"
   },
+  "1x17u7f": {
+   "ru": "Технические данные о посещении (без cookie): какую страницу ты открыл, откуда пришёл, какие у тебя устройство и браузер, из какой ты страны и как быстро загрузилась страница. Их собирает Cloudflare Web Analytics, только в общей статистике, без слежки за отдельными посетителями. Когда ты отправляешь форму, сайт проверяет, что её отправил не бот: скрытое поле, которое заполняют только боты, и ограничение числа форм с одного IP-адреса, без cookie (IP-адрес для этого ни в какую базу не записывается).",
+   "sr": "Tehnički podaci o poseti — bez kolačića: koju stranicu si otvorio, odakle si došao, tip uređaja i pregledača, zemlja i brzina učitavanja. Beleži ih Cloudflare Web Analytics, samo zbirno i bez praćenja pojedinaca. Kada šalješ formu, sajt proverava da je nije poslao bot: skriveno polje koje popunjavaju samo botovi i ograničenje broja formi sa iste IP adrese, bez kolačića (IP adresa se za to ne upisuje ni u kakvu bazu)."
+  },
   "1x2bklf": {
    "ru": "Опубликованные условия операционного лизинга не упоминают ни зарядку, ни электричество. Чья зарядка, когда машину возвращают, как учитывается электричество и что спросить у лизинговой компании.",
    "sr": "Objavljeni uslovi operativnog lizinga ne pominju punjač ni struju. Čiji je punjač kad se auto vrati, kako se meri struja i šta pitati lizing kuću."
@@ -837,6 +861,10 @@
    "ru": "Заявка по рекомендации отправлена",
    "sr": "Preporuka prijava success"
   },
+  "6gm3hr": {
+   "ru": "ANDREI SMEKHOV PR NOVI SAD (Evolako) · Kopernikova 56, 21000 Novi Sad, Сербия · регистрационный номер 68853834 · налоговый номер (PIB) 116047038",
+   "sr": "ANDREI SMEKHOV PR NOVI SAD (Evolako) · Kopernikova 56, 21000 Novi Sad · matični broj 68853834 · PIB 116047038"
+  },
   "6oapzv": {
    "ru": "Из чего складывается цена места для зарядки в доме, отеле или компании: комплект с MID-счётчиком, общая часть, подписка и примеры итоговых цен.",
    "sr": "Šta ulazi u cenu mesta za punjenje u zgradi, hotelu i firmi: paket sa MID brojilom, zajednički deo, pretplata i primeri konačnih cena."
@@ -884,6 +912,10 @@
   "8m65z7": {
    "ru": "Расчёт с отчётом, мониторинг, сервис вне очереди, проверка перед зимой, продлённая гарантия и перенос при переезде. 990 RSD/мес, без обязательств.",
    "sr": "Obračun sa izveštajem, nadzor, prioritetni servis, zimsku proveru, produženu garanciju i prenos pri selidbi. 990 RSD/mes, bez obaveza."
+  },
+  "8tmry4": {
+   "ru": "Копию запроса из магазина Cloudflare хранит 90 дней — как резерв, если пересылка к нам не удалась; после этого она удаляется сама.",
+   "sr": "Kopiju upita iz prodavnice Cloudflare čuva 90 dana, kao rezervu ako prosleđivanje do nas ne uspe; posle toga se sama briše."
   },
   "8v8hy0": {
    "ru": "Цены в примерах посчитаны этим калькулятором. Цены итоговые, без НДС: предприниматель не плательщик НДС.",
@@ -1081,6 +1113,10 @@
    "ru": "Суммы в примерах ориентировочные: для типовых условий и без подписки. Цены итоговые, без НДС: предприниматель не плательщик НДС.",
    "sr": "Primeri su okvirni proračuni za tipične uslove, bez pretplate. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
   },
+  "i03rz3": {
+   "ru": "Эта политика объясняет, какие персональные данные мы собираем на сайте evolako.rs, в магазине shop.evolako.rs, в Мой Evolako (app.evolako.rs) и в приложении Evolako, зачем мы их собираем, сколько храним и какие права у тебя есть по сербскому Закону о защите персональных данных („ZZPL“).",
+   "sr": "Ova politika objašnjava koje podatke o ličnosti prikupljamo na sajtu evolako.rs, u prodavnici shop.evolako.rs, u Moj Evolako (app.evolako.rs) i u aplikaciji Evolako, zašto ih prikupljamo, koliko ih čuvamo i koja prava imaš po Zakonu o zaštiti podataka o ličnosti („ZZPL“)."
+  },
   "i2wn3m": {
    "ru": "Наш голос в юридических и официальных разговорах на сербском. Гонорар по договорённости.",
    "sr": "Naš glas u pravnim i formalnim razgovorima na srpskom. Honorar po dogovoru."
@@ -1205,6 +1241,10 @@
    "ru": "например, Чачак или Футог",
    "sr": "npr. Čačak ili Futog"
   },
+  "p50a1n": {
+   "ru": "Надёжные обработчики, которые оказывают нам услуги: хостинг сайта и магазина, приём форм, статистика посещений без cookie, защита форм от ботов и пересылка новых запросов (Cloudflare; до 28.10.2026 сайт и формы работали на Webflow), база данных и вход в Мой Evolako (Supabase, сервер в ЕС — Франкфурт), анонимная статистика использования приложения (PostHog, регион ЕС — Франкфурт), отправка писем и Письма Evolako (Resend, регион ЕС — Ирландия), электронная почта (Spaceship) и внутреннее уведомление нашей команды о новом запросе (Telegram). Часть обработчиков обрабатывает данные за пределами Сербии; передача происходит с мерами защиты, предусмотренными ZZPL (страны с надлежащим уровнем защиты или стандартные договорные положения).",
+   "sr": "Pouzdani obrađivači koji nam pružaju usluge: hosting sajta i prodavnice, prijem formi, statistika poseta bez kolačića, zaštita formi od botova i prosleđivanje novih upita (Cloudflare; do 28.10.2026 sajt i forme bili su na Webflow-u), baza podataka i prijava u Moj Evolako (Supabase, server u EU — Frankfurt), anonimna statistika korišćenja aplikacije (PostHog, region EU — Frankfurt), slanje mejlova i Evolako pisma (Resend, region EU — Irska), elektronska pošta (Spaceship) i interno obaveštenje našeg tima o novom upitu (Telegram). Pojedini obrađivači podatke obrađuju van Srbije; prenos se vrši uz mere zaštite predviđene ZZPL (zemlje sa primerenim nivoom zaštite ili standardne ugovorne klauzule)."
+  },
   "p6vlns": {
    "ru": "Электрики с лицензией, а по подписке — мониторинг и сервис вне очереди.",
    "sr": "Licencirani električari, a uz pretplatu nadzor i prioritetni servis."
@@ -1224,6 +1264,10 @@
   "pttt79": {
    "ru": "Зарядка с MID-счётчиком там, где служебная машина стоит ночью, — у сотрудника дома или на парковке компании, по всей Сербии. Оценка на месте стоит 2.990 RSD с НДС и засчитывается в стоимость установки; отвечаем в течение 48 часов.",
    "sr": "Punjač sa MID brojilom na mestu gde službeni auto stoji noću — kod zaposlenog ili na parkingu firme, u celoj Srbiji. Procena na licu mesta košta 2.990 RSD sa PDV-om i uračunava se u cenu ugradnje; javljamo se u roku od 48h."
+  },
+  "qappzg": {
+   "ru": "ANDREI SMEKHOV PR NOVI SAD · Kopernikova 56, 21000 Novi Sad · рег. номер 68853834 · налоговый номер 116047038",
+   "sr": "ANDREI SMEKHOV PR NOVI SAD · Kopernikova 56, 21000 Novi Sad · MB 68853834 · PIB 116047038"
   },
   "qdjylr": {
    "ru": "Гость приезжает вечером, а утром машина заряжена: wallbox 11 кВт с MID-счётчиком на каждом месте, по открытым ценам с НДС.",
@@ -1260,6 +1304,10 @@
   "ru35d8": {
    "ru": "Как увеличить разрешённую мощность в EDS: когда это нужно, какие документы, что ты платишь разово, а что ежемесячно, сколько это занимает и что делать, если EDS задерживает.",
    "sr": "Kako se povećava odobrena snaga kod EDS-a: kada ti treba, koja dokumenta, šta plaćaš jednokratno, a šta mesečno, koliko traje i šta ako EDS kasni."
+  },
+  "s2g7yo": {
+   "ru": "Сайт evolako.rs ведёт предприниматель ANDREI SMEKHOV PR NOVI SAD, Kopernikova 56, 21000 Novi Sad, Сербия, регистрационный номер 68853834, налоговый номер (PIB) 116047038, работающий под обозначением Evolako («Evolako»). Пользуясь сайтом, ты принимаешь эти условия.",
+   "sr": "Sajt evolako.rs vodi preduzetnik ANDREI SMEKHOV PR NOVI SAD, Kopernikova 56, 21000 Novi Sad, matični broj 68853834, PIB 116047038, koji posluje pod oznakom Evolako („Evolako“). Korišćenjem sajta prihvataš ove uslove."
   },
   "s3ekq2": {
    "ru": "Итого около 1.003.000–1.229.000 RSD, без земляных работ",
@@ -1380,6 +1428,10 @@
   "x9m7hu": {
    "ru": "Для зарядки дома достаточно 11 кВт: зарядке на 22 кВт нужно 32 А на фазу — больше, чем есть у квартиры, а большинство машин принимают не больше 11 кВт.",
    "sr": "Za punjenje kod kuće dovoljno je 11 kW: punjač od 22 kW traži 32 A po fazi, više nego što stan ima, a većina auta prima najviše 11 kW."
+  },
+  "xb413r": {
+   "ru": "ANDREI SMEKHOV PR NOVI SAD · Kopernikova 56, 21000 Novi Sad · рег. номер 68853834 · налоговый номер 116047038 · hello@evolako.com",
+   "sr": "ANDREI SMEKHOV PR NOVI SAD · Kopernikova 56, 21000 Novi Sad · MB 68853834 · PIB 116047038 · hello@evolako.com"
   },
   "xe2yvj": {
    "ru": "Рассылка",

@@ -558,7 +558,9 @@ def translate_jsonld(obj, tr, lang, site, slug, missing, keep):
     NON_TEXT = {'@context', '@type', 'applicationCategory', 'availability', 'availableLanguage', 'citation',
                 'dateModified', 'datePublished', 'email', 'foundingDate', 'highPrice', 'image', 'knowsLanguage',
                 'lowPrice', 'offerCount', 'operatingSystem', 'price', 'priceCurrency', 'sameAs', 'unitCode',
-                'contactType', 'telephone', 'logo', 'contentUrl', 'thumbnailUrl', 'position', 'width', 'height'}
+                'contactType', 'telephone', 'logo', 'contentUrl', 'thumbnailUrl', 'position', 'width', 'height',
+                # the legal entity on the home page (APR, 26.10.2026): names and numbers, never translated
+                'legalName', 'taxID', 'streetAddress', 'postalCode', 'addressLocality', 'addressCountry'}
     URL_KEYS = {'url', 'item', 'mainEntityOfPage'}
     root_ids = {site + '/#org', site + '/#organization', site + '/#website'}
 
