@@ -1,0 +1,277 @@
+{
+ "page": "punjenje-elektricnog-automobila-kod-kuce",
+ "slug": "/punjenje-elektricnog-automobila-kod-kuce",
+ "tone": "ti",
+ "kind": "article",
+ "seo": {
+  "title": "Punjenje električnog automobila kod kuće | Evolako",
+  "description": "Šta ti treba za punjenje električnog automobila kod kuće, koliko traje na utičnici i na wallbox-u od 11 kW i koliko košta struja noću.",
+  "og_title": "Punjenje električnog automobila kod kuće: šta ti treba, koliko košta i koliko traje",
+  "og_description": "Tri načina punjenja kod kuće, koliko kilometara dobiješ za noć, koliko struja podiže račun i šta proveriti u garaži pre ugradnje."
+ },
+ "hero": {
+  "kicker": "Vodič",
+  "h1": "Punjenje električnog automobila kod kuće: šta ti treba, koliko košta i koliko traje",
+  "lead": "Za punjenje električnog automobila kod kuće treba ti mesto za parkiranje sa sopstvenom linijom struje. Ispravna šuko utičnica za noć daje oko 108 km, pojačana utičnica do oko 180 km, a wallbox od 11 kW puni auto do jutra.",
+  "updated": "@auto"
+ },
+ "card": {
+  "title": "Punjenje električnog auta kod kuće",
+  "text": "Šta ti treba, koliko traje punjenje preko noći i koliko auto podiže račun za struju."
+ },
+ "sections": [
+  {
+   "type": "article",
+   "id": "tekst",
+   "blocks": [
+    {
+     "p": "Auto kod kuće obično stoji celu noć, pa ne treba ti brzo punjenje kao na putu. Treba ti sigurno mesto koje svake noći vrati onoliko kilometara koliko voziš danju."
+    },
+    {
+     "p": [
+      "Ovaj vodič daje kratke odgovore na glavna pitanja i vodi te do detaljnih vodiča za svako od njih. Ako već znaš gde parkiraš, prvo vidi šta dozvoljava ",
+      {
+       "a": "tvoja garaža",
+       "href": "/proveri-svoju-garazu"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Tri načina punjenja kod kuće"
+    },
+    {
+     "p": "Kod kuće auto puniš na jedan od tri načina: na običnoj šuko utičnici, na pojačanoj utičnici sa namenskom linijom ili na wallbox-u. Razlikuju se po snazi, a time i po tome koliko kilometara dobiješ za noć."
+    },
+    {
+     "table": {
+      "head": [
+       "Način",
+       "Snaga",
+       "Za 1 sat",
+       "Za noć od 8 sati"
+      ],
+      "rows": [
+       [
+        "Šuko utičnica, 10 A",
+        "2,3 kW",
+        "oko 13,5 km",
+        "oko 108 km"
+       ],
+       [
+        "Pojačana utičnica",
+        "2,3–3,7 kW",
+        "do oko 22 km",
+        "do oko 180 km"
+       ],
+       [
+        "Wallbox, trofazno",
+        "11 kW",
+        "oko 60 km",
+        "pun auto"
+       ]
+      ]
+     }
+    },
+    {
+     "note": "Računica je za potrošnju od 17 kWh na 100 km, koliko troši većina kompaktnih auta, i pre gubitaka pri punjenju. ADAC je na kućnoj utičnici merio gubitke od 12,7 do 24,2%, a na wallbox-u od 11 kW od 5,1 do 7,0%."
+    },
+    {
+     "p": [
+      "ADAC kućnu utičnicu vidi kao rešenje za nuždu i savetuje struju od 10 A ili manje, jer dugo punjenje greje stare kontakte. Kada je utičnica bezbedna i šta da proveriš, piše u vodiču o ",
+      {
+       "a": "punjenju na šuko utičnicu",
+       "href": "/punjenje-preko-suko-uticnice"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Šta ti treba: mesto, linija i snaga stana"
+    },
+    {
+     "p": "Prvo ti treba stalno parking mesto, u garaži, na dvorištu ili na mestu u zgradi koje koristiš samo ti. Punjač ili utičnica ide na zid ili stub pored tog mesta."
+    },
+    {
+     "p": "Drugo je namenska linija od razvodne table do mesta, sa svojim osiguračem i FID zaštitom. Na nju se ne vezuju drugi potrošači. Produžni kabl iz stana, razdelnik ili adapter nisu zamena za takvu liniju."
+    },
+    {
+     "p": "Treće je odobrena snaga. Po Uredbi o uslovima isporuke i snabdevanja, kad drugačija snaga nije odobrena, za trofazni priključak to je 17,25 kW, a za monofazni 5,75 kW. Wallbox od 11 kW traži trofazni priključak, a pojačana utičnica radi i na monofaznom."
+    },
+    {
+     "p": [
+      "Punjač od 22 kW za stan uglavnom nema smisla, jer traži više struje nego što stan sme da uzme, a mnogi auti primaju najviše 11 kW. Računicu za tvoj auto vidi u vodiču ",
+      {
+       "a": "11 ili 22 kW",
+       "href": "/punjac-11-ili-22-kw"
+      },
+      "."
+     ]
+    },
+    {
+     "p": [
+      "Ako je snaga stana mala, pomaže punjač sa upravljanjem snagom, koji smanji punjenje kad uključiš šporet ili bojler. Kada ipak treba veća snaga i kako se traži, piše u vodiču o ",
+      {
+       "a": "povećanju snage kod EDS-a",
+       "href": "/povecanje-snage-struje-eds"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Koliko traje punjenje zavisi od toga koliko voziš"
+    },
+    {
+     "p": "Za 30 km dnevno auto potroši oko 5 kWh, a za 50 km oko 8,5 kWh. Pojačana utičnica to vrati za nekoliko sati niže tarife, pa ujutru imaš pun dnevni domet."
+    },
+    {
+     "p": "Pun auto od skoro prazne baterije je druga priča. VW ID.3 Pro sa baterijom od 59 kWh na wallbox-u od 11 kW napuni se za oko 6,5 sati, a na šuko utičnici od 2,3 kW za to treba više od jednog dana."
+    },
+    {
+     "p": "Zato je dovoljno da noć pokrije običan dan. Pojačana utičnica odgovara ako dnevno voziš do oko 100 km. Wallbox ima smisla ako voziš više, ako često stigneš kući sa skoro praznom baterijom ili ako puni više auta."
+    },
+    {
+     "h2": "Koliko košta struja za punjenje"
+    },
+    {
+     "p": "EPS računa cenu po zonama prema ukupnoj mesečnoj potrošnji domaćinstva: do 350 kWh je zelena zona, od 351 do 1.200 kWh plava, a preko toga crvena. Auto lako prebaci domaćinstvo u plavu zonu."
+    },
+    {
+     "p": "Veća razlika je između tarifa. U svakoj zoni energija u nižoj tarifi košta četvrtinu više tarife. Niža tarifa traje osam sati: u Beogradu od 24 do 8, u Vojvodini od 23 do 7, a u centralnoj Srbiji od 22 do 6 časova."
+    },
+    {
+     "p": [
+      "Za 30 km dnevno auto iz mreže uzme oko 180 kWh mesečno. Ako je domaćinstvo u plavoj zoni, to noću košta oko 1.030 RSD, a danju oko 3.540 RSD. Primeri za 50 i 80 km dnevno su u vodiču ",
+      {
+       "a": "koliko auto podiže račun za struju",
+       "href": "/koliko-elektricni-auto-podize-racun-za-struju"
+      },
+      "."
+     ]
+    },
+    {
+     "p": [
+      "Najviše štedi tajmer koji punjenje pokrene tek u nižoj tarifi. Kako se podešava u autu ili na punjaču, piše u vodiču ",
+      {
+       "a": "kako da auto puni samo noću",
+       "href": "/punjenje-nocu-tajmer"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Koliko košta punjač sa ugradnjom"
+    },
+    {
+     "p": "Cena zavisi od opreme i od puta kabla od razvodne table do mesta. Kratka linija pored table je najjeftinija, a duža trasa kroz garažu ili zgradu traži više kabla i rada, pa se cena zna tek posle pregleda."
+    },
+    {
+     "p": [
+      "Kod Evolako cena paketa obuhvata opremu i osnovnu ugradnju pored razvodne table, do 2 m kabla, sa FID zaštitom i automatskim osiguračem. START, pojačana utičnica sa MID brojilom, košta 39.000 RSD, a WALLBOX od 11 kW od 94.000 RSD, sa MID brojilom 104.000 RSD. Sve što ide preko osnovne ugradnje vidiš u ponudi posle procene, a pakete na stranici ",
+      {
+       "a": "paketi i cene",
+       "href": "/paketi-i-cene"
+      },
+      "."
+     ]
+    },
+    {
+     "p": "Sama ugradnja traje jedan radni dan. Ako treba odluka skupštine stambene zajednice, od prijave do prvog punjenja obično prođe 4–10 nedelja."
+    },
+    {
+     "h2": "U zgradi: čije brojilo i čija saglasnost"
+    },
+    {
+     "p": "U zajedničkoj garaži utičnica je obično na zajedničkom brojilu zgrade, pa tvoje punjenje plaćaju svi stanari. To je čest razlog spora na skupštini."
+    },
+    {
+     "p": "Posebno MID brojilo na tvom mestu meri samo punjenje tvog auta. Sa njim stambenoj zajednici vraćaš tačan trošak, bez procene."
+    },
+    {
+     "p": [
+      "Za radove u zajedničkim delovima zgrade obično treba odluka skupštine ili saglasnost, zavisno od toga šta se menja. Kratke odgovore o saglasnosti zgrade i MID brojilu imaš na stranici ",
+      {
+       "a": "česta pitanja",
+       "href": "/cesta-pitanja"
+      },
+      "."
+     ]
+    },
+    {
+     "p": "Ako garažu iznajmljuješ, pre ugradnje treba ti pisana saglasnost vlasnika garaže. Radove u razvodnoj tabli u svakom slučaju radi ovlašćeni električar."
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "id": "izvori",
+   "h2": "Izvori",
+   "items": [
+    {
+     "title": "ADAC — punjenje električnog automobila kod kuće, na wallbox-u i na javnoj stanici",
+     "url": "https://www.adac.de/rund-ums-fahrzeug/elektromobilitaet/laden/faq-elektroauto-laden/"
+    },
+    {
+     "title": "ADAC — studija gubitaka pri punjenju na utičnici i wallbox-u",
+     "url": "https://www.adac.de/rund-ums-fahrzeug/elektromobilitaet/laden/ladeverluste-elektroauto-studie/"
+    },
+    {
+     "title": "EV Database — potrošnja energije električnih automobila",
+     "url": "https://ev-database.org/cheatsheet/energy-consumption-electric-car"
+    },
+    {
+     "title": "EV Database — VW ID.3 Pro, baterija i punjenje na 11 kW",
+     "url": "https://ev-database.org/car/2213/Volkswagen-ID3-Pro"
+    },
+    {
+     "title": "Uredba o uslovima isporuke i snabdevanja električnom energijom, čl. 18 i 19 — odobrena snaga",
+     "url": "https://www.paragraf.rs/propisi/uredba_o_uslovima_isporuke_i_snabdevanja_elektricnom_energijom.html"
+    },
+    {
+     "title": "Danas — novi cenovnik struje po tarifama i zonama od 1. oktobra 2025.",
+     "url": "https://www.danas.rs/vesti/ekonomija/poskupljenje-struje-cenovnik-racuni-tarife/"
+    },
+    {
+     "title": "EPS kalkulator — cene, naknade, akciza i PDV na računu za struju",
+     "url": "https://www.epskalkulator.rs/"
+    },
+    {
+     "title": "N1 — Kako da znam kad je jeftina struja, 19.08.2026.",
+     "url": "https://n1info.rs/biznis/kako-da-znam-kad-je-jeftina-struja/"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "cta",
+   "h2": "Proveri šta može tvoja garaža",
+   "text": "Evolako START je pojačana utičnica sa MID brojilom, 2,3–3,7 kW i do oko 180 km za jednu noć, za 39.000 RSD (konačna cena). WALLBOX od 11 kW košta od 94.000 RSD, a sa MID brojilom 104.000 RSD. Procena na licu mesta je 2.990 RSD i uračunava se u cenu ugradnje.",
+   "button": {
+    "label": "Proveri svoju garažu",
+    "href": "/proveri-svoju-garazu"
+   }
+  },
+  {
+   "type": "links",
+   "id": "srodni",
+   "h2": "Pročitaj i ovo",
+   "items": [
+    {
+     "title": "Punjenje auta na šuko utičnicu",
+     "text": "Koliko puni obična utičnica, kada je bezbedna i kada ti treba namenska linija.",
+     "href": "/punjenje-preko-suko-uticnice"
+    },
+    {
+     "title": "11 ili 22 kW: koliko snage treba kućnom punjaču",
+     "text": "Koliko kW prima tvoj auto i zašto je za noć dovoljno 11 kW ili manje.",
+     "href": "/punjac-11-ili-22-kw"
+    },
+    {
+     "title": "Koliko auto podiže račun za struju",
+     "text": "Koliko kWh auto uzme mesečno i koliko to košta noću i danju po zonama.",
+     "href": "/koliko-elektricni-auto-podize-racun-za-struju"
+    }
+   ]
+  }
+ ]
+}

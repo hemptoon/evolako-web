@@ -1,0 +1,277 @@
+{
+ "page": "punjenje-elektricnog-automobila-kod-kuce",
+ "slug": "/punjenje-elektricnog-automobila-kod-kuce",
+ "tone": "ti",
+ "kind": "article",
+ "seo": {
+  "title": "Charging an electric car at home | Evolako",
+  "description": "What you need to charge an electric car at home, how long it takes on a socket and on an 11 kW wallbox, and what night-rate power costs.",
+  "og_title": "Charging an electric car at home: what you need, what it costs and how long it takes",
+  "og_description": "Three ways to charge at home, how many kilometers you get overnight, how much charging adds to your bill and what to check in your garage first."
+ },
+ "hero": {
+  "kicker": "Vodič",
+  "h1": "Charging an electric car at home: what you need, what it costs and how long it takes",
+  "lead": "To charge an electric car at home, you need a parking spot with its own power circuit. A sound Schuko socket gives about 108 km overnight, a heavy-duty socket up to about 180 km, and an 11 kW wallbox fills the car by morning.",
+  "updated": "@auto"
+ },
+ "card": {
+  "title": "Charging an electric car at home",
+  "text": "What you need, how long overnight charging takes and how much a car adds to your power bill."
+ },
+ "sections": [
+  {
+   "type": "article",
+   "id": "tekst",
+   "blocks": [
+    {
+     "p": "At home a car usually sits all night, so you don't need fast charging like on the road. You need a safe spot that gives back every night as many kilometers as you drive by day."
+    },
+    {
+     "p": [
+      "This guide gives short answers to the main questions and points you to a detailed guide for each. If you already know where you park, first see what ",
+      {
+       "a": "your garage allows",
+       "href": "/proveri-svoju-garazu"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Three ways to charge at home"
+    },
+    {
+     "p": "At home you charge in one of three ways: from a regular Schuko socket, from a heavy-duty socket on a dedicated circuit, or from a wallbox. They differ in power, and so in how many kilometers you get overnight."
+    },
+    {
+     "table": {
+      "head": [
+       "Method",
+       "Power",
+       "Per hour",
+       "Per 8-hour night"
+      ],
+      "rows": [
+       [
+        "Schuko socket, 10 A",
+        "2.3 kW",
+        "about 13.5 km",
+        "about 108 km"
+       ],
+       [
+        "Heavy-duty socket",
+        "2.3–3.7 kW",
+        "up to about 22 km",
+        "up to about 180 km"
+       ],
+       [
+        "Wallbox, three-phase",
+        "11 kW",
+        "about 60 km",
+        "full car"
+       ]
+      ]
+     }
+    },
+    {
+     "note": "The math assumes 17 kWh per 100 km, what most compact cars use, before charging losses. ADAC measured losses of 12.7 to 24.2% at a household socket and 5.1 to 7.0% at an 11 kW wallbox."
+    },
+    {
+     "p": [
+      "ADAC treats a household socket as an emergency option and advises 10 A or less, because long charging heats old contacts. When a socket is safe and what to check is in the guide on ",
+      {
+       "a": "charging from a Schuko socket",
+       "href": "/punjenje-preko-suko-uticnice"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "What you need: a spot, a circuit and enough power"
+    },
+    {
+     "p": "First you need a permanent parking spot, in a garage, a yard or a space in your building that only you use. The charger or socket goes on the wall or a post next to that spot."
+    },
+    {
+     "p": "Second is a dedicated circuit from the distribution board to the spot, with its own breaker and RCD protection. No other appliances are connected to it. An extension cord from the apartment, a splitter or an adapter cannot replace such a circuit."
+    },
+    {
+     "p": "Third is the approved power. Under the Regulation on supply conditions, when no other power has been approved, it is 17.25 kW for a three-phase connection and 5.75 kW for a single-phase one. An 11 kW wallbox needs a three-phase connection, while a heavy-duty socket also works on single-phase."
+    },
+    {
+     "p": [
+      "A 22 kW charger rarely makes sense for an apartment, because it draws more current than the apartment may take, and many cars accept at most 11 kW. See the math for your car in the guide ",
+      {
+       "a": "11 or 22 kW",
+       "href": "/punjac-11-ili-22-kw"
+      },
+      "."
+     ]
+    },
+    {
+     "p": [
+      "If your approved power is low, a charger with power management helps: it slows charging when you turn on the stove or the water heater. When you do need more power and how to request it is in the guide on ",
+      {
+       "a": "increasing your power with EDS",
+       "href": "/povecanje-snage-struje-eds"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "How long charging takes depends on how much you drive"
+    },
+    {
+     "p": "For 30 km a day a car uses about 5 kWh, and for 50 km about 8.5 kWh. A heavy-duty socket puts that back in a few hours of the lower tariff, so in the morning you have your full daily range."
+    },
+    {
+     "p": "A full car from a nearly empty battery is another story. A VW ID.3 Pro with a 59 kWh battery charges in about 6.5 hours on an 11 kW wallbox, while a 2.3 kW Schuko socket needs more than a day for that."
+    },
+    {
+     "p": "So it is enough for one night to cover a normal day. A heavy-duty socket suits you if you drive up to about 100 km a day. A wallbox makes sense if you drive more, often come home with a nearly empty battery, or charge more than one car."
+    },
+    {
+     "h2": "What the power for charging costs"
+    },
+    {
+     "p": "EPS prices power by zones based on the household's total monthly use: up to 350 kWh is the green zone, 351 to 1,200 kWh the blue zone, and above that the red zone. A car easily moves a household into the blue zone."
+    },
+    {
+     "p": "The bigger difference is between tariffs. In every zone, energy at the lower tariff costs a quarter of the higher tariff. The lower tariff lasts eight hours: in Belgrade from midnight to 8, in Vojvodina from 23 to 7, and in central Serbia from 22 to 6."
+    },
+    {
+     "p": [
+      "For 30 km a day a car takes about 180 kWh a month from the grid. If the household is in the blue zone, that costs about 1,030 RSD at night and about 3,540 RSD by day. Examples for 50 and 80 km a day are in the guide on ",
+      {
+       "a": "how much a car adds to your power bill",
+       "href": "/koliko-elektricni-auto-podize-racun-za-struju"
+      },
+      "."
+     ]
+    },
+    {
+     "p": [
+      "The biggest saving comes from a timer that starts charging only at the lower tariff. How to set it in the car or on the charger is in the guide on ",
+      {
+       "a": "making your car charge only at night",
+       "href": "/punjenje-nocu-tajmer"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "What a charger with installation costs"
+    },
+    {
+     "p": "The price depends on the equipment and on the cable route from the distribution board to the spot. A short circuit next to the board is the cheapest, while a longer route through a garage or building needs more cable and work, so the price is known only after an inspection."
+    },
+    {
+     "p": [
+      "At Evolako, the package price covers the equipment and a basic installation next to the distribution board, up to 2 m of cable, with RCD protection and a circuit breaker. START, a heavy-duty socket with a MID meter, costs 39,000 RSD, and the 11 kW WALLBOX from 94,000 RSD, or 104,000 RSD with a MID meter. Anything beyond the basic installation is in the quote after the site check, and the packages are on the page ",
+      {
+       "a": "packages and prices",
+       "href": "/paketi-i-cene"
+      },
+      "."
+     ]
+    },
+    {
+     "p": "The installation itself takes one working day. If a decision of the building's residents' assembly is needed, it usually takes 4–10 weeks from sign-up to the first charge."
+    },
+    {
+     "h2": "In a building: whose meter and whose consent"
+    },
+    {
+     "p": "In a shared garage the socket is usually on the building's common meter, so all residents pay for your charging. That is a common cause of disputes at the assembly."
+    },
+    {
+     "p": "A separate MID meter at your spot measures only your car's charging. With it you pay the residents' association back the exact cost, without estimates."
+    },
+    {
+     "p": [
+      "Work in the common parts of a building usually needs an assembly decision or consent, depending on what changes. Short answers about building consent and the MID meter are on the page ",
+      {
+       "a": "frequently asked questions",
+       "href": "/cesta-pitanja"
+      },
+      "."
+     ]
+    },
+    {
+     "p": "If you rent the garage, you need the owner's written consent before installation. Work in the distribution board is always done by a licensed electrician."
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "id": "izvori",
+   "h2": "Izvori",
+   "items": [
+    {
+     "title": "ADAC — charging an electric car at home, at a wallbox and at a public station",
+     "url": "https://www.adac.de/rund-ums-fahrzeug/elektromobilitaet/laden/faq-elektroauto-laden/"
+    },
+    {
+     "title": "ADAC — study of charging losses at a socket and a wallbox",
+     "url": "https://www.adac.de/rund-ums-fahrzeug/elektromobilitaet/laden/ladeverluste-elektroauto-studie/"
+    },
+    {
+     "title": "EV Database — energy consumption of electric cars",
+     "url": "https://ev-database.org/cheatsheet/energy-consumption-electric-car"
+    },
+    {
+     "title": "EV Database — VW ID.3 Pro, battery and 11 kW charging",
+     "url": "https://ev-database.org/car/2213/Volkswagen-ID3-Pro"
+    },
+    {
+     "title": "Regulation on the conditions of electricity delivery and supply, art. 18 and 19 — approved power",
+     "url": "https://www.paragraf.rs/propisi/uredba_o_uslovima_isporuke_i_snabdevanja_elektricnom_energijom.html"
+    },
+    {
+     "title": "Danas — new electricity price list by tariffs and zones from October 1, 2025",
+     "url": "https://www.danas.rs/vesti/ekonomija/poskupljenje-struje-cenovnik-racuni-tarife/"
+    },
+    {
+     "title": "EPS calculator — prices, fees, excise and VAT on the power bill",
+     "url": "https://www.epskalkulator.rs/"
+    },
+    {
+     "title": "N1 — How to know when power is cheap, 08/19/2026",
+     "url": "https://n1info.rs/biznis/kako-da-znam-kad-je-jeftina-struja/"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "cta",
+   "h2": "Check what your garage can do",
+   "text": "Evolako START is a heavy-duty socket with a MID meter, 2.3–3.7 kW and up to about 180 km in one night, for 39,000 RSD (final price). The 11 kW WALLBOX costs from 94,000 RSD, or 104,000 RSD with a MID meter. The site check is 2,990 RSD and counts toward the installation price.",
+   "button": {
+    "label": "Check your garage",
+    "href": "/proveri-svoju-garazu"
+   }
+  },
+  {
+   "type": "links",
+   "id": "srodni",
+   "h2": "Pročitaj i ovo",
+   "items": [
+    {
+     "title": "Charging your car from a Schuko socket",
+     "text": "How fast a regular socket charges, when it is safe and when you need a dedicated circuit.",
+     "href": "/punjenje-preko-suko-uticnice"
+    },
+    {
+     "title": "11 or 22 kW: how much power a home charger needs",
+     "text": "How many kW your car accepts and why 11 kW or less is enough overnight.",
+     "href": "/punjac-11-ili-22-kw"
+    },
+    {
+     "title": "How much a car adds to your power bill",
+     "text": "How many kWh a car takes per month and what that costs at night and by day in each zone.",
+     "href": "/koliko-elektricni-auto-podize-racun-za-struju"
+    }
+   ]
+  }
+ ]
+}
