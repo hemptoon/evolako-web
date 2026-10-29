@@ -1,0 +1,5 @@
+{"mode": "collect", "items": {
+ "iocharger-mini-11-kw": {"pages": ["https://www.iocharger.com/multiple-colors-7kw-11kw-ocpp-1-6j-2-0-1-wifi-bluetooth-mini-smart-ev-charger/"], "direct": []},
+ "easee-charge-max": {"pages": ["https://easee.com/en/home-charging/easee-charge-max/"], "direct": []},
+ "wallbox-pulsar-max-11kw": {"pages": ["https://wallbox.com/en_us/pulsar-max"], "direct": []}
+}}

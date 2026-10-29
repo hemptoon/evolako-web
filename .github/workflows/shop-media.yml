@@ -1,0 +1,36 @@
+# Shop images for shop.evolako.rs: collect candidate photos from official manufacturer pages,
+# then cut out, square and export the selected ones. Runs only on this branch, only when
+# media/request.json changes. Results are committed back to the branch (no deploy, no secrets).
+name: Shop media
+on:
+  push:
+    branches: [shop-media]
+    paths: [media/request.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: shop-media
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+      - name: Install
+        run: |
+          python3 -m pip install --quiet --user pillow imagehash playwright "rembg[cpu]" onnxruntime
+          python3 -m playwright install --with-deps chromium > /dev/null
+      - name: Run
+        run: |
+          MODE=$(python3 -c "import json;print(json.load(open('media/request.json'))['mode'])")
+          echo "mode: $MODE"
+          if [ "$MODE" = collect ]; then python3 media/collect.py; else python3 media/process.py; fi
+      - name: Commit results
+        run: |
+          git config user.name "shop-media bot"
+          git config user.email "shop-media@users.noreply.github.com"
+          git add media/candidates media/sheets media/out media/qa 2>/dev/null || true
+          git commit -q -m "Shop media: results of $(python3 -c "import json;print(json.load(open('media/request.json'))['mode'])") ($GITHUB_RUN_ID)" || { echo "nothing new"; exit 0; }
+          for i in 1 2 3; do git pull -q --rebase origin shop-media && git push -q origin HEAD:shop-media && break; sleep 5; done
