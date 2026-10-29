@@ -1,0 +1,9 @@
+== iocharger-mini-11-kw
+   https://www.iocharger.com/multiple-colors-7kw-11kw-ocpp-1-6j-2-0-1-wifi-bluetooth-mini-smart-ev-charger/ 135 urls
+  kept 14
+== easee-charge-max
+   https://easee.com/en/home-charging/easee-charge-max/ 4 urls
+  kept 1
+== wallbox-pulsar-max-11kw
+   https://wallbox.com/en_us/pulsar-max 0 urls
+  kept 0
