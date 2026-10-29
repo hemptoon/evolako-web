@@ -81,9 +81,12 @@ apart). Whoever ties the templates to a package or an offer now says they are fr
 
 **Deploy 5 (29.10.2026):** the quiz (`/proveri-svoju-garazu`, `/preporuka`) asks «Gde je parking?» — one field for
 the place, town or village, instead of four regions. `tools/naselja_kviz.py` turns `data/naselja-srbija.json` (the
-4709 naselja of the Republički zavod za statistiku, census 2022; no coordinates) into `public/kviz-naselja.json`
-(~82 KB, ~28 KB gzip), which the quiz loads only when the field gets focus; typing is matched without diacritics and
-in Cyrillic, suggestions read «naselje — opština», synonyms (city districts, other spellings) come from `--syn`. The
+4709 naselja of the Republički zavod za statistiku, census 2022; no coordinates) and `data/naselja-sinonimi.json`
+(city districts and quarters, city municipalities, spelling variants; names from sr.wikipedia city-quarter lists)
+into `public/kviz-naselja.json` (~89 KB, ~31 KB gzip), which the quiz loads only when the field gets focus; typing is
+matched without diacritics, in Serbian or Russian Cyrillic (j folded: «Крагуевац», «Кралево»), suggestions read
+«naselje — opština», a district «Zemun → Beograd» (ranked with its city, so before a village of the same name). How
+the data was made, sources and terms: `tools/naselja/README.txt`. The
 zone the bot gets in «Kviz grad» (beograd / novisad / vojvodina / ostatak) is computed from the place, the place
 itself goes in «Adresa» (after the street when the street flow asks for it), and the result says 72 h inside the zone,
 «termin dogovaramo u poruci» elsewhere. The media kit PDFs are made from the page by `tools/mediakit_pdf.py` and served

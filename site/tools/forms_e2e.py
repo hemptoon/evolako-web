@@ -157,6 +157,10 @@ SCENARIOS.append(dict(SCENARIOS[1], id='kviz-futog-ru', mode='ru', dist_path='/r
                       steps=quiz(('tip', 'svoja'), ('mesto', 'futog', 'Futog'), ('struja', 'blizu')) + SCENARIOS[1]['steps'][4:],
                       expect=dict(SCENARIOS[1]['expect'], **{'Kviz grad': 'novisad', 'Adresa': 'Futog — Novi Sad',
                                                               'Jezik': 'ru'})))
+# a city district (synonym): the zone and «Adresa» come from the naselje it belongs to
+SCENARIOS.append(dict(SCENARIOS[1], id='kviz-zemun',
+                      steps=quiz(('tip', 'svoja'), ('mesto', 'zemun', 'Zemun'), ('struja', 'blizu')) + SCENARIOS[1]['steps'][4:],
+                      expect=dict(SCENARIOS[1]['expect'], **{'Kviz grad': 'beograd', 'Adresa': 'Zemun → Beograd'})))
 
 
 # ------------------------------------------------------------------------------------------------ processes

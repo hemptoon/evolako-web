@@ -1107,13 +1107,13 @@ a.kv-mfree:hover{color:#fff}
    for(var i=0;i<s.length;i++){var c=s.charAt(i);o+=Object.prototype.hasOwnProperty.call(CY,c)?CY[c]:c;}
    o=o.replace(/đ/g,'d').replace(/[čć]/g,'c').replace(/š/g,'s').replace(/ž/g,'z');
    if(o.normalize){o=o.normalize('NFD').replace(/[̀-ͯ]/g,'');}
-   return o.replace(/dj/g,'d').replace(/[^a-z0-9]+/g,' ').replace(/^ +| +$/g,'');
+   return o.replace(/dj/g,'d').replace(/j/g,'').replace(/[^a-z0-9]+/g,' ').replace(/^ +| +$/g,'');
   }
-  function lbl(r){return r.d+(r.o&&nz(r.o)!==nz(r.d)?' — '+r.o:'');}
+  function lbl(r){return r.to?r.d+' → '+r.to:r.d+(r.o&&nz(r.o)!==nz(r.d)?' — '+r.o:'');}
   function load(){
    if(rows||busy)return;busy=true;
    fetch(URL,{credentials:'same-origin'}).then(function(x){if(!x.ok)throw x.status;return x.json();}).then(function(j){
-    ops=j.o;zs=j.z;var oz=j.oz;rows=j.d.map(function(r){var k=[nz(r[0])];if(r[2]){k.push(nz(r[2]));}return {k:k,d:r[0],o:ops[r[1]],z:zs[oz[r[1]]]};}).concat((j.s||[]).map(function(r){return {k:[nz(r[0])],d:r[2]||r[0],o:ops[r[1]],z:zs[oz[r[1]]]};}));
+    ops=j.o;zs=j.z;var oz=j.oz;rows=j.d.map(function(r,i){var k=[nz(r[0])];if(r[2]){k.push(nz(r[2]));}return {k:k,d:r[0],o:ops[r[1]],z:zs[oz[r[1]]],i:i};});/* sinonimi (delovi grada, gradske opštine, varijante): odmah iza svog naselja */(j.s||[]).forEach(function(s){var t=rows[s[1]];if(!t){return;}var k=[nz(s[0])];if(s[3]){k.push(nz(s[3]));}rows.push({k:k,d:s[2]?t.d:s[0],o:t.o,z:t.z,i:s[1]+0.5,to:s[2]?'':lbl(t)});});rows.sort(function(a,b){return a.i-b.i;});
     busy=false;if(inp&&inp.value)upd();
    }).catch(function(){busy=false;});
   }
@@ -1141,7 +1141,7 @@ a.kv-mfree:hover{color:#fff}
     return;}
    cur.forEach(function(r,i){var li=document.createElement('li');li.id='kv-m-o'+i;li.setAttribute('role','option');li.setAttribute('aria-selected','false');
     var b=document.createElement('b');b.textContent=r.d;li.appendChild(b);
-    if(r.o&&nz(r.o)!==nz(r.d)){var s=document.createElement('span');s.textContent=' — '+r.o;li.appendChild(s);}
+    var x=r.to?' → '+r.to:(r.o&&nz(r.o)!==nz(r.d)?' — '+r.o:'');if(x){var s=document.createElement('span');s.textContent=x;li.appendChild(s);}
     li.addEventListener('mousedown',function(e){e.preventDefault();pick(r);});list.appendChild(li);});
    list.hidden=false;inp.setAttribute('aria-expanded','true');
   }

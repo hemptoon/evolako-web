@@ -1,0 +1,409 @@
+# Naselja Srbije bez AP Kosovo i Metohija — отчёт о сборке `naselja-srbija.json`
+
+Сборка 29.10.2026. Все цифры ниже взяты из `build_stats.json`, который `build.py` пишет при каждом запуске.
+
+## 1. Итог
+
+- **4709 записей = 4709 официальных naselja** (RZS 1201IND01, данные на 2025 год, обновлено 27.01.2026: Republika Srbija 6158 − AP Kosovo i Metohija 1449).
+- Число совпадает с официальным в каждом из 4 регионов, в каждом из 25 округов (с Gradom Beogradom) и в каждой из 163 opština / gradskih opština, где есть свои naselja (раздел 6).
+- Население по переписи 2022 есть у всех 4709 записей, `null` нет. Сумма 6 647 003 равна итогу RZS по Сербии без Косово.
+- Координаты есть у всех 4709 записей, и каждая точка лежит внутри официальной границы своего naselja (раздел 7.6).
+- Размер: `naselja-srbija.json` — 744 467 байт, gzip −9 — 120 956 байт.
+
+## 2. Файлы
+
+| Файл | Что это |
+|---|---|
+| `naselja-srbija.json` | основной файл: массив из 4709 объектов, по одному на строку, UTF-8 без BOM |
+| `naselja-srbija.with-id.json` | то же плюс поле `id` = matični broj naselja RZS (у объединённых Beograd и Niš — наименьший код их частей: 791016 и 792012) |
+| `naselja-srbija.no-osm.json` | вариант без координат из OpenStreetMap: у 213 записей `lat`/`lon` = `null` |
+| `naselja-sinonimi.json` | синонимы для поиска: gradske opštine, кварталы, варианты написания (раздел 13) |
+| `build_sinonimi.py`, `kvartovi_browser.js`, `sinonimi_stats.json`, `raw/kvartovi_wiki.psv` | сборка синонимов, сбор кварталов в браузере, статистика и журнал, входной список кварталов |
+| `build_stats.json` (+ `.with-id`, `.no-osm`) | машинный отчёт: все счётчики и журнал каждой правки по коду naselja |
+| `build_browser.js` | шаг 1: чтение RZS и Wikidata в браузере |
+| `crosscheck_osm_browser.js` | шаги 1b–1d: сверка координат с OSM (точки, рамки границ, попадание в полигон) |
+| `build.py` | шаг 2: локальная детерминированная сборка, сверяет SHA-256 входных таблиц |
+| `raw/*.psv`, `raw/SHA256SUMS.browser` | входные таблицы, перенесённые из браузера, и их хэши, посчитанные в браузере |
+
+## 3. Формат записи
+
+```json
+{"n":"Borča","c":"Борча","o":"Palilula (Beograd)","ok":"Grad Beograd","r":"Beograd","lat":44.86667,"lon":20.46667,"p":51862,"t":"grad"}
+```
+
+- `n` — официальное название латиницей с диакритикой. Это латинский регистр RZS; он же совпадает с транслитерацией кириллического названия (проверено для всех 4709).
+- `c` — официальное название кириллицей (RZS).
+- `o` — opština / grad / gradska opština латиницей, как в шифарнике RZS.
+  - Одноимённые общины различаются уточнением: `Palilula (Beograd)`, `Palilula (Niš)`.
+  - В городах с gradskim opštinama (Beograd, Novi Sad, Niš, Požarevac, Užice, Vranje) `o` — это gradska opština: Grocka, Pantelej, Kostolac, Sevojno…
+  - У объединённых записей `Beograd` и `Niš` поле `o` = `Beograd` / `Niš`.
+- `ok` — upravni okrug латиницей; Белград = `Grad Beograd`.
+- `r` — регион (NSTJ 2): `Beograd` | `Vojvodina` | `Šumadija i Zapadna Srbija` | `Južna i Istočna Srbija`.
+- `lat`, `lon` — WGS84, 5 знаков после запятой (около 1 м).
+- `p` — население по переписи 2022; `0` означает, что в 2022 году жителей нет (24 naselja, раздел 7.4).
+- `t` — `grad` / `selo` (правило в разделе 7.5).
+
+**Сортировка:** сначала `p` по убыванию, затем название по сербской азбуке (č, ć после c; dž, đ после d; lj после l; nj после n; š после s; ž в конце), затем `o`.
+
+**Уникальный ключ** — пара (`n`, `o`): в одной общине нет двух naselja с одинаковым названием. Одно `n` не уникально (раздел 8).
+
+## 4. Источники
+
+1. **RZS — Republički zavod za statistiku**, портал открытых данных https://opendata.stat.gov.rs/odata/. REST API: `https://opendata.stat.gov.rs/data/WcfJsonRestService.Service1.svc/dataset/<ID>/<lang>/json` (lang 1 = кириллица, 2 = латиница). Прочитано 29.10.2026.
+   - `SIFNAS` — šifarnik naselja: matični broj, название (кир./лат.), община;
+   - `SIFOPS` — šifarnik opština i gradova с привязкой к NSTJ-oblasti (= upravni okrug);
+   - `NSTJ` — номенклатура статистических территориальных единиц;
+   - `3104020201IND01` — Popis 2022: население по возрасту и полу по naseljima, плюс тип naselja (gradsko / ostalo) и статус показателя;
+   - `31010101IND01` — население по переписям 1948–2022 по naseljima (контрольная сверка; обновлено 12.02.2024);
+   - `1201IND01` — površina i broj naselja: официальное число naselja (последний год 2025, обновлено 27.01.2026).
+2. **Wikidata** (CC0), https://query.wikidata.org/ — элементы со свойством P13776 «Serbian settlement ID» (= matični broj RZS): координаты P625, сербская подпись, P131 → P3727. Прочитано 29.10.2026.
+3. **OpenStreetMap** (© OpenStreetMap contributors, ODbL 1.0), Overpass API https://overpass-api.de/api/interpreter — точки населённых пунктов и границы naselja (`admin_level=9`, `ref:RS:naselje` = код RZS, `population:census:2022`; границы импортированы из данных RGZ — Republički geodetski zavod). Прочитано 29.10.2026.
+
+## 5. Запросы
+
+**RZS:** `SIFNAS/1`, `SIFNAS/2`, `SIFOPS/1`, `SIFOPS/2`, `NSTJ/2`, `3104020201IND01/2`, `31010101IND01/2`, `1201IND01/2`. Фильтры:
+- перепись — `IDStarGrupa = '0'`, `IDPol = 0` (все возрасты, оба пола);
+- 1201 — последний год (2025), `IDVrPod = 2` (число naselja);
+- ряд 1948–2022 — год 2022.
+
+Коды `9xxxxx` (Косово и Метохия) отбрасываются при чтении.
+
+**Wikidata (SPARQL):**
+```sparql
+SELECT ?item ?id ?coord WHERE { ?item wdt:P13776 ?id . OPTIONAL { ?item wdt:P625 ?coord } }
+SELECT ?item ?id ?srl WHERE { ?item wdt:P13776 ?id . ?item rdfs:label ?srl FILTER(LANG(?srl) = "sr") }
+SELECT ?item ?id ?mid WHERE { ?item wdt:P13776 ?id . ?item wdt:P131 ?m . ?m wdt:P3727 ?mid }
+SELECT ?item ?name ?coord WHERE { VALUES ?name { "Београд"@sr "Ниш"@sr "Нови Сад"@sr }
+  ?art schema:about ?item ; schema:isPartOf <https://sr.wikipedia.org/> ; schema:name ?name . ?item wdt:P625 ?coord }
+```
+
+**Overpass:**
+```
+[out:json][timeout:180];area["ISO3166-1"="RS"]["admin_level"="2"]->.a;
+node["place"~"^(city|town|village|hamlet|suburb|isolated_dwelling|locality|neighbourhood|quarter)$"](area.a);out body qt;
+[out:json][timeout:180];rel["ref:RS:naselje"];out tags bb;
+[out:csv(c,r;false;"|")][timeout:180];is_in(<lat>,<lon>);make m c="<код>",r=set(t["ref:RS:naselje"]);out;     (по 80 точек в запросе)
+[out:json][timeout:180];rel["ref:RS:naselje"~"^(<код>|<код>|…)$"];out geom;                                     (по 40 границ, только для 291 naselja)
+```
+
+## 6. Сверка с официальными цифрами
+
+Всего 4709 = 4709. По регионам и округам совпадение полное.
+
+| Регион | В файле | RZS 1201 |
+|---|---:|---:|
+| Beograd | 157 | 157 |
+| Vojvodina | 467 | 467 |
+| Šumadija i Zapadna Srbija | 2112 | 2112 |
+| Južna i Istočna Srbija | 1973 | 1973 |
+
+| Округ | В файле | RZS 1201 |
+|---|---:|---:|
+| Grad Beograd | 157 | 157 |
+| Zapadnobački | 37 | 37 |
+| Južnobanatski | 94 | 94 |
+| Južnobački | 77 | 77 |
+| Severnobanatski | 50 | 50 |
+| Severnobački | 45 | 45 |
+| Srednjobanatski | 55 | 55 |
+| Sremski | 109 | 109 |
+| Zlatiborski | 439 | 439 |
+| Kolubarski | 218 | 218 |
+| Mačvanski | 228 | 228 |
+| Moravički | 206 | 206 |
+| Pomoravski | 191 | 191 |
+| Rasinski | 296 | 296 |
+| Raški | 359 | 359 |
+| Šumadijski | 175 | 175 |
+| Borski | 90 | 90 |
+| Braničevski | 189 | 189 |
+| Zaječarski | 173 | 173 |
+| Jablanički | 336 | 336 |
+| Nišavski | 282 | 282 |
+| Pirotski | 214 | 214 |
+| Podunavski | 59 | 59 |
+| Pčinjski | 363 | 363 |
+| Toplički | 267 | 267 |
+
+**Общины.** У 161 из 163 единиц число naselja равно 1201IND01. Две оставшиеся — gradske opštine Novi Sad (11) и Petrovaradin (5): по ним 1201 даёт только итог Grada Novog Sada, 16 = 11 + 5. `Beograd` и `Niš` RZS считает по одному разу на уровне города (Grad Beograd 157, Grad Niš 71) — так же, как в файле.
+
+**Население.** Сумма 6 647 003 = итог переписи 2022 по Сербии без Косово. По каждому naselju перепись совпала с рядом 1948–2022 (0 расхождений) и с тегом `population:census:2022` на границе RGZ в OSM (4720 из 4720 статистических единиц, у которых этот тег есть).
+
+## 7. Расхождения и как они решены
+
+### 7.1 Белград и Ниш
+
+RZS делит городское naselje между gradskim opštinama:
+- Beograd — 10 статистических частей (коды 791016–791113: Voždovac, Vračar, Zvezdara, Zemun, Novi Beograd, Palilula, Rakovica, Savski venac, Stari grad, Čukarica);
+- Niš — 4 части (Pantelej, Crveni krst, Medijana, Palilula).
+
+Официальное число naselja считает каждый город один раз, поэтому части объединены в одну запись:
+- `Beograd`: p = 1 197 714;
+- `Niš`: p = 178 976.
+
+Координаты взяты у элемента Wikidata города (Q3711, Q129259), `t` = `grad`. Novi Sad у RZS — одно naselje (802824), ничего не объединялось.
+
+**Важно для автокомплита.** Следующие названия — не отдельные naselja:
+- внутри `Beograd`: Zemun, Novi Beograd, Vračar, Zvezdara, Voždovac, Čukarica, Savski venac, Stari grad, Batajnica, Zemun Polje, Karaburma, Altina, Železnik, Kotež, Višnjica, Žarkovo, Bežanija, Medaković;
+- внутри `Novi Sad`: Liman, Detelinara, Klisa, Telep, Grbavica;
+- внутри `Niš`: Medijana, Pantelej, Crveni Krst.
+
+Без таблицы синонимов (`naselja-sinonimi.json`, раздел 13) такие клиенты ничего не найдут. Ещё опаснее совпадения с настоящими сёлами в других местах:
+
+| Название | В файле это |
+|---|---|
+| Rakovica | село в Čajetina (43 жителя) |
+| Palilula | село в Svrljig (26) |
+| Banjica | село в Čačak (243) |
+| Mirijevo | село в Žabari (290) |
+| Krnjača | село в Priboj (102) |
+| Konjarnik | село в Žitorađa (61) |
+| Bele Vode | село в Novi Pazar |
+| Resnik | сёла в Kragujevac, Sokobanja и Babušnica |
+
+Отдельными записями остаются самостоятельные naselja: Borča, Ovča, Padinska Skela, Kaluđerica, Sremčica, Rušanj, Ugrinovci, Surčin, Dobanovci, Petrovaradin, Sremska Kamenica, Futog, Veternik, Kać, Niška Banja и т. п.
+
+### 7.2 Названия
+
+Названия сверены с тремя независимыми списками: латинский регистр RZS, подписи Wikidata, названия границ RGZ (в OSM). Найдено 25 расхождений RZS с границами RGZ.
+
+**4 расхождения внутри самого RZS** (кириллический регистр против латинского). Взята латинская форма, её подтверждают граница RGZ и Wikidata:
+- Đerekare: кириллица «Ђерекари» → «Ђерекаре»;
+- Kovizle: «Ковизла» → «Ковизле»;
+- Despotovac: «Деспотовац (варошица)» → «Деспотовац» (другого Деспотовца в общине нет);
+- Petrovac na Mlavi: «Петровац» → «Петровац на Млави» (так он ещё и отличается от 5 сёл Petrovac).
+
+**2 римские цифры, набранные кириллическими «И».** Zasavica I и Zasavica II: в кириллице теперь «Засавица I / II» с латинской I, как в RGZ.
+
+**3 латинские буквы-двойники внутри кириллицы.** Стануловиће, Власаница, Куршумлијска Бања — исправлены; без этого поиск кириллицей их бы не нашёл.
+
+**13 вариантов написания.** Оставлено написание RZS (официальный статистический регистр); второй вариант добавлен в синонимы поиска:
+
+| RZS (в файле) | Граница RGZ / OSM | Община |
+|---|---|---|
+| Dobroljubci | Dobroljupci | Aleksandrovac |
+| Gornje Punoševce | Gornje Punuševce | Vranje |
+| Donje Punoševce | Donje Punuševce | Vranje |
+| Klašnjice | Klašnice | Vranje |
+| Ostra Glava | Oštra Glava | Vranje |
+| Ribnice | Ribince | Vranje |
+| Mrče | Mrča | Kuršumlija |
+| Pevaštica | Pavaštica | Kuršumlija |
+| Prekorađe | Prekorađa | Kuršumlija |
+| Trpeza | Trpeze | Kuršumlija |
+| Bukuloram | Bukoloram | Prokuplje |
+| Grgetek | Grgeteg | Irig |
+| Vojvoda Zimonjić | Zimonić | Kanjiža |
+
+**3 расхождения только в регистре букв** в названиях частей Белграда и Ниша («Savski Venac» / «Savski venac» и т. п.); после объединения они не важны.
+
+В Воеводине оставлены официальные сербские названия (Bačka Topola, Mali Iđoš, Kanjiža…); венгерские и словацкие варианты не используются.
+
+**31 название с уточнением в скобках** оставлено как в официальном регистре: Mladenovac (varoš) / (selo), Lajkovac (varoš) / (selo), Topola (varošica) / (selo), Mionica, Osečina, Lučani, Guča, Lapovo (varošica / selo), Kosjerić (varoš / selo), Grdelica (varoš / selo), Predejane (varoš / selo), Varvarin (selo), Resavica (selo), Dolac (naselje) / (selo), Baluga (Ljubićska) / (Trnavska), Oraovica (kod Grdelice) / (kod Crkovnice), Maćedonce (Retkocersko). Ровно «Mladenovac» в файле нет; названия без скобок добавлены в синонимы (раздел 13).
+
+### 7.3 Где данных RZS не хватило
+
+- **Sevojno (741850).** В таблице переписи по naseljima строки нет. Gradska opština Sevojno состоит из одного этого naselja, поэтому взят итог общины — 6426 (совпадает с тегом границы RGZ), тип gradsko.
+- **7 статистических единиц без элемента Wikidata** — все они части Белграда и Ниша; после объединения координаты есть у всех записей.
+
+### 7.4 Население 0
+
+У 24 naselja в переписи 2022 статус «M»: показатель не может существовать, жителей нет. В файле у них `p = 0`; записи оставлены, потому что naselja официально существуют:
+- Golešnica (Aleksinac), Gornji Rinj (Bela Palanka), Sakulja (Lazarevac), Negovac (Bujanovac), Javorje (Vlasotince), Čestelin (Vranje);
+- Verzar и Prača (Dimitrovgrad), Pričevac и Repušnica (Knjaževac), Vukojevac и Tačevac (Kuršumlija);
+- Mali Borak (Lajkovac), Vilje Kolo (Leskovac), Vučja Lokva, Jova и Smilov Laz (Novi Pazar);
+- Basara (Pirot), Gare (Preševo), Rgaje (Prokuplje), Pokrvenik (Raška), Kolunica (Surdulica), Dumbija (Trgovište), Ostrozub (Crna Trava).
+
+Если они не нужны в интерфейсе — фильтр `p > 0`.
+
+### 7.5 `t` — grad / selo
+
+У RZS нет понятия «город» для naselja, есть «gradska naselja» переписи 2022 (тип G). Правило:
+1. `grad` — все gradska naselja RZS: 167 после объединения Белграда и Ниша.
+2. Плюс 28 центров общин, которые RZS относит к «ostala naselja», но название которых совпадает с названием их общины: Preševo (14 219), Barajevo (8967), Bogatić, Batočina, Mali Iđoš, Koceljeva, Ljubovija, Čajetina, Plandište, Bojnik, Žitorađa, Pećinci, Žagubica, Knić, Varvarin, Trgovište, Sečanj, Vladimirci, Doljevac, Golubac, Rekovac, Gadžin Han, Ražanj, Žabari, Nova Crnja, Merošina, Malo Crniće, Crna Trava.
+3. Всё остальное — `selo`. Сюда попадают и крупные пригороды, которые RZS считает «ostala»: Kaluđerica 28 483, Sremčica 19 434, Veternik 18 849, Nova Pazova 16 115, Ugrinovci 11 859, Kać 11 067. Всего 39 «sela» больше 5000 жителей.
+
+Итого `grad` 195, `selo` 4514. Маленькие официальные gradska naselja оставлены `grad` (13 меньше 1000 жителей, например Divčibare 86, Kuršumlijska Banja 57). Если интерфейсу нужен «размер», надёжнее `p`, чем `t`.
+
+### 7.6 Координаты
+
+Основной источник — Wikidata: P625 элемента с кодом RZS. Каждая точка проверена по официальной границе своего naselja (границы RGZ в OSM, тег `ref:RS:naselje`) в два прохода.
+
+**1. Рамка границы (bbox, допуск около 300 м).** Вне рамки своего naselja оказались 213 точек Wikidata (не считая части Белграда). Обычно это координаты одноимённого села в другом месте:
+- Dublje (Svilajnac) стояло в Мачве, в 150 км;
+- Brezovica (Gornji Milanovac) — в 133 км;
+- Brestovo (Novi Pazar) — в 124 км;
+- всего 51 точка была дальше 10 км, 7 — дальше 50 км.
+
+Чем заменены:
+- точкой OSM этого naselja, если она внутри рамки — 210;
+- центром рамки — 3 (Gornja Slatina, Trnava (Užice), Ljubić (Čačak));
+- ещё у 4 naselja подошла вторая точка того же элемента Wikidata (Mladenovac (selo), Koželj, Aleksandrovac (Negotin), Čenta).
+
+**2. Сам полигон.**
+- 1580 точек лежат в рамке только своего naselja. Naselja покрывают территорию без пропусков, значит такие точки внутри своей границы. Контроль: 280 из них проверены Overpass `is_in`, все 280 внутри.
+- Остальные 3129 точек проверены `is_in`. Каждая попала ровно в одно naselje.
+- 291 точка (6,2 %) лежала в соседнем naselju: в среднем в 1,3 км, p90 2,3 км, максимум 5,8 км. Среди них города: Bor (точка была в Krivelj, 5,8 км), Nova Varoš (в Tikva), Babušnica, Despotovac, Bojnik, Lučani (varošica), Varvarin, Baljevac, Malo Crniće, Sijarinska Banja.
+- Все 291 подтверждены по скачанной геометрии границ. Замена: точка OSM внутри границы — 285, центр рамки, если он внутри границы, — 6. Вторые точки Wikidata и расчётная внутренняя точка не понадобились.
+
+**Итог по координатам.** Все 4709 точек внутри официальной границы своего naselja. Источники:
+- Wikidata — 4206 (4200 основных, 4 вторые точки, 2 точки городов);
+- точки OSM — 494;
+- центр рамки границы RGZ/OSM — 9.
+
+Точки Wikidata и OSM обозначают центр села, а не центр его территории. 9 точек «центр рамки» могут лежать в полях, но внутри границы.
+
+**Сверка Wikidata с OSM для справки:** у 4707 naselja нашлась точка OSM (4692 по тегу wikidata, 15 по названию); медианное расстояние 0,34 км, p95 2,44 км.
+
+**Вариант `no-osm`** — только Wikidata: 213 точек вне рамки стали `null`, 290 точек, не прошедших проверку полигона, оставлены как есть (они в соседнем naselju, в среднем в 1,3 км).
+
+## 8. Повторяющиеся названия (оставлены все)
+
+413 названий встречаются больше одного раза, это 1078 записей. Чаще всего:
+- Novo Selo — 16, Slatina — 13, Kamenica — 11, Bare — 8;
+- Jablanica, Trnava — по 7;
+- Belo Polje, Drenovac, Gradac, Izvor, Lipovac, Čitluk — по 6;
+- по 5: Aleksandrovac, Bistrica, Brestovac, Brezovica, Cerova, Grabovac, Gradište, Jelašnica, Leskovac, Lukovo, Orašac, Petrovac, Planinica, Sibnica, Toponica, Vrelo.
+
+В 82 случаях одноимённые naselja лежат даже в одном округе (например, 3 Buštranje в Pčinjskom, 3 Kovači в Raškom, Novo Selo по 2–3 в пяти округах). Поэтому в подсказке нужно показывать `o` (общину), а не только округ. В пределах одной общины повторов нет.
+
+## 9. Что исключено
+
+- **1449 naselja АК Косово и Метохия:** коды RZS `9xxxxx`, области RS231–RS235 (Kosovska, Kosovsko-mitrovačka, Kosovsko-pomoravska, Pećka, Prizrenska = Kosovski, Kosovskomitrovački, Kosovskopomoravski, Pećki, Prizrenski okrug). Они отбрасываются при чтении, а `build.py` дополнительно проверяет, что их нет.
+- **Больше ничего не исключено:** naselja без жителей оставлены (`p = 0`), дубликаты оставлены.
+- **Не входят по определению:** части городов и кварталы (раздел 7.1) — их нет в официальном списке naselja; для поиска они вынесены в `naselja-sinonimi.json`.
+
+## 10. Как пересобрать
+
+1. Открыть https://opendata.stat.gov.rs/odata/ в браузере, вставить в консоль `build_browser.js` и дождаться `window.NAS`. Таблицы RZS в ZIP разбираются в памяти, на диск ничего не скачивается.
+2. Там же вставить `crosscheck_osm_browser.js`. Шаг 1b запускается сразу; затем `runBboxQuery()`, после появления `window.NBB` — `bboxCheck()`; затем шаг 1d по инструкции в конце файла (`finalPoints()`, `ambiguity()`, `runPip`, `fetchGeo`, `round2Geo()`).
+3. Перенести `window.NAS.tsv`, `.opsTsv`, `.cntTsv`, `window.XCBIG`, `window.BBCHK`, `window.PIPCHK` в `raw/*.psv` и записать их SHA-256 в `raw/SHA256SUMS.browser`.
+4. Запустить `python3 build.py` (при необходимости `--with-id`, `--no-osm`). Скрипт остановится, если хоть один входной файл не совпадёт по хэшу.
+
+При новом выпуске 1201IND01 или новой переписи достаточно повторить шаги 1–4. Правки названий в `build.py` привязаны к кодам; `assert` упадёт, если в регистре что-то изменилось.
+
+Overpass нагружен: 1d шёл около 1,5 часа с 1–2 потоками и экспоненциальной паузой. Это нормально для публичного сервера, ускорять параллелью не стоит.
+
+## 11. Лицензии и подпись
+
+- **RZS:** открытые данные, использование с указанием источника — «Izvor: Republički zavod za statistiku».
+- **Wikidata:** CC0, подпись не обязательна.
+- **OpenStreetMap:** ODbL 1.0. Из OSM в файл попали только координаты 503 записей (раздел 7.6); границы RGZ в OSM использовались для проверки. Это небольшая выборка, но если публиковать сам JSON, правильно добавить «© OpenStreetMap contributors (ODbL)» рядом с источником RZS. Если это нежелательно — `naselja-srbija.no-osm.json`.
+
+## 12. Рекомендации для автокомплита
+
+- Искать одновременно по `n` и `c`, без учёта диакритики (c = č = ć, s = š, z = ž, dj = đ) и регистра; сортировать подсказки по `p`.
+- В подсказке показывать «`n`, `o`»; при повторе названия в разных общинах — и `ok`.
+- Подключить синонимы из `naselja-sinonimi.json` (раздел 13).
+
+## 13. Синонимы (`naselja-sinonimi.json`)
+
+Формат — по объекту на строку:
+
+```json
+{"s":"Batajnica","c":"Батајница","n":"Beograd","o":"Beograd","k":"deo grada"}
+{"s":"Rakovica","c":"Раковица","n":"Beograd","o":"Beograd","k":"gradska opština","trap":true}
+```
+
+- `s` / `c` — синоним латиницей и кириллицей (`s` = транслитерация `c`, проверено для всех).
+- `n` / `o` — целевое naselje ровно как в `naselja-srbija.json`; скрипт проверяет, что пара (`n`, `o`) там есть.
+- `k` — `gradska opština` | `deo grada` | `varijanta`.
+- `trap: true` — такое же название носит реальное naselje в другом месте, и все такие naselja меньше 1000 жителей. Интерфейс должен показывать сначала район города, потом село.
+
+**Итого 420 синонимов** (397 разных написаний), 39 736 байт, gzip −9 — 6 987 байт.
+
+**`gradska opština` — 35.**
+- Все 17 gradskih opština Beograda, 2 — Novog Sada, 5 — Niša, по 2 — Požarevca, Užica и Vranja. Каждая ведёт на своё главное городское naselje: Zemun, Vračar, Novi Beograd, Čukarica… → Beograd; Medijana, Pantelej, Crveni Krst, Palilula → Niš; Mladenovac → Mladenovac (varoš); Barajevo, Lazarevac, Sopot, Kostolac, Sevojno, Vranjska Banja… → одноимённое naselje.
+- Плюс 5 gradskih opština Kragujevca: Aerodrom, Pivara, Stanovo, Stari grad → Kragujevac; Stragari → Stragari. Они есть в статуте города и в sr.wikipedia, но RZS их не ведёт.
+
+**`deo grada` — 349.** Кварталы и части городов:
+
+| Целевое naselje | Синонимов |
+|---|---:|
+| Beograd | 156 |
+| Padinska Skela | 4 |
+| Barajevo | 4 |
+| Surčin | 3 |
+| Ugrinovci | 2 |
+| Beli Potok | 1 |
+| Borča | 1 |
+| Novi Sad | 48 |
+| Petrovaradin | 18 |
+| Sremska Kamenica | 16 |
+| Subotica | 25 |
+| Niš | 24 |
+| Zrenjanin | 18 |
+| Pančevo | 18 |
+| Kragujevac | 11 |
+
+**`varijanta` — 36:**
+- 13 написаний границ RGZ (раздел 7.2);
+- 2 старые формы кириллического регистра RZS (Đerekari, Kovizla);
+- 21 название без скобок (Lajkovac, Lučani, Guča, Topola, Mionica…). «Mladenovac» → (varoš) уже есть как gradska opština, поэтому здесь только → (selo).
+
+Из 31 названия со скобками пропущено 9:
+- Varvarin (selo), Resavica (selo), Maćedonce (Retkocersko) — naselje без скобок есть в той же общине;
+- Topola (selo), Mionica (selo), Dolac (naselje)/(selo), Oraovica ×2 — совпало бы с селом в другой общине, а сами они не городские.
+
+**Источники кварталов** (sr.wikipedia, прочитано 29.10.2026):
+
+| Город | Источник |
+|---|---|
+| Beograd | «Шаблон:Београдска насеља» (градска насеља по gradskim opštinama + приградска) и 17 подкатегорий «Категорија:Насеља у Београду по општинама» |
+| Novi Sad | статья «Градске четврти Новог Сада» (§ Бачки део града јужно и северно од канала ДТД, § Сремски део града) и «Категорија:Градске четврти Новог Сада» |
+| Niš | «Категорија:Градска насеља Ниша» |
+| Subotica | статья «Градске четврти, месне заједнице и приградска насеља Суботице»: § Списак градских четврти; § Списак месних заједница (по документу Gradske uprave Subotice «Списак улица по месним заједницама», 2013) |
+| Zrenjanin | статья «Зрењанин», § Градска насеља |
+| Pančevo | статья «Панчево», § Насеља Панчева (месне заједнице и их части) и «Категорија:Градске четврти Панчева» |
+| Kragujevac | «Категорија:Крагујевачка насеља» и статьи о 5 gradskih opštinama |
+| Kraljevo, Čačak | надёжного структурированного списка кварталов не нашлось — не делались |
+
+**Проверка места.** Для каждого названия взята точка: координаты статьи Wikipedia (212 строк) или объект OSM `place=*` с тем же названием в рамке города (104). Затем проверено, в какой официальной границе naselja лежит точка (геометрия 42 городских naselja RGZ из OSM, проверка попадания в полигон). Синоним получает то naselje, в котором лежит точка. Если точка в селе (отдельном naselju) — квартал не добавлялся.
+
+**Без собственной точки приняты** только названия из явных списков городских кварталов:
+- 19 вложенных пунктов Нового Сада (Stara/Nova Detelinara, Gornja/Donja Klisa, Severni/Južni Telep, части Petrovaradina и Sremske Kamenice) — по родительскому кварталу;
+- 28 — по самому списку: Beograd 12 (только центральные gradske opštine и части Karaburmi), Pančevo 11, Novi Sad 2, Subotica 2, Zrenjanin 1.
+
+**Вручную добавлены 12:**
+- из тех же источников: Depresija, Stara radnička kolonija, Kalenić (Vračar), Kotež (Pančevo), Verušić и Željezničko naselje (Subotica);
+- по проверке точки OSM (`is_in`): Busije и Grmovac → Ugrinovci; Besni Fok, Vrbovski, Široka bara, Preliv → Padinska Skela.
+
+**Что отброшено из 694 кандидатов:**
+- 165 точек вне городских naselja — в основном сёла пригородных общин, они и так отдельные записи;
+- 109 по типу: площади, парки, набережные, развязки, крепость, острова, промзоны, кампус, стадион, «Блок …», нумерованные части вроде «Medaković II», общие слова «Centar», «Bolnica»;
+- 21 совпадение с названием самого naselja;
+- 5 — отдельные naselja того же города;
+- 28 — без точки и не из явного списка;
+- 1 конфликт: Taraiš — статья о хуторе Барајева, а объект OSM того же названия в 18 км от него;
+- 27 дублей объединено.
+
+**Ловушки (`trap: true`) — 44.** Среди них:
+- Rakovica (село в Čajetina) и Palilula (Svrljig) — у обеих Палилул;
+- Banjica (Čačak), Mirijevo (Žabari), Krnjača (Priboj), Konjarnik (Žitorađa), Resnik (Kragujevac, Sokobanja, Babušnica), Bele vode (Novi Pazar);
+- Bistrica (квартал Нового Сада и 5 сёл);
+- Bubanj (Niš: квартал и село в той же Палилуле);
+- Petrovac, Sušica, Beloševac (кварталы Kragujevca);
+- Topola и Mionica (названия без скобок).
+
+Флаг не ставился, если одноимённое naselje больше 1000 жителей — там лучше показывать оба варианта по населению: Crvenka (Kula, 7232) против хутора в Борче, Padina (Kovačica, 4774), Novo Selo (16 сёл), Jevremovac (Šabac, 3390), Kovanluk (Kraljevo, 2033), Aleksandrovo (Nova Crnja, 1835), Sutjeska (Sečanj, 1149).
+
+**Одинаковое название у разных целей — 22 случая**, все записи оставлены:
+- Palilula и Crveni krst (Beograd, Niš);
+- Stari grad (Beograd, Novi Sad, Kragujevac);
+- Trošarina (Beograd, Niš);
+- Šangaj и Železnička kolonija (Beograd, Novi Sad);
+- Novi grad (Beograd, Subotica);
+- Novo naselje (Novi Sad, Subotica);
+- Gornji grad, Donji grad, Kotež и Bela Stena (Beograd, Pančevo);
+- названия без скобок с двумя целями (Lajkovac → varoš / selo и т. п.).
+
+**Сомнения:**
+- 28 названий без собственной точки приняты по списку — их место внутри naselja геометрией не проверено.
+- В Белграде часть «кварталов» — небольшие жилые комплексы (Savograd, Avala grad, Gradić Pejton). Оставлены, потому что они в списке sr.wikipedia.
+- Kraljevo и Čačak не покрыты. Kragujevac — только 11 кварталов из категории (Aerodrom, Pivara, Stanovo — как gradske opštine).
+- `trap` и порог 1000 жителей — договорённость; интерфейс может сам сравнивать население.
+
+**Пересборка:**
+1. Сбор списка кварталов — в браузере, на вкладке https://sr.wikipedia.org/, скриптом `kvartovi_browser.js`: MediaWiki API (`action=parse&prop=wikitext`, `list=categorymembers`, `prop=coordinates`), Overpass `(nwr["place"]["name"](bbox);…);out center tags;` и `rel["ref:RS:naselje"~"^(…)$"];out geom;`.
+2. Результат — `raw/kvartovi_wiki.psv` (372 строки, хэш в `raw/SHA256SUMS.browser`).
+3. Затем `python3 build.py --with-id && python3 build_sinonimi.py`. Журнал всех решений пишется в `sinonimi_stats.json`.
