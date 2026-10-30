@@ -1,0 +1,18 @@
+== iocharger-iocah20-uticnica__pdf
+[0;93m2026-10-30 00:57:16.412237472 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+/home/runner/.local/lib/python3.12/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+  pdf https://www.iocharger.com/wp-content/uploads/2025/12/Smart-AC-Charger-IOCAH20-2025-V1.2.1.pdf 2 images
+  kept 2
+== alfen-eve-single-pro-line__pdf
+  pdf https://eu-assets.contentstack.com/v3/assets/blt08d332658a89f766/blt1fe72218c1e70427/6787d45d36cf7b76cf10f46e/Leaflet_-_Eve_Single_Pro-line_EN.pdf 3 images
+  kept 3
+== abb-terra-ac-w11-kabl__pdf
+  pdf https://library.e.abb.com/public/d31ba4eebb4541c79ac5c1ccde315d79/9AKK107680A2258%20Terra__AC_wallbox_A5_Leaflet%20rev%20C.pdf 2 images
+  kept 2
+== wallbox-pulsar-pro-mid-22__pdf
+  pdf https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15131010/Pulsar_Pro2026_Series_EN_b.pdf 3 images
+  kept 3
+== alpitronic-hyc50__pdf
+  pdf https://flare.shape404.agency/alpitronic/documents/02ab01b8db2e4c0fb30a4abc0f1a4381/EN_HYC50S2_INFO_Product_Data_Sheet_IEC_V1-1.pdf 4 images
+  kept 4
