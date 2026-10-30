@@ -10,6 +10,8 @@ from PIL import Image, ImageDraw, ImageFont
 Image.MAX_IMAGE_PIXELS = 80_000_000
 import imagehash
 from playwright.async_api import async_playwright
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from pdfimg import pdf_images
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 REQ = json.load(open(os.path.join(ROOT, 'request.json'), encoding='utf-8'))
@@ -181,6 +183,36 @@ async def one_item(ctx, item_id, spec):
                 print('  ', pg, len(found), 'urls')
                 urls += [(u, pg) for u in found]
             cands, thumbs, hashes, done = [], [], [], set()
+
+            def keep(c, img, ph):
+                dup = next((i for i, x in enumerate(hashes) if ph - x <= 4), None)
+                if dup is not None:
+                    if c['w'] * c['h'] > cands[dup]['w'] * cands[dup]['h']:
+                        c['n'] = cands[dup]['n']; cands[dup] = c; thumbs[dup] = thumb(img); hashes[dup] = ph
+                    return
+                c['n'] = len(cands) + 1
+                cands.append(c); thumbs.append(thumb(img)); hashes.append(ph)
+
+            for pdf in spec.get('pdfs', []):           # datasheets: embedded renders
+                try:
+                    r = await ctx.request.get(pdf, headers={'User-Agent': UA}, timeout=60000)
+                    if not r.ok:
+                        print('  pdf', r.status, pdf, flush=True); continue
+                    body = await r.body()
+                    n0 = len(cands)
+                    for xref, img in pdf_images(body, MIN_SIDE):
+                        if len(cands) >= MAX_PER_ITEM:
+                            break
+                        try:
+                            w, h, alpha, bg = describe(img)
+                            ph = imagehash.phash(img.convert('RGB'))
+                        except Exception:
+                            continue
+                        keep(dict(url=f'pdf:{pdf}#xref={xref}', w=w, h=h, alpha=alpha, bg=bg, bytes=0, src_page=pdf, sha1=''), img, ph)
+                    print('  pdf', pdf, len(cands) - n0, 'images', flush=True)
+                except Exception as e:
+                    print('  pdf failed', pdf, type(e).__name__, flush=True)
+
             for u, ref in urls:
                 if len(cands) >= MAX_PER_ITEM:
                     break
@@ -200,15 +232,8 @@ async def one_item(ctx, item_id, spec):
                     ph = imagehash.phash(img.convert('RGB'))
                 except Exception:
                     continue
-                dup = next((i for i, x in enumerate(hashes) if ph - x <= 4), None)
-                c = dict(url=got, w=w, h=h, alpha=alpha, bg=bg, bytes=len(body), src_page=ref,
-                         sha1=hashlib.sha1(body).hexdigest()[:12])
-                if dup is not None:
-                    if w * h > cands[dup]['w'] * cands[dup]['h']:
-                        c['n'] = cands[dup]['n']; cands[dup] = c; thumbs[dup] = thumb(img); hashes[dup] = ph
-                    continue
-                c['n'] = len(cands) + 1
-                cands.append(c); thumbs.append(thumb(img)); hashes.append(ph)
+                keep(dict(url=got, w=w, h=h, alpha=alpha, bg=bg, bytes=len(body), src_page=ref,
+                          sha1=hashlib.sha1(body).hexdigest()[:12]), img, ph)
             json.dump(cands, open(os.path.join(ROOT, 'candidates', f'{item_id}.json'), 'w'), indent=1)
             sheet(item_id, cands, thumbs)
             print('  kept', len(cands), flush=True)

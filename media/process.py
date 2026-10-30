@@ -11,6 +11,7 @@ Output media/out/<id>/<k>-1600.webp, -800.webp, -400.webp  (square, transparent 
 import io, json, os, sys, urllib.request
 from collections import deque
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 REQ = json.load(open(os.path.join(ROOT, 'request.json'), encoding='utf-8'))
@@ -90,6 +91,14 @@ def square(img, transparent=True):
 
 
 def get(url, ref):
+    if url.startswith('pdf:'):                       # pdf:<datasheet url>#xref=<n>
+        pdf, xref = url[4:].rsplit('#xref=', 1)
+        rq = urllib.request.Request(pdf, headers={'User-Agent': UA})
+        with urllib.request.urlopen(rq, timeout=90) as r:
+            body = r.read()
+        from pdfimg import pdf_image
+        b = io.BytesIO(); pdf_image(body, int(xref)).save(b, 'PNG')
+        return b.getvalue()
     rq = urllib.request.Request(url, headers={'User-Agent': UA, 'Referer': ref or url})
     with urllib.request.urlopen(rq, timeout=60) as r:
         return r.read()

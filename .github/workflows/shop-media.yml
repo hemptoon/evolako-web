@@ -31,7 +31,7 @@ jobs:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
       - name: Install
         run: |
-          python3 -m pip install --quiet --user pillow imagehash playwright "rembg[cpu]" onnxruntime
+          python3 -m pip install --quiet --user pillow imagehash playwright "rembg[cpu]" onnxruntime pymupdf
           python3 -m playwright install --with-deps chromium > /dev/null
       - name: Run
         run: |
