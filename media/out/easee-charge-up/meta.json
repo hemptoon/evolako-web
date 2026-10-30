@@ -1,0 +1,29 @@
+[
+ {
+  "k": 1,
+  "kind": "keep",
+  "src": "https://easee.com/wp-content/uploads/2024/08/ev-charger_front-gray.png",
+  "page": "https://easee.com/en/products/ev-chargers/charge-up/",
+  "w": 900,
+  "h": 900,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "keep",
+  "src": "https://easee.com/wp-content/uploads/2024/08/ev-charger_side-gray.png",
+  "page": "https://easee.com/en/products/ev-chargers/charge-up/",
+  "w": 900,
+  "h": 900,
+  "crop": null
+ },
+ {
+  "k": 3,
+  "kind": "scene",
+  "src": "https://easee.com/wp-content/uploads/2026/03/mnmt_08.webp",
+  "page": "https://easee.com/en/products/ev-chargers/charge-up/",
+  "w": 1920,
+  "h": 1300,
+  "crop": null
+ }
+]

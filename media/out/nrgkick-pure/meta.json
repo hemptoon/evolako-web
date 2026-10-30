@@ -5,7 +5,8 @@
   "src": "https://nrgkick.com/wp-content/uploads/shop-image-nrgkick-32a-pure.jpg",
   "page": "https://nrgkick.com/en/shop/charging-units/32a/",
   "w": 1000,
-  "h": 1000
+  "h": 1000,
+  "crop": null
  },
  {
   "k": 2,
@@ -13,7 +14,8 @@
   "src": "https://nrgkick.com/wp-content/uploads/32a_5pol-white-background.webp",
   "page": "https://nrgkick.com/en/products/nrgkick/32a/",
   "w": 1500,
-  "h": 1500
+  "h": 1500,
+  "crop": null
  },
  {
   "k": 3,
@@ -21,6 +23,7 @@
   "src": "https://nrgkick.com/wp-content/uploads/shop-image-_nrgkick-pure-32a-charging-unit_V2.webp",
   "page": "https://nrgkick.com/en/shop/charging-units/32a/",
   "w": 2501,
-  "h": 2502
+  "h": 2502,
+  "crop": null
  }
 ]

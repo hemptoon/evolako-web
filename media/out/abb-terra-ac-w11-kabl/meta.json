@@ -1,0 +1,20 @@
+[
+ {
+  "k": 1,
+  "kind": "cut",
+  "src": "https://resources.news.e.abb.com/images/2020/5/20/0/ABB_launch_new_Terra_AC_wallbox_for_EV_charging.jpg",
+  "page": "https://new.abb.com/ev-charging/fr/terra-ac-wallbox",
+  "w": 921,
+  "h": 2048,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "cut",
+  "src": "pdf:https://library.e.abb.com/public/d31ba4eebb4541c79ac5c1ccde315d79/9AKK107680A2258%20Terra__AC_wallbox_A5_Leaflet%20rev%20C.pdf#xref=14",
+  "page": "https://library.e.abb.com/public/d31ba4eebb4541c79ac5c1ccde315d79/9AKK107680A2258%20Terra__AC_wallbox_A5_Leaflet%20rev%20C.pdf",
+  "w": 1757,
+  "h": 1565,
+  "crop": null
+ }
+]

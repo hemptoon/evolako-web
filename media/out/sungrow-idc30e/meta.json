@@ -1,0 +1,20 @@
+[
+ {
+  "k": 1,
+  "kind": "keep",
+  "src": "https://official-oversears-file.sungrowpower.com/news-images/e689103d-3928-4ade-9a51-02cfac3cff35.png",
+  "page": "https://www.sungrowpower.com/en/products/ev-charger/idc30e",
+  "w": 1016,
+  "h": 1016,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "scene",
+  "src": "https://official-oversears-file.sungrowpower.com/page-assets-process/f68eeb16-9d15-4250-99a2-8e15a6750d36.webp",
+  "page": "https://www.sungrowpower.com/en/products/ev-charger/idc30e",
+  "w": 1920,
+  "h": 1250,
+  "crop": null
+ }
+]

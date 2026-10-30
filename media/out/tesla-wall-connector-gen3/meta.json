@@ -1,0 +1,29 @@
+[
+ {
+  "k": 1,
+  "kind": "cut",
+  "src": "https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/CAR_ACCESSORIES/MODEL_S/CHARGING_ADAPTERS/1529455-02-D_0_2000.jpg",
+  "page": "https://shop.tesla.com/en_gb/product/Wall-Connector",
+  "w": 2000,
+  "h": 2000,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "keep",
+  "src": "pdf:https://digitalassets.tesla.com/tesla-contents/image/upload/wall-connector-datasheet-en.pdf#xref=40",
+  "page": "https://digitalassets.tesla.com/tesla-contents/image/upload/wall-connector-datasheet-en.pdf",
+  "w": 1096,
+  "h": 863,
+  "crop": null
+ },
+ {
+  "k": 3,
+  "kind": "scene",
+  "src": "https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/CAR_ACCESSORIES/MODEL_S/CHARGING_ADAPTERS/1529455-02-E_non-Tesla.jpg",
+  "page": "https://shop.tesla.com/en_gb/product/Wall-Connector",
+  "w": 2000,
+  "h": 2000,
+  "crop": null
+ }
+]
