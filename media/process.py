@@ -4,7 +4,7 @@ Input  media/request.json  {"mode": "process", "items": {"<id>": [{"url": ..., "
          kind "cut"   — product on a plain background: cut it out (rembg mask + colour mask from the border)
          kind "keep"  — already transparent: only trim and centre
          kind "scene" — a photo in a setting: no cut-out, square crop, shown after the product shots
-Output media/out/<id>/<k>-1600.webp, -800.webp, -400.webp  (square, transparent for cut/keep)
+Output media/out/<id>/<k>-1440.webp, <k>-720.webp  (square, transparent for cut/keep)
        media/out/<id>/meta.json
        media/qa/<id>.jpg   every result on a light and on a dark background, to spot halos
 """
@@ -16,7 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.abspath(__file__))
 REQ = json.load(open(os.path.join(ROOT, 'request.json'), encoding='utf-8'))
 UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36'
-SIZES = (1600, 800, 400)
+SIZES = (1440, 720)   # two files per photo: the shop's Pages upload stays under 1,000 files
 FILL = 0.86          # the product takes 86 % of the square's longer side
 _session = None
 
@@ -183,9 +183,9 @@ def main():
                     res = square(res)
             except Exception as e:
                 print('  cut failed', s['url'], e); continue
-            big = min(1600, max(800, res.width))   # never blow a small original up past its own size
+            big = min(1440, max(720, res.width))   # never blow a small original up past its own size
             for size in SIZES:
-                z = big if size == 1600 else size
+                z = big if size == 1440 else size
                 r = res.resize((z, z), Image.LANCZOS)
                 r.save(os.path.join(od, f'{k}-{size}.webp'), 'WEBP', quality=88 if kind != 'scene' else 82, method=6)
             meta.append(dict(k=k, kind=kind, src=s['url'], page=s.get('src_page'), w=img.width, h=img.height))
