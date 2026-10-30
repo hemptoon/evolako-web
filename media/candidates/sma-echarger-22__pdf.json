@@ -1,0 +1,35 @@
+[
+ {
+  "url": "pdf:https://files.sma.de/downloads/eCharger-DS-en-20.pdf#xref=182",
+  "w": 1043,
+  "h": 989,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://files.sma.de/downloads/eCharger-DS-en-20.pdf",
+  "sha1": "",
+  "n": 1
+ },
+ {
+  "url": "pdf:https://files.sma.de/downloads/eCharger-DS-en-20.pdf#xref=183",
+  "w": 978,
+  "h": 993,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://files.sma.de/downloads/eCharger-DS-en-20.pdf",
+  "sha1": "",
+  "n": 2
+ },
+ {
+  "url": "pdf:https://files.sma.de/downloads/eCharger-DS-en-20.pdf#xref=203",
+  "w": 518,
+  "h": 620,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 0,
+  "src_page": "https://files.sma.de/downloads/eCharger-DS-en-20.pdf",
+  "sha1": "",
+  "n": 3
+ }
+]

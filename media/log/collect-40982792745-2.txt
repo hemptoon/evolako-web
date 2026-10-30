@@ -1,0 +1,18 @@
+== beny-bcpcm-mid-4g__pdf
+[0;93m2026-10-30 00:57:13.624960656 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+/home/runner/.local/lib/python3.12/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+  pdf https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf 8 images
+  kept 8
+== alfen-eve-single-pro-line-kabl-22__pdf
+  pdf https://eu-assets.contentstack.com/v3/assets/blt08d332658a89f766/blta4f9411e56ab5073/6a38defe58a7df05454b278a/Eve_Single_Datasheet_EN_.pdf 0 images
+  kept 0
+== wallbox-copper-sb-22__pdf
+  pdf https://support.wallbox.com/wp-content/uploads/2022/03/EN_Copper_SB_Datasheet_English.pdf 0 images
+  kept 0
+== sma-echarger-22__pdf
+  pdf https://files.sma.de/downloads/eCharger-DS-en-20.pdf 3 images
+  kept 3
+== abb-terra-54__pdf
+  pdf https://library.e.abb.com/public/e40b6940e9474a019da4584b64e195a2/9AKK107680A3094_Rev_A_Terra_54_EV-Charging_DE_Leaflet_022020.pdf 1 images
+  kept 1

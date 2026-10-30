@@ -1,0 +1,90 @@
+[
+ {
+  "url": "pdf:https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf#xref=52",
+  "w": 804,
+  "h": 907,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf",
+  "sha1": "",
+  "n": 1
+ },
+ {
+  "url": "pdf:https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf#xref=51",
+  "w": 804,
+  "h": 907,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 0,
+  "src_page": "https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf",
+  "sha1": "",
+  "n": 2
+ },
+ {
+  "url": "pdf:https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf#xref=59",
+  "w": 972,
+  "h": 1200,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 0,
+  "src_page": "https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf",
+  "sha1": "",
+  "n": 3
+ },
+ {
+  "url": "pdf:https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf#xref=58",
+  "w": 972,
+  "h": 1200,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf",
+  "sha1": "",
+  "n": 4
+ },
+ {
+  "url": "pdf:https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf#xref=61",
+  "w": 561,
+  "h": 691,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf",
+  "sha1": "",
+  "n": 5
+ },
+ {
+  "url": "pdf:https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf#xref=60",
+  "w": 561,
+  "h": 691,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 0,
+  "src_page": "https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf",
+  "sha1": "",
+  "n": 6
+ },
+ {
+  "url": "pdf:https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf#xref=77",
+  "w": 561,
+  "h": 779,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf",
+  "sha1": "",
+  "n": 7
+ },
+ {
+  "url": "pdf:https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf#xref=76",
+  "w": 561,
+  "h": 779,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 0,
+  "src_page": "https://www.beny.com/wp-content/uploads/2025/11/BENY-Datasheet-2nd-Generation-OCPP-Wall-mounted-AC-EV-Charger-2025.11.04.pdf",
+  "sha1": "",
+  "n": 8
+ }
+]
