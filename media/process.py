@@ -122,8 +122,11 @@ def qa_sheet(item_id, outs):
 
 def main():
     only = os.environ.get('ONLY', '').split(',') if os.environ.get('ONLY') else None
-    for item_id, sel in REQ['items'].items():
+    shard, shards = int(os.environ.get('SHARD', 0)), int(os.environ.get('SHARDS', 1))
+    for i, (item_id, sel) in enumerate(REQ['items'].items()):
         if only and item_id not in only:
+            continue
+        if i % shards != shard:
             continue
         print('==', item_id)
         od = os.path.join(ROOT, 'out', item_id)
@@ -138,14 +141,17 @@ def main():
             except Exception as e:
                 print('  failed', s['url'], e); continue
             kind = s.get('kind', 'cut')
-            if kind == 'scene':
-                res = square(img, transparent=False)
-            else:
-                if kind == 'keep' and img.mode in ('RGBA', 'LA', 'P'):
-                    res = img.convert('RGBA')
+            try:
+                if kind == 'scene':
+                    res = square(img, transparent=False)
                 else:
-                    res = cut(img)
-                res = square(res)
+                    if kind == 'keep' and img.mode in ('RGBA', 'LA', 'P'):
+                        res = img.convert('RGBA')
+                    else:
+                        res = cut(img)
+                    res = square(res)
+            except Exception as e:
+                print('  cut failed', s['url'], e); continue
             big = min(1600, max(800, res.width))   # never blow a small original up past its own size
             for size in SIZES:
                 z = big if size == 1600 else size

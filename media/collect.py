@@ -7,6 +7,7 @@ Nothing is downloaded from retailers: only the pages and direct URLs listed in t
 """
 import asyncio, io, json, os, re, sys, hashlib, urllib.parse
 from PIL import Image, ImageDraw, ImageFont
+Image.MAX_IMAGE_PIXELS = 80_000_000
 import imagehash
 from playwright.async_api import async_playwright
 
@@ -162,25 +163,21 @@ async def fetch(ctx, url, referer):
     return None, None
 
 
-async def main():
-    items = REQ['items']
-    only = os.environ.get('ONLY', '').split(',') if os.environ.get('ONLY') else None
-    os.makedirs(os.path.join(ROOT, 'candidates'), exist_ok=True)
-    report = {}
-    async with async_playwright() as p:
-        browser = await p.chromium.launch()
-        ctx = await browser.new_context(user_agent=UA, viewport={'width': 1440, 'height': 1000}, locale='en-US')
-        for item_id, spec in items.items():
-            if only and item_id not in only:
-                continue
-            print('==', item_id)
+async def one_item(ctx, item_id, spec):
             urls = []
             for d in spec.get('direct', []):
                 urls.append((d, spec['pages'][0] if spec.get('pages') else d))
             for pg in spec.get('pages', []):
                 page = await ctx.new_page()
-                found = await harvest(page, pg)
-                await page.close()
+                try:
+                    found = await asyncio.wait_for(harvest(page, pg), timeout=120)
+                except Exception as e:
+                    print('  page gave up', pg, type(e).__name__, flush=True)
+                    found = []
+                try:
+                    await page.close()
+                except Exception:
+                    pass
                 print('  ', pg, len(found), 'urls')
                 urls += [(u, pg) for u in found]
             cands, thumbs, hashes, done = [], [], [], set()
@@ -197,12 +194,12 @@ async def main():
                     continue
                 try:
                     img = Image.open(io.BytesIO(body)); img.load()
+                    w, h, alpha, bg = describe(img)
+                    if min(w, h) < MIN_SIDE:
+                        continue
+                    ph = imagehash.phash(img.convert('RGB'))
                 except Exception:
                     continue
-                w, h, alpha, bg = describe(img)
-                if min(w, h) < MIN_SIDE:
-                    continue
-                ph = imagehash.phash(img.convert('RGB'))
                 dup = next((i for i, x in enumerate(hashes) if ph - x <= 4), None)
                 c = dict(url=got, w=w, h=h, alpha=alpha, bg=bg, bytes=len(body), src_page=ref,
                          sha1=hashlib.sha1(body).hexdigest()[:12])
@@ -214,10 +211,38 @@ async def main():
                 cands.append(c); thumbs.append(thumb(img)); hashes.append(ph)
             json.dump(cands, open(os.path.join(ROOT, 'candidates', f'{item_id}.json'), 'w'), indent=1)
             sheet(item_id, cands, thumbs)
-            report[item_id] = len(cands)
-            print('  kept', len(cands))
+            print('  kept', len(cands), flush=True)
+            return len(cands)
+
+
+async def main():
+    items = REQ['items']
+    only = os.environ.get('ONLY', '').split(',') if os.environ.get('ONLY') else None
+    shard, shards = int(os.environ.get('SHARD', 0)), int(os.environ.get('SHARDS', 1))
+    os.makedirs(os.path.join(ROOT, 'candidates'), exist_ok=True)
+    rep_path = os.path.join(ROOT, 'candidates', f'_report-{shard}.json')
+    report = {}
+    async with async_playwright() as p:
+        browser = await p.chromium.launch()
+        for i, (item_id, spec) in enumerate(items.items()):
+            if only and item_id not in only:
+                continue
+            if i % shards != shard:
+                continue
+            print('==', item_id, flush=True)
+            ctx = await browser.new_context(user_agent=UA, viewport={'width': 1440, 'height': 1000}, locale='en-US')
+            try:
+                report[item_id] = await asyncio.wait_for(one_item(ctx, item_id, spec), timeout=420)
+            except Exception as e:          # one bad site must not stop the batch
+                print('  item failed', item_id, type(e).__name__, str(e)[:200], flush=True)
+                report[item_id] = 'failed: ' + type(e).__name__
+            finally:
+                try:
+                    await ctx.close()
+                except Exception:
+                    pass
+            json.dump(report, open(rep_path, 'w'), indent=1)
         await browser.close()
-    json.dump(report, open(os.path.join(ROOT, 'candidates', '_report.json'), 'w'), indent=1)
 
 
 if __name__ == '__main__':
