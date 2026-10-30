@@ -1,0 +1,68 @@
+[
+ {
+  "url": "https://caas.phoenixcontact.com/caas/v1/stable/media/124484/full/b1500?format=jpg",
+  "w": 1500,
+  "h": 1500,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 77267,
+  "src_page": "https://www.phoenixcontact.com/en-ch/products/ac-charging-cable-charx-et2cp-3ac20-50mes00p-1285624",
+  "sha1": "015764ff8a6f",
+  "n": 1
+ },
+ {
+  "url": "https://caas.phoenixcontact.com/caas/v1/stable/media/152910/full/b1500?format=jpg",
+  "w": 1500,
+  "h": 703,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 76007,
+  "src_page": "https://www.phoenixcontact.com/en-ch/products/ac-charging-cable-charx-et2cp-3ac20-50mes00p-1285624",
+  "sha1": "1910dc2ea04f",
+  "n": 2
+ },
+ {
+  "url": "https://caas.phoenixcontact.com/caas/v1/stable/media/17374/full/b1500?format=jpg",
+  "w": 1500,
+  "h": 1445,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 80708,
+  "src_page": "https://www.phoenixcontact.com/en-ch/products/ac-charging-cable-charx-et2cp-3ac20-50mes00p-1285624",
+  "sha1": "710613236fa2",
+  "n": 3
+ },
+ {
+  "url": "https://caas.phoenixcontact.com/caas/v1/stable/media/147040/full/b1500?format=jpg",
+  "w": 860,
+  "h": 1500,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 102022,
+  "src_page": "https://www.phoenixcontact.com/en-ch/products/ac-charging-cable-charx-et2cp-3ac20-50mes00p-1285624",
+  "sha1": "43f027599c5c",
+  "n": 4
+ },
+ {
+  "url": "https://caas.phoenixcontact.com/caas/v1/stable/media/24242/full/b1500?format=jpg",
+  "w": 1500,
+  "h": 1007,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 83318,
+  "src_page": "https://www.phoenixcontact.com/en-ch/products/ac-charging-cable-charx-et2cp-3ac20-50mes00p-1285624",
+  "sha1": "bcf4acdd9613",
+  "n": 5
+ },
+ {
+  "url": "https://caas.phoenixcontact.com/caas/v1/stable/media/144506/full/b1500?format=jpg",
+  "w": 1500,
+  "h": 577,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 47074,
+  "src_page": "https://www.phoenixcontact.com/en-ch/products/ac-charging-cable-charx-et2cp-3ac20-50mes00p-1285624",
+  "sha1": "e926b720e8f5",
+  "n": 6
+ }
+]

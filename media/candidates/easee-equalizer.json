@@ -1,0 +1,57 @@
+[
+ {
+  "url": "https://easee.com/wp-content/uploads/2024/05/easee_equalizer.jpeg",
+  "w": 1920,
+  "h": 1080,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 14550,
+  "src_page": "https://easee.com/en/products/accessories/equalizer/",
+  "sha1": "89714c2f2b32",
+  "n": 1
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2024/07/easee_equalizer_hand_1_1x.webp",
+  "w": 1920,
+  "h": 1200,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 234222,
+  "src_page": "https://easee.com/en/products/accessories/equalizer/",
+  "sha1": "92b79e922987",
+  "n": 2
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2026/03/web_easee_23_01_26_photo11352.webp",
+  "w": 1920,
+  "h": 1440,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 103154,
+  "src_page": "https://easee.com/en/products/accessories/equalizer/",
+  "sha1": "654c3897a09e",
+  "n": 3
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2024/09/equalizer_app.jpg",
+  "w": 1920,
+  "h": 1080,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 129631,
+  "src_page": "https://easee.com/en/products/accessories/equalizer/",
+  "sha1": "3d3d357fc6f3",
+  "n": 4
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2024/09/easee_charger_white_solar_panel.jpg",
+  "w": 1920,
+  "h": 1080,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 308051,
+  "src_page": "https://easee.com/en/products/accessories/equalizer/",
+  "sha1": "4d2a7d759e30",
+  "n": 5
+ }
+]

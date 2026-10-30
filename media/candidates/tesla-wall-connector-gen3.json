@@ -1,0 +1,57 @@
+[
+ {
+  "url": "https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/CAR_ACCESSORIES/MODEL_S/CHARGING_ADAPTERS/1529455-02-D_0_2000.jpg",
+  "w": 2000,
+  "h": 2000,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 42381,
+  "src_page": "https://shop.tesla.com/en_gb/product/Wall-Connector",
+  "sha1": "19d06ebbf0d3",
+  "n": 1
+ },
+ {
+  "url": "https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/CAR_ACCESSORIES/MODEL_3/CHARGING_ADAPTERS/1529455-02-D.PDP.jpg",
+  "w": 2000,
+  "h": 2000,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 464953,
+  "src_page": "https://shop.tesla.com/en_gb/product/Wall-Connector",
+  "sha1": "c3fd303bcd3d",
+  "n": 2
+ },
+ {
+  "url": "https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/CAR_ACCESSORIES/MODEL_S/CHARGING_ADAPTERS/1529455-02-E_non-Tesla.jpg",
+  "w": 2000,
+  "h": 2000,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 677215,
+  "src_page": "https://shop.tesla.com/en_gb/product/Wall-Connector",
+  "sha1": "f8b1dfa3ba97",
+  "n": 3
+ },
+ {
+  "url": "https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/CAR_ACCESSORIES/MODEL_3/CHARGING_ADAPTERS/1529455.Pedestal_1.jpg",
+  "w": 2000,
+  "h": 2000,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 250411,
+  "src_page": "https://shop.tesla.com/en_gb/product/Wall-Connector",
+  "sha1": "0d8a178d2b38",
+  "n": 4
+ },
+ {
+  "url": "https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/CAR_ACCESSORIES/MODEL_S/CHARGING_ADAPTERS/1734412-02-D-04.jpg",
+  "w": 2000,
+  "h": 2000,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 166881,
+  "src_page": "https://shop.tesla.com/en_gb/product/Wall-Connector",
+  "sha1": "43dc838f9f3c",
+  "n": 5
+ }
+]

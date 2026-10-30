@@ -1,0 +1,145 @@
+[
+ {
+  "url": "https://i.ytimg.com/vi/vy2YsPso20o/maxresdefault.jpg",
+  "w": 1280,
+  "h": 720,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 98394,
+  "src_page": "https://www.beny.com/?p=146800",
+  "sha1": "d0db58db1234",
+  "n": 1
+ },
+ {
+  "url": "https://www.beny.com/wp-content/uploads/2020/12/footer-bg1.jpg",
+  "w": 1920,
+  "h": 1080,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 22498,
+  "src_page": "https://www.beny.com/?p=146800",
+  "sha1": "a40cbc9d9a11",
+  "n": 2
+ },
+ {
+  "url": "https://www.beny.com/wp-content/uploads/2025/11/IP65-BENY-2-generation-OCPP-Smart-AC-electric-car-charger.webp",
+  "w": 1000,
+  "h": 550,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 76490,
+  "src_page": "https://www.beny.com/?p=146800",
+  "sha1": "eb3b522f7999",
+  "n": 3
+ },
+ {
+  "url": "https://www.beny.com/wp-content/uploads/2025/11/3.jpg",
+  "w": 1000,
+  "h": 550,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 46263,
+  "src_page": "https://www.beny.com/?p=146800",
+  "sha1": "8310444b6736",
+  "n": 4
+ },
+ {
+  "url": "https://www.beny.com/wp-content/uploads/2025/11/full-protection-of-BENY-2nd-generation-OCPP-AC-EV-Charger.webp",
+  "w": 1000,
+  "h": 550,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 105362,
+  "src_page": "https://www.beny.com/?p=146800",
+  "sha1": "9576ce5ecbb0",
+  "n": 5
+ },
+ {
+  "url": "https://www.beny.com/wp-content/uploads/2025/11/BENY-Wireless-DLB-Configuration-Diagram.webp",
+  "w": 1000,
+  "h": 562,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 40614,
+  "src_page": "https://www.beny.com/?p=146800",
+  "sha1": "9041192f3a52",
+  "n": 6
+ },
+ {
+  "url": "https://www.beny.com/wp-content/uploads/2025/11/BENY-2nd-Generation-ocpp-ac-ev-charger-features.webp",
+  "w": 1000,
+  "h": 550,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 69806,
+  "src_page": "https://www.beny.com/?p=146800",
+  "sha1": "3b46dc485a92",
+  "n": 7
+ },
+ {
+  "url": "https://www.beny.com/wp-content/uploads/2025/11/protection-functions.webp",
+  "w": 1000,
+  "h": 537,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 67382,
+  "src_page": "https://www.beny.com/?p=146800",
+  "sha1": "6d12dc20ffdb",
+  "n": 8
+ },
+ {
+  "url": "https://www.beny.com/wp-content/uploads/2025/11/BENY-2nd-Generation-ocpp-ac-ev-charger-features2.webp",
+  "w": 1000,
+  "h": 550,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 44210,
+  "src_page": "https://www.beny.com/?p=146800",
+  "sha1": "ea8988bbf676",
+  "n": 9
+ },
+ {
+  "url": "https://www.beny.com/wp-content/uploads/2025/07/The-Ultimate-Brand-for-Safeguarding-Solar-PV-Battery-Energy-Storage-and-EV-Charging-Systems.webp",
+  "w": 1024,
+  "h": 768,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 16150,
+  "src_page": "https://www.beny.com/?p=146800",
+  "sha1": "d113848ef2de",
+  "n": 10
+ },
+ {
+  "url": "https://www.beny.com/wp-content/uploads/2025/11/mode-3-ac-ev-charging.webp",
+  "w": 1000,
+  "h": 550,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 101582,
+  "src_page": "https://www.beny.com/product-item/type-2-mode-3-ev-charger/",
+  "sha1": "82eff08f9481",
+  "n": 11
+ },
+ {
+  "url": "https://www.beny.com/wp-content/uploads/2023/12/ocpp-main.jpg",
+  "w": 1000,
+  "h": 550,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 38643,
+  "src_page": "https://www.beny.com/product-item/type-2-mode-3-ev-charger/",
+  "sha1": "bb2a9fe273c2",
+  "n": 12
+ },
+ {
+  "url": "https://www.beny.com/wp-content/uploads/2025/11/Full-protection-of-Type-2-Mode-3-EV-Charger-22kw.webp",
+  "w": 1000,
+  "h": 550,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 92566,
+  "src_page": "https://www.beny.com/product-item/type-2-mode-3-ev-charger/",
+  "sha1": "196dc805de19",
+  "n": 13
+ }
+]

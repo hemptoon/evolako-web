@@ -1,0 +1,46 @@
+[
+ {
+  "url": "https://www.fronius.com/-/media/imported-media/140300-148306/148301-148306/148303.webp?ih=1732&iw=3080&c=0",
+  "w": 3080,
+  "h": 1732,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 83608,
+  "src_page": "https://www.fronius.com/en/help-center/solar-energy/products/e-mobility/wallbox/wattpilot-homego/wattpilot-go-11-j",
+  "sha1": "58ce654588b8",
+  "n": 1
+ },
+ {
+  "url": "https://www.fronius.com/-/media/international/solar-energy-2-0/installers/product-pages/wattpilt-zubehoer-genaral-teaser-87.webp?ih=708&iw=936&c=0",
+  "w": 936,
+  "h": 708,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 16218,
+  "src_page": "https://www.fronius.com/en/help-center/solar-energy/products/e-mobility/wallbox/wattpilot-homego/wattpilot-go-11-j",
+  "sha1": "6ae214217666",
+  "n": 2
+ },
+ {
+  "url": "https://www.fronius.com/-/media/international/se/events/thumbs/train-webinar-thumb-technical-support-169.jpg?44375",
+  "w": 1540,
+  "h": 866,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 45146,
+  "src_page": "https://www.fronius.com/en/help-center/solar-energy/products/e-mobility/wallbox/wattpilot-homego/wattpilot-go-11-j",
+  "sha1": "d5baca0b8d2b",
+  "n": 3
+ },
+ {
+  "url": "https://www.fronius.com/-/media/imported-media/140300-148306/148214-148299/148250.webp",
+  "w": 2000,
+  "h": 2000,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 134344,
+  "src_page": "https://www.fronius.com/en/help-center/solar-energy/products/e-mobility/wallbox/wattpilot-homego/wattpilot-go-11-j",
+  "sha1": "32861d5334d4",
+  "n": 4
+ }
+]

@@ -1,0 +1,61 @@
+== beny-bcpcm-mid-4g
+   https://www.beny.com/?p=146800 45 urls
+   https://www.beny.com/product-item/type-2-mode-3-ev-charger/ 38 urls
+  kept 13
+== alfen-eve-single-pro-line-kabl-22
+   https://alfen.com/eve-single-pro-line 269 urls
+/home/runner/.local/lib/python3.12/site-packages/PIL/Image.py:1134: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+  kept 26
+== sungrow-ac22e-01-mid
+   https://www.sungrowpower.com/en/products/ev-charger/ac22-01?tab=2 74 urls
+  kept 16
+== zaptec-go-2
+   https://zaptec.com/products/zaptec-go-2 0 urls
+  kept 2
+== tesla-wall-connector-gen3
+   https://shop.tesla.com/en_gb/product/Wall-Connector 0 urls
+   https://shop.tesla.com/en_ie/product/Wall-Connector 0 urls
+  kept 5
+== heidelberg-home-eco-11
+   https://www.amperfied.de/de/ladeloesungen/wallbox-home-eco/ 16 urls
+   https://www.amperfied.de/en/ 31 urls
+  kept 23
+== sma-echarger-22
+   https://www.sma.de/en/products/e-mobility-charging-solutions/sma-echarger 98 urls
+  kept 5
+== lapp-mobility-basic-22kw
+   https://lappmobility.lappgroup.com/en/products/wall-chargers/wallbox-light/20/mobile-charging-station-basic-type-2-cee-up-to-22-kw 25 urls
+  kept 5
+== fronius-wattpilot-go-11j
+   https://www.fronius.com/en/help-center/solar-energy/products/e-mobility/wallbox/wattpilot-homego/wattpilot-go-11-j 25 urls
+   https://www.fronius.com/en/solar-energy/solar-solutions/e-mobility 83 urls
+  kept 4
+== phoenix-charx-11kw-5m
+   https://www.phoenixcontact.com/en-ch/products/ac-charging-cable-charx-et2cp-3ac20-50mes00p-1285624 0 urls
+   https://www.phoenixcontact.com/en-ch/products/ac-charging-cable-charx-et2cp-1ac32-50mes00p-1285688 0 urls
+  kept 6
+== easee-equalizer
+   https://easee.com/en/products/accessories/equalizer/ 9 urls
+  kept 5
+== abb-terra-dc-wallbox-24
+  page failed https://new.abb.com/ev-charging/terra-dc-wallbox Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://new.abb.com/ev-charging/terra-dc-wallbox
+Call log:
+  - navigating to "https://new.abb.com/ev-charging/terra-dc-wallbox", waiting until "domcontentloaded"
+
+   https://new.abb.com/ev-charging/terra-dc-wallbox 0 urls
+  page failed https://new.abb.com/ev-charging/terra-dc-wallbox/terra-dc-wallbox-complying-to-ce-standards Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://new.abb.com/ev-charging/terra-dc-wallbox/terra-dc-wallbox-complying-to-ce-standards
+Call log:
+  - navigating to "https://new.abb.com/ev-charging/terra-dc-wallbox/terra-dc-wallbox-complying-to-ce-standards", waiting until "domcontentloaded"
+
+   https://new.abb.com/ev-charging/terra-dc-wallbox/terra-dc-wallbox-complying-to-ce-standards 0 urls
+  kept 0
+== alpitronic-hyc50
+   https://www.alpitronic.it/en/hypercharger/hyc-50/ 285 urls
+   https://www.alpitronic.it/en/hypercharger/ 160 urls
+  kept 40
+== iocharger-dc
+   https://www.iocharger.com/wall-mounted-30kw-40kw-dc-charger/ 200 urls
+   https://www.iocharger.com/mode-4-ocpp-1-6j-ocpp-2-0-1-60kw-90kw-120kw-150kw-dc-fast-charger/ 168 urls
+   https://www.iocharger.com/dc-fast-charger/ 104 urls
+  kept 31

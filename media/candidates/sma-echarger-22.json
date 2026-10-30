@@ -1,0 +1,57 @@
+[
+ {
+  "url": "https://www.sma.de/fileadmin/content/website-meta/products/e-mobility/eCharger/SMA-eCharger-Hero-2560.png?v=1784378504",
+  "w": 2560,
+  "h": 2560,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 1637142,
+  "src_page": "https://www.sma.de/en/products/e-mobility-charging-solutions/sma-echarger",
+  "sha1": "857e2e80d296",
+  "n": 1
+ },
+ {
+  "url": "https://www.sma.de/fileadmin/content/global/Press/Documents/News/0_2024/240904/20240904-PM-SMA-eCharger_900x504.jpg?v=1725443447",
+  "w": 900,
+  "h": 504,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 112478,
+  "src_page": "https://www.sma.de/en/products/e-mobility-charging-solutions/sma-echarger",
+  "sha1": "58296d72971a",
+  "n": 2
+ },
+ {
+  "url": "https://www.sma.de/fileadmin/_processed_/5/9/csm_SMA_Cybersecurity_2560_AI_e88890c8f8.webp",
+  "w": 1920,
+  "h": 1440,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 107738,
+  "src_page": "https://www.sma.de/en/products/e-mobility-charging-solutions/sma-echarger",
+  "sha1": "53c6c44bed94",
+  "n": 3
+ },
+ {
+  "url": "https://www.sma.de/fileadmin/_processed_/1/8/csm_Sommer_EN_8c9c67680f.webp",
+  "w": 1920,
+  "h": 861,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 39906,
+  "src_page": "https://www.sma.de/en/products/e-mobility-charging-solutions/sma-echarger",
+  "sha1": "1e3dec240c54",
+  "n": 4
+ },
+ {
+  "url": "https://www.sma.de/fileadmin/_processed_/b/b/csm_Winter_EN_35c8a10878.webp",
+  "w": 1920,
+  "h": 551,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 28250,
+  "src_page": "https://www.sma.de/en/products/e-mobility-charging-solutions/sma-echarger",
+  "sha1": "abacc9d9e7fe",
+  "n": 5
+ }
+]
