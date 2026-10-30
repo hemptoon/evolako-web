@@ -1,0 +1,178 @@
+[
+ {
+  "url": "https://a.storyblok.com/f/40131/1920x500/5156ea47e9/emobility-header-desktop-neu_10.jpg/m/1920x0/filters:format(webp)",
+  "w": 1920,
+  "h": 500,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 76228,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "9663047738bd",
+  "n": 1
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/960x640/930e5bebb8/p40-standsaulen.jpg/m/960x0/filters:format(webp)",
+  "w": 960,
+  "h": 640,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 22418,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "b30ef596824c",
+  "n": 2
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/900x600/a222335bb3/pedestal-overview_ge.png/m/960x0/filters:format(webp)",
+  "w": 960,
+  "h": 640,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 39650,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "350aab94bb37",
+  "n": 3
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/900x600/54171b3e4f/p30_kabel_0822_5425.jpg/m/960x0/filters:format(webp)",
+  "w": 960,
+  "h": 640,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 31058,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "67c57f78ff12",
+  "n": 4
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/900x600/c0233deabf/ea-adapter-plate-900x600.jpg/m/960x0/filters:format(webp)",
+  "w": 960,
+  "h": 640,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 16644,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "47f28ac9d6dc",
+  "n": 5
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/900x600/8756c5bcb8/e10.jpg/m/960x0/filters:format(webp)",
+  "w": 960,
+  "h": 640,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 11004,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "781c361408a6",
+  "n": 6
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/900x600/370e3dd7fc/s10_900x600px_weiss.jpg/m/960x0/filters:format(webp)",
+  "w": 960,
+  "h": 640,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 23592,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "8290b3fcc208",
+  "n": 7
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/900x800/51ca135528/cable_holder_comparison_900x800px.jpg/m/960x0/filters:format(webp)",
+  "w": 960,
+  "h": 853,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 23492,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "8a0654207d56",
+  "n": 8
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/900x600/e640a3f3bc/r10.jpg/m/960x0/filters:format(webp)",
+  "w": 960,
+  "h": 640,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 13240,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "171bffd778c1",
+  "n": 9
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/900x600/844a1b625e/rfid_card_set.jpg/m/960x0/filters:format(webp)",
+  "w": 960,
+  "h": 640,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 12120,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "1642b11f5424",
+  "n": 10
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/1920x500/e274ace430/ea_contactform_teaser_background_1920x500.png/m/1920x0/filters:format(webp)",
+  "w": 1920,
+  "h": 500,
+  "alpha": false,
+  "bg": "light",
+  "bytes": 19500,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "a31edef163e3",
+  "n": 11
+ },
+ {
+  "url": "https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&1i70360&2i44991&2e1&3u9&4m2&1u768&2u800&5m5&1e0&5sen-US&6sus&10b1&12b1&7sbeaf8a2bd12bda12&8e1&key=AIzaSyAqg4WrC-JDx2j2cZuqxJXUOlLCOyuZtJ4&token=115886",
+  "w": 768,
+  "h": 800,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 139446,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "a9e37834e5cd",
+  "n": 12
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/1040x920/56dfd22627/emobility-header-tablet-neu_10.jpg",
+  "w": 1040,
+  "h": 920,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 267299,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "8964d706b834",
+  "n": 13
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/1040x920/05842f292b/ea_contactform_teaser_background_1040x920.png",
+  "w": 1040,
+  "h": 920,
+  "alpha": false,
+  "bg": "light",
+  "bytes": 268300,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "7cf3d8f6269b",
+  "n": 14
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/1200x630/390376e420/kecontact_public_charging_woman_p30_ge_1200x630.jpg/m/1200x0",
+  "w": 1200,
+  "h": 630,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 153692,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "dec8735b18ee",
+  "n": 15
+ },
+ {
+  "url": "https://a.storyblok.com/f/40131/900x600/a222335bb3/pedestal-overview_ge.png",
+  "w": 900,
+  "h": 600,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 354551,
+  "src_page": "https://www.keba.com/en/emobility/products/accessories",
+  "sha1": "77c5e1e65731",
+  "n": 16
+ }
+]

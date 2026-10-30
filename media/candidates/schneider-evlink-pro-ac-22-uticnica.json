@@ -1,0 +1,68 @@
+[
+ {
+  "url": "https://download.se.com/files?p_Doc_Ref=EVB3S22N4B_Image_HR&p_File_Type=rendition_1500_jpg",
+  "w": 1500,
+  "h": 1500,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 376386,
+  "src_page": "https://www.se.com/ie/en/product/EVB3S22N4/charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p+n-t2s-socketoutlet-rdcdd-6ma-mnx-aux-",
+  "sha1": "a1c619b4ea38",
+  "n": 1
+ },
+ {
+  "url": "https://download.se.com/files?p_Doc_Ref=EVlin_Pro_AC_2DD&p_File_Type=rendition_1500_jpg",
+  "w": 1500,
+  "h": 1500,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 148452,
+  "src_page": "https://www.se.com/ie/en/product/EVB3S22N4/charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p+n-t2s-socketoutlet-rdcdd-6ma-mnx-aux-",
+  "sha1": "80dd4c9d2999",
+  "n": 2
+ },
+ {
+  "url": "https://eshop-hk.se.com/media/wysiwyg/seglobal-footer-background_1_.png",
+  "w": 1920,
+  "h": 1018,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 770273,
+  "src_page": "https://eshop.se.com/hk/evb3s22n4b-charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p-n-t2s-socket-outlet-rcd-b-ev-mnx-aux.html",
+  "sha1": "e13ad81ba3b0",
+  "n": 3
+ },
+ {
+  "url": "https://eshop-hk.se.com/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/1/5/1500_evb3s22n4b_image.jpg",
+  "w": 1200,
+  "h": 1200,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 27708,
+  "src_page": "https://eshop.se.com/hk/evb3s22n4b-charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p-n-t2s-socket-outlet-rcd-b-ev-mnx-aux.html",
+  "sha1": "2151509a54db",
+  "n": 4
+ },
+ {
+  "url": "https://i.ytimg.com/vi_webp/kZRMX1-JqGg/maxresdefault.webp",
+  "w": 1280,
+  "h": 720,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 64528,
+  "src_page": "https://eshop.se.com/hk/evb3s22n4b-charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p-n-t2s-socket-outlet-rcd-b-ev-mnx-aux.html",
+  "sha1": "a1740e575b31",
+  "n": 5
+ },
+ {
+  "url": "https://i.ytimg.com/vi_webp/XZlwfECY5pE/maxresdefault.webp",
+  "w": 1280,
+  "h": 720,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 28942,
+  "src_page": "https://eshop.se.com/hk/evb3s22n4b-charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p-n-t2s-socket-outlet-rcd-b-ev-mnx-aux.html",
+  "sha1": "2cafedecf552",
+  "n": 6
+ }
+]

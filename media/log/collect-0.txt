@@ -1,0 +1,67 @@
+== iocharger-mini-22-kw-rfid
+   https://www.iocharger.com/multiple-colors-7kw-11kw-ocpp-1-6j-2-0-1-wifi-bluetooth-mini-smart-ev-charger/ 134 urls
+  kept 14
+== alfen-eve-single-pro-line
+   https://alfen.com/eve-single-pro-line 269 urls
+/home/runner/.local/lib/python3.12/site-packages/PIL/Image.py:1134: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+  kept 26
+== teltonika-evc2-11kw-kabl
+   https://teltonika-energy.com/ 52 urls
+   https://wiki.teltonika-energy.com/view/TeltoCharge_product_codes_EVC2 11 urls
+  kept 15
+== schneider-evlink-pro-ac-22-uticnica
+   https://www.se.com/ie/en/product/EVB3S22N4/charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p+n-t2s-socketoutlet-rdcdd-6ma-mnx-aux- 91 urls
+   https://eshop.se.com/hk/evb3s22n4b-charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p-n-t2s-socket-outlet-rcd-b-ev-mnx-aux.html 26 urls
+  kept 6
+== wallbox-copper-sb-22
+   https://wallbox.com/en_catalog/copper 0 urls
+  kept 0
+== fronius-wattpilot-home-11j
+   https://www.fronius.com/en/help-center/solar-energy/products/e-mobility/wallbox/wattpilot-homego/wattpilot-home-11-j 25 urls
+   https://www.fronius.com/en/solar-energy/solar-solutions/e-mobility 83 urls
+  kept 4
+== mennekes-amtron-4you-110
+   https://www.mennekes.org/emobility/product-details/1311201205BK/ 56 urls
+   https://www.mennekes.org/emobility/product-details/amtronr-4you-110-11-c2-1311201205gy 10 urls
+  kept 23
+== huawei-scharger-22kt
+   https://solar.huawei.com/en/products/scharger-7ks-s0-22kt-s0/ 80 urls
+   https://solar.huawei.com/en/products/scharger-7ks-s0-22kt-s0/specs/ 24 urls
+  kept 40
+== nrgkick-pure
+   https://nrgkick.com/en/shop/charging-units/32a/ 270 urls
+   https://nrgkick.com/en/products/nrgkick/32a/ 143 urls
+  kept 32
+== fronius-wattpilot-go-22j
+   https://www.fronius.com/en/help-center/solar-energy/products/e-mobility/wallbox/wattpilot-homego/wattpilot-go-22-j 25 urls
+  kept 4
+== harting-22kw-5m
+   https://harting.com/en-GB/p/Charging-cable-Mode3-Typ2-32A-1ph-5m-08914090107A0 6 urls
+   https://www.harting.com/en-GB/p/08914090407A0 11 urls
+  kept 4
+== keba-stub-p40
+   https://www.keba.com/en/emobility/products/accessories 100 urls
+   https://www.keba.com/no/emobility/products/tilbehor 101 urls
+  kept 16
+== v2c-denka-20
+   https://v2charge.com/denka/ 96 urls
+   https://v2charge.com/en/e-chargers/ 74 urls
+  kept 22
+== abb-terra-54
+  page failed https://new.abb.com/ev-charging/fr/charge-rapide-dc/terra-54-cjg Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://new.abb.com/ev-charging/fr/charge-rapide-dc/terra-54-cjg
+Call log:
+  - navigating to "https://new.abb.com/ev-charging/fr/charge-rapide-dc/terra-54-cjg", waiting until "domcontentloaded"
+
+   https://new.abb.com/ev-charging/fr/charge-rapide-dc/terra-54-cjg 0 urls
+  page failed https://new.abb.com/ev-charging/sv/terra-dc-snabbladdare/terra-54-cjg Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://new.abb.com/ev-charging/sv/terra-dc-snabbladdare/terra-54-cjg
+Call log:
+  - navigating to "https://new.abb.com/ev-charging/sv/terra-dc-snabbladdare/terra-54-cjg", waiting until "domcontentloaded"
+
+   https://new.abb.com/ev-charging/sv/terra-dc-snabbladdare/terra-54-cjg 0 urls
+  page failed https://new.abb.com/ev-charging/products/car-charging/multi-standard Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://new.abb.com/ev-charging/products/car-charging/multi-standard
+Call log:
+  - navigating to "https://new.abb.com/ev-charging/products/car-charging/multi-standard", waiting until "domcontentloaded"
+
+   https://new.abb.com/ev-charging/products/car-charging/multi-standard 0 urls
+  kept 1
