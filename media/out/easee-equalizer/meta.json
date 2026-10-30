@@ -1,0 +1,20 @@
+[
+ {
+  "k": 1,
+  "kind": "cut",
+  "src": "https://easee.com/wp-content/uploads/2024/05/easee_equalizer.jpeg",
+  "page": "https://easee.com/en/products/accessories/equalizer/",
+  "w": 1920,
+  "h": 1080,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "scene",
+  "src": "https://easee.com/wp-content/uploads/2024/07/easee_equalizer_hand_1_1x.webp",
+  "page": "https://easee.com/en/products/accessories/equalizer/",
+  "w": 1920,
+  "h": 1200,
+  "crop": null
+ }
+]

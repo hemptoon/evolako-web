@@ -5,7 +5,8 @@
   "src": "https://d33y5j6752j001.cloudfront.net/image/201312468866/image_6t9i4j8o5l5j5afkrsoi2nll1d/-FWEBP-S1200",
   "page": "https://harting.com/en-GB/p/Charging-cable-Mode3-Typ2-32A-1ph-5m-08914090107A0",
   "w": 1200,
-  "h": 684
+  "h": 684,
+  "crop": null
  },
  {
   "k": 2,
@@ -13,7 +14,8 @@
   "src": "https://d33y5j6752j001.cloudfront.net/image/201312468866/image_ig162ib2e53dlcsbpc8fitha7m/-FWEBP-S940",
   "page": "https://www.harting.com/en-GB/p/08914090407A0",
   "w": 940,
-  "h": 705
+  "h": 705,
+  "crop": null
  },
  {
   "k": 3,
@@ -21,6 +23,7 @@
   "src": "https://d33y5j6752j001.cloudfront.net/image/201312468866/image_hhn1ihm6ep5lpeucif320brr47/-FWEBP-S1200",
   "page": "https://www.harting.com/en-GB/p/08914090407A0",
   "w": 1200,
-  "h": 917
+  "h": 917,
+  "crop": null
  }
 ]

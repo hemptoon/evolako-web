@@ -5,7 +5,8 @@
   "src": "https://v2charge.com/store/wp-content/uploads/2022/09/trydan-manguera-lisa.jpg",
   "page": "https://v2charge.com/store/product/trydan/",
   "w": 720,
-  "h": 720
+  "h": 720,
+  "crop": null
  },
  {
   "k": 2,
@@ -13,6 +14,7 @@
   "src": "https://v2charge.com/store/wp-content/uploads/2026/04/car-charger-trydan.jpg",
   "page": "https://v2charge.com/store/product/trydan/",
   "w": 600,
-  "h": 600
+  "h": 600,
+  "crop": null
  }
 ]

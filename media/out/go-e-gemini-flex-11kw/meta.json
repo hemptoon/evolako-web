@@ -5,7 +5,8 @@
   "src": "https://go-e.com/fileadmin/_processed_/1/2/csm_go-e-charger-gemini-flex-2-0-22kW-side_8557f1db1d.png",
   "page": "https://go-e.com/en/products/go-e-charger-gemini-flex-2-0",
   "w": 900,
-  "h": 900
+  "h": 900,
+  "crop": null
  },
  {
   "k": 2,
@@ -13,6 +14,7 @@
   "src": "https://go-e.com/fileadmin/_processed_/2/a/csm_go-e-charger-gemini-flex-2-0-22kw-front_a295c82d2f.png",
   "page": "https://go-e.com/en/products/go-e-charger-gemini-flex-2-0",
   "w": 600,
-  "h": 600
+  "h": 600,
+  "crop": null
  }
 ]

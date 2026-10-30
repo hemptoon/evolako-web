@@ -1,0 +1,25 @@
+[
+ {
+  "k": 1,
+  "kind": "cut",
+  "src": "https://www.iocharger.com/wp-content/uploads/2023/05/iocharger-smart-AC-EV-Charger-IOCAH10-8-1.png",
+  "page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "w": 274,
+  "h": 517,
+  "crop": [
+   0.45,
+   0.06,
+   0.95,
+   1.0
+  ]
+ },
+ {
+  "k": 2,
+  "kind": "scene",
+  "src": "https://www.iocharger.com/wp-content/uploads/2023/05/ev-charger-2-3-1-1.png",
+  "page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "w": 750,
+  "h": 750,
+  "crop": null
+ }
+]

@@ -1,0 +1,38 @@
+[
+ {
+  "k": 1,
+  "kind": "keep",
+  "src": "pdf:https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15131010/Pulsar_Pro2026_Series_EN_b.pdf#xref=656",
+  "page": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15131010/Pulsar_Pro2026_Series_EN_b.pdf",
+  "w": 939,
+  "h": 1417,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "keep",
+  "src": "pdf:https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15131010/Pulsar_Pro2026_Series_EN_b.pdf#xref=30",
+  "page": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15131010/Pulsar_Pro2026_Series_EN_b.pdf",
+  "w": 773,
+  "h": 1181,
+  "crop": null
+ },
+ {
+  "k": 3,
+  "kind": "keep",
+  "src": "pdf:https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15131010/Pulsar_Pro2026_Series_EN_b.pdf#xref=32",
+  "page": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15131010/Pulsar_Pro2026_Series_EN_b.pdf",
+  "w": 571,
+  "h": 1181,
+  "crop": null
+ },
+ {
+  "k": 4,
+  "kind": "scene",
+  "src": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15130310/768-Pulsar-Pro_MID.jpg",
+  "page": "https://wallbox.com/en/pulsar-pro-home-charger-reimbursement",
+  "w": 2048,
+  "h": 1744,
+  "crop": null
+ }
+]

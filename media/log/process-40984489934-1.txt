@@ -1,0 +1,56 @@
+== iocharger-iocah20-kabl
+[0;93m2026-10-30 01:13:54.137545375 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Downloading data from 'https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-general-use.onnx' to file '/home/runner/.rembg/models/isnet-general-use/isnet-general-use.onnx'.
+  0%|                                               | 0.00/179M [00:00<?, ?B/s]  2%|▌                                     | 2.72M/179M [00:00<00:06, 27.2MB/s]  7%|██▋                                   | 12.7M/179M [00:00<00:02, 70.0MB/s] 13%|████▊                                 | 22.8M/179M [00:00<00:01, 84.2MB/s] 18%|███████                               | 33.0M/179M [00:00<00:01, 91.2MB/s] 24%|█████████▏                            | 43.2M/179M [00:00<00:01, 94.8MB/s] 30%|███████████▎                          | 53.4M/179M [00:00<00:01, 97.4MB/s] 36%|█████████████▌                        | 63.5M/179M [00:00<00:01, 98.7MB/s] 41%|███████████████▋                      | 73.7M/179M [00:00<00:01, 99.6MB/s] 47%|██████████████████▎                    | 83.9M/179M [00:00<00:00, 100MB/s] 53%|████████████████████▌                  | 93.9M/179M [00:01<00:00, 100MB/s] 58%|███████████████████████▎                | 104M/179M [00:01<00:00, 101MB/s] 64%|█████████████████████████▌              | 114M/179M [00:01<00:00, 101MB/s] 70%|███████████████████████████▊            | 124M/179M [00:01<00:00, 101MB/s] 75%|██████████████████████████████          | 135M/179M [00:01<00:00, 101MB/s] 81%|████████████████████████████████▍       | 145M/179M [00:01<00:00, 101MB/s] 87%|██████████████████████████████████▋     | 155M/179M [00:01<00:00, 102MB/s] 92%|████████████████████████████████████▉   | 165M/179M [00:01<00:00, 102MB/s] 98%|███████████████████████████████████████▎| 175M/179M [00:01<00:00, 102MB/s]  0%|                                               | 0.00/179M [00:00<?, ?B/s]100%|███████████████████████████████████████| 179M/179M [00:00<00:00, 1.05TB/s]
+    mask: intersection (colour mask would remove 0.0% of the object)
+  ok 1 cut (274, 517)
+  ok 2 scene (750, 750)
+== easee-equalizer
+    mask: union (colour mask would remove 78.9% of the object)
+  ok 1 cut (1920, 1080)
+  ok 2 scene (1920, 1200)
+== wallbox-pulsar-pro-mid-22
+/home/runner/.local/lib/python3.12/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+  ok 1 keep (939, 1417)
+  ok 2 keep (773, 1181)
+  ok 3 keep (571, 1181)
+  ok 4 scene (2048, 1744)
+== alfen-eve-single-pro-line
+  ok 1 keep (1900, 2200)
+  ok 2 scene (7761, 5177)
+== keba-stub-p40
+    mask: intersection (colour mask would remove 0.0% of the object)
+  ok 1 cut (522, 835)
+    mask: union (colour mask would remove 9.0% of the object)
+  ok 2 cut (530, 841)
+  ok 3 scene (6543, 5621)
+== sungrow-idc180e
+  ok 1 keep (1016, 1016)
+  ok 2 scene (1920, 1250)
+== abb-terra-54
+    mask: union (colour mask would remove 23.1% of the object)
+  ok 1 cut (1200, 630)
+== fronius-wattpilot-go-22j
+  ok 1 keep (2000, 2000)
+== v2c-trydan-22
+    mask: intersection (colour mask would remove 0.0% of the object)
+  ok 1 cut (720, 720)
+  ok 2 scene (600, 600)
+== lapp-mobility-basic-11kw
+    mask: intersection (colour mask would remove 0.0% of the object)
+  ok 1 cut (1920, 1184)
+    mask: intersection (colour mask would remove 0.0% of the object)
+  ok 2 cut (1280, 1280)
+    mask: intersection (colour mask would remove 0.0% of the object)
+  ok 3 cut (1280, 1280)
+== go-e-gemini-flex-11kw
+  ok 1 keep (900, 900)
+  ok 2 keep (600, 600)
+== harting-22kw-5m
+    mask: intersection (colour mask would remove 0.0% of the object)
+  ok 1 cut (1200, 684)
+    mask: intersection (colour mask would remove 0.0% of the object)
+  ok 2 cut (940, 705)
+    mask: intersection (colour mask would remove 0.1% of the object)
+  ok 3 cut (1200, 917)

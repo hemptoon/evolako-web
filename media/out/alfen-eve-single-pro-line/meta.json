@@ -1,0 +1,20 @@
+[
+ {
+  "k": 1,
+  "kind": "keep",
+  "src": "https://eu-images.contentstack.com/v3/assets/blt08d332658a89f766/blt1bef799aef0c724a/6780df6de86bc81be381712f/Eve_Single_Pro-line_white_-_front_display.png",
+  "page": "https://alfen.com/eve-single-pro-line",
+  "w": 1900,
+  "h": 2200,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "scene",
+  "src": "https://eu-images.contentstack.com/v3/assets/blt08d332658a89f766/blt4c7b2a3da4e79a2f/6722389b4df86b566a105450/Eve_Single_Pro-line_street.jpg?&auto=webp",
+  "page": "https://alfen.com/eve-single-pro-line",
+  "w": 7761,
+  "h": 5177,
+  "crop": null
+ }
+]

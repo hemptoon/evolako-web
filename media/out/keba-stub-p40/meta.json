@@ -1,0 +1,29 @@
+[
+ {
+  "k": 1,
+  "kind": "cut",
+  "src": "pdf:https://www.keba.com/download/x/99650f6677/kecontact-standsaule_datenblatt_en.pdf#xref=35",
+  "page": "https://www.keba.com/download/x/99650f6677/kecontact-standsaule_datenblatt_en.pdf",
+  "w": 522,
+  "h": 835,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "cut",
+  "src": "pdf:https://www.keba.com/download/x/99650f6677/kecontact-standsaule_datenblatt_en.pdf#xref=22",
+  "page": "https://www.keba.com/download/x/99650f6677/kecontact-standsaule_datenblatt_en.pdf",
+  "w": 530,
+  "h": 841,
+  "crop": null
+ },
+ {
+  "k": 3,
+  "kind": "scene",
+  "src": "https://a.storyblok.com/f/40131/6543x5621/2481b839d4/ea-kecontact-p40-socket-charging.jpg",
+  "page": "https://www.keba.com/en/emobility/products/ac-charging-stations/p40/keba-kecontact-p40",
+  "w": 6543,
+  "h": 5621,
+  "crop": null
+ }
+]
