@@ -26,7 +26,7 @@ def rembg_mask(img):
     global _session
     from rembg import remove, new_session
     if _session is None:
-        _session = new_session(os.environ.get('REMBG_MODEL', 'isnet-general-use'))
+        _session = new_session(REQ.get('model') or os.environ.get('REMBG_MODEL', 'isnet-general-use'))
     out = remove(img.convert('RGB'), session=_session, post_process_mask=True)
     return out.split()[3]
 
