@@ -5,7 +5,8 @@
   "src": "https://lappmobility.lappgroup.com/media/c9/7b/7e/1716555450/5555921000-mode-2-basic-cee-32-a-3p.jpg?ts=1779270422",
   "page": "https://lappmobility.lappgroup.com/en/products/wall-chargers/wallbox-light/20/mobile-charging-station-basic-type-2-cee-up-to-22-kw",
   "w": 1920,
-  "h": 1184
+  "h": 1184,
+  "crop": null
  },
  {
   "k": 2,
@@ -13,7 +14,8 @@
   "src": "https://lappmobility.lappgroup.com/media/68/e4/09/1716555458/5555921001_mobile-ladestation-basic_0555nppfvhqi7tv.jpg?ts=1716555458",
   "page": "https://lappmobility.lappgroup.com/en/products/wall-chargers/wallbox-light/20/mobile-charging-station-basic-type-2-cee-up-to-22-kw",
   "w": 1280,
-  "h": 1280
+  "h": 1280,
+  "crop": null
  },
  {
   "k": 3,
@@ -21,6 +23,7 @@
   "src": "https://lappmobility.lappgroup.com/media/2a/50/1c/1716555458/5555921001_mobile-ladestation-basic_04w2gw5cfcxef3s.jpg?ts=1716555458",
   "page": "https://lappmobility.lappgroup.com/en/products/wall-chargers/wallbox-light/20/mobile-charging-station-basic-type-2-cee-up-to-22-kw",
   "w": 1280,
-  "h": 1280
+  "h": 1280,
+  "crop": null
  }
 ]

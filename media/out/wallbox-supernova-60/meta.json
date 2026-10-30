@@ -1,0 +1,20 @@
+[
+ {
+  "k": 1,
+  "kind": "keep",
+  "src": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2025/04/16105627/1024-Supernova-fast-charger.png",
+  "page": "https://wallbox.com/en/supernova-fast-ev-charger",
+  "w": 2752,
+  "h": 1600,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "scene",
+  "src": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2025/04/16105602/768-Supernova-fast-charging.jpg",
+  "page": "https://wallbox.com/en/supernova-fast-ev-charger",
+  "w": 2048,
+  "h": 1744,
+  "crop": null
+ }
+]

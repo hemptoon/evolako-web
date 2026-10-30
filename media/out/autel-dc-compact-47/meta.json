@@ -5,7 +5,8 @@
   "src": "https://strapicdn.autelenergy.com/autel_energy/media/Compare_Maxi_Charger_DC_Compact_03c8681933.png",
   "page": "https://autelenergy.com/global/product/dc-compact",
   "w": 800,
-  "h": 800
+  "h": 800,
+  "crop": null
  },
  {
   "k": 2,
@@ -13,6 +14,7 @@
   "src": "https://strapicdn.autelenergy.com/autel_energy/media/Maxi_Charger_DC_Compact_Banner_d75ae33e6b.jpg",
   "page": "https://autelenergy.com/global/product/dc-compact",
   "w": 3840,
-  "h": 2926
+  "h": 2926,
+  "crop": null
  }
 ]

@@ -1,0 +1,16 @@
+[
+ {
+  "k": 1,
+  "kind": "keep",
+  "src": "pdf:https://eu-assets.contentstack.com/v3/assets/blt08d332658a89f766/blt1fe72218c1e70427/6787d45d36cf7b76cf10f46e/Leaflet_-_Eve_Single_Pro-line_EN.pdf#xref=41",
+  "page": "https://eu-assets.contentstack.com/v3/assets/blt08d332658a89f766/blt1fe72218c1e70427/6787d45d36cf7b76cf10f46e/Leaflet_-_Eve_Single_Pro-line_EN.pdf",
+  "w": 906,
+  "h": 960,
+  "crop": [
+   0.3,
+   0.07,
+   0.96,
+   0.415
+  ]
+ }
+]

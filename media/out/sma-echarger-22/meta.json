@@ -5,6 +5,7 @@
   "src": "https://www.sma.de/fileadmin/content/website-meta/products/e-mobility/eCharger/SMA-eCharger-Hero-2560.png?v=1784378504",
   "page": "https://www.sma.de/en/products/e-mobility-charging-solutions/sma-echarger",
   "w": 2560,
-  "h": 2560
+  "h": 2560,
+  "crop": null
  }
 ]

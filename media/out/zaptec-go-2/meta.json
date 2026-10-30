@@ -1,0 +1,20 @@
+[
+ {
+  "k": 1,
+  "kind": "keep",
+  "src": "https://zaptec.objects.frb.io/assets/Zaptec-Go-2/Zaptec_Go-2_Front_AsphaltBlack.webp",
+  "page": "https://zaptec.com/products/zaptec-go-2",
+  "w": 1280,
+  "h": 799,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "scene",
+  "src": "https://zaptec.objects.frb.io/assets/New-brand-imagery-2025/New-imagery-Zaptec-Go-2/_1200x630_crop_center-center_82_none/Zaptec_Go2_Home_Charging_2367.jpg?mtime=1760424885",
+  "page": "https://zaptec.com/products/zaptec-go-2",
+  "w": 1200,
+  "h": 630,
+  "crop": null
+ }
+]

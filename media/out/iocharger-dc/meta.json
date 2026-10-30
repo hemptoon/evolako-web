@@ -1,0 +1,47 @@
+[
+ {
+  "k": 1,
+  "kind": "cut",
+  "src": "https://www.iocharger.com/wp-content/uploads/2026/08/02.webp",
+  "page": "https://www.iocharger.com/wall-mounted-30kw-40kw-dc-charger/",
+  "w": 1000,
+  "h": 1000,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "cut",
+  "src": "https://www.iocharger.com/wp-content/uploads/2023/05/ocpp-dc-ev-charger-with-pos.webp",
+  "page": "https://www.iocharger.com/mode-4-ocpp-1-6j-ocpp-2-0-1-60kw-90kw-120kw-150kw-dc-fast-charger/",
+  "w": 1000,
+  "h": 1000,
+  "crop": null
+ },
+ {
+  "k": 3,
+  "kind": "cut",
+  "src": "https://www.iocharger.com/wp-content/uploads/2026/08/01.webp",
+  "page": "https://www.iocharger.com/wall-mounted-30kw-40kw-dc-charger/",
+  "w": 1000,
+  "h": 1000,
+  "crop": null
+ },
+ {
+  "k": 4,
+  "kind": "cut",
+  "src": "https://www.iocharger.com/wp-content/uploads/2023/05/3.webp",
+  "page": "https://www.iocharger.com/wall-mounted-30kw-40kw-dc-charger/",
+  "w": 1000,
+  "h": 1000,
+  "crop": null
+ },
+ {
+  "k": 5,
+  "kind": "cut",
+  "src": "https://www.iocharger.com/wp-content/uploads/2026/08/04.webp",
+  "page": "https://www.iocharger.com/wall-mounted-30kw-40kw-dc-charger/",
+  "w": 1000,
+  "h": 1000,
+  "crop": null
+ }
+]
