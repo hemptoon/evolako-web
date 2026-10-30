@@ -72,9 +72,31 @@ def cut(img):
     from PIL import ImageChops
     a = ImageChops.lighter(a1, a2.filter(ImageFilter.MinFilter(3)))
     a = a.filter(ImageFilter.GaussianBlur(0.6))
-    out = img.convert('RGB').convert('RGBA')
+    out = decontaminate(img.convert('RGB'), a, bg_colour(img))
     out.putalpha(a)
     return out
+
+
+def bg_colour(img):
+    rgb = img.convert('RGB')
+    w, h = rgb.size
+    px = rgb.load()
+    border = [px[x, 0] for x in range(0, w, 4)] + [px[x, h - 1] for x in range(0, w, 4)] + \
+             [px[0, y] for y in range(0, h, 4)] + [px[w - 1, y] for y in range(0, h, 4)]
+    border.sort(key=lambda p: sum(p))
+    return border[len(border) // 2]
+
+
+def decontaminate(rgb, alpha, bg):
+    """Remove the old background colour from soft edge pixels, so a product cut from white has no white halo on a dark page."""
+    import numpy as np
+    c = np.asarray(rgb, dtype=np.float32)
+    a = np.asarray(alpha, dtype=np.float32)[..., None] / 255.0
+    b = np.array(bg, dtype=np.float32)[None, None, :]
+    edge = (a > 0.02) & (a < 0.98)
+    fixed = np.clip((c - (1 - a) * b) / np.maximum(a, 0.02), 0, 255)
+    c = np.where(edge, fixed, c)
+    return Image.fromarray(c.astype('uint8'), 'RGB').convert('RGBA')
 
 
 def square(img, transparent=True):
