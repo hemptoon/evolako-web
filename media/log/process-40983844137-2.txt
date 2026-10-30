@@ -1,0 +1,20 @@
+== v2c-trydan-22
+[0;93m2026-10-30 01:07:32.247103865 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Downloading data from 'https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-general-use.onnx' to file '/home/runner/.rembg/models/isnet-general-use/isnet-general-use.onnx'.
+  0%|                                               | 0.00/179M [00:00<?, ?B/s]  5%|██                                    | 9.76M/179M [00:00<00:01, 97.6MB/s] 11%|████▏                                 | 19.6M/179M [00:00<00:01, 98.1MB/s] 17%|██████▌                                | 30.0M/179M [00:00<00:01, 101MB/s] 23%|█████████▏                             | 41.9M/179M [00:00<00:01, 108MB/s] 29%|███████████▍                           | 52.6M/179M [00:00<00:01, 107MB/s] 36%|██████████████                         | 64.5M/179M [00:00<00:01, 111MB/s] 42%|████████████████▌                      | 75.9M/179M [00:00<00:00, 112MB/s] 49%|███████████████████▏                   | 87.9M/179M [00:00<00:00, 115MB/s] 56%|██████████████████████▍                 | 100M/179M [00:00<00:00, 117MB/s] 63%|█████████████████████████               | 112M/179M [00:01<00:00, 116MB/s] 69%|███████████████████████████▌            | 123M/179M [00:01<00:00, 116MB/s] 76%|██████████████████████████████▍         | 136M/179M [00:01<00:00, 118MB/s] 83%|█████████████████████████████████       | 148M/179M [00:01<00:00, 117MB/s] 89%|███████████████████████████████████▊    | 160M/179M [00:01<00:00, 119MB/s] 96%|██████████████████████████████████████▍ | 172M/179M [00:01<00:00, 112MB/s]  0%|                                               | 0.00/179M [00:00<?, ?B/s]100%|████████████████████████████████████████| 179M/179M [00:00<00:00, 952GB/s]
+  ok 1 cut (720, 720)
+  ok 2 scene (600, 600)
+== huawei-scharger-22kt
+  ok 1 keep (1000, 1000)
+== lapp-helix-22kw-5m
+  ok 1 cut (1181, 785)
+  ok 2 cut (1181, 682)
+== juice-booster-3-air-traveller
+  ok 1 keep (800, 800)
+  ok 2 scene (3000, 1688)
+== alpitronic-hyc50
+/home/runner/.local/lib/python3.12/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+  ok 1 keep (962, 962)
+  ok 2 keep (962, 962)
+  ok 3 keep (962, 741)
