@@ -1,0 +1,90 @@
+[
+ {
+  "url": "https://lappmobility.lappgroup.com/media/c5/8a/ff/1716555538/5555935013_1-helix-sw-10x6-300dpi.jpg?ts=1716555538",
+  "w": 1181,
+  "h": 785,
+  "alpha": false,
+  "bg": "light",
+  "bytes": 363684,
+  "src_page": "https://lappmobility.lappgroup.com/en/charging-on-the-road/charging-cables/76/helix-charging-cable-type-2-22-kw-5m-black",
+  "sha1": "639a20cb1289",
+  "n": 1
+ },
+ {
+  "url": "https://lappmobility.lappgroup.com/thumbnail/65/07/f8/1716555530/5555935013_3-stecker-sw-10x6-300dpi_1280x1280.jpg?ts=1716555593",
+  "w": 1181,
+  "h": 682,
+  "alpha": false,
+  "bg": "light",
+  "bytes": 114126,
+  "src_page": "https://lappmobility.lappgroup.com/en/charging-on-the-road/charging-cables/76/helix-charging-cable-type-2-22-kw-5m-black",
+  "sha1": "9debb698b338",
+  "n": 2
+ },
+ {
+  "url": "https://lappmobility.lappgroup.com/media/ab/e2/1d/1716555548/helix-ladekabel.jpg?ts=1716555548",
+  "w": 3840,
+  "h": 1361,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 585044,
+  "src_page": "https://lappmobility.lappgroup.com/en/products/charging-cables/helix-charging-cables/",
+  "sha1": "82c3547472ce",
+  "n": 3
+ },
+ {
+  "url": "https://lappmobility.lappgroup.com/media/73/90/6e/1749719224/Lapp%20Helix.jpg?ts=1749719224",
+  "w": 6016,
+  "h": 4016,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 1041675,
+  "src_page": "https://lappmobility.lappgroup.com/en/products/charging-cables/helix-charging-cables/",
+  "sha1": "f71bfb659ffc",
+  "n": 4
+ },
+ {
+  "url": "https://lappmobility.lappgroup.com/thumbnail/c3/fb/44/1716555482/5555935013_1_1280x1280.jpg?ts=1716555519",
+  "w": 1280,
+  "h": 1280,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 155232,
+  "src_page": "https://lappmobility.lappgroup.com/en/products/charging-cables/helix-charging-cables/",
+  "sha1": "188cfb53bbfd",
+  "n": 5
+ },
+ {
+  "url": "https://lappmobility.lappgroup.com/thumbnail/40/7f/d6/1716555522/5555940000_3_1280x1280.jpg?ts=1716555576",
+  "w": 1280,
+  "h": 1280,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 156989,
+  "src_page": "https://lappmobility.lappgroup.com/en/products/charging-cables/helix-charging-cables/",
+  "sha1": "34e60435bdac",
+  "n": 6
+ },
+ {
+  "url": "https://lappmobility.lappgroup.com/media/be/a7/d7/1748348336/LAPP%20Doppelhelix.jpg?ts=1774602107",
+  "w": 3118,
+  "h": 2802,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 1337283,
+  "src_page": "https://lappmobility.lappgroup.com/en/products/charging-cables/helix-charging-cables/",
+  "sha1": "5b16bf9b7923",
+  "n": 7
+ },
+ {
+  "url": "https://lappmobility.lappgroup.com/thumbnail/5a/e3/38/1750861812/Doppelhelix%20schwarz_1920x1920_1920x1920.jpg?ts=1750861830",
+  "w": 679,
+  "h": 650,
+  "alpha": false,
+  "bg": "light",
+  "bytes": 60238,
+  "src_page": "https://lappmobility.lappgroup.com/en/products/charging-cables/helix-charging-cables/",
+  "sha1": "960a2d00ff7e",
+  "n": 8
+ }
+]

@@ -1,0 +1,68 @@
+[
+ {
+  "url": "https://go-e.com/fileadmin/_processed_/1/2/csm_go-e-charger-gemini-flex-2-0-22kW-side_8557f1db1d.png",
+  "w": 900,
+  "h": 900,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 308873,
+  "src_page": "https://go-e.com/en/products/go-e-charger-gemini-flex-2-0",
+  "sha1": "b14b826160c0",
+  "n": 1
+ },
+ {
+  "url": "https://go-e.com/fileadmin/_processed_/2/a/csm_go-e-charger-gemini-flex-2-0-22kw-front_a295c82d2f.png",
+  "w": 600,
+  "h": 600,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 157908,
+  "src_page": "https://go-e.com/en/products/go-e-charger-gemini-flex-2-0",
+  "sha1": "47883927e385",
+  "n": 2
+ },
+ {
+  "url": "https://go-e.com/fileadmin/user_upload/go-e-new-app-star-screen.png",
+  "w": 1080,
+  "h": 2400,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 148474,
+  "src_page": "https://go-e.com/en/products/go-e-charger-gemini-flex-2-0",
+  "sha1": "be02b39c2121",
+  "n": 3
+ },
+ {
+  "url": "https://go-e.com/fileadmin/_processed_/e/3/csm_go-e-support_9b142b9139.jpg",
+  "w": 720,
+  "h": 720,
+  "alpha": false,
+  "bg": "light",
+  "bytes": 47920,
+  "src_page": "https://go-e.com/en/products/go-e-charger-gemini-flex-2-0",
+  "sha1": "7e8996f63bb3",
+  "n": 4
+ },
+ {
+  "url": "https://go-e.com/fileadmin/_processed_/d/f/csm_go-e-full-access-wallbox_6b85bfd73d.jpg",
+  "w": 720,
+  "h": 720,
+  "alpha": false,
+  "bg": "light",
+  "bytes": 93141,
+  "src_page": "https://go-e.com/en/products/go-e-charger-gemini-flex-2-0",
+  "sha1": "ee5f8590855c",
+  "n": 5
+ },
+ {
+  "url": "https://go-e.com/_assets/35efdf6aac005c02e1d9577c021612fe/Images/string-2.png",
+  "w": 639,
+  "h": 1200,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 124998,
+  "src_page": "https://go-e.com/en/products/go-e-charger-gemini-flex-2-0",
+  "sha1": "17dfd70a902c",
+  "n": 6
+ }
+]

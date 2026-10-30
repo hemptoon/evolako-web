@@ -1,0 +1,123 @@
+[
+ {
+  "url": "https://easee.com/wp-content/uploads/2026/02/Base_pr_1-way_charger_side.webp",
+  "w": 744,
+  "h": 3516,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 25164,
+  "src_page": "https://easee.com/en/products/accessories/base/",
+  "sha1": "de7b2828cfbc",
+  "n": 1
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2026/02/base_hero_banner_1x.webp",
+  "w": 1920,
+  "h": 1280,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 24406,
+  "src_page": "https://easee.com/en/products/accessories/base/",
+  "sha1": "1d2d4861dd16",
+  "n": 2
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2026/02/base_carusel_02_1x.webp",
+  "w": 1920,
+  "h": 1280,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 30418,
+  "src_page": "https://easee.com/en/products/accessories/base/",
+  "sha1": "8c9fb1951a9c",
+  "n": 3
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2026/02/base_carusel_03_1x.webp",
+  "w": 1920,
+  "h": 1280,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 32866,
+  "src_page": "https://easee.com/en/products/accessories/base/",
+  "sha1": "9607cabb1c0a",
+  "n": 4
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2026/02/Base_pr_2-way_charger_side.webp",
+  "w": 900,
+  "h": 3516,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 38560,
+  "src_page": "https://easee.com/en/products/accessories/base/",
+  "sha1": "66a736b29c4c",
+  "n": 5
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2026/02/base_carusel_01_1x.webp",
+  "w": 1920,
+  "h": 1280,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 23138,
+  "src_page": "https://easee.com/en/products/accessories/base/",
+  "sha1": "87562c91ed00",
+  "n": 6
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2026/02/base_carusel_04_1x.webp",
+  "w": 1920,
+  "h": 1280,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 87936,
+  "src_page": "https://easee.com/en/products/accessories/base/",
+  "sha1": "72ce8ca90c66",
+  "n": 7
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2024/07/u-hook_mirror.jpg",
+  "w": 1920,
+  "h": 1280,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 27297,
+  "src_page": "https://easee.com/en/products/accessories/base/",
+  "sha1": "6ff373a2f626",
+  "n": 8
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2026/02/base_power_rail_crop.webp",
+  "w": 1024,
+  "h": 1280,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 13512,
+  "src_page": "https://easee.com/en/products/accessories/base/",
+  "sha1": "65338b4b52ba",
+  "n": 9
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2026/02/Base_pr_4-way_charger_side.webp",
+  "w": 1099,
+  "h": 3515,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 1250900,
+  "src_page": "https://easee.com/en/products/accessories/base/",
+  "sha1": "130bd750c028",
+  "n": 10
+ },
+ {
+  "url": "https://easee.com/wp-content/uploads/2024/07/easeei-base_2-way.jpg",
+  "w": 1920,
+  "h": 1081,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 137119,
+  "src_page": "https://easee.com/en/products/accessories/base/",
+  "sha1": "2aa2164bbdc8",
+  "n": 11
+ }
+]

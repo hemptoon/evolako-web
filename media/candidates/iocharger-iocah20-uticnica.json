@@ -1,0 +1,178 @@
+[
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2023/05/IOCAH10-EV-Charger-1.png",
+  "w": 1200,
+  "h": 1200,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 189678,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "667b0d7a8037",
+  "n": 1
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2023/05/iocharger-smart-AC-EV-Charger-IOCAH10-8-1.png",
+  "w": 550,
+  "h": 550,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 196133,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "a79b5cb01385",
+  "n": 2
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2023/05/Home-EV-Charger-2-1-1.png",
+  "w": 750,
+  "h": 750,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 207052,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "c79ca7c0145a",
+  "n": 3
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2023/05/ocpp-ev-charging-post.png",
+  "w": 1000,
+  "h": 1000,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 169398,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "84a879976af0",
+  "n": 4
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2023/05/ev-charger-2-3-1-1.png",
+  "w": 750,
+  "h": 750,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 844484,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "34a239aed16e",
+  "n": 5
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2023/05/Home-EV-Charger-2-2-1.png",
+  "w": 750,
+  "h": 750,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 406677,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "fcb41db69c61",
+  "n": 6
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2025/10/wholesale-ev-chargers-scaled-1.webp",
+  "w": 2560,
+  "h": 533,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 46590,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "ddfea8fd38eb",
+  "n": 7
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2023/05/Dynamic-Load-Balancing-ev-charger-1.png",
+  "w": 750,
+  "h": 750,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 536228,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "723e98ed9c91",
+  "n": 8
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2023/05/smart-app-control-ev-charging-1.png",
+  "w": 750,
+  "h": 750,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 760018,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "d75361ca432c",
+  "n": 9
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2026/10/Load-Balancing-in-EV-Fleet-Charging-Solutions.webp",
+  "w": 750,
+  "h": 600,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 37262,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "cca6cd5991ac",
+  "n": 10
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2026/09/Smart-Charging-Is-the-Future-of-EV-Fleet-Charging-Solutions.webp",
+  "w": 1402,
+  "h": 1122,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 159362,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "5ed54870be1a",
+  "n": 11
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2026/09/AC-vs-DC-EV-Fleet-Charging-Solutions.webp",
+  "w": 1402,
+  "h": 1122,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 135936,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "121027124345",
+  "n": 12
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2025/06/Dual-Ports-Pedestal-AC-EV-Charger.webp",
+  "w": 1000,
+  "h": 1000,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 8818,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "d5829faa238d",
+  "n": 13
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2023/10/display-ev-charger-1-1-1.png",
+  "w": 1000,
+  "h": 1000,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 405958,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "0cdfbd1557f3",
+  "n": 14
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2023/05/4-2.png",
+  "w": 1000,
+  "h": 1000,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 116495,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "3db1cc581b36",
+  "n": 15
+ },
+ {
+  "url": "https://www.iocharger.com/wp-content/uploads/2023/05/UL-EV-Charger-2-1.png",
+  "w": 1500,
+  "h": 1500,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 484382,
+  "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+  "sha1": "8563c13b5bc2",
+  "n": 16
+ }
+]

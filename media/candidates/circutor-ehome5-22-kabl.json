@@ -1,0 +1,46 @@
+[
+ {
+  "url": "https://d7rh5s3nxmpy4.cloudfront.net/CMP911/PR63202BI2485_V25560_eHome_5_T2C32_TRI_N_IMD.jpg",
+  "w": 1024,
+  "h": 768,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 51089,
+  "src_page": "https://circutor.com/en/products/charging-stations-for-electric-vehicles/home-charging/product/V25560./",
+  "sha1": "31f6f7162096",
+  "n": 1
+ },
+ {
+  "url": "https://circutor.com/wp-content/uploads/2020/12/asistencia.jpg",
+  "w": 1920,
+  "h": 1080,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 99701,
+  "src_page": "https://circutor.com/en/products/charging-stations-for-electric-vehicles/home-charging/product/V25560./",
+  "sha1": "a7fe7b67d663",
+  "n": 2
+ },
+ {
+  "url": "https://alfresco.circutor.com/alfresco/download/attach/workspace/SpacesStore/5d90b306-5335-4607-b222-ff44913a2bf5/DI_eHOME.jpg?guest=true",
+  "w": 1490,
+  "h": 1500,
+  "alpha": false,
+  "bg": "light",
+  "bytes": 172515,
+  "src_page": "https://circutor.com/en/products/charging-stations-for-electric-vehicles/home-charging/product/V25560./",
+  "sha1": "276ddc5fef2e",
+  "n": 3
+ },
+ {
+  "url": "https://circutor.com/wp-content/uploads/2022/04/cropped-512-1.png",
+  "w": 512,
+  "h": 512,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 16315,
+  "src_page": "https://circutor.com/en/products/charging-stations-for-electric-vehicles/home-charging/product/V25560./",
+  "sha1": "62b7e0226696",
+  "n": 4
+ }
+]

@@ -1,0 +1,54 @@
+== iocharger-iocah20-uticnica
+   https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/ 149 urls
+/home/runner/.local/lib/python3.12/site-packages/PIL/Image.py:1134: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+  kept 16
+== keba-kecontact-p40-11kw
+   https://www.keba.com/en/emobility/products/ac-charging-stations/p40/keba-kecontact-p40 122 urls
+   https://www.keba.com/en/emobility/products/p40/kecontact-p40-overview 126 urls
+  kept 24
+== teltonika-evc2-11kw-uticnica
+   https://teltonika-energy.com/ 45 urls
+   https://wiki.teltonika-energy.com/view/TeltoCharge_product_codes_EVC2 11 urls
+  kept 15
+== schneider-evlink-pro-ac-22-kabl
+   https://www.se.com/be/en/product/EVB3S22NCB/charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p+n-t2-attached-cable-rcd-bev-mnx-aux- 108 urls
+  kept 7
+== wallbox-pulsar-max-22kw
+   https://wallbox.com/en_uk/products/pulsar-max-install-compatible-electric-car-home-charger 45 urls
+   https://wallbox.com/en/pulsar-max-ev-charger-socket 38 urls
+  kept 31
+== myenergi-zappi-22
+   https://myenergi.com/zappi 94 urls
+   https://www.myenergi.com/product-category/myenergi-shop/ev-chargers 78 urls
+  kept 30
+== v2c-trydan-22
+   https://v2charge.com/trydan/ 93 urls
+   https://v2charge.com/store/product/trydan/ 66 urls
+  kept 33
+== circutor-ehome5-22-kabl
+   https://circutor.com/en/products/charging-stations-for-electric-vehicles/home-charging/product/V25560./ 35 urls
+   https://circutor.com/en/products/charging-stations-for-electric-vehicles/home-charging/serie/ehome-5/ 32 urls
+  kept 4
+== go-e-gemini-flex-11kw
+   https://go-e.com/en/products/go-e-charger-gemini-flex-2-0 43 urls
+   https://shop.go-e.com/en/wallbox/go-e-charger-gemini-flex-2-0-11-kw/ 0 urls
+  kept 6
+== juice-booster-3-air-traveller
+   https://juice.world/en/collections/juice-booster-3-air/products/jb3air-traveller-set 161 urls
+   https://juice.world/en/collections/juice-booster-3-air 173 urls
+  kept 40
+== lapp-helix-22kw-5m
+   https://lappmobility.lappgroup.com/en/charging-on-the-road/charging-cables/76/helix-charging-cable-type-2-22-kw-5m-black 13 urls
+   https://lappmobility.lappgroup.com/en/products/charging-cables/helix-charging-cables/ 36 urls
+  kept 8
+== easee-stub
+   https://easee.com/en/products/accessories/base/ 14 urls
+  kept 11
+== v2c-denka-40
+   https://v2charge.com/denka/ 95 urls
+   https://v2charge.com/en/e-chargers/ 74 urls
+  kept 22
+== wallbox-supernova-60
+   https://wallbox.com/en/supernova-fast-ev-charger 49 urls
+  kept 31
