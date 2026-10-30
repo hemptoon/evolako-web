@@ -245,7 +245,7 @@ async def main():
     only = os.environ.get('ONLY', '').split(',') if os.environ.get('ONLY') else None
     shard, shards = int(os.environ.get('SHARD', 0)), int(os.environ.get('SHARDS', 1))
     os.makedirs(os.path.join(ROOT, 'candidates'), exist_ok=True)
-    rep_path = os.path.join(ROOT, 'candidates', f'_report-{shard}.json')
+    rep_path = os.path.join(ROOT, 'candidates', f"_report-b{REQ.get('batch', 0)}-{shard}.json")
     report = {}
     async with async_playwright() as p:
         browser = await p.chromium.launch()

@@ -1,6 +1,6 @@
 {
  "mode": "collect",
- "batch": 3,
+ "batch": "3b",
  "items": {
   "iocharger-mini-11-kw": {
    "pages": [

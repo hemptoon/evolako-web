@@ -38,7 +38,7 @@ jobs:
           MODE=$(python3 -c "import json;print(json.load(open('media/request.json'))['mode'])")
           echo "mode: $MODE shard $SHARD/$SHARDS"
           mkdir -p media/log
-          if [ "$MODE" = collect ]; then python3 -u media/collect.py 2>&1 | tee "media/log/collect-$SHARD.txt"; else python3 -u media/process.py 2>&1 | tee "media/log/process-$SHARD.txt"; fi
+          if [ "$MODE" = collect ]; then python3 -u media/collect.py 2>&1 | tee "media/log/collect-$GITHUB_RUN_ID-$SHARD.txt"; else python3 -u media/process.py 2>&1 | tee "media/log/process-$GITHUB_RUN_ID-$SHARD.txt"; fi
       - name: Commit results
         if: always()
         run: |
@@ -46,4 +46,4 @@ jobs:
           git config user.email "shop-media@users.noreply.github.com"
           for d in media/candidates media/sheets media/out media/qa media/log; do [ -e "$d" ] && git add "$d"; done
           git commit -q -m "Shop media: results of $(python3 -c "import json;print(json.load(open('media/request.json'))['mode'])") ($GITHUB_RUN_ID, shard $SHARD)" || { echo "nothing new"; exit 0; }
-          for i in 1 2 3 4 5 6; do git pull -q --rebase origin shop-media && git push -q origin HEAD:shop-media && break; sleep $((5 + SHARD * 3)); done
+          ok=0; for i in 1 2 3 4 5 6; do git pull -q --rebase -X theirs origin shop-media && git push -q origin HEAD:shop-media && { ok=1; break; }; git rebase --abort 2>/dev/null; sleep $((5 + SHARD * 3)); done; [ $ok = 1 ] || { echo "push failed"; exit 1; }
