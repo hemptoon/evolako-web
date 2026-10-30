@@ -26,7 +26,7 @@ def rembg_mask(img):
     global _session
     from rembg import remove, new_session
     if _session is None:
-        _session = new_session(REQ.get('model') or os.environ.get('REMBG_MODEL', 'isnet-general-use'))
+        _session = new_session(REQ.get('model') or os.environ.get('REMBG_MODEL', 'birefnet-general'))
     out = remove(img.convert('RGB'), session=_session, post_process_mask=True)
     return out.split()[3]
 
@@ -72,15 +72,15 @@ def cut(img):
     # rembg knows what an object is (white casing on white); the colour mask keeps thin dark cables
     from PIL import ImageChops
     # dark or coloured product: trust the colour mask to remove leftover background (e.g. white bits beside a black cable);
-    # white product on white: the colour mask eats into the product, so take the union instead
+    # white product on white: the colour mask eats into the product, so take the model's mask alone
     import numpy as np
     f1 = np.asarray(a1) > 128
     lost = (f1 & (np.asarray(a2) < 128)).sum() / max(1, f1.sum())
     if lost < 0.06:
         a = ImageChops.darker(a1, a2.filter(ImageFilter.MaxFilter(5)))
     else:
-        a = ImageChops.lighter(a1, a2.filter(ImageFilter.MinFilter(3)))
-    print(f'    mask: {"intersection" if lost < 0.06 else "union"} (colour mask would remove {lost:.1%} of the object)')
+        a = a1          # BiRefNet alone: the colour mask would only add soft shadows back
+    print(f'    mask: {"intersection" if lost < 0.06 else "model only"} (colour mask would remove {lost:.1%} of the object)')
     a = a.filter(ImageFilter.GaussianBlur(0.6))
     out = decontaminate(img.convert('RGB'), a, bg_colour(img))
     out.putalpha(a)
