@@ -1,0 +1,48 @@
+== easee-charge-max
+  ok 1 keep (900, 900)
+  ok 2 keep (900, 900)
+== wallbox-pulsar-max-11kw
+[0;93m2026-10-30 01:13:59.101925410 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Downloading data from 'https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-general-use.onnx' to file '/home/runner/.rembg/models/isnet-general-use/isnet-general-use.onnx'.
+  0%|                                               | 0.00/179M [00:00<?, ?B/s]  2%|▊                                     | 4.07M/179M [00:00<00:04, 40.7MB/s]  7%|██▋                                   | 12.7M/179M [00:00<00:02, 67.8MB/s] 12%|████▌                                 | 21.5M/179M [00:00<00:02, 77.0MB/s] 17%|██████▍                               | 30.3M/179M [00:00<00:01, 81.2MB/s] 22%|████████▎                             | 39.1M/179M [00:00<00:01, 83.6MB/s] 27%|██████████▏                           | 47.9M/179M [00:00<00:01, 85.1MB/s] 32%|████████████                          | 56.7M/179M [00:00<00:01, 86.1MB/s] 37%|█████████████▉                        | 65.4M/179M [00:00<00:01, 86.2MB/s] 41%|███████████████▋                      | 74.0M/179M [00:00<00:01, 86.3MB/s] 46%|█████████████████▌                    | 82.8M/179M [00:01<00:01, 86.8MB/s] 51%|███████████████████▍                  | 91.6M/179M [00:01<00:00, 87.3MB/s] 56%|█████████████████████▉                 | 101M/179M [00:01<00:00, 87.7MB/s] 61%|███████████████████████▊               | 109M/179M [00:01<00:00, 87.5MB/s] 66%|█████████████████████████▊             | 118M/179M [00:01<00:00, 87.8MB/s] 71%|███████████████████████████▋           | 127M/179M [00:01<00:00, 88.0MB/s] 76%|█████████████████████████████▋         | 136M/179M [00:01<00:00, 87.8MB/s] 81%|███████████████████████████████▌       | 145M/179M [00:01<00:00, 87.5MB/s] 86%|█████████████████████████████████▍     | 153M/179M [00:01<00:00, 87.1MB/s] 91%|███████████████████████████████████▎   | 162M/179M [00:01<00:00, 86.8MB/s] 96%|█████████████████████████████████████▎ | 171M/179M [00:02<00:00, 86.4MB/s]  0%|                                               | 0.00/179M [00:00<?, ?B/s]100%|████████████████████████████████████████| 179M/179M [00:00<00:00, 945GB/s]
+    mask: intersection (colour mask would remove 0.0% of the object)
+  ok 1 cut (750, 750)
+  ok 2 scene (1536, 1568)
+== teltonika-evc2-11kw-kabl
+  ok 1 scene (4125, 3750)
+== keba-kecontact-p40-11kw
+    mask: intersection (colour mask would remove 0.7% of the object)
+  ok 1 cut (3234, 4569)
+    mask: intersection (colour mask would remove 0.0% of the object)
+  ok 2 cut (3234, 4569)
+  ok 3 scene (1920, 2229)
+== sungrow-ac22e-01-mid
+/home/runner/.local/lib/python3.12/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+  ok 1 keep (1409, 1101)
+  ok 2 scene (1920, 1250)
+== schneider-evlink-pro-ac-22-kabl
+    mask: intersection (colour mask would remove 0.1% of the object)
+  ok 1 cut (1500, 1500)
+    mask: intersection (colour mask would remove 0.1% of the object)
+  ok 2 cut (1500, 1500)
+    mask: intersection (colour mask would remove 5.3% of the object)
+  ok 3 cut (1500, 1500)
+== fronius-wattpilot-home-11j
+  ok 1 keep (3080, 1732)
+== heidelberg-home-eco-11
+  ok 1 scene (2560, 1707)
+== huawei-scharger-22kt
+  ok 1 keep (1000, 1000)
+== lapp-helix-22kw-5m
+    mask: intersection (colour mask would remove 0.2% of the object)
+  ok 1 cut (1181, 785)
+    mask: intersection (colour mask would remove 0.0% of the object)
+  ok 2 cut (1181, 682)
+== juice-booster-3-air-traveller
+  ok 1 keep (800, 800)
+  ok 2 scene (3000, 1688)
+== alpitronic-hyc50
+  ok 1 keep (962, 962)
+  ok 2 keep (962, 962)
+  ok 3 keep (962, 741)

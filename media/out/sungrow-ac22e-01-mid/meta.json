@@ -1,0 +1,20 @@
+[
+ {
+  "k": 1,
+  "kind": "keep",
+  "src": "pdf:https://info-support.sungrowpower.com/datasheet-materials/2105e8e5-a1b3-4114-a8b5-854bb4307d1b.pdf#xref=400",
+  "page": "https://info-support.sungrowpower.com/datasheet-materials/2105e8e5-a1b3-4114-a8b5-854bb4307d1b.pdf",
+  "w": 1409,
+  "h": 1101,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "scene",
+  "src": "https://official-oversears-file.sungrowpower.com/page-assets-process/704b9d76-24c1-409d-ba49-029dad5f5f89.webp",
+  "page": "https://www.sungrowpower.com/en/products/ev-charger/ac22-01?tab=2",
+  "w": 1920,
+  "h": 1250,
+  "crop": null
+ }
+]

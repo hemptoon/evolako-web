@@ -1,0 +1,20 @@
+[
+ {
+  "k": 1,
+  "kind": "cut",
+  "src": "https://images.squarespace-cdn.com/content/v1/63f5fd961b3f7f6f4806a6c7/598443a5-c456-436c-9587-b190ecb64f88/PULSARMAX_ACCESORIES_3.png?format=750w",
+  "page": "https://design.wallbox.com/guidelines/photostyle",
+  "w": 750,
+  "h": 750,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "scene",
+  "src": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/10/05193916/320-Pulsar-Max-ev-charger-features.jpg",
+  "page": "https://wallbox.com/en_uk/products/pulsar-max-install-compatible-electric-car-home-charger",
+  "w": 1536,
+  "h": 1568,
+  "crop": null
+ }
+]

@@ -1,0 +1,29 @@
+[
+ {
+  "k": 1,
+  "kind": "cut",
+  "src": "https://download.se.com/files?p_Doc_Ref=EVB3S11NCA_Image&p_File_Type=rendition_1500_jpg",
+  "page": "https://www.se.com/be/en/product/EVB3S22NCB/charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p+n-t2-attached-cable-rcd-bev-mnx-aux-",
+  "w": 1500,
+  "h": 1500,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "cut",
+  "src": "https://download.se.com/files?p_Doc_Ref=EVB3S07NCA_front&p_File_Type=rendition_1500_jpg",
+  "page": "https://www.se.com/be/en/product/EVB3S22NCB/charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p+n-t2-attached-cable-rcd-bev-mnx-aux-",
+  "w": 1500,
+  "h": 1500,
+  "crop": null
+ },
+ {
+  "k": 3,
+  "kind": "cut",
+  "src": "https://download.se.com/files?p_Doc_Ref=EVB3S07NCA_left&p_File_Type=rendition_1500_jpg",
+  "page": "https://www.se.com/be/en/product/EVB3S22NCB/charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p+n-t2-attached-cable-rcd-bev-mnx-aux-",
+  "w": 1500,
+  "h": 1500,
+  "crop": null
+ }
+]

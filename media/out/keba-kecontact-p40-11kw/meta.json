@@ -1,0 +1,39 @@
+[
+ {
+  "k": 1,
+  "kind": "cut",
+  "src": "https://a.storyblok.com/f/40131/4620x4569/cc792f8936/keba-ea_product_family_p40_socket-standard_white.jpg",
+  "page": "https://www.keba.com/en/emobility/products/p40/kecontact-p40-overview",
+  "w": 3234,
+  "h": 4569,
+  "crop": [
+   0.0,
+   0.0,
+   0.7,
+   1.0
+  ]
+ },
+ {
+  "k": 2,
+  "kind": "cut",
+  "src": "https://a.storyblok.com/f/40131/4620x4569/b0851474be/keba-ea_product_family_p40_socket-standard_black.jpg",
+  "page": "https://www.keba.com/en/emobility/products/p40/kecontact-p40-overview",
+  "w": 3234,
+  "h": 4569,
+  "crop": [
+   0.0,
+   0.0,
+   0.7,
+   1.0
+  ]
+ },
+ {
+  "k": 3,
+  "kind": "scene",
+  "src": "https://a.storyblok.com/f/40131/560x650/a566c78044/ea-kecontact-p40-dwwb-image.jpg/m/1920x0/filters:format(webp)",
+  "page": "https://www.keba.com/en/emobility/products/ac-charging-stations/p40/keba-kecontact-p40",
+  "w": 1920,
+  "h": 2229,
+  "crop": null
+ }
+]

@@ -5,7 +5,8 @@
   "src": "https://juice.world/cdn/shop/collections/Juice_Booster_3_Air.webp?crop=center&&v=1727857064",
   "page": "https://juice.world/en/collections/juice-booster-3-air/products/jb3air-traveller-set",
   "w": 800,
-  "h": 800
+  "h": 800,
+  "crop": null
  },
  {
   "k": 2,
@@ -13,6 +14,7 @@
   "src": "https://juice.world/cdn/shop/files/JB3air_Header_Banner.jpg?v=1724747313",
   "page": "https://juice.world/en/collections/juice-booster-3-air",
   "w": 3000,
-  "h": 1688
+  "h": 1688,
+  "crop": null
  }
 ]
