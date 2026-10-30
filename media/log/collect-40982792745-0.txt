@@ -1,0 +1,24 @@
+== iocharger-mini-11-kw
+   https://www.iocharger.com/multiple-colors-7kw-11kw-ocpp-1-6j-2-0-1-wifi-bluetooth-mini-smart-ev-charger/ 135 urls
+[0;93m2026-10-30 00:57:26.480460906 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+/home/runner/.local/lib/python3.12/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+  pdf https://www.iocharger.com/wp-content/uploads/2025/12/Mini-Smart-AC-Charger-IOCAH30-2025-V1.2.1.pdf 2 images
+  kept 16
+== wallbox-pulsar-max-11kw
+   https://wallbox.com/en_uk/products/pulsar-max-install-compatible-electric-car-home-charger 47 urls
+   https://wallbox.com/en/pulsar-max-ev-charger-socket 38 urls
+   https://design.wallbox.com/media-toolkit 3 urls
+   https://design.wallbox.com/guidelines/photostyle 37 urls
+  pdf https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/10/05193926/Pulsar_Max2026_Datasheet_English.pdf 3 images
+  kept 40
+== sungrow-ac22e-01__pdf
+  pdf https://info-support.sungrowpower.com/datasheet-materials/2105e8e5-a1b3-4114-a8b5-854bb4307d1b.pdf 2 images
+  kept 2
+== tesla-wall-connector-gen3__pdf
+  pdf https://digitalassets.tesla.com/tesla-contents/image/upload/wall-connector-datasheet-en.pdf 2 images
+  kept 2
+== keba-stub-p40__pdf
+  pdf https://www.keba.com/download/x/4ef4e839b1/p40_floormountedcolumn_ihml.pdf 17 images
+  pdf https://www.keba.com/download/x/99650f6677/kecontact-standsaule_datenblatt_en.pdf 2 images
+  kept 19

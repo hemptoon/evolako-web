@@ -1,0 +1,24 @@
+[
+ {
+  "url": "pdf:https://info-support.sungrowpower.com/datasheet-materials/2105e8e5-a1b3-4114-a8b5-854bb4307d1b.pdf#xref=398",
+  "w": 2453,
+  "h": 3325,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://info-support.sungrowpower.com/datasheet-materials/2105e8e5-a1b3-4114-a8b5-854bb4307d1b.pdf",
+  "sha1": "",
+  "n": 1
+ },
+ {
+  "url": "pdf:https://info-support.sungrowpower.com/datasheet-materials/2105e8e5-a1b3-4114-a8b5-854bb4307d1b.pdf#xref=400",
+  "w": 1409,
+  "h": 1101,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 0,
+  "src_page": "https://info-support.sungrowpower.com/datasheet-materials/2105e8e5-a1b3-4114-a8b5-854bb4307d1b.pdf",
+  "sha1": "",
+  "n": 2
+ }
+]

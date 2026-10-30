@@ -1,0 +1,24 @@
+[
+ {
+  "url": "pdf:https://digitalassets.tesla.com/tesla-contents/image/upload/wall-connector-datasheet-en.pdf#xref=32",
+  "w": 863,
+  "h": 720,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 0,
+  "src_page": "https://digitalassets.tesla.com/tesla-contents/image/upload/wall-connector-datasheet-en.pdf",
+  "sha1": "",
+  "n": 1
+ },
+ {
+  "url": "pdf:https://digitalassets.tesla.com/tesla-contents/image/upload/wall-connector-datasheet-en.pdf#xref=40",
+  "w": 1096,
+  "h": 863,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 0,
+  "src_page": "https://digitalassets.tesla.com/tesla-contents/image/upload/wall-connector-datasheet-en.pdf",
+  "sha1": "",
+  "n": 2
+ }
+]
