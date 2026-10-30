@@ -1,0 +1,13 @@
+== v2c-denka-20
+  ok 1 scene (2560, 1466)
+== circutor-ehome5-22-kabl
+[0;93m2026-10-30 01:07:32.863873908 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Downloading data from 'https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-general-use.onnx' to file '/home/runner/.rembg/models/isnet-general-use/isnet-general-use.onnx'.
+  0%|                                               | 0.00/179M [00:00<?, ?B/s]  4%|█▍                                    | 6.85M/179M [00:00<00:02, 68.5MB/s] 10%|███▋                                  | 17.6M/179M [00:00<00:01, 91.5MB/s] 17%|██████▌                                | 29.8M/179M [00:00<00:01, 106MB/s] 23%|█████████                              | 41.5M/179M [00:00<00:01, 110MB/s] 29%|███████████▏                          | 52.5M/179M [00:00<00:01, 97.2MB/s] 36%|██████████████                         | 64.2M/179M [00:00<00:01, 104MB/s] 43%|████████████████▌                      | 76.0M/179M [00:00<00:00, 108MB/s] 50%|███████████████████▍                   | 88.9M/179M [00:00<00:00, 114MB/s] 57%|██████████████████████▊                 | 102M/179M [00:00<00:00, 118MB/s] 64%|█████████████████████████▋              | 115M/179M [00:01<00:00, 123MB/s] 72%|████████████████████████████▋           | 128M/179M [00:01<00:00, 126MB/s] 79%|███████████████████████████████▋        | 142M/179M [00:01<00:00, 128MB/s] 87%|██████████████████████████████████▋     | 155M/179M [00:01<00:00, 129MB/s] 94%|█████████████████████████████████████▋  | 168M/179M [00:01<00:00, 130MB/s]  0%|                                               | 0.00/179M [00:00<?, ?B/s]100%|███████████████████████████████████████| 179M/179M [00:00<00:00, 1.12TB/s]
+  ok 1 cut (1024, 768)
+== nrgkick-pure
+  ok 1 cut (1000, 1000)
+  ok 2 cut (1500, 1500)
+  ok 3 scene (2501, 2502)
+== phoenix-charx-11kw-5m
+  ok 1 cut (1500, 1500)
