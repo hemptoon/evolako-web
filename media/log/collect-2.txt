@@ -1,0 +1,65 @@
+== iocharger-iocah20-kabl
+   https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/ 149 urls
+/home/runner/.local/lib/python3.12/site-packages/PIL/Image.py:1134: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+  kept 16
+== keba-kecontact-p40-mid-11kw
+   https://www.keba.com/en/emobility/products/ac-charging-stations/p40/keba-kecontact-p40 122 urls
+   https://www.keba.com/en/emobility/products/p40/kecontact-p40-overview 126 urls
+  kept 23
+== sungrow-ac22e-01
+   https://www.sungrowpower.com/en/products/ev-charger/ac22-01?tab=2 74 urls
+  kept 16
+== abb-terra-ac-w11-kabl
+  page failed https://new.abb.com/ev-charging/fr/terra-ac-wallbox Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://new.abb.com/ev-charging/fr/terra-ac-wallbox
+Call log:
+  - navigating to "https://new.abb.com/ev-charging/fr/terra-ac-wallbox", waiting until "domcontentloaded"
+
+   https://new.abb.com/ev-charging/fr/terra-ac-wallbox 0 urls
+  page failed https://new.abb.com/ev-charging/fr/terra-ac-wallbox/terra-ac-2.0-iec Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://new.abb.com/ev-charging/fr/terra-ac-wallbox/terra-ac-2.0-iec
+Call log:
+  - navigating to "https://new.abb.com/ev-charging/fr/terra-ac-wallbox/terra-ac-2.0-iec", waiting until "domcontentloaded"
+
+   https://new.abb.com/ev-charging/fr/terra-ac-wallbox/terra-ac-2.0-iec 0 urls
+  page failed https://new.abb.com/news/detail/62540/e-mobility-for-the-masses-with-abb-home-ev-charging-solution Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://new.abb.com/news/detail/62540/e-mobility-for-the-masses-with-abb-home-ev-charging-solution
+Call log:
+  - navigating to "https://new.abb.com/news/detail/62540/e-mobility-for-the-masses-with-abb-home-ev-charging-solution", waiting until "domcontentloaded"
+
+   https://new.abb.com/news/detail/62540/e-mobility-for-the-masses-with-abb-home-ev-charging-solution 0 urls
+  kept 2
+== easee-charge-up
+   https://easee.com/en/products/ev-chargers/charge-up/ 5 urls
+   https://homecharging.easee.com/se-en 52 urls
+   https://easee.com/en/products/accessories/ 21 urls
+  kept 30
+== heidelberg-energy-control-11
+   https://www.amperfied.de/de/ladeloesungen/wallbox-energy-control/ 11 urls
+   https://www.amperfied.de/en/ 31 urls
+  kept 18
+== wallbox-pulsar-pro-mid-22
+   https://wallbox.com/en/pulsar-pro-home-charger-reimbursement 53 urls
+  kept 33
+== lapp-mobility-basic-11kw
+   https://lappmobility.lappgroup.com/shop/en/products/mobile-charging-devices/mobile-charging-stations 6 urls
+   https://lappmobility.lappgroup.com/en/products/mobile-charging-devices/mobile-charging-stations/ 17 urls
+  kept 4
+== go-e-gemini-flex-22kw
+   https://go-e.com/en/products/go-e-charger-gemini-flex-2-0 43 urls
+   https://shop.go-e.com/en/wallbox/go-e-charger-gemini-flex-2-0-22-kw/ 0 urls
+  kept 6
+== mennekes-36247-22kw-7-5m
+   https://www.mennekes.org/emobility/product-details/36247/ 19 urls
+  kept 1
+== wallbox-power-boost-3f
+   https://wallbox.com/en_ie/three-phase-clamp-energy-meter 28 urls
+   https://wallbox.com/en/accessories-vehicle-electric 19 urls
+  kept 9
+== sungrow-idc30e
+   https://www.sungrowpower.com/en/products/ev-charger/idc30e 81 urls
+  kept 20
+== autel-dc-compact-47
+   https://autelenergy.com/global/product/dc-compact 213 urls
+  kept 34
+== sungrow-idc180e
+   https://www.sungrowpower.com/en/products/ev-charger/idc180e 77 urls
+  kept 19

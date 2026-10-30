@@ -1,0 +1,101 @@
+[
+ {
+  "url": "https://headless-api.wallbox.com/wp-content/uploads/2023/11/768-Accessories-business-power-meter.jpg",
+  "w": 880,
+  "h": 784,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 29289,
+  "src_page": "https://wallbox.com/en_ie/three-phase-clamp-energy-meter",
+  "sha1": "87fd4d7c21fe",
+  "n": 1
+ },
+ {
+  "url": "https://headless-api.wallbox.com/wp-content/uploads/2023/11/768-Accessories-home-power-meter.jpg",
+  "w": 880,
+  "h": 784,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 43427,
+  "src_page": "https://wallbox.com/en_ie/three-phase-clamp-energy-meter",
+  "sha1": "c1f747f51f4a",
+  "n": 2
+ },
+ {
+  "url": "https://headless-api.wallbox.com/wp-content/uploads/2023/11/768-Accessories-home-ev-cable-holder.jpg",
+  "w": 880,
+  "h": 784,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 31182,
+  "src_page": "https://wallbox.com/en_ie/three-phase-clamp-energy-meter",
+  "sha1": "4e9606735e9d",
+  "n": 3
+ },
+ {
+  "url": "https://headless-api.wallbox.com/wp-content/uploads/2023/11/768-Accessories-home-Eiffel-Pedestals-Pulsar-Max.jpg",
+  "w": 880,
+  "h": 784,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 42980,
+  "src_page": "https://wallbox.com/en_ie/three-phase-clamp-energy-meter",
+  "sha1": "5deb9a43a16e",
+  "n": 4
+ },
+ {
+  "url": "https://headless-api.wallbox.com/wp-content/uploads/2023/11/768-Accessories-home-Fuse-Box-Lite.jpg",
+  "w": 880,
+  "h": 784,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 41705,
+  "src_page": "https://wallbox.com/en_ie/three-phase-clamp-energy-meter",
+  "sha1": "486bdaa80cd2",
+  "n": 5
+ },
+ {
+  "url": "https://headless-api.wallbox.com/wp-content/uploads/2023/11/768-Accessories-business-charging-cables.jpg",
+  "w": 880,
+  "h": 784,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 35133,
+  "src_page": "https://wallbox.com/en_ie/three-phase-clamp-energy-meter",
+  "sha1": "af7889f9500a",
+  "n": 6
+ },
+ {
+  "url": "https://headless-api.wallbox.com/wp-content/uploads/2023/11/768-Accessories-business-RFID-cards.jpg",
+  "w": 880,
+  "h": 784,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 26417,
+  "src_page": "https://wallbox.com/en_ie/three-phase-clamp-energy-meter",
+  "sha1": "061d9fab3beb",
+  "n": 7
+ },
+ {
+  "url": "https://headless-api.wallbox.com/wp-content/uploads/2023/11/768-Accessories-home-charging-cables.jpg",
+  "w": 880,
+  "h": 784,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 62227,
+  "src_page": "https://wallbox.com/en_ie/three-phase-clamp-energy-meter",
+  "sha1": "702f40740e7e",
+  "n": 8
+ },
+ {
+  "url": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2025/09/18144401/768-Accessories-thermal-efficiency-kit-1.jpg",
+  "w": 880,
+  "h": 784,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 113012,
+  "src_page": "https://wallbox.com/en_ie/three-phase-clamp-energy-meter",
+  "sha1": "38c98fea0145",
+  "n": 9
+ }
+]

@@ -1,0 +1,24 @@
+[
+ {
+  "url": "https://resources.news.e.abb.com/images/2020/5/20/0/ABB_launch_new_Terra_AC_wallbox_for_EV_charging.jpg",
+  "w": 921,
+  "h": 2048,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 139549,
+  "src_page": "https://new.abb.com/ev-charging/fr/terra-ac-wallbox",
+  "sha1": "065dd4e27ce6",
+  "n": 1
+ },
+ {
+  "url": "https://resources.news.e.abb.com/images/2020/5/20/0/ABBs_AC_wallbox_will_integrate_seamlessly_with_the_digital_lifestyle_of_todays_consumers.jpg",
+  "w": 1280,
+  "h": 853,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 127016,
+  "src_page": "https://new.abb.com/ev-charging/fr/terra-ac-wallbox",
+  "sha1": "cc206f38a9a7",
+  "n": 2
+ }
+]
