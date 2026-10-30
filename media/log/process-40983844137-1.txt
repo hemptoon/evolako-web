@@ -1,0 +1,21 @@
+== mennekes-amtron-4you-110
+  ok 1 keep (500, 500)
+  ok 2 keep (500, 500)
+  ok 3 keep (500, 500)
+  ok 4 keep (500, 500)
+  ok 5 keep (500, 500)
+== sma-echarger-22
+  ok 1 keep (2560, 2560)
+== lapp-mobility-basic-22kw
+[0;93m2026-10-30 01:08:06.315723726 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+Downloading data from 'https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-general-use.onnx' to file '/home/runner/.rembg/models/isnet-general-use/isnet-general-use.onnx'.
+  0%|                                               | 0.00/179M [00:00<?, ?B/s]  5%|█▊                                    | 8.29M/179M [00:00<00:02, 82.9MB/s] 12%|████▌                                  | 20.8M/179M [00:00<00:01, 108MB/s] 19%|███████▎                               | 33.4M/179M [00:00<00:01, 116MB/s] 26%|██████████                             | 45.9M/179M [00:00<00:01, 119MB/s] 33%|████████████▊                          | 58.5M/179M [00:00<00:00, 122MB/s] 40%|███████████████▌                       | 71.0M/179M [00:00<00:00, 123MB/s] 47%|██████████████████▏                    | 83.4M/179M [00:00<00:00, 122MB/s] 54%|█████████████████████                  | 96.6M/179M [00:00<00:00, 125MB/s] 62%|████████████████████████▌               | 110M/179M [00:00<00:00, 128MB/s] 69%|███████████████████████████▌            | 123M/179M [00:01<00:00, 129MB/s] 77%|██████████████████████████████▌         | 137M/179M [00:01<00:00, 131MB/s] 84%|█████████████████████████████████▌      | 150M/179M [00:01<00:00, 132MB/s] 92%|████████████████████████████████████▌   | 164M/179M [00:01<00:00, 133MB/s] 99%|███████████████████████████████████████▌| 177M/179M [00:01<00:00, 133MB/s]  0%|                                               | 0.00/179M [00:00<?, ?B/s]100%|███████████████████████████████████████| 179M/179M [00:00<00:00, 1.43TB/s]
+  ok 1 cut (1920, 1184)
+  ok 2 cut (1280, 1280)
+  ok 3 cut (1280, 1280)
+== go-e-gemini-flex-22kw
+  ok 1 keep (900, 900)
+  ok 2 keep (600, 600)
+== autel-dc-compact-47
+  ok 1 keep (800, 800)
+  ok 2 scene (3840, 2926)
