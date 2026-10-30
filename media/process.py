@@ -4,6 +4,7 @@ Input  media/request.json  {"mode": "process", "items": {"<id>": [{"url": ..., "
          kind "cut"   — product on a plain background: cut it out (rembg mask + colour mask from the border)
          kind "keep"  — already transparent: only trim and centre
          kind "scene" — a photo in a setting: no cut-out, square crop, shown after the product shots
+         optional "crop": [x0, y0, x1, y1] (fractions) — take one product out of a group shot first
 Output media/out/<id>/<k>-1440.webp, <k>-720.webp  (square, transparent for cut/keep)
        media/out/<id>/meta.json
        media/qa/<id>.jpg   every result on a light and on a dark background, to spot halos
@@ -70,7 +71,16 @@ def cut(img):
     a2 = border_bg_mask(img)
     # rembg knows what an object is (white casing on white); the colour mask keeps thin dark cables
     from PIL import ImageChops
-    a = ImageChops.lighter(a1, a2.filter(ImageFilter.MinFilter(3)))
+    # dark or coloured product: trust the colour mask to remove leftover background (e.g. white bits beside a black cable);
+    # white product on white: the colour mask eats into the product, so take the union instead
+    import numpy as np
+    f1 = np.asarray(a1) > 128
+    lost = (f1 & (np.asarray(a2) < 128)).sum() / max(1, f1.sum())
+    if lost < 0.06:
+        a = ImageChops.darker(a1, a2.filter(ImageFilter.MaxFilter(5)))
+    else:
+        a = ImageChops.lighter(a1, a2.filter(ImageFilter.MinFilter(3)))
+    print(f'    mask: {"intersection" if lost < 0.06 else "union"} (colour mask would remove {lost:.1%} of the object)')
     a = a.filter(ImageFilter.GaussianBlur(0.6))
     out = decontaminate(img.convert('RGB'), a, bg_colour(img))
     out.putalpha(a)
@@ -172,6 +182,9 @@ def main():
             except Exception as e:
                 print('  failed', s['url'], e); continue
             kind = s.get('kind', 'cut')
+            if s.get('crop'):                        # [x0, y0, x1, y1] as fractions: one product out of a group shot
+                x0, y0, x1, y1 = s['crop']
+                img = img.crop((round(x0 * img.width), round(y0 * img.height), round(x1 * img.width), round(y1 * img.height)))
             try:
                 if kind == 'scene':
                     res = square(img, transparent=False)
@@ -188,7 +201,7 @@ def main():
                 z = big if size == 1440 else size
                 r = res.resize((z, z), Image.LANCZOS)
                 r.save(os.path.join(od, f'{k}-{size}.webp'), 'WEBP', quality=88 if kind != 'scene' else 82, method=6)
-            meta.append(dict(k=k, kind=kind, src=s['url'], page=s.get('src_page'), w=img.width, h=img.height))
+            meta.append(dict(k=k, kind=kind, src=s['url'], page=s.get('src_page'), w=img.width, h=img.height, crop=s.get('crop')))
             outs.append((k, kind, res))
             print('  ok', k, kind, img.size)
         json.dump(meta, open(os.path.join(od, 'meta.json'), 'w'), indent=1)

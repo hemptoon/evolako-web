@@ -1,7 +1,420 @@
 {
  "mode": "process",
- "batch": "p-alpitronic-hyc50-autel-dc-compact-47-cir",
+ "batch": "final-1",
  "items": {
+  "iocharger-iocah20-uticnica": [
+   {
+    "url": "https://www.iocharger.com/wp-content/uploads/2023/05/IOCAH10-EV-Charger-1.png",
+    "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+    "kind": "keep"
+   }
+  ],
+  "iocharger-iocah20-kabl": [
+   {
+    "url": "https://www.iocharger.com/wp-content/uploads/2023/05/iocharger-smart-AC-EV-Charger-IOCAH10-8-1.png",
+    "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+    "kind": "cut",
+    "crop": [
+     0.45,
+     0.06,
+     0.95,
+     1.0
+    ]
+   },
+   {
+    "url": "https://www.iocharger.com/wp-content/uploads/2023/05/ev-charger-2-3-1-1.png",
+    "src_page": "https://www.iocharger.com/level-2-7kw-22kw-ocpp-1-6j-ocpp-2-0-1-smart-fast-home-ev-charger/",
+    "kind": "scene"
+   }
+  ],
+  "iocharger-dc": [
+   {
+    "url": "https://www.iocharger.com/wp-content/uploads/2026/08/02.webp",
+    "src_page": "https://www.iocharger.com/wall-mounted-30kw-40kw-dc-charger/",
+    "kind": "cut"
+   },
+   {
+    "url": "https://www.iocharger.com/wp-content/uploads/2023/05/ocpp-dc-ev-charger-with-pos.webp",
+    "src_page": "https://www.iocharger.com/mode-4-ocpp-1-6j-ocpp-2-0-1-60kw-90kw-120kw-150kw-dc-fast-charger/",
+    "kind": "cut"
+   },
+   {
+    "url": "https://www.iocharger.com/wp-content/uploads/2026/08/01.webp",
+    "src_page": "https://www.iocharger.com/wall-mounted-30kw-40kw-dc-charger/",
+    "kind": "cut"
+   },
+   {
+    "url": "https://www.iocharger.com/wp-content/uploads/2023/05/3.webp",
+    "src_page": "https://www.iocharger.com/wall-mounted-30kw-40kw-dc-charger/",
+    "kind": "cut"
+   },
+   {
+    "url": "https://www.iocharger.com/wp-content/uploads/2026/08/04.webp",
+    "src_page": "https://www.iocharger.com/wall-mounted-30kw-40kw-dc-charger/",
+    "kind": "cut"
+   }
+  ],
+  "easee-charge-max": [
+   {
+    "url": "https://easee.com/wp-content/uploads/2024/08/ev-charger_front-black.png",
+    "src_page": "https://easee.com/en/products/ev-chargers/charge-max/",
+    "kind": "keep"
+   },
+   {
+    "url": "https://easee.com/wp-content/uploads/2024/08/ev-charger_side-black.png",
+    "src_page": "https://easee.com/en/products/ev-chargers/charge-max/",
+    "kind": "keep"
+   }
+  ],
+  "easee-charge-up": [
+   {
+    "url": "https://easee.com/wp-content/uploads/2024/08/ev-charger_front-gray.png",
+    "src_page": "https://easee.com/en/products/ev-chargers/charge-up/",
+    "kind": "keep"
+   },
+   {
+    "url": "https://easee.com/wp-content/uploads/2024/08/ev-charger_side-gray.png",
+    "src_page": "https://easee.com/en/products/ev-chargers/charge-up/",
+    "kind": "keep"
+   },
+   {
+    "url": "https://easee.com/wp-content/uploads/2026/03/mnmt_08.webp",
+    "src_page": "https://easee.com/en/products/ev-chargers/charge-up/",
+    "kind": "scene"
+   }
+  ],
+  "easee-equalizer": [
+   {
+    "url": "https://easee.com/wp-content/uploads/2024/05/easee_equalizer.jpeg",
+    "src_page": "https://easee.com/en/products/accessories/equalizer/",
+    "kind": "cut"
+   },
+   {
+    "url": "https://easee.com/wp-content/uploads/2024/07/easee_equalizer_hand_1_1x.webp",
+    "src_page": "https://easee.com/en/products/accessories/equalizer/",
+    "kind": "scene"
+   }
+  ],
+  "easee-stub": [
+   {
+    "url": "https://easee.com/wp-content/uploads/2026/02/Base_pr_1-way_charger_side.webp",
+    "src_page": "https://easee.com/en/products/accessories/base/",
+    "kind": "keep"
+   }
+  ],
+  "wallbox-pulsar-max-11kw": [
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/63f5fd961b3f7f6f4806a6c7/598443a5-c456-436c-9587-b190ecb64f88/PULSARMAX_ACCESORIES_3.png?format=750w",
+    "src_page": "https://design.wallbox.com/guidelines/photostyle",
+    "kind": "cut"
+   },
+   {
+    "url": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/10/05193916/320-Pulsar-Max-ev-charger-features.jpg",
+    "src_page": "https://wallbox.com/en_uk/products/pulsar-max-install-compatible-electric-car-home-charger",
+    "kind": "scene"
+   }
+  ],
+  "wallbox-pulsar-max-22kw": [
+   {
+    "url": "https://images.squarespace-cdn.com/content/v1/63f5fd961b3f7f6f4806a6c7/598443a5-c456-436c-9587-b190ecb64f88/PULSARMAX_ACCESORIES_3.png?format=750w",
+    "src_page": "https://design.wallbox.com/guidelines/photostyle",
+    "kind": "cut"
+   },
+   {
+    "url": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/10/05193735/768-Pulsar-Max-tethered.jpg",
+    "src_page": "https://wallbox.com/en_uk/products/pulsar-max-install-compatible-electric-car-home-charger",
+    "kind": "scene"
+   }
+  ],
+  "wallbox-pulsar-pro-mid-22": [
+   {
+    "url": "pdf:https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15131010/Pulsar_Pro2026_Series_EN_b.pdf#xref=656",
+    "src_page": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15131010/Pulsar_Pro2026_Series_EN_b.pdf",
+    "kind": "keep"
+   },
+   {
+    "url": "pdf:https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15131010/Pulsar_Pro2026_Series_EN_b.pdf#xref=30",
+    "src_page": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15131010/Pulsar_Pro2026_Series_EN_b.pdf",
+    "kind": "keep"
+   },
+   {
+    "url": "pdf:https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15131010/Pulsar_Pro2026_Series_EN_b.pdf#xref=32",
+    "src_page": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15131010/Pulsar_Pro2026_Series_EN_b.pdf",
+    "kind": "keep"
+   },
+   {
+    "url": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2026/06/15130310/768-Pulsar-Pro_MID.jpg",
+    "src_page": "https://wallbox.com/en/pulsar-pro-home-charger-reimbursement",
+    "kind": "scene"
+   }
+  ],
+  "wallbox-supernova-60": [
+   {
+    "url": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2025/04/16105627/1024-Supernova-fast-charger.png",
+    "src_page": "https://wallbox.com/en/supernova-fast-ev-charger",
+    "kind": "keep"
+   },
+   {
+    "url": "https://d1lnencgr7glws.cloudfront.net/wp-content/uploads/2025/04/16105602/768-Supernova-fast-charging.jpg",
+    "src_page": "https://wallbox.com/en/supernova-fast-ev-charger",
+    "kind": "scene"
+   }
+  ],
+  "teltonika-evc2-11kw-kabl": [
+   {
+    "url": "https://static.wixstatic.com/media/baf146_3fecf9bb5a7646f39ffd31d2c674c23e~mv2.jpg",
+    "src_page": "https://teltonika-energy.com/",
+    "kind": "scene"
+   }
+  ],
+  "tesla-wall-connector-gen3": [
+   {
+    "url": "https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/CAR_ACCESSORIES/MODEL_S/CHARGING_ADAPTERS/1529455-02-D_0_2000.jpg",
+    "src_page": "https://shop.tesla.com/en_gb/product/Wall-Connector",
+    "kind": "cut"
+   },
+   {
+    "url": "pdf:https://digitalassets.tesla.com/tesla-contents/image/upload/wall-connector-datasheet-en.pdf#xref=40",
+    "src_page": "https://digitalassets.tesla.com/tesla-contents/image/upload/wall-connector-datasheet-en.pdf",
+    "kind": "keep"
+   },
+   {
+    "url": "https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/CAR_ACCESSORIES/MODEL_S/CHARGING_ADAPTERS/1529455-02-E_non-Tesla.jpg",
+    "src_page": "https://shop.tesla.com/en_gb/product/Wall-Connector",
+    "kind": "scene"
+   }
+  ],
+  "alfen-eve-single-pro-line": [
+   {
+    "url": "https://eu-images.contentstack.com/v3/assets/blt08d332658a89f766/blt1bef799aef0c724a/6780df6de86bc81be381712f/Eve_Single_Pro-line_white_-_front_display.png",
+    "src_page": "https://alfen.com/eve-single-pro-line",
+    "kind": "keep"
+   },
+   {
+    "url": "https://eu-images.contentstack.com/v3/assets/blt08d332658a89f766/blt4c7b2a3da4e79a2f/6722389b4df86b566a105450/Eve_Single_Pro-line_street.jpg?&auto=webp",
+    "src_page": "https://alfen.com/eve-single-pro-line",
+    "kind": "scene"
+   }
+  ],
+  "alfen-eve-single-pro-line-kabl-22": [
+   {
+    "url": "pdf:https://eu-assets.contentstack.com/v3/assets/blt08d332658a89f766/blt1fe72218c1e70427/6787d45d36cf7b76cf10f46e/Leaflet_-_Eve_Single_Pro-line_EN.pdf#xref=41",
+    "src_page": "https://eu-assets.contentstack.com/v3/assets/blt08d332658a89f766/blt1fe72218c1e70427/6787d45d36cf7b76cf10f46e/Leaflet_-_Eve_Single_Pro-line_EN.pdf",
+    "kind": "keep",
+    "crop": [
+     0.3,
+     0.07,
+     0.96,
+     0.415
+    ]
+   }
+  ],
+  "keba-kecontact-p40-11kw": [
+   {
+    "url": "https://a.storyblok.com/f/40131/4620x4569/cc792f8936/keba-ea_product_family_p40_socket-standard_white.jpg",
+    "src_page": "https://www.keba.com/en/emobility/products/p40/kecontact-p40-overview",
+    "kind": "cut",
+    "crop": [
+     0.0,
+     0.0,
+     0.7,
+     1.0
+    ]
+   },
+   {
+    "url": "https://a.storyblok.com/f/40131/4620x4569/b0851474be/keba-ea_product_family_p40_socket-standard_black.jpg",
+    "src_page": "https://www.keba.com/en/emobility/products/p40/kecontact-p40-overview",
+    "kind": "cut",
+    "crop": [
+     0.0,
+     0.0,
+     0.7,
+     1.0
+    ]
+   },
+   {
+    "url": "https://a.storyblok.com/f/40131/560x650/a566c78044/ea-kecontact-p40-dwwb-image.jpg/m/1920x0/filters:format(webp)",
+    "src_page": "https://www.keba.com/en/emobility/products/ac-charging-stations/p40/keba-kecontact-p40",
+    "kind": "scene"
+   }
+  ],
+  "keba-kecontact-p40-mid-11kw": [
+   {
+    "url": "https://a.storyblok.com/f/40131/4620x4569/cc792f8936/keba-ea_product_family_p40_socket-standard_white.jpg",
+    "src_page": "https://www.keba.com/en/emobility/products/p40/kecontact-p40-overview",
+    "kind": "cut",
+    "crop": [
+     0.0,
+     0.0,
+     0.7,
+     1.0
+    ]
+   },
+   {
+    "url": "https://a.storyblok.com/f/40131/4620x4569/b0851474be/keba-ea_product_family_p40_socket-standard_black.jpg",
+    "src_page": "https://www.keba.com/en/emobility/products/p40/kecontact-p40-overview",
+    "kind": "cut",
+    "crop": [
+     0.0,
+     0.0,
+     0.7,
+     1.0
+    ]
+   },
+   {
+    "url": "https://a.storyblok.com/f/40131/1920x1920/ce358d01c5/ea_sustainability_kecontact_p40_content_bild-2.jpg/m/1920x0/filters:format(webp)",
+    "src_page": "https://www.keba.com/en/emobility/products/ac-charging-stations/p40/keba-kecontact-p40",
+    "kind": "scene"
+   }
+  ],
+  "keba-stub-p40": [
+   {
+    "url": "pdf:https://www.keba.com/download/x/99650f6677/kecontact-standsaule_datenblatt_en.pdf#xref=35",
+    "src_page": "https://www.keba.com/download/x/99650f6677/kecontact-standsaule_datenblatt_en.pdf",
+    "kind": "cut"
+   },
+   {
+    "url": "pdf:https://www.keba.com/download/x/99650f6677/kecontact-standsaule_datenblatt_en.pdf#xref=22",
+    "src_page": "https://www.keba.com/download/x/99650f6677/kecontact-standsaule_datenblatt_en.pdf",
+    "kind": "cut"
+   },
+   {
+    "url": "https://a.storyblok.com/f/40131/6543x5621/2481b839d4/ea-kecontact-p40-socket-charging.jpg",
+    "src_page": "https://www.keba.com/en/emobility/products/ac-charging-stations/p40/keba-kecontact-p40",
+    "kind": "scene"
+   }
+  ],
+  "sungrow-ac22e-01": [
+   {
+    "url": "pdf:https://info-support.sungrowpower.com/datasheet-materials/2105e8e5-a1b3-4114-a8b5-854bb4307d1b.pdf#xref=400",
+    "src_page": "https://info-support.sungrowpower.com/datasheet-materials/2105e8e5-a1b3-4114-a8b5-854bb4307d1b.pdf",
+    "kind": "keep"
+   },
+   {
+    "url": "https://official-oversears-file.sungrowpower.com/page-assets-process/704b9d76-24c1-409d-ba49-029dad5f5f89.webp",
+    "src_page": "https://www.sungrowpower.com/en/products/ev-charger/ac22-01?tab=2",
+    "kind": "scene"
+   }
+  ],
+  "sungrow-ac22e-01-mid": [
+   {
+    "url": "pdf:https://info-support.sungrowpower.com/datasheet-materials/2105e8e5-a1b3-4114-a8b5-854bb4307d1b.pdf#xref=400",
+    "src_page": "https://info-support.sungrowpower.com/datasheet-materials/2105e8e5-a1b3-4114-a8b5-854bb4307d1b.pdf",
+    "kind": "keep"
+   },
+   {
+    "url": "https://official-oversears-file.sungrowpower.com/page-assets-process/704b9d76-24c1-409d-ba49-029dad5f5f89.webp",
+    "src_page": "https://www.sungrowpower.com/en/products/ev-charger/ac22-01?tab=2",
+    "kind": "scene"
+   }
+  ],
+  "sungrow-idc30e": [
+   {
+    "url": "https://official-oversears-file.sungrowpower.com/news-images/e689103d-3928-4ade-9a51-02cfac3cff35.png",
+    "src_page": "https://www.sungrowpower.com/en/products/ev-charger/idc30e",
+    "kind": "keep"
+   },
+   {
+    "url": "https://official-oversears-file.sungrowpower.com/page-assets-process/f68eeb16-9d15-4250-99a2-8e15a6750d36.webp",
+    "src_page": "https://www.sungrowpower.com/en/products/ev-charger/idc30e",
+    "kind": "scene"
+   }
+  ],
+  "sungrow-idc180e": [
+   {
+    "url": "https://official-oversears-file.sungrowpower.com/news-images/efc8398e-ed4a-4243-833e-962b61ccdc74.png",
+    "src_page": "https://www.sungrowpower.com/en/products/ev-charger/idc180e",
+    "kind": "keep"
+   },
+   {
+    "url": "https://official-oversears-file.sungrowpower.com/page-assets-process/5f06d7ba-51a5-4f8f-a537-79246ddc53db.webp",
+    "src_page": "https://www.sungrowpower.com/en/products/ev-charger/idc180e",
+    "kind": "scene"
+   }
+  ],
+  "schneider-evlink-pro-ac-22-uticnica": [
+   {
+    "url": "https://download.se.com/files?p_Doc_Ref=EVB3S22N4B_Image_HR&p_File_Type=rendition_1500_jpg",
+    "src_page": "https://www.se.com/ie/en/product/EVB3S22N4/charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p+n-t2s-socketoutlet-rdcdd-6ma-mnx-aux-",
+    "kind": "cut"
+   }
+  ],
+  "schneider-evlink-pro-ac-22-kabl": [
+   {
+    "url": "https://download.se.com/files?p_Doc_Ref=EVB3S11NCA_Image&p_File_Type=rendition_1500_jpg",
+    "src_page": "https://www.se.com/be/en/product/EVB3S22NCB/charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p+n-t2-attached-cable-rcd-bev-mnx-aux-",
+    "kind": "cut"
+   },
+   {
+    "url": "https://download.se.com/files?p_Doc_Ref=EVB3S07NCA_front&p_File_Type=rendition_1500_jpg",
+    "src_page": "https://www.se.com/be/en/product/EVB3S22NCB/charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p+n-t2-attached-cable-rcd-bev-mnx-aux-",
+    "kind": "cut"
+   },
+   {
+    "url": "https://download.se.com/files?p_Doc_Ref=EVB3S07NCA_left&p_File_Type=rendition_1500_jpg",
+    "src_page": "https://www.se.com/be/en/product/EVB3S22NCB/charging-station-evlink-pro-ac-ac-metal-22kw-32a-3p+n-t2-attached-cable-rcd-bev-mnx-aux-",
+    "kind": "cut"
+   }
+  ],
+  "abb-terra-ac-w11-kabl": [
+   {
+    "url": "https://resources.news.e.abb.com/images/2020/5/20/0/ABB_launch_new_Terra_AC_wallbox_for_EV_charging.jpg",
+    "src_page": "https://new.abb.com/ev-charging/fr/terra-ac-wallbox",
+    "kind": "cut"
+   },
+   {
+    "url": "pdf:https://library.e.abb.com/public/d31ba4eebb4541c79ac5c1ccde315d79/9AKK107680A2258%20Terra__AC_wallbox_A5_Leaflet%20rev%20C.pdf#xref=14",
+    "src_page": "https://library.e.abb.com/public/d31ba4eebb4541c79ac5c1ccde315d79/9AKK107680A2258%20Terra__AC_wallbox_A5_Leaflet%20rev%20C.pdf",
+    "kind": "cut"
+   }
+  ],
+  "abb-terra-54": [
+   {
+    "url": "https://www07.abb.com/images/librariesprovider107/french-pages/terra-54-cjg.jpg?sfvrsn=f9ad470c_1",
+    "src_page": "https://new.abb.com/ev-charging/fr/charge-rapide-dc/terra-54-cjg",
+    "kind": "cut"
+   }
+  ],
+  "zaptec-go-2": [
+   {
+    "url": "https://zaptec.objects.frb.io/assets/Zaptec-Go-2/Zaptec_Go-2_Front_AsphaltBlack.webp",
+    "src_page": "https://zaptec.com/products/zaptec-go-2",
+    "kind": "keep"
+   },
+   {
+    "url": "https://zaptec.objects.frb.io/assets/New-brand-imagery-2025/New-imagery-Zaptec-Go-2/_1200x630_crop_center-center_82_none/Zaptec_Go2_Home_Charging_2367.jpg?mtime=1760424885",
+    "src_page": "https://zaptec.com/products/zaptec-go-2",
+    "kind": "scene"
+   }
+  ],
+  "fronius-wattpilot-home-11j": [
+   {
+    "url": "https://www.fronius.com/-/media/imported-media/140300-148306/148301-148306/148303.webp?ih=1732&iw=3080&c=0",
+    "src_page": "https://www.fronius.com/en/help-center/solar-energy/products/e-mobility/wallbox/wattpilot-homego/wattpilot-home-11-j",
+    "kind": "keep"
+   }
+  ],
+  "fronius-wattpilot-go-11j": [
+   {
+    "url": "https://www.fronius.com/-/media/imported-media/140300-148306/148214-148299/148250.webp",
+    "src_page": "https://www.fronius.com/en/help-center/solar-energy/products/e-mobility/wallbox/wattpilot-homego/wattpilot-go-11-j",
+    "kind": "keep"
+   }
+  ],
+  "fronius-wattpilot-go-22j": [
+   {
+    "url": "https://www.fronius.com/-/media/imported-media/140300-148306/148214-148299/148250.webp",
+    "src_page": "https://www.fronius.com/en/help-center/solar-energy/products/e-mobility/wallbox/wattpilot-homego/wattpilot-go-22-j",
+    "kind": "keep"
+   }
+  ],
+  "myenergi-zappi-22": [
+   {
+    "url": "https://www.myenergi.com/wp-content/uploads/2025/11/zappi-u-w-2.jpg",
+    "src_page": "https://www.myenergi.com/product-category/myenergi-shop/ev-chargers",
+    "kind": "cut"
+   }
+  ],
   "heidelberg-home-eco-11": [
    {
     "url": "https://www.amperfied.de/wp-content/uploads/2022/09/ladestation-wallbox-home-eco-zuhause-1-scaled.jpg",
@@ -45,20 +458,6 @@
    {
     "url": "https://v2charge.com/store/wp-content/uploads/2026/04/car-charger-trydan.jpg",
     "src_page": "https://v2charge.com/store/product/trydan/",
-    "kind": "scene"
-   }
-  ],
-  "v2c-denka-20": [
-   {
-    "url": "https://v2charge.com/wp-content/uploads/2025/04/denka-fast-charger-v2c.jpg",
-    "src_page": "https://v2charge.com/denka/",
-    "kind": "scene"
-   }
-  ],
-  "v2c-denka-40": [
-   {
-    "url": "https://v2charge.com/wp-content/uploads/2025/04/denka-fast-charger-v2c.jpg",
-    "src_page": "https://v2charge.com/denka/",
     "kind": "scene"
    }
   ],
