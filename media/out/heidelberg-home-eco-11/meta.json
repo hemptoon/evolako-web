@@ -1,6 +1,20 @@
 [
  {
   "k": 1,
+  "kind": "cut",
+  "src": "https://www.amperfied.de/wp-content/uploads/2022/09/ladestation-wallbox-home-eco-zuhause-1-scaled.jpg",
+  "page": "https://www.amperfied.de/de/ladeloesungen/wallbox-home-eco/",
+  "w": 461,
+  "h": 512,
+  "crop": [
+   0.366,
+   0.22,
+   0.546,
+   0.52
+  ]
+ },
+ {
+  "k": 2,
   "kind": "scene",
   "src": "https://www.amperfied.de/wp-content/uploads/2022/09/ladestation-wallbox-home-eco-zuhause-1-scaled.jpg",
   "page": "https://www.amperfied.de/de/ladeloesungen/wallbox-home-eco/",
