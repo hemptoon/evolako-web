@@ -1,1 +1,57 @@
-[]
+[
+ {
+  "url": "pdf:https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf#xref=34",
+  "w": 3129,
+  "h": 2282,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf",
+  "sha1": "",
+  "n": 1
+ },
+ {
+  "url": "pdf:https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf#xref=59",
+  "w": 1192,
+  "h": 1663,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 0,
+  "src_page": "https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf",
+  "sha1": "",
+  "n": 2
+ },
+ {
+  "url": "pdf:https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf#xref=125",
+  "w": 2401,
+  "h": 2525,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf",
+  "sha1": "",
+  "n": 3
+ },
+ {
+  "url": "https://resources.news.e.abb.com/images/2019/3/29/0/DC_wallbox.png",
+  "w": 1280,
+  "h": 720,
+  "alpha": false,
+  "bg": "white",
+  "bytes": 264833,
+  "src_page": "https://new.abb.com/ev-charging/terra-dc-wallbox",
+  "sha1": "cee5184359e9",
+  "n": 4
+ },
+ {
+  "url": "https://www07.abb.com/images/librariesprovider107/french-pages/terra-dc-wallbox5cfd80c3-5c36-4aa7-aee6-47c77660ff5c.jpg?sfvrsn=84cd470c_1",
+  "w": 1200,
+  "h": 630,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 265284,
+  "src_page": "https://new.abb.com/ev-charging/terra-dc-wallbox",
+  "sha1": "4140c5c9d6b8",
+  "n": 5
+ }
+]

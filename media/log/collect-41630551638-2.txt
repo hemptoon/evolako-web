@@ -1,0 +1,38 @@
+== beny-bcpcm-mid-4g
+   https://www.beny.com/?p=6918 52 urls
+   https://www.beny.com/?p=29421 47 urls
+   https://www.evb.com/?p=6355 145 urls
+   https://www.beny.com/?p=56101 171 urls
+/home/runner/.local/lib/python3.14/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+  pdf https://www.evb.com/wp-content/uploads/2026/01/BENY-Datasheet-OCPP-Wall-mounted-AC-EV-Charger-2024.09.06.pdf 2 images
+  pdf https://www.beny.com/wp-content/uploads/2022/10/BENY-Datasheet-OCPP-Wall-mounted-AC-EV-ChargerMetal-Enclousure-2025.09.23.pdf 8 images
+  pdf https://www.beny.com/wp-content/uploads/2021/06/AC-DC-EV-Charger-Catalogue.pdf 26 images
+  kept 40
+== heidelberg-energy-control-11
+   https://www.heidelberg.com/global/en/about_heidelberg/press_relations/press_release/press_release_details/press_release_150784.jsp 36 urls
+   https://www.presseportal.de/pm/6678/4771370 17 urls
+   https://www.heidelberg.com/global/en/about_heidelberg/press_relations/press_release/press_release_details/press_release_191360.jsp 27 urls
+  pdf https://www.mobilityhouse.com/media/productattachments/files/Datenblatt_Energy_Control_Vertriebspartner_DE.pdf 0 images
+  pdf https://www.mobilityhouse.com/media/productattachments/files/Produktbroschuere_Energy_Control_Vertriebspartner_DE.pdf 3 images
+  kept 23
+== abb-terra-dc-wallbox-24
+  page failed https://new.abb.com/ev-charging/terra-dc-wallbox Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://new.abb.com/ev-charging/terra-dc-wallbox
+Call log:
+  - navigating to "https://new.abb.com/ev-charging/terra-dc-wallbox", waiting until "domcontentloaded"
+
+   https://new.abb.com/ev-charging/terra-dc-wallbox 0 urls
+  page failed https://new.abb.com/ev-charging/fr/terra-dc-wallbox Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://new.abb.com/ev-charging/fr/terra-dc-wallbox
+Call log:
+  - navigating to "https://new.abb.com/ev-charging/fr/terra-dc-wallbox", waiting until "domcontentloaded"
+
+   https://new.abb.com/ev-charging/fr/terra-dc-wallbox 0 urls
+  page failed https://new.abb.com/news/detail/18391/abb-drives-future-for-german-e-mobility-with-expanded-charging-portfolio Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://new.abb.com/news/detail/18391/abb-drives-future-for-german-e-mobility-with-expanded-charging-portfolio
+Call log:
+  - navigating to "https://new.abb.com/news/detail/18391/abb-drives-future-for-german-e-mobility-with-expanded-charging-portfolio", waiting until "domcontentloaded"
+
+   https://new.abb.com/news/detail/18391/abb-drives-future-for-german-e-mobility-with-expanded-charging-portfolio 0 urls
+  pdf https://search.abb.com/library/Download.aspx?DocumentID=9AKK107680A4480&LanguageCode=en&DocumentPartId=&Action=Launch 0 images
+  pdf https://search.abb.com/library/Download.aspx?DocumentID=9AKK107680A3888&LanguageCode=en&DocumentPartId=&Action=Launch 0 images
+  pdf https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf 3 images
+  kept 5
