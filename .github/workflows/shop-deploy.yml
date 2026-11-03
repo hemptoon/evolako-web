@@ -1,0 +1,37 @@
+# shop.evolako.rs — upload dist/ to the Cloudflare Pages project "evolako-shop" (production).
+# Runs only on pushes to this branch. dist/ is the built shop (public pages only; no costs or margins).
+name: Shop deploy
+on:
+  push:
+    branches: [shop-deploy]
+    paths: [dist/**, deploy.request]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: shop-deploy
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - name: Deploy to the production branch of evolako-shop
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          PB=$(curl -s -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/pages/projects/evolako-shop" | python3 -c "import sys,json;print(json.load(sys.stdin)['result']['production_branch'])")
+          echo "production branch: $PB"
+          npx --yes wrangler@4.151.0 pages deploy dist --project-name=evolako-shop --branch="$PB" --commit-dirty=true
+      - name: Check the live shop
+        run: |
+          sleep 20
+          for p in / /kucni-punjaci/ /keba-kecontact-p40-11kw/ /img/p/keba-kecontact-p40-11kw/1-720.webp; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "https://shop.evolako.rs$p"); echo "$p $code"; [ "$code" = 200 ] || exit 1
+          done
+          curl -s https://shop.evolako.rs/kucni-punjaci/ | grep -q 'data-sort' && echo "v7 listing live"
