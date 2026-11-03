@@ -1,10 +1,29 @@
 [
  {
   "k": 1,
+  "kind": "cut",
+  "src": "https://v2charge.com/store/wp-content/uploads/2025/05/denka-v2c.jpg",
+  "page": "https://v2charge.com/store/?p=22052",
+  "w": 600,
+  "h": 600,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "cut",
+  "src": "https://v2charge.com/store/wp-content/uploads/2025/05/echarger-denka.jpg",
+  "page": "https://v2charge.com/store/?p=22052",
+  "w": 600,
+  "h": 600,
+  "crop": null
+ },
+ {
+  "k": 3,
   "kind": "scene",
-  "src": "https://v2charge.com/wp-content/uploads/2025/04/denka-fast-charger-v2c.jpg",
+  "src": "https://v2charge.com/wp-content/uploads/2026/06/denka-80kw-v2c-fast-charging-electric-car-scaled.jpg",
   "page": "https://v2charge.com/denka/",
   "w": 2560,
-  "h": 1466
+  "h": 1696,
+  "crop": null
  }
 ]
