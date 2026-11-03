@@ -1,0 +1,24 @@
+== iocharger-mini-11-kw
+   https://www.iocharger.com/?p=8086 133 urls
+   https://www.iocharger.com/de/?p=8086 133 urls
+   https://www.iocharger.com/?p=2599 43 urls
+/home/runner/.local/lib/python3.14/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+  pdf https://www.iocharger.com/wp-content/uploads/2025/12/Mini-Smart-AC-Charger-IOCAH30-2025-V1.2.1.pdf 2 images
+  pdf https://www.iocharger.com/wp-content/uploads/2023/05/EU-Smart-AC-Charger-IOCAH15.pdf 7 images
+  kept 26
+== wallbox-power-boost-3f
+   https://wallbox.com/en_ie/three-phase-clamp-energy-meter 28 urls
+  page failed https://support.wallbox.com/wp-content/uploads/2019/07/20190627_Power-Boost-Manual_Multilingual.pdf Page.goto: Download is starting
+Call log:
+  - navigating to "https://support.wallbox.com/wp-content/uploads/2019/07/20190627_Power-Boost-Manual_Multilingual.pdf", waiting until "domcontentloaded"
+
+   https://support.wallbox.com/wp-content/uploads/2019/07/20190627_Power-Boost-Manual_Multilingual.pdf 0 urls
+  pdf https://support.wallbox.com/wp-content/uploads/2019/07/20190627_Power-Boost-Manual_Multilingual.pdf 7 images
+  kept 16
+== v2c-denka-40
+   https://v2charge.com/store/?p=22052 83 urls
+   https://v2charge.com/store/product/denka/ 78 urls
+   https://v2charge.com/denka/ 93 urls
+  pdf https://v2charge.com/wp-content/uploads/2025/06/catalogue-denka-english.pdf 1 images
+  kept 26
