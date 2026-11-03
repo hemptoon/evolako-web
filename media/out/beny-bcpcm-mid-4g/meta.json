@@ -1,0 +1,29 @@
+[
+ {
+  "k": 1,
+  "kind": "keep",
+  "src": "pdf:https://www.beny.com/wp-content/uploads/2021/06/AC-DC-EV-Charger-Catalogue.pdf#xref=187",
+  "page": "https://www.beny.com/wp-content/uploads/2021/06/AC-DC-EV-Charger-Catalogue.pdf",
+  "w": 528,
+  "h": 701,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "keep",
+  "src": "pdf:https://www.beny.com/wp-content/uploads/2021/06/AC-DC-EV-Charger-Catalogue.pdf#xref=185",
+  "page": "https://www.beny.com/wp-content/uploads/2021/06/AC-DC-EV-Charger-Catalogue.pdf",
+  "w": 508,
+  "h": 642,
+  "crop": null
+ },
+ {
+  "k": 3,
+  "kind": "cut",
+  "src": "pdf:https://www.beny.com/wp-content/uploads/2021/06/AC-DC-EV-Charger-Catalogue.pdf#xref=235",
+  "page": "https://www.beny.com/wp-content/uploads/2021/06/AC-DC-EV-Charger-Catalogue.pdf",
+  "w": 1695,
+  "h": 1249,
+  "crop": null
+ }
+]
