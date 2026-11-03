@@ -1,0 +1,15 @@
+== wallbox-copper-sb-22
+   https://wallbox.com/en_sg/buy-coppersb 0 urls
+   https://wallbox.com/en_catalog/copper 0 urls
+/home/runner/.local/lib/python3.14/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+  pdf https://support.wallbox.com/wp-content/uploads/ht_kb/2020/02/DS_EN_CopperS.pdf 2 images
+  pdf https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf 7 images
+  kept 9
+== v2c-denka-20
+   https://v2charge.com/store/?p=22052 83 urls
+   https://v2charge.com/store/product/denka/ 78 urls
+   https://v2charge.com/denka/ 92 urls
+  pdf https://v2charge.com/wp-content/uploads/2025/06/catalogue-denka-english.pdf 1 images
+  pdf https://v2charge.com/wp-content/uploads/2025/08/denka-technische-daten.pdf 0 images
+  kept 26

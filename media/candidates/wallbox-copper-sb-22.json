@@ -1,1 +1,101 @@
-[]
+[
+ {
+  "url": "pdf:https://support.wallbox.com/wp-content/uploads/ht_kb/2020/02/DS_EN_CopperS.pdf#xref=5",
+  "w": 652,
+  "h": 858,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 0,
+  "src_page": "https://support.wallbox.com/wp-content/uploads/ht_kb/2020/02/DS_EN_CopperS.pdf",
+  "sha1": "",
+  "n": 1
+ },
+ {
+  "url": "pdf:https://support.wallbox.com/wp-content/uploads/ht_kb/2020/02/DS_EN_CopperS.pdf#xref=7",
+  "w": 824,
+  "h": 1032,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 0,
+  "src_page": "https://support.wallbox.com/wp-content/uploads/ht_kb/2020/02/DS_EN_CopperS.pdf",
+  "sha1": "",
+  "n": 2
+ },
+ {
+  "url": "pdf:https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf#xref=53",
+  "w": 741,
+  "h": 1057,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf",
+  "sha1": "",
+  "n": 3
+ },
+ {
+  "url": "pdf:https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf#xref=54",
+  "w": 1758,
+  "h": 2490,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf",
+  "sha1": "",
+  "n": 4
+ },
+ {
+  "url": "pdf:https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf#xref=55",
+  "w": 1757,
+  "h": 2490,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf",
+  "sha1": "",
+  "n": 5
+ },
+ {
+  "url": "pdf:https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf#xref=47",
+  "w": 1323,
+  "h": 1875,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf",
+  "sha1": "",
+  "n": 6
+ },
+ {
+  "url": "pdf:https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf#xref=100",
+  "w": 982,
+  "h": 1025,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 0,
+  "src_page": "https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf",
+  "sha1": "",
+  "n": 7
+ },
+ {
+  "url": "pdf:https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf#xref=34",
+  "w": 503,
+  "h": 842,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 0,
+  "src_page": "https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf",
+  "sha1": "",
+  "n": 8
+ },
+ {
+  "url": "pdf:https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf#xref=43",
+  "w": 1203,
+  "h": 1174,
+  "alpha": true,
+  "bg": "alpha",
+  "bytes": 0,
+  "src_page": "https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf",
+  "sha1": "",
+  "n": 9
+ }
+]
