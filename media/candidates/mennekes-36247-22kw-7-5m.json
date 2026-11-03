@@ -1,13 +1,24 @@
 [
  {
-  "url": "https://www.mennekes.org/fileadmin/products_media/medien_sge2/masszeichnungen/mz_mennekes_cd00049_13_glatt.png",
+  "url": "pdf:https://www.mennekes.org/fileadmin/products_media/medien_sge2/produktdatenblaetter/20231114/36247_en.pdf#xref=11",
+  "w": 2657,
+  "h": 3000,
+  "alpha": false,
+  "bg": "scene",
+  "bytes": 0,
+  "src_page": "https://www.mennekes.org/fileadmin/products_media/medien_sge2/produktdatenblaetter/20231114/36247_en.pdf",
+  "sha1": "",
+  "n": 1
+ },
+ {
+  "url": "pdf:https://www.mennekes.org/fileadmin/products_media/medien_sge2/produktdatenblaetter/20231114/36247_en.pdf#xref=27",
   "w": 4850,
   "h": 3398,
   "alpha": false,
   "bg": "scene",
-  "bytes": 596535,
-  "src_page": "https://www.mennekes.org/emobility/product-details/36247/",
-  "sha1": "6a7318912907",
-  "n": 1
+  "bytes": 0,
+  "src_page": "https://www.mennekes.org/fileadmin/products_media/medien_sge2/produktdatenblaetter/20231114/36247_en.pdf",
+  "sha1": "",
+  "n": 2
  }
 ]

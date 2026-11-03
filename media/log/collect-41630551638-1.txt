@@ -1,0 +1,23 @@
+== iocharger-mini-22-kw-rfid
+   https://www.iocharger.com/?p=8086 133 urls
+   https://www.iocharger.com/de/?p=8086 133 urls
+   https://www.iocharger.com/?p=2599 43 urls
+/home/runner/.local/lib/python3.14/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+  pdf https://www.iocharger.com/wp-content/uploads/2025/12/Mini-Smart-AC-Charger-IOCAH30-2025-V1.2.1.pdf 2 images
+  pdf https://www.iocharger.com/wp-content/uploads/2023/05/EU-Smart-AC-Charger-IOCAH15.pdf 7 images
+  kept 26
+== teltonika-evc2-11kw-uticnica
+   https://wiki.teltonika-energy.com/view/TeltoCharge_product_codes_EVC2 11 urls
+   https://wiki.teltonika-energy.com/view/Main_Page_EVC2 2 urls
+   https://wiki.teltonika-energy.com/view/EVC2_frontplates 2 urls
+   https://teltonika-energy.com/ 57 urls
+  pdf https://wiki.teltonika-energy.com/images/e/e6/EVC_2_Datasheet_10_09.pdf 1 images
+  pdf https://wiki.teltonika-energy.com/images/3/30/EVC200_Installation_manual_V.12.200.pdf 0 images
+  kept 16
+== mennekes-36247-22kw-7-5m
+   https://www.mennekes.org/emobility/product-details/36247/ 19 urls
+  pdf https://www.mennekes.org/fileadmin/products_media/medien_sge2/produktdatenblaetter/20231114/36247_en.pdf 2 images
+  pdf https://media.mennekes.org/36247_en_53777_originaldatei.pdf 0 images
+  pdf https://www.mennekes.org/fileadmin/products_media/medien_sge2/masszeichnungen/mz_mennekes_cd00049_13_glatt.png 0 images
+  kept 2
