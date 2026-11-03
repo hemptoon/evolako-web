@@ -1,6 +1,20 @@
 [
  {
   "k": 1,
+  "kind": "cut",
+  "src": "https://static.wixstatic.com/media/baf146_3fecf9bb5a7646f39ffd31d2c674c23e~mv2.jpg",
+  "page": "https://teltonika-energy.com/",
+  "w": 561,
+  "h": 1387,
+  "crop": [
+   0.309,
+   0.27,
+   0.445,
+   0.64
+  ]
+ },
+ {
+  "k": 2,
   "kind": "scene",
   "src": "https://static.wixstatic.com/media/baf146_3fecf9bb5a7646f39ffd31d2c674c23e~mv2.jpg",
   "page": "https://teltonika-energy.com/",
