@@ -1,9 +1,20 @@
 {
  "mode": "process",
- "batch": "add-1",
+ "batch": "cut-from-scene",
  "model": "birefnet-general",
  "items": {
   "iocharger-mini-11-kw": [
+   {
+    "url": "https://www.iocharger.com/wp-content/uploads/2023/01/Newly-launch-Mini-Smart-EV-Charger-IOCAH15-1.png",
+    "src_page": "https://www.iocharger.com/?p=8086",
+    "kind": "cut",
+    "crop": [
+     0.2,
+     0.15,
+     0.75,
+     1.0
+    ]
+   },
    {
     "url": "https://www.iocharger.com/wp-content/uploads/2023/01/Newly-launch-Mini-Smart-EV-Charger-IOCAH15-1.png",
     "src_page": "https://www.iocharger.com/?p=8086",
@@ -14,88 +25,53 @@
    {
     "url": "https://www.iocharger.com/wp-content/uploads/2023/01/Newly-launch-Mini-Smart-EV-Charger-IOCAH15-1.png",
     "src_page": "https://www.iocharger.com/?p=8086",
+    "kind": "cut",
+    "crop": [
+     0.2,
+     0.15,
+     0.75,
+     1.0
+    ]
+   },
+   {
+    "url": "https://www.iocharger.com/wp-content/uploads/2023/01/Newly-launch-Mini-Smart-EV-Charger-IOCAH15-1.png",
+    "src_page": "https://www.iocharger.com/?p=8086",
     "kind": "scene"
    }
   ],
-  "beny-bcpcm-mid-4g": [
+  "heidelberg-home-eco-11": [
    {
-    "url": "pdf:https://www.beny.com/wp-content/uploads/2021/06/AC-DC-EV-Charger-Catalogue.pdf#xref=187",
-    "src_page": "https://www.beny.com/wp-content/uploads/2021/06/AC-DC-EV-Charger-Catalogue.pdf",
-    "kind": "keep"
+    "url": "https://www.amperfied.de/wp-content/uploads/2022/09/ladestation-wallbox-home-eco-zuhause-1-scaled.jpg",
+    "src_page": "https://www.amperfied.de/de/ladeloesungen/wallbox-home-eco/",
+    "kind": "cut",
+    "crop": [
+     0.366,
+     0.22,
+     0.546,
+     0.52
+    ]
    },
    {
-    "url": "pdf:https://www.beny.com/wp-content/uploads/2021/06/AC-DC-EV-Charger-Catalogue.pdf#xref=185",
-    "src_page": "https://www.beny.com/wp-content/uploads/2021/06/AC-DC-EV-Charger-Catalogue.pdf",
-    "kind": "keep"
-   },
-   {
-    "url": "pdf:https://www.beny.com/wp-content/uploads/2021/06/AC-DC-EV-Charger-Catalogue.pdf#xref=235",
-    "src_page": "https://www.beny.com/wp-content/uploads/2021/06/AC-DC-EV-Charger-Catalogue.pdf",
-    "kind": "cut"
-   }
-  ],
-  "wallbox-copper-sb-22": [
-   {
-    "url": "pdf:https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf#xref=100",
-    "src_page": "https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf",
-    "kind": "keep"
-   },
-   {
-    "url": "pdf:https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf#xref=47",
-    "src_page": "https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf",
+    "url": "https://www.amperfied.de/wp-content/uploads/2022/09/ladestation-wallbox-home-eco-zuhause-1-scaled.jpg",
+    "src_page": "https://www.amperfied.de/de/ladeloesungen/wallbox-home-eco/",
     "kind": "scene"
    }
   ],
-  "heidelberg-energy-control-11": [
+  "teltonika-evc2-11kw-kabl": [
    {
-    "url": "pdf:https://www.mobilityhouse.com/media/productattachments/files/Produktbroschuere_Energy_Control_Vertriebspartner_DE.pdf#xref=269",
-    "src_page": "https://www.mobilityhouse.com/media/productattachments/files/Produktbroschuere_Energy_Control_Vertriebspartner_DE.pdf",
-    "kind": "keep"
-   }
-  ],
-  "v2c-denka-20": [
-   {
-    "url": "https://v2charge.com/store/wp-content/uploads/2025/05/denka-v2c.jpg",
-    "src_page": "https://v2charge.com/store/?p=22052",
-    "kind": "cut"
+    "url": "https://static.wixstatic.com/media/baf146_3fecf9bb5a7646f39ffd31d2c674c23e~mv2.jpg",
+    "src_page": "https://teltonika-energy.com/",
+    "kind": "cut",
+    "crop": [
+     0.309,
+     0.27,
+     0.445,
+     0.64
+    ]
    },
    {
-    "url": "https://v2charge.com/store/wp-content/uploads/2025/05/echarger-denka.jpg",
-    "src_page": "https://v2charge.com/store/?p=22052",
-    "kind": "cut"
-   },
-   {
-    "url": "https://v2charge.com/wp-content/uploads/2026/06/denka-80kw-v2c-fast-charging-electric-car-scaled.jpg",
-    "src_page": "https://v2charge.com/denka/",
-    "kind": "scene"
-   }
-  ],
-  "v2c-denka-40": [
-   {
-    "url": "https://v2charge.com/store/wp-content/uploads/2025/05/echarger-denka.jpg",
-    "src_page": "https://v2charge.com/store/?p=22052",
-    "kind": "cut"
-   },
-   {
-    "url": "https://v2charge.com/store/wp-content/uploads/2025/05/denka-v2c.jpg",
-    "src_page": "https://v2charge.com/store/?p=22052",
-    "kind": "cut"
-   },
-   {
-    "url": "https://v2charge.com/wp-content/uploads/2026/06/denka-80kw-v2c-fast-charging-electric-car-scaled.jpg",
-    "src_page": "https://v2charge.com/denka/",
-    "kind": "scene"
-   }
-  ],
-  "abb-terra-dc-wallbox-24": [
-   {
-    "url": "pdf:https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf#xref=59",
-    "src_page": "https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf",
-    "kind": "keep"
-   },
-   {
-    "url": "pdf:https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf#xref=125",
-    "src_page": "https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf",
+    "url": "https://static.wixstatic.com/media/baf146_3fecf9bb5a7646f39ffd31d2c674c23e~mv2.jpg",
+    "src_page": "https://teltonika-energy.com/",
     "kind": "scene"
    }
   ]
