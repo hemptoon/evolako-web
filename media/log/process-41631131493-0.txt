@@ -1,0 +1,6 @@
+== iocharger-mini-11-kw
+  ok 1 scene (800, 800)
+== heidelberg-energy-control-11
+/home/runner/.local/lib/python3.14/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+  ok 1 keep (777, 887)
