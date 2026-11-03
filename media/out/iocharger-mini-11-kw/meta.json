@@ -1,6 +1,20 @@
 [
  {
   "k": 1,
+  "kind": "cut",
+  "src": "https://www.iocharger.com/wp-content/uploads/2023/01/Newly-launch-Mini-Smart-EV-Charger-IOCAH15-1.png",
+  "page": "https://www.iocharger.com/?p=8086",
+  "w": 440,
+  "h": 680,
+  "crop": [
+   0.2,
+   0.15,
+   0.75,
+   1.0
+  ]
+ },
+ {
+  "k": 2,
   "kind": "scene",
   "src": "https://www.iocharger.com/wp-content/uploads/2023/01/Newly-launch-Mini-Smart-EV-Charger-IOCAH15-1.png",
   "page": "https://www.iocharger.com/?p=8086",
