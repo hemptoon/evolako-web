@@ -1,0 +1,20 @@
+[
+ {
+  "k": 1,
+  "kind": "keep",
+  "src": "pdf:https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf#xref=59",
+  "page": "https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf",
+  "w": 1192,
+  "h": 1663,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "scene",
+  "src": "pdf:https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf#xref=125",
+  "page": "https://vypinace.sk.abb.com/files/repository/Terra_DC_wallbox_Brochure1.pdf",
+  "w": 2401,
+  "h": 2525,
+  "crop": null
+ }
+]

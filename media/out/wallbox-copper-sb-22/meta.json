@@ -1,0 +1,20 @@
+[
+ {
+  "k": 1,
+  "kind": "keep",
+  "src": "pdf:https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf#xref=100",
+  "page": "https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf",
+  "w": 982,
+  "h": 1025,
+  "crop": null
+ },
+ {
+  "k": 2,
+  "kind": "scene",
+  "src": "pdf:https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf#xref=47",
+  "page": "https://www.mobilityhouse.com/media/productattachments/files/DE-Wallbox-CopperSB_Brosch_re.pdf",
+  "w": 1323,
+  "h": 1875,
+  "crop": null
+ }
+]

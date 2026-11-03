@@ -1,0 +1,8 @@
+== wallbox-copper-sb-22
+/home/runner/.local/lib/python3.14/site-packages/fitz/__init__.py:17: FutureWarning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+  warnings.warn(
+  ok 1 keep (982, 1025)
+  ok 2 scene (1323, 1875)
+== abb-terra-dc-wallbox-24
+  ok 1 keep (1192, 1663)
+  ok 2 scene (2401, 2525)
