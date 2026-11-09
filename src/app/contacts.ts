@@ -30,7 +30,7 @@ export const PRICING = {
   subscriptionMonthly: 990,
   trialMonths: 2,
   pauseMonthsPerYear: 3,
-  assessmentFee: 3500,
+  assessmentFee: 2990,
 } as const;
 
 export const REFERRAL = {
