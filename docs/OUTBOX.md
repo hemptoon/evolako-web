@@ -32,7 +32,7 @@ Cloudflare-коннектор → `d1_database_query`, база `blokvolt`, `dat
    — есть строка: тему не брать, взять следующую.
 2. **Слот.** `SELECT max(publish_after) AS last FROM outbox WHERE repo = ?1 AND kind = ?2 AND status IN ('queued','taken','published')`.
    `publish_after` = позднее из «сейчас» и `last + интервал` (UTC, `YYYY-MM-DDTHH:MM:SSZ`; не «сейчас» — 08:30 UTC того дня).
-   Интервалы: `vodic` (гайды одного сайта) — 3 дня; `b2b` — 7 дней; `vest`, `novost`, `gorivo`, `indeks`, `mesecno`,
+   Интервалы: `vodic` (гайды одного сайта) — 2 дня (3 гайда в неделю: вт, чт, сб — решение владельца 09.11.2026); `b2b` — 7 дней; `vest`, `novost`, `gorivo`, `indeks`, `mesecno`,
    `sredina`, `kvartal`, `pismo`, `pregled` — сразу.
 3. **Файлы готовы и проверены в контейнере** — все проверки своего конвейера пройдены, как перед коммитом. Даты в файлах —
    плейсхолдерами, чтобы стояла реальная дата выхода: `@PUBISO@` (2026-11-11), `@PUBDATE@` (11.11.2026), `@NEXT30@`
