@@ -1,0 +1,38 @@
+# The publishing queue (RUNBOOK 3.39 of hemptoon/blokvolt-rs): every hour, publish what the scheduled tasks of Evolako
+# left in the D1 queue — guides, news and B2B guides of www.evolako.rs (branch site-migration) and the issues of
+# Evolako pismo (public/posta on main). The job proves who it is to https://www.blokvolt.rs/api/outbox/* with its own
+# GitHub OIDC token (audience outbox.blokvolt.rs; the worker accepts only this file on main), so no secret is involved.
+# scripts/outbox.py applies each due item on its branch, runs the checks (site/content.py check, site/build.py and the
+# content self-test; npm test for the letter), commits and pushes with GITHUB_TOKEN and then starts "Site preview"
+# (the production deploy of www.evolako.rs) or "Deploy" (app.evolako.rs) by hand, because a push made with
+# GITHUB_TOKEN does not start them. A failed item is not committed: it is marked 'failed' in the queue with the end of
+# the log. Manual run: Actions → Outbox → Run workflow.
+name: Outbox
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write    # commit the queued files
+  actions: write     # start Site preview / Deploy after the push
+  id-token: write    # the OIDC token for /api/outbox/*
+concurrency:
+  group: outbox
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          fetch-depth: 50
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - name: Copy the script out of the working tree (the job checks out other branches)
+        run: cp scripts/outbox.py "$RUNNER_TEMP/outbox.py"
+      - name: Publish due items
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 "$RUNNER_TEMP/outbox.py" run --max 3
