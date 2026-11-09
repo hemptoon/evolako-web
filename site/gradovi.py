@@ -102,7 +102,7 @@ def tri(t):
 PRICES_HEAD = T(['Paket', 'Cena', 'Šta dobijaš'], ['Package', 'Price', 'What you get'], ['Пакет', 'Цена', 'Что получаешь'])
 PRICES_ROWS = [
     T(['START', '39.000 RSD', 'pojačana utičnica sa MID brojilom, 2,3–3,7 kW'],
-      ['START', '39.000 RSD', 'a heavy-duty socket with a MID meter, 2,3–3,7 kW'],
+      ['START', '39.000 RSD', 'a heavy-duty socket with a MID meter, 2.3–3.7 kW'],
       ['START', '39.000 RSD', 'усиленная розетка с MID-счётчиком, 2,3–3,7 кВт']),
     T(['WALLBOX 11 kW', 'od 94.000 RSD', 'Iocharger 11 kW, kabl 5 m; sa MID brojilom 104.000 RSD'],
       ['WALLBOX 11 kW', 'from 94.000 RSD', 'Iocharger 11 kW, 5 m cable; with a MID meter 104.000 RSD'],
@@ -727,7 +727,8 @@ def check(docs, kit, allowed_pages, zone=False):
                 if re.search(rx, t, re.I):
                     errs.append('%s %s: forbidden /%s/: %s' % (lang, where, rx, t[:80]))
             for nmb in _NUM.findall(s):
-                if nmb not in t:
+                if nmb not in t and not (lang == 'en' and re.fullmatch(r'\d{1,3},\d{1,2}', nmb)
+                                         and nmb.replace(',', '.') in t):  # EN decimal point: 2,3 kW → 2.3 kW
                     errs.append('%s %s: number %s missing: %s' % (lang, where, nmb, t[:80]))
     def walk(x, key=None):
         if isinstance(x, dict):

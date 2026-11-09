@@ -41,7 +41,7 @@
      "p": "At a guarded car park, a traveler leaves the car for several days, a monthly pass holder overnight, and a visitor for the whole working day. For stays this long, fast charging is usually not needed."
     },
     {
-     "p": "On a reinforced socket rated at 2,3–3,7 kW, a car gets up to about 180 km of range in one night, and a full battery over a stay of several days. The driver needs their own portable charger for it, so it suits regular users better, for example monthly pass holders."
+     "p": "On a reinforced socket rated at 2.3–3.7 kW, a car gets up to about 180 km of range in one night, and a full battery over a stay of several days. The driver needs their own portable charger for it, so it suits regular users better, for example monthly pass holders."
     },
     {
      "p": "The socket is on its own circuit with its own protection. Ban extension cords and adapters in the car park’s rules."
@@ -89,7 +89,7 @@
      "p": "On a small connection, a total load above the approved power usually trips the limiter or a fuse, leaving the booth and the barrier without power. Load management shares the available power among the chargers that are charging at that moment, and we set the limit so that the booth keeps a reserve."
     },
     {
-     "p": "In EU practice, planning assumes an average of about 1,5 kW per car. Over 7 hours of night charging, that is about 10 kWh, enough for about 50 km of daily driving. When there isn’t enough power for everyone at the same time, load management lowers the charging current or schedules charging so that cars charge one after another. For choosing the cable and the distribution board, more is allowed for: 11 kW for the first space and about 4 kW for each additional one."
+     "p": "In EU practice, planning assumes an average of about 1.5 kW per car. Over 7 hours of night charging, that is about 10 kWh, enough for about 50 km of daily driving. When there isn’t enough power for everyone at the same time, load management lowers the charging current or schedules charging so that cars charge one after another. For choosing the cable and the distribution board, more is allowed for: 11 kW for the first space and about 4 kW for each additional one."
     },
     {
      "p": "If your power is metered and you are on commercial supply, the difference above the approved power is charged at a separate excess power tariff. Load management reduces that risk too."
@@ -173,7 +173,7 @@
        [
         "Space with a reinforced socket",
         "39.000 RSD",
-        "2,3–3,7 kW reinforced socket and a MID meter"
+        "2.3–3.7 kW reinforced socket and a MID meter"
        ],
        [
         "Shared infrastructure",

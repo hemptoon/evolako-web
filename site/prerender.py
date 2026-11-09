@@ -1067,6 +1067,11 @@ def copy_problems(lang, sr, text):
     out = [('banned word', p) for p in BANNED[lang] if re.search(p, text, re.I)]
     have = set(_NUM.findall(text))
     for n in _NUM.findall(sr):
-        if n not in have:
+        if n not in have and not (lang == 'en' and _EN_DECIMAL.match(n) and n.replace(',', '.') in have):
             out.append(('number missing', n))
     return out
+
+
+# English writes a decimal point where Serbian writes a decimal comma (2,3–3,7 kW → 2.3–3.7 kW, 17,25 kW → 17.25 kW);
+# only short decimals count (thousands keep the Serbian dot: 39.000 RSD on every language of the site)
+_EN_DECIMAL = re.compile(r'^\d{1,3},\d{1,2}$')
