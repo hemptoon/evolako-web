@@ -1,11 +1,13 @@
 # www.evolako.rs — build site/ and upload it to the Cloudflare Pages project "evolako-site". Since the switch on
 # 28.10.2026 the custom domains www.evolako.rs and evolako.rs point at this project, so every run of this workflow is a
 # PRODUCTION DEPLOY (the project's production branch "main"; https://evolako-site.pages.dev is its noindex alias).
-#   * Runs only on a push to the branch site-migration that changes
+#   * Runs on a push to the branch site-migration that changes
 #       - site/content/**      a guide, news item or B2B guide published by its scheduled task (or by hand) — the
 #                              owner allowed those tasks to publish after their checks (decision 30.09.2026);
 #       - site/deploy.request  a line per deploy of code or snapshot changes — only on the founders' word;
 #       - site/preview.request the same file of the preview phase (kept so an old habit still works).
+#     and by hand (workflow_dispatch) — the publishing queue (outbox.yml on main) starts it this way after it pushes a
+#     guide, news item or B2B guide, because a push made with the job's GITHUB_TOKEN does not start workflows.
 #     A content commit deploys whatever else is on the branch too: everything committed to site-migration must be
 #     ready for production.
 #   * Forms: the project has the service binding BOT (the CRM bot worker) and the secret HOOK (set in the dashboard,
@@ -27,6 +29,7 @@ on:
       - site/content/**
       - site/deploy.request
       - site/preview.request
+  workflow_dispatch:   # started by the publishing queue after its push (.github/workflows/outbox.yml on main, RUNBOOK 3.39 of blokvolt-rs)
 permissions:
   contents: read
 concurrency:
