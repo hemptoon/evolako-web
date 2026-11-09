@@ -51,6 +51,17 @@ published are read back from the snapshot, rendered again and must come out iden
 - photos: only those of the kits' table that the snapshot holds (`FULL_FALLBACK` replaces the five full-size photos it
   lacks); sitemap.xml gets the new pages and the new lastmod of the changed hubs.
 
+## Accessibility (since 09.11.2026)
+
+`a11y.py` runs in `build.py` after the language pages and before the CSP: on every page and language it adds a «Preskoči
+na sadržaj» link, `role="main"` on `div.v2-page`, names on the two `<nav>`, a visible focus ring, colour fixes for the
+texts under 4.5:1 and a link «Pristupačnost» in the footer's legal line; it names the language button by what it shows.
+The statement `/pristupacnost` (`pristupacnost.py`, rendered by `content.py` on the guide template) lists what is done,
+what is not and how to report — keep it true when a page changes. Check before a deploy that touches layout or colours:
+serve `dist/` (e.g. `tools/qa_dist.py`'s server) and run `scripts/qa/a11y_check.py --site evolako --base <url>` from
+hemptoon/blokvolt-rs; the nightly «Accessibility» workflow there checks www.evolako.rs (RUNBOOK 3.41). New snapshot CSS
+or a kit style with light grey text on white: use `#5A6478` (5.6:1), not `#8A8F9B` / `#8A93A6`.
+
 ## Changing a published page (code or snapshot)
 
 Pages of the Webflow era live in `snapshot/pages/<slug>.html`; the build makes `/en/` and `/ru/` from them. A change
