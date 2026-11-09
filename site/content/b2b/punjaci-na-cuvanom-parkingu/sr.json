@@ -1,0 +1,287 @@
+{
+ "page": "punjaci-na-cuvanom-parkingu",
+ "slug": "/punjaci-na-cuvanom-parkingu",
+ "tone": "vi",
+ "kind": "article",
+ "seo": {
+  "title": "Punjači na parkingu sa rampom: stubovi i snaga | Evolako",
+  "description": "Kako da čuvani parking sa rampom i kućicom opremite punjačima: stubovi uz mesta, trasa kabla, upravljanje snagom i šta ulazi u cenu.",
+  "og_title": "Punjači na čuvanom parkingu: stubovi, trasa i snaga kućice",
+  "og_description": "Punjači idu na stubove uz parking mesta, a kabl iz kućice po ogradi, zidu ili kroz kanal. Kako upravljanje snagom deli mali priključak i šta je u ceni."
+ },
+ "hero": {
+  "kicker": "Vodič za firme i zgrade",
+  "h1": "Punjači na čuvanom parkingu: stubovi, trasa i snaga kućice",
+  "lead": "Na čuvanom parkingu punjači se postavljaju na stubove uz parking mesta, a kabl iz kućice do njih ide po ogradi, zidu ili kroz kanal. Automobili stoje satima ili danima, pa je dovoljno sporo punjenje, a uz upravljanje snagom postojeći priključak kućice često je dovoljan za više mesta.",
+  "updated": "@auto"
+ },
+ "card": {
+  "title": "Punjači na čuvanom parkingu",
+  "text": "Stubovi uz mesta, trasa kabla iz kućice i upravljanje snagom kada je priključak mali."
+ },
+ "sections": [
+  {
+   "type": "article",
+   "id": "tekst",
+   "blocks": [
+    {
+     "p": [
+      "Vodič je namenjen vlasnicima i zakupcima parkinga sa rampom i kućicom, na primer kod aerodroma, autobuskih i železničkih stanica ili u centru grada. Primeri cena za čuvani parking sa šest wallboxa i za mesečni parking sa deset utičnica su na stranici o ",
+      {
+       "a": "punjačima za čuvane i dugoročne parkinge",
+       "href": "/punjaci-za-parkinge"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Sporo punjenje je dovoljno kada automobil stoji satima ili danima"
+    },
+    {
+     "p": "Na čuvanom parkingu putnik ostavi automobil na nekoliko dana, korisnik mesečne karte preko noći, a posetilac ceo radni dan. Za tako dugo parkiranje brzo punjenje uglavnom nije potrebno."
+    },
+    {
+     "p": "Na pojačanoj utičnici snage 2,3–3,7 kW automobil za jednu noć dobije do oko 180 km dometa, a za nekoliko dana parkiranja i punu bateriju. Vozaču za nju treba sopstveni prenosni punjač, pa je bolja za redovne korisnike, na primer one sa mesečnom kartom."
+    },
+    {
+     "p": "Utičnica je na posebnom strujnom krugu sa sopstvenom zaštitom. Produžne kablove i adaptere zabranite u pravilima parkinga."
+    },
+    {
+     "p": "AC punjač od 11 kW (wallbox) ima konektor Type 2, koji imaju gotovo svi električni automobili i plug-in hibridi na našem tržištu. Odgovara onima koji ostaju kraće, na primer jedan dan u gradu. Punjače od 22 kW i brze DC punjače nudimo na upit, a DC je poseban projekat sa novim priključkom."
+    },
+    {
+     "h2": "Stubovi uz parking mesta: položaj i zaštita"
+    },
+    {
+     "p": "Na otvorenom parkingu punjač postavljamo na stub uz parking mesto, tako da kabl za punjenje dopire do automobila, a da stub ne smeta prolazu vozila i pešaka. Stub ne treba da zaklanja pogled iz kućice na rampu i parking mesta."
+    },
+    {
+     "p": "Zaštitni stubić ili graničnik za točkove ispred stuba čuva opremu od udara pri parkiranju. Svako mesto dobija poseban strujni krug od razvodne table."
+    },
+    {
+     "p": "Prema standardu IEC 60364-7-722, svako priključno mesto ima sopstvenu FID sklopku (zaštitnu strujnu sklopku) od najviše 30 mA, najmanje tipa A. Za punjač sa konektorom Type 2 standard traži i zaštitu od jednosmerne struje kvara, ako je punjač nema ugrađenu. To je FID tipa B ili FID tipa A uz detektor jednosmerne struje od 6 mA."
+    },
+    {
+     "p": "Za električni deo u Srbiji važe opšti propisi i standardi, među njima SRPS HD 60364-7-722."
+    },
+    {
+     "h2": "Trasa od kućice do stubova"
+    },
+    {
+     "p": "Kabl od razvodne table u kućici do stubova vodimo po ogradi ili zidu kad god je moguće, a preko parkinga u zaštitnoj cevi kroz kanal u zemlji. Za ogradu ili zid koji nisu vaši potrebna je saglasnost njihovog vlasnika."
+    },
+    {
+     "p": "Iskop kanala i vraćanje asfalta ili kocke nisu u ceni paketa: zavise od podloge i dužine trase, pa tačan iznos dobijate posle procene."
+    },
+    {
+     "p": "Ako planirate još mesta, u istom kanalu predvidite i prazne cevi do budućih stubova, pa sledeće proširenje neće tražiti novo sečenje asfalta. Pre iskopa proverite gde prolaze podzemne instalacije: pitajte vlasnika zemljišta i preduzeća za struju, vodu, gas i telekomunikacije."
+    },
+    {
+     "h2": "Mali priključak kućice: upravljanje snagom pre povećanja snage"
+    },
+    {
+     "p": "Kućica sa rampom obično ima mali priključak, namenjen rampi, rasveti i grejanju. Odobrena snaga piše na računu za struju."
+    },
+    {
+     "p": "Standard IEC 60364-7-722 polazi od toga da svako priključno mesto radi punom nazivnom strujom, osim kada sistem upravlja opterećenjem. Zato se bez upravljanja snagom punjači računaju punom snagom."
+    },
+    {
+     "p": "Kod malog priključka ukupno opterećenje veće od odobrene snage obično izbaci limitator ili osigurač, pa kućica i rampa ostanu bez struje. Upravljanje snagom raspoređuje raspoloživu snagu između punjača koji u tom trenutku pune, a granicu podešavamo tako da kućici ostane rezerva."
+    },
+    {
+     "p": "Prema praksi u EU, za planiranje se računa prosečno oko 1,5 kW po automobilu. Za 7 sati noćnog punjenja to je oko 10 kWh, dovoljno za oko 50 km dnevne vožnje. Kada snage nema za sve istovremeno, upravljanje snagom smanjuje struju punjenja ili raspoređuje punjenje tako da se automobili pune jedan za drugim. Za izbor kabla i razvodne table računa se više: 11 kW za prvo mesto i oko 4 kW za svako sledeće."
+    },
+    {
+     "p": "Ako vam se meri snaga i na komercijalnom ste snabdevanju, razlika iznad odobrene snage plaća se po posebnoj tarifi za prekomernu snagu. Upravljanje snagom smanjuje i taj rizik."
+    },
+    {
+     "p": "Kada ni tada snage nema dovoljno, od Elektrodistribucije Srbije možete zatražiti povećanje odobrene snage. Ono se odobrava ako za to postoje tehničke mogućnosti, a zahtev se podnosi na obrascu „Zahtev za izdavanje odobrenja za priključenje za promenu snage“. Prema EDS-u, rok za odlučivanje o zahtevu je 15 dana po Zakonu o energetici; to je rok za rešenje, a ne za radove."
+    },
+    {
+     "p": "Prema odgovoru AERS-a, zahtev može da podnese samo onaj na čije ime glasi odobrenje za priključenje. Ako parking koristite u zakupu, proverite na koga glasi odobrenje za priključenje kućice i unapred dogovorite ko podnosi zahtev."
+    },
+    {
+     "p": [
+      "Trošak povećanja snage plaćate Elektrodistribuciji po njenom cenovniku, a mi ga navodimo u ponudi posebnom stavkom, bez naše marže. Računicu za veći broj mesta naći ćete u vodiču o tome ",
+      {
+       "a": "koliko snage treba garaži za 10, 20 ili 50 punjača",
+       "href": "/koliko-snage-treba-garazi-za-punjace"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Saglasnost vlasnika zemljišta i rešenje o odobrenju za radove"
+    },
+    {
+     "p": "Za radove i stubove potrebna je saglasnost vlasnika zemljišta, koju pribavljate vi. Ako je parking na javnoj površini, pre ponude proveravamo šta za njega važi."
+    },
+    {
+     "p": "Za postavljanje punjača izdaje se rešenje o odobrenju za izvođenje radova po čl. 145 Zakona o planiranju i izgradnji. To propisuje čl. 4 st. 1 tač. 35 Pravilnika o posebnoj vrsti objekata i posebnoj vrsti radova („Sl. glasnik RS“, br. 87/2023, 16/2024 i 16/2026)."
+    },
+    {
+     "p": "Na proceni kažemo šta važi za vaš parking, a konačno odlučuje nadležni organ opštine ili grada. Dajemo tehnički opis radova i dokumentaciju o izvedenim radovima, a rešenje, ako je potrebno, pribavlja vlasnik objekta."
+    },
+    {
+     "p": "Ako parking koristite u zakupu, pre početka radova proverite sa pravnikom:"
+    },
+    {
+     "ul": [
+      "ko podnosi zahtev za rešenje: vi ili vlasnik zemljišta;",
+      "ko je vlasnik stubova, punjača i kabla kada zakup prestane i da li ih možete odneti;",
+      "da li ugovoru o zakupu treba aneks za radove i novu opremu;",
+      "ko održava trasu i ko plaća popravku posle oštećenja."
+     ]
+    },
+    {
+     "p": "Osiguravača pitajte da li polisa parkinga obuhvata punjače i vozila tokom punjenja."
+    },
+    {
+     "h2": "Pristup punjačima i obračun po mestu"
+    },
+    {
+     "p": "Pristup wallboxu može biti karticom koju čuvar izdaje uz parking kartu ili slobodan, za svakoga ko parkira na tom mestu. MID brojilo (oznaka evropske Direktive o mernim instrumentima) na svakom mestu meri kWh, pa znate koliko je potrošeno na kom mestu."
+    },
+    {
+     "p": "Punjenje možete uračunati u cenu parkinga, ponuditi uz dnevnu ili mesečnu kartu ili naplaćivati posebno po MID brojilu. Pre nego što uvedete naplatu po kWh, sa pravnikom i knjigovođom proverite kako se ona tretira po propisima o energetici i porezima. Da li brojilo kojim obračunavate struju drugom licu podleže overavanju, proverite kod Direkcije za mere i dragocene metale."
+    },
+    {
+     "p": "Električna energija se za potrebe PDV-a smatra dobrom i oporezuje se po stopi od 20% (čl. 4 i čl. 23 Zakona o PDV). Naplatu fizičkim licima obveznik fiskalizacije evidentira preko elektronskog fiskalnog uređaja, nezavisno od načina plaćanja (čl. 3 i 4 Zakona o fiskalizaciji). Kako da punjenje prikažete na računu i u knjigama, dogovorite sa svojim knjigovođom."
+    },
+    {
+     "p": "Punjače održavamo mi: garancija je 2 godine i važi i bez pretplate. Uz pretplatu dobijate odgovor u roku od 48h, prioritetni servis i godišnju proveru instalacije i opreme. Svakog meseca stiže i PDF i CSV sa kWh po mestu, kao osnova za račune korisnicima i knjigovodstvo."
+    },
+    {
+     "h2": "Šta ulazi u cenu, a šta se računa posle procene"
+    },
+    {
+     "p": "Svako mesto plaća se po ceni paketa, a zajednička infrastruktura po parkingu:"
+    },
+    {
+     "table": {
+      "head": [
+       "Stavka",
+       "Cena",
+       "Šta je uključeno"
+      ],
+      "rows": [
+       [
+        "Mesto sa wallboxom",
+        "104.000 RSD",
+        "Wallbox 11 kW (Type 2) i MID brojilo"
+       ],
+       [
+        "Mesto sa pojačanom utičnicom",
+        "39.000 RSD",
+        "Pojačana utičnica 2,3–3,7 kW i MID brojilo"
+       ],
+       [
+        "Zajednička infrastruktura",
+        "Po parkingu, okvirno u kalkulatoru",
+        "Stubovi, razvodni orman sa upravljanjem snagom, trasa, dokumentacija i provera instalacije"
+       ]
+      ]
+     }
+    },
+    {
+     "p": [
+      "Cene paketa su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a. Za okvirnu cenu svog parkinga izaberite „Na otvorenom parkingu“ u ",
+      {
+       "a": "kalkulatoru cene punjača za garaže i parkinge",
+       "href": "/kalkulator-cene-punjaca?tip=garaza"
+      },
+      "."
+     ]
+    },
+    {
+     "p": "U cenu nisu uračunati iskop kanala i vraćanje asfalta ili kocke, povećanje snage ili novi priključak i takse nadležnih organa, ako se plaćaju. Ne ulazi ni popravka postojeće instalacije, ako se na proceni pokaže da nije ispravna."
+    },
+    {
+     "p": "Procena na licu mesta košta 2.990 RSD i uračunava se u cenu ugradnje. Na proceni proveravamo odobrenu snagu, trasu do mesta i podlogu i predlažemo raspored stubova. Okvirnu cenu možete dobiti i porukom, na osnovu fotografija parkinga, kućice i razvodne table, uz račun za struju."
+    },
+    {
+     "p": "Tačnu cenu i rokove navodimo u ponudi. Povećanje snage i rešenje, ako su potrebni, mogu da produže postupak."
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "id": "izvori",
+   "h2": "Izvori",
+   "items": [
+    {
+     "title": "Zakon o planiranju i izgradnji, čl. 145",
+     "url": "https://www.paragraf.rs/propisi/zakon_o_planiranju_i_izgradnji.html"
+    },
+    {
+     "title": "Pravilnik o posebnoj vrsti objekata i posebnoj vrsti radova, čl. 4 st. 1 tač. 35",
+     "url": "https://www.paragraf.rs/propisi/pravilnik-posebne-vrste-objekata-radova-za-koje-nije-potrebno-pribavljati-akt.html"
+    },
+    {
+     "title": "Zakon o porezu na dodatu vrednost, čl. 4 i 23",
+     "url": "https://www.paragraf.rs/propisi/zakon-o-porezu-na-dodatu-vrednost.html"
+    },
+    {
+     "title": "Zakon o fiskalizaciji, čl. 3 i 4",
+     "url": "https://www.paragraf.rs/propisi/zakon-o-fiskalizaciji-republike-srbije.html"
+    },
+    {
+     "title": "Elektrodistribucija Srbije: postupak priključenja van objedinjene procedure",
+     "url": "https://elektrodistribucija.rs/usluge/postupak-prikljucenja-na-dsee/postupak-prikljucenja-van-objedinjenoj"
+    },
+    {
+     "title": "Agencija za energetiku Republike Srbije (AERS): regulacija cena — pitanja i odgovori",
+     "url": "https://www.aers.rs/regulacija-cena-pitanja-i-odgovori"
+    },
+    {
+     "title": "EPS: osnovni pojmovi (odobrena snaga)",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/osnovni-pojmovi.aspx"
+    },
+    {
+     "title": "EPS: komercijalno snabdevanje (prekomerna snaga)",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/komercijalno-snabdevanje.aspx"
+    },
+    {
+     "title": "Paragraf (prenosi Biznis.rs): predlog izmene pravilnika o postavljanju punjača, 19. avgusta 2026.",
+     "url": "https://www.paragraf.rs/dnevne-vesti/190826/190826-vest8.html"
+    },
+    {
+     "title": "Electrical Installation Guide (Schneider Electric): instalacija za punjenje vozila po IEC 60364-7-722:2018",
+     "url": "https://www.electrical-installation.org/enwiki/EV_charging_-_electrical_installation_design"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "cta",
+   "h2": "Evolako za čuvane i dugoročne parkinge",
+   "text": "Punjač na stubu i MID brojilo na svakom mestu, upravljanje snagom i mesečni obračun po mestu uz pretplatu. Radimo u celoj Srbiji, a procenu na licu mesta dogovaramo porukom.",
+   "button": {
+    "label": "Punjači za parkinge",
+    "href": "/punjaci-za-parkinge"
+   }
+  },
+  {
+   "type": "links",
+   "id": "srodni",
+   "h2": "Srodni vodiči",
+   "items": [
+    {
+     "title": "Koliko snage treba garaži za 10, 20 ili 50 punjača",
+     "text": "Noćna računica, upravljanje snagom i kada je potrebno povećanje snage.",
+     "href": "/koliko-snage-treba-garazi-za-punjace"
+    },
+    {
+     "title": "Cena punjača po parking mestu: šta ulazi u cenu za zgradu, hotel i firmu",
+     "text": "Paket za mesto, zajednički deo i povećanje snage; cene su konačne.",
+     "href": "/cena-punjaca-po-parking-mestu"
+    },
+    {
+     "title": "Punjači za parking garaže i parkinge",
+     "text": "Garaže, poslovni centri i garaže za izdavanje.",
+     "href": "/punjaci-za-parking-garaze"
+    }
+   ]
+  }
+ ]
+}

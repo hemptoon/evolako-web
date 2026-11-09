@@ -1,0 +1,287 @@
+{
+ "page": "punjaci-na-cuvanom-parkingu",
+ "slug": "/punjaci-na-cuvanom-parkingu",
+ "tone": "vi",
+ "kind": "article",
+ "seo": {
+  "title": "EV chargers at a guarded car park: pedestals and power | Evolako",
+  "description": "How to equip a guarded car park with a barrier and a booth with EV chargers: pedestals by the spaces, the cable route, load management and what the price covers.",
+  "og_title": "EV chargers at a guarded car park: pedestals, the cable route and the booth’s power supply",
+  "og_description": "Chargers go on pedestals by the parking spaces, and the cable runs from the booth along the fence, a wall or through a trench. How load management shares a small connection and what the price covers."
+ },
+ "hero": {
+  "kicker": "Guide for businesses and buildings",
+  "h1": "EV chargers at a guarded car park: pedestals, the cable route and the booth’s power supply",
+  "lead": "At a guarded car park, chargers go on pedestals next to the parking spaces, and the cable from the booth runs along the fence, a wall or through a trench. Cars stay for hours or days, so slow charging is enough, and with load management the booth’s existing connection is often enough for several spaces.",
+  "updated": "@auto"
+ },
+ "card": {
+  "title": "EV chargers at a guarded car park",
+  "text": "Pedestals by the spaces, the cable route from the booth and load management when the connection is small."
+ },
+ "sections": [
+  {
+   "type": "article",
+   "id": "tekst",
+   "blocks": [
+    {
+     "p": [
+      "This guide is for owners and leaseholders of car parks with a barrier and a booth, for example near airports, bus and train stations or in a city center. Price examples for a guarded car park with six wallboxes and a monthly car park with ten sockets are on the page about ",
+      {
+       "a": "chargers for guarded and long-term car parks",
+       "href": "/punjaci-za-parkinge"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Slow charging is enough when a car stays for hours or days"
+    },
+    {
+     "p": "At a guarded car park, a traveler leaves the car for several days, a monthly pass holder overnight, and a visitor for the whole working day. For stays this long, fast charging is usually not needed."
+    },
+    {
+     "p": "On a reinforced socket rated at 2,3–3,7 kW, a car gets up to about 180 km of range in one night, and a full battery over a stay of several days. The driver needs their own portable charger for it, so it suits regular users better, for example monthly pass holders."
+    },
+    {
+     "p": "The socket is on its own circuit with its own protection. Ban extension cords and adapters in the car park’s rules."
+    },
+    {
+     "p": "An 11 kW AC charger (wallbox) has a Type 2 connector, which almost all electric cars and plug-in hybrids on our market have. It suits those who stay for a shorter time, for example a day in the city. We offer 22 kW chargers and fast DC chargers on request, and DC is a separate project with a new grid connection."
+    },
+    {
+     "h2": "Pedestals by the parking spaces: placement and protection"
+    },
+    {
+     "p": "At an open-air car park, we mount the charger on a pedestal next to the parking space, so that the charging cable reaches the car and the pedestal does not get in the way of vehicles and pedestrians. The pedestal should not block the view from the booth to the barrier and the parking spaces."
+    },
+    {
+     "p": "A protective bollard or a wheel stop in front of the pedestal shields the equipment from knocks when cars park. Each space gets its own circuit from the distribution board."
+    },
+    {
+     "p": "Under the IEC 60364-7-722 standard, each connection point has its own RCD (residual current device) rated at no more than 30 mA, at least type A. For a charger with a Type 2 connector, the standard also requires protection against DC fault current if the charger does not have it built in. That means an RCD type B, or an RCD type A with a 6 mA DC detection device."
+    },
+    {
+     "p": "In Serbia, the electrical work is covered by general regulations and standards, including SRPS HD 60364-7-722."
+    },
+    {
+     "h2": "The cable route from the booth to the pedestals"
+    },
+    {
+     "p": "We run the cable from the distribution board in the booth to the pedestals along the fence or a wall wherever possible, and across the car park in a protective conduit through an underground trench. A fence or wall that is not yours requires its owner’s consent."
+    },
+    {
+     "p": "Digging the trench and restoring the asphalt or paving stones are not included in the kit price: they depend on the surface and the length of the route, so you get the exact amount after the site assessment."
+    },
+    {
+     "p": "If you plan more spaces, include empty conduits to future pedestals in the same trench, so the next expansion does not require cutting the asphalt again. Before digging, check where underground utilities run: ask the landowner and the electricity, water, gas and telecom companies."
+    },
+    {
+     "h2": "The booth’s small connection: load management before a power increase"
+    },
+    {
+     "p": "A booth with a barrier usually has a small connection, meant for the barrier, lighting and heating. The approved power is shown on your electricity bill."
+    },
+    {
+     "p": "The IEC 60364-7-722 standard assumes that each connection point runs at its full rated current unless a system manages the load. That is why, without load management, chargers are counted at their full power."
+    },
+    {
+     "p": "On a small connection, a total load above the approved power usually trips the limiter or a fuse, leaving the booth and the barrier without power. Load management shares the available power among the chargers that are charging at that moment, and we set the limit so that the booth keeps a reserve."
+    },
+    {
+     "p": "In EU practice, planning assumes an average of about 1,5 kW per car. Over 7 hours of night charging, that is about 10 kWh, enough for about 50 km of daily driving. When there isn’t enough power for everyone at the same time, load management lowers the charging current or schedules charging so that cars charge one after another. For choosing the cable and the distribution board, more is allowed for: 11 kW for the first space and about 4 kW for each additional one."
+    },
+    {
+     "p": "If your power is metered and you are on commercial supply, the difference above the approved power is charged at a separate excess power tariff. Load management reduces that risk too."
+    },
+    {
+     "p": "If there still isn’t enough power, you can ask Elektrodistribucija Srbije (EDS, the grid operator) to increase the approved power. It is approved if it is technically possible, and the request is filed on the form “Zahtev za izdavanje odobrenja za priključenje za promenu snage” (request for a connection approval for a change of power). According to EDS, the deadline for deciding on the request is 15 days under the Energy Law; that is the deadline for the decision, not for the work."
+    },
+    {
+     "p": "According to an answer from AERS (the Energy Agency), the request may be filed only by the person in whose name the connection approval was issued. If you lease the car park, check whose name the booth’s connection approval is in and agree in advance on who files the request."
+    },
+    {
+     "p": [
+      "You pay EDS for the power increase according to its price list, and we list that cost in the quote as a separate item, with no markup from us. You will find the calculation for a larger number of spaces in the guide on ",
+      {
+       "a": "how much power a garage needs for 10, 20 or 50 chargers",
+       "href": "/koliko-snage-treba-garazi-za-punjace"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "The landowner’s consent and the decision approving the works"
+    },
+    {
+     "p": "The work and the pedestals require the landowner’s consent, which you obtain. If the car park is on public land, we check what applies to it before the quote."
+    },
+    {
+     "p": "Installing a charger requires a decision approving the works under Art. 145 of the Law on Planning and Construction. This is set out in Art. 4, para. 1, item 35 of the Rulebook on Special Types of Structures and Special Types of Works (Official Gazette of RS 87/2023, 16/2024 and 16/2026)."
+    },
+    {
+     "p": "At the site assessment, we tell you what applies to your car park, and the final decision rests with the competent municipal or city authority. We provide the technical description of the work and the as-built documentation, and the decision, where required, is obtained by the property owner."
+    },
+    {
+     "p": "If you lease the car park, check with your lawyer before the work starts:"
+    },
+    {
+     "ul": [
+      "who files the request for the decision: you or the landowner;",
+      "who owns the pedestals, chargers and cable when the lease ends, and whether you may take them with you;",
+      "whether the lease needs an addendum for the work and the new equipment;",
+      "who maintains the cable route and who pays for repairs after damage."
+     ]
+    },
+    {
+     "p": "Ask your insurer whether the car park’s policy covers the chargers and cars while they charge."
+    },
+    {
+     "h2": "Access to the chargers and per-space metering"
+    },
+    {
+     "p": "Access to the wallbox can be by a card the attendant issues with the parking ticket, or open, for anyone who parks in that space. A MID meter (a mark of the EU Measuring Instruments Directive) at each space measures kWh, so you know how much was used at which space."
+    },
+    {
+     "p": "You can include charging in the parking price, offer it with a daily or monthly pass, or charge for it separately based on the MID meter. Before you introduce billing per kWh, check with your lawyer and accountant how it is treated under energy and tax regulations. Check with the Directorate of Measures and Precious Metals whether a meter you use to bill another party is subject to verification."
+    },
+    {
+     "p": "For VAT purposes, electricity is treated as goods and taxed at the 20% rate (Arts. 4 and 23 of the VAT Law). A business subject to fiscalization records charges to individuals through an electronic fiscal device, regardless of the payment method (Arts. 3 and 4 of the Fiscalization Law). Agree with your accountant on how to show charging on receipts and in your books."
+    },
+    {
+     "p": "We maintain the chargers: the warranty is 2 years and applies without a subscription too. With a subscription, you get a reply within 48h, priority service and a yearly check of the wiring and equipment. Every month you also receive a PDF and CSV with kWh per space, as the basis for invoicing users and for your accounts."
+    },
+    {
+     "h2": "What the price includes and what is priced after the assessment"
+    },
+    {
+     "p": "Each space is priced at the kit price, and the shared infrastructure per car park:"
+    },
+    {
+     "table": {
+      "head": [
+       "Item",
+       "Price",
+       "What’s included"
+      ],
+      "rows": [
+       [
+        "Space with a wallbox",
+        "104.000 RSD",
+        "11 kW wallbox (Type 2) and a MID meter"
+       ],
+       [
+        "Space with a reinforced socket",
+        "39.000 RSD",
+        "2,3–3,7 kW reinforced socket and a MID meter"
+       ],
+       [
+        "Shared infrastructure",
+        "Per car park, estimated in the calculator",
+        "Pedestals, a distribution cabinet with load management, the cable route, documentation and an installation check"
+       ]
+      ]
+     }
+    },
+    {
+     "p": [
+      "Kit prices are final, with no VAT: the sole proprietor is not in the VAT system. For a rough price for your car park, choose “Open-air car park” in the ",
+      {
+       "a": "charger price calculator for garages and car parks",
+       "href": "/kalkulator-cene-punjaca?tip=garaza"
+      },
+      "."
+     ]
+    },
+    {
+     "p": "The price does not include digging the trench and restoring the asphalt or paving stones, a power increase or a new grid connection, or fees of the competent authorities, if any. Nor does it include repairing the existing wiring if the assessment shows it is faulty."
+    },
+    {
+     "p": "The on-site assessment costs 2.990 RSD and is credited toward the installation price. During the assessment, we check the approved power, the route to the spaces and the ground surface, and propose where the pedestals go. You can also get a rough estimate by message, based on photos of the car park, the booth and the distribution board, plus an electricity bill."
+    },
+    {
+     "p": "We give the exact price and timeline in the quote. A power increase and a permit decision, if needed, can extend the process."
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "id": "izvori",
+   "h2": "Sources",
+   "items": [
+    {
+     "title": "Law on Planning and Construction, Art. 145",
+     "url": "https://www.paragraf.rs/propisi/zakon_o_planiranju_i_izgradnji.html"
+    },
+    {
+     "title": "Rulebook on Special Types of Structures and Special Types of Works, Art. 4, para. 1, item 35",
+     "url": "https://www.paragraf.rs/propisi/pravilnik-posebne-vrste-objekata-radova-za-koje-nije-potrebno-pribavljati-akt.html"
+    },
+    {
+     "title": "Law on Value Added Tax, Arts. 4 and 23",
+     "url": "https://www.paragraf.rs/propisi/zakon-o-porezu-na-dodatu-vrednost.html"
+    },
+    {
+     "title": "Law on Fiscalization, Arts. 3 and 4",
+     "url": "https://www.paragraf.rs/propisi/zakon-o-fiskalizaciji-republike-srbije.html"
+    },
+    {
+     "title": "Elektrodistribucija Srbije: connection procedure outside the unified procedure",
+     "url": "https://elektrodistribucija.rs/usluge/postupak-prikljucenja-na-dsee/postupak-prikljucenja-van-objedinjenoj"
+    },
+    {
+     "title": "Energy Agency of the Republic of Serbia (AERS): price regulation — questions and answers",
+     "url": "https://www.aers.rs/regulacija-cena-pitanja-i-odgovori"
+    },
+    {
+     "title": "EPS: basic terms (approved power)",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/osnovni-pojmovi.aspx"
+    },
+    {
+     "title": "EPS: commercial supply (excess power)",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/komercijalno-snabdevanje.aspx"
+    },
+    {
+     "title": "Paragraf (reprinting Biznis.rs): a proposal to amend the rulebook on installing chargers, August 19, 2026",
+     "url": "https://www.paragraf.rs/dnevne-vesti/190826/190826-vest8.html"
+    },
+    {
+     "title": "Electrical Installation Guide (Schneider Electric): EV charging installation under IEC 60364-7-722:2018",
+     "url": "https://www.electrical-installation.org/enwiki/EV_charging_-_electrical_installation_design"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "cta",
+   "h2": "Evolako for guarded and long-term car parks",
+   "text": "A charger on a pedestal and a MID meter at every space, load management and a monthly statement per space with a subscription. We work all over Serbia and arrange the on-site assessment by message.",
+   "button": {
+    "label": "Chargers for car parks",
+    "href": "/punjaci-za-parkinge"
+   }
+  },
+  {
+   "type": "links",
+   "id": "srodni",
+   "h2": "Related guides",
+   "items": [
+    {
+     "title": "How much power a garage needs for 10, 20 or 50 chargers",
+     "text": "The overnight math, load management and when a power increase is needed.",
+     "href": "/koliko-snage-treba-garazi-za-punjace"
+    },
+    {
+     "title": "Charger price per parking space: what’s included for a building, hotel or business",
+     "text": "The kit for each spot, the shared part and a power increase; prices are final.",
+     "href": "/cena-punjaca-po-parking-mestu"
+    },
+    {
+     "title": "Chargers for parking garages and parking lots",
+     "text": "Garages, business centers and garages for rent.",
+     "href": "/punjaci-za-parking-garaze"
+    }
+   ]
+  }
+ ]
+}
