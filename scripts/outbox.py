@@ -178,6 +178,10 @@ def apply_item(root, repo, item, d):
                 tf.write(raw)
             i18n.append((op[5:], tf.name))
         elif op == 'izmene' and repo == 'hemptoon/blokvolt-rs':
+            lines = [l for l in raw.decode('utf-8').splitlines() if l.strip()]
+            for extra in reversed(lines[1:]):     # several lines in one row: keep their order under the heading
+                izmene_add(root, extra, d)
+            raw = lines[0].encode('utf-8') if lines else b''
             for lang, tr in izmene_add(root, raw.decode('utf-8'), d).items():
                 with tempfile.NamedTemporaryFile('w', suffix='.json', delete=False, encoding='utf-8') as tf:
                     json.dump(tr, tf, ensure_ascii=False)
