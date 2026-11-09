@@ -828,6 +828,27 @@ EP_JS = '(window.EVO_PATH||location.pathname)'
 # dictionaries by page, the form field Stranica, the career form's page, the counter, the lead event, the building
 # share link). history.replaceState keeps the real path. The career "copy link" copies the clean URL of the page in
 # its language (it used to add ?lang=xx to the Serbian URL).
+# careers form: the Serbia-only rules (see INLINE_PATCHES); GEO/geo/rsMob live in the form's closure
+KR_TEXTS_JS = ("var M2={"
+    "sr:{phone:'Upiši broj mobilnog telefona u Srbiji, npr. 064 123 4567.',"
+    "geo:'Prijave primamo samo od ljudi koji žive u Srbiji. Ako koristiš VPN, isključi ga i osveži stranicu.'},"
+    "cy:{phone:'Упиши број мобилног телефона у Србији, нпр. 064 123 4567.',"
+    "geo:'Пријаве примамо само од људи који живе у Србији. Ако користиш VPN, искључи га и освежи страницу.'},"
+    "en:{phone:'Please enter a Serbian mobile number, e.g. 064 123 4567.',"
+    "geo:'We only accept applications from people who live in Serbia. If you use a VPN, turn it off and reload the page.'},"
+    "ru:{phone:'Укажи номер мобильного в Сербии, например 064 123 4567.',"
+    "geo:'Отклики принимаем только от тех, кто живёт в Сербии. Если включён VPN, выключи его и обнови страницу.'}};"
+    "var GEO=0;"
+    "function rsMob(s){var x=String(s||'').replace(/[\\s\\-\\/().]/g,'');"
+    "if(x.indexOf('+381')===0)x=x.slice(4);else if(x.indexOf('00381')===0)x=x.slice(5);else if(x.charAt(0)==='0')x=x.slice(1);else return '';"
+    "return /^6\\d{7,8}$/.test(x)?'+381'+x:''}")
+KR_GEO_JS = ("var gb=fm.querySelector('.kr-geo');"
+    "if(!gb){gb=d.createElement('div');gb.className='kr-geo';gb.setAttribute('role','alert');gb.style.cssText='display:none;margin:0 0 18px;padding:12px 14px;border-radius:14px;background:#FFE9EA;color:#A3131A;font-size:14px;line-height:1.5';fm.insertBefore(gb,fm.firstChild)}"
+    "function geo(on){GEO=on?1:0;gb.textContent=on?m('geo'):'';gb.style.display=on?'block':'none';"
+    "var b=fm.querySelector('.kr-send');if(b)b.disabled=!!on;if(on)err('')}"
+    "fetch(API+'/zemlja',{cache:'no-store'}).then(function(x){return x.ok?x.json():null}).then(function(j){"
+    "if(j&&j.cc&&j.cc!=='RS')geo(1)}).catch(function(){});")
+
 INLINE_PATCHES = [
     # (name, regex, replacement function, minimum total count over all pages)
     ('i18n loader: page files by the Serbian path', re.escape("var p=location.pathname.replace(/^\\/+|\\/+$/g,'')"),
@@ -845,6 +866,21 @@ INLINE_PATCHES = [
     # the paragraph with the not yet filled legal data stays hidden on /en/ pages, where its text is the English one,
     # and in Cyrillic, where the engine has transliterated it before the hiding script runs (the live site shows
     # "[ПРАВНИ-ПОДАЦИ: …]" on a page opened in Cyrillic, but not after switching to Cyrillic on the page)
+    # careers (09.11.2026, Andrei: applications only from people who live in Serbia): a Serbian mobile number is
+    # required, and a visitor whose country (Cloudflare, GET /kr/zemlja) is not Serbia sees a notice and cannot send;
+    # the bot refuses such an application too (403 {"err":"geo"}), so the notice also shows if the first check failed
+    ('careers: texts of the Serbia-only rules', re.escape("function m(k){return (M[L()]||M.sr)[k]}"),
+     lambda m: KR_TEXTS_JS + "function m(k){var a=M2[L()]||M2.sr;return k in a?a[k]:(M[L()]||M.sr)[k]}", 4),
+    ('careers: Serbian mobile number required',
+     re.escape("if(!v('phone')&&!v('email')){fm.elements.phone.classList.add('is-bad');fm.elements.email.classList.add('is-bad');err(m('contact'));return}"),
+     lambda m: "if(GEO){geo(1);return}if(!rsMob(v('phone'))){fm.elements.phone.classList.add('is-bad');err(m('phone'));return}", 4),
+    ('careers: phone sent as +3816…', re.escape("phone:v('phone'),"), lambda m: "phone:rsMob(v('phone')),", 4),
+    ('careers: country check when the form opens', re.escape("var t0=Date.now();"),
+     lambda m: KR_GEO_JS + "var t0=Date.now();", 4),
+    ('careers: refusal by country from the bot', re.escape("then(function(x){if(!x.ok)throw 0;return x.json()})"),
+     lambda m: "then(function(x){if(x.status===403)return x.json().then(function(j){throw j&&j.err==='geo'?1:0},function(){throw 0});if(!x.ok)throw 0;return x.json()})", 4),
+    ('careers: after a refusal by country the notice stays', re.escape("return next()}).catch(fail)})}"),
+     lambda m: "return next()}).catch(function(e){fail();if(e===1)geo(1)})})}", 4),
     ('legal-data placeholder hidden in English and Cyrillic too', re.escape(r"if(/\[PRAVNI|000 00 00/.test(p.textContent))"),
      lambda m: r"if(/\[PRAVNI|\[LEGAL-DATA|\[ПРАВНИ|000 00 00/.test(p.textContent))", 37),
 ]
