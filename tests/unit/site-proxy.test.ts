@@ -49,3 +49,53 @@ describe("site proxy to the bot", () => {
     expect(res.status).toBe(503);
   });
 });
+
+// site-proxy/kr.js: careers form only from Serbia (09.11.2026)
+import { careers } from "../../site-proxy/kr.js";
+
+function withCf(req: Request, country?: string): Request {
+  if (country) Object.defineProperty(req, "cf", { value: { country } });
+  return req;
+}
+
+describe("careers: Serbia only", () => {
+  const origin = { origin: "https://www.evolako.rs" };
+
+  it("zemlja: the visitor's country, with CORS for the site", async () => {
+    const b = bot();
+    const res = await careers({ request: withCf(new Request("https://app.evolako.rs/kr/zemlja", { headers: origin }), "RS"), env: { BOT: b.BOT } });
+    expect(res.status).toBe(200);
+    expect(await res.json()).toEqual({ cc: "RS" });
+    expect(res.headers.get("access-control-allow-origin")).toBe("https://www.evolako.rs");
+    expect(b.seen.length).toBe(0);
+  });
+
+  it("zemlja: no CORS for other sites", async () => {
+    const res = await careers({ request: withCf(new Request("https://app.evolako.rs/kr/zemlja", { headers: { origin: "https://evil.example" } }), "RS"), env: {} });
+    expect(res.headers.get("access-control-allow-origin")).toBeNull();
+  });
+
+  it("apply from abroad: 403 geo, nothing goes to the bot", async () => {
+    const b = bot();
+    const req = withCf(new Request("https://app.evolako.rs/kr/apply", { method: "POST", body: "{}", headers: origin }), "IN");
+    const res = await careers({ request: req, env: { BOT: b.BOT } });
+    expect(res.status).toBe(403);
+    expect(await res.json()).toEqual({ ok: false, err: "geo" });
+    expect(res.headers.get("access-control-allow-origin")).toBe("https://www.evolako.rs");
+    expect(b.seen.length).toBe(0);
+  });
+
+  it("apply from Serbia, preflight and files: on to the bot", async () => {
+    const b = bot();
+    await careers({ request: withCf(new Request("https://app.evolako.rs/kr/apply", { method: "POST", body: "{}", headers: origin }), "RS"), env: { BOT: b.BOT } });
+    await careers({ request: withCf(new Request("https://app.evolako.rs/kr/apply", { method: "OPTIONS", headers: origin }), "IN"), env: { BOT: b.BOT } });
+    await careers({ request: withCf(new Request("https://app.evolako.rs/kr/file/abc?t=x&n=0", { method: "POST", body: "x" }), "RS"), env: { BOT: b.BOT } });
+    expect(b.seen.map((r) => r.method + " " + new URL(r.url).pathname)).toEqual(["POST /kr/apply", "OPTIONS /kr/apply", "POST /kr/file/abc"]);
+  });
+
+  it("no country known (local): not refused", async () => {
+    const b = bot();
+    const res = await careers({ request: new Request("https://app.evolako.rs/kr/apply", { method: "POST", body: "{}" }), env: { BOT: b.BOT } });
+    expect(res.status).toBe(204);
+  });
+});
