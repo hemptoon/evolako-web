@@ -89,6 +89,7 @@ _IX_SPEC = importlib.util.spec_from_file_location('evo_indexnow', os.path.join(H
 IX = importlib.util.module_from_spec(_IX_SPEC)   # site/tools/indexnow.py: key, page fingerprints (IndexNow)
 _IX_SPEC.loader.exec_module(IX)
 import content as CT    # noqa: E402  (site/content.py: guides, news and B2B guides published after the switch)
+import a11y as AX       # noqa: E402  (site/a11y.py: skip link, landmarks, focus ring, contrast — 09.11.2026)
 
 SITE = 'https://www.evolako.rs'
 SITE_ID = '6ab19bf9a3bb86f8fb7bba00'
@@ -923,6 +924,14 @@ class Build:
                                                                                    sorted(self.form_names)))
         # languages: hreflang alternates and real language-menu links on the Serbian pages, then /en/ and /ru/
         self.languages()
+        # accessibility layer on every page and language (site/a11y.py); no inline script changes, so CSP is unaffected
+        try:
+            for slug in list(self.page_out):
+                self.page_out[slug] = AX.apply(self.page_out[slug], 'sr', slug)
+            for (lang, slug) in list(self.lang_out):
+                self.lang_out[(lang, slug)] = AX.apply(self.lang_out[(lang, slug)], lang, slug)
+        except AX.A11yError as e:
+            fail(str(e))
         for (lang, slug), text in self.lang_out.items():
             page_refs[(lang, slug)] = set(page_refs[slug])
 

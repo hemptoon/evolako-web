@@ -619,7 +619,11 @@ def load(browser, url, viewport, shot, local_port, answers, answer_all, scroll=T
         page.wait_for_timeout(300)
         if actions:
             rec['checks'] = actions(page) or []
-        rec['text'] = page.evaluate("() => (document.body ? document.body.innerText : '').replace(/\\s+/g, ' ').trim()")
+        # the accessibility layer (site/a11y.py: skip link, footer link «Pristupačnost») is not in the reference render
+        rec['text'] = page.evaluate("() => { const h = [...document.querySelectorAll('.evo-skip,[data-evo-a11y]')];"
+                                    " h.forEach(e => e.style.setProperty('display', 'none', 'important'));"
+                                    " const s = (document.body ? document.body.innerText : '').replace(/\\s+/g, ' ').trim();"
+                                    " h.forEach(e => e.style.removeProperty('display')); return s; }")
         rec['text_len'] = len(rec['text'])
         rec['title'] = page.title()
         rec['html_lang'] = page.evaluate('() => document.documentElement.lang')
