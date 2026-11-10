@@ -13,9 +13,9 @@
    "ru": "Если вы сдаёте гараж, арендатору с электромобилем достаточно комплекта START: усиленная розетка с MID-счётчиком и базовым монтажом рядом с распределительным щитом, 39.000 RSD (итоговая цена). Мощность — 2,3–3,7 кВт, это примерно до 180 км за ночь.",
    "sr": "Ako izdajete garažu, zakupcu sa električnim autom dovoljan je paket START: pojačana utičnica sa MID brojilom i osnovnom ugradnjom pored razvodne table, 39.000 RSD (konačna cena). Snaga je 2,3–3,7 kW, što daje do oko 180 km preko noći."
   },
-  "109z55a": {
-   "ru": "Wallbox 11 кВт: 154.000–204.000 RSD",
-   "sr": "Wallbox 11 kW: 154.000–204.000 RSD"
+  "1nfxscm": {
+   "ru": "Wallbox 11 кВт: 160.000–216.000 RSD",
+   "sr": "Wallbox 11 kW: 160.000–216.000 RSD"
   },
   "10hcjbn": {
    "ru": "итоговая цена; 2,3–3,7 кВт, примерно до 180 км за ночь",
@@ -25,9 +25,9 @@
    "ru": "Стоимость подготовки и общей инфраструктуры делится на все места в паркинге, а зарядки первого этапа считаются по цене пакета. Примеры рассчитаны на электрощит в 10–30 м от мест. Цены итоговые, без НДС: предприниматель не плательщик НДС.",
    "sr": "Priprema mesta i zajednička infrastruktura dele se na sva mesta u garaži, a punjači u prvoj fazi idu po ceni paketa. Primeri važe za razvodnu tablu na 10–30 m. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
   },
-  "10kbac8": {
-   "ru": "Около 167.000–205.000 RSD за место",
-   "sr": "Po mestu oko 167.000–205.000 RSD"
+  "17ea1gb": {
+   "ru": "Около 174.000–217.000 RSD за место",
+   "sr": "Po mestu oko 174.000–217.000 RSD"
   },
   "10s6iox": {
    "ru": "Зарядка для служебных машин дома и в компании",
@@ -85,9 +85,9 @@
    "ru": "wallbox 11 кВт — 104.000 RSD, итоговая цена: трёхфазная зарядка, которая за ночь заряжает пустую машину;",
    "sr": "wallbox 11 kW — 104.000 RSD, konačna cena: trofazni punjač koji prazan auto napuni preko noći;"
   },
-  "13bcz7h": {
-   "ru": "около 154.000–199.000 RSD",
-   "sr": "oko 154.000–199.000 RSD"
+  "icsd4b": {
+   "ru": "около 160.000–211.000 RSD",
+   "sr": "oko 160.000–211.000 RSD"
   },
   "13d4w5i": {
    "ru": "Короткий опрос: узнай, какой комплект подходит твоему гаражу или парковочному месту и сколько ты экономишь.",
@@ -101,9 +101,9 @@
    "ru": "Как компании учитывать электричество для служебной машины, которая заряжается у сотрудника: MID-счётчик на месте, ежемесячный расчёт в кВт·ч и вопросы для бухгалтера.",
    "sr": "Kako firma meri struju za službeni auto koji se puni kod zaposlenog: MID brojilo na mestu, mesečni obračun u kWh i pitanja za knjigovođu."
   },
-  "13vsgwy": {
-   "ru": "Общая инфраструктура: 348.000–694.000 RSD",
-   "sr": "Zajednička infrastruktura: 348.000–694.000 RSD"
+  "1orzrkm": {
+   "ru": "Общая инфраструктура: 390.000–778.000 RSD",
+   "sr": "Zajednička infrastruktura: 390.000–778.000 RSD"
   },
   "14b8bxb": {
    "ru": "Усиленная линия или смарт-wallbox 11 кВт с сертифицированным MID-счётчиком, техническим описанием монтажа и шаблонами документов для собрания жильцов — монтаж за 1 день.",
@@ -113,9 +113,9 @@
    "ru": "Зарядка с MID-счётчиком там, где служебная машина стоит ночью, — у сотрудника дома или на парковке компании, по всей Сербии. Оценка на месте стоит 2.990 RSD (итоговая цена) и засчитывается в стоимость установки; отвечаем в течение 48 часов.",
    "sr": "Punjač sa MID brojilom na mestu gde službeni auto stoji noću — kod zaposlenog ili na parkingu firme, u celoj Srbiji. Procena na licu mesta košta 2.990 RSD (konačna cena) i uračunava se u cenu ugradnje; javljamo se u roku od 48h."
   },
-  "14o3f48": {
-   "ru": "Усиленная розетка: 96.000–139.000 RSD",
-   "sr": "Pojačana utičnica: 96.000–139.000 RSD"
+  "tup9pu": {
+   "ru": "Усиленная розетка: 96.000–151.000 RSD",
+   "sr": "Pojačana utičnica: 96.000–151.000 RSD"
   },
   "14oqkq2": {
    "ru": "Вместе со сметой получишь техническое описание установки. Шаблоны для владельца гаража или собрания жильцов — согласие, проект решения и пункт повестки дня — бесплатны для всех. Заполняешь и передаёшь их ты или управляющий домом. От имени дома мы не выступаем, но даём всё, что нужно для этого разговора.",
@@ -141,9 +141,9 @@
    "ru": "Комплект для места, общая инфраструктура и увеличение мощности: примеры цен для отеля, гаража, компании, новостройки и многоквартирного дома, с НДС.",
    "sr": "Paket za mesto, zajednička infrastruktura i povećanje snage: primeri cena za hotel, garažu, firmu, novogradnju i stambenu zgradu, sa PDV-om."
   },
-  "15gnzdg": {
-   "ru": "Четыре места в гараже, распределительный щит в 10–30 м: около 616.000–796.000 RSD, то есть около 154.000–199.000 RSD за место.",
-   "sr": "Četiri mesta u garaži, sa razvodnom tablom udaljenom 10–30 m: oko 616.000–796.000 RSD, odnosno oko 154.000–199.000 RSD po mestu."
+  "ecn58z": {
+   "ru": "Четыре места в гараже, распределительный щит в 10–30 м: около 640.000–842.000 RSD, то есть около 160.000–211.000 RSD за место.",
+   "sr": "Četiri mesta u garaži, sa razvodnom tablom udaljenom 10–30 m: oko 640.000–842.000 RSD, odnosno oko 160.000–211.000 RSD po mestu."
   },
   "15tz5mi": {
    "ru": "Wallbox Pulsar Max с базовым монтажом рядом с электрощитом: 155.000 RSD; со счётчиком PowerBoost (динамическое управление мощностью и зарядка от солнечных панелей) — 195.000 RSD. MID-счётчик +10.000 RSD. Цены итоговые.",
@@ -153,9 +153,9 @@
    "ru": "На участника, итоговая цена",
    "sr": "Po učesniku, konačna cena"
   },
-  "163bubj": {
-   "ru": "Общая инфраструктура: 200.000–380.000 RSD",
-   "sr": "Zajednička infrastruktura: 200.000–380.000 RSD"
+  "1b9heic": {
+   "ru": "Общая инфраструктура: 224.000–426.000 RSD",
+   "sr": "Zajednička infrastruktura: 224.000–426.000 RSD"
   },
   "16hmcu2": {
    "ru": "Evolako ставит зарядку с MID-счётчиком дома у сотрудника или на парковке компании — по всей Сербии. По подписке компания каждый месяц получает расчёт по каждому месту в PDF и CSV.",
@@ -181,13 +181,13 @@
    "ru": "Цена пакета итоговая и включает базовую установку: зарядка на стене рядом с электрощитом, до 2 м кабеля, УЗО и автомат. Если твоё место дальше от щита, кабель, кабель-каналы, проход через стену или новый щит считаем отдельно — на осмотре, до начала работ, так что сумму знаешь заранее. Шаблоны документов бесплатны для всех:",
    "sr": "Cena paketa je konačna i uključuje osnovnu ugradnju: punjač na zidu pored razvodne table, do 2 m kabla, FID zaštitu i automat. Ako je tvoje mesto dalje od table, kabl, kanalice, prolaz kroz zid ili novu tablu računamo posebno — na proceni, pre početka radova, pa iznos znaš unapred. Šabloni papira su besplatni za sve:"
   },
-  "17jf826": {
-   "ru": "Подготовка мест и общая инфраструктура: 1.347.000–2.000.000 RSD",
-   "sr": "Priprema mesta i zajednička infrastruktura: 1.347.000–2.000.000 RSD"
+  "ghrv90": {
+   "ru": "Подготовка мест и общая инфраструктура: 1.509.000–2.240.000 RSD",
+   "sr": "Priprema mesta i zajednička infrastruktura: 1.509.000–2.240.000 RSD"
   },
-  "17kz60s": {
-   "ru": "Два места рядом с распределительным щитом: около 218.000–238.000 RSD.",
-   "sr": "Dva mesta pored razvodne table: oko 218.000–238.000 RSD."
+  "1kp1r3y": {
+   "ru": "Два места рядом с распределительным щитом: около 219.000–242.000 RSD.",
+   "sr": "Dva mesta pored razvodne table: oko 219.000–242.000 RSD."
   },
   "17rov58": {
    "ru": "Монтаж зарядки, которая у тебя уже есть (маркировка CE и защита от постоянного тока утечки 6 мА), рядом с электрощитом: до 2 м кабеля, УЗО и автомат — 24.000 RSD. Цены итоговые.",
@@ -205,13 +205,13 @@
    "ru": "Пример из калькулятора: гараж до 30 мест, электрощит в 10–30 м, итоговая цена на одного участника:",
    "sr": "Primer iz kalkulatora za garažu do 30 mesta, sa razvodnom tablom udaljenom 10–30 m, konačna cena po učesniku:"
   },
-  "18f77u5": {
-   "ru": "Итого около 616.000–796.000 RSD",
-   "sr": "Ukupno oko 616.000–796.000 RSD"
+  "1rtgnqq": {
+   "ru": "Итого около 640.000–842.000 RSD",
+   "sr": "Ukupno oko 640.000–842.000 RSD"
   },
-  "18qdqeo": {
-   "ru": "Wallbox 11 кВт: 138.000–176.000 RSD на участника",
-   "sr": "Wallbox 11 kW: 138.000–176.000 RSD po učesniku"
+  "1oeg01b": {
+   "ru": "Wallbox 11 кВт: 142.000–185.000 RSD на участника",
+   "sr": "Wallbox 11 kW: 142.000–185.000 RSD po učesniku"
   },
   "18uwyw1": {
    "ru": "Провести электричество в гараж — самая большая часть работы, и платить за неё ради одного места нет смысла. Поэтому есть пакет ZGRADA: от 2 до 6 мест за один раз, от 96.000 RSD за место. Шаблоны документов для собрания жильцов (скупштины) бесплатны для всех, а дому это ничего не стоит. Если желающий пока только ты, на осмотре посчитаем и вариант для одного места.",
@@ -233,9 +233,9 @@
    "ru": "Только монтаж — от 24.000 RSD · START — 39.000 RSD · WALLBOX 11 кВт — от 94.000 RSD · ZGRADA — от 96.000 RSD за место. Цены итоговые, в них входит базовый монтаж рядом с электрощитом; шаблоны документов бесплатны для всех.",
    "sr": "Samo ugradnja od 24.000 RSD · START 39.000 RSD · WALLBOX 11 kW od 94.000 RSD · ZGRADA od 96.000 RSD po mestu. Cene su konačne i uključuju osnovnu ugradnju pored razvodne table; šabloni papira su besplatni za sve."
   },
-  "19uhl67": {
-   "ru": "Около 16.000–25.000 RSD за подготовленное место",
-   "sr": "Po pripremljenom mestu oko 16.000–25.000 RSD"
+  "1hyhsq6": {
+   "ru": "Около 18.000–28.000 RSD за подготовленное место",
+   "sr": "Po pripremljenom mestu oko 18.000–28.000 RSD"
   },
   "19w7vgm": {
    "ru": "Городской пляж, Чачак",
@@ -253,9 +253,9 @@
    "ru": "Итого 520.000 RSD",
    "sr": "Ukupno 520.000 RSD"
   },
-  "1aoxcd7": {
-   "ru": "Когда часть автомобилей заряжается на парковке компании, там тоже у каждого места свой MID-счётчик, а управление мощностью делит мощность существующего подключения между зарядками. Пример: 3 места на парковке с распределительным щитом в 10–30 м и 5 сотрудников, которые заряжаются дома, обойдутся примерно в 1.026.000–1.188.000 RSD. Для другого числа мест ориентировочную цену покажет ",
-   "sr": "Kad se deo automobila puni na parkingu firme, i tamo svako mesto dobija svoje MID brojilo, a upravljanje snagom deli snagu postojećeg priključka između punjača. Primer: 3 mesta na parkingu, sa razvodnom tablom udaljenom 10–30 m, i 5 zaposlenih koji pune kod kuće koštaju oko 1.026.000–1.188.000 RSD. Za drugi broj mesta okvirnu cenu daje"
+  "1vnhmvm": {
+   "ru": "Когда часть автомобилей заряжается на парковке компании, там тоже у каждого места свой MID-счётчик, а управление мощностью делит мощность существующего подключения между зарядками. Пример: 3 места на парковке с распределительным щитом в 10–30 м и 5 сотрудников, которые заряжаются дома, обойдутся примерно в 1.050.000–1.230.000 RSD. Для другого числа мест ориентировочную цену покажет ",
+   "sr": "Kad se deo automobila puni na parkingu firme, i tamo svako mesto dobija svoje MID brojilo, a upravljanje snagom deli snagu postojećeg priključka između punjača. Primer: 3 mesta na parkingu, sa razvodnom tablom udaljenom 10–30 m, i 5 zaposlenih koji pune kod kuće koštaju oko 1.050.000–1.230.000 RSD. Za drugi broj mesta okvirnu cenu daje"
   },
   "1arlvy4": {
    "ru": "Владелец парковочного места заказывает зарядку, когда покупает электромобиль. Для своего места он выбирает комплект (цены итоговые): усиленную розетку с MID-счётчиком за 39.000 RSD или wallbox 11 кВт с MID-счётчиком за 104.000 RSD. Это базовый монтаж от коробки у его места, он занимает один рабочий день. При продаже квартир и парковочных мест это конкретный ответ на вопрос, где покупатель будет заряжать машину: место подготовлено, а цена зарядки известна заранее.",
@@ -281,9 +281,9 @@
    "ru": "Цены итоговые, без НДС: предприниматель не плательщик НДС. Цена комплекта включает базовый монтаж рядом с распределительным щитом: до 2 м кабеля, УЗО и автомат. Если место дальше от щита, кабель, кабель-каналы, проход через стену или новый щит считаем при оценке на объекте, до начала работ.",
    "sr": "Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a. Cena paketa uključuje osnovnu ugradnju pored razvodne table: do 2 m kabla, FID zaštitu i automat. Ako je mesto dalje od table, kabl, kanalice, prolaz kroz zid ili novu tablu računamo na proceni, pre početka radova."
   },
-  "1c0hlv3": {
-   "ru": "Пример: отель с 6 местами на открытой парковке, со стойками и распределительным щитом в 10–30 м, обходится примерно в 1.003.000–1.229.000 RSD без земляных и асфальтовых работ.",
-   "sr": "Primer: hotel sa 6 mesta na otvorenom parkingu, sa stubićima i razvodnom tablom na 10–30 m, košta oko 1.003.000–1.229.000 RSD, bez iskopa i asfalta."
+  "14wxqhw": {
+   "ru": "Пример: отель с 6 местами на открытой парковке, со стойками и распределительным щитом в 10–30 м, обходится примерно в 1.048.000–1.302.000 RSD без земляных и асфальтовых работ.",
+   "sr": "Primer: hotel sa 6 mesta na otvorenom parkingu, sa stubićima i razvodnom tablom na 10–30 m, košta oko 1.048.000–1.302.000 RSD, bez iskopa i asfalta."
   },
   "1c3lpzm": {
    "ru": "По состоянию на 29.10.2026",
@@ -305,17 +305,17 @@
    "ru": "за место, с долей общей линии, итоговая цена",
    "sr": "po mestu, sa delom zajedničke linije, konačna cena"
   },
-  "1cvb0z4": {
-   "ru": "Итого около 1.003.000–1.229.000 RSD",
-   "sr": "Ukupno oko 1.003.000–1.229.000 RSD"
+  "1j3yxad": {
+   "ru": "Итого около 1.048.000–1.302.000 RSD",
+   "sr": "Ukupno oko 1.048.000–1.302.000 RSD"
   },
-  "1d6qfma": {
-   "ru": "Общая инфраструктура на парковке, до электрощита 10–30 м: 194.000–356.000 RSD",
-   "sr": "Zajednička infrastruktura na parkingu, razvodna tabla na 10–30 m: 194.000–356.000 RSD"
+  "svx15h": {
+   "ru": "Общая инфраструктура на парковке, до электрощита 10–30 м: 218.000–398.000 RSD",
+   "sr": "Zajednička infrastruktura na parkingu, razvodna tabla na 10–30 m: 218.000–398.000 RSD"
   },
-  "1d749va": {
-   "ru": "Итого около 1.084.000–1.398.000 RSD",
-   "sr": "Ukupno oko 1.084.000–1.398.000 RSD"
+  "jl7ciz": {
+   "ru": "Итого около 1.164.000–1.516.000 RSD",
+   "sr": "Ukupno oko 1.164.000–1.516.000 RSD"
   },
   "1d86mbz": {
    "ru": "План для управляющих: заявки жильцов, оценка гаража, шаблоны и решение собрания, монтаж и расчёт по MID-счётчику. Расходы несут участники, а не дом.",
@@ -341,9 +341,9 @@
    "ru": "Зарядки для гаражей, корпоративных парковок и гаражей под аренду: MID-счётчик на каждом месте, управление мощностью и ежемесячный расчёт по каждому пользователю, без наценки.",
    "sr": "Punjači za garaže, parkinge firmi i garaže za izdavanje: MID brojilo na svakom mestu, upravljanje snagom i mesečni obračun po korisniku, bez marže."
   },
-  "1e1p1hg": {
-   "ru": "Wallbox 11 кВт: 138.000–176.000 RSD",
-   "sr": "Wallbox 11 kW: 138.000–176.000 RSD"
+  "mlauzb": {
+   "ru": "Wallbox 11 кВт: 142.000–185.000 RSD",
+   "sr": "Wallbox 11 kW: 142.000–185.000 RSD"
   },
   "1e5iyvv": {
    "ru": "Магазин (shop.evolako.rs) — бронь, запрос по модели, запрос от компании и «Сообщить мне»: имя, номер телефона или e-mail, город, если ты его укажешь, выбранные товары и количество, нужен ли монтаж, сообщение, а для запроса от компании — название компании и PIB. Используем их только чтобы подтвердить цену и срок, ответить на запрос и подготовить предложение.",
@@ -381,9 +381,9 @@
    "ru": "Итого",
    "sr": "Ukupno"
   },
-  "1fd4mfm": {
-   "ru": "Для одного-двух мест рядом с распределительным щитом общая часть не нужна: отель с 2 такими местами обходится примерно в 218.000–238.000 RSD. Когда мест больше или они дальше от щита, добавляется инфраструктура, которая обслуживает все места:",
-   "sr": "Za jedno ili dva mesta pored razvodne table zajednički deo nije potreban: hotel sa 2 takva mesta košta oko 218.000–238.000 RSD. Kad je mesta više ili su dalje od razvodne table, dodaje se infrastruktura koja služi svim mestima:"
+  "58whv8": {
+   "ru": "Для одного-двух мест рядом с распределительным щитом общая часть не нужна: отель с 2 такими местами обходится примерно в 219.000–242.000 RSD. Когда мест больше или они дальше от щита, добавляется инфраструктура, которая обслуживает все места:",
+   "sr": "Za jedno ili dva mesta pored razvodne table zajednički deo nije potreban: hotel sa 2 takva mesta košta oko 219.000–242.000 RSD. Kad je mesta više ili su dalje od razvodne table, dodaje se infrastruktura koja služi svim mestima:"
   },
   "1ff4d9l": {
    "ru": "Работаем по всей Сербии. Монтаж одного места — один рабочий день, а остальной срок в основном зависит от того, когда соберётся собрание жильцов.",
@@ -393,9 +393,9 @@
    "ru": "Wallbox Plus — 4G, RFID и экран",
    "sr": "Wallbox Plus — 4G, RFID i ekran"
   },
-  "1fhqpr9": {
-   "ru": "Общая инфраструктура со стойками: 536.000–843.000 RSD",
-   "sr": "Zajednička infrastruktura sa stubovima: 536.000–843.000 RSD"
+  "yi3hm4": {
+   "ru": "Общая инфраструктура со стойками: 600.000–945.000 RSD",
+   "sr": "Zajednička infrastruktura sa stubovima: 600.000–945.000 RSD"
   },
   "1fr1k72": {
    "ru": "Мы можем изменить условия; действующая версия всегда на этой странице. Применяется право Республики Сербия; споры рассматривает суд в Нови-Саде. Действует с: 29.10.2026.",
@@ -417,17 +417,17 @@
    "ru": "Общая инфраструктура электропитания гаража и оборудование для каждого парковочного места, от 96.000 RSD за место, итоговая цена.",
    "sr": "Zajednička napojna infrastruktura garaže i oprema po parking mestu, od 96.000 RSD po mestu, konačna cena."
   },
-  "1gch999": {
-   "ru": "Около 138.000–174.000 RSD за место",
-   "sr": "Po mestu oko 138.000–174.000 RSD"
+  "a8v8uy": {
+   "ru": "Около 143.000–182.000 RSD за место",
+   "sr": "Po mestu oko 143.000–182.000 RSD"
   },
   "1gf5e2p": {
    "ru": "Как оборудовать гараж под аренду зарядкой: согласия, MID-счётчик на месте и электричество, которое арендатор оплачивает вместе с арендой, без наценки.",
    "sr": "Kako da garažu za izdavanje opremite punjačem: saglasnosti, MID brojilo na mestu i struja koju zakupac plaća uz kiriju, bez marže."
   },
-  "1gnjqv9": {
-   "ru": "Весь проект, 10 розеток: 960.000–1.110.000 RSD",
-   "sr": "Ceo projekat, 10 utičnica: 960.000–1.110.000 RSD"
+  "udt53t": {
+   "ru": "Весь проект, 10 розеток: 960.000–1.200.000 RSD",
+   "sr": "Ceo projekat, 10 utičnica: 960.000–1.200.000 RSD"
   },
   "1h1l89p": {
    "ru": "Заявка от дома не отправлена",
@@ -493,9 +493,9 @@
    "ru": "Зарядки для многоквартирных домов — для управляющих",
    "sr": "Punjači za stambene zgrade — za upravnike"
   },
-  "1k427wp": {
-   "ru": "Wallbox 11 кВт: 131.000–152.000 RSD",
-   "sr": "Wallbox 11 kW: 131.000–152.000 RSD"
+  "1y547ui": {
+   "ru": "Wallbox 11 кВт: 135.000–157.000 RSD",
+   "sr": "Wallbox 11 kW: 135.000–157.000 RSD"
   },
   "1k6gtlr": {
    "ru": "Пример: пять сотрудников заряжают служебные автомобили дома, с wallbox по каждому адресу. Комплекты стоят 5 × 104.000 = 520.000 RSD. Ежемесячный отчёт идёт вместе с подпиской за 990 RSD за место, всего 4.950 RSD в месяц. Цены итоговые, без НДС: предприниматель не плательщик НДС. Первые 2 месяца подписка стоит 0 RSD, без договорных обязательств.",
@@ -677,9 +677,9 @@
    "ru": "MID-счётчик на каждом месте и расчёт по каждому пользователю, без наценки. Управление мощностью распределяет мощность существующего подключения на несколько мест.",
    "sr": "MID brojilo na svakom mestu i obračun po korisniku, bez marže. Upravljanje snagom raspoređuje snagu postojećeg priključka na više mesta."
   },
-  "1uxrnyd": {
-   "ru": "Общая часть растёт медленнее числа участников: для 5 участников она составляет около 250.000–497.000 RSD, а для 20 — около 556.000–942.000 RSD. При делении на участников на каждого приходится всё меньшая доля. Но место в пакете ZGRADA не стоит меньше 96.000 RSD: в этом примере столько стоит усиленная розетка уже при 10 участниках.",
-   "sr": "Zajednički deo raste sporije od broja učesnika: za 5 učesnika iznosi oko 250.000–497.000 RSD, a za 20 učesnika oko 556.000–942.000 RSD. Kad se podeli na učesnike, na svakog pada sve manji deo. Cena mesta u paketu ZGRADA ipak ne pada ispod 96.000 RSD: u ovom primeru toliko košta pojačana utičnica već sa 10 učesnika."
+  "13crc54": {
+   "ru": "Общая часть растёт медленнее числа участников: для 5 участников она составляет около 280.000–557.000 RSD, а для 20 — около 623.000–1.055.000 RSD. При делении на участников на каждого приходится всё меньшая доля. Но место в пакете ZGRADA не стоит меньше 96.000 RSD: в этом примере столько стоит усиленная розетка уже при 10 участниках.",
+   "sr": "Zajednički deo raste sporije od broja učesnika: za 5 učesnika iznosi oko 280.000–557.000 RSD, a za 20 učesnika oko 623.000–1.055.000 RSD. Kad se podeli na učesnike, na svakog pada sve manji deo. Cena mesta u paketu ZGRADA ipak ne pada ispod 96.000 RSD: u ovom primeru toliko košta pojačana utičnica već sa 10 učesnika."
   },
   "1v96d8e": {
    "ru": "Калькулятор стоимости зарядок для дома, отеля и компании",
@@ -841,13 +841,13 @@
    "ru": "Пиши на hello@evolako.com, в WhatsApp, Viber или Telegram — работаем каждый день, ответ приходит в течение 48 часов. Говорим по-сербски, по-русски и по-английски.",
    "sr": "Piši na hello@evolako.com, u WhatsApp, Viber ili Telegram — radimo svakog dana, a odgovor stiže u roku od 48h. Govorimo srpski, ruski i engleski."
   },
-  "5fqz55": {
-   "ru": "Около 13.000–20.000 RSD за подготовленное место",
-   "sr": "Po pripremljenom mestu oko 13.000–20.000 RSD"
+  "d21jum": {
+   "ru": "Около 15.000–23.000 RSD за подготовленное место",
+   "sr": "Po pripremljenom mestu oko 15.000–23.000 RSD"
   },
-  "5jy0z9": {
-   "ru": "Итого около 1.713.000–2.034.000 RSD",
-   "sr": "Ukupno oko 1.713.000–2.034.000 RSD"
+  "1iifk5g": {
+   "ru": "Итого около 1.794.000–2.153.000 RSD",
+   "sr": "Ukupno oko 1.794.000–2.153.000 RSD"
   },
   "5nxqum": {
    "ru": "Evolako START — усиленная розетка со счётчиком MID, 2,3–3,7 кВт и до ~180 km за ночь, за 39.000 RSD (итоговая цена). Шаблоны документов для собрания бесплатны для всех, а оценка на месте стоит 2.990 RSD и засчитывается в стоимость установки.",
@@ -873,9 +873,9 @@
    "ru": "Зарядка и базовый монтаж, MID-счётчик по желанию, бесплатные шаблоны документов",
    "sr": "Punjač i osnovna ugradnja, MID brojilo po izboru, besplatni šabloni papira"
   },
-  "6qaggg": {
-   "ru": "Общую линию оплачивают участники, поэтому её стоимость делится на большее число людей. При пяти участниках место с розеткой стоит около 96.000–139.000 RSD, а при двадцати — 96.000 RSD: это самая низкая цена места в пакете ZGRADA.",
-   "sr": "Zajedničku liniju plaćaju učesnici, pa se njena cena deli na više ljudi. Sa pet učesnika mesto sa utičnicom košta oko 96.000–139.000 RSD, a sa dvadeset 96.000 RSD — to je najniža cena mesta u paketu ZGRADA."
+  "1v55jlm": {
+   "ru": "Общую линию оплачивают участники, поэтому её стоимость делится на большее число людей. При пяти участниках место с розеткой стоит около 96.000–151.000 RSD, а при двадцати — 96.000 RSD: это самая низкая цена места в пакете ZGRADA.",
+   "sr": "Zajedničku liniju plaćaju učesnici, pa se njena cena deli na više ljudi. Sa pet učesnika mesto sa utičnicom košta oko 96.000–151.000 RSD, a sa dvadeset 96.000 RSD — to je najniža cena mesta u paketu ZGRADA."
   },
   "6qatxy": {
    "ru": "Ориентировочная цена для всего объекта: места для зарядки, общая инфраструктура и подписка. Примеры итоговых цен для отеля, гаража, многоквартирного дома и новостройки.",
@@ -897,9 +897,9 @@
    "ru": "усиленная розетка — 39.000 RSD, итоговая цена: 2,3–3,7 кВт, примерно до 180 км за ночь.",
    "sr": "pojačana utičnica — 39.000 RSD, konačna cena: 2,3–3,7 kW, do oko 180 km preko noći."
   },
-  "824zyu": {
-   "ru": "около 16.000–25.000 RSD за подготовленное место, без зарядных станций",
-   "sr": "oko 16.000–25.000 RSD po pripremljenom mestu, bez punjača"
+  "1uof7ar": {
+   "ru": "около 18.000–28.000 RSD за подготовленное место, без зарядных станций",
+   "sr": "oko 18.000–28.000 RSD po pripremljenom mestu, bez punjača"
   },
   "85rr7e": {
    "ru": "Работаем и в твоём городе.",
@@ -933,9 +933,9 @@
    "ru": "Монтаж зарядки, которая у тебя уже есть (маркировка CE и защита от постоянного тока утечки 6 мА), рядом с электрощитом: до 2 м кабеля, УЗО и автомат — 24.000 RSD. Все цены с НДС.",
    "sr": "Ugradnja punjača koji već imaš (CE oznaka i zaštita od DC struje kvara 6 mA) pored razvodne table: do 2 m kabla, FID zaštita i automat — 24.000 RSD. Sve sa PDV-om."
   },
-  "9v5tjo": {
-   "ru": "Инфраструктура с трассой и коробками ещё на 20 мест: 673.000–994.000 RSD",
-   "sr": "Infrastruktura sa trasom i kutijama za još 20 mesta: 673.000–994.000 RSD"
+  "zxj2zs": {
+   "ru": "Инфраструктура с трассой и коробками ещё на 20 мест: 754.000–1.113.000 RSD",
+   "sr": "Infrastruktura sa trasom i kutijama za još 20 mesta: 754.000–1.113.000 RSD"
   },
   "9vcjxt": {
    "ru": "Белград",
@@ -1085,9 +1085,9 @@
    "ru": "Примеры — для гаража до 30 мест, когда электрощит в 10–30 м от гаража. Цена на одного участника: место с MID-счётчиком и доля общей линии. Цены итоговые, без НДС: предприниматель не плательщик НДС.",
    "sr": "Primeri važe za garažu do 30 mesta i razvodnu tablu na 10–30 m od garaže. Cena je po učesniku: mesto sa MID brojilom i deo zajedničke linije. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
   },
-  "h417t1": {
-   "ru": "Чем больше участников, тем меньше доля линии на одно место. Например, при 10 участниках общая линия в гараже до 30 мест стоит около 345.000–719.000 RSD и делится на всех десятерых. Ориентировочную цену для своего гаража рассчитайте в ",
-   "sr": "Kad je učesnika više, deo linije po mestu je manji. Sa 10 učesnika, na primer, zajednička linija u garaži do 30 mesta košta oko 345.000–719.000 RSD i deli se na svih deset. Za svoju garažu izračunajte okvirnu cenu u"
+  "1cmqlab": {
+   "ru": "Чем больше участников, тем меньше доля линии на одно место. Например, при 10 участниках общая линия в гараже до 30 мест стоит около 387.000–805.000 RSD и делится на всех десятерых. Ориентировочную цену для своего гаража рассчитайте в ",
+   "sr": "Kad je učesnika više, deo linije po mestu je manji. Sa 10 učesnika, na primer, zajednička linija u garaži do 30 mesta košta oko 387.000–805.000 RSD i deli se na svih deset. Za svoju garažu izračunajte okvirnu cenu u"
   },
   "hnb9wg": {
    "ru": "Работаем по всей Сербии.",
@@ -1101,9 +1101,9 @@
    "ru": "Где работаем: по всей Сербии. Для объекта в любом городе пришли адрес и фото электрощита, а о выезде на оценку договоримся в переписке.",
    "sr": "Gde radimo: u celoj Srbiji. Za objekat u bilo kom mestu pošaljite adresu i fotografije razvodne table, a procenu na licu mesta dogovaramo u poruci."
   },
-  "hx7sid": {
-   "ru": "В паркинге на 40 мест подготовка стоит около 16.000–25.000 RSD за место. После заселения ту же работу придётся делать там, где уже стоят машины, и сначала нужно решение собрания жильцов (скупштины).",
-   "sr": "U garaži sa 40 mesta priprema košta oko 16.000–25.000 RSD po mestu. Posle useljenja isti posao se radi u garaži koja se već koristi i traži odluku skupštine stambene zajednice."
+  "25zrsi": {
+   "ru": "В паркинге на 40 мест подготовка стоит около 18.000–28.000 RSD за место. После заселения ту же работу придётся делать там, где уже стоят машины, и сначала нужно решение собрания жильцов (скупштины).",
+   "sr": "U garaži sa 40 mesta priprema košta oko 18.000–28.000 RSD po mestu. Posle useljenja isti posao se radi u garaži koja se već koristi i traži odluku skupštine stambene zajednice."
   },
   "hxeivl": {
    "ru": "После осмотра ты получаешь смету с ценой для каждого участника и наше техническое описание монтажа. Шаблоны для собрания — проект решения, формулировка пункта повестки и ответы на вопросы жильцов, плюс пошаговый чек-лист — бесплатны для всех, даже если ставим не мы. Шаблоны заполняет инициатор или управляющий. Все шаблоны здесь:",
@@ -1133,9 +1133,9 @@
    "ru": "Кто платит за электричество, когда сосед заряжает машину от общей розетки, что говорит Закон о жилье и содержании зданий и как дому договориться с отдельным счётчиком.",
    "sr": "Ko plaća struju kad komšija puni auto iz zajedničke utičnice, šta kaže Zakon o stanovanju i kako da se zgrada dogovori uz odvojeno brojilo."
   },
-  "iqgt9t": {
-   "ru": "Итого около 1.388.000–1.734.000 RSD",
-   "sr": "Ukupno oko 1.388.000–1.734.000 RSD"
+  "n2ufk4": {
+   "ru": "Итого около 1.430.000–1.818.000 RSD",
+   "sr": "Ukupno oko 1.430.000–1.818.000 RSD"
   },
   "j8d1bj": {
    "ru": "Бесплатные шаблоны →",
@@ -1153,17 +1153,17 @@
    "ru": "Каждое место оплачивается по цене пакета. Стойки, распределительный шкаф с управлением мощностью, трасса кабеля, документация и проверка монтажа оплачиваются один раз на всю парковку. В калькуляторе выбери «На открытой парковке». Цены итоговые, без НДС: предприниматель не плательщик НДС.",
    "sr": "Svako mesto košta kao paket. Stubovi, razvodni orman sa upravljanjem snagom, trasa, dokumentacija i provera instalacije računaju se po parkingu; u kalkulatoru izaberite „Na otvorenom parkingu“. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
   },
-  "jix1lq": {
-   "ru": "Шесть мест на открытой парковке, на стойках, распределительный щит в 10–30 м: около 1.003.000–1.229.000 RSD, без земляных и асфальтовых работ.",
-   "sr": "Šest mesta na otvorenom parkingu, na stubićima, sa razvodnom tablom udaljenom 10–30 m: oko 1.003.000–1.229.000 RSD, bez iskopa i asfalta."
+  "1ncp4c1": {
+   "ru": "Шесть мест на открытой парковке, на стойках, распределительный щит в 10–30 м: около 1.048.000–1.302.000 RSD, без земляных и асфальтовых работ.",
+   "sr": "Šest mesta na otvorenom parkingu, na stubićima, sa razvodnom tablom udaljenom 10–30 m: oko 1.048.000–1.302.000 RSD, bez iskopa i asfalta."
   },
   "jlbgsz": {
    "ru": "Переезжаешь или местом будет пользоваться другой человек? Перенесём комплект или переведём расчёт на нового пользователя: 72 ч — Белград, Нови-Сад, Воеводина; в других местах срок согласуем в переписке.",
    "sr": "Selidba ili novi korisnik? Prenos kompleta i prevezivanje obračuna: 72 h u Beogradu, Novom Sadu i Vojvodini, a u ostalim mestima termin dogovaramo u poruci."
   },
-  "jujtwe": {
-   "ru": "Общая инфраструктура со стойками: 379.000–605.000 RSD",
-   "sr": "Zajednička infrastruktura sa stubovima: 379.000–605.000 RSD"
+  "1hpphyp": {
+   "ru": "Общая инфраструктура со стойками: 424.000–678.000 RSD",
+   "sr": "Zajednička infrastruktura sa stubovima: 424.000–678.000 RSD"
   },
   "jyxfil": {
    "ru": "Домашняя зарядка для покупателей твоих электромобилей: оценка, монтаж и шаблоны документов по всей Сербии. Открытые итоговые цены.",
@@ -1177,13 +1177,13 @@
    "ru": "Orion eMobility · На автомагистрали E-70, участок Адашевци — Кузмин, Адашевци",
    "sr": "Orion eMobility · Na Autoputu E-70 na relaciji Adaševci-Kuzmin, Adaševci"
   },
-  "kyuvmy": {
-   "ru": "Усиленная розетка: 96.000–111.000 RSD на участника",
-   "sr": "Pojačana utičnica: 96.000–111.000 RSD po učesniku"
+  "12y8eu6": {
+   "ru": "Усиленная розетка: 96.000–120.000 RSD на участника",
+   "sr": "Pojačana utičnica: 96.000–120.000 RSD po učesniku"
   },
-  "kz30ix": {
-   "ru": "Итого около 2.387.000–3.040.000 RSD",
-   "sr": "Ukupno oko 2.387.000–3.040.000 RSD"
+  "1qbhvs7": {
+   "ru": "Итого около 2.549.000–3.280.000 RSD",
+   "sr": "Ukupno oko 2.549.000–3.280.000 RSD"
   },
   "l3oxce": {
    "ru": "Итого 39.000 RSD",
@@ -1197,9 +1197,9 @@
    "ru": "место с wallbox 11 кВт, итоговая цена",
    "sr": "mesto sa wallboxom 11 kW, konačna cena"
   },
-  "ltqb5m": {
-   "ru": "Итого около 926.000–1.233.000 RSD, без земляных работ",
-   "sr": "Ukupno oko 926.000–1.233.000 RSD, bez iskopa"
+  "12pcy32": {
+   "ru": "Итого около 990.000–1.335.000 RSD, без земляных работ",
+   "sr": "Ukupno oko 990.000–1.335.000 RSD, bez iskopa"
   },
   "lx4dir": {
    "ru": "Каждое место стоит как пакет. Общая часть считается на весь объект: отдельный щит с балансировкой нагрузки, трасса, коробки, исполнительная документация и проверка проводки. Цены итоговые, без НДС: предприниматель не плательщик НДС.",
@@ -1209,9 +1209,9 @@
    "ru": "Iocharger 22 кВт, настроенный на 11 кВт, с 4G, RFID-картами и экраном, с базовым монтажом рядом с электрощитом: 115.000 RSD с розеткой Type 2, 127.000 RSD с кабелем 5 м. MID-счётчик +10.000 RSD. Все цены с НДС.",
    "sr": "Iocharger 22 kW podešen na 11 kW, sa 4G vezom, RFID karticama i ekranom, sa osnovnom ugradnjom pored razvodne table: 115.000 RSD sa Type 2 utičnicom, 127.000 RSD sa kablom 5 m. MID brojilo +10.000 RSD. Sve sa PDV-om."
   },
-  "m6nwzq": {
-   "ru": "около 13.000–20.000 RSD",
-   "sr": "oko 13.000–20.000 RSD"
+  "3jv6a5": {
+   "ru": "около 15.000–23.000 RSD",
+   "sr": "oko 15.000–23.000 RSD"
   },
   "n4pkva": {
    "ru": "например, Каменица, община Ниш",
@@ -1257,9 +1257,9 @@
    "ru": "Сколько даёт обычная розетка, почему долгая зарядка нагревает старые контакты и когда нужна отдельная линия с усиленной розеткой или wallbox.",
    "sr": "Koliko puni obična utičnica, zašto dugo punjenje greje stare kontakte i kada ti treba namenska linija sa pojačanom utičnicom ili wallbox."
   },
-  "pertm": {
-   "ru": "Подготовка мест и общая инфраструктура: 668.000–982.000 RSD",
-   "sr": "Priprema mesta i zajednička infrastruktura: 668.000–982.000 RSD"
+  "1ps1g08": {
+   "ru": "Подготовка мест и общая инфраструктура: 748.000–1.100.000 RSD",
+   "sr": "Priprema mesta i zajednička infrastruktura: 748.000–1.100.000 RSD"
   },
   "pttt79": {
    "ru": "Зарядка с MID-счётчиком там, где служебная машина стоит ночью, — у сотрудника дома или на парковке компании, по всей Сербии. Оценка на месте стоит 2.990 RSD с НДС и засчитывается в стоимость установки; отвечаем в течение 48 часов.",
@@ -1277,13 +1277,13 @@
    "ru": "Зарядки для отелей, гаражей, новостроек, многоквартирных домов и компаний: MID-счётчик на каждом месте, управление мощностью и ежемесячный расчёт. Открытые цены с НДС.",
    "sr": "Punjači za hotele, garaže, novogradnju, stambene zgrade i firme: MID brojilo na svakom mestu, upravljanje snagom i mesečni obračun. Javne cene sa PDV-om."
   },
-  "qvshp4": {
-   "ru": "Итого около 218.000–238.000 RSD",
-   "sr": "Ukupno oko 218.000–238.000 RSD"
+  "1q85ns2": {
+   "ru": "Итого около 219.000–242.000 RSD",
+   "sr": "Ukupno oko 219.000–242.000 RSD"
   },
-  "r4in9k": {
-   "ru": "около 16.000–25.000 RSD",
-   "sr": "oko 16.000–25.000 RSD"
+  "13hbc2p": {
+   "ru": "около 18.000–28.000 RSD",
+   "sr": "oko 18.000–28.000 RSD"
   },
   "r50nl6": {
    "ru": "Цены итоговые, базовая установка включена, шаблоны документов бесплатны для всех. Если нужны дополнительные работы, итоговую сумму называем до начала монтажа.",
@@ -1309,9 +1309,9 @@
    "ru": "Сайт evolako.rs ведёт предприниматель ANDREI SMEKHOV PR NOVI SAD, Katolička porta 6/3, 21000 Novi Sad, Сербия, регистрационный номер 68853834, налоговый номер (PIB) 116047038, работающий под обозначением Evolako («Evolako»). Пользуясь сайтом, ты принимаешь эти условия.",
    "sr": "Sajt evolako.rs vodi preduzetnik ANDREI SMEKHOV PR NOVI SAD, Katolička porta 6/3, 21000 Novi Sad, matični broj 68853834, PIB 116047038, koji posluje pod oznakom Evolako („Evolako“). Korišćenjem sajta prihvataš ove uslove."
   },
-  "s3ekq2": {
-   "ru": "Итого около 1.003.000–1.229.000 RSD, без земляных работ",
-   "sr": "Ukupno oko 1.003.000–1.229.000 RSD, bez iskopa"
+  "et3q3z": {
+   "ru": "Итого около 1.048.000–1.302.000 RSD, без земляных работ",
+   "sr": "Ukupno oko 1.048.000–1.302.000 RSD, bez iskopa"
   },
   "s3lml3": {
    "ru": "Напишите нам — вы получите техническое описание монтажа. Шаблоны для собрания — проект решения, пункт повестки и ответы на вопросы жильцов — бесплатны для всех. Дому это решение ничего не стоит.",
@@ -1321,9 +1321,9 @@
    "ru": "По всей Сербии. Говорим по-сербски, по-русски и по-английски.",
    "sr": "U celoj Srbiji. Govorimo srpski, ruski i engleski."
   },
-  "s7kb0d": {
-   "ru": "Итого около 1.026.000–1.188.000 RSD",
-   "sr": "Ukupno oko 1.026.000–1.188.000 RSD"
+  "1ueoxb2": {
+   "ru": "Итого около 1.050.000–1.230.000 RSD",
+   "sr": "Ukupno oko 1.050.000–1.230.000 RSD"
   },
   "scbh5v": {
    "ru": "Машина: оборудование работает с любым электромобилем и подключаемым гибридом (стандарт Type 2) — меняешь машину, комплект остаётся. Переезд: если есть подписка, перенесём комплект на новый адрес или передадим тому, кто будет пользоваться твоим местом после тебя. Передача и перенос расчёта: 72 ч — Белград, Нови-Сад, Воеводина; в других местах срок согласуем в переписке.",
@@ -1341,25 +1341,25 @@
    "ru": "Смарт-wallbox Iocharger 11 кВт (OCPP, Type 2, кабель 5 м) с базовым монтажом рядом с электрощитом (до 2 м кабеля, УЗО и автомат): 94.000 RSD; 104.000 RSD с MID-счётчиком для расчёта. Шаблоны документов бесплатны для всех. Цены итоговые.",
    "sr": "Iocharger 11 kW smart wallbox (OCPP, Type 2, kabl 5 m) sa osnovnom ugradnjom pored razvodne table (do 2 m kabla, FID zaštita i automat): 94.000 RSD; 104.000 RSD uz MID brojilo za obračun. Šabloni papira su besplatni za sve. Cene su konačne."
   },
-  "sxiift": {
-   "ru": "Около 92.000–124.000 RSD за место",
-   "sr": "Po mestu oko 92.000–124.000 RSD"
+  "1gwqq7l": {
+   "ru": "Около 99.000–134.000 RSD за место",
+   "sr": "Po mestu oko 99.000–134.000 RSD"
   },
   "t5o3nq": {
    "ru": "Зарядки на 11 кВт для отелей и апартаментов: гость заряжает машину за ночь, а MID-счётчик на каждом месте учитывает расход. Итоговые цены и оценка на объекте.",
    "sr": "Punjači 11 kW za hotele i apartmane: gost puni auto preko noći, a MID brojilo na svakom mestu meri potrošnju. Konačne cene i procena na objektu."
   },
-  "t8kdn6": {
-   "ru": "около 138.000–174.000 RSD",
-   "sr": "oko 138.000–174.000 RSD"
+  "1wisiol": {
+   "ru": "около 143.000–182.000 RSD",
+   "sr": "oko 143.000–182.000 RSD"
   },
   "trepuo": {
    "ru": "Все цены итоговые, с базовым монтажом рядом с электрощитом: START (усиленная розетка + MID-счётчик) — 39.000 RSD; WALLBOX 11 кВт — от 94.000 RSD (с MID-счётчиком 104.000); Wallbox Plus с 4G-связью — от 115.000 RSD; Wallbox Premium — 155.000 RSD; установка твоей зарядки — от 24.000 RSD; пакет ZGRADA на 2–6 мест — от 96.000 RSD за место. В любую цену входят УЗО, автомат и шаблоны документов. MID-счётчик входит в START и ZGRADA, к WALLBOX — по желанию (+10.000); если нужна только установка, ставим твою зарядку. Что входит в каждый пакет — на странице «Пакеты и цены». Кабель до твоего места, кабель-каналы, проход через стену или новый щит считаем отдельно: сумму называем на выезде, до начала работ.",
    "sr": "Otvoreno, konačne cene sa osnovnom ugradnjom pored razvodne table: START (pojačana utičnica + MID brojilo) — 39.000 RSD; WALLBOX 11 kW — od 94.000 RSD (sa MID brojilom 104.000); Wallbox Plus sa 4G vezom — od 115.000 RSD; Wallbox Premium — 155.000 RSD; samo ugradnja tvog punjača — od 24.000 RSD; paket ZGRADA za 2–6 mesta — od 96.000 RSD po mestu. U svaku cenu su uključeni FID zaštita, automat i šabloni papira. MID brojilo je u START i ZGRADA, uz WALLBOX po izboru (+10.000); kod samo ugradnje punjač je tvoj. Detaljni sastavi — na stranici Paketi i cene. Kabl do tvog mesta, kanalice, prolaz kroz zid ili nova tabla — posebno, po proceni, pre početka radova."
   },
-  "u4ifs2": {
-   "ru": "Около 154.000–199.000 RSD за место",
-   "sr": "Po mestu oko 154.000–199.000 RSD"
+  "12cr31s": {
+   "ru": "Около 160.000–211.000 RSD за место",
+   "sr": "Po mestu oko 160.000–211.000 RSD"
   },
   "umu582": {
    "ru": "Зарядки в гараже многоквартирного дома без затрат для дома: шаблоны для собрания жильцов, MID-счётчик на каждом месте, электричество без наценки. От 96.000 RSD за место.",
@@ -1397,17 +1397,17 @@
    "ru": "ZGRADA — общая инфраструктура для 2–6 мест",
    "sr": "ZGRADA — zajednička infrastruktura za 2–6 mesta"
   },
-  "vuphx4": {
-   "ru": "Пример из калькулятора: гараж с 10 зарядками по 11 кВт и распределительным щитом в 30–60 м стоит около 1.388.000–1.734.000 RSD. Если подготовить ещё 20 мест на будущее, цена — около 1.713.000–2.034.000 RSD.",
-   "sr": "Primer iz kalkulatora: garaža sa 10 punjača od 11 kW i razvodnom tablom udaljenom 30–60 m košta oko 1.388.000–1.734.000 RSD. Uz još 20 mesta pripremljenih za kasnije, cena je oko 1.713.000–2.034.000 RSD."
+  "1txb1ni": {
+   "ru": "Пример из калькулятора: гараж с 10 зарядками по 11 кВт и распределительным щитом в 30–60 м стоит около 1.430.000–1.818.000 RSD. Если подготовить ещё 20 мест на будущее, цена — около 1.794.000–2.153.000 RSD.",
+   "sr": "Primer iz kalkulatora: garaža sa 10 punjača od 11 kW i razvodnom tablom udaljenom 30–60 m košta oko 1.430.000–1.818.000 RSD. Uz još 20 mesta pripremljenih za kasnije, cena je oko 1.794.000–2.153.000 RSD."
   },
-  "vxmjvi": {
-   "ru": "Усиленная розетка: 96.000–111.000 RSD",
-   "sr": "Pojačana utičnica: 96.000–111.000 RSD"
+  "yaa576": {
+   "ru": "Усиленная розетка: 96.000–120.000 RSD",
+   "sr": "Pojačana utičnica: 96.000–120.000 RSD"
   },
-  "wg268w": {
-   "ru": "Паркинг в новостройке, готовый к зарядкам: трасса и коробка у каждого места и управление мощностью. Для 40 мест — около 16.000–25.000 RSD за подготовленное место.",
-   "sr": "Garaža u novogradnji spremna za punjače: trasa i kutija kod svakog mesta i upravljanje snagom. Za 40 mesta oko 16.000–25.000 RSD po pripremljenom mestu."
+  "1ppny1": {
+   "ru": "Паркинг в новостройке, готовый к зарядкам: трасса и коробка у каждого места и управление мощностью. Для 40 мест — около 18.000–28.000 RSD за подготовленное место.",
+   "sr": "Garaža u novogradnji spremna za punjače: trasa i kutija kod svakog mesta i upravljanje snagom. Za 40 mesta oko 18.000–28.000 RSD po pripremljenom mestu."
   },
   "wik5m3": {
    "ru": "Ниш",
@@ -1485,9 +1485,9 @@
    "ru": "Юрист по сотрудничеству и договорам — Evolako",
    "sr": "Pravnik za saradnju i ugovore — Evolako"
   },
-  "zku6kk": {
-   "ru": "Если вместе с 10 зарядками подготовить в гараже ещё 20 мест на будущее, с трассой и коробкой, цена — около 1.713.000–2.034.000 RSD. На любое из этих 20 мест зарядку потом ставят базовым монтажом по цене комплекта.",
-   "sr": "Ako se uz 10 punjača u garaži pripremi još 20 mesta za kasnije, sa trasom i kutijom, cena je oko 1.713.000–2.034.000 RSD. Na svako od tih 20 mesta punjač se kasnije postavlja osnovnom ugradnjom, po ceni paketa."
+  "1d42gjx": {
+   "ru": "Если вместе с 10 зарядками подготовить в гараже ещё 20 мест на будущее, с трассой и коробкой, цена — около 1.794.000–2.153.000 RSD. На любое из этих 20 мест зарядку потом ставят базовым монтажом по цене комплекта.",
+   "sr": "Ako se uz 10 punjača u garaži pripremi još 20 mesta za kasnije, sa trasom i kutijom, cena je oko 1.794.000–2.153.000 RSD. Na svako od tih 20 mesta punjač se kasnije postavlja osnovnom ugradnjom, po ceni paketa."
   },
   "zs762h": {
    "ru": "Кто платит за электричество, что решает собрание жильцов, сколько это стоит и что покрывает подписка — прямые ответы на 28 вопросов о домашней зарядке электромобиля в многоквартирном доме.",
@@ -1496,6 +1496,10 @@
   "zt50s4": {
    "ru": "Используйте и сокращайте их свободно. Цифры — по состоянию на 29.10.2026.",
    "sr": "Slobodno ih koristite i skraćujte. Brojke važe na dan 29.10.2026."
+  },
+  "d6uu78": {
+   "ru": "Ещё 2 месяца подписки бесплатно сверх стандартных 2 — итого 4 месяца за 0 RSD: ежемесячный отчёт, мониторинг комплекта, сервис вне очереди, зимняя проверка и продлённая гарантия.",
+   "sr": "Još 2 meseca pretplate besplatno, povrh standardna 2 — ukupno 4 meseca za 0 RSD: mesečni obračun, nadzor kompleta, prioritetni servis, zimska provera i produžena garancija."
   }
  }
 }
