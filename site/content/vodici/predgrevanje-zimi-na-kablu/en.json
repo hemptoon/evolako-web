@@ -1,0 +1,243 @@
+{
+ "page": "predgrevanje-zimi-na-kablu",
+ "slug": "/predgrevanje-zimi-na-kablu",
+ "tone": "ti",
+ "kind": "article",
+ "seo": {
+  "title": "Preheating an electric car in winter while plugged in | Evolako",
+  "description": "How much power preheating an electric car in winter takes while it is plugged in, what it costs at night and how to set it before you leave.",
+  "og_title": "Preheating an electric car in winter while plugged in: how much it uses and why it pays off",
+  "og_description": "One cabin warm-up takes 1.5–2.3 kWh. Plugged in, the grid pays for it, and the battery and range stay for driving."
+ },
+ "hero": {
+  "kicker": "Vodič",
+  "h1": "Preheating an electric car in winter while plugged in: how much it uses and why it pays off",
+  "lead": "When you preheat your car while it is plugged in at home, power from the grid heats the cabin, not the battery. ADAC measured 1.5–2.3 kWh to warm a cabin from −10 to 20 °C, which costs about 9–14 RSD at the lower tariff.",
+  "updated": "@auto"
+ },
+ "card": {
+  "title": "Preheating an electric car in winter",
+  "text": "How much power cabin heating takes while plugged in, what it costs at night and how to set it."
+ },
+ "sections": [
+  {
+   "type": "article",
+   "id": "tekst",
+   "blocks": [
+    {
+     "p": "In winter, an electric car spends part of its battery just to warm the cabin and defrost the windows. If it does that while still plugged in, you leave with a warm cabin and a full battery, and you pay for the heat at your home power rate."
+    },
+    {
+     "p": [
+      "For that, you need a spot where the car stays plugged in all night. If you don't have one yet, first see what ",
+      {
+       "a": "your garage",
+       "href": "/proveri-svoju-garazu"
+      },
+      " allows."
+     ]
+    },
+    {
+     "h2": "Plugged in, the grid heats; unplugged, the battery does"
+    },
+    {
+     "p": "When the car is connected for charging, it takes the power for preheating from the grid instead of the battery. Both ADAC and Tesla describe it this way. ADAC adds that preheating at a wallbox uses no battery power, at least for the first warm-up."
+    },
+    {
+     "p": "Unplugged, it is the other way around. Volkswagen's manual says that preheating the cabin without a connected charger uses high-voltage battery energy and can reduce range."
+    },
+    {
+     "p": "The heating energy is the same, but the grid pays for it, so you keep more range for driving. Warmth also helps the battery: according to ADAC, its ideal operating temperature is between 20 and 40 °C."
+    },
+    {
+     "h2": "How much energy one morning takes"
+    },
+    {
+     "p": "ADAC tested seven electric cars in a cold chamber. The cars stood at −10 °C for about 16 hours, and then the cabin was heated to 20 °C."
+    },
+    {
+     "table": {
+      "head": [
+       "Car",
+       "Energy to warm the cabin"
+      ],
+      "rows": [
+       [
+        "Hyundai Kona and Fiat 500e",
+        "1.5 kWh each"
+       ],
+       [
+        "Tesla Model Y and Renault Zoe",
+        "1.6 and 1.8 kWh"
+       ],
+       [
+        "VW e-Up and BMW iX",
+        "2.0 kWh each"
+       ],
+       [
+        "VW ID.3",
+        "2.3 kWh"
+       ]
+      ]
+     }
+    },
+    {
+     "note": "ADAC measurement from December 2022, at −10 °C. Your car and your garage may give a different result."
+    },
+    {
+     "p": "Warming up takes time. The BMW iX reached 20 °C in about 12 minutes, the VW ID.3 and the Kona in about 25 minutes, and for some models even 40 minutes was not enough."
+    },
+    {
+     "p": "Once the cabin is warm, the car keeps using power to hold the temperature. At −10 °C outside, all tested cars needed about 1.5 to 2 kW. So preheating should finish at your departure time, not an hour earlier."
+    },
+    {
+     "h2": "What it costs at the night tariff"
+    },
+    {
+     "p": "The lower tariff lasts eight hours, but it doesn't start at the same time everywhere. In Belgrade it runs from midnight to 8, in Vojvodina from 23 to 7, and in central Serbia from 22 to 6. You need a two-tariff meter for the lower tariff."
+    },
+    {
+     "p": "Under the EPS price list of October 1, 2025, energy at the lower tariff costs a quarter of the higher tariff in the same zone. With all fees and taxes, a night-rate kWh in the blue zone comes to about 6 RSD."
+    },
+    {
+     "p": "For 1.5–2.3 kWh, that is about 9–14 RSD per morning, or about 180–280 RSD for 20 working days a month. If preheating falls into the higher tariff, the same morning costs several times more."
+    },
+    {
+     "p": "That is why the hours matter. In Belgrade, if you leave at 7:30, all of the preheating runs at the lower tariff. In central Serbia, heating after 6 runs at the higher tariff, but you still leave with a warm cabin and a full battery. Prices can change, so check the current EPS price list before you do the math."
+    },
+    {
+     "h2": "When preheating pays off and when it doesn't"
+    },
+    {
+     "p": "It pays off most on short city trips after a cold night. Then the first warm-up is a large part of the energy used, and plugged in, the battery doesn't pay for it."
+    },
+    {
+     "p": "There is also the practical side. You get into a warm cabin with defrosted windows, so you don't scrape ice or wait for the glass to clear."
+    },
+    {
+     "p": "For a very short trip, you don't need preheating. Oliver Manicke of Škoda's battery systems development says that for a five-minute drive to the shop preheating isn't needed and it is more efficient without it."
+    },
+    {
+     "p": "While driving, seat and steering wheel heating saves energy. According to ADAC, it works more efficiently than heating the air."
+    },
+    {
+     "h2": "How to set up preheating at home"
+    },
+    {
+     "ul": [
+      "Create a schedule in the app or on the car's screen: you set the departure time, and the car starts heating on its own before it.",
+      "Match the schedule to the lower tariff in your area and to the time your model needs to warm the cabin.",
+      "Leave the car plugged in even after the battery is full. Tesla recommends this in cold weather to keep the battery warm.",
+      "Check the details for your model in the manual or with an authorized service."
+     ]
+    },
+    {
+     "p": [
+      "You set the charging timer in a similar way. How it works for different brands is in the guide ",
+      {
+       "a": "how to make your car charge only at night",
+       "href": "/punjenje-nocu-tajmer"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Socket or wallbox when it's freezing outside"
+    },
+    {
+     "p": "The power of your connection decides how much heating and charging the car can take from the grid at the same time. Holding 20 °C in the cabin at −10 °C outside takes about 1.5 to 2 kW, and a Schuko socket at 10 A gives about 2.3 kW."
+    },
+    {
+     "p": "Tesla says that in temperatures well below freezing, the car may need more power than a standard household outlet can provide. Then little power is left for charging the battery."
+    },
+    {
+     "p": "A heavy-duty socket on a dedicated circuit gives up to 3.7 kW, and an 11 kW wallbox gives much more, so the car can heat and charge at the same time. For milder winters and shorter trips, a heavy-duty socket is enough."
+    },
+    {
+     "p": [
+      "One such solution is Evolako START, a heavy-duty socket with a MID meter that also measures the power used for preheating. You can see all packages on the page ",
+      {
+       "a": "packages and prices",
+       "href": "/paketi-i-cene"
+      },
+      "."
+     ]
+    },
+    {
+     "p": "Only a licensed electrician installs a new circuit and works in the distribution board. An extension cord or a power strip is no substitute for a circuit to your spot."
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "id": "izvori",
+   "h2": "Izvori",
+   "items": [
+    {
+     "title": "ADAC — how electric cars heat, measurement of seven models at −10 °C",
+     "url": "https://www.adac.de/rund-ums-fahrzeug/elektromobilitaet/elektroauto/heizung-elektroauto/"
+    },
+    {
+     "title": "ADAC — press release on heating electric cars in winter, 16.12.2022",
+     "url": "https://presse.adac.de/meldungen/adac-ev/technik/elektroautos-heizen-im-winter.html"
+    },
+    {
+     "title": "ADAC — winter tips for electric car drivers, 27.11.2023",
+     "url": "https://presse.adac.de/meldungen/adac-ev/technik/warm-durch-den-winter.html"
+    },
+    {
+     "title": "Tesla — winter driving tips",
+     "url": "https://www.tesla.com/en_au/support/winter-driving-tips"
+    },
+    {
+     "title": "Volkswagen — ID. Buzz quick start guide, climate control and preconditioning",
+     "url": "https://www.vw.com/en/owners-and-services/about-my-vehicle/quick-start-guides.html/__app/2025/id-buzz/Climate-Control.app"
+    },
+    {
+     "title": "N1 — How to know when power is cheap, 19.08.2026",
+     "url": "https://n1info.rs/biznis/kako-da-znam-kad-je-jeftina-struja/"
+    },
+    {
+     "title": "Danas — new electricity price list by tariff and zone from October 1, 2025",
+     "url": "https://www.danas.rs/vesti/ekonomija/poskupljenje-struje-cenovnik-racuni-tarife/"
+    },
+    {
+     "title": "Tportal — drivers' and experts' tips for electric cars in winter, 22.01.2025",
+     "url": "https://www.tportal.hr/autozona/clanak/elektricni-automobili-zimi-ovo-je-nekoliko-prakticnih-savjeta-vozaca-i-strucnjaka-foto-20250122"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "cta",
+   "h2": "Heat and charge your car at your own spot",
+   "text": "Evolako START is a heavy-duty socket with a MID meter, 2.3–3.7 kW and up to about 180 km in one night, for 39,000 RSD (final price). The 11 kW WALLBOX costs from 94,000 RSD, or 104,000 RSD with a MID meter. The site check is 2,990 RSD and counts toward the installation price.",
+   "button": {
+    "label": "See packages and prices",
+    "href": "/paketi-i-cene"
+   }
+  },
+  {
+   "type": "links",
+   "id": "srodni",
+   "h2": "Pročitaj i ovo",
+   "items": [
+    {
+     "title": "How to make your car charge only at night",
+     "text": "When the lower tariff starts where you live and how to set the timer in your car or on the charger.",
+     "href": "/punjenje-nocu-tajmer"
+    },
+    {
+     "title": "How much a car adds to your power bill",
+     "text": "How many kWh a car takes per month and what that costs at night and by day by zone.",
+     "href": "/koliko-elektricni-auto-podize-racun-za-struju"
+    },
+    {
+     "title": "Charging your car from a Schuko socket",
+     "text": "How fast a regular socket charges, when it is safe and when you need a dedicated circuit.",
+     "href": "/punjenje-preko-suko-uticnice"
+    }
+   ]
+  }
+ ]
+}

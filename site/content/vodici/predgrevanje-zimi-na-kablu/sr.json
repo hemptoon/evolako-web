@@ -1,0 +1,243 @@
+{
+ "page": "predgrevanje-zimi-na-kablu",
+ "slug": "/predgrevanje-zimi-na-kablu",
+ "tone": "ti",
+ "kind": "article",
+ "seo": {
+  "title": "Predgrevanje električnog auta zimi na kablu | Evolako",
+  "description": "Koliko struje troši predgrevanje električnog auta zimi dok je na kablu, koliko to košta noću i kako da podesiš grejanje pred polazak.",
+  "og_title": "Predgrevanje električnog auta zimi dok je na kablu: koliko troši i zašto se isplati",
+  "og_description": "Jedno zagrevanje kabine troši 1,5–2,3 kWh. Na kablu ga plaća mreža, a baterija i domet ostaju za vožnju."
+ },
+ "hero": {
+  "kicker": "Vodič",
+  "h1": "Predgrevanje električnog auta zimi dok je na kablu: koliko troši i zašto se isplati",
+  "lead": "Kada auto predgrevaš dok je priključen kod kuće, kabinu greje struja iz mreže, a ne baterija. Po merenju ADAC-a jedno zagrevanje kabine sa −10 na 20 °C troši 1,5–2,3 kWh, što u nižoj tarifi košta oko 9–14 RSD.",
+  "updated": "@auto"
+ },
+ "card": {
+  "title": "Predgrevanje električnog auta zimi",
+  "text": "Koliko struje troši grejanje kabine na kablu, koliko to košta noću i kako da ga podesiš."
+ },
+ "sections": [
+  {
+   "type": "article",
+   "id": "tekst",
+   "blocks": [
+    {
+     "p": "Zimi električni auto troši deo baterije samo da zagreje kabinu i odmrzne stakla. Ako to uradi dok je još na kablu, polaziš sa toplom kabinom i punom baterijom, a grejanje plaćaš po ceni struje kod kuće."
+    },
+    {
+     "p": [
+      "Za to ti treba mesto gde auto celu noć stoji priključen. Ako ga još nemaš, prvo vidi šta dozvoljava ",
+      {
+       "a": "tvoja garaža",
+       "href": "/proveri-svoju-garazu"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Na kablu greje mreža, bez kabla baterija"
+    },
+    {
+     "p": "Kada je auto priključen na punjenje, struju za predgrevanje uzima iz mreže umesto iz baterije. Tako to opisuju i ADAC i Tesla. ADAC dodaje da predgrevanje na wallbox-u bar za prvo zagrevanje ne troši struju iz akumulatora."
+    },
+    {
+     "p": "Bez kabla je obrnuto. Volkswagen u uputstvu navodi da predgrevanje kabine bez priključenog punjača troši energiju visokonaponske baterije i može da smanji domet."
+    },
+    {
+     "p": "Energija za grejanje je ista, ali je plaća mreža, pa ti za vožnju ostaje veći domet. Toplota prija i bateriji: po ADAC-u, njena idealna radna temperatura je između 20 i 40 °C."
+    },
+    {
+     "h2": "Koliko energije troši jedno jutro"
+    },
+    {
+     "p": "ADAC je u komori za hladnoću merio sedam električnih auta. Auta su oko 16 sati stajala na −10 °C, a zatim je kabina zagrejana na 20 °C."
+    },
+    {
+     "table": {
+      "head": [
+       "Model",
+       "Energija za zagrevanje kabine"
+      ],
+      "rows": [
+       [
+        "Hyundai Kona i Fiat 500e",
+        "po 1,5 kWh"
+       ],
+       [
+        "Tesla Model Y i Renault Zoe",
+        "1,6 i 1,8 kWh"
+       ],
+       [
+        "VW e-Up i BMW iX",
+        "po 2,0 kWh"
+       ],
+       [
+        "VW ID.3",
+        "2,3 kWh"
+       ]
+      ]
+     }
+    },
+    {
+     "note": "Merenje ADAC-a iz decembra 2022, na −10 °C. Tvoj auto i tvoja garaža mogu da daju drugačiji rezultat."
+    },
+    {
+     "p": "Zagrevanje traje. BMW iX je do 20 °C stigao za oko 12 minuta, VW ID.3 i Kona za oko 25 minuta, a nekim modelima ni 40 minuta nije bilo dovoljno."
+    },
+    {
+     "p": "Kada je kabina topla, auto i dalje troši struju da zadrži temperaturu. Na −10 °C napolju svim testiranim autima trebalo je oko 1,5 do 2 kW. Zato predgrevanje treba da se završi u vreme polaska, a ne sat ranije."
+    },
+    {
+     "h2": "Koliko košta po noćnoj tarifi"
+    },
+    {
+     "p": "Niža tarifa traje osam sati, ali ne počinje svuda u isto vreme. U Beogradu važi od 24 do 8, u Vojvodini od 23 do 7, a u centralnoj Srbiji od 22 do 6 časova. Za nižu tarifu treba ti dvotarifno brojilo."
+    },
+    {
+     "p": "Po cenovniku EPS-a od 1. oktobra 2025, energija u nižoj tarifi košta četvrtinu cene u višoj tarifi iste zone. Sa svim naknadama i porezima noćni kWh u plavoj zoni iznosi oko 6 RSD."
+    },
+    {
+     "p": "Za 1,5–2,3 kWh to je oko 9–14 RSD po jutru, odnosno oko 180–280 RSD za 20 radnih dana u mesecu. Ako predgrevanje padne u višu tarifu, isto jutro košta nekoliko puta više."
+    },
+    {
+     "p": "Zato je satnica važna. U Beogradu, ako kreneš u 7.30, celo predgrevanje ide po nižoj tarifi. U centralnoj Srbiji grejanje posle 6 časova ide po višoj tarifi, ali i tada polaziš sa toplom kabinom i punom baterijom. Cene se mogu promeniti, pa pre računice proveri važeći cenovnik EPS-a."
+    },
+    {
+     "h2": "Kada se predgrevanje isplati, a kada ne"
+    },
+    {
+     "p": "Najviše se isplati na kratkim gradskim vožnjama posle hladne noći. Tada prvo zagrevanje čini veliki deo potrošnje, a na kablu ga ne plaća baterija."
+    },
+    {
+     "p": "Tu je i praktična strana. Sedaš u toplu kabinu sa odmrznutim staklima, pa ne strugaš led i ne čekaš da se stakla odmagle."
+    },
+    {
+     "p": "Za vrlo kratku vožnju predgrevanje ti ne treba. Oliver Manicke iz razvoja baterijskih sistema u Škodi kaže da za vožnju od pet minuta do prodavnice predgrevanje nije potrebno i da je bez njega efikasnije."
+    },
+    {
+     "p": "Tokom vožnje štedi grejanje sedišta i volana. Po ADAC-u, ono radi efikasnije od grejanja vazduha."
+    },
+    {
+     "h2": "Kako da podesiš predgrevanje kod kuće"
+    },
+    {
+     "ul": [
+      "Napravi raspored u aplikaciji ili na ekranu auta: zadaješ vreme polaska, a auto sam počne da greje pre toga.",
+      "Uskladi raspored sa nižom tarifom u svom kraju i sa vremenom koje tvom modelu treba da zagreje kabinu.",
+      "Ostavi auto na kablu i kada se baterija napuni. Tesla to preporučuje po hladnom vremenu, da bi baterija ostala topla.",
+      "Detalje za svoj model proveri u uputstvu ili kod ovlašćenog servisa."
+     ]
+    },
+    {
+     "p": [
+      "Tajmer za punjenje podešavaš na sličan način. Kako se to radi kod pojedinih marki, piše u vodiču ",
+      {
+       "a": "kako da auto puni samo noću",
+       "href": "/punjenje-nocu-tajmer"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Utičnica ili wallbox kad je napolju mraz"
+    },
+    {
+     "p": "Snaga priključka određuje koliko grejanja i punjenja auto može da uzme iz mreže u isto vreme. Za stalnih 20 °C u kabini na −10 °C napolju treba oko 1,5 do 2 kW, a šuko utičnica na 10 A daje oko 2,3 kW."
+    },
+    {
+     "p": "Tesla navodi da na temperaturama dosta ispod nule auto može da traži više snage nego što daje obična kućna utičnica. Tada za punjenje baterije ostaje malo snage."
+    },
+    {
+     "p": "Pojačana utičnica na namenskoj liniji daje do 3,7 kW, a wallbox od 11 kW znatno više, pa auto greje i puni u isto vreme. Za blaže zime i kraće vožnje dovoljna je i pojačana utičnica."
+    },
+    {
+     "p": [
+      "Jedno takvo rešenje je Evolako START, pojačana utičnica sa MID brojilom koje meri i struju za predgrevanje. Sve pakete vidiš na stranici ",
+      {
+       "a": "paketi i cene",
+       "href": "/paketi-i-cene"
+      },
+      "."
+     ]
+    },
+    {
+     "p": "Novu liniju i radove u razvodnoj tabli izvodi samo ovlašćeni električar. Produžni kabl i razdelnik nisu zamena za liniju do tvog mesta."
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "id": "izvori",
+   "h2": "Izvori",
+   "items": [
+    {
+     "title": "ADAC — kako greju električni automobili, merenje sedam modela na −10 °C",
+     "url": "https://www.adac.de/rund-ums-fahrzeug/elektromobilitaet/elektroauto/heizung-elektroauto/"
+    },
+    {
+     "title": "ADAC — saopštenje o grejanju električnih auta zimi, 16.12.2022.",
+     "url": "https://presse.adac.de/meldungen/adac-ev/technik/elektroautos-heizen-im-winter.html"
+    },
+    {
+     "title": "ADAC — zimski saveti za vozače električnih auta, 27.11.2023.",
+     "url": "https://presse.adac.de/meldungen/adac-ev/technik/warm-durch-den-winter.html"
+    },
+    {
+     "title": "Tesla — saveti za vožnju zimi",
+     "url": "https://www.tesla.com/en_au/support/winter-driving-tips"
+    },
+    {
+     "title": "Volkswagen — uputstvo za ID. Buzz, klimatizacija i predgrevanje",
+     "url": "https://www.vw.com/en/owners-and-services/about-my-vehicle/quick-start-guides.html/__app/2025/id-buzz/Climate-Control.app"
+    },
+    {
+     "title": "N1 — Kako da znam kad je jeftina struja, 19.08.2026.",
+     "url": "https://n1info.rs/biznis/kako-da-znam-kad-je-jeftina-struja/"
+    },
+    {
+     "title": "Danas — novi cenovnik struje po tarifama i zonama od 1. oktobra 2025.",
+     "url": "https://www.danas.rs/vesti/ekonomija/poskupljenje-struje-cenovnik-racuni-tarife/"
+    },
+    {
+     "title": "Tportal — saveti vozača i stručnjaka za električne automobile zimi, 22.01.2025.",
+     "url": "https://www.tportal.hr/autozona/clanak/elektricni-automobili-zimi-ovo-je-nekoliko-prakticnih-savjeta-vozaca-i-strucnjaka-foto-20250122"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "cta",
+   "h2": "Greji i puni auto na svom mestu",
+   "text": "Evolako START je pojačana utičnica sa MID brojilom, 2,3–3,7 kW i do oko 180 km za jednu noć, za 39.000 RSD (konačna cena). WALLBOX od 11 kW košta od 94.000 RSD, a sa MID brojilom 104.000 RSD. Procena na licu mesta je 2.990 RSD i uračunava se u cenu ugradnje.",
+   "button": {
+    "label": "Pogledaj pakete i cene",
+    "href": "/paketi-i-cene"
+   }
+  },
+  {
+   "type": "links",
+   "id": "srodni",
+   "h2": "Pročitaj i ovo",
+   "items": [
+    {
+     "title": "Kako da auto puni samo noću",
+     "text": "Kada počinje niža tarifa u tvom kraju i kako da podesiš tajmer u autu ili na punjaču.",
+     "href": "/punjenje-nocu-tajmer"
+    },
+    {
+     "title": "Koliko auto podiže račun za struju",
+     "text": "Koliko kWh auto uzme mesečno i koliko to košta noću i danju po zonama.",
+     "href": "/koliko-elektricni-auto-podize-racun-za-struju"
+    },
+    {
+     "title": "Punjenje auta na šuko utičnicu",
+     "text": "Koliko puni obična utičnica, kada je bezbedna i kada ti treba namenska linija.",
+     "href": "/punjenje-preko-suko-uticnice"
+    }
+   ]
+  }
+ ]
+}
