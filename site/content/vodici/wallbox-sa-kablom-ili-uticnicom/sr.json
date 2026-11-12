@@ -1,0 +1,191 @@
+{
+ "page": "wallbox-sa-kablom-ili-uticnicom",
+ "slug": "/wallbox-sa-kablom-ili-uticnicom",
+ "tone": "ti",
+ "kind": "article",
+ "seo": {
+  "title": "Wallbox sa kablom ili sa utičnicom: šta izabrati | Evolako",
+  "description": "Wallbox punjač sa fiksnim kablom ili sa Type 2 utičnicom: razlike, kada je koji bolji za garažu, kako da izmeriš dužinu kabla i šta proveriti u zgradi.",
+  "og_title": "Wallbox sa kablom ili sa utičnicom: šta izabrati za garažu",
+  "og_description": "Obe verzije pune istom brzinom. Razlika je u udobnosti, dužini kabla, promeni auta i tome ko sve prolazi pored tvog mesta."
+ },
+ "hero": {
+  "kicker": "Vodič",
+  "h1": "Wallbox sa kablom ili sa utičnicom: šta izabrati za garažu",
+  "lead": "Ako puniš jedan auto na stalnom mestu, wallbox sa fiksnim kablom je praktičniji za svaki dan. Wallbox sa Type 2 utičnicom ima smisla ako puniš više vozila, uskoro menjaš auto ili ti treba kabl druge dužine.",
+  "updated": "@auto"
+ },
+ "card": {
+  "title": "Wallbox sa kablom ili sa utičnicom",
+  "text": "Po čemu se razlikuju, kada je koji bolji za garažu i kako da izmeriš potrebnu dužinu kabla."
+ },
+ "sections": [
+  {
+   "type": "article",
+   "id": "tekst",
+   "blocks": [
+    {
+     "p": "Kućni punjač za električni auto prodaje se u dve verzije: sa kablom koji je stalno pričvršćen za uređaj i sa utičnicom u koju uključuješ svoj kabl. Obe verzije pune istom brzinom, pa biraš po tome kako parkiraš i koliko dugo planiraš da voziš isti auto."
+    },
+    {
+     "p": [
+      "Pre izbora izmeri koliko ima od zida do priključka na autu i proveri šta instalacija na tvom mestu može da podnese. Za to kreni od stranice ",
+      {
+       "a": "proveri svoju garažu",
+       "href": "/proveri-svoju-garazu"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Koja je razlika između dve verzije"
+    },
+    {
+     "p": "Za naizmenično (AC) punjenje u Evropi standardni konektor je Type 2. Wallbox sa kablom ima Type 2 utikač na kraju kabla koji izlazi iz uređaja. Wallbox sa utičnicom ima Type 2 utičnicu, a kabl sa dva Type 2 kraja kupuješ i nosiš posebno."
+    },
+    {
+     "p": "Kod verzije sa kablom uzmeš utikač sa držača i staviš ga u auto. Kod verzije sa utičnicom jedan kraj kabla ide u wallbox, a drugi u auto. Način punjenja je u oba slučaja isti."
+    },
+    {
+     "p": "Obe verzije pripadaju istom standardu. U Evropskoj uniji AC punjači koji se postave ili obnove od 8. januara 2026. moraju da imaju bar Type 2 utičnicu ili Type 2 konektor. To pravilo važi u EU, a ne u Srbiji, ali pokazuje da ni sa jednom verzijom ne ostaješ van standarda."
+    },
+    {
+     "p": "Fiksni kabl ne puni brže od kabla koji uključuješ u utičnicu. Brzinu određuju snaga wallboxa, instalacije i punjača ugrađenog u auto. Po ADAC-u, kod kuće je u pravilu sasvim dovoljno 11 kW."
+    },
+    {
+     "h2": "Kada je bolji wallbox sa fiksnim kablom"
+    },
+    {
+     "p": "Fiksni kabl ti je stalno pri ruci i ne priključuješ ga na dva kraja. ADAC navodi da su takvi wallboxi dobar izbor za vlasnike koji auto uglavnom pune kod kuće. I proizvođači punjača pišu da se fiksni kabl najčešće bira za privatnu upotrebu."
+    },
+    {
+     "p": "Razlika se oseti zimi i u tesnoj garaži. Kabl ne vadiš iz prtljažnika, ne odmotavaš ga po mokrom podu i ne vraćaš ga prljavog u auto. Kad ne puniš, kabl stoji namotan na držaču pored wallboxa."
+    },
+    {
+     "p": "Mana je unapred zadata dužina. Kabl koji ti sada odgovara može biti prekratak za sledeći auto, ako mu je priključak na drugoj strani. Fiksni kabl menja ovlašćeni električar ili servis, a ne korisnik."
+    },
+    {
+     "h2": "Kada je bolji wallbox sa utičnicom"
+    },
+    {
+     "p": "Wallbox bez kabla izgleda urednije na zidu. Kablove različite dužine kupuješ kad ti zatrebaju, a kabl menjaš bez menjanja samog punjača. To je korisno ako u kući imaš dva auta ili znaš da ćeš auto uskoro promeniti."
+    },
+    {
+     "p": "Kod kuće ne moraš svaki dan da nosiš kabl. Jedan proizvođač punjača navodi da kabl može stalno da ostane u Type 2 utičnici, ako ne postoji opasnost od krađe. Tada je punjenje isti pokret kao kod fiksnog kabla."
+    },
+    {
+     "p": "Ako kabl nosiš u autu, imaš jedan korak više. Pri svakom punjenju ga vadiš, priključuješ na oba kraja i vraćaš u prtljažnik. Ovde je reč o Type 2 utičnici na wallboxu, a ne o kućnoj šuko utičnici."
+    },
+    {
+     "h2": "Koja dužina kabla ti treba"
+    },
+    {
+     "p": "Parkiraj auto kao i obično i izmeri put od mesta gde će stajati wallbox do priključka na autu. Uračunaj luk oko branika i točka i malo rezerve, da kabl ne bude zategnut. Kabl ne sme da ide preko prolaza ili tuđeg parking mesta."
+    },
+    {
+     "p": "Kabl treba da bude onoliko dug koliko je potrebno, a ne duži. Duži kabl je teži, sporije se namotava i više ga ostaje na podu. Kraći je lakši za rukovanje svaki dan."
+    },
+    {
+     "p": "Kabl mora da bude predviđen za snagu wallboxa i za broj faza koje koristi tvoj auto. Podatke o tome nađi u uputstvu za auto i u tehničkom listu punjača."
+    },
+    {
+     "h2": "Zajednička garaža u zgradi"
+    },
+    {
+     "p": "U zajedničkoj garaži pored tvog mesta prolaze komšije, deca i druga auta. Zato je pored udobnosti važno i gde kabl stoji kada ne puniš. Na podu se gazi i haba, a na držaču iznad poda ne smeta nikome."
+    },
+    {
+     "p": "Na javno dostupnim mestima uglavnom se postavljaju wallboxi sa Type 2 utičnicom, da bi bilo manje prilike za oštećenje. Ako je tvoja garaža otvorena, to govori u korist utičnice: kabl nosiš sa sobom ili proveri da li ga wallbox može zaključati."
+    },
+    {
+     "p": "U zatvorenom boksu ili garaži sa kontrolisanim ulazom fiksni kabl je jednostavnije rešenje. Pre montaže na zajedničkom delu zgrade pitaj pravnika da li ti treba odluka skupštine stambene zajednice i ko odgovara za opremu na zajedničkom prostoru."
+    },
+    {
+     "h2": "Kako da odlučiš"
+    },
+    {
+     "ul": [
+      "Jedan auto, stalno mesto, zatvorena garaža: wallbox sa fiksnim kablom.",
+      "Dva vozila ili priključci na različitim stranama auta: utičnica i kabl odgovarajuće dužine.",
+      "Promena auta u narednih nekoliko godina: utičnica, jer kabl menjaš bez menjanja punjača.",
+      "Otvorena zajednička garaža: utičnica, a kabl nosiš sa sobom ili ga zaključavaš.",
+      "Mesto daleko od zida: prvo izmeri put, pa tek onda biraj verziju i dužinu."
+     ]
+    },
+    {
+     "p": [
+      "Evolako ima obe verzije. WALLBOX od 11 kW dolazi sa fiksnim kablom od 5 m i košta od 94.000 RSD, a sa MID brojilom 104.000 RSD. PLUS košta 115.000 RSD sa Type 2 utičnicom i 127.000 RSD sa kablom od 5 m. Sve pakete vidiš na stranici ",
+      {
+       "a": "paketi i cene",
+       "href": "/paketi-i-cene"
+      },
+      "."
+     ]
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "id": "izvori",
+   "h2": "Izvori",
+   "items": [
+    {
+     "title": "TotalCar.rs — električni punjači za automobile: sve što treba da znaš, 25.06.2025.",
+     "url": "https://totalcar.rs/elektricni-punjaci-sve-sto-treba-da-znate.html"
+    },
+    {
+     "title": "ADAC — kako da nađeš odgovarajući wallbox, 05.12.2024.",
+     "url": "https://www.adac.de/fahrzeugwelt/magazin/e-mobilitaet/passende-wallbox-finden/"
+    },
+    {
+     "title": "ADAC — česta pitanja o punjenju kod kuće i snazi wallboxa",
+     "url": "https://www.adac.de/rund-ums-fahrzeug/elektromobilitaet/laden/elektroauto-laden-wallbox-faq/"
+    },
+    {
+     "title": "Službeni list Evropske unije — Delegirana uredba Komisije (EU) 2025/656, konektori za punjače od 8. januara 2026.",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202500656"
+    },
+    {
+     "title": "Energielösung — zašto postoje wallboxi sa fiksnim kablom i sa utičnicom",
+     "url": "https://www.energieloesung.de/service-hilfe/faq/Fragen-zum-Laden/Laden-mit-unseren-Wallboxen/warum-gibt-es-wallboxen-mit-festem-ladekabel-und-solche-mit-einer-buchse-fuer-ein-externes-ladekabel"
+    },
+    {
+     "title": "DrivingElectric — kućni punjač sa kablom ili bez kabla, 20.08.2024.",
+     "url": "https://www.drivingelectric.com/your-questions-answered/915/tethered-or-untethered-home-charger"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "cta",
+   "h2": "Izaberi verziju koja odgovara tvom mestu",
+   "text": "WALLBOX od 11 kW sa kablom od 5 m košta od 94.000 RSD (konačna cena), a sa MID brojilom 104.000 RSD. PLUS sa Type 2 utičnicom je 115.000 RSD. Procena na licu mesta je 2.990 RSD i uračunava se u cenu ugradnje.",
+   "button": {
+    "label": "Pogledaj pakete i cene",
+    "href": "/paketi-i-cene"
+   }
+  },
+  {
+   "type": "links",
+   "id": "srodni",
+   "h2": "Pročitaj i ovo",
+   "items": [
+    {
+     "title": "Punjač od 11 ili 22 kW kod kuće",
+     "text": "Koliko kW prima tvoj auto, koliko snage ima stan i zašto je za noć dovoljno 11 kW.",
+     "href": "/punjac-11-ili-22-kw"
+    },
+    {
+     "title": "Punjenje električnog auta kod kuće",
+     "text": "Šta ti treba, koliko traje punjenje preko noći i koliko auto podiže račun.",
+     "href": "/punjenje-elektricnog-automobila-kod-kuce"
+    },
+    {
+     "title": "Česta pitanja",
+     "text": "Kratki odgovori o ugradnji, MID brojilu, računu za struju i saglasnosti zgrade.",
+     "href": "/cesta-pitanja"
+    }
+   ]
+  }
+ ]
+}

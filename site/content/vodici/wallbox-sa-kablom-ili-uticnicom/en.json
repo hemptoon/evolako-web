@@ -1,0 +1,191 @@
+{
+ "page": "wallbox-sa-kablom-ili-uticnicom",
+ "slug": "/wallbox-sa-kablom-ili-uticnicom",
+ "tone": "ti",
+ "kind": "article",
+ "seo": {
+  "title": "Wallbox with a cable or a socket: which to choose | Evolako",
+  "description": "A wallbox charger with a fixed cable or a Type 2 socket: the differences, which one suits your garage, how to measure the cable length and what to check in a building.",
+  "og_title": "Wallbox with a cable or a socket: which one to choose for your garage",
+  "og_description": "Both versions charge at the same speed. The difference is comfort, cable length, changing cars and who walks past your spot."
+ },
+ "hero": {
+  "kicker": "Vodič",
+  "h1": "Wallbox with a cable or a socket: which one to choose for your garage",
+  "lead": "If you charge one car at a fixed spot, a wallbox with a fixed cable is more practical for every day. A wallbox with a Type 2 socket makes sense if you charge more than one car, will change cars soon or need a cable of a different length.",
+  "updated": "@auto"
+ },
+ "card": {
+  "title": "Wallbox with a cable or a socket",
+  "text": "How they differ, which one suits your garage better and how to measure the cable length you need."
+ },
+ "sections": [
+  {
+   "type": "article",
+   "id": "tekst",
+   "blocks": [
+    {
+     "p": "A home charger for an electric car comes in two versions: with a cable permanently attached to the unit, or with a socket you plug your own cable into. Both charge at the same speed, so you choose by how you park and how long you plan to drive the same car."
+    },
+    {
+     "p": [
+      "Before you choose, measure the distance from the wall to the charging port on your car and check what the wiring at your spot can handle. Start with the page ",
+      {
+       "a": "check your garage",
+       "href": "/proveri-svoju-garazu"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "What the difference is"
+    },
+    {
+     "p": "In Europe, Type 2 is the standard connector for alternating current (AC) charging. A wallbox with a cable has a Type 2 plug at the end of the cable that comes out of the unit. A wallbox with a socket has a Type 2 socket, and you buy and carry a cable with two Type 2 ends separately."
+    },
+    {
+     "p": "With the cabled version, you take the plug off the holder and put it into the car. With the socket version, one end of the cable goes into the wallbox and the other into the car. Charging itself works the same way in both cases."
+    },
+    {
+     "p": "Both versions follow the same standard. In the European Union, AC chargers installed or renovated from January 8, 2026, must have at least a Type 2 socket or a Type 2 connector. That rule applies in the EU, not in Serbia, but it shows that neither version leaves you outside the standard."
+    },
+    {
+     "p": "A fixed cable does not charge faster than a cable you plug into a socket. Speed depends on the power of the wallbox, the wiring and the charger built into the car. According to ADAC, 11 kW is normally more than enough at home."
+    },
+    {
+     "h2": "When a wallbox with a fixed cable is better"
+    },
+    {
+     "p": "A fixed cable is right there, and you don't plug it in at two ends. ADAC says such wallboxes are a good choice for owners who mostly charge at home. Charger makers also write that a fixed cable is chosen mostly for private use."
+    },
+    {
+     "p": "You notice the difference in winter and in a tight garage. You don't take the cable out of the trunk, unroll it on a wet floor or put it back dirty into the car. When you are not charging, the cable hangs coiled on the holder next to the wallbox."
+    },
+    {
+     "p": "The downside is the fixed length. A cable that fits now may be too short for your next car if its port is on the other side. A fixed cable is replaced by a licensed electrician or a service center, not by the user."
+    },
+    {
+     "h2": "When a wallbox with a socket is better"
+    },
+    {
+     "p": "A wallbox without a cable looks tidier on the wall. You buy cables of different lengths when you need them, and you replace the cable without replacing the charger. That helps if your household has two cars or you know you will change your car soon."
+    },
+    {
+     "p": "At home you don't have to carry the cable every day. One charger maker says the cable can stay in the Type 2 socket permanently if there is no risk of theft. Then charging is the same move as with a fixed cable."
+    },
+    {
+     "p": "If you keep the cable in the car, you have one more step. Each time you take it out, plug in both ends and put it back in the trunk. This is about a Type 2 socket on a wallbox, not a household Schuko outlet."
+    },
+    {
+     "h2": "What cable length you need"
+    },
+    {
+     "p": "Park the car as usual and measure the path from where the wallbox will be to the charging port on the car. Include the curve around the bumper and wheel and a little slack, so the cable is not stretched. The cable must not cross a walkway or someone else's parking spot."
+    },
+    {
+     "p": "The cable should be as long as needed, and no longer. A longer cable is heavier, slower to coil and leaves more of it on the floor. A shorter one is easier to handle every day."
+    },
+    {
+     "p": "The cable must be rated for the power of the wallbox and for the number of phases your car uses. Find that in your car's manual and in the charger's data sheet."
+    },
+    {
+     "h2": "A shared garage in a building"
+    },
+    {
+     "p": "In a shared garage, neighbors, children and other cars pass by your spot. So besides comfort, it matters where the cable is when you are not charging. On the floor it gets stepped on and worn, while on a holder above the floor it bothers no one."
+    },
+    {
+     "p": "Publicly accessible spots usually get wallboxes with a Type 2 socket, to give less chance for damage. If your garage is open, that speaks for the socket: you carry the cable with you or check whether the wallbox can lock it."
+    },
+    {
+     "p": "In a closed box or a garage with controlled entry, a fixed cable is the simpler choice. Before mounting it on a shared part of the building, ask a lawyer whether you need a decision of the residents' assembly and who is responsible for equipment in a shared area."
+    },
+    {
+     "h2": "How to decide"
+    },
+    {
+     "ul": [
+      "One car, a fixed spot, a closed garage: a wallbox with a fixed cable.",
+      "Two cars, or ports on different sides of the car: a socket and a cable of the right length.",
+      "A new car in the next few years: a socket, because you replace the cable without replacing the charger.",
+      "An open shared garage: a socket, and you carry the cable with you or lock it.",
+      "A spot far from the wall: measure the path first, then choose the version and length."
+     ]
+    },
+    {
+     "p": [
+      "Evolako offers both versions. The 11 kW WALLBOX comes with a fixed 5 m cable and costs from 94,000 RSD, or 104,000 RSD with a MID meter. PLUS costs 115,000 RSD with a Type 2 socket and 127,000 RSD with a 5 m cable. See all packages on the page ",
+      {
+       "a": "packages and prices",
+       "href": "/paketi-i-cene"
+      },
+      "."
+     ]
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "id": "izvori",
+   "h2": "Izvori",
+   "items": [
+    {
+     "title": "TotalCar.rs — electric car chargers: everything you need to know, June 25, 2025",
+     "url": "https://totalcar.rs/elektricni-punjaci-sve-sto-treba-da-znate.html"
+    },
+    {
+     "title": "ADAC — how to find the right wallbox, December 5, 2024",
+     "url": "https://www.adac.de/fahrzeugwelt/magazin/e-mobilitaet/passende-wallbox-finden/"
+    },
+    {
+     "title": "ADAC — FAQ on charging at home and wallbox power",
+     "url": "https://www.adac.de/rund-ums-fahrzeug/elektromobilitaet/laden/elektroauto-laden-wallbox-faq/"
+    },
+    {
+     "title": "Official Journal of the European Union — Commission Delegated Regulation (EU) 2025/656, connectors for chargers from January 8, 2026",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202500656"
+    },
+    {
+     "title": "Energielösung — why there are wallboxes with a fixed cable and with a socket",
+     "url": "https://www.energieloesung.de/service-hilfe/faq/Fragen-zum-Laden/Laden-mit-unseren-Wallboxen/warum-gibt-es-wallboxen-mit-festem-ladekabel-und-solche-mit-einer-buchse-fuer-ein-externes-ladekabel"
+    },
+    {
+     "title": "DrivingElectric — tethered or untethered home charger, August 20, 2024",
+     "url": "https://www.drivingelectric.com/your-questions-answered/915/tethered-or-untethered-home-charger"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "cta",
+   "h2": "Choose the version that fits your spot",
+   "text": "The 11 kW WALLBOX with a 5 m cable costs from 94,000 RSD (final price), or 104,000 RSD with a MID meter. PLUS with a Type 2 socket is 115,000 RSD. The site check is 2,990 RSD and counts toward the installation price.",
+   "button": {
+    "label": "See packages and prices",
+    "href": "/paketi-i-cene"
+   }
+  },
+  {
+   "type": "links",
+   "id": "srodni",
+   "h2": "Pročitaj i ovo",
+   "items": [
+    {
+     "title": "An 11 or 22 kW charger at home",
+     "text": "How many kW your car accepts, how much power your apartment has and why 11 kW is enough overnight.",
+     "href": "/punjac-11-ili-22-kw"
+    },
+    {
+     "title": "Charging an electric car at home",
+     "text": "What you need, how long overnight charging takes and how much a car adds to your bill.",
+     "href": "/punjenje-elektricnog-automobila-kod-kuce"
+    },
+    {
+     "title": "FAQ",
+     "text": "Short answers about installation, the MID meter, the power bill and building consent.",
+     "href": "/cesta-pitanja"
+    }
+   ]
+  }
+ ]
+}
