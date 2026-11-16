@@ -1,0 +1,977 @@
+{
+ "about": "Charger brand pages of www.evolako.rs (/ugradnja-<slug>, hub /samo-ugradnja-punjaca) for the installation-only package: what the manufacturer states about power, protection, conductors and warranty in the documents under \"sources\" (read 16.11.2026), what to check before buying, and the product in shop.evolako.rs where there is one. Texts shared by the pages: site/marke.py.",
+ "date": "2026-11-17",
+ "checked": "2026-11-16",
+ "shop": "https://shop.evolako.rs",
+ "brands": [
+  {
+   "slug": "tesla-wall-connector",
+   "name": "Tesla Wall Connector",
+   "cover": 13,
+   "h1": {
+    "sr": "Ugradnja Tesla Wall Connectora",
+    "en": "Tesla Wall Connector installation",
+    "ru": "Монтаж Tesla Wall Connector"
+   },
+   "cls": {
+    "sr": "7,4–22 kW, jedna faza ili tri",
+    "en": "7.4–22 kW, one phase or three",
+    "ru": "7,4–22 кВт, одна фаза или три"
+   },
+   "lead": {
+    "sr": "Imaš Teslin Wall Connector? Ugrađujemo ga: od 24.000 RSD, konačna cena, pored razvodne table. Wall Connector treće generacije radi na jednoj fazi ili na tri, a struju od 6 do 32 A podešava instalater, pa ga uklapamo u snagu tvog priključka.",
+    "en": "Have a Tesla Wall Connector? We install it: from 24.000 RSD, final price, next to the distribution board. The third-generation Wall Connector runs on one phase or on three, and the installer sets the current from 6 to 32 A, so we fit it to the capacity of your connection.",
+    "ru": "У тебя есть Tesla Wall Connector? Установим: от 24.000 RSD, цена итоговая, рядом с электрощитом. Wall Connector третьего поколения работает от одной фазы или от трёх, а ток от 6 до 32 А задаёт монтажник — подгоняем под мощность твоего подключения."
+   },
+   "table": {
+    "head": {
+     "sr": [
+      "Priključak",
+      "Struja",
+      "Snaga"
+     ],
+     "en": [
+      "Connection",
+      "Current",
+      "Power"
+     ],
+     "ru": [
+      "Подключение",
+      "Ток",
+      "Мощность"
+     ]
+    },
+    "rows": [
+     {
+      "sr": [
+       "jedna faza, 230 V",
+       "32 A",
+       "7,4 kW"
+      ],
+      "en": [
+       "one phase, 230 V",
+       "32 A",
+       "7.4 kW"
+      ],
+      "ru": [
+       "одна фаза, 230 В",
+       "32 А",
+       "7,4 кВт"
+      ]
+     },
+     {
+      "sr": [
+       "tri faze, 400 V",
+       "16 A",
+       "11 kW"
+      ],
+      "en": [
+       "three phases, 400 V",
+       "16 A",
+       "11 kW"
+      ],
+      "ru": [
+       "три фазы, 400 В",
+       "16 А",
+       "11 кВт"
+      ]
+     },
+     {
+      "sr": [
+       "tri faze, 400 V",
+       "32 A",
+       "22 kW"
+      ],
+      "en": [
+       "three phases, 400 V",
+       "32 A",
+       "22 kW"
+      ],
+      "ru": [
+       "три фазы, 400 В",
+       "32 А",
+       "22 кВт"
+      ]
+     }
+    ]
+   },
+   "specs": [
+    {
+     "sr": "To je jedan isti uređaj: snagu određuju priključak i podešena struja. Tesla prima najviše 11 kW na tri faze, pa 22 kW ima smisla samo za drugi auto koji toliko prima.",
+     "en": "It is one and the same unit: the power is set by the connection and the configured current. A Tesla takes 11 kW at most on three phases, so 22 kW only makes sense for another car that accepts that much.",
+     "ru": "Это одно и то же устройство: мощность определяют подключение и заданный ток. Tesla принимает максимум 11 кВт на трёх фазах, так что 22 кВт имеют смысл только для другой машины, которая столько принимает."
+    },
+    {
+     "sr": "Kabl je fiksni, Type 2, dug 7,3 m, a kućište ima zaštitu IP55. Uređaj se pri puštanju u rad podešava preko svoje Wi-Fi mreže; vlasnik ga posle vidi u Tesla aplikaciji.",
+     "en": "The cable is fixed, Type 2, 7.3 m long, and the enclosure is rated IP55. The unit is configured over its own Wi-Fi network during commissioning; afterward the owner sees it in the Tesla app.",
+     "ru": "Кабель несъёмный, Type 2, длиной 7,3 м, корпус со степенью защиты IP55. При вводе в работу устройство настраивается через собственную сеть Wi-Fi; потом владелец видит его в приложении Tesla."
+    }
+   ],
+   "protection": [
+    {
+     "sr": "Wall Connector ima ugrađenu zaštitu od struje kvara: Tesla je u uputstvu opisuje kao tip A sa detekcijom jednosmerne struje od 6 mA. Uputstvo traži poseban strujni krug i osigurač za svaki uređaj i preporučuje: za 16 A na izlazu osigurač od 20 A, za 32 A osigurač od 40 A.",
+     "en": "The Wall Connector has built-in residual-current protection: Tesla’s manual describes it as type A with 6 mA DC detection. The manual asks for a dedicated circuit and breaker for each unit and recommends a 20 A breaker for 16 A of output and a 40 A breaker for 32 A.",
+     "ru": "В Wall Connector встроена защита от тока утечки: в инструкции Tesla она описана как тип A с обнаружением постоянного тока 6 мА. Инструкция требует отдельную линию и автомат на каждое устройство и рекомендует: для 16 А на выходе — автомат на 20 А, для 32 А — на 40 А."
+    },
+    {
+     "sr": "FID sklopku ispred uređaja uputstvo ne propisuje i upućuje na lokalne propise. U osnovnu ugradnju ulaze FID zaštita i automatski osigurač.",
+     "en": "The manual doesn’t prescribe an RCD ahead of the unit and refers to local regulations. Basic installation includes an RCD (FID) and a circuit breaker.",
+     "ru": "УЗО перед устройством инструкция не предписывает и отсылает к местным нормам. В базовый монтаж входят УЗО (FID) и автомат."
+    }
+   ],
+   "cable": {
+    "sr": "Tesla u uputstvu navodi da se Wall Connector ne povezuje finožičnim kablom tanjim od 4 mm², bez obzira na osigurač; stezaljke primaju do 25 mm².",
+    "en": "Tesla’s manual says the Wall Connector should not be connected with stranded cable thinner than 4 mm², whatever the breaker; the terminals take up to 25 mm².",
+    "ru": "В инструкции Tesla сказано, что Wall Connector нельзя подключать многопроволочным кабелем тоньше 4 мм², какой бы ни был автомат; клеммы принимают до 25 мм²."
+   },
+   "check": [
+    {
+     "sr": "Proveri da je verzija za Evropu, sa Type 2 kablom (oznaka dela počinje sa 1529455).",
+     "en": "Check that it is the European version, with a Type 2 cable (the part number starts with 1529455).",
+     "ru": "Проверь, что это европейская версия с кабелем Type 2 (номер детали начинается с 1529455)."
+    },
+    {
+     "sr": "Teslina onlajn prodavnica prodaje Wall Connector vlasnicima prijavljenim na Tesla nalog; prodavnicu za Srbiju nismo našli (16.11.2026). Ako ga kupuješ u drugoj zemlji ili polovnog, traži račun zbog garancije.",
+     "en": "Tesla’s online shop sells the Wall Connector to owners signed in to a Tesla account; we found no shop for Serbia (16.11.2026). If you buy it in another country or used, ask for the receipt, which you need for the warranty.",
+     "ru": "Интернет-магазин Tesla продаёт Wall Connector владельцам, вошедшим в аккаунт Tesla; магазина для Сербии мы не нашли (16.11.2026). Если покупаешь в другой стране или с рук, проси чек — он нужен для гарантии."
+    },
+    {
+     "sr": "Za deljenje snage između više uređaja (do 6) dovoljni su sami uređaji, a za dinamičko upravljanje treba dodatno brojilo sa RS-485 vezom, koje se kupuje posebno.",
+     "en": "Sharing power between several units (up to 6) needs only the units themselves, while dynamic management needs an additional meter with an RS-485 link, sold separately.",
+     "ru": "Чтобы делить мощность между несколькими устройствами (до 6), хватает самих устройств, а для динамического управления нужен дополнительный счётчик с RS-485 — он покупается отдельно."
+    },
+    {
+     "sr": [
+      "MID brojilo Tesla u uputstvu ne navodi. Ako ti treba obračun po MID brojilu, pogledaj ",
+      {
+       "a": "pakete sa MID brojilom",
+       "href": "/paketi-i-cene"
+      },
+      "."
+     ],
+     "en": [
+      "Tesla’s manual doesn’t mention a MID meter. If you need billing by a MID meter, see the ",
+      {
+       "a": "packages with a MID meter",
+       "href": "/paketi-i-cene"
+      },
+      "."
+     ],
+     "ru": [
+      "MID-счётчик Tesla в инструкции не упоминает. Если нужен расчёт по MID-счётчику, посмотри ",
+      {
+       "a": "пакеты с MID-счётчиком",
+       "href": "/paketi-i-cene"
+      },
+      "."
+     ]
+    }
+   ],
+   "warranty": {
+    "sr": "Tesla u uputstvu za Evropu navodi garanciju od 48 meseci za ličnu upotrebu i 12 meseci za komercijalnu.",
+    "en": "Tesla’s European manual states a warranty of 48 months for personal use and 12 months for commercial use.",
+    "ru": "В европейской инструкции Tesla указана гарантия 48 месяцев при личном использовании и 12 месяцев при коммерческом."
+   },
+   "shop": {
+    "path": "/tesla-wall-connector-gen3/",
+    "name": "Tesla Wall Connector"
+   },
+   "faq": [
+    {
+     "q": {
+      "sr": "Da li Tesla Wall Connector puni i druge automobile?",
+      "en": "Does a Tesla Wall Connector charge other cars too?",
+      "ru": "Заряжает ли Tesla Wall Connector другие машины?"
+     },
+     "a": {
+      "sr": "Da. Verzija za Evropu ima Type 2 kabl, a Tesla na stranici podrške navodi da njime mogu da se pune i električni automobili drugih marki.",
+      "en": "Yes. The European version has a Type 2 cable, and Tesla’s support page says electric cars of other brands can charge with it too.",
+      "ru": "Да. У европейской версии кабель Type 2, и на странице поддержки Tesla сказано, что от него могут заряжаться и электромобили других марок."
+     }
+    },
+    {
+     "q": {
+      "sr": "Koji osigurač treba za Wall Connector na 11 kW?",
+      "en": "Which breaker does a Wall Connector need at 11 kW?",
+      "ru": "Какой автомат нужен Wall Connector на 11 кВт?"
+     },
+     "a": {
+      "sr": "Po tabeli iz Teslinog uputstva, za 16 A na izlazu (11 kW na tri faze) treba osigurač od 20 A. Sa osiguračem od 16 A uređaj se podešava na 13 A, što je oko 9 kW.",
+      "en": "According to the table in Tesla’s manual, 16 A of output (11 kW on three phases) needs a 20 A breaker. With a 16 A breaker the unit is set to 13 A, which is about 9 kW.",
+      "ru": "По таблице из инструкции Tesla для 16 А на выходе (11 кВт на трёх фазах) нужен автомат на 20 А. С автоматом на 16 А устройство настраивают на 13 А — это около 9 кВт."
+     }
+    },
+    {
+     "q": {
+      "sr": "Da li Wall Connector mora na trofazni priključak?",
+      "en": "Does a Wall Connector need a three-phase connection?",
+      "ru": "Нужно ли Wall Connector трёхфазное подключение?"
+     },
+     "a": {
+      "sr": "Ne mora. Radi i na jednoj fazi, do 32 A, što je 7,4 kW; na trofaznom priključku sa 16 A po fazi daje 11 kW.",
+      "en": "No. It also runs on one phase, up to 32 A, which is 7.4 kW; on a three-phase connection at 16 A per phase it delivers 11 kW.",
+      "ru": "Нет. Он работает и от одной фазы, до 32 А, — это 7,4 кВт; от трёхфазного подключения с 16 А на фазу даёт 11 кВт."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "Tesla — Wall Connector Gen 3, uputstvo za ugradnju za Evropu (Type 2, trofazni)",
+      "en": "Tesla — Gen 3 Wall Connector installation manual for Europe (Type 2, three-phase)",
+      "ru": "Tesla — Wall Connector Gen 3, инструкция по монтажу для Европы (Type 2, трёхфазный)"
+     },
+     "url": "https://energylibrary.tesla.com/docs/Public/Charging/WallConnector/Gen3/Install/3PT2/EMEA/Wall-Connector-3-Install-Manual-en-GB.pdf"
+    },
+    {
+     "t": {
+      "sr": "Tesla — Wall Connector (stranica podrške)",
+      "en": "Tesla — Wall Connector (support page)",
+      "ru": "Tesla — Wall Connector (страница поддержки)"
+     },
+     "url": "https://www.tesla.com/en_eu/support/charging/wall-connector"
+    },
+    {
+     "t": {
+      "sr": "Tesla — Onboard Charger (stranica podrške)",
+      "en": "Tesla — Onboard Charger (support page)",
+      "ru": "Tesla — Onboard Charger (страница поддержки)"
+     },
+     "url": "https://www.tesla.com/en_eu/support/charging/onboard-charger"
+    },
+    {
+     "t": {
+      "sr": "Tesla Shop (Irska) — Wall Connector, stanje 16.11.2026",
+      "en": "Tesla Shop (Ireland) — Wall Connector, as of 16.11.2026",
+      "ru": "Tesla Shop (Ирландия) — Wall Connector, на 16.11.2026"
+     },
+     "url": "https://shop.tesla.com/en_ie/product/wall-connector"
+    }
+   ]
+  },
+  {
+   "slug": "wallbox-pulsar",
+   "name": "Wallbox Pulsar",
+   "cover": 4,
+   "h1": {
+    "sr": "Ugradnja Wallbox Pulsar punjača",
+    "en": "Wallbox Pulsar installation",
+    "ru": "Монтаж Wallbox Pulsar"
+   },
+   "cls": {
+    "sr": "Pulsar Plus i Pulsar Max, 7,4–22 kW",
+    "en": "Pulsar Plus and Pulsar Max, 7.4–22 kW",
+    "ru": "Pulsar Plus и Pulsar Max, 7,4–22 кВт"
+   },
+   "lead": {
+    "sr": "Imaš Wallbox Pulsar Plus ili Pulsar Max? Ugrađujemo ga: od 24.000 RSD, konačna cena, pored razvodne table. Oba modela postoje u verzijama od 7,4, 11 i 22 kW i imaju ugrađenu detekciju jednosmerne struje kvara od 6 mA.",
+    "en": "Have a Wallbox Pulsar Plus or Pulsar Max? We install it: from 24.000 RSD, final price, next to the distribution board. Both models come in 7.4, 11 and 22 kW versions and have built-in detection of 6 mA DC fault current.",
+    "ru": "У тебя Wallbox Pulsar Plus или Pulsar Max? Установим: от 24.000 RSD, цена итоговая, рядом с электрощитом. Обе модели выпускаются в версиях на 7,4, 11 и 22 кВт и имеют встроенное обнаружение постоянного тока утечки 6 мА."
+   },
+   "table": {
+    "head": {
+     "sr": [
+      "Verzija",
+      "Priključak",
+      "Struja"
+     ],
+     "en": [
+      "Version",
+      "Connection",
+      "Current"
+     ],
+     "ru": [
+      "Версия",
+      "Подключение",
+      "Ток"
+     ]
+    },
+    "rows": [
+     {
+      "sr": [
+       "7,4 kW",
+       "jedna faza",
+       "32 A"
+      ],
+      "en": [
+       "7.4 kW",
+       "one phase",
+       "32 A"
+      ],
+      "ru": [
+       "7,4 кВт",
+       "одна фаза",
+       "32 А"
+      ]
+     },
+     {
+      "sr": [
+       "11 kW",
+       "tri faze",
+       "16 A"
+      ],
+      "en": [
+       "11 kW",
+       "three phases",
+       "16 A"
+      ],
+      "ru": [
+       "11 кВт",
+       "три фазы",
+       "16 А"
+      ]
+     },
+     {
+      "sr": [
+       "22 kW",
+       "tri faze",
+       "32 A"
+      ],
+      "en": [
+       "22 kW",
+       "three phases",
+       "32 A"
+      ],
+      "ru": [
+       "22 кВт",
+       "три фазы",
+       "32 А"
+      ]
+     }
+    ]
+   },
+   "specs": [
+    {
+     "sr": "Pulsar Plus ima kućište IP54/IK08, a Pulsar Max IP55/IK10. Oba imaju Wi-Fi i Bluetooth, aplikaciju myWallbox i OCPP 1.6j; kabl je Type 2, dug 5 ili 7 m, a Pulsar Max postoji i sa utičnicom.",
+     "en": "The Pulsar Plus enclosure is rated IP54/IK08, the Pulsar Max IP55/IK10. Both have Wi-Fi and Bluetooth, the myWallbox app and OCPP 1.6j; the cable is Type 2, 5 or 7 m long, and the Pulsar Max is also available in a socket version.",
+     "ru": "У Pulsar Plus корпус IP54/IK08, у Pulsar Max — IP55/IK10. У обоих есть Wi-Fi и Bluetooth, приложение myWallbox и OCPP 1.6j; кабель Type 2 длиной 5 или 7 м, а Pulsar Max бывает и с розеткой."
+    }
+   ],
+   "protection": [
+    {
+     "sr": "Wallbox u uputstvu za Pulsar Plus traži spoljni automatski osigurač i FID sklopku: za osigurač preporučuje karakteristiku C, a za FID navodi tip A ili tip B, prema lokalnim propisima. Detekcija jednosmerne struje kvara od 6 mA je ugrađena.",
+     "en": "Wallbox’s Pulsar Plus manual asks for an external circuit breaker and an RCD: it recommends a C curve for the breaker and names type A or type B for the RCD, according to local regulations. Detection of 6 mA DC fault current is built in.",
+     "ru": "Wallbox в инструкции к Pulsar Plus требует внешний автомат и УЗО: для автомата рекомендует характеристику C, а для УЗО называет тип A или тип B — по местным нормам. Обнаружение постоянного тока утечки 6 мА встроено."
+    },
+    {
+     "sr": "Za Pulsar Max uputstvo izbor zaštite prepušta lokalnim propisima. U osnovnu ugradnju ulaze FID zaštita i automatski osigurač.",
+     "en": "For the Pulsar Max the manual leaves the choice of protection to local regulations. Basic installation includes an RCD (FID) and a circuit breaker.",
+     "ru": "Для Pulsar Max инструкция в выборе защиты отсылает к местным нормам. В базовый монтаж входят УЗО (FID) и автомат."
+    }
+   ],
+   "cable": {
+    "sr": "Za Pulsar Plus uputstvo navodi provodnike preseka do 10 mm².",
+    "en": "For the Pulsar Plus the manual lists conductors with a cross-section of up to 10 mm².",
+    "ru": "Для Pulsar Plus в инструкции указаны провода сечением до 10 мм²."
+   },
+   "check": [
+    {
+     "sr": "MID brojilo nije ugrađeno u Pulsar Max: po podacima proizvođača, ono je spoljno i opciono. Za Pulsar Plus to proveri u specifikaciji verzije koju kupuješ.",
+     "en": "The Pulsar Max has no built-in MID meter: according to the manufacturer, the meter is external and optional. For the Pulsar Plus, check the specification of the version you’re buying.",
+     "ru": "В Pulsar Max нет встроенного MID-счётчика: по данным производителя, он внешний и опциональный. Для Pulsar Plus проверь это в спецификации версии, которую покупаешь."
+    },
+    {
+     "sr": "Punjenje iz solarnih panela traži dodatno Wallbox brojilo; i dinamičko upravljanje snagom je opcija, a statičko ograničenje je u uređaju.",
+     "en": "Charging from solar panels needs an additional Wallbox meter; dynamic load management is an option too, while a static limit is built into the unit.",
+     "ru": "Для зарядки от солнечных панелей нужен дополнительный счётчик Wallbox; динамическое управление мощностью — тоже опция, а статическое ограничение есть в самом устройстве."
+    },
+    {
+     "sr": "Verziju od 22 kW možemo da ograničimo na struju tvog priključka, pa na priključku 3 × 16 A radi sa 11 kW.",
+     "en": "We can limit the 22 kW version to the current of your connection, so on a 3 × 16 A connection it runs at 11 kW.",
+     "ru": "Версию на 22 кВт можно ограничить по току твоего подключения — на подключении 3 × 16 А она работает на 11 кВт."
+    },
+    {
+     "sr": "U ponudama prodavaca u Srbiji koje smo pregledali (16.11.2026) garantni rok najčešće nije naveden: traži ga pismeno, uz račun.",
+     "en": "In the Serbian sellers’ listings we looked at (16.11.2026), the warranty period is usually not stated: ask for it in writing, with the receipt.",
+     "ru": "В предложениях сербских продавцов, которые мы смотрели (16.11.2026), срок гарантии чаще всего не указан: проси его письменно, вместе с чеком."
+    }
+   ],
+   "warranty": {
+    "sr": "Wallbox za Pulsar Max navodi dobrovoljnu garanciju od 5 godina za uređaje kupljene od 1. oktobra 2025, 3 godine za kupljene od 2022. do septembra 2025. i 2 godine za starije. Uslov je račun, a garancija se odnosi na uređaje kupljene, ugrađene i korišćene u Evropi; da li to obuhvata Srbiju, proveri kod prodavca. Za Pulsar Plus uputstvo navodi 3 godine od kupovine.",
+    "en": "For the Pulsar Max, Wallbox states a voluntary warranty of 5 years for units bought on or after October 1, 2025, 3 years for those bought from 2022 to September 2025, and 2 years for older ones. A receipt is required, and the warranty covers units bought, installed and used in Europe; check with the seller whether that includes Serbia. For the Pulsar Plus the manual states 3 years from purchase.",
+    "ru": "Wallbox указывает для Pulsar Max добровольную гарантию 5 лет на устройства, купленные с 1 октября 2025 года, 3 года — на купленные с 2022 года по сентябрь 2025 года и 2 года — на более старые. Нужен чек, а гарантия действует на устройства, купленные, установленные и используемые в Европе; входит ли сюда Сербия, уточни у продавца. Для Pulsar Plus в инструкции указано 3 года с даты покупки."
+   },
+   "shop": {
+    "path": "/wallbox-pulsar-max-11kw/",
+    "name": "Wallbox Pulsar Max 11 kW"
+   },
+   "extra": {
+    "sr": [
+     "Wallbox Pulsar Max prodajemo i sa ugradnjom, u paketu Wallbox Premium: ",
+     {
+      "a": "paketi i cene",
+      "href": "/paketi-i-cene"
+     },
+     "."
+    ],
+    "en": [
+     "We also sell the Wallbox Pulsar Max with installation, in the Wallbox Premium package: ",
+     {
+      "a": "packages and prices",
+      "href": "/paketi-i-cene"
+     },
+     "."
+    ],
+    "ru": [
+     "Wallbox Pulsar Max мы продаём и с монтажом — в пакете Wallbox Premium: ",
+     {
+      "a": "пакеты и цены",
+      "href": "/paketi-i-cene"
+     },
+     "."
+    ]
+   },
+   "faq": [
+    {
+     "q": {
+      "sr": "Koji FID treba za Wallbox Pulsar?",
+      "en": "Which RCD does a Wallbox Pulsar need?",
+      "ru": "Какое УЗО нужно Wallbox Pulsar?"
+     },
+     "a": {
+      "sr": "Uputstvo za Pulsar Plus navodi FID tip A ili tip B, prema lokalnim propisima, a uređaj ima ugrađenu detekciju jednosmerne struje kvara od 6 mA. U osnovnu ugradnju ulaze FID zaštita i automatski osigurač.",
+      "en": "The Pulsar Plus manual names a type A or type B RCD, according to local regulations, and the unit has built-in detection of 6 mA DC fault current. Basic installation includes an RCD (FID) and a circuit breaker.",
+      "ru": "В инструкции к Pulsar Plus указано УЗО типа A или типа B — по местным нормам, а в устройстве есть встроенное обнаружение постоянного тока утечки 6 мА. В базовый монтаж входят УЗО (FID) и автомат."
+     }
+    },
+    {
+     "q": {
+      "sr": "Da li Wallbox Pulsar ima MID brojilo?",
+      "en": "Does a Wallbox Pulsar have a MID meter?",
+      "ru": "Есть ли у Wallbox Pulsar MID-счётчик?"
+     },
+     "a": {
+      "sr": "Pulsar Max ga nema ugrađeno: po podacima proizvođača, MID brojilo je spoljno i opciono. Za Pulsar Plus to proveri u specifikaciji verzije koju kupuješ.",
+      "en": "The Pulsar Max doesn’t have one built in: according to the manufacturer, a MID meter is external and optional. For the Pulsar Plus, check the specification of the version you’re buying.",
+      "ru": "У Pulsar Max встроенного нет: по данным производителя, MID-счётчик внешний и опциональный. Для Pulsar Plus проверь это в спецификации версии, которую покупаешь."
+     }
+    },
+    {
+     "q": {
+      "sr": "Kako se upravlja punjačem Wallbox Pulsar?",
+      "en": "How do you control a Wallbox Pulsar?",
+      "ru": "Как управлять Wallbox Pulsar?"
+     },
+     "a": {
+      "sr": "Aplikacijom myWallbox, preko Wi-Fi ili Bluetooth veze. Uređaj podržava i OCPP 1.6j.",
+      "en": "With the myWallbox app, over Wi-Fi or Bluetooth. The unit also supports OCPP 1.6j.",
+      "ru": "Через приложение myWallbox — по Wi-Fi или Bluetooth. Устройство поддерживает и OCPP 1.6j."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "Wallbox — Pulsar Plus, uputstvo za ugradnju (30.04.2025)",
+      "en": "Wallbox — Pulsar Plus installation guide (30.04.2025)",
+      "ru": "Wallbox — Pulsar Plus, инструкция по монтажу (30.04.2025)"
+     },
+     "url": "https://support.wallbox.com/wp-content/uploads/ht_kb/2025/07/MASTER_20250430_PulsarPlus_IG.pdf"
+    },
+    {
+     "t": {
+      "sr": "Wallbox — Pulsar Max, onlajn uputstvo za ugradnju (18.06.2024)",
+      "en": "Wallbox — Pulsar Max online installation guide (18.06.2024)",
+      "ru": "Wallbox — Pulsar Max, онлайн-инструкция по монтажу (18.06.2024)"
+     },
+     "url": "https://support.wallbox.com/en/knowledge-base/pulsar-max-online-ig"
+    },
+    {
+     "t": {
+      "sr": "Wallbox — Pulsar Max, list sa tehničkim podacima",
+      "en": "Wallbox — Pulsar Max datasheet",
+      "ru": "Wallbox — Pulsar Max, лист технических данных"
+     },
+     "url": "https://support.wallbox.com/wp-content/uploads/ht_kb/2025/06/Wallbox_Datasheet_PulsarMax_Tethered_Socket_EN_b.pdf"
+    },
+    {
+     "t": {
+      "sr": "Wallbox — Pulsar Max, pregled proizvoda i uslovi garancije",
+      "en": "Wallbox — Pulsar Max product overview and warranty terms",
+      "ru": "Wallbox — Pulsar Max, обзор продукта и условия гарантии"
+     },
+     "url": "https://support.wallbox.com/en/knowledge-base/pulsar-max-products-overview/"
+    },
+    {
+     "t": {
+      "sr": "Wallbox — OCPP activation and setup guide",
+      "en": "Wallbox — OCPP activation and setup guide",
+      "ru": "Wallbox — OCPP activation and setup guide"
+     },
+     "url": "https://support.wallbox.com/en/knowledge-base/ocpp-activation-and-setup-guide/"
+    }
+   ]
+  },
+  {
+   "slug": "abb-terra-ac",
+   "name": "ABB Terra AC",
+   "cover": 13,
+   "h1": {
+    "sr": "Ugradnja ABB Terra AC punjača",
+    "en": "ABB Terra AC installation",
+    "ru": "Монтаж ABB Terra AC"
+   },
+   "cls": {
+    "sr": "3,7–22 kW, FID tip A po uputstvu",
+    "en": "3.7–22 kW, type A RCD per the manual",
+    "ru": "3,7–22 кВт, УЗО типа A по инструкции"
+   },
+   "lead": {
+    "sr": "Imaš ABB Terra AC wallbox? Ugrađujemo ga: od 24.000 RSD, konačna cena, pored razvodne table. Terra AC postoji u verzijama od 3,7 do 22 kW i ima ugrađenu detekciju jednosmerne struje kvara, a ABB u uputstvu navodi da je ispred njega dovoljan FID tip A.",
+    "en": "Have an ABB Terra AC wallbox? We install it: from 24.000 RSD, final price, next to the distribution board. The Terra AC comes in versions from 3.7 to 22 kW and has built-in DC fault-current detection, and ABB’s manual says a type A RCD ahead of it is sufficient.",
+    "ru": "У тебя ABB Terra AC? Установим: от 24.000 RSD, цена итоговая, рядом с электрощитом. Terra AC выпускается в версиях от 3,7 до 22 кВт и имеет встроенное обнаружение постоянного тока утечки, а ABB в инструкции пишет, что перед ним достаточно УЗО типа A."
+   },
+   "table": {
+    "head": {
+     "sr": [
+      "Oznaka",
+      "Snaga",
+      "Priključak"
+     ],
+     "en": [
+      "Code",
+      "Power",
+      "Connection"
+     ],
+     "ru": [
+      "Обозначение",
+      "Мощность",
+      "Подключение"
+     ]
+    },
+    "rows": [
+     {
+      "sr": [
+       "TAC-W4",
+       "3,7 kW",
+       "jedna faza, 16 A"
+      ],
+      "en": [
+       "TAC-W4",
+       "3.7 kW",
+       "one phase, 16 A"
+      ],
+      "ru": [
+       "TAC-W4",
+       "3,7 кВт",
+       "одна фаза, 16 А"
+      ]
+     },
+     {
+      "sr": [
+       "TAC-W7",
+       "7,4 kW",
+       "jedna faza, 32 A"
+      ],
+      "en": [
+       "TAC-W7",
+       "7.4 kW",
+       "one phase, 32 A"
+      ],
+      "ru": [
+       "TAC-W7",
+       "7,4 кВт",
+       "одна фаза, 32 А"
+      ]
+     },
+     {
+      "sr": [
+       "TAC-W11",
+       "11 kW",
+       "tri faze, 16 A"
+      ],
+      "en": [
+       "TAC-W11",
+       "11 kW",
+       "three phases, 16 A"
+      ],
+      "ru": [
+       "TAC-W11",
+       "11 кВт",
+       "три фазы, 16 А"
+      ]
+     },
+     {
+      "sr": [
+       "TAC-W22",
+       "22 kW",
+       "tri faze, 32 A"
+      ],
+      "en": [
+       "TAC-W22",
+       "22 kW",
+       "three phases, 32 A"
+      ],
+      "ru": [
+       "TAC-W22",
+       "22 кВт",
+       "три фазы, 32 А"
+      ]
+     }
+    ]
+   },
+   "specs": [
+    {
+     "sr": "Slova u oznaci govore šta je u uređaju: T je utičnica, S utičnica sa zatvaračem, G5 kabl od 5 m, R čitač RFID kartica, C 4G modem, D ekran, M MID brojilo.",
+     "en": "The letters in the code say what the unit has: T is a socket, S a socket with a shutter, G5 a 5 m cable, R an RFID reader, C a 4G modem, D a display, M a MID meter.",
+     "ru": "Буквы в обозначении показывают, что есть в устройстве: T — розетка, S — розетка со шторкой, G5 — кабель 5 м, R — считыватель RFID, C — модем 4G, D — дисплей, M — MID-счётчик."
+    },
+    {
+     "sr": "Uređaj se pušta u rad aplikacijom TerraConfig, a koristi se preko aplikacije ChargerSync; veza je Wi-Fi, Bluetooth ili Ethernet. Podržava OCPP 1.6.",
+     "en": "The unit is commissioned with the TerraConfig app and used with the ChargerSync app; it connects over Wi-Fi, Bluetooth or Ethernet. It supports OCPP 1.6.",
+     "ru": "Устройство вводят в работу через приложение TerraConfig, а пользуются им через приложение ChargerSync; связь — Wi-Fi, Bluetooth или Ethernet. Поддерживает OCPP 1.6."
+    }
+   ],
+   "protection": [
+    {
+     "sr": "ABB u uputstvu za ugradnju navodi FID tip A, najviše 30 mA, jer uređaj sam otkriva jednosmernu struju kvara veću od 6 mA. Za osigurač uputstvo iz 2022. traži najmanje 16 A za uređaj od 16 A i najmanje 32 A za uređaj od 32 A, a izbor ostavlja električaru; starije izdanje navodi 20 A i 40 A.",
+     "en": "ABB’s installation manual names a type A RCD, 30 mA at most, because the unit itself detects DC fault current above 6 mA. For the breaker the 2022 manual asks for at least 16 A for a 16 A unit and at least 32 A for a 32 A unit, leaving the choice to the electrician; an older edition gives 20 A and 40 A.",
+     "ru": "В инструкции по монтажу ABB указано УЗО типа A, не более 30 мА, потому что устройство само обнаруживает постоянный ток утечки выше 6 мА. Для автомата инструкция 2022 года требует не меньше 16 А для устройства на 16 А и не меньше 32 А для устройства на 32 А, оставляя выбор электрику; более старое издание называет 20 и 40 А."
+    },
+    {
+     "sr": "U osnovnu ugradnju ulaze FID zaštita i automatski osigurač.",
+     "en": "Basic installation includes an RCD (FID) and a circuit breaker.",
+     "ru": "В базовый монтаж входят УЗО (FID) и автомат."
+    }
+   ],
+   "cable": {
+    "sr": "Stezaljke primaju provodnike preseka od 2,5 do 10 mm²; ABB navodi najmanje 2,5 mm² za 16 A i 6 mm² za 32 A.",
+    "en": "The terminals take conductors with a cross-section of 2.5 to 10 mm²; ABB gives a minimum of 2.5 mm² for 16 A and 6 mm² for 32 A.",
+    "ru": "Клеммы принимают провода сечением от 2,5 до 10 мм²; ABB указывает минимум 2,5 мм² для 16 А и 6 мм² для 32 А."
+   },
+   "check": [
+    {
+     "sr": "Proveri punu oznaku modela: od nje zavisi da li uređaj ima kabl ili utičnicu, RFID, 4G i MID brojilo.",
+     "en": "Check the full model code: it decides whether the unit has a cable or a socket, RFID, 4G and a MID meter.",
+     "ru": "Проверь полное обозначение модели: от него зависит, есть ли у устройства кабель или розетка, RFID, 4G и MID-счётчик."
+    },
+    {
+     "sr": "MID brojilo imaju samo modeli sa slovom M u oznaci, a to su modeli sa ekranom.",
+     "en": "Only models with the letter M in the code have a MID meter, and those are the models with a display.",
+     "ru": "MID-счётчик есть только у моделей с буквой M в обозначении — это модели с дисплеем."
+    },
+    {
+     "sr": "Statičko ograničenje snage podešava se u aplikaciji; za dinamičko upravljanje treba spoljno brojilo sa Modbus vezom.",
+     "en": "A static power limit is set in the app; dynamic management needs an external meter with a Modbus link.",
+     "ru": "Статическое ограничение мощности задаётся в приложении; для динамического управления нужен внешний счётчик с Modbus."
+    }
+   ],
+   "warranty": {
+    "sr": "ABB u svojim materijalima navodi garanciju od 24 meseca. U ponudi prodavca u Srbiji koju smo pregledali (16.11.2026) naveden je rok od 2 godine.",
+    "en": "ABB’s own materials state a warranty of 24 months. A Serbian seller’s listing we looked at (16.11.2026) gives a term of 2 years.",
+    "ru": "В материалах ABB указана гарантия 24 месяца. В предложении сербского продавца, которое мы смотрели (16.11.2026), указан срок 2 года."
+   },
+   "shop": {
+    "path": "/abb-terra-ac-w11-kabl/",
+    "name": "ABB Terra AC 11 kW"
+   },
+   "faq": [
+    {
+     "q": {
+      "sr": "Da li za ABB Terra AC treba FID tip B?",
+      "en": "Does an ABB Terra AC need a type B RCD?",
+      "ru": "Нужно ли ABB Terra AC УЗО типа B?"
+     },
+     "a": {
+      "sr": "Po uputstvu proizvođača ne treba: ABB navodi da je dovoljan FID tip A, najviše 30 mA, jer uređaj ima ugrađenu detekciju jednosmerne struje kvara veće od 6 mA.",
+      "en": "Not according to the manufacturer’s manual: ABB says a type A RCD, 30 mA at most, is sufficient, because the unit has built-in detection of DC fault current above 6 mA.",
+      "ru": "По инструкции производителя — нет: ABB пишет, что достаточно УЗО типа A, не более 30 мА, потому что в устройстве есть встроенное обнаружение постоянного тока утечки выше 6 мА."
+     }
+    },
+    {
+     "q": {
+      "sr": "Koji presek kabla treba za ABB Terra AC?",
+      "en": "What cable cross-section does an ABB Terra AC need?",
+      "ru": "Какое сечение кабеля нужно ABB Terra AC?"
+     },
+     "a": {
+      "sr": "ABB navodi najmanje 2,5 mm² za uređaj od 16 A i 6 mm² za uređaj od 32 A; stezaljke primaju do 10 mm². Presek biramo i prema dužini trase.",
+      "en": "ABB gives a minimum of 2.5 mm² for a 16 A unit and 6 mm² for a 32 A unit; the terminals take up to 10 mm². We also choose the cross-section by the length of the route.",
+      "ru": "ABB указывает минимум 2,5 мм² для устройства на 16 А и 6 мм² для устройства на 32 А; клеммы принимают до 10 мм². Сечение подбираем ещё и по длине трассы."
+     }
+    },
+    {
+     "q": {
+      "sr": "Da li ABB Terra AC ima MID brojilo?",
+      "en": "Does an ABB Terra AC have a MID meter?",
+      "ru": "Есть ли у ABB Terra AC MID-счётчик?"
+     },
+     "a": {
+      "sr": "Samo modeli sa slovom M u oznaci. Ostali modeli ga nemaju, pa ako ti treba obračun po MID brojilu, to proveri pre kupovine.",
+      "en": "Only models with the letter M in the code. The other models don’t have one, so if you need billing by a MID meter, check that before you buy.",
+      "ru": "Только модели с буквой M в обозначении. У остальных его нет, так что, если нужен расчёт по MID-счётчику, проверь это до покупки."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "ABB — Terra AC wallbox, uputstvo za ugradnju (izdanje C, 2022)",
+      "en": "ABB — Terra AC wallbox installation manual (rev. C, 2022)",
+      "ru": "ABB — Terra AC wallbox, инструкция по монтажу (ред. C, 2022)"
+     },
+     "url": "https://library.e.abb.com/public/fa9fb3e42f284679a03ea4727c88c2e6/DE_Terra%20AC_CEPTB_Installationsanleitung_REV_C.pdf"
+    },
+    {
+     "t": {
+      "sr": "ABB — Terra AC wallbox, uputstvo za ugradnju (izdanje 001, 2020)",
+      "en": "ABB — Terra AC wallbox installation manual (rev. 001, 2020)",
+      "ru": "ABB — Terra AC wallbox, инструкция по монтажу (ред. 001, 2020)"
+     },
+     "url": "https://vypinace.sk.abb.com/files/repository/DCL19_Terra-AC-Installation-manual-V001_SK.pdf"
+    },
+    {
+     "t": {
+      "sr": "ABB — Terra AC wallbox, prospekt (modeli, OCPP, garancija)",
+      "en": "ABB — Terra AC wallbox brochure (models, OCPP, warranty)",
+      "ru": "ABB — Terra AC wallbox, проспект (модели, OCPP, гарантия)"
+     },
+     "url": "https://nizke-napeti.cz.abb.com/files/document/18667/files/Prospekt-ABB_Terra-AC-wallbox_nabijeci-stanice.pdf"
+    },
+    {
+     "t": {
+      "sr": "ABB — Terra AC wallbox, specifikacija (maj 2021)",
+      "en": "ABB — Terra AC wallbox specification (May 2021)",
+      "ru": "ABB — Terra AC wallbox, спецификация (май 2021)"
+     },
+     "url": "https://library.e.abb.com/public/9fad3fca3d7045adba5e287953d1e732/ABB%20Terra%20AC%20Wallbox%20specyfikacja%202021_05%20PL.pdf"
+    },
+    {
+     "t": {
+      "sr": "Tehnodućan — ABB Terra AC W22-T-R-C-0, stanje 16.11.2026",
+      "en": "Tehnodućan — ABB Terra AC W22-T-R-C-0, as of 16.11.2026",
+      "ru": "Tehnodućan — ABB Terra AC W22-T-R-C-0, на 16.11.2026"
+     },
+     "url": "https://www.tehnoducan.rs/shop/abb-w22-t-r-c-0/product.html?id=6AGC082153"
+    }
+   ]
+  },
+  {
+   "slug": "schneider-evlink",
+   "name": "Schneider EVlink",
+   "cover": 4,
+   "title": {
+    "sr": "Ugradnja Schneider EVlink punjača",
+    "en": "Schneider EVlink charger installation",
+    "ru": "Монтаж Schneider EVlink"
+   },
+   "h1": {
+    "sr": "Ugradnja Schneider punjača: EVlink i Schneider Charge",
+    "en": "Schneider charger installation: EVlink and Schneider Charge",
+    "ru": "Монтаж зарядок Schneider: EVlink и Schneider Charge"
+   },
+   "cls": {
+    "sr": "EVlink Home, Schneider Charge, EVlink Pro AC",
+    "en": "EVlink Home, Schneider Charge, EVlink Pro AC",
+    "ru": "EVlink Home, Schneider Charge, EVlink Pro AC"
+   },
+   "lead": {
+    "sr": "Imaš Schneider EVlink Home, Schneider Charge ili EVlink Pro AC? Ugrađujemo ga: od 24.000 RSD, konačna cena, pored razvodne table. Sva tri imaju ugrađenu detekciju jednosmerne struje kvara od 6 mA, ali se razlikuju po zaštiti koju proizvođač traži ispred uređaja.",
+    "en": "Have a Schneider EVlink Home, Schneider Charge or EVlink Pro AC? We install it: from 24.000 RSD, final price, next to the distribution board. All three have built-in detection of 6 mA DC fault current, but they differ in the protection the manufacturer asks for ahead of the unit.",
+    "ru": "У тебя Schneider EVlink Home, Schneider Charge или EVlink Pro AC? Установим: от 24.000 RSD, цена итоговая, рядом с электрощитом. У всех трёх есть встроенное обнаружение постоянного тока утечки 6 мА, но защита, которую производитель требует перед устройством, у них разная."
+   },
+   "table": {
+    "head": {
+     "sr": [
+      "Serija",
+      "Snaga",
+      "FID po uputstvu"
+     ],
+     "en": [
+      "Series",
+      "Power",
+      "RCD per the manual"
+     ],
+     "ru": [
+      "Серия",
+      "Мощность",
+      "УЗО по инструкции"
+     ]
+    },
+    "rows": [
+     {
+      "sr": [
+       "EVlink Home (EVH4S)",
+       "3,7 / 7,4 / 11 kW",
+       "30 mA, tip A"
+      ],
+      "en": [
+       "EVlink Home (EVH4S)",
+       "3.7 / 7.4 / 11 kW",
+       "30 mA, type A"
+      ],
+      "ru": [
+       "EVlink Home (EVH4S)",
+       "3,7 / 7,4 / 11 кВт",
+       "30 мА, тип A"
+      ]
+     },
+     {
+      "sr": [
+       "Schneider Charge (EVH5A)",
+       "7,4 / 11 / 22 kW",
+       "30 mA, tip A-SI ili tip B EV"
+      ],
+      "en": [
+       "Schneider Charge (EVH5A)",
+       "7.4 / 11 / 22 kW",
+       "30 mA, type A-SI or type B EV"
+      ],
+      "ru": [
+       "Schneider Charge (EVH5A)",
+       "7,4 / 11 / 22 кВт",
+       "30 мА, тип A-SI или тип B EV"
+      ]
+     },
+     {
+      "sr": [
+       "EVlink Pro AC (EVB3)",
+       "7,4 / 11 / 22 kW",
+       "zavisi od verzije: deo modela ima ugrađen FID"
+      ],
+      "en": [
+       "EVlink Pro AC (EVB3)",
+       "7.4 / 11 / 22 kW",
+       "depends on the version: some models have a built-in RCD"
+      ],
+      "ru": [
+       "EVlink Pro AC (EVB3)",
+       "7,4 / 11 / 22 кВт",
+       "зависит от версии: у части моделей УЗО встроено"
+      ]
+     }
+    ]
+   },
+   "specs": [
+    {
+     "sr": "EVlink Home je osnovni kućni punjač bez mrežnog povezivanja. Schneider Charge ima Wi-Fi i Ethernet, aplikaciju Wiser Home i OCPP 1.6J. EVlink Pro AC je serija za zajednička i poslovna mesta, sa dva Ethernet priključka i RFID čitačem.",
+     "en": "The EVlink Home is a basic home charger with no network connectivity. The Schneider Charge has Wi-Fi and Ethernet, the Wiser Home app and OCPP 1.6J. The EVlink Pro AC is the series for shared and business sites, with two Ethernet ports and an RFID reader.",
+     "ru": "EVlink Home — базовая домашняя зарядка без сетевых функций. У Schneider Charge есть Wi-Fi и Ethernet, приложение Wiser Home и OCPP 1.6J. EVlink Pro AC — серия для мест общего пользования и коммерческих объектов, с двумя портами Ethernet и считывателем RFID."
+    }
+   ],
+   "protection": [
+    {
+     "sr": "Za EVlink Home uputstvo traži FID 30 mA tip A i osigurač od 20 A za uređaje od 16 A, odnosno 40 A za uređaj od 32 A. Za Schneider Charge uputstvo iz marta 2026. traži FID 30 mA tip A-SI ili tip B EV i osigurač od 20 A za verziju od 11 kW, odnosno 40 A za verzije od 7,4 i 22 kW.",
+     "en": "For the EVlink Home the manual asks for a 30 mA type A RCD and a 20 A breaker for 16 A units, or 40 A for the 32 A unit. For the Schneider Charge the March 2026 manual asks for a 30 mA RCD of type A-SI or type B EV and a 20 A breaker for the 11 kW version, or 40 A for the 7.4 and 22 kW versions.",
+     "ru": "Для EVlink Home инструкция требует УЗО 30 мА типа A и автомат на 20 А для устройств на 16 А или на 40 А для устройства на 32 А. Для Schneider Charge инструкция от марта 2026 года требует УЗО 30 мА типа A-SI или типа B EV и автомат на 20 А для версии на 11 кВт или на 40 А для версий на 7,4 и 22 кВт."
+    },
+    {
+     "sr": "Kod obe serije proizvođač traži i podnaponski okidač (MNx), koji se ne isporučuje uz uređaj. Kod EVlink Pro AC od oznake zavisi da li su FID i okidač već u uređaju. U osnovnu ugradnju ulaze FID zaštita i automatski osigurač; ostalo dodajemo u ponudi.",
+     "en": "For both series the manufacturer also asks for an undervoltage release (MNx), which is not supplied with the unit. On the EVlink Pro AC it depends on the code whether the RCD and the release are already inside. Basic installation includes an RCD (FID) and a circuit breaker; the rest is added to the quote.",
+     "ru": "Для обеих серий производитель требует ещё и расцепитель минимального напряжения (MNx), который с устройством не поставляется. У EVlink Pro AC от обозначения зависит, стоят ли УЗО и расцепитель уже внутри. В базовый монтаж входят УЗО (FID) и автомат; остальное добавляем в смету."
+    }
+   ],
+   "cable": {
+    "sr": "Za EVlink Home proizvođač navodi provodnike preseka do 6 mm² (3 × 6 ili 5 × 6 mm² do 50 m), a za Schneider Charge stezaljke od 2,5 do 10 mm².",
+    "en": "For the EVlink Home the manufacturer lists conductors of up to 6 mm² (3 × 6 or 5 × 6 mm² up to 50 m), and for the Schneider Charge terminals of 2.5 to 10 mm².",
+    "ru": "Для EVlink Home производитель указывает провода сечением до 6 мм² (3 × 6 или 5 × 6 мм² до 50 м), а для Schneider Charge — клеммы от 2,5 до 10 мм²."
+   },
+   "check": [
+    {
+     "sr": "EVlink Home se povlači iz prodaje: na sajtu Schneider Electric Srbija označen je kao proizvod koji se više ne prodaje (16.11.2026), a aktuelna kućna serija je Schneider Charge.",
+     "en": "The EVlink Home is being discontinued: on the Schneider Electric Serbia site it is marked as no longer for sale (16.11.2026), and the current home series is the Schneider Charge.",
+     "ru": "EVlink Home снимают с продажи: на сайте Schneider Electric Сербия он помечен как товар, который больше не продаётся (16.11.2026), а актуальная домашняя серия — Schneider Charge."
+    },
+    {
+     "sr": "Podnaponski okidač (MNx) i modul koji smanjuje snagu punjenja kad kuća troši više kupuju se posebno.",
+     "en": "The undervoltage release (MNx) and the module that lowers the charging power when the house draws more are bought separately.",
+     "ru": "Расцепитель минимального напряжения (MNx) и модуль, который снижает мощность зарядки, когда дом потребляет больше, покупаются отдельно."
+    },
+    {
+     "sr": "MID brojilo imaju samo verzije EVlink Pro AC sa slovom M u oznaci.",
+     "en": "Only EVlink Pro AC versions with the letter M in the code have a MID meter.",
+     "ru": "MID-счётчик есть только у версий EVlink Pro AC с буквой M в обозначении."
+    }
+   ],
+   "warranty": {
+    "sr": "Za EVlink Home uputstvo navodi ugovornu garanciju od 18 meseci, a za EVlink Pro AC list sa tehničkim podacima iz 2022. navodi 2 godine. Za Schneider Charge rok u dokumentima koje smo čitali nije naveden, pa ga traži od prodavca, uz račun.",
+    "en": "For the EVlink Home the manual states a contractual warranty of 18 months, and for the EVlink Pro AC a 2022 datasheet states 2 years. For the Schneider Charge the documents we read give no term, so ask the seller for it, with the receipt.",
+    "ru": "Для EVlink Home в инструкции указана договорная гарантия 18 месяцев, а для EVlink Pro AC в листе технических данных 2022 года — 2 года. Для Schneider Charge срок в документах, которые мы читали, не указан — спроси его у продавца, вместе с чеком."
+   },
+   "shop": {
+    "path": "/schneider-evlink-pro-ac-22-kabl/",
+    "name": "Schneider EVlink Pro AC"
+   },
+   "faq": [
+    {
+     "q": {
+      "sr": "Koji FID treba za Schneider Charge?",
+      "en": "Which RCD does a Schneider Charge need?",
+      "ru": "Какое УЗО нужно Schneider Charge?"
+     },
+     "a": {
+      "sr": "Uputstvo iz marta 2026. navodi FID 30 mA tip A-SI ili tip B EV. Detekcija jednosmerne struje kvara od 6 mA je ugrađena u uređaj.",
+      "en": "The March 2026 manual names a 30 mA RCD of type A-SI or type B EV. Detection of 6 mA DC fault current is built into the unit.",
+      "ru": "В инструкции от марта 2026 года указано УЗО 30 мА типа A-SI или типа B EV. Обнаружение постоянного тока утечки 6 мА встроено в устройство."
+     }
+    },
+    {
+     "q": {
+      "sr": "Šta je podnaponski okidač i da li mi treba?",
+      "en": "What is an undervoltage release, and do I need one?",
+      "ru": "Что такое расцепитель минимального напряжения и нужен ли он мне?"
+     },
+     "a": {
+      "sr": "To je dodatak uz osigurač preko kog punjač može da isključi svoje napajanje u slučaju kvara. Schneider ga traži za EVlink Home i Schneider Charge, a ne isporučuje ga uz punjač, pa ga dodajemo u ponudi.",
+      "en": "It is an add-on to the breaker through which the charger can cut its own supply in case of a fault. Schneider asks for it on the EVlink Home and the Schneider Charge but doesn’t supply it with the charger, so we add it to the quote.",
+      "ru": "Это дополнение к автомату, через которое зарядка может отключить своё питание при неисправности. Schneider требует его для EVlink Home и Schneider Charge, но с зарядкой не поставляет, поэтому мы добавляем его в смету."
+     }
+    },
+    {
+     "q": {
+      "sr": "Da li EVlink Home još može da se kupi?",
+      "en": "Can you still buy an EVlink Home?",
+      "ru": "Можно ли ещё купить EVlink Home?"
+     },
+     "a": {
+      "sr": "Na sajtu Schneider Electric Srbija serija je označena kao proizvod koji se više ne prodaje, a neki prodavci u Srbiji je i dalje imaju u ponudi (16.11.2026). Uređaj koji već imaš ugrađujemo normalno.",
+      "en": "On the Schneider Electric Serbia site the series is marked as no longer for sale, while some sellers in Serbia still list it (16.11.2026). If you already have a unit, we install it as usual.",
+      "ru": "На сайте Schneider Electric Сербия серия помечена как товар, который больше не продаётся, но у некоторых продавцов в Сербии она ещё есть (16.11.2026). Устройство, которое у тебя уже есть, устанавливаем как обычно."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "Schneider Electric — EVlink Home, uputstvo za ugradnju",
+      "en": "Schneider Electric — EVlink Home instruction sheet",
+      "ru": "Schneider Electric — EVlink Home, инструкция по монтажу"
+     },
+     "url": "https://download.se.com/files?p_enDocType=Instruction+sheet&p_File_Name=FBC_GEX4292700-01_EN_V9_HD.pdf&p_Doc_Ref=GEX4292700_EN"
+    },
+    {
+     "t": {
+      "sr": "Schneider Electric — Schneider Charge, uputstvo za korisnika (izdanje 06, mart 2026)",
+      "en": "Schneider Electric — Schneider Charge user guide (rev. 06, March 2026)",
+      "ru": "Schneider Electric — Schneider Charge, руководство пользователя (ред. 06, март 2026)"
+     },
+     "url": "https://download.se.com/files?p_enDocType=User+guide&p_File_Name=PKR9096301-06_EN.pdf&p_Doc_Ref=PKR9096301_00_EN"
+    },
+    {
+     "t": {
+      "sr": "Schneider Electric — EVlink Pro AC, uputstvo za ugradnju",
+      "en": "Schneider Electric — EVlink Pro AC instruction sheet",
+      "ru": "Schneider Electric — EVlink Pro AC, инструкция по монтажу"
+     },
+     "url": "https://download.se.com/files?p_enDocType=Instruction+sheet&p_File_Name=EVlink_ProAC-charging-station-IS-NNZ1940301-13.pdf&p_Doc_Ref=NNZ1940301"
+    },
+    {
+     "t": {
+      "sr": "Schneider Electric Srbija — EVlink Home (status serije)",
+      "en": "Schneider Electric Serbia — EVlink Home (series status)",
+      "ru": "Schneider Electric Сербия — EVlink Home (статус серии)"
+     },
+     "url": "https://www.se.com/rs/sr/product-range/61099946-evlink-home/?parent-subcategory-id=80408"
+    },
+    {
+     "t": {
+      "sr": "Schneider Electric Srbija — Schneider Charge",
+      "en": "Schneider Electric Serbia — Schneider Charge",
+      "ru": "Schneider Electric Сербия — Schneider Charge"
+     },
+     "url": "https://www.se.com/rs/sr/product-range/161147017-schneider-charge/?parent-subcategory-id=80408"
+    }
+   ]
+  }
+ ]
+}

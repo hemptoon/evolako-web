@@ -60,12 +60,22 @@ _spec.loader.exec_module(SB)   # the free templates for the residents' assembly 
 _spec = importlib.util.spec_from_file_location('evo_pristupacnost', os.path.join(HERE, 'pristupacnost.py'))
 PS = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(PS)   # the accessibility statement /pristupacnost (site/pristupacnost.py)
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+import klasteri as KL          # noqa: E402  the three page families of 16.11.2026: shared builder, markup and checks
+import hoteli as HO            # noqa: E402  /punjaci-za-hotele-<mesto> (site/hoteli.py)
+import modeli as MO            # noqa: E402  /kucni-punjac-za-<auto> and the hub /kucni-punjac-po-modelu (site/modeli.py)
+import marke as MA             # noqa: E402  /ugradnja-<punjač> and the hub /samo-ugradnja-punjaca (site/marke.py)
+FAMILIES = (('hoteli', HO), ('modeli', MO), ('marke', MA))
 # One photo table for both kits: evb's (photo 2 v2 — the first version must never be shown again — and photos 17, 18).
 EVC.IMG, EVC.ALT, EVC.thumb_idx = EVB.IMG, EVB.ALT, EVB.thumb_idx
 EVC.THUMB = dict(EVC.THUMB, **{'/punjaci-za-parkinge': 17})
 EVC.SEG_COVER = dict(EVC.SEG_COVER, **{'/punjaci-za-parkinge': 17})
 if '/punjaci-za-parkinge' not in EVC.B2B_PAGES:
     EVC.B2B_PAGES.append('/punjaci-za-parkinge')
+for _hub in ('/' + MO.HUB, '/' + MA.HUB):          # a guide may link to the two hubs of 16.11.2026
+    if _hub not in EVC.SITE_PAGES:
+        EVC.SITE_PAGES.append(_hub)
 
 KINDS = ('vodic', 'b2b')
 KIT = {'vodic': EVC, 'b2b': EVB}
@@ -247,6 +257,7 @@ class Content:
         else:
             self.only = None
         self.gradovi = GR.load(content_dir) if os.path.isdir(content_dir) else None
+        self.families = {name: (mod.load(content_dir) if os.path.isdir(content_dir) else None) for name, mod in FAMILIES}
         self.validate()
         if self.errors():
             return
@@ -258,6 +269,7 @@ class Content:
         self.add_pristupacnost()
         if self.gradovi:
             self.add_gradovi()
+        self.add_klasteri()
 
     def errors(self):
         return [(i, t) for i, k, t in self.messages if k == 'error']
@@ -297,6 +309,19 @@ class Content:
             if not re.fullmatch(r'20\d\d-\d\d-\d\d', str(self.gradovi.get('date'))) or \
                     not self.gradovi.get('map', {}).get('checked'):
                 self.say('gradovi', 'error', 'gradovi.json needs "date" (YYYY-MM-DD) and "map.checked"')
+        taken = set(self.sources) | {g.page for g in self.guides}
+        if self.gradovi:
+            taken |= {GR.HUB} | {GR.PREFIX + c['slug'] for c in self.gradovi['cities']}
+        for name, mod in FAMILIES:
+            data = self.families.get(name)
+            if not data:
+                continue
+            for x in mod.validate(data):
+                self.say(name, 'error', x)
+            for sl in mod.slugs(data):
+                if sl in taken:
+                    self.say('/' + sl, 'error', 'slug /%s is already a page of the site' % sl)
+                taken.add(sl)
         b2c = dict(B2C_SNAPSHOT)
         b2c.update({g.slug: g.cover() for g in self.guides if g.kind == 'vodic'})
         b2b = dict(B2B_SNAPSHOT_EXTRA)
@@ -522,6 +547,7 @@ class Content:
         self.set_kit_links(EVC, self.b2c_cover, self.b2b_segment, None)
         allowed = set(self.sources) | set(self.new_pages) | {GR.HUB} | {GR.PREFIX + c['slug'] for c in data['cities']}
         allowed |= {GR.SABLONI.strip('/')}
+        allowed |= {sl for name, mod in FAMILIES if self.families.get(name) for sl in mod.slugs(self.families[name])}
         allowed |= {s.split('#')[0] for s in ('index',)}
         pages = [(GR.HUB, GR.hub_texts(data), GR.COVER_HUB, None)]
         pages += [(GR.PREFIX + c['slug'], GR.city_texts(c, data), GR.COVER_CITY, c) for c in data['cities']]
@@ -567,6 +593,83 @@ class Content:
             self.lastmod[slug] = data['date']
         self.say('gradovi', 'info', 'city pages %s: the hub and %d cities (map of %s)' % (
             data['date'], len(data['cities']), data['map']['checked']))
+
+    # ---------------------------------------------------------------- resorts, cars, charger brands (site/klasteri.py)
+    def add_klasteri(self):
+        """The page families of 16.11.2026 on the guide templates: /punjaci-za-hotele-<mesto> (B2B kit, «vi»),
+        /kucni-punjac-za-<auto> and /ugradnja-<punjač> (residents' kit, «ti»). Texts and JSON-LD come from the family's
+        module, the article markup (with the visible FAQ) and the copy check from site/klasteri.py."""
+        fams = [(name, mod, self.families[name]) for name, mod in FAMILIES if self.families.get(name)]
+        if not fams:
+            return
+        every = [p for name, mod, data in fams for p in mod.pages(data, EVC.SAME_AS)]
+        allowed = set(self.sources) | set(self.new_pages) | {p['slug'] for p in every} | {'index'}
+        for p in every:                                        # the thumbnail of a card that links to a new page
+            for kit in (EVC, EVB):
+                kit.THUMB.setdefault('/' + p['slug'], p['cover'])
+        for pg in every:
+            slug, docs, kit = pg['slug'], pg['docs'], KIT[pg['kind']]
+            self.set_kit_links(kit, self.b2c_cover, self.b2b_segment, None)
+            errs = KL.check(docs, kit, allowed, pg['tone'], zone=False)
+            for x in errs:
+                self.say('/' + slug, 'error', x)
+            if errs:
+                continue
+            p = kit.Page(docs)
+            d = p.sr
+            kicker, h1 = p.t(['hero', 'kicker']), p.t(['hero', 'h1'])
+            lead, updated = p.t(['hero', 'lead']), p.t(['hero', 'updated'])
+            p.t(['seo', 'title'])
+            trans = KL.trans_line(pg.get('checked') or pg['date'], pg['tone'])    # the day the facts were checked
+            parts = []
+            for si, sec in enumerate(d['sections']):
+                if sec['type'] == 'article':
+                    parts += [h for _, h in KL.render_article(p, si, sec)]
+                else:
+                    parts += [h for _, h in kit.render_section(p, si, trans)]
+            cov = full_cover(pg['cover'])
+            p.pairs.append(tuple(kit.ALT[cov]))
+            for k in ('description', 'og_title', 'og_description'):
+                p.pairs.append(pairs_of(docs, ['seo', k]))
+            p.pairs += pg['ld_names']
+            body = wf(''.join(parts))
+            for src in re.findall(r'<img src="([^"]+)"', body):
+                self.image(src, '/' + slug)
+            cover_url = self.image(kit.IMG[cov][1], '/' + slug + ' cover')
+            tpl_slug = TEMPLATE[pg['kind']]
+            g = type('Page', (), {'slug': '/' + slug})()
+            t = self.retarget(self.sources[tpl_slug], tpl_slug, g, d, pg['jsonld'], kicker, h1, lead, updated, cover_url,
+                              kit.ALT[cov][0], body)
+            cur = '<a href="/%s">' % slug          # a hub is in the footer of every page: there it is the current page
+            if pg.get('footer') and t.count(cur) == 1:
+                t = t.replace(cur, '<a href="/%s" aria-current="page" class="w--current">' % slug)
+            self.new_pages[slug] = t
+            self.template_of[slug] = tpl_slug
+            self.add_pairs(slug, p.pairs)
+            self.lastmod[slug] = pg['date']
+            if pg.get('card_on'):                  # a resort page: its card goes last on /punjaci-za-hotele
+                seg = pg['card_on']
+                c = pg['card']
+                img = self.image(kit.IMG[kit.thumb_idx(pg['cover'])][5], '/' + slug + ' card')
+                h = wf('<a class="evb2-g" href="/%s"><img class="evb2-gimg" src="%s" alt="" width="1" height="1" loading="lazy">'
+                       '<div class="evb2-gb"><div class="evb-lt">%s</div><div class="evb-lx">%s</div></div>'
+                       '<div class="evb2-garr">→</div></a>' % (slug, img, e(c[0][0]), e(c[1][0])))
+                tp = self.patch(seg)
+                m = one(tp, r'<section id="vodici" class="evmk-sec"><div class="w3"><div class="evmk-lbl">Vodiči</div>'
+                            r'<h2 class="evmk-h2">[^<]*</h2><div class="evb2-guides">', '/%s grid' % seg)
+                pos = m.end()
+                while True:
+                    cm = re.match(r'<a href="[^"]*" class="evb2-g w-inline-block">.*?</a>', tp[pos:], re.S)
+                    if not cm:
+                        break
+                    pos += cm.end()
+                if not tp[pos:].startswith('</div>'):
+                    raise ContentError('/%s: the guide grid does not end after its cards' % seg)
+                self.patched[seg] = tp[:pos] + h + tp[pos:]
+                self.add_pairs(seg, [tuple(c[0]), tuple(c[1])])
+                self.touch(seg, pg['date'])
+        for name, mod, data in fams:
+            self.say(name, 'info', '%s %s: %d pages' % (name, data['date'], len(mod.slugs(data))))
 
     # ---------------------------------------------------------------- cards
     def card(self, g):

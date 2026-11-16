@@ -1,0 +1,819 @@
+{
+ "about": "Resort pages of www.evolako.rs (/punjaci-za-hotele-<slug>): places, name forms and routes written by hand; \"public\", the \"facts\" of the routes and \"map\" written by site/tools/hoteli_data.py from the BlokVolt charger map; \"winter\": the two sources of the winter-range paragraph (read 16.11.2026). Texts: site/hoteli.py.",
+ "date": "2026-11-17",
+ "checked": "2026-11-16",
+ "routing": {
+  "service": "routing.openstreetmap.de",
+  "engine": "OSRM, OpenStreetMap data",
+  "date": "2026-11-16",
+  "corridor_km": 5,
+  "skip_first_km": 15,
+  "url": "https://routing.openstreetmap.de/",
+  "origins": {
+   "beograd": [
+    44.8125,
+    20.4612
+   ],
+   "novi-sad": [
+    45.2671,
+    19.8335
+   ]
+  }
+ },
+ "places": [
+  {
+   "slug": "kopaonik",
+   "town": "Kopaonik",
+   "name": "Kopaonik",
+   "loc": "na Kopaoniku",
+   "centre": [
+    43.2856,
+    20.8111
+   ],
+   "en": {
+    "name": "Kopaonik",
+    "loc": "on Kopaonik",
+    "dir": "to Kopaonik"
+   },
+   "ru": {
+    "name": "Копаоник",
+    "loc": "на Копаонике",
+    "dir": "на Копаоник",
+    "do": "до Копаоника"
+   },
+   "kind": "planina",
+   "stay_add": [
+    "ocm-279314"
+   ],
+   "stay_not": [],
+   "routes": {
+    "beograd": {
+     "km": 271.5,
+     "min": 233,
+     "along": [
+      [
+       "ocm-150105",
+       16
+      ],
+      [
+       "ocm-287964",
+       17
+      ],
+      [
+       "ocm-265200",
+       23
+      ],
+      [
+       "osm-n13379053204",
+       48
+      ],
+      [
+       "cg-128",
+       61
+      ],
+      [
+       "cg-105",
+       91
+      ],
+      [
+       "osm-n13317124915",
+       106
+      ],
+      [
+       "ocm-193121",
+       106
+      ],
+      [
+       "rm-4398570-2126361",
+       136
+      ],
+      [
+       "osm-n13320431183",
+       138
+      ],
+      [
+       "cg-106",
+       155
+      ],
+      [
+       "osm-n13310970419",
+       174
+      ],
+      [
+       "ocm-287965",
+       191
+      ],
+      [
+       "ps-naplatna-stanica-krusevac-istok",
+       191
+      ],
+      [
+       "ocm-263897",
+       192
+      ],
+      [
+       "ps-naplatna-stanica-krusevac-zapad",
+       193
+      ],
+      [
+       "ocm-475685",
+       200
+      ]
+     ],
+     "facts": {
+      "n_fast": 17,
+      "gone": [],
+      "last": {
+       "name": "Naplatna stanica Koševi",
+       "net": "Putevi Srbije",
+       "dc": 120.0,
+       "km": 200,
+       "km_after": 72
+      },
+      "at_place": false,
+      "prev": {
+       "name": "Naplatna stanica Koševi",
+       "net": "Putevi Srbije",
+       "dc": 120.0,
+       "km": 200,
+       "km_after": 72
+      }
+     }
+    },
+    "novi-sad": {
+     "km": 334.0,
+     "min": 273,
+     "along": [
+      [
+       "ocm-210550",
+       32
+      ],
+      [
+       "ocm-287963",
+       42
+      ],
+      [
+       "osm-n13310874259",
+       51
+      ],
+      [
+       "ocm-279313",
+       55
+      ],
+      [
+       "ocm-260781",
+       56
+      ],
+      [
+       "ocm-260782",
+       56
+      ],
+      [
+       "rm-4492033-2030493",
+       64
+      ],
+      [
+       "osm-w1451968119",
+       67
+      ],
+      [
+       "osm-w1393014271",
+       78
+      ],
+      [
+       "cg-72",
+       78
+      ],
+      [
+       "ye-moneta-obrenovac",
+       103
+      ],
+      [
+       "cg-88",
+       129
+      ],
+      [
+       "ps-odmoriste-lalinci",
+       170
+      ],
+      [
+       "cg-131",
+       195
+      ],
+      [
+       "ocm-260806",
+       202
+      ],
+      [
+       "osm-n12144831292",
+       202
+      ],
+      [
+       "rm-4389846-2034077",
+       204
+      ],
+      [
+       "ocm-260807",
+       206
+      ],
+      [
+       "cg-129",
+       208
+      ],
+      [
+       "cg-90",
+       242
+      ]
+     ],
+     "facts": {
+      "n_fast": 20,
+      "gone": [],
+      "last": {
+       "name": "OMV Kraljevo 2",
+       "net": "Charge&GO",
+       "dc": 70,
+       "km": 242,
+       "km_after": 92
+      },
+      "at_place": false,
+      "prev": {
+       "name": "OMV Kraljevo 2",
+       "net": "Charge&GO",
+       "dc": 70,
+       "km": 242,
+       "km_after": 92
+      }
+     }
+    }
+   },
+   "public": {
+    "n": 9,
+    "n_dc50": 1,
+    "n_stay": 8,
+    "n_stay_guests": 2,
+    "nets": [
+     "Charge&GO",
+     "Orion eMobility"
+    ],
+    "best": {
+     "name": "Milkop Raška",
+     "net": "Charge&GO",
+     "dc": 90,
+     "km": 16.1,
+     "address": "Ibarska 77, Raška"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/kopaonik/",
+    "stay_names": [
+     "Brzeće centar apartments",
+     "Chalet Vrhovi Kopaonik",
+     "HOTEL VICEROY",
+     "Hotel Junior",
+     "Hotel Kopaonik",
+     "Hotel Zoned",
+     "Kraljevi Čardaci - Garaža",
+     "Rtanj Kopaonik Eco Resort & Spa"
+    ]
+   },
+   "dir": "na Kopaonik",
+   "do": "do Kopaonika"
+  },
+  {
+   "slug": "zlatibor",
+   "town": "Zlatibor",
+   "name": "Zlatibor",
+   "loc": "na Zlatiboru",
+   "centre": [
+    43.7292,
+    19.7003
+   ],
+   "en": {
+    "name": "Zlatibor",
+    "loc": "on Zlatibor",
+    "dir": "to Zlatibor"
+   },
+   "ru": {
+    "name": "Златибор",
+    "loc": "на Златиборе",
+    "dir": "на Златибор",
+    "do": "до Златибора"
+   },
+   "kind": "planina",
+   "stay_add": [
+    "own-21st-century-adora-zlatibor",
+    "own-queen-of-zlatibor"
+   ],
+   "stay_not": [],
+   "routes": {
+    "beograd": {
+     "km": 219.4,
+     "min": 184,
+     "along": [
+      [
+       "osm-w1393014271",
+       18
+      ],
+      [
+       "cg-72",
+       18
+      ],
+      [
+       "ye-moneta-obrenovac",
+       38
+      ],
+      [
+       "cg-88",
+       64
+      ],
+      [
+       "ps-odmoriste-lalinci",
+       105
+      ],
+      [
+       "cg-131",
+       130
+      ],
+      [
+       "ocm-260806",
+       137
+      ],
+      [
+       "osm-n12144831292",
+       137
+      ],
+      [
+       "ocm-260807",
+       139
+      ],
+      [
+       "cg-129",
+       139
+      ],
+      [
+       "rm-4389846-2034077",
+       142
+      ],
+      [
+       "ocm-265196",
+       146
+      ],
+      [
+       "cg-130",
+       146
+      ],
+      [
+       "ocm-202430",
+       219
+      ]
+     ],
+     "facts": {
+      "n_fast": 14,
+      "gone": [],
+      "last": {
+       "name": "BMW TO Zlatibor",
+       "net": "Orion eMobility",
+       "dc": 50,
+       "km": 219,
+       "km_after": 0
+      },
+      "at_place": true,
+      "prev": {
+       "name": "OMV Čačak 2",
+       "net": "Charge&GO",
+       "dc": 130,
+       "km": 146,
+       "km_after": 73
+      }
+     }
+    },
+    "novi-sad": {
+     "km": 284.1,
+     "min": 216,
+     "along": [
+      [
+       "ocm-210550",
+       32
+      ],
+      [
+       "ocm-287963",
+       42
+      ],
+      [
+       "osm-n13310874259",
+       51
+      ],
+      [
+       "ocm-279313",
+       55
+      ],
+      [
+       "ocm-260781",
+       56
+      ],
+      [
+       "ocm-260782",
+       56
+      ],
+      [
+       "rm-4492033-2030493",
+       64
+      ],
+      [
+       "osm-w1451968119",
+       67
+      ],
+      [
+       "osm-w1393014271",
+       77
+      ],
+      [
+       "cg-72",
+       78
+      ],
+      [
+       "ye-moneta-obrenovac",
+       102
+      ],
+      [
+       "cg-88",
+       129
+      ],
+      [
+       "ps-odmoriste-lalinci",
+       169
+      ],
+      [
+       "cg-131",
+       194
+      ],
+      [
+       "ocm-260806",
+       202
+      ],
+      [
+       "osm-n12144831292",
+       202
+      ],
+      [
+       "ocm-260807",
+       204
+      ],
+      [
+       "cg-129",
+       204
+      ],
+      [
+       "rm-4389846-2034077",
+       207
+      ],
+      [
+       "ocm-265196",
+       211
+      ],
+      [
+       "cg-130",
+       211
+      ],
+      [
+       "ocm-202430",
+       284
+      ]
+     ],
+     "facts": {
+      "n_fast": 22,
+      "gone": [],
+      "last": {
+       "name": "BMW TO Zlatibor",
+       "net": "Orion eMobility",
+       "dc": 50,
+       "km": 284,
+       "km_after": 0
+      },
+      "at_place": true,
+      "prev": {
+       "name": "OMV Čačak 2",
+       "net": "Charge&GO",
+       "dc": 130,
+       "km": 211,
+       "km_after": 73
+      }
+     }
+    }
+   },
+   "public": {
+    "n": 15,
+    "n_dc50": 1,
+    "n_stay": 12,
+    "n_stay_guests": 4,
+    "nets": [
+     "Lidl eCharge",
+     "Orion eMobility",
+     "Tesla"
+    ],
+    "best": {
+     "name": "BMW TO Zlatibor",
+     "net": "Orion eMobility",
+     "dc": 50,
+     "km": 0.3,
+     "address": "Miladina Pećinara 2, Zlatibor"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/zlatibor/",
+    "stay_names": [
+     "21st century Zlatibor – Adora",
+     "Camping Viljamovka",
+     "Grand hotel Tornik",
+     "Guest House Vila Đokić",
+     "Hotel Buket",
+     "Hotel Konak",
+     "Hotel Mona Zlatibor",
+     "Hotel Mons",
+     "Hotel O2 Tornik",
+     "Hotel Zlatibor Resort & Spa",
+     "Queen of Zlatibor",
+     "Vila Barovic"
+    ]
+   },
+   "dir": "na Zlatibor",
+   "do": "do Zlatibora"
+  },
+  {
+   "slug": "vrnjacka-banja",
+   "town": "Vrnjačka Banja",
+   "name": "Vrnjačka Banja",
+   "loc": "u Vrnjačkoj Banji",
+   "centre": [
+    43.6231,
+    20.8931
+   ],
+   "en": {
+    "name": "Vrnjačka Banja",
+    "loc": "in Vrnjačka Banja",
+    "dir": "to Vrnjačka Banja"
+   },
+   "ru": {
+    "name": "Врнячка-Баня",
+    "loc": "во Врнячка-Бане",
+    "dir": "во Врнячка-Баню",
+    "do": "до Врнячка-Бани"
+   },
+   "kind": "banja",
+   "stay_add": [],
+   "stay_not": [],
+   "routes": {
+    "beograd": {
+     "km": 233.8,
+     "min": 150,
+     "along": [
+      [
+       "ocm-150105",
+       16
+      ],
+      [
+       "ocm-287964",
+       17
+      ],
+      [
+       "ocm-265200",
+       23
+      ],
+      [
+       "osm-n13379053204",
+       48
+      ],
+      [
+       "cg-128",
+       61
+      ],
+      [
+       "cg-105",
+       91
+      ],
+      [
+       "osm-n13317124915",
+       106
+      ],
+      [
+       "ocm-193121",
+       106
+      ],
+      [
+       "rm-4398570-2126361",
+       136
+      ],
+      [
+       "osm-n13320431183",
+       138
+      ],
+      [
+       "cg-106",
+       154
+      ],
+      [
+       "osm-n13310970419",
+       174
+      ],
+      [
+       "ocm-287965",
+       190
+      ],
+      [
+       "ps-naplatna-stanica-krusevac-istok",
+       191
+      ],
+      [
+       "ocm-263897",
+       192
+      ],
+      [
+       "ps-naplatna-stanica-krusevac-zapad",
+       193
+      ],
+      [
+       "ocm-475685",
+       199
+      ],
+      [
+       "ocm-475501",
+       218
+      ],
+      [
+       "ocm-475322",
+       229
+      ]
+     ],
+     "facts": {
+      "n_fast": 19,
+      "gone": [],
+      "last": {
+       "name": "Naplatna stanica Vrnjačka Banja",
+       "net": "Putevi Srbije",
+       "dc": 120.0,
+       "km": 229,
+       "km_after": 5
+      },
+      "at_place": true,
+      "prev": {
+       "name": "Naplatna stanica Trstenik",
+       "net": "Putevi Srbije",
+       "dc": 120.0,
+       "km": 218,
+       "km_after": 16
+      }
+     }
+    },
+    "novi-sad": {
+     "km": 261.9,
+     "min": 189,
+     "along": [
+      [
+       "ocm-210550",
+       32
+      ],
+      [
+       "ocm-287963",
+       42
+      ],
+      [
+       "osm-n13310874259",
+       51
+      ],
+      [
+       "ocm-279313",
+       55
+      ],
+      [
+       "ocm-260781",
+       56
+      ],
+      [
+       "ocm-260782",
+       56
+      ],
+      [
+       "rm-4492033-2030493",
+       64
+      ],
+      [
+       "osm-w1451968119",
+       67
+      ],
+      [
+       "osm-w1393014271",
+       77
+      ],
+      [
+       "cg-72",
+       78
+      ],
+      [
+       "ye-moneta-obrenovac",
+       102
+      ],
+      [
+       "cg-88",
+       129
+      ],
+      [
+       "ps-odmoriste-lalinci",
+       169
+      ],
+      [
+       "cg-131",
+       194
+      ],
+      [
+       "ocm-260806",
+       201
+      ],
+      [
+       "osm-n12144831292",
+       202
+      ],
+      [
+       "rm-4389846-2034077",
+       204
+      ],
+      [
+       "ocm-260807",
+       206
+      ],
+      [
+       "cg-129",
+       208
+      ],
+      [
+       "ocm-475322",
+       260
+      ]
+     ],
+     "facts": {
+      "n_fast": 20,
+      "gone": [],
+      "last": {
+       "name": "Naplatna stanica Vrnjačka Banja",
+       "net": "Putevi Srbije",
+       "dc": 120.0,
+       "km": 260,
+       "km_after": 2
+      },
+      "at_place": true,
+      "prev": {
+       "name": "OMV Čačak 1",
+       "net": "Charge&GO",
+       "dc": 140,
+       "km": 208,
+       "km_after": 54
+      }
+     }
+    }
+   },
+   "public": {
+    "n": 8,
+    "n_dc50": 2,
+    "n_stay": 2,
+    "n_stay_guests": 2,
+    "nets": [
+     "Putevi Srbije"
+    ],
+    "best": {
+     "name": "Naplatna stanica Vrnjačka Banja",
+     "net": "Putevi Srbije",
+     "dc": 120.0,
+     "km": 3.3,
+     "address": "A5 · Pojate–Vrnjačka Banja"
+    },
+    "bv_url": "https://www.blokvolt.rs/gradovi/vrnjacka-banja/",
+    "stay_names": [
+     "Hotel Fontana",
+     "Solaris Resort"
+    ]
+   },
+   "dir": "u Vrnjačku Banju",
+   "do": "do Vrnjačke Banje"
+  }
+ ],
+ "map": {
+  "checked": "28.10.2026",
+  "date": "2026-11-16",
+  "source": "hemptoon/blokvolt-rs 71449bd",
+  "stations": 395
+ },
+ "winter": {
+  "adac": {
+   "pct": 57,
+   "published": "2026-01-22",
+   "url": "https://presse.adac.de/meldungen/adac-ev/tests/winter-reichweitentest-familientauglicher-e-autos.html",
+   "title": "ADAC — Audi A6 Avant e-tron performance gewinnt Winter-Reichweitentest familientauglicher E-Autos (22.01.2026)",
+   "quote": "Mehrverbrauch im Winter-Langstreckentest bei 0° C und Autobahntempo durchschnittlich 57 Prozent über der WLTP-Angabe",
+   "checked": "2026-11-16"
+  },
+  "recurrent": {
+   "pct": 78,
+   "models": 34,
+   "url": "https://www.recurrentauto.com/research/winter-ev-range-loss",
+   "title": "Recurrent — Best EV for Winter & Cold Weather Range",
+   "quote": "the 34 popular EV models that we’re analyzing average 78% of their range in freezing temperatures compared to ideal conditions",
+   "checked": "2026-11-16"
+  },
+  "example_wltp_km": 400
+ }
+}

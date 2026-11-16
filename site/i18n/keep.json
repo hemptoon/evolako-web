@@ -1,6 +1,18 @@
 {
  "_about": "Texts that stay as they are on the /en/ and /ru/ pages (brand, product and package names, language names, abbreviations, names in examples, titles of Serbian sources, the media kit's texts in the other languages …), each with the reason. Key as in en.json. A translation in en.json / ru.json wins over an entry here (e.g. Novi Sad stays in English, Нови-Сад in Russian). QA counts a kept text as allowed, never as \"Serbian left\".",
  "entries": {
+  "104y9fi": {
+   "sr": "Q8 50 e-tron",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-audi-e-tron)"
+  },
+  "10qp0o3": {
+   "sr": "Renault Group — All there is to know about charging Renault ZOE",
+   "why": "title of a foreign-language source, cited as published (/kucni-punjac-za-renault-zoe)"
+  },
+  "10sivgd": {
+   "sr": "Stellantis — The new Fiat 500: all-new, all-electric (04.03.2020)",
+   "why": "title of a foreign-language source, cited as published (/kucni-punjac-za-fiat-500e)"
+  },
   "11vuy5y": {
    "sr": "Telegram",
    "why": "brand"
@@ -13,6 +25,10 @@
    "sr": "B92 — Potrošnja struje moći će da se prati po satima: Sve više domova u Srbiji ima pametna brojila, 23.09.2026",
    "why": "title of a Serbian-language source, cited as published (/novosti)"
   },
+  "12n9kei": {
+   "sr": "i3 60 Ah",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-bmw-i3)"
+  },
   "1360goy": {
    "sr": "Evolako solves electric car charging for people who live in apartment buildings. At a parking space or in a garage it installs a heavy-duty socket with a MID-certified meter or an 11 kW wallbox (MID meter optional), provides free document templates for the residents’ assembly or the garage owner, and every month bills electricity at the price on the EPS bill, with no markup. Packages with basic installation next to the distribution board start at RSD 39,000 (final price), and installation takes one working day. Evolako works all over Serbia.",
    "why": "the media kit gives its boilerplate in Serbian, English and Russian"
@@ -21,6 +37,10 @@
    "sr": "Wallbox Plus",
    "why": "package name"
   },
+  "14526v2": {
+   "sr": "Spring Electric 45",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-dacia-spring)"
+  },
   "14pkb5w": {
    "sr": "Ministarstvo građevinarstva, saobraćaja i infrastrukture — Pitanja i odgovori o stanovanju",
    "why": "title of a Serbian-language source, cited as published (/sabloni-za-skupstinu)"
@@ -28,6 +48,18 @@
   "14wa3qp": {
    "sr": "Kruševac",
    "why": "city name, the same in English (Russian: Крушевац)"
+  },
+  "14xbwfx": {
+   "sr": "Leaf 24 kWh (2011–2017)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-nissan-leaf)"
+  },
+  "150gicc": {
+   "sr": "Zlatibor",
+   "why": "place name, the same in English (/punjaci-za-hotele-kopaonik, /punjaci-za-hotele-vrnjacka-banja …)"
+  },
+  "159k4d9": {
+   "sr": "BMW Group — The BMW i3 120 Ah and the BMW i3s 120 Ah (28.09.2018)",
+   "why": "title of a foreign-language source, cited as published (/kucni-punjac-za-bmw-i3)"
   },
   "15cmuww": {
    "sr": "ZGRADA",
@@ -49,6 +81,18 @@
    "sr": "N1 — Jeftinija struja noću: tri zone u Srbiji (08.09.2023.)",
    "why": "title of a Serbian-language source, cited as published (city pages /ugradnja-punjaca-*)"
   },
+  "181457": {
+   "sr": "MG4",
+   "why": "car model or version name, the same in every language (/kucni-punjac-po-modelu, /kucni-punjac-za-mg4)"
+  },
+  "18bvei4": {
+   "sr": "i3 / i3s 120 Ah (2018–2022)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-bmw-i3)"
+  },
+  "190qdt3": {
+   "sr": "Nissan Leaf",
+   "why": "car model or version name, the same in every language (/kucni-punjac-po-modelu, /kucni-punjac-za-nissan-leaf)"
+  },
   "19jxmhn": {
    "sr": "Charge&GO",
    "why": "charging network brand (map filter)"
@@ -60,6 +104,10 @@
   "19sncyp": {
    "sr": "Prokuplje",
    "why": "city name, the same in English (Russian: Прокупле)"
+  },
+  "19ydb05": {
+   "sr": "Volkswagen Newsroom — The ID.3: three battery sizes at series production launch (2019)",
+   "why": "title of a foreign-language source, cited as published (/kucni-punjac-za-vw-id)"
   },
   "1aciyjp": {
    "sr": "Evolako решает вопрос зарядки электромобиля для тех, кто живёт в многоквартирных домах. На парковочное место или в гараж устанавливается усиленная розетка с сертифицированным MID-счётчиком или wallbox на 11 кВт (MID-счётчик по желанию); Evolako даёт бесплатные шаблоны документов для собрания жильцов или владельца гаража и каждый месяц рассчитывает электричество по цене из счёта EPS, без наценки. Пакеты с базовым монтажом рядом со щитком — от 39 000 RSD (итоговая цена), установка занимает один рабочий день. Evolako работает по всей Сербии.",
@@ -73,6 +121,14 @@
    "sr": "Marko",
    "why": "example first name in a form placeholder"
   },
+  "1ahw2wx": {
+   "sr": "Fiat 500e",
+   "why": "car model or version name, the same in every language (/kucni-punjac-po-modelu, /kucni-punjac-za-fiat-500e)"
+  },
+  "1br22z8": {
+   "sr": "e-tron 55 quattro",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-audi-e-tron)"
+  },
   "1bs8hg1": {
    "sr": "Facebook",
    "why": "brand"
@@ -81,17 +137,45 @@
    "sr": "PNG",
    "why": "file format"
   },
+  "1c1kis7": {
+   "sr": "ID.3 Pro 58 kWh",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-vw-id)"
+  },
+  "1c97iyb": {
+   "sr": "Dolphin Surf (Boost, Comfort)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-byd)"
+  },
   "1ca7mnp": {
    "sr": "PDF",
    "why": "file format"
+  },
+  "1cy8drr": {
+   "sr": "Atto 2 Comfort",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-byd)"
   },
   "1d5zzif": {
    "sr": "WhatsApp",
    "why": "brand"
   },
+  "1d8xrad": {
+   "sr": "Spring 70 / 100",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-dacia-spring)"
+  },
   "1dv9ne7": {
    "sr": "RTS — Pametna brojila stižu u sve više domova – potrošnja struje moći će da se prati po satima, 23.09.2026",
    "why": "title of a Serbian-language source, cited as published (/novosti)"
+  },
+  "1eejigg": {
+   "sr": "BYD",
+   "why": "car model or version name, the same in every language (/kucni-punjac-po-modelu, /kucni-punjac-za-byd)"
+  },
+  "1eiaxfj": {
+   "sr": "MG4 Trophy Extended Range 77 kWh",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-mg4)"
+  },
+  "1f0kez2": {
+   "sr": "Zoe Z.E. 40 (R90, R110)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-renault-zoe)"
   },
   "1gs4s2m": {
    "sr": "YouTube",
@@ -109,6 +193,14 @@
    "sr": "Evolako устанавливает домашние зарядки для электромобилей в гаражах многоквартирных домов и в частных домах — с MID-счётчиком (в START и ZGRADA, к wallbox — по желанию) и ежемесячным расчётом за электричество без наценки. Шаблоны для собрания жильцов и владельца гаража бесплатны для всех.",
    "why": "the media kit gives its boilerplate in Serbian, English and Russian"
   },
+  "1jagn5h": {
+   "sr": "Kopaonik",
+   "why": "place name, the same in English (/punjaci-za-hotele-kopaonik, /punjaci-za-hotele-vrnjacka-banja …)"
+  },
+  "1jbqwqz": {
+   "sr": "i3 / i3s 94 Ah",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-bmw-i3)"
+  },
   "1jdr5k2": {
    "sr": "EVO-XXXXX",
    "why": "format of a referral code"
@@ -117,9 +209,21 @@
    "sr": "TikTok",
    "why": "brand"
   },
+  "1kov4jt": {
+   "sr": "Spring Electric 45 (2021–2024)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-dacia-spring)"
+  },
   "1me9boy": {
    "sr": "Valjevo",
    "why": "city name, the same in English (Russian: Валево)"
+  },
+  "1neehsm": {
+   "sr": "Schneider EVlink Pro AC",
+   "why": "charger brand, range or model code, the same in every language (/ugradnja-schneider-evlink)"
+  },
+  "1nul2ng": {
+   "sr": "Atto 3 Evo",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-byd)"
   },
   "1o986ep": {
    "sr": "Užice",
@@ -129,17 +233,65 @@
    "sr": "Vršac",
    "why": "city name, the same in English (Russian: Вршац)"
   },
+  "1ojawpu": {
+   "sr": "Dacia Spring",
+   "why": "car model or version name, the same in every language (/kucni-punjac-po-modelu, /kucni-punjac-za-dacia-spring)"
+  },
+  "1okdqs5": {
+   "sr": "TAC-W11",
+   "why": "charger brand, range or model code, the same in every language (/ugradnja-abb-terra-ac)"
+  },
   "1ozgz0k": {
    "sr": "Bor",
    "why": "city name, the same in English (Russian: Бор)"
+  },
+  "1pl7zf8": {
+   "sr": "VW e-Golf",
+   "why": "car model or version name, the same in every language (/kucni-punjac-po-modelu, /kucni-punjac-za-vw-e-golf)"
+  },
+  "1ps79k8": {
+   "sr": "Schneider Charge (EVH5A)",
+   "why": "charger brand, range or model code, the same in every language (/ugradnja-schneider-evlink)"
+  },
+  "1ptu87h": {
+   "sr": "MG4 Comfort / Luxury 64 kWh",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-mg4)"
+  },
+  "1q1buo7": {
+   "sr": "Nissan Europe Newsroom — The new Nissan LEAF in detail (2013)",
+   "why": "title of a foreign-language source, cited as published (/kucni-punjac-za-nissan-leaf)"
+  },
+  "1r9reoz": {
+   "sr": "Seal (Design, Excellence)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-byd)"
+  },
+  "1rw0ksh": {
+   "sr": "Leaf 40 kWh",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-nissan-leaf)"
   },
   "1rxj74y": {
    "sr": "Evolako ugrađuje kućne punjače za električne automobile u garažama stambenih zgrada i kućama — sa MID brojilom (u START i ZGRADA, uz wallbox po izboru) i mesečnim obračunom struje bez marže. Šabloni za skupštinu i vlasnika garaže su besplatni za sve.",
    "why": "the media kit gives its boilerplate in Serbian, English and Russian"
   },
+  "1se1ssv": {
+   "sr": "Zoe Z.E. 50 (R110, R135)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-renault-zoe)"
+  },
+  "1ssy19x": {
+   "sr": "Model S / Model X 2016–2020",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-teslu)"
+  },
   "1thqzpw": {
    "sr": "Zrenjanin",
    "why": "city name, the same in English (Russian: Зренянин)"
+  },
+  "1tr36f9": {
+   "sr": "500e 42 kWh (87 kW)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-fiat-500e)"
+  },
+  "1tsc792": {
+   "sr": "— EVlink Home, Schneider Charge, EVlink Pro AC",
+   "why": "charger brand, range or model code, the same in every language (/samo-ugradnja-punjaca)"
   },
   "1txdcke": {
    "sr": "Wallbox 11 kW",
@@ -149,17 +301,37 @@
    "sr": "latinica",
    "why": "Serbian script name in the language menu"
   },
+  "1uhetim": {
+   "sr": "Volkswagen Newsroom — The e-Golf, IAA 2019: key aspects",
+   "why": "title of a foreign-language source, cited as published (/kucni-punjac-za-vw-e-golf)"
+  },
   "1x9e01k": {
    "sr": "Šabac",
    "why": "city name, the same in English (Russian: Шабац)"
+  },
+  "1xsd2nx": {
+   "sr": "Wallbox Pulsar Max 11 kW",
+   "why": "charger brand, range or model code, the same in every language (/ugradnja-wallbox-pulsar)"
   },
   "1y5qj30": {
    "sr": "[PRAVNI-PODACI: poslovno ime · sedište · MB · PIB] · hello@evolako.com",
    "why": "placeholder for the legal data of the business (hidden on the page until they are filled in)"
   },
+  "1y90cq0": {
+   "sr": "Wallbox — OCPP activation and setup guide",
+   "why": "title of a foreign-language source, cited as published (/ugradnja-wallbox-pulsar)"
+  },
+  "1yc9766": {
+   "sr": "Sealion 7 (Comfort, Design)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-byd)"
+  },
   "1ym8wsv": {
    "sr": "Serbia",
    "why": "already English in the Serbian page (Russian: Сербия)"
+  },
+  "1ys5jus": {
+   "sr": "Tesla",
+   "why": "car model or version name, the same in every language (/kucni-punjac-po-modelu, /kucni-punjac-za-teslu)"
   },
   "30xvgf": {
    "sr": "Start",
@@ -185,6 +357,14 @@
    "sr": "Instagram",
    "why": "brand"
   },
+  "4c2jv": {
+   "sr": "Zoe 22 kWh (R240, R90)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-renault-zoe)"
+  },
+  "4dil2j": {
+   "sr": "Wallbox Pulsar",
+   "why": "charger brand, range or model code, the same in every language (/samo-ugradnja-punjaca, /ugradnja-wallbox-pulsar)"
+  },
   "4uznwq": {
    "sr": "Evolako",
    "why": "brand"
@@ -193,9 +373,25 @@
    "sr": "WALLBOX — 94.000",
    "why": "package name and price"
   },
+  "5yg43j": {
+   "sr": "Volkswagen Newsroom — e-Golf: charging concept and charging equipment (2014)",
+   "why": "title of a foreign-language source, cited as published (/kucni-punjac-za-vw-e-golf)"
+  },
+  "628ee6": {
+   "sr": "ABB Terra AC",
+   "why": "charger brand, range or model code, the same in every language (/samo-ugradnja-punjaca, /ugradnja-abb-terra-ac)"
+  },
   "6c3tr2": {
    "sr": "WALLBOX 11 kW",
    "why": "package name"
+  },
+  "6f62q": {
+   "sr": "Leaf 40 kWh (2018–2024)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-nissan-leaf)"
+  },
+  "7e4z17": {
+   "sr": "BMW i3",
+   "why": "car model or version name, the same in every language (/kucni-punjac-po-modelu, /kucni-punjac-za-bmw-i3)"
   },
   "7nql6j": {
    "sr": "English",
@@ -205,6 +401,14 @@
    "sr": "Leskovac",
    "why": "city name, the same in English (Russian: Лесковац)"
   },
+  "8atkgr": {
+   "sr": "Renault Group — Dacia Spring Electric (15.10.2020)",
+   "why": "title of a foreign-language source, cited as published (/kucni-punjac-za-dacia-spring)"
+  },
+  "8hj2v0": {
+   "sr": "MG4 Standard 51 kWh",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-mg4)"
+  },
   "8xje9h": {
    "sr": "Wallbox Pulsar Max",
    "why": "product name"
@@ -213,9 +417,17 @@
    "sr": "EN",
    "why": "language code in the language menu"
   },
+  "9dsgbx": {
+   "sr": "i3 / i3s 120 Ah",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-bmw-i3)"
+  },
   "9kzw7d": {
    "sr": "Avatar 1024 px",
    "why": "already English in the Serbian page"
+  },
+  "9y7u3b": {
+   "sr": "Leaf e+ 62 kWh",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-nissan-leaf)"
   },
   "alao67": {
    "sr": "Vranje",
@@ -228,6 +440,10 @@
   "azti8w": {
    "sr": "Font: Onest (SIL Open Font License)",
    "why": "already English in the Serbian page"
+  },
+  "bbdcab": {
+   "sr": "Model 3 / Model Y Long Range, Performance",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-teslu)"
   },
   "bou7k1": {
    "sr": "SVG",
@@ -249,6 +465,10 @@
    "sr": "Danas — Od danas skuplja struja: Kako izgleda novi cenovnik po tarifama i zonama?, 01.10.2025",
    "why": "title of a Serbian-language source, cited as published (/novosti)"
   },
+  "cukhon": {
+   "sr": "Leaf 24 kWh",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-nissan-leaf)"
+  },
   "d4yke7": {
    "sr": "LinkedIn",
    "why": "brand"
@@ -256,6 +476,10 @@
   "d9t6cp": {
    "sr": "Vojvodina",
    "why": "province name, the same in English (Russian: Воеводина)"
+  },
+  "df7v9q": {
+   "sr": "EVlink Pro AC (EVB3)",
+   "why": "charger brand, range or model code, the same in every language (/ugradnja-schneider-evlink)"
   },
   "dsrlbk": {
    "sr": "E-mail",
@@ -265,6 +489,10 @@
    "sr": "ћирилица",
    "why": "Serbian script name in the language menu"
   },
+  "eyqll5": {
+   "sr": "ID.4 / ID.5 Pro, GTX 77 kWh",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-vw-id)"
+  },
   "fre75m": {
    "sr": "Zakon o obligacionim odnosima — prečišćen tekst (Paragraf)",
    "why": "title of a Serbian-language source, cited as published (/sabloni-za-skupstinu)"
@@ -272,6 +500,10 @@
   "g2vsvw": {
    "sr": "Danas — Poskupljenje struje čeka izbore, 31.08.2026",
    "why": "title of a Serbian-language source, cited as published (/novosti)"
+  },
+  "g9jjaj": {
+   "sr": "ID.3 Pro S 77 kWh",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-vw-id)"
   },
   "ge6uwe": {
    "sr": "Zakon o stanovanju i održavanju zgrada — Pravno-informacioni sistem Republike Srbije",
@@ -289,9 +521,17 @@
    "sr": "FAQ",
    "why": "English abbreviation (Russian has its own translation)"
   },
+  "i43jr0": {
+   "sr": "ID.3 Pure 52 kWh",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-vw-id)"
+  },
   "ieqfjb": {
    "sr": "Copy email to clipboard",
    "why": "already English in the Serbian page (Russian has a translation)"
+  },
+  "ijn7zy": {
+   "sr": "Renault Zoe",
+   "why": "car model or version name, the same in every language (/kucni-punjac-po-modelu, /kucni-punjac-za-renault-zoe)"
   },
   "j1sac1": {
    "sr": "Map",
@@ -305,17 +545,41 @@
    "sr": "Kurir — Tokom ovih sati struja je jeftinija: noćna tarifa nije ista za sve (05.01.2026.)",
    "why": "title of a Serbian-language source, cited as published (city pages /ugradnja-punjaca-*)"
   },
+  "jjb9vt": {
+   "sr": "ADAC — Audi A6 Avant e-tron performance gewinnt Winter-Reichweitentest familientauglicher E-Autos (22.01.2026)",
+   "why": "title of a foreign-language source, cited as published (/punjaci-za-hotele-kopaonik, /punjaci-za-hotele-vrnjacka-banja …)"
+  },
   "kad2jz": {
    "sr": "Kraljevo",
    "why": "city name, the same in English (Russian: Кралево)"
+  },
+  "kfsnmq": {
+   "sr": "Audi — The Audi Q8 e-tron: battery, capacity and charging power",
+   "why": "title of a foreign-language source, cited as published (/kucni-punjac-za-audi-e-tron)"
   },
   "l8n0en": {
    "sr": "Wallbox Premium",
    "why": "package name"
   },
+  "lcwnti": {
+   "sr": "Q8 55 e-tron, SQ8 e-tron",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-audi-e-tron)"
+  },
   "lzym76": {
    "sr": "Požarevac",
    "why": "city name, the same in English (Russian: Пожаревац)"
+  },
+  "m7zcf7": {
+   "sr": "Tesla Wall Connector",
+   "why": "charger brand, range or model code, the same in every language (/samo-ugradnja-punjaca, /ugradnja-tesla-wall-connector)"
+  },
+  "mjt18z": {
+   "sr": "TAC-W22",
+   "why": "charger brand, range or model code, the same in every language (/ugradnja-abb-terra-ac)"
+  },
+  "n4epaa": {
+   "sr": "Renault Group — New ZOE: unmatched charging flexibility (13.09.2019)",
+   "why": "title of a foreign-language source, cited as published (/kucni-punjac-za-renault-zoe)"
   },
   "nv8dvu": {
    "sr": "Zakon o stanovanju i održavanju zgrada — prečišćen tekst (Paragraf)",
@@ -333,6 +597,10 @@
    "sr": "Pirot",
    "why": "city name, the same in English (Russian: Пирот)"
   },
+  "otf5ij": {
+   "sr": "Vrnjačka Banja",
+   "why": "place name, the same in English (/punjaci-za-hotele-kopaonik, /punjaci-za-hotele-vrnjacka-banja …)"
+  },
   "qdo01e": {
    "sr": "EPS — Osnovni pojmovi (odobrena snaga)",
    "why": "title of a Serbian-language source, cited as published (/sabloni-za-skupstinu)"
@@ -344,6 +612,10 @@
   "shgckk": {
    "sr": "Kragujevac",
    "why": "city name, the same in English (Russian: Крагуевац)"
+  },
+  "sjbghf": {
+   "sr": "Nissan Europe Newsroom — The new Nissan LEAF (40 kWh)",
+   "why": "title of a foreign-language source, cited as published (/kucni-punjac-za-nissan-leaf)"
   },
   "snxqoj": {
    "sr": "START — 39.000",
@@ -357,13 +629,49 @@
    "sr": "Русский",
    "why": "language name, written in its own language (language menu, media kit)"
   },
+  "t5s126": {
+   "sr": "i3 60 Ah (2013–2017)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-bmw-i3)"
+  },
+  "tzkie3": {
+   "sr": "Leaf e+ 62 kWh (2019–2024)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-nissan-leaf)"
+  },
+  "ub8gg5": {
+   "sr": "Recurrent — Best EV for Winter & Cold Weather Range",
+   "why": "title of a foreign-language source, cited as published (/punjaci-za-hotele-kopaonik, /punjaci-za-hotele-vrnjacka-banja …)"
+  },
+  "ublqek": {
+   "sr": "TAC-W7",
+   "why": "charger brand, range or model code, the same in every language (/ugradnja-abb-terra-ac)"
+  },
   "v3yiqf": {
    "sr": "CRM",
    "why": "abbreviation"
   },
+  "v5kjhh": {
+   "sr": "TAC-W4",
+   "why": "charger brand, range or model code, the same in every language (/ugradnja-abb-terra-ac)"
+  },
+  "vmpi4j": {
+   "sr": "Sealion 7 Excellence",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-byd)"
+  },
+  "vp3uq6": {
+   "sr": "EVlink Home (EVH4S)",
+   "why": "charger brand, range or model code, the same in every language (/ugradnja-schneider-evlink)"
+  },
+  "wg3bjh": {
+   "sr": "Schneider EVlink",
+   "why": "charger brand, range or model code, the same in every language (/samo-ugradnja-punjaca, /ugradnja-schneider-evlink)"
+  },
   "wik5m3": {
    "sr": "Niš",
    "why": "city name, the same in English (Russian: Ниш)"
+  },
+  "witbpn": {
+   "sr": "i3 / i3s 94 Ah (2016–2018)",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-bmw-i3)"
   },
   "wkfe1w": {
    "sr": "Bonus",
@@ -377,6 +685,10 @@
    "sr": "Evolako logo",
    "why": "already English in the Serbian page (Russian has a translation)"
   },
+  "y5pb3x": {
+   "sr": "Audi MediaCenter — The Audi e-tron: battery and charging technology (2018)",
+   "why": "title of a foreign-language source, cited as published (/kucni-punjac-za-audi-e-tron)"
+  },
   "y5xav3": {
    "sr": "CSV",
    "why": "file format"
@@ -384,6 +696,14 @@
   "y72bx5": {
    "sr": "Sombor",
    "why": "city name, the same in English (Russian: Сомбор)"
+  },
+  "yuez91": {
+   "sr": "ID.4 Pure 52 kWh",
+   "why": "car model or version name, the same in every language (/kucni-punjac-za-vw-id)"
+  },
+  "zouur6": {
+   "sr": "ABB Terra AC 11 kW",
+   "why": "charger brand, range or model code, the same in every language (/ugradnja-abb-terra-ac)"
   },
   "zy2fk": {
    "sr": "Evolako installs home chargers for electric cars in apartment-building garages and houses — with a MID-certified meter (in START and ZGRADA, optional with a wallbox) and monthly electricity billing with no markup. The templates for the residents’ assembly and the garage owner are free for everyone.",

@@ -1,0 +1,2157 @@
+{
+ "about": "Car pages of www.evolako.rs (/kucni-punjac-za-<slug>, hub /kucni-punjac-po-modelu): the on-board AC charger, the battery and the charging times of each version as the manufacturer states them in the documents under \"sources\" (read 16.11.2026), and the texts that only one model has. \"za\": the name after «za» (accusative: Teslu, Daciju Spring); \"make\": the page is about a whole make (English «a Tesla», not «the Tesla»). \"kind\": neto = usable capacity as the maker states it; bruto, nominal = as labelled by the maker; pr = the maker gives one figure without saying which; adac = net capacity of the ADAC catalog (the maker publishes none). \"ph\": phases of the on-board charger (0 = not stated in the documents read). \"maker.t\": minutes per charging power (kW). Texts: site/modeli.py.",
+ "date": "2026-11-17",
+ "checked": "2026-11-16",
+ "tariff": {
+  "rsd_kwh": 5.7,
+  "zone": "plava",
+  "tariff": "niža (noćna)",
+  "valid_from": "2025-10-01",
+  "checked": "2026-11-16",
+  "bv_updated": "2026-09-23",
+  "checked_how": "www.eps.rs/cir/snabdevanje/Pages/cene.aspx on 16.11.2026: the price list in force is still the one applied from 01.10.2025",
+  "calc": "(3,6051 + 0,801 + 0,015) × 1,075 × 1,20 = 5,7032 RSD/kWh: EPS price of the lower tariff in the blue zone, the fee for privileged producers, the energy-efficiency fee, excise 7,5 % and VAT 20 %",
+  "loss_pct": 10
+ },
+ "models": [
+  {
+   "slug": "teslu",
+   "name": "Tesla",
+   "za": "Teslu",
+   "en": "Tesla",
+   "ru": "Tesla",
+   "make": true,
+   "bv": {
+    "kind": "brand",
+    "path": "/elektricni-automobili/tesla/",
+    "brand": "Tesla"
+   },
+   "h1": {
+    "sr": "Kućni punjač za Teslu: Model 3, Model Y, Model S i Model X",
+    "en": "A home charger for a Tesla: Model 3, Model Y, Model S and Model X",
+    "ru": "Домашняя зарядка для Tesla: Model 3, Model Y, Model S и Model X"
+   },
+   "cls": {
+    "sr": "11 kW trofazni",
+    "en": "11 kW three-phase",
+    "ru": "11 кВт трёхфазное"
+   },
+   "versions": [
+    {
+     "name": {
+      "sr": "Model 3 / Model Y, manja baterija (RWD, Standard Range Plus)",
+      "en": "Model 3 / Model Y, smaller battery (RWD, Standard Range Plus)",
+      "ru": "Model 3 / Model Y, батарея поменьше (RWD, Standard Range Plus)"
+     },
+     "kwh": 60,
+     "kind": "adac",
+     "ac": 11,
+     "ph": 3,
+     "label": {
+      "sr": "oko 60 kWh",
+      "en": "about 60 kWh",
+      "ru": "около 60 кВт·ч"
+     }
+    },
+    {
+     "name": "Model 3 / Model Y Long Range, Performance",
+     "kwh": 79,
+     "kind": "adac",
+     "ac": 11,
+     "ph": 3,
+     "label": {
+      "sr": "75–79 kWh",
+      "en": "75–79 kWh",
+      "ru": "75–79 кВт·ч"
+     }
+    },
+    {
+     "name": {
+      "sr": "Model S / Model X od 2021.",
+      "en": "Model S / Model X from 2021",
+      "ru": "Model S / Model X с 2021 года"
+     },
+     "kwh": 95,
+     "kind": "adac",
+     "ac": 11,
+     "ph": 3
+    },
+    {
+     "name": "Model S / Model X 2016–2020",
+     "kwh": 100,
+     "kind": "adac",
+     "ac": 16.5,
+     "ph": 3,
+     "label": {
+      "sr": "do 100 kWh",
+      "en": "up to 100 kWh",
+      "ru": "до 100 кВт·ч"
+     }
+    }
+   ],
+   "lead": {
+    "sr": "Tesla Model 3 i Model Y imaju trofazni punjač od 11 kW, kao i Model S i Model X od 2021: na wallboxu od 11 kW koriste punu snagu. Na jednofaznom priključku Tesla prima do 7,4 kW pri 32 A, a na pojačanoj utičnici od 16 A — 3,7 kW.",
+    "en": "The Tesla Model 3 and Model Y have a three-phase 11 kW charger, as do the Model S and Model X from 2021: on an 11 kW wallbox they use the full power. On a single-phase connection a Tesla takes up to 7.4 kW at 32 A, and on a 16 A heavy-duty socket 3.7 kW.",
+    "ru": "У Tesla Model 3 и Model Y трёхфазное бортовое зарядное на 11 кВт, как и у Model S и Model X с 2021 года: от wallbox на 11 кВт они берут всю мощность. От однофазного подключения Tesla принимает до 7,4 кВт при 32 А, а от усиленной розетки на 16 А — 3,7 кВт."
+   },
+   "facts": [
+    {
+     "sr": "Model S i Model X do 2020. imaju punjač od 16,5 kW (24 A po fazi), a Model S pre maja 2016. punjač od 11 ili 22 kW, zavisno od opreme — tako piše na Teslinim stranicama podrške. Na wallboxu od 11 kW svi pune sa 11 kW.",
+     "en": "The Model S and Model X up to 2020 have a 16.5 kW charger (24 A per phase), and the Model S before May 2016 an 11 or 22 kW charger depending on equipment — that is what Tesla’s support pages say. On an 11 kW wallbox they all charge at 11 kW.",
+     "ru": "У Model S и Model X до 2020 года зарядное на 16,5 кВт (24 А на фазу), а у Model S до мая 2016 года — на 11 или 22 кВт, в зависимости от комплектации: так написано на страницах поддержки Tesla. От wallbox на 11 кВт все они заряжаются на 11 кВт."
+    },
+    {
+     "sr": "Teslin prenosni punjač (Mobile Connector) sa adapterom za običnu utičnicu puni sa najviše 3 kW (13 A), a sa plavim adapterom od 16 A sa 3,7 kW. Za paket START ti treba plavi adapter.",
+     "en": "Tesla’s portable charger (Mobile Connector) charges at up to 3 kW (13 A) with the adapter for an ordinary socket, and at 3.7 kW with the blue 16 A adapter. For the START package you need the blue adapter.",
+     "ru": "Переносное зарядное Tesla (Mobile Connector) с адаптером для обычной розетки заряжает максимум на 3 кВт (13 А), а с синим адаптером на 16 А — на 3,7 кВт. Для пакета START нужен синий адаптер."
+    },
+    {
+     "sr": "Tesla ne objavljuje kapacitet baterije: vrednosti u tabeli su neto kapaciteti iz ADAC kataloga i razlikuju se po godištu.",
+     "en": "Tesla doesn’t publish battery capacity: the figures in the table are net capacities from the ADAC catalog, and they differ by model year.",
+     "ru": "Tesla не публикует ёмкость батареи: значения в таблице — ёмкость нетто из каталога ADAC, она различается по годам выпуска."
+    },
+    {
+     "sr": [
+      "Ako već imaš Teslin Wall Connector, ugrađujemo ga: ",
+      {
+       "a": "ugradnja Tesla Wall Connectora",
+       "href": "/ugradnja-tesla-wall-connector"
+      },
+      "."
+     ],
+     "en": [
+      "If you already have a Tesla Wall Connector, we install it: ",
+      {
+       "a": "Tesla Wall Connector installation",
+       "href": "/ugradnja-tesla-wall-connector"
+      },
+      "."
+     ],
+     "ru": [
+      "Если у тебя уже есть Tesla Wall Connector, мы его установим: ",
+      {
+       "a": "монтаж Tesla Wall Connector",
+       "href": "/ugradnja-tesla-wall-connector"
+      },
+      "."
+     ]
+    }
+   ],
+   "fit": [
+    {
+     "sr": "Za Teslu biramo WALLBOX 11 kW ili Teslin Wall Connector podešen na 11 kW: auto koristi punu snagu i pun je za jednu noć. START je dovoljan za dnevnu dopunu: Tesla za 3,7 kW navodi oko 24 km dometa po satu punjenja.",
+     "en": "For a Tesla we go with WALLBOX 11 kW or a Tesla Wall Connector set to 11 kW: the car uses the full power and is full in one night. START is enough for a daily top-off: Tesla gives about 24 km of range per hour of charging at 3.7 kW.",
+     "ru": "Для Tesla берём WALLBOX 11 kW или Tesla Wall Connector, настроенный на 11 кВт: машина использует всю мощность и заряжается за ночь. Для ежедневной подзарядки хватит START: на 3,7 кВт Tesla указывает около 24 км запаса хода за час зарядки."
+    }
+   ],
+   "faq": [
+    {
+     "q": {
+      "sr": "Da li mi treba Tesla Wall Connector ili može drugi wallbox?",
+      "en": "Do I need a Tesla Wall Connector, or will another wallbox do?",
+      "ru": "Нужен именно Tesla Wall Connector или подойдёт другой wallbox?"
+     },
+     "a": {
+      "sr": "Može bilo koji wallbox sa Type 2 kablom: Tesla u Evropi puni preko Type 2 priključka. Wall Connector ima smisla ako ga već imaš; u oba slučaja auto prima najviše 11 kW.",
+      "en": "Any wallbox with a Type 2 cable will do: in Europe a Tesla charges through a Type 2 inlet. A Wall Connector makes sense if you already have one; either way the car takes 11 kW at most.",
+      "ru": "Подойдёт любой wallbox с кабелем Type 2: в Европе Tesla заряжается через разъём Type 2. Wall Connector имеет смысл, если он у тебя уже есть; в обоих случаях машина принимает максимум 11 кВт."
+     }
+    },
+    {
+     "q": {
+      "sr": "Koliko Tesla prima na jednofaznom priključku?",
+      "en": "How fast does a Tesla charge on a single-phase connection?",
+      "ru": "С какой мощностью Tesla заряжается от однофазного подключения?"
+     },
+     "a": {
+      "sr": "Do 7,4 kW pri 32 A, po Teslinoj stranici o ugrađenom punjaču. Pojačana utičnica od 16 A daje 3,7 kW; za 32 A na jednoj fazi treba jača instalacija, što proveravamo na proceni.",
+      "en": "Up to 7.4 kW at 32 A, according to Tesla’s page on the on-board charger. A 16 A heavy-duty socket delivers 3.7 kW; 32 A on one phase needs heavier wiring, which we check at the assessment.",
+      "ru": "До 7,4 кВт при 32 А — так указано на странице Tesla о бортовом зарядном. Усиленная розетка на 16 А даёт 3,7 кВт; для 32 А на одной фазе нужна более мощная проводка — это проверяем на оценке."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "Tesla — Onboard Charger (stranica podrške)",
+      "en": "Tesla — Onboard Charger (support page)",
+      "ru": "Tesla — Onboard Charger (страница поддержки)"
+     },
+     "url": "https://www.tesla.com/en_eu/support/charging/onboard-charger"
+    },
+    {
+     "t": {
+      "sr": "Tesla — Wall Connector (stranica podrške)",
+      "en": "Tesla — Wall Connector (support page)",
+      "ru": "Tesla — Wall Connector (страница поддержки)"
+     },
+     "url": "https://www.tesla.com/en_eu/support/charging/wall-connector"
+    },
+    {
+     "t": {
+      "sr": "Tesla — Mobile Connector (stranica podrške, Slovenija)",
+      "en": "Tesla — Mobile Connector (support page, Slovenia)",
+      "ru": "Tesla — Mobile Connector (страница поддержки, Словения)"
+     },
+     "url": "https://www.tesla.com/sl_si/support/charging/mobile-connector"
+    },
+    {
+     "t": {
+      "sr": "Tesla — Onboard Charger (stranica podrške, Australija: stariji Model S i Model X)",
+      "en": "Tesla — Onboard Charger (support page, Australia: older Model S and Model X)",
+      "ru": "Tesla — Onboard Charger (страница поддержки, Австралия: старые Model S и Model X)"
+     },
+     "url": "https://www.tesla.com/en_au/support/charging/onboard-charger"
+    },
+    {
+     "t": {
+      "sr": "ADAC Autokatalog — Tesla Model 3 Long Range (neto kapacitet)",
+      "en": "ADAC Autokatalog — Tesla Model 3 Long Range (net capacity)",
+      "ru": "ADAC Autokatalog — Tesla Model 3 Long Range (ёмкость нетто)"
+     },
+     "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/tesla/model-3/1generation/317811"
+    },
+    {
+     "t": {
+      "sr": "ADAC Autokatalog — Tesla Model Y RWD (neto kapacitet)",
+      "en": "ADAC Autokatalog — Tesla Model Y RWD (net capacity)",
+      "ru": "ADAC Autokatalog — Tesla Model Y RWD (ёмкость нетто)"
+     },
+     "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/tesla/model-y/1generation/297990"
+    },
+    {
+     "t": {
+      "sr": "ADAC Autokatalog — Tesla Model S (neto kapacitet)",
+      "en": "ADAC Autokatalog — Tesla Model S (net capacity)",
+      "ru": "ADAC Autokatalog — Tesla Model S (ёмкость нетто)"
+     },
+     "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/tesla/model-s/1generation-facelift-2/345920/"
+    }
+   ]
+  },
+  {
+   "slug": "byd",
+   "name": "BYD",
+   "za": "BYD",
+   "en": "BYD",
+   "ru": "BYD",
+   "make": true,
+   "bv": {
+    "kind": "brand",
+    "path": "/elektricni-automobili/byd/",
+    "brand": "BYD"
+   },
+   "cls": {
+    "sr": "11 kW trofazni",
+    "en": "11 kW three-phase",
+    "ru": "11 кВт трёхфазное"
+   },
+   "versions": [
+    {
+     "name": "Dolphin Surf (Boost, Comfort)",
+     "kwh": 43.2,
+     "kind": "pr",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "BYD",
+      "basis": "0–100%",
+      "t": {
+       "11": 300
+      }
+     }
+    },
+    {
+     "name": "Atto 2 Comfort",
+     "kwh": 64.8,
+     "kind": "pr",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "BYD",
+      "basis": "0–100%",
+      "t": {
+       "11": 420
+      }
+     }
+    },
+    {
+     "name": "Atto 3 Evo",
+     "kwh": 74.8,
+     "kind": "pr",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "BYD",
+      "basis": "0–100%",
+      "t": {
+       "11": 480
+      }
+     }
+    },
+    {
+     "name": "Seal (Design, Excellence)",
+     "kwh": 82.5,
+     "kind": "pr",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "BYD",
+      "basis": "0–100%",
+      "t": {
+       "11": 516
+      }
+     }
+    },
+    {
+     "name": "Sealion 7 (Comfort, Design)",
+     "kwh": 82.5,
+     "kind": "pr",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "BYD",
+      "basis": "0–100%",
+      "t": {
+       "11": 516
+      }
+     }
+    },
+    {
+     "name": "Sealion 7 Excellence",
+     "kwh": 91.3,
+     "kind": "pr",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "BYD",
+      "basis": "0–100%",
+      "t": {
+       "11": 576
+      }
+     }
+    }
+   ],
+   "lead": {
+    "sr": "Potpuno električni BYD modeli koje uvoznik nudi u Srbiji — Dolphin Surf, Atto 2, Atto 3 Evo, Seal i Sealion 7 — imaju trofazni punjač od 11 kW. Na wallboxu od 11 kW pune se, po podacima uvoznika, za 5 h do 9 h 36 min, zavisno od baterije.",
+    "en": "The all-electric BYD models the importer offers in Serbia — Dolphin Surf, Atto 2, Atto 3 Evo, Seal and Sealion 7 — have a three-phase 11 kW charger. On an 11 kW wallbox they charge, by the importer’s figures, in 5 h to 9 h 36 min, depending on the battery.",
+    "ru": "У полностью электрических моделей BYD, которые импортёр предлагает в Сербии, — Dolphin Surf, Atto 2, Atto 3 Evo, Seal и Sealion 7 — трёхфазное бортовое зарядное на 11 кВт. На зарядку от wallbox на 11 кВт у них, по данным импортёра, уходит от 5 ч до 9 ч 36 мин, в зависимости от батареи."
+   },
+   "facts": [
+    {
+     "sr": "Za Sealion 7 BYD navodi i jednofazno punjenje do 7 kW: 13 h 30 min za bateriju od 82,5 kWh. U brošurama je priključak naveden kao CCS2; naizmeničnom strujom auto puni preko njegovog Type 2 dela.",
+     "en": "For the Sealion 7, BYD also lists single-phase charging up to 7 kW: 13 h 30 min for the 82.5 kWh battery. The brochures name the inlet as CCS2; on AC the car charges through its Type 2 part.",
+     "ru": "Для Sealion 7 BYD указывает и однофазную зарядку до 7 кВт: 13 ч 30 мин для батареи 82,5 кВт·ч. В брошюрах разъём назван CCS2; переменным током машина заряжается через его часть Type 2."
+    },
+    {
+     "sr": [
+      "Plug-in hibridi su drugačiji: Seal U DM-i ima punjač od 11 kW i baterije od 18,3 i 26,6 kWh, a Atto 2 DM-i jednofazni punjač od 3,3 kW (baterija 7,8 kWh) ili 6,6 kW (18 kWh). O punjenju hibrida piše u vodiču ",
+      {
+       "a": "plug-in hibrid kod kuće",
+       "href": "/plug-in-hibrid-kod-kuce"
+      },
+      "."
+     ],
+     "en": [
+      "Plug-in hybrids are different: the Seal U DM-i has an 11 kW charger and 18.3 and 26.6 kWh batteries, while the Atto 2 DM-i has a single-phase charger of 3.3 kW (7.8 kWh battery) or 6.6 kW (18 kWh). Charging a hybrid is covered in the guide ",
+      {
+       "a": "a plug-in hybrid at home",
+       "href": "/plug-in-hibrid-kod-kuce"
+      },
+      "."
+     ],
+     "ru": [
+      "Подключаемые гибриды устроены иначе: у Seal U DM-i зарядное на 11 кВт и батареи на 18,3 и 26,6 кВт·ч, а у Atto 2 DM-i — однофазное зарядное на 3,3 кВт (батарея 7,8 кВт·ч) или 6,6 кВт (18 кВт·ч). О зарядке гибрида — в гайде ",
+      {
+       "a": "подключаемый гибрид дома",
+       "href": "/plug-in-hibrid-kod-kuce"
+      },
+      "."
+     ]
+    },
+    {
+     "sr": [
+      "Uvoznik na svom blogu (16.04.2026) navodi da je u BYD servisu dostupan i BYD AC wallbox. Ako ga kupiš, ugrađujemo ga kao i svaki drugi punjač koji već imaš: ",
+      {
+       "a": "samo ugradnja",
+       "href": "/samo-ugradnja-punjaca"
+      },
+      "."
+     ],
+     "en": [
+      "The importer’s blog (16.04.2026) says a BYD AC wallbox is also available at BYD service centers. If you buy one, we install it like any other charger you already have: ",
+      {
+       "a": "installation only",
+       "href": "/samo-ugradnja-punjaca"
+      },
+      "."
+     ],
+     "ru": [
+      "Импортёр в своём блоге (16.04.2026) пишет, что в сервисе BYD можно купить и BYD AC wallbox. Если купишь, мы установим его, как любую другую зарядку, которая у тебя уже есть: ",
+      {
+       "a": "только монтаж",
+       "href": "/samo-ugradnja-punjaca"
+      },
+      "."
+     ]
+    }
+   ],
+   "fit": [
+    {
+     "sr": "Za BYD biramo WALLBOX 11 kW: auto koristi punu snagu, a i najveća baterija je puna do jutra. START je za manju dnevnu dopunu: za 8 sati na 3,7 kW u bateriju stane oko 27 kWh. Za plug-in hibride sa malom baterijom START je obično dovoljan.",
+     "en": "For a BYD we go with WALLBOX 11 kW: the car uses the full power, and even the largest battery is full by morning. START is for a small daily top-off: 8 hours at 3.7 kW puts about 27 kWh into the battery. For plug-in hybrids with a small battery START is usually enough.",
+     "ru": "Для BYD берём WALLBOX 11 kW: машина использует всю мощность, и даже самая большая батарея к утру полная. START — для небольшой ежедневной подзарядки: за 8 часов на 3,7 кВт в батарею попадает около 27 кВт·ч. Подключаемым гибридам с маленькой батареей START обычно хватает."
+    }
+   ],
+   "faq": [
+    {
+     "q": {
+      "sr": "Koliko traje punjenje BYD Sealion 7 kod kuće?",
+      "en": "How long does a BYD Sealion 7 take to charge at home?",
+      "ru": "Сколько заряжается BYD Sealion 7 дома?"
+     },
+     "a": {
+      "sr": "Na wallboxu od 11 kW uvoznik navodi 8 h 36 min za bateriju od 82,5 kWh i 9 h 36 min za 91,3 kWh, od 0 do 100%.",
+      "en": "On an 11 kW wallbox the importer gives 8 h 36 min for the 82.5 kWh battery and 9 h 36 min for the 91.3 kWh one, from 0 to 100%.",
+      "ru": "От wallbox на 11 кВт импортёр указывает 8 ч 36 мин для батареи 82,5 кВт·ч и 9 ч 36 мин для 91,3 кВт·ч, от 0 до 100%."
+     }
+    },
+    {
+     "q": {
+      "sr": "Koji BYD modeli imaju jednofazni punjač?",
+      "en": "Which BYD models have a single-phase charger?",
+      "ru": "У каких моделей BYD однофазное зарядное?"
+     },
+     "a": {
+      "sr": "Od modela u ponudi uvoznika samo plug-in hibrid Atto 2 DM-i: 3,3 kW ili 6,6 kW. Potpuno električni modeli imaju trofazni punjač od 11 kW.",
+      "en": "Of the models the importer offers, only the Atto 2 DM-i plug-in hybrid: 3.3 kW or 6.6 kW. The all-electric models have a three-phase 11 kW charger.",
+      "ru": "Из моделей импортёра — только подключаемый гибрид Atto 2 DM-i: 3,3 или 6,6 кВт. У полностью электрических моделей трёхфазное зарядное на 11 кВт."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "BYD Srbija — brošura Dolphin Surf (novembar 2026)",
+      "en": "BYD Serbia — Dolphin Surf brochure (November 2026)",
+      "ru": "BYD Сербия — брошюра Dolphin Surf (ноябрь 2026)"
+     },
+     "url": "https://byd-auto.rs/wp-content/uploads/2026/11/dolphin-surf.pdf"
+    },
+    {
+     "t": {
+      "sr": "BYD Srbija — BYD Atto 2 Comfort",
+      "en": "BYD Serbia — BYD Atto 2 Comfort",
+      "ru": "BYD Сербия — BYD Atto 2 Comfort"
+     },
+     "url": "https://byd-auto.rs/modeli/byd-atto-2-comfort/"
+    },
+    {
+     "t": {
+      "sr": "BYD Srbija — brošura Atto 3 Evo (septembar 2026)",
+      "en": "BYD Serbia — Atto 3 Evo brochure (September 2026)",
+      "ru": "BYD Сербия — брошюра Atto 3 Evo (сентябрь 2026)"
+     },
+     "url": "https://byd-auto.rs/wp-content/uploads/2026/09/ATTO-3-EVO-SRB-TDV-AUTOMOTIVE-za-web.pdf"
+    },
+    {
+     "t": {
+      "sr": "BYD Srbija — brošura Seal (septembar 2026)",
+      "en": "BYD Serbia — Seal brochure (September 2026)",
+      "ru": "BYD Сербия — брошюра Seal (сентябрь 2026)"
+     },
+     "url": "https://byd-auto.rs/wp-content/uploads/2026/09/seal.pdf"
+    },
+    {
+     "t": {
+      "sr": "BYD Srbija — brošura Sealion 7 (maj 2025)",
+      "en": "BYD Serbia — Sealion 7 brochure (May 2025)",
+      "ru": "BYD Сербия — брошюра Sealion 7 (май 2025)"
+     },
+     "url": "https://byd-auto.rs/wp-content/uploads/2025/05/SEALION-7-bros%CC%8Cura.pdf"
+    },
+    {
+     "t": {
+      "sr": "BYD Srbija — brošura Atto 2 DM-i (septembar 2026)",
+      "en": "BYD Serbia — Atto 2 DM-i brochure (September 2026)",
+      "ru": "BYD Сербия — брошюра Atto 2 DM-i (сентябрь 2026)"
+     },
+     "url": "https://byd-auto.rs/wp-content/uploads/2026/09/ATTO-2-DM-i-SRB-TDV-AUTOMOTIVE-web.pdf"
+    },
+    {
+     "t": {
+      "sr": "BYD Srbija — brošura Seal U DM-i (maj 2025)",
+      "en": "BYD Serbia — Seal U DM-i brochure (May 2025)",
+      "ru": "BYD Сербия — брошюра Seal U DM-i (май 2025)"
+     },
+     "url": "https://byd-auto.rs/wp-content/uploads/2025/05/Seal-U-DM-i-bros%CC%8Cura.pdf"
+    },
+    {
+     "t": {
+      "sr": "BYD Srbija — Gde napuniti električni auto u Srbiji (blog, 16.04.2026)",
+      "en": "BYD Serbia — Where to charge an electric car in Serbia (blog, 16.04.2026)",
+      "ru": "BYD Сербия — Где зарядить электромобиль в Сербии (блог, 16.04.2026)"
+     },
+     "url": "https://byd-auto.rs/blog/gde-napuniti-elektricni-auto-u-srbiji-sve-sto-treba-da-znate/"
+    }
+   ]
+  },
+  {
+   "slug": "renault-zoe",
+   "name": "Renault Zoe",
+   "za": "Renault Zoe",
+   "en": "Renault Zoe",
+   "ru": "Renault Zoe",
+   "bv": {
+    "kind": "used",
+    "path": "/elektricni-automobili/polovni/"
+   },
+   "cls": {
+    "sr": "do 22 kW, trofazni",
+    "en": "up to 22 kW, three-phase",
+    "ru": "до 22 кВт, трёхфазное"
+   },
+   "versions": [
+    {
+     "name": "Zoe 22 kWh (R240, R90)",
+     "kwh": 22,
+     "kind": "neto",
+     "ac": 22,
+     "ph": 3
+    },
+    {
+     "name": "Zoe Z.E. 40 (R90, R110)",
+     "kwh": 41,
+     "kind": "neto",
+     "ac": 22,
+     "ph": 3,
+     "maker": {
+      "who": "Renault",
+      "basis": "0–100%",
+      "t": {
+       "3.7": 900,
+       "11": 270,
+       "22": 160
+      }
+     }
+    },
+    {
+     "name": "Zoe Z.E. 50 (R110, R135)",
+     "kwh": 52,
+     "kind": "neto",
+     "ac": 22,
+     "ph": 3,
+     "maker": {
+      "who": "Renault",
+      "basis": "0–100%",
+      "t": {
+       "3.7": 1140,
+       "11": 360,
+       "22": 180
+      }
+     }
+    }
+   ],
+   "lead": {
+    "sr": "Renault Zoe prima do 22 kW naizmenične struje, pa na trofaznom wallboxu od 11 kW koristi punih 11 kW. Zoe Z.E. 50 sa baterijom od 52 kWh tako se napuni za jednu noć, a na pojačanoj utičnici za to treba skoro ceo dan.",
+    "en": "The Renault Zoe accepts up to 22 kW AC, so on a three-phase 11 kW wallbox it uses the full 11 kW. A Zoe Z.E. 50 with its 52 kWh battery fills up overnight that way; on a heavy-duty socket the same charge takes almost a full day.",
+    "ru": "Renault Zoe принимает до 22 кВт переменного тока, поэтому от трёхфазного wallbox на 11 кВт берёт все 11 кВт. Zoe Z.E. 50 с батареей 52 кВт·ч заряжается так за ночь, а от усиленной розетки на это уходит почти сутки."
+   },
+   "facts": [
+    {
+     "sr": "Verzije sa oznakom Q (Q210, Q90) imaju punjač do 43 kW; na wallboxu od 11 kW pune kao i ostale.",
+     "en": "Versions marked Q (Q210, Q90) have a charger of up to 43 kW; on an 11 kW wallbox they charge like the rest.",
+     "ru": "У версий с буквой Q (Q210, Q90) бортовое зарядное до 43 кВт; от wallbox на 11 кВт они заряжаются так же, как остальные."
+    },
+    {
+     "sr": "Brzo DC punjenje (CCS, do 50 kW) ima samo Zoe Z.E. 50, i to uz doplatu. Starije verzije pune samo naizmeničnom strujom, pa im je punjač kod kuće glavni izvor energije.",
+     "en": "Only the Zoe Z.E. 50 has DC fast charging (CCS, up to 50 kW), and only as a paid option. Older versions charge on AC only, so a home charger is their main source of energy.",
+     "ru": "Быстрая DC-зарядка (CCS, до 50 кВт) есть только у Zoe Z.E. 50, и то за доплату. Старые версии заряжаются только переменным током, так что домашняя зарядка для них — основной источник энергии."
+    },
+    {
+     "sr": "Renault u uputstvu punjenje iz obične kućne utičnice opisuje kao povremeno, strujom od 10 A, a za 14 ili 16 A traži namensku utičnicu. Za punu bateriju iz kućne utičnice navodi više od 24 sata.",
+     "en": "The Renault owner’s manual describes charging from an ordinary household socket as occasional, at 10 A, and requires a dedicated socket for 14 or 16 A. It puts a full charge from a household socket at more than 24 hours.",
+     "ru": "В руководстве Renault зарядка от обычной бытовой розетки описана как эпизодическая, током 10 А, а для 14 или 16 А нужна выделенная розетка. Полная зарядка от бытовой розетки, по данным Renault, занимает больше 24 часов."
+    }
+   ],
+   "fit": [
+    {
+     "sr": "Za Zoe je WALLBOX 11 kW prirodan izbor: auto koristi sve tri faze, pa se i najveća baterija napuni preko noći. START ima smisla ako svake noći dopunjuješ ono što si tog dana potrošio: Renault za punu bateriju Z.E. 50 na 3,7 kW navodi 19 h, pa za jednu noć stane manje od pola baterije.",
+     "en": "For the Zoe, WALLBOX 11 kW is the natural choice: the car uses all three phases, so even the largest battery fills up overnight. START makes sense if every night you top off what you used that day: Renault puts a full Z.E. 50 charge at 3.7 kW at 19 h, so one night covers less than half the battery.",
+     "ru": "Для Zoe естественный выбор — WALLBOX 11 kW: машина использует все три фазы, и даже самая большая батарея заряжается за ночь. START подойдёт, если каждую ночь ты восполняешь то, что потратил за день: полную зарядку Z.E. 50 на 3,7 кВт Renault оценивает в 19 ч, так что за ночь зарядится меньше половины батареи."
+    },
+    {
+     "sr": [
+      "Punjač od 22 kW kod kuće traži priključak 3 × 32 A; naši paketi rade sa 11 kW. Kada 22 kW ima smisla, piše u vodiču ",
+      {
+       "a": "punjač 11 ili 22 kW",
+       "href": "/punjac-11-ili-22-kw"
+      },
+      "."
+     ],
+     "en": [
+      "A 22 kW charger at home needs a 3 × 32 A connection; our packages work at 11 kW. When 22 kW makes sense is covered in the guide ",
+      {
+       "a": "11 or 22 kW charger",
+       "href": "/punjac-11-ili-22-kw"
+      },
+      "."
+     ],
+     "ru": [
+      "Зарядке на 22 кВт дома нужно подключение 3 × 32 А; наши пакеты работают на 11 кВт. Когда 22 кВт оправданы — в гайде ",
+      {
+       "a": "зарядка на 11 или 22 кВт",
+       "href": "/punjac-11-ili-22-kw"
+      },
+      "."
+     ]
+    }
+   ],
+   "faq": [
+    {
+     "q": {
+      "sr": "Može li Renault Zoe da puni sa 22 kW kod kuće?",
+      "en": "Can a Renault Zoe charge at 22 kW at home?",
+      "ru": "Может ли Renault Zoe заряжаться дома на 22 кВт?"
+     },
+     "a": {
+      "sr": "Zoe prima 22 kW, ali za to trebaju punjač od 22 kW i priključak 3 × 32 A. Naš WALLBOX je 11 kW (3 × 16 A): na toj snazi Renault za Zoe Z.E. 50 navodi 6 h od 0 do 100%.",
+      "en": "The Zoe accepts 22 kW, but that takes a 22 kW charger and a 3 × 32 A connection. Our WALLBOX is 11 kW (3 × 16 A): at that power Renault gives 6 h from 0 to 100% for the Zoe Z.E. 50.",
+      "ru": "Zoe принимает 22 кВт, но для этого нужны зарядка на 22 кВт и подключение 3 × 32 А. Наш WALLBOX — 11 кВт (3 × 16 А): на этой мощности зарядка Zoe Z.E. 50 от 0 до 100% занимает, по данным Renault, 6 ч."
+     }
+    },
+    {
+     "q": {
+      "sr": "Da li je za Renault Zoe dovoljna pojačana utičnica?",
+      "en": "Is a heavy-duty socket enough for a Renault Zoe?",
+      "ru": "Хватит ли Renault Zoe усиленной розетки?"
+     },
+     "a": {
+      "sr": "Za dnevnu dopunu jeste, za punu bateriju preko noći nije: Renault na 3,7 kW navodi 15 h za Zoe Z.E. 40 i 19 h za Z.E. 50, od 0 do 100%.",
+      "en": "For a daily top-off, yes; for a full battery overnight, no: at 3.7 kW Renault gives 15 h for the Zoe Z.E. 40 and 19 h for the Z.E. 50, from 0 to 100%.",
+      "ru": "Для ежедневной подзарядки — да, для полной батареи за ночь — нет: на 3,7 кВт Renault указывает 15 ч для Zoe Z.E. 40 и 19 ч для Z.E. 50, от 0 до 100%."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "Renault Francuska — brošura ZOE (februar 2021)",
+      "en": "Renault France — ZOE brochure (February 2021)",
+      "ru": "Renault Франция — брошюра ZOE (февраль 2021)"
+     },
+     "url": "https://cdn.group.renault.com/ren/fr/product-plans/brochures/zoe/X102VEVPZOE_fr.pdf.asset.pdf/f76b8836f3.pdf"
+    },
+    {
+     "t": {
+      "sr": "Renault Group — New ZOE: unmatched charging flexibility (13.09.2019)",
+      "en": "Renault Group — New ZOE: unmatched charging flexibility (13.09.2019)",
+      "ru": "Renault Group — New ZOE: unmatched charging flexibility (13.09.2019)"
+     },
+     "url": "https://www.renaultgroup.com/en/news-on-air/news/new-zoe-unmatched-charging-flexibility/"
+    },
+    {
+     "t": {
+      "sr": "Renault Press — tehničke karakteristike ZOE R110 (kopija dokumenta)",
+      "en": "Renault Press — ZOE R110 technical characteristics (copy of the document)",
+      "ru": "Renault Press — технические характеристики ZOE R110 (копия документа)"
+     },
+     "url": "https://projekt-renault.de/images/pdf/21204255_Technical_characteristics_ZOE_R110.pdf"
+    },
+    {
+     "t": {
+      "sr": "Renault UK — brošura ZOE, 12.04.2016 (kopija dokumenta)",
+      "en": "Renault UK — ZOE brochure, 12.04.2016 (copy of the document)",
+      "ru": "Renault UK — брошюра ZOE, 12.04.2016 (копия документа)"
+     },
+     "url": "https://xr793.com/wp-content/uploads/2022/12/2016-Renault-Zoe-UK.pdf"
+    },
+    {
+     "t": {
+      "sr": "Renault — uputstvo za upotrebu ZOE, poglavlje o punjenju",
+      "en": "Renault — ZOE owner’s manual, charging chapter",
+      "ru": "Renault — руководство по эксплуатации ZOE, глава о зарядке"
+     },
+     "url": "https://gb.e-guide.renault.com/sites/default/files/pdfs/eng/X10/ZOE-979-14_ENG.pdf"
+    },
+    {
+     "t": {
+      "sr": "Renault Group — All there is to know about charging Renault ZOE",
+      "en": "Renault Group — All there is to know about charging Renault ZOE",
+      "ru": "Renault Group — All there is to know about charging Renault ZOE"
+     },
+     "url": "https://www.renaultgroup.com/en/news-on-air/news/all-there-is-to-know-about-charging-renault-zoe"
+    }
+   ]
+  },
+  {
+   "slug": "vw-e-golf",
+   "name": "VW e-Golf",
+   "za": "VW e-Golf",
+   "en": "VW e-Golf",
+   "ru": "VW e-Golf",
+   "bv": {
+    "kind": "used",
+    "path": "/elektricni-automobili/polovni/"
+   },
+   "cls": {
+    "sr": "3,6 kW jednofazni ili 7,2 kW dvofazni",
+    "en": "3.6 kW single-phase or 7.2 kW two-phase",
+    "ru": "3,6 кВт однофазное или 7,2 кВт двухфазное"
+   },
+   "versions": [
+    {
+     "name": "e-Golf 24,2 kWh",
+     "kwh": 24.2,
+     "kind": "nominal",
+     "ac": 3.6,
+     "ph": 1,
+     "years": "2014–2016",
+     "maker": {
+      "who": "Volkswagen",
+      "basis": "do pune baterije",
+      "t": {
+       "2.3": 780,
+       "3.6": 480
+      }
+     }
+    },
+    {
+     "name": "e-Golf 35,8 kWh",
+     "kwh": 35.8,
+     "kind": "nominal",
+     "ac": 7.2,
+     "ph": 2,
+     "years": "2017–2020",
+     "maker": {
+      "who": "Volkswagen",
+      "basis": "do pune baterije",
+      "t": {
+       "2.3": 1020,
+       "3.6": 650,
+       "7.2": 320
+      }
+     }
+    }
+   ],
+   "lead": {
+    "sr": "VW e-Golf sa baterijom od 35,8 kWh ima dvofazni punjač od 7,2 kW: Volkswagen navodi 5 h 20 min na trofaznom wallboxu i 10 h 50 min na 3,6 kW. Stariji e-Golf od 24,2 kWh prima najviše 3,6 kW, pa mu je pojačana utičnica dovoljna.",
+    "en": "The VW e-Golf with the 35.8 kWh battery has a two-phase 7.2 kW charger: Volkswagen gives 5 h 20 min on a three-phase wallbox and 10 h 50 min at 3.6 kW. The older 24.2 kWh e-Golf takes 3.6 kW at most, so a heavy-duty socket is all it needs.",
+    "ru": "У VW e-Golf с батареей 35,8 кВт·ч двухфазное бортовое зарядное на 7,2 кВт: Volkswagen указывает 5 ч 20 мин от трёхфазного wallbox и 10 ч 50 мин на 3,6 кВт. Более старый e-Golf на 24,2 кВт·ч принимает максимум 3,6 кВт, ему хватает усиленной розетки."
+   },
+   "facts": [
+    {
+     "sr": "Punjenje sa 7,2 kW radi samo na trofaznom punjaču: auto koristi dve faze po 16 A. Na jednofaznom punjaču od 16 A isti auto prima 3,6 kW.",
+     "en": "Charging at 7.2 kW only works on a three-phase charger: the car uses two phases at 16 A each. On a single-phase 16 A charger the same car takes 3.6 kW.",
+     "ru": "Заряжаться на 7,2 кВт можно только от трёхфазной зарядки: машина использует две фазы по 16 А. От однофазной зарядки на 16 А та же машина принимает 3,6 кВт."
+    },
+    {
+     "sr": "Volkswagen navodi nominalni kapacitet baterije, 24,2 i 35,8 kWh; po ADAC katalogu korisno je 20,5 odnosno 32,0 kWh.",
+     "en": "Volkswagen quotes the nominal battery capacity, 24.2 and 35.8 kWh; the ADAC catalog gives 20.5 and 32.0 kWh usable.",
+     "ru": "Volkswagen указывает номинальную ёмкость батареи — 24,2 и 35,8 кВт·ч; по каталогу ADAC полезная ёмкость — 20,5 и 32,0 кВт·ч."
+    },
+    {
+     "sr": "Brzo DC punjenje (CCS, do 40 kW) na nekim tržištima je bilo doplata, pa kod polovnog e-Golfa proveri da li ima CCS priključak.",
+     "en": "DC fast charging (CCS, up to 40 kW) was a paid option in some markets, so check whether a used e-Golf has the CCS inlet.",
+     "ru": "Быстрая DC-зарядка (CCS, до 40 кВт) на некоторых рынках шла за доплату, поэтому у подержанного e-Golf проверь, есть ли разъём CCS."
+    }
+   ],
+   "fit": [
+    {
+     "sr": "Za e-Golf od 35,8 kWh WALLBOX 11 kW prepolovi vreme punjenja u odnosu na pojačanu utičnicu, jer auto na njemu koristi dve faze. Za e-Golf od 24,2 kWh wallbox ne donosi veću brzinu: auto prima 3,6 kW i na utičnici i na wallboxu, pa je START razuman izbor.",
+     "en": "For the 35.8 kWh e-Golf, WALLBOX 11 kW halves the charging time compared with a heavy-duty socket, because the car uses two phases on it. For the 24.2 kWh e-Golf a wallbox is no faster: the car takes 3.6 kW on the socket and on the wallbox alike, so START is the sensible choice.",
+     "ru": "Для e-Golf на 35,8 кВт·ч WALLBOX 11 kW вдвое сокращает время зарядки по сравнению с усиленной розеткой: на нём машина использует две фазы. Для e-Golf на 24,2 кВт·ч wallbox не быстрее: машина принимает 3,6 кВт и от розетки, и от wallbox, так что разумный выбор — START."
+    }
+   ],
+   "faq": [
+    {
+     "q": {
+      "sr": "Zašto e-Golf ne puni sa 11 kW na wallboxu od 11 kW?",
+      "en": "Why doesn’t an e-Golf charge at 11 kW on an 11 kW wallbox?",
+      "ru": "Почему e-Golf не заряжается на 11 кВт от wallbox на 11 кВт?"
+     },
+     "a": {
+      "sr": "Zato što punjač u autu koristi najviše dve faze po 16 A, što je 7,2 kW. Wallbox nudi 11 kW, a auto uzima onoliko koliko njegov punjač može.",
+      "en": "Because the on-board charger uses at most two phases at 16 A each, which is 7.2 kW. The wallbox offers 11 kW, and the car takes as much as its own charger can.",
+      "ru": "Потому что бортовое зарядное использует максимум две фазы по 16 А — это 7,2 кВт. Wallbox даёт 11 кВт, а машина берёт столько, сколько может её зарядное."
+     }
+    },
+    {
+     "q": {
+      "sr": "Da li je za e-Golf dovoljna pojačana utičnica?",
+      "en": "Is a heavy-duty socket enough for an e-Golf?",
+      "ru": "Хватит ли e-Golf усиленной розетки?"
+     },
+     "a": {
+      "sr": "Za e-Golf od 24,2 kWh jeste: Volkswagen navodi 8 h na 3,6 kW. Za e-Golf od 35,8 kWh navodi 10 h 50 min, pa puna baterija ne stane u osam sati niže tarife, ali dnevna dopuna stane.",
+      "en": "For the 24.2 kWh e-Golf, yes: Volkswagen gives 8 h at 3.6 kW. For the 35.8 kWh e-Golf it gives 10 h 50 min, so a full battery doesn’t fit into the eight lower-tariff hours, but a daily top-off does.",
+      "ru": "Для e-Golf на 24,2 кВт·ч — да: Volkswagen указывает 8 ч на 3,6 кВт. Для e-Golf на 35,8 кВт·ч — 10 ч 50 мин, то есть полная зарядка не укладывается в восемь часов ночного тарифа, а ежедневная подзарядка укладывается."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "Volkswagen Slovenija — katalog e-Golf (decembar 2018)",
+      "en": "Volkswagen Slovenia — e-Golf catalog (December 2018)",
+      "ru": "Volkswagen Словения — каталог e-Golf (декабрь 2018)"
+     },
+     "url": "https://cf-cdn-v6.volkswagen.at/media/Kwc_Basic_DownloadTag_Component/9076-paragraphs-108527-text-l5-child/default/658c8a1a/1700743932/e-golf-december-2018-5-korektura.pdf"
+    },
+    {
+     "t": {
+      "sr": "Volkswagen Newsroom — e-Golf: charging concept and charging equipment (2014)",
+      "en": "Volkswagen Newsroom — e-Golf: charging concept and charging equipment (2014)",
+      "ru": "Volkswagen Newsroom — e-Golf: charging concept and charging equipment (2014)"
+     },
+     "url": "https://www.volkswagen-newsroom.com/en/international-driving-presentation-of-the-new-e-golf-2858/charging-concept-and-charging-equipment-2883"
+    },
+    {
+     "t": {
+      "sr": "Volkswagen Newsroom — The e-Golf, IAA 2019: key aspects",
+      "en": "Volkswagen Newsroom — The e-Golf, IAA 2019: key aspects",
+      "ru": "Volkswagen Newsroom — The e-Golf, IAA 2019: key aspects"
+     },
+     "url": "https://www.volkswagen-newsroom.com/en/the-e-golf-iaa-international-motor-show-5344/key-aspects-5345"
+    },
+    {
+     "t": {
+      "sr": "Volkswagen Novi Zeland — tehnički list e-Golf MY20 (kopija kod prodavca)",
+      "en": "Volkswagen New Zealand — e-Golf MY20 spec sheet (dealer-hosted copy)",
+      "ru": "Volkswagen Новая Зеландия — спецификация e-Golf MY20 (копия у дилера)"
+     },
+     "url": "https://www.continentalcars.co.nz/assets/uploads/2017/10/MY20-e-Golf-Spec-Sheet-New-CI-14.08.2020.pdf"
+    },
+    {
+     "t": {
+      "sr": "ADAC Autokatalog — VW e-Golf 35,8 kWh (korisni kapacitet, broj faza)",
+      "en": "ADAC Autokatalog — VW e-Golf 35.8 kWh (usable capacity, number of phases)",
+      "ru": "ADAC Autokatalog — VW e-Golf 35,8 кВт·ч (полезная ёмкость, число фаз)"
+     },
+     "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/vw/golf/vii-facelift/266575"
+    }
+   ]
+  },
+  {
+   "slug": "vw-id",
+   "name": "VW ID.3, ID.4 i ID.5",
+   "za": "VW ID.3, ID.4 i ID.5",
+   "en": "VW ID.3, ID.4 and ID.5",
+   "ru": "VW ID.3, ID.4 и ID.5",
+   "short": "VW ID",
+   "bv": {
+    "kind": "brand",
+    "path": "/elektricni-automobili/volkswagen/",
+    "brand": "Volkswagen"
+   },
+   "cls": {
+    "sr": "11 kW trofazni; ID.3 Pure 7,2 kW",
+    "en": "11 kW three-phase; ID.3 Pure 7.2 kW",
+    "ru": "11 кВт трёхфазное; ID.3 Pure — 7,2 кВт"
+   },
+   "versions": [
+    {
+     "name": "ID.3 Pure 52 kWh",
+     "kwh": 52,
+     "kind": "neto",
+     "ac": 7.2,
+     "ph": 0,
+     "maker": {
+      "who": "Volkswagen",
+      "basis": "0–100%",
+      "t": {
+       "7.2": 510
+      }
+     }
+    },
+    {
+     "name": "ID.3 Pro 58 kWh",
+     "kwh": 58,
+     "kind": "neto",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "Volkswagen",
+      "basis": "0–100%",
+      "t": {
+       "2.3": 1860,
+       "11": 375
+      }
+     }
+    },
+    {
+     "name": "ID.3 Pro S 77 kWh",
+     "kwh": 77,
+     "kind": "neto",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "Volkswagen",
+      "basis": "0–100%",
+      "t": {
+       "11": 450
+      }
+     }
+    },
+    {
+     "name": "ID.4 Pure 52 kWh",
+     "kwh": 52,
+     "kind": "neto",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "Volkswagen",
+      "basis": "0–100%",
+      "t": {
+       "11": 330
+      }
+     }
+    },
+    {
+     "name": "ID.4 / ID.5 Pro, GTX 77 kWh",
+     "kwh": 77,
+     "kind": "neto",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "Volkswagen",
+      "basis": "0–100%",
+      "t": {
+       "11": 480
+      }
+     }
+    }
+   ],
+   "lead": {
+    "sr": "VW ID.3, ID.4 i ID.5 sa baterijom od 58 kWh i većom imaju punjač od 11 kW: Volkswagen za punjenje od 0 do 100% na wallboxu od 11 kW navodi od 6 h 15 min do 8 h 30 min. ID.3 Pure sa manjom baterijom prima 7,2 kW.",
+    "en": "The VW ID.3, ID.4 and ID.5 with a 58 kWh or larger battery have an 11 kW charger: Volkswagen gives 6 h 15 min to 8 h 30 min from 0 to 100% on an 11 kW wallbox. The ID.3 Pure with the smaller battery takes 7.2 kW.",
+    "ru": "У VW ID.3, ID.4 и ID.5 с батареей от 58 кВт·ч бортовое зарядное на 11 кВт: зарядка с 0 до 100% от wallbox на 11 кВт занимает, по данным Volkswagen, от 6 ч 15 мин до 8 ч 30 мин. ID.3 Pure с батареей поменьше принимает 7,2 кВт."
+   },
+   "facts": [
+    {
+     "sr": "U cenovnicima Volkswagen Srbija iz januara 2024. svi ID.4 i ID.5 (Pure, Pro, GTX) serijski imaju punjenje naizmeničnom strujom do 11 kW i CCS priključak.",
+     "en": "In the Volkswagen Serbia price lists of January 2024, every ID.4 and ID.5 (Pure, Pro, GTX) comes standard with AC charging up to 11 kW and a CCS inlet.",
+     "ru": "В прайс-листах Volkswagen Сербия за январь 2024 года у всех ID.4 и ID.5 (Pure, Pro, GTX) в базе зарядка переменным током до 11 кВт и разъём CCS."
+    },
+    {
+     "sr": "ID.3 Pure (45 i 52 kWh) prima najviše 7,2 kW; ID.4 Pure je 2021. takođe imao 7,2 kW. Koliko takav auto prima na trofaznom wallboxu od 11 kW, Volkswagen u ovim dokumentima ne navodi, pa nam uz upit napiši verziju i godište.",
+     "en": "The ID.3 Pure (45 and 52 kWh) takes 7.2 kW at most; in 2021 the ID.4 Pure also had 7.2 kW. How much such a car takes on a three-phase 11 kW wallbox Volkswagen doesn’t say in these documents, so tell us the version and model year in your request.",
+     "ru": "ID.3 Pure (45 и 52 кВт·ч) принимает максимум 7,2 кВт; у ID.4 Pure в 2021 году тоже было 7,2 кВт. Сколько такая машина берёт от трёхфазного wallbox на 11 кВт, Volkswagen в этих документах не указывает, поэтому в заявке напиши версию и год выпуска."
+    },
+    {
+     "sr": "Novije verzije ID.3 imaju baterije od 59, 77 i 79 kWh: Volkswagen za njih na 11 kW navodi 6 h 30 min, 8 h i 8 h 30 min. Na kućnoj utičnici (2,3 kW) za ID.3 od 58 kWh navodi 31 h.",
+     "en": "Newer ID.3 versions have 59, 77 and 79 kWh batteries: for them Volkswagen gives 6 h 30 min, 8 h and 8 h 30 min at 11 kW. On a household socket (2.3 kW) it gives 31 h for the 58 kWh ID.3.",
+     "ru": "У более новых ID.3 батареи на 59, 77 и 79 кВт·ч: для них на 11 кВт Volkswagen указывает 6 ч 30 мин, 8 ч и 8 ч 30 мин. От бытовой розетки (2,3 кВт) для ID.3 на 58 кВт·ч — 31 ч."
+    }
+   ],
+   "fit": [
+    {
+     "sr": "Za ID.3, ID.4 i ID.5 sa punjačem od 11 kW biramo WALLBOX 11 kW: auto koristi punu snagu i pun je za jednu noć. START je za manju dnevnu dopunu: za 8 sati na 3,7 kW u bateriju stane oko 27 kWh, trećina do polovine baterije.",
+     "en": "For an ID.3, ID.4 or ID.5 with the 11 kW charger we go with WALLBOX 11 kW: the car uses the full power and is full in one night. START is for a small daily top-off: 8 hours at 3.7 kW puts about 27 kWh into the battery, a third to a half of it.",
+     "ru": "Для ID.3, ID.4 и ID.5 с зарядным на 11 кВт берём WALLBOX 11 kW: машина использует всю мощность и заряжается за ночь. START — для небольшой ежедневной подзарядки: за 8 часов на 3,7 кВт в батарею попадает около 27 кВт·ч, от трети до половины ёмкости."
+    }
+   ],
+   "faq": [
+    {
+     "q": {
+      "sr": "Da li VW ID.4 može da puni sa 22 kW?",
+      "en": "Can a VW ID.4 charge at 22 kW?",
+      "ru": "Может ли VW ID.4 заряжаться на 22 кВт?"
+     },
+     "a": {
+      "sr": "Ne. Punjač u autu prima najviše 11 kW naizmenične struje, pa auto na punjaču od 22 kW puni istom brzinom kao na wallboxu od 11 kW.",
+      "en": "No. The on-board charger takes 11 kW AC at most, so on a 22 kW charger it charges at the same rate as on an 11 kW wallbox.",
+      "ru": "Нет. Бортовое зарядное принимает максимум 11 кВт переменного тока, так что от зарядки на 22 кВт машина заряжается с той же скоростью, что и от wallbox на 11 кВт."
+     }
+    },
+    {
+     "q": {
+      "sr": "Koliko traje punjenje VW ID.3 na wallboxu od 11 kW?",
+      "en": "How long does a VW ID.3 take to charge on an 11 kW wallbox?",
+      "ru": "Сколько заряжается VW ID.3 от wallbox на 11 кВт?"
+     },
+     "a": {
+      "sr": "Volkswagen za punjenje od 0 do 100% navodi 6 h 15 min za bateriju od 58 kWh i 7 h 30 min za 77 kWh.",
+      "en": "Volkswagen gives 6 h 15 min for the 58 kWh battery and 7 h 30 min for the 77 kWh one, from 0 to 100%.",
+      "ru": "От 0 до 100% Volkswagen указывает 6 ч 15 мин для батареи 58 кВт·ч и 7 ч 30 мин для 77 кВт·ч."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "Volkswagen Srbija — cenovnik i oprema ID.4 (januar 2024)",
+      "en": "Volkswagen Serbia — ID.4 price list and equipment (January 2024)",
+      "ru": "Volkswagen Сербия — прайс-лист и комплектации ID.4 (январь 2024)"
+     },
+     "url": "https://cf-cdn-v6.volkswagen.at/media/Kwc_Basic_DownloadTag_Component/74029-paragraphs-987778-text-d1/default/3236e2dd/1706001264/id-4-srb.pdf"
+    },
+    {
+     "t": {
+      "sr": "Volkswagen Srbija — cenovnik i oprema ID.5 (januar 2024)",
+      "en": "Volkswagen Serbia — ID.5 price list and equipment (January 2024)",
+      "ru": "Volkswagen Сербия — прайс-лист и комплектации ID.5 (январь 2024)"
+     },
+     "url": "https://cf-cdn-v6.volkswagen.at/media/Kwc_Basic_DownloadTag_Component/83145-paragraphs-1199520-text-d2/default/2c3a38f0/1706001357/id-5-srb.pdf"
+    },
+    {
+     "t": {
+      "sr": "Volkswagen Slovenija — katalog ID.3 (jun 2023)",
+      "en": "Volkswagen Slovenia — ID.3 catalog (June 2023)",
+      "ru": "Volkswagen Словения — каталог ID.3 (июнь 2023)"
+     },
+     "url": "https://cf-cdn-v6.volkswagen.at/media/Kwc_Basic_DownloadTag_Component/82499-paragraphs-1199902-text-l33-child/default/485c0f6f/1700728438/id3-katalog-2023-www.pdf"
+    },
+    {
+     "t": {
+      "sr": "Volkswagen Austrija — prodajni katalog ID.3 (mart 2025)",
+      "en": "Volkswagen Austria — ID.3 sales brochure (March 2025)",
+      "ru": "Volkswagen Австрия — каталог ID.3 (март 2025)"
+     },
+     "url": "https://www.volkswagen.at/dam/files/ca0a34cc8a66ea6b90cd7ffe2e3f0700ba1f1376/d8bfeae2320d19bd28d1e538336ba026/5bf5ced0-66d7-46a3-9d50-3cdc65d51b2f/ID3_Verkaufsunterlage"
+    },
+    {
+     "t": {
+      "sr": "Volkswagen Slovačka — cenovnik ID.4 (januar 2025)",
+      "en": "Volkswagen Slovakia — ID.4 price list (January 2025)",
+      "ru": "Volkswagen Словакия — прайс-лист ID.4 (январь 2025)"
+     },
+     "url": "https://www.vw.sk/dam/files/download/dd1e771db06104c50e88f69d50b880c2141cb9b4/899ff88929b9b408dc26909bbea358f4/4810bc4d-c8d8-497b-97a5-4c1d9cca5243/ID4_202501"
+    },
+    {
+     "t": {
+      "sr": "Volkswagen Newsroom — The ID.3: three battery sizes at series production launch (2019)",
+      "en": "Volkswagen Newsroom — The ID.3: three battery sizes at series production launch (2019)",
+      "ru": "Volkswagen Newsroom — The ID.3: three battery sizes at series production launch (2019)"
+     },
+     "url": "https://www.volkswagen-newsroom.com/en/the-id3-a-new-era-begins-5327/three-battery-sizes-at-series-production-launch-5334"
+    }
+   ]
+  },
+  {
+   "slug": "bmw-i3",
+   "name": "BMW i3",
+   "za": "BMW i3",
+   "en": "BMW i3",
+   "ru": "BMW i3",
+   "bv": {
+    "kind": "used",
+    "path": "/elektricni-automobili/polovni/"
+   },
+   "cls": {
+    "sr": "7,4 kW jednofazni ili 11 kW trofazni",
+    "en": "7.4 kW single-phase or 11 kW three-phase",
+    "ru": "7,4 кВт однофазное или 11 кВт трёхфазное"
+   },
+   "versions": [
+    {
+     "name": "i3 60 Ah",
+     "kwh": 18.8,
+     "kind": "neto",
+     "ac": 7.4,
+     "ph": 1,
+     "years": "2013–2017",
+     "maker": {
+      "who": "BMW",
+      "basis": "do 80%",
+      "t": {
+       "3.7": 330,
+       "7.4": 170
+      }
+     }
+    },
+    {
+     "name": "i3 / i3s 94 Ah",
+     "kwh": 27.2,
+     "kind": "neto",
+     "ac": 11,
+     "ph": 3,
+     "years": "2016–2018",
+     "maker": {
+      "who": "BMW",
+      "basis": "do 80%",
+      "t": {
+       "3.7": 450,
+       "7.4": 225,
+       "11": 165
+      }
+     }
+    },
+    {
+     "name": "i3 / i3s 120 Ah",
+     "kwh": 37.9,
+     "kind": "neto",
+     "ac": 11,
+     "ph": 3,
+     "years": "2018–2022",
+     "maker": {
+      "who": "BMW",
+      "basis": "0–80%",
+      "t": {
+       "3.7": 580,
+       "11": 190
+      }
+     }
+    }
+   ],
+   "lead": {
+    "sr": "BMW i3 120 Ah (37,9 kWh) ima trofazni punjač od 11 kW: BMW za punjenje do 80% na 11 kW navodi oko 3 h 10 min. Stariji i3 60 Ah je jednofazni, a kod i3 94 Ah od opreme zavisi da li prima 11 kW, pa pre izbora punjača proveri šta tvoj auto ima.",
+    "en": "The BMW i3 120 Ah (37.9 kWh) has a three-phase 11 kW charger: BMW gives about 3 h 10 min to 80% at 11 kW. The older i3 60 Ah is single-phase, and on the i3 94 Ah it depends on the equipment whether it takes 11 kW, so check what your car has before choosing a charger.",
+    "ru": "У BMW i3 120 Ah (37,9 кВт·ч) трёхфазное бортовое зарядное на 11 кВт: до 80% на 11 кВт BMW указывает около 3 ч 10 мин. Более старый i3 60 Ah — однофазный, а у i3 94 Ah от комплектации зависит, принимает ли он 11 кВт, так что перед выбором зарядки проверь, что стоит в твоей машине."
+   },
+   "facts": [
+    {
+     "sr": "Za i3 94 Ah BMW u tehničkim podacima navodi dve brzine punjenja naizmeničnom strujom: 7,4 kW jednofazno (32 A) i 11 kW trofazno (16 A). U dokumentima koje smo čitali ne piše da li je trofazno punjenje bilo serijsko na svim tržištima.",
+     "en": "For the i3 94 Ah, BMW’s technical data list two AC charging rates: 7.4 kW single-phase (32 A) and 11 kW three-phase (16 A). The documents we read don’t say whether three-phase charging was standard in every market.",
+     "ru": "Для i3 94 Ah в техданных BMW указаны две скорости зарядки переменным током: 7,4 кВт однофазно (32 А) и 11 кВт трёхфазно (16 А). В документах, которые мы читали, не сказано, шла ли трёхфазная зарядка в базе на всех рынках."
+    },
+    {
+     "sr": "Kod i3 120 Ah punjenje od 11 kW i brzo DC punjenje od 50 kW su serijska oprema u cenovniku BMW Austrija iz novembra 2018.",
+     "en": "On the i3 120 Ah, 11 kW AC charging and 50 kW DC fast charging are standard equipment in the BMW Austria price list of November 2018.",
+     "ru": "У i3 120 Ah зарядка на 11 кВт и быстрая DC-зарядка на 50 кВт, по прайс-листу BMW Австрия за ноябрь 2018 года, входят в базу."
+    },
+    {
+     "sr": "i3 60 Ah na trofaznom wallboxu od 11 kW koristi jednu fazu od 16 A, što je 3,7 kW. Verzije REx imaju iste podatke o punjenju.",
+     "en": "On a three-phase 11 kW wallbox the i3 60 Ah uses one 16 A phase, which is 3.7 kW. REx versions have the same charging data.",
+     "ru": "i3 60 Ah берёт от трёхфазного wallbox на 11 кВт одну фазу на 16 А — это 3,7 кВт. У версий REx данные по зарядке те же."
+    }
+   ],
+   "fit": [
+    {
+     "sr": "Za i3 120 Ah i za i3 94 Ah sa trofaznim punjačem biramo WALLBOX 11 kW: auto koristi punu snagu. Za i3 60 Ah wallbox od 11 kW ne puni brže od pojačane utičnice od 16 A, jer oba daju 3,7 kW, pa je START dovoljan: BMW za punjenje do 80% na 3,7 kW navodi oko 5 h 30 min.",
+     "en": "For the i3 120 Ah, and for an i3 94 Ah with the three-phase charger, WALLBOX 11 kW uses the car’s full power. For the i3 60 Ah an 11 kW wallbox is no faster than a 16 A heavy-duty socket, since both deliver 3.7 kW, so START is enough: BMW gives about 5 h 30 min to 80% at 3.7 kW.",
+     "ru": "Для i3 120 Ah и для i3 94 Ah с трёхфазным зарядным WALLBOX 11 kW использует всю мощность машины. Для i3 60 Ah wallbox на 11 кВт не быстрее усиленной розетки на 16 А — и то и другое даёт 3,7 кВт, так что хватит START: до 80% на 3,7 кВт BMW указывает около 5 ч 30 мин."
+    }
+   ],
+   "faq": [
+    {
+     "q": {
+      "sr": "Kako da znam da li moj BMW i3 prima 11 kW?",
+      "en": "How do I know whether my BMW i3 takes 11 kW?",
+      "ru": "Как понять, принимает ли мой BMW i3 11 кВт?"
+     },
+     "a": {
+      "sr": "Pogledaj oznaku baterije i opremu: i3 120 Ah ima 11 kW serijski, i3 60 Ah je jednofazni, a kod i3 94 Ah zavisi od opreme. Najsigurnija provera je punjenje na trofaznom javnom punjaču, gde punjač ili aplikacija mreže pokažu snagu.",
+      "en": "Look at the battery designation and the equipment: the i3 120 Ah comes standard with 11 kW, the i3 60 Ah is single-phase, and on the i3 94 Ah it depends on the equipment. The surest check is to charge at a three-phase public charger, where the charger or the network’s app shows the power.",
+      "ru": "Посмотри обозначение батареи и комплектацию: у i3 120 Ah 11 кВт в базе, i3 60 Ah — однофазный, а у i3 94 Ah зависит от комплектации. Надёжнее всего проверить на трёхфазной общественной зарядке: станция или приложение сети покажут мощность."
+     }
+    },
+    {
+     "q": {
+      "sr": "Da li je za BMW i3 dovoljna pojačana utičnica?",
+      "en": "Is a heavy-duty socket enough for a BMW i3?",
+      "ru": "Хватит ли BMW i3 усиленной розетки?"
+     },
+     "a": {
+      "sr": "Za i3 60 Ah jeste. Za i3 120 Ah BMW na 3,7 kW navodi oko 9 h 40 min do 80%, pa puna baterija ne stane u jednu noć; ako dnevno voziš manje, dopuna svake noći je dovoljna.",
+      "en": "For the i3 60 Ah, yes. For the i3 120 Ah, BMW gives about 9 h 40 min to 80% at 3.7 kW, so a full battery doesn’t fit into one night; if you drive less per day, a top-off every night is enough.",
+      "ru": "Для i3 60 Ah — да. Для i3 120 Ah BMW указывает около 9 ч 40 мин до 80% на 3,7 кВт, так что полностью батарея за ночь не зарядится; если за день проезжаешь меньше, хватит подзарядки каждую ночь."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "BMW Group — tehnički podaci BMW i3 94 Ah i 60 Ah (jul 2016)",
+      "en": "BMW Group — BMW i3 94 Ah and 60 Ah technical data (July 2016)",
+      "ru": "BMW Group — технические данные BMW i3 94 Ah и 60 Ah (июль 2016)"
+     },
+     "url": "https://www.press.bmwgroup.com/czech/article/attachment/T0259656CS/358544"
+    },
+    {
+     "t": {
+      "sr": "BMW Group — tehnički podaci BMW i3 i i3s (novembar 2017)",
+      "en": "BMW Group — BMW i3 and i3s technical data (November 2017)",
+      "ru": "BMW Group — технические данные BMW i3 и i3s (ноябрь 2017)"
+     },
+     "url": "https://www.press.bmwgroup.com/italy/article/attachment/T0273661EN/399377"
+    },
+    {
+     "t": {
+      "sr": "BMW Group — tehnički podaci BMW i3 120 Ah (novembar 2018)",
+      "en": "BMW Group — BMW i3 120 Ah technical data (November 2018)",
+      "ru": "BMW Group — технические данные BMW i3 120 Ah (ноябрь 2018)"
+     },
+     "url": "https://www.press.bmwgroup.com/austria/article/attachment/T0291850DE/424531"
+    },
+    {
+     "t": {
+      "sr": "BMW Group — The BMW i3 120 Ah and the BMW i3s 120 Ah (28.09.2018)",
+      "en": "BMW Group — The BMW i3 120 Ah and the BMW i3s 120 Ah (28.09.2018)",
+      "ru": "BMW Group — The BMW i3 120 Ah and the BMW i3s 120 Ah (28.09.2018)"
+     },
+     "url": "https://www.press.bmwgroup.com/global/article/detail/T0284828EN/with-new-high-voltage-batteries-for-an-even-further-extended-range-and-retaining-characteristic-bmw-sporty-flair:-the-bmw-i3-120-ah-and-the-bmw-i3s-120-ah"
+    },
+    {
+     "t": {
+      "sr": "BMW Group Austrija — cenovnik BMW i3, novembar 2018 (kopija kod prodavca)",
+      "en": "BMW Group Austria — BMW i3 price list, November 2018 (dealer-hosted copy)",
+      "ru": "BMW Group Австрия — прайс-лист BMW i3, ноябрь 2018 (копия у дилера)"
+     },
+     "url": "https://www.autofrey.at/wp-content/uploads/2017/01/Preisliste-i3_11_2018.pdf"
+    },
+    {
+     "t": {
+      "sr": "ADAC Autokatalog — BMW i3 (godine proizvodnje)",
+      "en": "ADAC Autokatalog — BMW i3 (production years)",
+      "ru": "ADAC Autokatalog — BMW i3 (годы выпуска)"
+     },
+     "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/bmw/i3/i01-facelift/283073/"
+    }
+   ]
+  },
+  {
+   "slug": "smart-eq",
+   "name": "smart EQ fortwo i forfour",
+   "za": "smart EQ fortwo i forfour",
+   "en": "smart EQ fortwo and forfour",
+   "ru": "smart EQ fortwo и forfour",
+   "short": "smart EQ",
+   "bv": {
+    "kind": "used",
+    "path": "/elektricni-automobili/polovni/"
+   },
+   "cls": {
+    "sr": "4,6 kW jednofazni; opcija 22 kW",
+    "en": "4.6 kW single-phase; 22 kW optional",
+    "ru": "4,6 кВт однофазное; опция 22 кВт"
+   },
+   "versions": [
+    {
+     "name": {
+      "sr": "EQ fortwo / forfour, punjač 4,6 kW",
+      "en": "EQ fortwo / forfour, 4.6 kW charger",
+      "ru": "EQ fortwo / forfour, зарядное 4,6 кВт"
+     },
+     "kwh": 17.6,
+     "kind": "pr",
+     "ac": 4.6,
+     "ph": 1
+    },
+    {
+     "name": {
+      "sr": "EQ fortwo / forfour, punjač 22 kW (doplata)",
+      "en": "EQ fortwo / forfour, 22 kW charger (option)",
+      "ru": "EQ fortwo / forfour, зарядное 22 кВт (опция)"
+     },
+     "kwh": 17.6,
+     "kind": "pr",
+     "ac": 22,
+     "ph": 3,
+     "cells": {
+      "t37": {
+       "sr": "nije navedeno",
+       "en": "not stated",
+       "ru": "не указано"
+      },
+      "t23": {
+       "sr": "8 h 30 min (10–80%, podatak proizvođača)",
+       "en": "8 h 30 min (10–80%, the manufacturer’s figure)",
+       "ru": "8 ч 30 мин (10–80%, данные производителя)"
+      }
+     }
+    }
+   ],
+   "lead": {
+    "sr": "smart EQ ima bateriju od 17,6 kWh i serijski jednofazni punjač od 4,6 kW: na pojačanoj utičnici od 16 A puni sa 3,7 kW, isto kao na trofaznom wallboxu od 11 kW. Wallbox je brži samo ako auto ima doplatni punjač od 22 kW.",
+    "en": "The smart EQ has a 17.6 kWh battery and a standard single-phase 4.6 kW charger: on a 16 A heavy-duty socket it charges at 3.7 kW, the same as on a three-phase 11 kW wallbox. A wallbox is faster only if the car has the optional 22 kW charger.",
+    "ru": "У smart EQ батарея 17,6 кВт·ч и штатное однофазное зарядное на 4,6 кВт: от усиленной розетки на 16 А он заряжается на 3,7 кВт — так же, как от трёхфазного wallbox на 11 кВт. Wallbox быстрее, только если в машине стоит опционное зарядное на 22 кВт."
+   },
+   "facts": [
+    {
+     "sr": "Punih 4,6 kW serijski punjač postiže pri 20 A na jednoj fazi. Pojačana utičnica i trofazni wallbox od 11 kW daju 16 A po fazi, što je 3,7 kW.",
+     "en": "The standard charger reaches its full 4.6 kW at 20 A on one phase. A heavy-duty socket and a three-phase 11 kW wallbox deliver 16 A per phase, which is 3.7 kW.",
+     "ru": "Полные 4,6 кВт штатное зарядное выдаёт при 20 А на одной фазе. Усиленная розетка и трёхфазный wallbox на 11 кВт дают 16 А на фазу — это 3,7 кВт."
+    },
+    {
+     "sr": "Uputstvo za upotrebu navodi vreme punjenja od 20 do 100% na 230 V: oko 3 h 30 min pri 20 A, oko 6 h pri 12 A i oko 9 h 30 min pri 8 A.",
+     "en": "The owner’s manual gives charging times from 20 to 100% at 230 V: about 3 h 30 min at 20 A, about 6 h at 12 A and about 9 h 30 min at 8 A.",
+     "ru": "В руководстве указано время зарядки с 20 до 100% при 230 В: около 3 ч 30 мин на 20 А, около 6 ч на 12 А и около 9 ч 30 мин на 8 А."
+    },
+    {
+     "sr": "Punjač od 22 kW bio je doplata: na trofaznom punjaču od 22 kW puni od 10 do 80% za manje od 40 minuta. Na kućnoj utičnici je, po cenovniku proizvođača, sporiji od serijskog punjača: 8 h 30 min od 10 do 80%.",
+     "en": "The 22 kW charger was a paid option: on a three-phase 22 kW charger it goes from 10 to 80% in under 40 minutes. On a household socket it is slower than the standard charger, according to the manufacturer’s price list: 8 h 30 min from 10 to 80%.",
+     "ru": "Зарядное на 22 кВт шло за доплату: от трёхфазной зарядки на 22 кВт оно заряжает с 10 до 80% меньше чем за 40 минут. От бытовой розетки оно, по прайс-листу производителя, медленнее штатного: 8 ч 30 мин с 10 до 80%."
+    },
+    {
+     "sr": "U dokumentima proizvođača navodi se samo punjenje naizmeničnom strujom, preko Type 2 priključka; brzo DC punjenje se ne pominje.",
+     "en": "The manufacturer’s documents mention AC charging only, through the Type 2 inlet; DC fast charging is not mentioned.",
+     "ru": "В документах производителя указана только зарядка переменным током через разъём Type 2; быстрая DC-зарядка не упоминается."
+    }
+   ],
+   "fit": [
+    {
+     "sr": "Za smart EQ sa serijskim punjačem START je dovoljan: baterija je mala, a wallbox od 11 kW ne puni brže. Ako tvoj auto ima punjač od 22 kW, WALLBOX 11 kW ga puni sa 11 kW, pa je baterija puna za {twb:1}.",
+     "en": "For a smart EQ with the standard charger, START is enough: the battery is small and an 11 kW wallbox is no faster. If your car has the 22 kW charger, WALLBOX 11 kW charges it at 11 kW, so the battery is full in {twb:1}.",
+     "ru": "Для smart EQ со штатным зарядным хватит START: батарея маленькая, а wallbox на 11 кВт не быстрее. Если в твоей машине стоит зарядное на 22 кВт, WALLBOX 11 kW заряжает её на 11 кВт — на полную батарею уходит {twb:1}."
+    }
+   ],
+   "faq": [
+    {
+     "q": {
+      "sr": "Kako da znam da li moj smart EQ ima punjač od 22 kW?",
+      "en": "How do I know whether my smart EQ has the 22 kW charger?",
+      "ru": "Как понять, есть ли в моём smart EQ зарядное на 22 кВт?"
+     },
+     "a": {
+      "sr": "Punjač od 22 kW je u cenovnicima proizvođača bio doplata (šifra opreme 908). Proveri u opremi auta ili na trofaznom javnom punjaču: ako auto prima više od 4,6 kW, ima punjač od 22 kW.",
+      "en": "The 22 kW charger was a paid option in the manufacturer’s price lists (equipment code 908). Check the car’s equipment or try a three-phase public charger: if the car takes more than 4.6 kW, it has the 22 kW charger.",
+      "ru": "Зарядное на 22 кВт в прайс-листах производителя шло за доплату (код опции 908). Посмотри комплектацию или попробуй трёхфазную общественную зарядку: если машина принимает больше 4,6 кВт, у неё зарядное на 22 кВт."
+     }
+    },
+    {
+     "q": {
+      "sr": "Da li je za smart EQ dovoljna pojačana utičnica?",
+      "en": "Is a heavy-duty socket enough for a smart EQ?",
+      "ru": "Хватит ли smart EQ усиленной розетки?"
+     },
+     "a": {
+      "sr": "Jeste. Proizvođač za punjenje od 10 do 80% na kućnoj utičnici navodi manje od 6 h, a na punjaču od 4,6 kW manje od 3 h 30 min.",
+      "en": "Yes. The manufacturer gives under 6 h from 10 to 80% on a household socket, and under 3 h 30 min on a 4.6 kW charger.",
+      "ru": "Да. Для зарядки с 10 до 80% производитель указывает меньше 6 ч от бытовой розетки и меньше 3 ч 30 мин от зарядки на 4,6 кВт."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "Daimler — uputstvo za upotrebu smart fortwo electric drive (decembar 2017)",
+      "en": "Daimler — smart fortwo electric drive owner’s manual (December 2017)",
+      "ru": "Daimler — руководство по эксплуатации smart fortwo electric drive (декабрь 2017)"
+     },
+     "url": "https://moba.i.mercedes-benz.com/markets-smart/ece-row/baix/cars/smart-fortwo-ed-453_2017_d/de_DE/downloads/12_17/BA_smart_453_39_49_AEJ2017-1b_de_DE.pdf"
+    },
+    {
+     "t": {
+      "sr": "Mercedes-Benz AG — saopštenje o modelima smart EQ (27.01.2020)",
+      "en": "Mercedes-Benz AG — press release on the smart EQ models (27.01.2020)",
+      "ru": "Mercedes-Benz AG — пресс-релиз о моделях smart EQ (27.01.2020)"
+     },
+     "url": "https://mb.cision.com/Main/118/3016212/1179179.pdf"
+    },
+    {
+     "t": {
+      "sr": "smart Austrija — tehnički podaci EQ",
+      "en": "smart Austria — EQ technical data",
+      "ru": "smart Австрия — технические данные EQ"
+     },
+     "url": "https://www.smart.mercedes-benz.com/at/de/modelle/technische-daten-eq"
+    },
+    {
+     "t": {
+      "sr": "Mercedes-Benz AG — cenovnik smart EQ, novembar 2019 (kopija kod prodavca)",
+      "en": "Mercedes-Benz AG — smart EQ price list, November 2019 (dealer-hosted copy)",
+      "ru": "Mercedes-Benz AG — прайс-лист smart EQ, ноябрь 2019 (копия у дилера)"
+     },
+     "url": "https://www.sueverkruep.de/smart/wp-content/uploads/sites/8/2019/08/smart-Preisliste-29-11-19.pdf"
+    },
+    {
+     "t": {
+      "sr": "Daimler AG — cenovnik smart EQ, 2018 (kopija kod prodavca)",
+      "en": "Daimler AG — smart EQ price list, 2018 (dealer-hosted copy)",
+      "ru": "Daimler AG — прайс-лист smart EQ, 2018 (копия у дилера)"
+     },
+     "url": "https://www.schade.de/fileadmin/docs/SCHADE/Neuwagen/Pkw/smart/smart_EQ_31-08-2018.pdf"
+    }
+   ]
+  },
+  {
+   "slug": "audi-e-tron",
+   "name": "Audi e-tron i Q8 e-tron",
+   "za": "Audi e-tron i Q8 e-tron",
+   "en": "Audi e-tron and Q8 e-tron",
+   "ru": "Audi e-tron и Q8 e-tron",
+   "short": "Audi e-tron",
+   "bv": {
+    "kind": "used",
+    "path": "/elektricni-automobili/polovni/"
+   },
+   "cls": {
+    "sr": "11 kW trofazni; opcija 22 kW",
+    "en": "11 kW three-phase; 22 kW optional",
+    "ru": "11 кВт трёхфазное; опция 22 кВт"
+   },
+   "versions": [
+    {
+     "name": "e-tron 55 quattro",
+     "kwh": 95,
+     "kind": "bruto",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "Audi",
+      "basis": "do pune baterije",
+      "t": {
+       "11": 510
+      }
+     }
+    },
+    {
+     "name": "Q8 50 e-tron",
+     "kwh": 89,
+     "kind": "neto",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "Audi",
+      "basis": "0–100%",
+      "t": {
+       "11": 555
+      }
+     }
+    },
+    {
+     "name": "Q8 55 e-tron, SQ8 e-tron",
+     "kwh": 106,
+     "kind": "neto",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "Audi",
+      "basis": "0–100%",
+      "t": {
+       "11": 690
+      }
+     }
+    }
+   ],
+   "lead": {
+    "sr": "Audi e-tron i Q8 e-tron serijski imaju trofazni punjač od 11 kW, a baterije su velike: Audi za punu bateriju na 11 kW navodi od oko 8 h 30 min (e-tron 55) do 11 h 30 min (Q8 55 e-tron). Zato je wallbox od 11 kW način da auto bude pun do jutra.",
+    "en": "The Audi e-tron and Q8 e-tron come standard with a three-phase 11 kW charger, and their batteries are large: Audi gives from about 8 h 30 min (e-tron 55) to 11 h 30 min (Q8 55 e-tron) for a full battery at 11 kW. That makes an 11 kW wallbox the way to have the car full by morning.",
+    "ru": "У Audi e-tron и Q8 e-tron в базе трёхфазное бортовое зарядное на 11 кВт, а батареи большие: на полную батарею при 11 кВт Audi указывает от примерно 8 ч 30 мин (e-tron 55) до 11 ч 30 мин (Q8 55 e-tron). Поэтому wallbox на 11 кВт — способ получить к утру полную батарею."
+   },
+   "facts": [
+    {
+     "sr": "Drugi ugrađeni punjač, sa kojim auto prima 22 kW, ide uz doplatu: za e-tron 55 od modelske godine 2021, a i kod Q8 e-trona je opcija. Na wallboxu od 11 kW i takav auto puni sa 11 kW.",
+     "en": "A second on-board charger, which lets the car take 22 kW, is a paid option: on the e-tron 55 from model year 2021, and on the Q8 e-tron as well. On an 11 kW wallbox such a car still charges at 11 kW.",
+     "ru": "Второе бортовое зарядное, с которым машина принимает 22 кВт, — платная опция: для e-tron 55 с 2021 модельного года, для Q8 e-tron тоже. От wallbox на 11 кВт и такая машина заряжается на 11 кВт."
+    },
+    {
+     "sr": "Za e-tron 55 Audi navodi 95 kWh bruto; za Q8 50 e-tron 89 kWh neto (95 bruto), a za Q8 55 i SQ8 e-tron 106 kWh neto (114 bruto).",
+     "en": "For the e-tron 55, Audi quotes 95 kWh gross; for the Q8 50 e-tron, 89 kWh net (95 gross); and for the Q8 55 and SQ8 e-tron, 106 kWh net (114 gross).",
+     "ru": "Для e-tron 55 Audi указывает 95 кВт·ч брутто; для Q8 50 e-tron — 89 кВт·ч нетто (95 брутто), для Q8 55 и SQ8 e-tron — 106 кВт·ч нетто (114 брутто)."
+    },
+    {
+     "sr": "Uz e-tron je serijski išao prenosni sistem za punjenje: do 2,3 kW na kućnoj utičnici i do 11 kW na trofaznoj industrijskoj utičnici od 400 V. Naš START je jednofazna utičnica, do 3,7 kW.",
+     "en": "The e-tron came standard with a portable charging system: up to 2.3 kW on a household socket and up to 11 kW on a 400 V three-phase industrial socket. Our START is a single-phase socket, up to 3.7 kW.",
+     "ru": "В базе к e-tron шла переносная система зарядки: до 2,3 кВт от бытовой розетки и до 11 кВт от трёхфазной промышленной розетки на 400 В. Наш START — однофазная розетка, до 3,7 кВт."
+    }
+   ],
+   "fit": [
+    {
+     "sr": "Za Audi e-tron biramo WALLBOX 11 kW: auto koristi punu snagu, a baterija se napuni za jednu noć. START pokriva samo manju dnevnu dopunu: za 8 sati na 3,7 kW u bateriju stane oko 27 kWh, manje od trećine kapaciteta.",
+     "en": "For the Audi e-tron we go with WALLBOX 11 kW: the car uses the full power and the battery fills up in one night. START only covers a small daily top-off: 8 hours at 3.7 kW puts about 27 kWh into the battery, less than a third of its capacity.",
+     "ru": "Для Audi e-tron берём WALLBOX 11 kW: машина использует всю мощность, и батарея заряжается за ночь. START покрывает только небольшую ежедневную подзарядку: за 8 часов на 3,7 кВт в батарею попадает около 27 кВт·ч — меньше трети ёмкости."
+    }
+   ],
+   "faq": [
+    {
+     "q": {
+      "sr": "Može li Audi e-tron da puni sa 22 kW kod kuće?",
+      "en": "Can an Audi e-tron charge at 22 kW at home?",
+      "ru": "Может ли Audi e-tron заряжаться дома на 22 кВт?"
+     },
+     "a": {
+      "sr": "Samo ako auto ima doplatni drugi punjač i ako imaš punjač od 22 kW na priključku 3 × 32 A. Naš WALLBOX je 11 kW; na toj snazi Audi za Q8 50 e-tron navodi oko 9 h 15 min od 0 do 100%.",
+      "en": "Only if the car has the optional second charger and you have a 22 kW charger on a 3 × 32 A connection. Our WALLBOX is 11 kW; at that power Audi gives about 9 h 15 min from 0 to 100% for the Q8 50 e-tron.",
+      "ru": "Только если в машине стоит опционное второе зарядное, а у тебя — зарядка на 22 кВт с подключением 3 × 32 А. Наш WALLBOX — 11 кВт; на этой мощности Audi указывает для Q8 50 e-tron около 9 ч 15 мин от 0 до 100%."
+     }
+    },
+    {
+     "q": {
+      "sr": "Da li je za Audi e-tron dovoljna pojačana utičnica?",
+      "en": "Is a heavy-duty socket enough for an Audi e-tron?",
+      "ru": "Хватит ли Audi e-tron усиленной розетки?"
+     },
+     "a": {
+      "sr": "Za punu bateriju nije: na 3,7 kW bi punjenje baterije od 95 kWh trajalo više od jednog dana. Dovoljna je ako dnevno prelaziš kratke relacije i dopunjuješ svake noći.",
+      "en": "Not for a full battery: at 3.7 kW, charging a 95 kWh battery would take more than a day. It is enough if you drive short distances each day and top off every night.",
+      "ru": "Для полной батареи — нет: на 3,7 кВт зарядка батареи на 95 кВт·ч заняла бы больше суток. Розетки хватит, если за день ты проезжаешь немного и подзаряжаешься каждую ночь."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "Audi MediaCenter — The Audi e-tron: battery and charging technology (2018)",
+      "en": "Audi MediaCenter — The Audi e-tron: battery and charging technology (2018)",
+      "ru": "Audi MediaCenter — The Audi e-tron: battery and charging technology (2018)"
+     },
+     "url": "https://audi-mediacenter.com/en/the-audi-e-tron-in-abu-dhabi-11089/battery-and-charging-technology-11094"
+    },
+    {
+     "t": {
+      "sr": "Audi MediaCenter — AC charging with 22 kW of power (modelska godina 2021)",
+      "en": "Audi MediaCenter — AC charging with 22 kW of power (model year 2021)",
+      "ru": "Audi MediaCenter — AC charging with 22 kW of power (2021 модельный год)"
+     },
+     "url": "https://www.audi-mediacenter.com/en/press-releases/audi-further-improves-the-e-tron-product-lineac-charging-with-22-kw-of-power-greater-driving-convenience-13361"
+    },
+    {
+     "t": {
+      "sr": "Audi — The Audi Q8 e-tron: battery, capacity and charging power",
+      "en": "Audi — The Audi Q8 e-tron: battery, capacity and charging power",
+      "ru": "Audi — The Audi Q8 e-tron: battery, capacity and charging power"
+     },
+     "url": "https://www.audi.com/en/the-audi-q8-e-tron-until-2025-15069/more-battery-capacity-and-higher-charging-power-battery-15072"
+    }
+   ]
+  },
+  {
+   "slug": "fiat-500e",
+   "name": "Fiat 500e",
+   "za": "Fiat 500e",
+   "en": "Fiat 500e",
+   "ru": "Fiat 500e",
+   "bv": {
+    "kind": "model",
+    "path": "/elektricni-automobili/fiat/500e/"
+   },
+   "cls": {
+    "sr": "11 kW trofazni",
+    "en": "11 kW three-phase",
+    "ru": "11 кВт трёхфазное"
+   },
+   "versions": [
+    {
+     "name": "500e 23,8 kWh (70 kW)",
+     "kwh": 21.3,
+     "kind": "neto",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "Fiat",
+      "basis": "0–100%",
+      "t": {
+       "3.7": 450,
+       "7.4": 220,
+       "11": 150
+      }
+     }
+    },
+    {
+     "name": "500e 42 kWh (87 kW)",
+     "kwh": 37.3,
+     "kind": "neto",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "Fiat",
+      "basis": "0–100%",
+      "t": {
+       "3.7": 765,
+       "7.4": 380,
+       "11": 255
+      }
+     }
+    }
+   ],
+   "lead": {
+    "sr": "Fiat 500e ima trofazni punjač od 11 kW u obe verzije baterije. Na 11 kW Fiat za punjenje od 0 do 100% navodi 2 h 30 min (23,8 kWh) i 4 h 15 min (42 kWh), a na 3,7 kW — 7 h 30 min i 12 h 45 min.",
+    "en": "The Fiat 500e has a three-phase 11 kW charger with either battery. At 11 kW Fiat gives 2 h 30 min (23.8 kWh) and 4 h 15 min (42 kWh) from 0 to 100%, and at 3.7 kW 7 h 30 min and 12 h 45 min.",
+    "ru": "У Fiat 500e трёхфазное бортовое зарядное на 11 кВт с любой из двух батарей. На 11 кВт зарядка от 0 до 100% занимает, по данным Fiat, 2 ч 30 мин (23,8 кВт·ч) и 4 ч 15 мин (42 кВт·ч), а на 3,7 кВт — 7 ч 30 мин и 12 ч 45 мин."
+   },
+   "facts": [
+    {
+     "sr": "Punjač u autu radi i jednofazno, do 7,4 kW, i trofazno, do 11 kW. Na punjaču od 22 kW auto i dalje prima najviše 11 kW.",
+     "en": "The on-board charger works both single-phase, up to 7.4 kW, and three-phase, up to 11 kW. On a 22 kW charger the car still takes 11 kW at most.",
+     "ru": "Бортовое зарядное работает и однофазно, до 7,4 кВт, и трёхфазно, до 11 кВт. От зарядки на 22 кВт машина всё равно берёт максимум 11 кВт."
+    },
+    {
+     "sr": "Korisni kapacitet je 21,3 kWh kod baterije od 23,8 kWh i 37,3 kWh kod baterije od 42 kWh. Brzo DC punjenje je do 50 kW, odnosno do 85 kW.",
+     "en": "Usable capacity is 21.3 kWh for the 23.8 kWh battery and 37.3 kWh for the 42 kWh battery. DC fast charging goes up to 50 kW and 85 kW respectively.",
+     "ru": "Полезная ёмкость — 21,3 кВт·ч у батареи на 23,8 кВт·ч и 37,3 кВт·ч у батареи на 42 кВт·ч. Быстрая DC-зарядка — до 50 и до 85 кВт соответственно."
+    },
+    {
+     "sr": "Koji kabl ide uz auto, zavisi od tržišta i godišta: u austrijskim cenovnicima za 2025. i 2026. godinu Mode 3 kabl za wallbox i javne punjače je serijski, a prenosni punjač za utičnicu je doplata. Proveri šta si dobio uz svoj auto.",
+     "en": "Which cable comes with the car depends on the market and the model year: in the Austrian price lists for 2025 and 2026 the Mode 3 cable for wallboxes and public chargers is standard, and the portable charger for a socket is a paid option. Check what came with your car.",
+     "ru": "Какой кабель идёт с машиной, зависит от рынка и года выпуска: в австрийских прайс-листах на 2025 и 2026 годы кабель Mode 3 для wallbox и общественных зарядок — в базе, а переносное зарядное для розетки — за доплату. Проверь, что тебе дали с машиной."
+    }
+   ],
+   "fit": [
+    {
+     "sr": "Za 500e sa baterijom od 42 kWh WALLBOX 11 kW je izbor ako hoćeš punu bateriju svako jutro: 4 h 15 min umesto 12 h 45 min. Za verziju od 23,8 kWh i START je dovoljan, jer puna baterija stane u jednu noć, pod uslovom da imaš prenosni punjač od 16 A.",
+     "en": "For a 500e with the 42 kWh battery, WALLBOX 11 kW is the choice if you want a full battery every morning: 4 h 15 min instead of 12 h 45 min. For the 23.8 kWh version START is enough too, because a full battery fits into one night, provided you have a 16 A portable charger.",
+     "ru": "Для 500e с батареей 42 кВт·ч WALLBOX 11 kW — твой выбор, если хочешь полную батарею каждое утро: 4 ч 15 мин вместо 12 ч 45 мин. Для версии на 23,8 кВт·ч хватит и START: батарея полностью заряжается за ночь, если у тебя есть переносное зарядное на 16 А."
+    }
+   ],
+   "faq": [
+    {
+     "q": {
+      "sr": "Da li je za Fiat 500e dovoljna pojačana utičnica?",
+      "en": "Is a heavy-duty socket enough for a Fiat 500e?",
+      "ru": "Хватит ли Fiat 500e усиленной розетки?"
+     },
+     "a": {
+      "sr": "Za verziju od 23,8 kWh jeste: Fiat navodi 7 h 30 min na 3,7 kW. Za verziju od 42 kWh navodi 12 h 45 min, pa puna baterija ne stane u osam sati niže tarife, ali dnevna dopuna stane.",
+      "en": "For the 23.8 kWh version, yes: Fiat gives 7 h 30 min at 3.7 kW. For the 42 kWh version it gives 12 h 45 min, so a full battery doesn’t fit into the eight lower-tariff hours, but a daily top-off does.",
+      "ru": "Для версии на 23,8 кВт·ч — да: Fiat указывает 7 ч 30 мин на 3,7 кВт. Для версии на 42 кВт·ч — 12 ч 45 мин, то есть полная зарядка не укладывается в восемь часов ночного тарифа, а ежедневная подзарядка укладывается."
+     }
+    },
+    {
+     "q": {
+      "sr": "Mogu li Fiat 500e da punim na jednofaznom priključku?",
+      "en": "Can I charge a Fiat 500e on a single-phase connection?",
+      "ru": "Можно ли заряжать Fiat 500e от однофазного подключения?"
+     },
+     "a": {
+      "sr": "Možeš: punjač u autu radi i jednofazno, do 7,4 kW. Pojačana utičnica od 16 A daje 3,7 kW; više od toga na jednoj fazi traži jaču instalaciju, što proveravamo na proceni.",
+      "en": "You can: the on-board charger also works single-phase, up to 7.4 kW. A 16 A heavy-duty socket delivers 3.7 kW; more than that on one phase needs heavier wiring, which we check at the assessment.",
+      "ru": "Можно: бортовое зарядное работает и однофазно, до 7,4 кВт. Усиленная розетка на 16 А даёт 3,7 кВт; чтобы получить больше на одной фазе, нужна более мощная проводка — это проверяем на оценке."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "Fiat Francuska — brošura 500e (oktobar 2024)",
+      "en": "Fiat France — 500e brochure (October 2024)",
+      "ru": "Fiat Франция — брошюра 500e (октябрь 2024)"
+     },
+     "url": "https://www.fiat.fr/content/dam/fiat2023/fr/pdf/Brochure_500e_Octobre_2024.pdf"
+    },
+    {
+     "t": {
+      "sr": "Fiat Austrija — cenovnik 500 MY26, 15.04.2026 (kopija kod prodavca)",
+      "en": "Fiat Austria — 500 MY26 price list, 15.04.2026 (dealer-hosted copy)",
+      "ru": "Fiat Австрия — прайс-лист 500 MY26, 15.04.2026 (копия у дилера)"
+     },
+     "url": "https://www.vogl-auto.at/app/uploads/2026/04/500-MY26-2026-04-15.pdf"
+    },
+    {
+     "t": {
+      "sr": "Stellantis — The new Fiat 500: all-new, all-electric (04.03.2020)",
+      "en": "Stellantis — The new Fiat 500: all-new, all-electric (04.03.2020)",
+      "ru": "Stellantis — The new Fiat 500: all-new, all-electric (04.03.2020)"
+     },
+     "url": "https://www.media.stellantis.com/uk-en/fiat/press/the-new-fiat-500-all-new-all-electric-all-cinquecento"
+    }
+   ]
+  },
+  {
+   "slug": "dacia-spring",
+   "name": "Dacia Spring",
+   "za": "Daciju Spring",
+   "en": "Dacia Spring",
+   "ru": "Dacia Spring",
+   "bv": {
+    "kind": "model",
+    "path": "/elektricni-automobili/dacia/spring/"
+   },
+   "cls": {
+    "sr": "6,6–7 kW jednofazni",
+    "en": "6.6–7 kW single-phase",
+    "ru": "6,6–7 кВт однофазное"
+   },
+   "versions": [
+    {
+     "name": "Spring Electric 45",
+     "kwh": 26.8,
+     "kind": "neto",
+     "ac": 6.6,
+     "ph": 1,
+     "years": "2021–2024",
+     "maker": {
+      "who": "Dacia",
+      "basis": "0–100%",
+      "t": {
+       "2.3": 812,
+       "3.7": 508,
+       "7.4": 291
+      }
+     }
+    },
+    {
+     "name": {
+      "sr": "Spring 45 / 65, redizajn",
+      "en": "Spring 45 / 65, facelift",
+      "ru": "Spring 45 / 65, рестайлинг"
+     },
+     "kwh": 26.8,
+     "kind": "neto",
+     "ac": 7,
+     "ph": 1,
+     "years": "2024–2025",
+     "maker": {
+      "who": "Dacia",
+      "basis": "20–100%",
+      "t": {
+       "2.3": 650,
+       "3.7": 410,
+       "7.4": 240
+      }
+     }
+    },
+    {
+     "name": "Spring 70 / 100",
+     "kwh": 24.3,
+     "kind": "neto",
+     "ac": 7,
+     "ph": 1,
+     "years": {
+      "sr": "od oktobra 2025",
+      "en": "from October 2025",
+      "ru": "с октября 2025"
+     },
+     "maker": {
+      "who": "Dacia",
+      "basis": "20–100%",
+      "t": {
+       "2.3": 611,
+       "3.7": 407,
+       "7.4": 200
+      }
+     }
+    }
+   ],
+   "lead": {
+    "sr": "Dacia Spring ima jednofazni punjač od 6,6 ili 7 kW, pa na trofaznom wallboxu od 11 kW puni sa 3,7 kW, isto kao na pojačanoj utičnici od 16 A. Baterija je mala: Dacia za punjenje od 20 do 100% na 16 A navodi oko 6 h 50 min.",
+    "en": "The Dacia Spring has a single-phase 6.6 or 7 kW charger, so on a three-phase 11 kW wallbox it charges at 3.7 kW, the same as on a 16 A heavy-duty socket. The battery is small: Dacia gives about 6 h 50 min from 20 to 100% at 16 A.",
+    "ru": "У Dacia Spring однофазное бортовое зарядное на 6,6 или 7 кВт, поэтому от трёхфазного wallbox на 11 кВт она заряжается на 3,7 кВт — так же, как от усиленной розетки на 16 А. Батарея маленькая: с 20 до 100% на 16 А Dacia указывает около 6 ч 50 мин."
+   },
+   "facts": [
+    {
+     "sr": "U katalogu Dacia Srbija iz marta 2026. godine Mode 3 kabl (Type 2, za wallbox i javne punjače) je serijski u opremi Expression, a prenosni punjač za utičnicu (Mode 2, 10 A) je doplata.",
+     "en": "In the Dacia Serbia catalog of March 2026, the Mode 3 cable (Type 2, for wallboxes and public chargers) is standard on the Expression trim, and the portable charger for a socket (Mode 2, 10 A) is a paid option.",
+     "ru": "В каталоге Dacia Сербия за март 2026 года кабель Mode 3 (Type 2, для wallbox и общественных зарядок) входит в комплектацию Expression, а переносное зарядное для розетки (Mode 2, 10 А) — за доплату."
+    },
+    {
+     "sr": "Sa prenosnim punjačem od 10 A auto puni sa 2,3 kW: Dacia za Spring 70 / 100 navodi 10 h 11 min od 20 do 100%. Punih 7 kW Spring prima samo na jednofaznom punjaču od 32 A.",
+     "en": "With a 10 A portable charger the car charges at 2.3 kW: for the Spring 70 / 100, Dacia gives 10 h 11 min from 20 to 100%. The Spring takes its full 7 kW only on a single-phase 32 A charger.",
+     "ru": "С переносным зарядным на 10 А машина заряжается на 2,3 кВт: для Spring 70 / 100 Dacia указывает 10 ч 11 мин с 20 до 100%. Полные 7 кВт Spring принимает только от однофазной зарядки на 32 А."
+    },
+    {
+     "sr": "Brzo DC punjenje je doplata u većini nivoa opreme: do 30 kW kod starijih verzija i do 40 kW kod Springa od oktobra 2025.",
+     "en": "DC fast charging is a paid option on most trims: up to 30 kW on older versions and up to 40 kW on the Spring from October 2025.",
+     "ru": "Быстрая DC-зарядка в большинстве комплектаций идёт за доплату: до 30 кВт у старых версий и до 40 кВт у Spring с октября 2025 года."
+    }
+   ],
+   "fit": [
+    {
+     "sr": "Za Spring je START logičan izbor: daje istu brzinu kao wallbox od 11 kW, a baterija se napuni za jednu noć. Uslov je prenosni punjač za utičnicu, koji je kod novog auta doplata. WALLBOX ima svoj kabl, pa ti prenosni punjač ne treba; biraj WALLBOX i ako planiraš drugi, veći auto.",
+     "en": "For the Spring, START is the logical choice: it gives the same speed as an 11 kW wallbox, and the battery fills up in one night. The condition is a portable charger for the socket, which is a paid option on a new car. WALLBOX has its own cable, so you don’t need the portable charger; choose WALLBOX too if you plan on another, bigger car.",
+     "ru": "Для Spring логичный выбор — START: скорость та же, что у wallbox на 11 кВт, а батарея заряжается за ночь. Условие — переносное зарядное для розетки, которое у новой машины идёт за доплату. У WALLBOX свой кабель, переносное зарядное не нужно; выбирай WALLBOX и в том случае, если планируешь другую машину, побольше."
+    }
+   ],
+   "faq": [
+    {
+     "q": {
+      "sr": "Zašto Dacia Spring na wallboxu od 11 kW puni sa 3,7 kW?",
+      "en": "Why does a Dacia Spring charge at 3.7 kW on an 11 kW wallbox?",
+      "ru": "Почему Dacia Spring от wallbox на 11 кВт заряжается на 3,7 кВт?"
+     },
+     "a": {
+      "sr": "Zato što je punjač u autu jednofazni. Trofazni wallbox od 11 kW daje 16 A po fazi, a Spring koristi jednu fazu: 230 V × 16 A je oko 3,7 kW.",
+      "en": "Because the on-board charger is single-phase. A three-phase 11 kW wallbox delivers 16 A per phase, and the Spring uses one phase: 230 V × 16 A is about 3.7 kW.",
+      "ru": "Потому что бортовое зарядное однофазное. Трёхфазный wallbox на 11 кВт даёт 16 А на фазу, а Spring использует одну фазу: 230 В × 16 А — это около 3,7 кВт."
+     }
+    },
+    {
+     "q": {
+      "sr": "Šta mi treba da Daciju Spring punim iz pojačane utičnice?",
+      "en": "What do I need to charge a Dacia Spring from a heavy-duty socket?",
+      "ru": "Что нужно, чтобы заряжать Dacia Spring от усиленной розетки?"
+     },
+     "a": {
+      "sr": "Prenosni punjač (Mode 2). U katalogu Dacia Srbija iz marta 2026. on je doplata, a serijski se dobija Mode 3 kabl za wallbox i javne punjače. Prenosni punjač od 10 A puni sa 2,3 kW, a od 16 A sa 3,7 kW.",
+      "en": "A portable charger (Mode 2). In the Dacia Serbia catalog of March 2026 it is a paid option, and what comes standard is the Mode 3 cable for wallboxes and public chargers. A 10 A portable charger charges at 2.3 kW, a 16 A one at 3.7 kW.",
+      "ru": "Переносное зарядное (Mode 2). В каталоге Dacia Сербия за март 2026 года оно идёт за доплату, а в базе — кабель Mode 3 для wallbox и общественных зарядок. Переносное зарядное на 10 А заряжает на 2,3 кВт, на 16 А — на 3,7 кВт."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "Dacia Srbija — katalog Novi Spring (mart 2026)",
+      "en": "Dacia Serbia — New Spring catalog (March 2026)",
+      "ru": "Dacia Сербия — каталог нового Spring (март 2026)"
+     },
+     "url": "https://www.dacia.rs/CountriesData/Serbia/images/pdf/katalog/novi-spring-katalog.pdf"
+    },
+    {
+     "t": {
+      "sr": "Dacia Rumunija — saopštenje o novom Springu (06.10.2025)",
+      "en": "Dacia Romania — press release on the new Spring (06.10.2025)",
+      "ru": "Dacia Румыния — пресс-релиз о новом Spring (06.10.2025)"
+     },
+     "url": "https://media.dacia.ro/download/story/558"
+    },
+    {
+     "t": {
+      "sr": "Dacia UK — brošura Spring (april 2026)",
+      "en": "Dacia UK — Spring brochure (April 2026)",
+      "ru": "Dacia UK — брошюра Spring (апрель 2026)"
+     },
+     "url": "https://cdn.group.renault.com/dac/gb/transversal-assets/brochures/model-brochures/Spring-ebrochure.pdf.asset.pdf/896291c7c7.pdf"
+    },
+    {
+     "t": {
+      "sr": "Dacia Poljska — brošura Novi Spring (vreme punjenja)",
+      "en": "Dacia Poland — New Spring brochure (charging times)",
+      "ru": "Dacia Польша — брошюра нового Spring (время зарядки)"
+     },
+     "url": "https://cdn.group.renault.com/dac/pl/pdf/broszury/new-spring-brochure.pdf"
+    },
+    {
+     "t": {
+      "sr": "Dacia Češka — brošura Spring (avgust 2024)",
+      "en": "Dacia Czechia — Spring brochure (August 2024)",
+      "ru": "Dacia Чехия — брошюра Spring (август 2024)"
+     },
+     "url": "https://cdn.group.renault.com/dac/cz/pdf/brochures/spring-brochure.pdf"
+    },
+    {
+     "t": {
+      "sr": "Dacia — tehnički list Spring, mart 2021 (kopija dokumenta)",
+      "en": "Dacia — Spring spec sheet, March 2021 (copy of the document)",
+      "ru": "Dacia — спецификация Spring, март 2021 (копия документа)"
+     },
+     "url": "https://www.projekt-renault.de/images/pdf/db_dacia_spring_0321.pdf"
+    },
+    {
+     "t": {
+      "sr": "Renault Group — Dacia Spring Electric (15.10.2020)",
+      "en": "Renault Group — Dacia Spring Electric (15.10.2020)",
+      "ru": "Renault Group — Dacia Spring Electric (15.10.2020)"
+     },
+     "url": "https://www.renaultgroup.com/en/news-on-air/news/spring-electric-2"
+    }
+   ]
+  },
+  {
+   "slug": "nissan-leaf",
+   "name": "Nissan Leaf",
+   "za": "Nissan Leaf",
+   "en": "Nissan Leaf",
+   "ru": "Nissan Leaf",
+   "bv": {
+    "kind": "used",
+    "path": "/elektricni-automobili/polovni/"
+   },
+   "cls": {
+    "sr": "3,6–6,6 kW jednofazni (do 2024)",
+    "en": "3.6–6.6 kW single-phase (up to 2024)",
+    "ru": "3,6–6,6 кВт однофазное (до 2024)"
+   },
+   "versions": [
+    {
+     "name": "Leaf 24 kWh",
+     "kwh": 24,
+     "kind": "pr",
+     "ac": 3.6,
+     "ph": 1,
+     "years": "2011–2017",
+     "maker": {
+      "who": "Nissan",
+      "basis": "do pune baterije",
+      "t": {
+       "3.6": 480
+      }
+     }
+    },
+    {
+     "name": "Leaf 40 kWh",
+     "kwh": 39,
+     "kind": "neto",
+     "ac": 6.6,
+     "ph": 1,
+     "years": "2018–2024",
+     "maker": {
+      "who": "Nissan",
+      "basis": "do pune baterije",
+      "t": {
+       "2.3": 1260,
+       "7.4": 450
+      }
+     }
+    },
+    {
+     "name": "Leaf e+ 62 kWh",
+     "kwh": 59,
+     "kind": "neto",
+     "ac": 6.6,
+     "ph": 1,
+     "years": "2019–2024"
+    }
+   ],
+   "lead": {
+    "sr": "Nissan Leaf do 2024. ima jednofazni punjač: na trofaznom wallboxu od 11 kW prima 3,7 kW, što Nissan i sam navodi u cenovniku. Zato Leaf na pojačanoj utičnici od 16 A puni istom brzinom kao na wallboxu od 11 kW.",
+    "en": "The Nissan Leaf up to 2024 has a single-phase charger: on a three-phase 11 kW wallbox it takes 3.7 kW, which Nissan itself states in its price list. So on a 16 A heavy-duty socket a Leaf charges at the same rate as on an 11 kW wallbox.",
+    "ru": "У Nissan Leaf до 2024 года однофазное бортовое зарядное: от трёхфазного wallbox на 11 кВт он принимает 3,7 кВт — это Nissan сам указывает в прайс-листе. Поэтому от усиленной розетки на 16 А Leaf заряжается с той же скоростью, что и от wallbox на 11 кВт."
+   },
+   "facts": [
+    {
+     "sr": [
+      "Leaf prve generacije (24 i 30 kWh) ima Type 1 priključak i punjač do 3,6 kW; punjač od 6,6 kW bio je doplata. Wallbox sa fiksnim Type 2 kablom na njega ne može direktno: treba wallbox sa utičnicom i kabl Type 2 – Type 1. Razlika je opisana u vodiču ",
+      {
+       "a": "wallbox sa kablom ili sa utičnicom",
+       "href": "/wallbox-sa-kablom-ili-uticnicom"
+      },
+      "."
+     ],
+     "en": [
+      "The first-generation Leaf (24 and 30 kWh) has a Type 1 inlet and a charger of up to 3.6 kW; the 6.6 kW charger was a paid option. A wallbox with a fixed Type 2 cable can’t plug into it directly: you need a wallbox with a socket and a Type 2 – Type 1 cable. The difference is described in the guide ",
+      {
+       "a": "wallbox with a cable or with a socket",
+       "href": "/wallbox-sa-kablom-ili-uticnicom"
+      },
+      "."
+     ],
+     "ru": [
+      "У Leaf первого поколения (24 и 30 кВт·ч) разъём Type 1 и зарядное до 3,6 кВт; зарядное на 6,6 кВт шло за доплату. Wallbox с несъёмным кабелем Type 2 к нему напрямую не подключить: нужен wallbox с розеткой и кабель Type 2 – Type 1. Разница описана в гайде ",
+      {
+       "a": "wallbox с кабелем или с розеткой",
+       "href": "/wallbox-sa-kablom-ili-uticnicom"
+      },
+      "."
+     ]
+    },
+    {
+     "sr": "Leaf druge generacije (40 i 62 kWh) ima Type 2 priključak i punjač od 6,6 kW; osnovna oprema Visia je na nekim tržištima imala 3,6 kW. Punih 6,6 kW prima samo na jednofaznom punjaču od 32 A. Brzo punjenje je CHAdeMO, ne CCS.",
+     "en": "The second-generation Leaf (40 and 62 kWh) has a Type 2 inlet and a 6.6 kW charger; the base Visia trim had 3.6 kW in some markets. It takes its full 6.6 kW only on a single-phase 32 A charger. Fast charging is CHAdeMO, not CCS.",
+     "ru": "У Leaf второго поколения (40 и 62 кВт·ч) разъём Type 2 и зарядное на 6,6 кВт; базовая комплектация Visia на некоторых рынках шла с 3,6 кВт. Полные 6,6 кВт он принимает только от однофазной зарядки на 32 А. Быстрая зарядка — CHAdeMO, не CCS."
+    },
+    {
+     "sr": "Novi Leaf treće generacije (od 2025) ima CCS priključak i, po podacima Nissana, punjenje naizmeničnom strujom do 11 kW; kod baterije od 52 kWh je na nekim tržištima serijski 7,4 kW.",
+     "en": "The new third-generation Leaf (from 2025) has a CCS inlet and, according to Nissan, AC charging up to 11 kW; with the 52 kWh battery, 7.4 kW is standard in some markets.",
+     "ru": "У нового Leaf третьего поколения (с 2025 года) разъём CCS и, по данным Nissan, зарядка переменным током до 11 кВт; с батареей 52 кВт·ч на некоторых рынках в базе 7,4 кВт."
+    }
+   ],
+   "fit": [
+    {
+     "sr": "Za Leaf do 2024. godine START je dovoljan: brzina je ista kao na wallboxu od 11 kW. Leaf od 40 kWh se na 3,7 kW napuni za {t37:1}, pa puna baterija ne stane u jednu noć, ali dnevna dopuna stane. Za Leaf e+ treba {t37:2}.",
+     "en": "For a Leaf up to 2024, START is enough: the speed is the same as on an 11 kW wallbox. A 40 kWh Leaf fills up at 3.7 kW in {t37:1}, so a full battery doesn’t fit into one night, but a daily top-off does. A Leaf e+ needs {t37:2}.",
+     "ru": "Для Leaf до 2024 года хватит START: скорость та же, что у wallbox на 11 кВт. Leaf на 40 кВт·ч на 3,7 кВт заряжается {t37:1}, так что полностью батарея за ночь не зарядится, но на ежедневную подзарядку ночи хватит. Leaf e+ нужно {t37:2}."
+    }
+   ],
+   "faq": [
+    {
+     "q": {
+      "sr": "Zašto Nissan Leaf na wallboxu od 11 kW puni sa 3,7 kW?",
+      "en": "Why does a Nissan Leaf charge at 3.7 kW on an 11 kW wallbox?",
+      "ru": "Почему Nissan Leaf от wallbox на 11 кВт заряжается на 3,7 кВт?"
+     },
+     "a": {
+      "sr": "Punjač u autu je jednofazni. Nissan u nemačkom cenovniku iz jula 2024. navodi: jednofazno do 6,6 kW, a na trofaznom wallboxu od 11 kW — 3,7 kW.",
+      "en": "The on-board charger is single-phase. Nissan’s German price list of July 2024 states: up to 6.6 kW single-phase, and 3.7 kW on a three-phase 11 kW wallbox.",
+      "ru": "Бортовое зарядное однофазное. В немецком прайс-листе Nissan за июль 2024 года указано: однофазно до 6,6 кВт, а от трёхфазного wallbox на 11 кВт — 3,7 кВт."
+     }
+    },
+    {
+     "q": {
+      "sr": "Mogu li stari Leaf sa Type 1 priključkom da punim na wallboxu?",
+      "en": "Can I charge an old Leaf with the Type 1 inlet on a wallbox?",
+      "ru": "Можно ли заряжать старый Leaf с разъёмом Type 1 от wallbox?"
+     },
+     "a": {
+      "sr": "Možeš na wallboxu sa Type 2 utičnicom, uz kabl Type 2 – Type 1. Wallbox sa fiksnim Type 2 kablom ne odgovara. Pojačana utičnica sa prenosnim punjačem koji ide uz auto je jednostavnije rešenje.",
+      "en": "You can, on a wallbox with a Type 2 socket, using a Type 2 – Type 1 cable. A wallbox with a fixed Type 2 cable won’t fit. A heavy-duty socket with the portable charger that comes with the car is the simpler solution.",
+      "ru": "Можно — от wallbox с розеткой Type 2, через кабель Type 2 – Type 1. Wallbox с несъёмным кабелем Type 2 не подойдёт. Усиленная розетка с переносным зарядным из комплекта машины — более простое решение."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "Nissan Nemačka — cenovnik Leaf, jul 2024 (kopija dokumenta)",
+      "en": "Nissan Germany — Leaf price list, July 2024 (copy of the document)",
+      "ru": "Nissan Германия — прайс-лист Leaf, июль 2024 (копия документа)"
+     },
+     "url": "https://konjunkturmotor.de/lima/5.0/nissan/pdfs/610-preisliste-11-2024.pdf"
+    },
+    {
+     "t": {
+      "sr": "Nissan Austrija — cenovnik Leaf MY22 (septembar 2022)",
+      "en": "Nissan Austria — Leaf MY22 price list (September 2022)",
+      "ru": "Nissan Австрия — прайс-лист Leaf MY22 (сентябрь 2022)"
+     },
+     "url": "https://www.nissan.at/content/dam/Nissan/at/Pricelists-and-Brochures/Leaf/leaf-my22-preisliste.pdf"
+    },
+    {
+     "t": {
+      "sr": "Nissan Austrija — cenovnik Leaf (maj 2017)",
+      "en": "Nissan Austria — Leaf price list (May 2017)",
+      "ru": "Nissan Австрия — прайс-лист Leaf (май 2017)"
+     },
+     "url": "https://www.nissan.at/content/dam/Nissan/at/brochures/pkw/leaf-preisliste.pdf"
+    },
+    {
+     "t": {
+      "sr": "Nissan Europe Newsroom — The new Nissan LEAF (40 kWh)",
+      "en": "Nissan Europe Newsroom — The new Nissan LEAF (40 kWh)",
+      "ru": "Nissan Europe Newsroom — The new Nissan LEAF (40 kWh)"
+     },
+     "url": "https://europe.nissannews.com/en-GB/releases/the-new-nissan-leaf-the-world-s-best-selling-zero-emissions-electric-vehicle-now-most-advanced-and-accessible-on-the-planet-2"
+    },
+    {
+     "t": {
+      "sr": "Nissan Europe Newsroom — The new Nissan LEAF in detail (2013)",
+      "en": "Nissan Europe Newsroom — The new Nissan LEAF in detail (2013)",
+      "ru": "Nissan Europe Newsroom — The new Nissan LEAF in detail (2013)"
+     },
+     "url": "https://europe.nissannews.com/en-GB/releases/the-new-nissan-leaf-in-detail?lang=en-GB"
+    },
+    {
+     "t": {
+      "sr": "Nissan Europe Newsroom — All-new LEAF (jun 2025)",
+      "en": "Nissan Europe Newsroom — All-new LEAF (June 2025)",
+      "ru": "Nissan Europe Newsroom — All-new LEAF (июнь 2025)"
+     },
+     "url": "https://europe.nissannews.com/en-GB/releases/all-new-leaf-hits-the-road-boasting-elite-622km-range-top-level-technology-and-sleek-aerodynamic-design"
+    }
+   ]
+  },
+  {
+   "slug": "mg4",
+   "name": "MG4",
+   "za": "MG4",
+   "en": "MG4",
+   "ru": "MG4",
+   "bv": {
+    "kind": "brand",
+    "path": "/elektricni-automobili/mg/",
+    "brand": "MG"
+   },
+   "cls": {
+    "sr": "11 kW trofazni; Standard 6,6 kW",
+    "en": "11 kW three-phase; Standard 6.6 kW",
+    "ru": "11 кВт трёхфазное; Standard — 6,6 кВт"
+   },
+   "versions": [
+    {
+     "name": "MG4 Standard 51 kWh",
+     "kwh": 50.8,
+     "kind": "neto",
+     "ac": 6.6,
+     "ph": 1,
+     "maker": {
+      "who": "MG",
+      "basis": "do pune baterije",
+      "t": {
+       "7.4": 420
+      }
+     }
+    },
+    {
+     "name": "MG4 Comfort / Luxury 64 kWh",
+     "kwh": 61.7,
+     "kind": "neto",
+     "ac": 11,
+     "ph": 3,
+     "maker": {
+      "who": "MG",
+      "basis": "do pune baterije",
+      "t": {
+       "7.4": 540,
+       "11": 390
+      }
+     }
+    },
+    {
+     "name": "MG4 Trophy Extended Range 77 kWh",
+     "kwh": 74.4,
+     "kind": "neto",
+     "ac": 11,
+     "ph": 3
+    }
+   ],
+   "lead": {
+    "sr": "MG4 sa baterijom od 64 kWh ima trofazni punjač od 11 kW: MG za punjenje na 11 kW navodi oko 6 h 30 min. MG4 Standard sa baterijom od 51 kWh ima punjač od 6,6 kW i na trofaznom wallboxu od 11 kW puni sa 3,7 kW.",
+    "en": "The MG4 with the 64 kWh battery has a three-phase 11 kW charger: MG gives about 6 h 30 min at 11 kW. The MG4 Standard with the 51 kWh battery has a 6.6 kW charger and charges at 3.7 kW on a three-phase 11 kW wallbox.",
+    "ru": "У MG4 с батареей 64 кВт·ч трёхфазное бортовое зарядное на 11 кВт: на 11 кВт MG указывает около 6 ч 30 мин. У MG4 Standard с батареей 51 кВт·ч зарядное на 6,6 кВт, и от трёхфазного wallbox на 11 кВт он заряжается на 3,7 кВт."
+   },
+   "facts": [
+    {
+     "sr": "Za MG4 Standard uputstvo za upotrebu navodi samo jednofazno punjenje: oko 7 h na punjaču od 7 kW i oko 15 h 30 min na kućnoj utičnici. Broj faza punjača od 6,6 kW MG u brošurama ne navodi.",
+     "en": "For the MG4 Standard the owner’s manual lists single-phase charging only: about 7 h on a 7 kW charger and about 15 h 30 min on a household socket. MG’s brochures don’t state the number of phases of the 6.6 kW charger.",
+     "ru": "Для MG4 Standard в руководстве указана только однофазная зарядка: около 7 ч от зарядки на 7 кВт и около 15 ч 30 мин от бытовой розетки. Число фаз зарядного на 6,6 кВт MG в брошюрах не указывает."
+    },
+    {
+     "sr": "MG4 Comfort i Luxury (64 kWh), Trophy Extended Range (77 kWh) i XPOWER imaju punjač od 11 kW. Za bateriju od 64 kWh uputstvo navodi oko 20 h na kućnoj utičnici.",
+     "en": "The MG4 Comfort and Luxury (64 kWh), Trophy Extended Range (77 kWh) and XPOWER have an 11 kW charger. For the 64 kWh battery the manual gives about 20 h on a household socket.",
+     "ru": "У MG4 Comfort и Luxury (64 кВт·ч), Trophy Extended Range (77 кВт·ч) и XPOWER зарядное на 11 кВт. Для батареи 64 кВт·ч в руководстве указано около 20 ч от бытовой розетки."
+    },
+    {
+     "sr": "Korisni kapacitet po podacima MG-a za Veliku Britaniju: 50,8 kWh (baterija od 51 kWh), 61,7 kWh (64 kWh) i 74,4 kWh (77 kWh).",
+     "en": "Usable capacity according to MG’s UK data: 50.8 kWh (51 kWh battery), 61.7 kWh (64 kWh) and 74.4 kWh (77 kWh).",
+     "ru": "Полезная ёмкость по данным MG для Великобритании: 50,8 кВт·ч (батарея 51 кВт·ч), 61,7 кВт·ч (64 кВт·ч) и 74,4 кВт·ч (77 кВт·ч)."
+    }
+   ],
+   "fit": [
+    {
+     "sr": "Za MG4 Comfort, Luxury i Trophy biramo WALLBOX 11 kW: auto koristi punu snagu i pun je za jednu noć. Za MG4 Standard wallbox od 11 kW ne puni brže od pojačane utičnice od 16 A, pa je START razuman izbor ako ti dnevna dopuna odgovara: punjenje do pune baterije na 3,7 kW traje {t37:0}.",
+     "en": "For the MG4 Comfort, Luxury and Trophy, WALLBOX 11 kW uses the car’s full power and fills it in one night. For the MG4 Standard an 11 kW wallbox is no faster than a 16 A heavy-duty socket, so START is a sensible choice if a daily top-off suits you: a full battery at 3.7 kW takes {t37:0}.",
+     "ru": "Для MG4 Comfort, Luxury и Trophy WALLBOX 11 kW использует всю мощность машины и заряжает её за ночь. Для MG4 Standard wallbox на 11 кВт не быстрее усиленной розетки на 16 А, так что START — разумный выбор, если тебе хватает ежедневной подзарядки: полная зарядка на 3,7 кВт — это {t37:0}."
+    }
+   ],
+   "faq": [
+    {
+     "q": {
+      "sr": "Koja je razlika u punjenju između MG4 Standard i MG4 Comfort?",
+      "en": "What’s the difference in charging between the MG4 Standard and the MG4 Comfort?",
+      "ru": "Чем различается зарядка MG4 Standard и MG4 Comfort?"
+     },
+     "a": {
+      "sr": "Standard ima punjač od 6,6 kW i na trofaznom wallboxu od 11 kW prima 3,7 kW. Comfort i Luxury imaju trofazni punjač od 11 kW, pa na istom wallboxu pune tri puta većom snagom.",
+      "en": "The Standard has a 6.6 kW charger and takes 3.7 kW on a three-phase 11 kW wallbox. The Comfort and Luxury have a three-phase 11 kW charger, so on the same wallbox they charge at three times the power.",
+      "ru": "У Standard зарядное на 6,6 кВт, от трёхфазного wallbox на 11 кВт он принимает 3,7 кВт. У Comfort и Luxury трёхфазное зарядное на 11 кВт — от того же wallbox они заряжаются втрое большей мощностью."
+     }
+    },
+    {
+     "q": {
+      "sr": "Da li je za MG4 dovoljna pojačana utičnica?",
+      "en": "Is a heavy-duty socket enough for an MG4?",
+      "ru": "Хватит ли MG4 усиленной розетки?"
+     },
+     "a": {
+      "sr": "Za dnevnu dopunu jeste. Za punu bateriju od 64 kWh MG na kućnoj utičnici navodi oko 20 h, pa ako često stižeš kući sa praznom baterijom, WALLBOX 11 kW je bolji izbor.",
+      "en": "For a daily top-off, yes. For a full 64 kWh battery, MG gives about 20 h on a household socket, so if you often come home with an empty battery, WALLBOX 11 kW is the better choice.",
+      "ru": "Для ежедневной подзарядки — да. На полную батарею 64 кВт·ч от бытовой розетки MG указывает около 20 ч, так что, если ты часто приезжаешь домой с пустой батареей, лучше взять WALLBOX 11 kW."
+     }
+    }
+   ],
+   "sources": [
+    {
+     "t": {
+      "sr": "MG Motor Srbija — uporedna brošura MG4",
+      "en": "MG Motor Serbia — MG4 comparison brochure",
+      "ru": "MG Motor Сербия — сравнительная брошюра MG4"
+     },
+     "url": "https://www.mgmotor.rs/EasyEdit/UserFiles/CompareBrochure/mg4_638264958253123492.pdf"
+    },
+    {
+     "t": {
+      "sr": "MG Motor Europe — brošura MG4 Electric (septembar 2022)",
+      "en": "MG Motor Europe — MG4 Electric brochure (September 2022)",
+      "ru": "MG Motor Europe — брошюра MG4 Electric (сентябрь 2022)"
+     },
+     "url": "https://cdn.mgmotor.eu/images/model/brochure/MG_NEW-MG4-EV_Brochure_A4_Online.pdf"
+    },
+    {
+     "t": {
+      "sr": "MG Motor Europe — brošura MG4 MY2024 (februar 2025)",
+      "en": "MG Motor Europe — MG4 MY2024 brochure (February 2025)",
+      "ru": "MG Motor Europe — брошюра MG4 MY2024 (февраль 2025)"
+     },
+     "url": "https://cdn.mgmotor.eu/images/model/brochure/MG4_MY2024_Brochure_Digital_250212_compressed.pdf"
+    },
+    {
+     "t": {
+      "sr": "MG UK — MG4 EV (korisni kapacitet baterija)",
+      "en": "MG UK — MG4 EV (usable battery capacity)",
+      "ru": "MG UK — MG4 EV (полезная ёмкость батарей)"
+     },
+     "url": "https://mg.co.uk/new-cars/mg4-ev"
+    },
+    {
+     "t": {
+      "sr": "MG — uputstvo za upotrebu MG4 EV (kopija dokumenta)",
+      "en": "MG — MG4 EV owner’s manual (copy of the document)",
+      "ru": "MG — руководство по эксплуатации MG4 EV (копия документа)"
+     },
+     "url": "https://electric.europcar.co.uk/wp-content/uploads/2023/08/MG4_EV_Owner_Manual.pdf"
+    }
+   ]
+  }
+ ]
+}

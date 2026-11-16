@@ -48,12 +48,27 @@ Evolako works all over Serbia. Each city page shows the public chargers in and a
 - Šumadija and Western Serbia: [Čačak](https://www.evolako.rs/ugradnja-punjaca-cacak), [Jagodina](https://www.evolako.rs/ugradnja-punjaca-jagodina), [Kragujevac](https://www.evolako.rs/ugradnja-punjaca-kragujevac), [Kraljevo](https://www.evolako.rs/ugradnja-punjaca-kraljevo), [Kruševac](https://www.evolako.rs/ugradnja-punjaca-krusevac), [Loznica](https://www.evolako.rs/ugradnja-punjaca-loznica), [Novi Pazar](https://www.evolako.rs/ugradnja-punjaca-novi-pazar), [Šabac](https://www.evolako.rs/ugradnja-punjaca-sabac), [Užice](https://www.evolako.rs/ugradnja-punjaca-uzice), [Valjevo](https://www.evolako.rs/ugradnja-punjaca-valjevo)
 - Southern and Eastern Serbia: [Bor](https://www.evolako.rs/ugradnja-punjaca-bor), [Leskovac](https://www.evolako.rs/ugradnja-punjaca-leskovac), [Niš](https://www.evolako.rs/ugradnja-punjaca-nis), [Pirot](https://www.evolako.rs/ugradnja-punjaca-pirot), [Požarevac](https://www.evolako.rs/ugradnja-punjaca-pozarevac), [Prokuplje](https://www.evolako.rs/ugradnja-punjaca-prokuplje), [Smederevo](https://www.evolako.rs/ugradnja-punjaca-smederevo), [Vranje](https://www.evolako.rs/ugradnja-punjaca-vranje), [Zaječar](https://www.evolako.rs/ugradnja-punjaca-zajecar)
 
+## Chargers by car model
+
+Each page gives the car's on-board AC charger as its manufacturer states it (power and phases), how much of it a three-phase 11 kW wallbox can use, the charging time on a heavy-duty socket and on an 11 kW wallbox, and the cost of a full battery at the EPS night tariff.
+
+- [All models](https://www.evolako.rs/kucni-punjac-po-modelu): a home charger by car model
+- [Tesla](https://www.evolako.rs/kucni-punjac-za-teslu), [BYD](https://www.evolako.rs/kucni-punjac-za-byd), [Renault Zoe](https://www.evolako.rs/kucni-punjac-za-renault-zoe), [VW e-Golf](https://www.evolako.rs/kucni-punjac-za-vw-e-golf), [VW ID.3, ID.4, ID.5](https://www.evolako.rs/kucni-punjac-za-vw-id), [BMW i3](https://www.evolako.rs/kucni-punjac-za-bmw-i3), [smart EQ fortwo and forfour](https://www.evolako.rs/kucni-punjac-za-smart-eq), [Audi e-tron and Q8 e-tron](https://www.evolako.rs/kucni-punjac-za-audi-e-tron), [Fiat 500e](https://www.evolako.rs/kucni-punjac-za-fiat-500e), [Dacia Spring](https://www.evolako.rs/kucni-punjac-za-dacia-spring), [Nissan Leaf](https://www.evolako.rs/kucni-punjac-za-nissan-leaf), [MG4](https://www.evolako.rs/kucni-punjac-za-mg4)
+
+## Installing a charger you already have
+
+Each page gives the versions of the charger, the protection and cable size its manufacturer asks for, the warranty and what to check before buying.
+
+- [Samo ugradnja](https://www.evolako.rs/samo-ugradnja-punjaca): what the installation-only price includes and what the charger must have
+- [Tesla Wall Connector](https://www.evolako.rs/ugradnja-tesla-wall-connector), [Wallbox Pulsar](https://www.evolako.rs/ugradnja-wallbox-pulsar), [ABB Terra AC](https://www.evolako.rs/ugradnja-abb-terra-ac), [Schneider EVlink](https://www.evolako.rs/ugradnja-schneider-evlink)
+
 ## Businesses and buildings
 
 - [Punjači za firme](https://www.evolako.rs/punjaci-za-firme): chargers for businesses and buildings
 - [Stambene zgrade](https://www.evolako.rs/punjaci-za-stambene-zgrade): chargers in apartment-building garages, for building managers
 - [Novogradnja](https://www.evolako.rs/punjaci-za-novogradnju): new buildings and developers
 - [Hoteli](https://www.evolako.rs/punjaci-za-hotele): hotels and apartments, charging for guests
+- Hotels and apartments by place — [Kopaonik](https://www.evolako.rs/punjaci-za-hotele-kopaonik), [Zlatibor](https://www.evolako.rs/punjaci-za-hotele-zlatibor), [Vrnjačka Banja](https://www.evolako.rs/punjaci-za-hotele-vrnjacka-banja): the public chargers there, the winter drive from Belgrade and Novi Sad, and prices per parking space
 - [Parking garaže](https://www.evolako.rs/punjaci-za-parking-garaze): parking garages and company car parks
 - [Parkinzi](https://www.evolako.rs/punjaci-za-parkinge): guarded and long-term car parks
 - [Auto saloni](https://www.evolako.rs/punjaci-za-auto-salone): car dealers and home chargers for their buyers

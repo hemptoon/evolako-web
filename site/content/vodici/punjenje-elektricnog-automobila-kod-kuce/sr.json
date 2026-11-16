@@ -128,6 +128,16 @@
      "p": "Pun auto od skoro prazne baterije je druga priča. VW ID.3 Pro sa baterijom od 59 kWh na wallbox-u od 11 kW napuni se za oko 6,5 sati, a na šuko utičnici od 2,3 kW za to treba više od jednog dana."
     },
     {
+     "p": [
+      "Koliko prima tvoj auto i koliko mu treba do pune baterije, piše na stranici ",
+      {
+       "a": "punjač po modelu auta",
+       "href": "/kucni-punjac-po-modelu"
+      },
+      "."
+     ]
+    },
+    {
      "p": "Zato je dovoljno da noć pokrije običan dan. Pojačana utičnica odgovara ako dnevno voziš do oko 100 km. Wallbox ima smisla ako voziš više, ako često stigneš kući sa skoro praznom baterijom ili ako puni više auta."
     },
     {

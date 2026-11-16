@@ -121,6 +121,16 @@
       },
       "."
      ]
+    },
+    {
+     "p": [
+      "Ako wallbox kupuješ sam, šta ulazi u ugradnju piše na stranici ",
+      {
+       "a": "samo ugradnja punjača",
+       "href": "/samo-ugradnja-punjaca"
+      },
+      "."
+     ]
     }
    ]
   },

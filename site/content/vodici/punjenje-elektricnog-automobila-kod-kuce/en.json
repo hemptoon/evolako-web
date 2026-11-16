@@ -128,6 +128,16 @@
      "p": "A full car from a nearly empty battery is another story. A VW ID.3 Pro with a 59 kWh battery charges in about 6.5 hours on an 11 kW wallbox, while a 2.3 kW Schuko socket needs more than a day for that."
     },
     {
+     "p": [
+      "How much your car accepts and how long it needs for a full battery is on the page ",
+      {
+       "a": "chargers by car model",
+       "href": "/kucni-punjac-po-modelu"
+      },
+      "."
+     ]
+    },
+    {
      "p": "So it is enough for one night to cover a normal day. A heavy-duty socket suits you if you drive up to about 100 km a day. A wallbox makes sense if you drive more, often come home with a nearly empty battery, or charge more than one car."
     },
     {

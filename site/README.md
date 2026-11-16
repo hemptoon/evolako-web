@@ -16,6 +16,12 @@ How the site is made (details below):
    publishing steps: `content/README.md`; code: `content.py`, rules: the kits in `kits/`). The scheduled tasks publish
    by committing there. Since 28.10.2026 also the city pages (`content/gradovi/gradovi.json`, texts in `gradovi.py`,
    facts by `tools/gradovi_data.py`): `/ugradnja-punjaca` and `/ugradnja-punjaca-<grad>` for every city of Serbia.
+   Since 17.11.2026 three more page families, each with its facts in `content/<family>/*.json` and its texts in a
+   module (shared builder, markup with a visible FAQ and copy check: `klasteri.py`): resorts for hotels and vacation
+   rentals `/punjaci-za-hotele-<mesto>` (`hoteli.py`, facts by `tools/hoteli_data.py`), a home charger by car
+   `/kucni-punjac-za-<auto>` with the hub `/kucni-punjac-po-modelu` (`modeli.py`) and installing a charger the
+   customer already has `/ugradnja-<punjač>` with the hub `/samo-ugradnja-punjaca` (`marke.py`). Details:
+   `content/README.md`.
 3. **Build** — `build.py` turns snapshot + content into `dist/`: own copies of every file, no Webflow or Google at
    runtime, own form endpoint, CSP, real `/en/` and `/ru/` pages prerendered from the dictionaries, sitemap with
    hreflang.
@@ -89,6 +95,17 @@ Belgrade and Vojvodina (`gradovi.py`: `ZONE_72H`, the city check stops on 72 h e
 `/sabloni-za-skupstinu` (`sabloni.py`): five templates for the residents' assembly, free for everyone, each with «Kopiraj
 tekst» and print; the template texts are Serbian on `/en/` and `/ru/` too (`lang="sr" translate="no"`, QA lists them
 apart). Whoever ties the templates to a package or an offer now says they are free for everyone and links the page.
+
+**Deploy 11 (17.11.2026, the owner's standing word of 28.10.2026 23:27 for SEO pages after full checks):** 21 new
+pages of the three families above (3 resorts, the car hub and 12 cars, the installation-only hub and 4 charger brands;
+`/en/` and `/ru/` of each). Links to them — the only changes to pages that existed: two footer links on every snapshot
+page («Punjač po modelu auta», «Samo ugradnja punjača», after «Ugradnja po gradovima»; pairs in `i18n/en.json` /
+`ru.json`), two links at the end of «Bez sitnih slova» on `/paketi-i-cene`, a paragraph with both hubs on every city
+page (`gradovi.py`: `MORE_LINKS`), a card for each resort last in «Vodiči i srodne stranice» of `/punjaci-za-hotele`,
+one sentence with a link in the guides `/punjenje-elektricnog-automobila-kod-kuce` and
+`/wallbox-sa-kablom-ili-uticnicom`, and the new sections of `llms.txt`. No price, promise, legal text or shared block
+was changed. Names that are the same in every language (car versions, charger codes, place names, titles of foreign
+sources) are in `i18n/keep.json`, added by `tools/klasteri_keep.py`.
 
 **Deploy 5 (29.10.2026):** the quiz (`/proveri-svoju-garazu`, `/preporuka`) asks «Gde je parking?» — one field for
 the place, town or village, instead of four regions. `tools/naselja_kviz.py` turns `data/naselja-srbija.json` (the

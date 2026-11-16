@@ -128,6 +128,13 @@ PRICES_MORE = T(['Wallbox Plus (od 115.000 RSD) i Wallbox Premium (155.000 RSD) 
                  {'a': 'packages and prices', 'href': '/paketi-i-cene'}, '.'],
                 ['Wallbox Plus (от 115.000 RSD) и Wallbox Premium (155.000 RSD) — на странице ',
                  {'a': 'пакеты и цены', 'href': '/paketi-i-cene'}, '.'])
+# the car pages and the installation-only pages of 17.11.2026 (site/modeli.py, site/marke.py)
+MORE_LINKS = T(['Koliko tvoj auto prima i koliko traje punjenje: ', {'a': 'punjač po modelu auta', 'href': '/kucni-punjac-po-modelu'},
+                '. Ako punjač već imaš: ', {'a': 'samo ugradnja', 'href': '/samo-ugradnja-punjaca'}, '.'],
+               ['How much your car accepts and how long charging takes: ', {'a': 'chargers by car model', 'href': '/kucni-punjac-po-modelu'},
+                '. If you already have a charger: ', {'a': 'installation only', 'href': '/samo-ugradnja-punjaca'}, '.'],
+               ['Сколько принимает твоя машина и сколько длится зарядка: ', {'a': 'зарядка по модели машины', 'href': '/kucni-punjac-po-modelu'},
+                '. Если зарядка у тебя уже есть: ', {'a': 'только монтаж', 'href': '/samo-ugradnja-punjaca'}, '.'])
 STEPS = [
     T('Pošalji poruku sa fotografijama razvodne table i mesta za punjač — okvirna procena po fotografijama je besplatna.',
       'Send us a message with photos of the distribution board and the spot for the charger — a rough estimate from '
@@ -412,6 +419,7 @@ def city_texts(c, data):
                    {'head': PRICES_HEAD['en'], 'rows': [r['en'] for r in PRICES_ROWS]},
                    {'head': PRICES_HEAD['ru'], 'rows': [r['ru'] for r in PRICES_ROWS]}))
     add('p', PRICES_MORE)
+    add('p', MORE_LINKS)
     # 4. how it goes
     add('h2', T('Kako ide ugradnja u %s' % loc_sr, 'How the installation goes in %s' % n_en,
                 'Как проходит установка %s' % loc_ru))
