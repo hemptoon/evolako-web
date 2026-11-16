@@ -1,0 +1,259 @@
+{
+ "page": "punjaci-na-parkingu-firme",
+ "slug": "/punjaci-na-parkingu-firme",
+ "tone": "vi",
+ "kind": "article",
+ "seo": {
+  "title": "EV chargers in a company parking lot | Evolako",
+  "description": "How many charging spots to install in a company parking lot, how much power you need during working hours and who bears the electricity cost.",
+  "og_title": "EV chargers in a company parking lot: how many spots for employees and who pays for the electricity",
+  "og_description": "An 11 kW AC charger covers a working day, load management shares the building’s connection, and a MID meter at every spot shows consumption. The company picks free charging or payback by meter."
+ },
+ "hero": {
+  "kicker": "Guide for businesses and buildings",
+  "h1": "EV chargers in a company parking lot: how many spots for employees and who pays for the electricity",
+  "lead": "Install charging spots based on how many employees actually charge, not on the number of parking spaces; an 11 kW AC charger is enough for a working day. When the chargers are on the company’s connection, the company pays for the electricity and decides up front whether charging is free for employees or they pay the cost back by the MID meter.",
+  "updated": "@auto"
+ },
+ "card": {
+  "title": "EV chargers in a company parking lot",
+  "text": "How many spots for employees, power during working hours, MID meters and who pays for the electricity."
+ },
+ "sections": [
+  {
+   "type": "article",
+   "id": "tekst",
+   "blocks": [
+    {
+     "p": [
+      "This guide is for directors, maintenance teams and finance departments at companies with their own or a leased parking lot. You will find an example for a company with spots in its parking lot and at employees’ homes on the page about ",
+      {
+       "a": "chargers for company cars and company parking lots",
+       "href": "/punjaci-za-sluzbena-vozila"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "An 11 kW AC charger is enough for a working day"
+    },
+    {
+     "p": "An employee’s car stays in the company parking lot for the whole working day. An 11 kW charger adds about 60 km of range per hour of charging, so the daily commute is usually made up long before the end of the working day."
+    },
+    {
+     "p": "The car itself also limits the speed: it takes no more power than its onboard charger supports. A 22 kW charger makes sense only where a car stays 1–3 hours and itself accepts 22 kW. We offer fast DC chargers on request, as a separate project with a new grid connection, but an employee parking lot usually does not need them."
+    },
+    {
+     "p": "A wallbox has a Type 2 connector, which almost all electric cars and plug-in hybrids on the Serbian market have, so the charging spot does not depend on the make of the car."
+    },
+    {
+     "p": "Based on EU practice, planning assumes about 1.5 kW per car: over 7 hours of charging, that is enough for about 50 km of daily driving. That is why, with load management, several cars share the power the building has instead of each charger asking for a full 11 kW."
+    },
+    {
+     "p": "For employees who drive little each day, a reinforced socket rated at 2.3–3.7 kW is enough, on its own circuit with its own RCD protection. The driver uses a sound, factory-made portable charger, and your internal policy should ban extension cords and adapters."
+    },
+    {
+     "h2": "How many spots to equip: based on the employees who charge"
+    },
+    {
+     "p": "Start with the number of employees who already drive an electric car or a plug-in hybrid and with your plan for buying company cars. A short survey gives a more accurate picture than an estimate based on the number of parking spaces."
+    },
+    {
+     "p": "Equip spots for current users, and install a cable route with junction boxes in advance to the spots where you expect demand. Such a spot is equipped later without new work on the cable route."
+    },
+    {
+     "p": "One spot can serve several employees who take turns, if your internal policy sets charging time slots and requires moving a charged car to a regular space."
+    },
+    {
+     "p": "If the company is building a new office building, the number of spots is not its decision alone. Under the Law on Planning and Construction (Art. 31), the planning document sets the number of parking spaces with an obligatory minimum number of charging spots. The exact number is set by the planning document and the location conditions."
+    },
+    {
+     "h2": "Power during working hours and load management"
+    },
+    {
+     "p": "In a company parking lot, cars charge during the day, while the offices, lighting, air conditioning or machines are running. So the chargers get the power the building does not use during working hours, not the overnight reserve of an apartment building garage."
+    },
+    {
+     "p": "The IEC 60364-7-722 standard assumes that every connection point runs at its full rated current, unless a system controls the load. Without load management, the wiring and the grid connection therefore have to handle all chargers running at full power."
+    },
+    {
+     "p": "Load management measures consumption at the connection and divides the remaining power among the chargers: when the building uses more, the chargers slow down, and when consumption drops, they speed up. Based on EU practice, the feeder cable and the sub-panel are sized at 11 kW for the first spot and about 4 kW for each additional one. The cable to each spot is sized for the charger’s full power."
+    },
+    {
+     "p": "The building’s approved power is shown on the electricity bill. If power is metered at the connection, anything above the approved power is billed as excess power at a higher price than the regular one. Load management set to the approved power also reduces that risk."
+    },
+    {
+     "p": "If the connection is not enough even with load management, ask Elektrodistribucija Srbije for an increase in approved power, which is granted if it is technically possible. The request is filed by the holder of the grid connection approval, that is, the owner or user of the building. According to EDS, the deadline for deciding on the request is 15 days under the Energy Law; that is the deadline for the decision, not for the works."
+    },
+    {
+     "p": [
+      "You pay Elektrodistribucija for the power increase according to its price list, and we show it in the quote as a separate item, with no markup, so you know the total. You will find the math for a larger number of spots in the guide ",
+      {
+       "a": "how much power a garage needs for 10, 20 or 50 chargers",
+       "href": "/koliko-snage-treba-garazi-za-punjace"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "A MID meter at every spot: consumption by spot and by purpose"
+    },
+    {
+     "p": "A MID-certified meter (compliant with the EU Measuring Instruments Directive) measures the kWh of the spot where it is installed. With free charging, it shows what charging costs the company, and with reimbursement, it gives the kWh for the monthly statement."
+    },
+    {
+     "p": "The meter measures the spot, not the driver. When each spot has its own user, the statement per spot is also the statement per employee, so billing employees is simple. For shared spots, where several people charge, there is the WALLBOX PLUS with RFID cards: charging starts with a card the company gives to employees."
+    },
+    {
+     "p": "With a subscription, the company gets a monthly statement per spot in PDF and CSV. The subscription also covers priority service and a yearly check of the wiring and equipment. The kit works without a subscription too, and the equipment warranty is 2 years."
+    },
+    {
+     "h2": "Who pays for the electricity: free charging or reimbursement by meter"
+    },
+    {
+     "p": "With free charging, use your internal policy to set who charges and in what order and, if needed, a monthly kWh limit per person. You can give company cars priority."
+    },
+    {
+     "p": "With reimbursement by meter, the employee pays the company back for the metered kWh once a month. Agree with your accountant which kWh price you apply — the average price from the bill, with all charges, or the energy price only. Put it in your internal policy, so anyone can check the statement."
+    },
+    {
+     "p": "A mixed model is also possible: company cars are charged at no cost, and employees’ private cars against reimbursement by meter. That requires separate spots, because the meter measures the spot, not the car; this way your accountant sees the cost by purpose in the statement."
+    },
+    {
+     "p": "If the office is leased and the parking lot is on the landlord’s meter, the landlord pays for the charging electricity. Agree with them how they re-invoice it to you by the MID meter."
+    },
+    {
+     "h2": "What to check with your accountant and lawyer before installation"
+    },
+    {
+     "p": "Tax questions depend on the company’s status and its agreements with employees, so settle them with your accountant before adopting your internal policy:"
+    },
+    {
+     "ul": [
+      "whether free charging of an employee’s private car has payroll tax and social contribution consequences;",
+      "if the company is VAT-registered, whether it charges VAT on the reimbursement from employees and on free charging of private cars (Arts. 4 and 23 of the VAT Law);",
+      "whether payments from employees are recorded through a fiscal device (Arts. 3 and 4 of the Law on Fiscalization), and how company and private cars are kept apart in the books;",
+      "if the parking lot is on the landlord’s meter, how VAT applies to the electricity the landlord re-invoices."
+     ]
+    },
+    {
+     "p": "Check these questions with your lawyer:"
+    },
+    {
+     "ul": [
+      "whether the reimbursement can be deducted from wages and with what consent of the employee;",
+      "how charging per kWh is treated under energy regulations, and whether the meter you use to bill employees is subject to verification;",
+      "if you use RFID cards, how data on who charged and when is processed;",
+      "if the building is leased, who approves the works and who owns the chargers and cables when the lease ends."
+     ]
+    },
+    {
+     "p": "Installing a charger requires a decision approving the works (rešenje o odobrenju za izvođenje radova) under Art. 145 of the Law on Planning and Construction. This is set out in Art. 4, para. 2, item 35 of the Rulebook on Special Types of Structures and Special Types of Works (Official Gazette of RS, Nos. 87/2023, 16/2024 and 16/2026)."
+    },
+    {
+     "p": "During the assessment, we check what this means for your building, and the municipal or city authority makes the final decision. We provide a technical description of the works and documentation of the completed works, and the building owner obtains the decision."
+    },
+    {
+     "h2": "Spot prices and what is priced after the assessment"
+    },
+    {
+     "p": "A spot with an 11 kW wallbox and a MID meter costs 104.000 RSD, and a spot with a reinforced socket and a MID meter costs 39.000 RSD. The price includes basic installation next to the distribution board: up to 2 m of cable, RCD protection and a breaker. Prices are final, with no VAT: the sole proprietor is not in the VAT system."
+    },
+    {
+     "p": "The WALLBOX PLUS for shared spots costs from 115.000 RSD, and 10.000 RSD more with a MID meter. For several spots in a parking lot, shared infrastructure is added per site: a sub-panel with load management, the cable route and documentation of the completed works."
+    },
+    {
+     "p": [
+      "In the example with three spots and a distribution board 10–30 m away from them, this infrastructure comes to about 218.000–398.000 RSD. For one or two spots next to the distribution board, it is not needed. You can get a rough price for your number of spots in the ",
+      {
+       "a": "charger price calculator for companies",
+       "href": "/kalkulator-cene-punjaca?tip=flota"
+      },
+      "."
+     ]
+    },
+    {
+     "p": "The price does not include digging and restoring asphalt outside the building, a power increase or a new grid connection, or fees of the competent authorities, where they apply. Nor does it include repairing the existing wiring if the assessment shows it is faulty."
+    },
+    {
+     "p": "The on-site assessment costs 2.990 RSD and is credited toward the installation price. Installing one spot takes one working day, and for several spots we give the timeline in the quote. Connecting to the board requires a short power cut, which we schedule with you in advance."
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "id": "izvori",
+   "h2": "Sources",
+   "items": [
+    {
+     "title": "Law on Planning and Construction, Arts. 31 and 145",
+     "url": "https://www.paragraf.rs/propisi/zakon_o_planiranju_i_izgradnji.html"
+    },
+    {
+     "title": "Rulebook on Special Types of Structures and Special Types of Works, Art. 4, para. 2, item 35",
+     "url": "https://www.paragraf.rs/propisi/pravilnik-posebne-vrste-objekata-radova-za-koje-nije-potrebno-pribavljati-akt.html"
+    },
+    {
+     "title": "Law on Value Added Tax, Arts. 4 and 23",
+     "url": "https://www.paragraf.rs/propisi/zakon-o-porezu-na-dodatu-vrednost.html"
+    },
+    {
+     "title": "Law on Fiscalization, Arts. 3 and 4",
+     "url": "https://www.paragraf.rs/propisi/zakon-o-fiskalizaciji-republike-srbije.html"
+    },
+    {
+     "title": "Elektrodistribucija Srbije: connection procedure outside the unified procedure (change of power)",
+     "url": "https://elektrodistribucija.rs/usluge/postupak-prikljucenja-na-dsee/postupak-prikljucenja-van-objedinjenoj"
+    },
+    {
+     "title": "Energy Agency of the Republic of Serbia (AERS): price regulation — questions and answers",
+     "url": "https://www.aers.rs/regulacija-cena-pitanja-i-odgovori"
+    },
+    {
+     "title": "EPS: basic terms (approved power)",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/osnovni-pojmovi.aspx"
+    },
+    {
+     "title": "EPS: commercial supply (excess power)",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/komercijalno-snabdevanje.aspx"
+    },
+    {
+     "title": "Electrical Installation Guide (Schneider Electric): EV charging installation under IEC 60364-7-722:2018",
+     "url": "https://www.electrical-installation.org/enwiki/EV_charging_-_electrical_installation_design"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "cta",
+   "h2": "Evolako for company parking lots and company cars",
+   "text": "An 11 kW wallbox and a MID meter at every spot, load management and a monthly statement per spot with a subscription. We work all over Serbia and reply to inquiries within 48h.",
+   "button": {
+    "label": "Chargers for company cars",
+    "href": "/punjaci-za-sluzbena-vozila"
+   }
+  },
+  {
+   "type": "links",
+   "id": "srodni",
+   "h2": "Related guides",
+   "items": [
+    {
+     "title": "Charging a company car at home: how a company measures and reimburses the electricity cost",
+     "text": "A MID meter at the employee’s address, the monthly statement and questions for your accountant.",
+     "href": "/punjenje-sluzbenog-automobila-kod-kuce"
+    },
+    {
+     "title": "How much power a garage needs for 10, 20 or 50 chargers",
+     "text": "Load management, guidelines for the sub-panel and when a power increase is needed.",
+     "href": "/koliko-snage-treba-garazi-za-punjace"
+    },
+    {
+     "title": "Chargers for parking garages and parking lots",
+     "text": "Several spots in a company or office building parking lot, on the same connection.",
+     "href": "/punjaci-za-parking-garaze"
+    }
+   ]
+  }
+ ]
+}

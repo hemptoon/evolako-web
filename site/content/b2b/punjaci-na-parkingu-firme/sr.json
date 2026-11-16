@@ -1,0 +1,259 @@
+{
+ "page": "punjaci-na-parkingu-firme",
+ "slug": "/punjaci-na-parkingu-firme",
+ "tone": "vi",
+ "kind": "article",
+ "seo": {
+  "title": "Punjači na parkingu firme za zaposlene | Evolako",
+  "description": "Koliko mesta za punjenje opremiti na parkingu firme, koliko snage treba u radno vreme i ko snosi trošak struje: firma ili zaposleni po MID brojilu.",
+  "og_title": "Punjači na parkingu firme: koliko mesta za zaposlene i ko plaća struju",
+  "og_description": "Za radni dan dovoljan je AC punjač od 11 kW, upravljanje snagom deli priključak objekta, a MID brojilo na svakom mestu pokazuje potrošnju. Firma bira besplatno punjenje ili naknadu po brojilu."
+ },
+ "hero": {
+  "kicker": "Vodič za firme i zgrade",
+  "h1": "Punjači na parkingu firme: koliko mesta za zaposlene i ko plaća struju",
+  "lead": "Mesta za punjenje opremite prema broju zaposlenih koji stvarno pune, a ne prema broju parking mesta; za radni dan dovoljan je AC punjač od 11 kW. Kada su punjači na priključku firme, firma plaća struju i unapred bira da li je punjenje za zaposlene besplatno ili oni vraćaju trošak po MID brojilu.",
+  "updated": "@auto"
+ },
+ "card": {
+  "title": "Punjači na parkingu firme",
+  "text": "Koliko mesta za zaposlene, snaga u radno vreme, MID brojilo i ko plaća struju za punjenje."
+ },
+ "sections": [
+  {
+   "type": "article",
+   "id": "tekst",
+   "blocks": [
+    {
+     "p": [
+      "Vodič je namenjen direktorima, službama održavanja i finansijskim službama u firmama koje imaju sopstveni ili zakupljeni parking. Primer za firmu sa mestima na parkingu i kod kuće zaposlenih naći ćete na stranici o ",
+      {
+       "a": "punjačima za službena vozila i parking firme",
+       "href": "/punjaci-za-sluzbena-vozila"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Za radni dan dovoljan je AC punjač od 11 kW"
+    },
+    {
+     "p": "Automobil zaposlenog stoji na parkingu firme ceo radni dan. Punjač od 11 kW za sat punjenja dodaje oko 60 km dometa, pa se dnevna vožnja do posla i nazad obično nadoknadi mnogo pre kraja radnog vremena."
+    },
+    {
+     "p": "Brzinu ograničava i sam automobil: on ne prima više snage nego što podržava njegov ugrađeni punjač. Punjač od 22 kW ima smisla tek tamo gde automobil stoji 1–3 sata i sam prima 22 kW. Brze DC punjače nudimo na upit, kao poseban projekat sa novim priključkom, ali parking zaposlenih ih obično ne traži."
+    },
+    {
+     "p": "Wallbox ima konektor Type 2, koji imaju gotovo svi električni automobili i plug-in hibridi na tržištu Srbije, pa mesto za punjenje ne zavisi od marke automobila."
+    },
+    {
+     "p": "Prema praksi u EU, za planiranje se računa oko 1,5 kW po automobilu: za 7 sati punjenja to je dovoljno za oko 50 km dnevne vožnje. Zato uz upravljanje snagom više automobila deli snagu koju objekat ima, umesto da svaki punjač traži punih 11 kW."
+    },
+    {
+     "p": "Za zaposlene koji dnevno voze malo dovoljna je i pojačana utičnica od 2,3–3,7 kW, na posebnom strujnom kolu sa sopstvenom FID zaštitom. Vozač koristi ispravan fabrički prenosni punjač, a produžne kablove i adaptere zabranite internim aktom."
+    },
+    {
+     "h2": "Koliko mesta opremiti: prema zaposlenima koji pune"
+    },
+    {
+     "p": "Počnite od broja zaposlenih koji već voze električni automobil ili plug-in hibrid i od plana nabavke službenih vozila. Kratka anketa daje tačniju sliku od procene po broju parking mesta."
+    },
+    {
+     "p": "Opremite mesta za postojeće korisnike, a do mesta za koja očekujete potražnju unapred postavite trasu sa kutijama. Takvo mesto se kasnije oprema bez novih radova na trasi."
+    },
+    {
+     "p": "Jedno mesto može da služi većem broju zaposlenih koji se smenjuju, ako interni akt određuje termine punjenja i premeštanje napunjenog automobila na obično mesto."
+    },
+    {
+     "p": "Ako firma gradi novi poslovni objekat, broj mesta nije samo njena odluka. Po Zakonu o planiranju i izgradnji (čl. 31), planski dokument određuje broj parking mesta sa obaveznim minimalnim brojem mesta za punjenje. Tačan broj propisuju planski dokument i lokacijski uslovi."
+    },
+    {
+     "h2": "Snaga u radno vreme i upravljanje snagom"
+    },
+    {
+     "p": "Na parkingu firme automobili se pune danju, dok rade kancelarije, rasveta, klima-uređaji ili mašine. Punjačima zato ostaje snaga koju objekat ne troši u radno vreme, a ne noćna rezerva kao u garaži stambene zgrade."
+    },
+    {
+     "p": "Standard IEC 60364-7-722 polazi od toga da svako priključno mesto radi punom nazivnom strujom, osim kada sistem upravlja opterećenjem. Bez upravljanja snagom instalacija i priključak zato moraju da podnesu rad svih punjača punom snagom."
+    },
+    {
+     "p": "Upravljanje snagom meri potrošnju na priključku i raspoređuje preostalu snagu između punjača: kada objekat troši više, punjači usporavaju, a kada potrošnja padne, ubrzavaju. Napojni kabl i podtabla se, prema praksi u EU, računaju na 11 kW za prvo mesto i oko 4 kW za svako sledeće. Kabl do svakog mesta bira se za punu snagu punjača."
+    },
+    {
+     "p": "Odobrena snaga objekta navedena je na računu za struju. Ako se na priključku meri snaga, razlika iznad odobrene plaća se kao prekomerna snaga, po višoj ceni od redovne. Upravljanje snagom podešeno prema odobrenoj snazi smanjuje i taj rizik."
+    },
+    {
+     "p": "Kada priključak nije dovoljan ni uz upravljanje snagom, od Elektrodistribucije Srbije tražite povećanje odobrene snage, ako za to postoje tehničke mogućnosti. Zahtev podnosi onaj na čije ime glasi odobrenje za priključenje, odnosno vlasnik ili korisnik objekta. Prema EDS-u, rok za odlučivanje o zahtevu je 15 dana po Zakonu o energetici; to je rok za rešenje, a ne za radove."
+    },
+    {
+     "p": [
+      "Trošak povećanja snage plaćate Elektrodistribuciji po njenom cenovniku, a mi ga u ponudi navodimo posebnom stavkom, bez naše marže, da znate ukupan iznos. Računicu za veći broj mesta naći ćete u vodiču ",
+      {
+       "a": "koliko snage treba garaži za 10, 20 ili 50 punjača",
+       "href": "/koliko-snage-treba-garazi-za-punjace"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "MID brojilo na svakom mestu: potrošnja po mestu i po nameni"
+    },
+    {
+     "p": "MID brojilo (usaglašeno sa evropskom Direktivom o mernim instrumentima) meri kWh mesta na kome je ugrađeno. Kod besplatnog punjenja pokazuje koliko punjenje košta firmu, a kod naknade daje kWh za mesečni obračun."
+    },
+    {
+     "p": "Brojilo meri mesto, a ne vozača. Kada svako mesto ima svog korisnika, obračun po mestu je ujedno i obračun po zaposlenom, pa je naplata od zaposlenih jednostavna. Za zajednička mesta, na kojima puni više ljudi, namenjen je WALLBOX PLUS sa RFID karticama: punjenje počinje karticom koju firma daje zaposlenima."
+    },
+    {
+     "p": "Uz pretplatu firma svakog meseca dobija obračun po mestu u PDF i CSV formatu. Pretplata obuhvata i prioritetni servis i godišnju proveru instalacije i opreme. Komplet radi i bez pretplate, a garancija na opremu je 2 godine."
+    },
+    {
+     "h2": "Ko plaća struju: besplatno punjenje ili naknada po brojilu"
+    },
+    {
+     "p": "Kod besplatnog punjenja internim aktom odredite ko puni i kojim redosledom, a po potrebi i mesečnu granicu kWh po osobi. Prednost možete dati službenim vozilima."
+    },
+    {
+     "p": "Kod naknade po brojilu zaposleni jednom mesečno vraća firmi trošak izmerenih kWh. Koju cenu kWh primenjujete — prosečnu sa računa, sa svim naknadama, ili samo cenu energije — dogovorite sa knjigovođom. Upišite je u interni akt, da bi svako mogao da proveri obračun."
+    },
+    {
+     "p": "Moguć je i mešoviti model: službena vozila se pune bez naknade, a privatni automobili zaposlenih uz naknadu po brojilu. Tada su potrebna odvojena mesta, jer brojilo meri mesto, a ne automobil; knjigovođa tako iz obračuna vidi trošak po nameni."
+    },
+    {
+     "p": "Ako je poslovni prostor u zakupu, a parking na brojilu zakupodavca, struju za punjenje plaća zakupodavac. Sa njim dogovorite kako vam je prefakturiše po MID brojilu."
+    },
+    {
+     "h2": "Šta proveriti sa knjigovođom i pravnikom pre ugradnje"
+    },
+    {
+     "p": "Poreska pitanja zavise od statusa firme i ugovora sa zaposlenima, pa ih pre donošenja internog akta rešite sa knjigovođom:"
+    },
+    {
+     "ul": [
+      "da li besplatno punjenje privatnog automobila zaposlenog ima posledice po porez na zarade i doprinose;",
+      "ako je firma obveznik PDV-a, da li obračunava PDV na naknadu od zaposlenih i na besplatno punjenje privatnih automobila (čl. 4 i 23 Zakona o PDV-u);",
+      "da li se naplata od zaposlenih evidentira preko fiskalnog uređaja (čl. 3 i 4 Zakona o fiskalizaciji) i kako se u knjigama razdvajaju službena i privatna vozila;",
+      "ako je parking na brojilu zakupodavca, kako se obračunava PDV na struju koju on prefakturiše."
+     ]
+    },
+    {
+     "p": "Sa pravnikom proverite ova pitanja:"
+    },
+    {
+     "ul": [
+      "da li se naknada može obustaviti od zarade i uz kakvu saglasnost zaposlenog;",
+      "kako se naplata po kWh tretira po propisima o energetici i da li brojilo kojim obračunavate struju zaposlenima podleže overavanju;",
+      "ako koristite RFID kartice, kako se obrađuju podaci o tome ko je i kada punio;",
+      "ako je objekat u zakupu, ko daje saglasnost za radove i čiji su punjači i kablovi kada zakup prestane."
+     ]
+    },
+    {
+     "p": "Za postavljanje punjača izdaje se rešenje o odobrenju za izvođenje radova po čl. 145 Zakona o planiranju i izgradnji. To propisuje čl. 4 st. 2 tač. 35 Pravilnika o posebnoj vrsti objekata i posebnoj vrsti radova („Sl. glasnik RS“, br. 87/2023, 16/2024 i 16/2026)."
+    },
+    {
+     "p": "Na proceni proveravamo šta to znači za vaš objekat, a konačno odlučuje nadležni organ opštine ili grada. Dajemo tehnički opis radova i dokumentaciju o izvedenim radovima, a rešenje pribavlja vlasnik objekta."
+    },
+    {
+     "h2": "Cena mesta i šta se računa posle procene"
+    },
+    {
+     "p": "Mesto sa wallboxom 11 kW i MID brojilom košta 104.000 RSD, a mesto sa pojačanom utičnicom i MID brojilom 39.000 RSD. U cenu ulazi osnovna ugradnja pored razvodne table: do 2 m kabla, FID zaštita i automat. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a."
+    },
+    {
+     "p": "WALLBOX PLUS za zajednička mesta košta od 115.000 RSD, a sa MID brojilom 10.000 RSD više. Za više mesta na parkingu dodaje se zajednička infrastruktura po objektu: podtabla sa upravljanjem snagom, trasa i dokumentacija o izvedenim radovima."
+    },
+    {
+     "p": [
+      "U primeru sa tri mesta, kada je razvodna tabla 10–30 m od njih, ta infrastruktura iznosi oko 218.000–398.000 RSD. Za jedno ili dva mesta pored razvodne table nije potrebna. Okvirnu cenu za svoj broj mesta dobijate u ",
+      {
+       "a": "kalkulatoru cene punjača za firme",
+       "href": "/kalkulator-cene-punjaca?tip=flota"
+      },
+      "."
+     ]
+    },
+    {
+     "p": "U cenu nisu uračunati iskop i vraćanje asfalta izvan zgrade, povećanje snage ili novi priključak i takse nadležnih organa, gde se plaćaju. Ne ulazi ni popravka postojeće instalacije, ako se na proceni pokaže da nije ispravna."
+    },
+    {
+     "p": "Procena na licu mesta košta 2.990 RSD i uračunava se u cenu ugradnje. Ugradnja jednog mesta traje jedan radni dan, a za više mesta rok navodimo u ponudi. Za priključenje na tablu potrebno je kratko isključenje napajanja, čiji termin dogovaramo unapred."
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "id": "izvori",
+   "h2": "Izvori",
+   "items": [
+    {
+     "title": "Zakon o planiranju i izgradnji, čl. 31 i 145",
+     "url": "https://www.paragraf.rs/propisi/zakon_o_planiranju_i_izgradnji.html"
+    },
+    {
+     "title": "Pravilnik o posebnoj vrsti objekata i posebnoj vrsti radova, čl. 4 st. 2 tač. 35",
+     "url": "https://www.paragraf.rs/propisi/pravilnik-posebne-vrste-objekata-radova-za-koje-nije-potrebno-pribavljati-akt.html"
+    },
+    {
+     "title": "Zakon o porezu na dodatu vrednost, čl. 4 i 23",
+     "url": "https://www.paragraf.rs/propisi/zakon-o-porezu-na-dodatu-vrednost.html"
+    },
+    {
+     "title": "Zakon o fiskalizaciji, čl. 3 i 4",
+     "url": "https://www.paragraf.rs/propisi/zakon-o-fiskalizaciji-republike-srbije.html"
+    },
+    {
+     "title": "Elektrodistribucija Srbije: postupak priključenja van objedinjene procedure (promena snage)",
+     "url": "https://elektrodistribucija.rs/usluge/postupak-prikljucenja-na-dsee/postupak-prikljucenja-van-objedinjenoj"
+    },
+    {
+     "title": "Agencija za energetiku Republike Srbije (AERS): regulacija cena — pitanja i odgovori",
+     "url": "https://www.aers.rs/regulacija-cena-pitanja-i-odgovori"
+    },
+    {
+     "title": "EPS: osnovni pojmovi (odobrena snaga)",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/osnovni-pojmovi.aspx"
+    },
+    {
+     "title": "EPS: komercijalno snabdevanje (prekomerna snaga)",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/komercijalno-snabdevanje.aspx"
+    },
+    {
+     "title": "Electrical Installation Guide (Schneider Electric): instalacija za punjenje vozila po IEC 60364-7-722:2018",
+     "url": "https://www.electrical-installation.org/enwiki/EV_charging_-_electrical_installation_design"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "cta",
+   "h2": "Evolako za parking firme i službena vozila",
+   "text": "Wallbox 11 kW i MID brojilo na svakom mestu, upravljanje snagom i mesečni obračun po mestu uz pretplatu. Radimo u celoj Srbiji, a na upit odgovaramo u roku od 48h.",
+   "button": {
+    "label": "Punjači za službena vozila",
+    "href": "/punjaci-za-sluzbena-vozila"
+   }
+  },
+  {
+   "type": "links",
+   "id": "srodni",
+   "h2": "Srodni vodiči",
+   "items": [
+    {
+     "title": "Punjenje službenog automobila kod kuće: kako firma meri i vraća trošak struje",
+     "text": "MID brojilo na adresi zaposlenog, mesečni obračun i pitanja za knjigovođu.",
+     "href": "/punjenje-sluzbenog-automobila-kod-kuce"
+    },
+    {
+     "title": "Koliko snage treba garaži za 10, 20 ili 50 punjača",
+     "text": "Upravljanje snagom, orijentiri za podtablu i kada je potrebno povećanje snage.",
+     "href": "/koliko-snage-treba-garazi-za-punjace"
+    },
+    {
+     "title": "Punjači za parking garaže i parkinge",
+     "text": "Više mesta na parkingu firme ili poslovne zgrade, na istom priključku.",
+     "href": "/punjaci-za-parking-garaze"
+    }
+   ]
+  }
+ ]
+}
