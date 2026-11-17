@@ -168,9 +168,9 @@
     }
    ],
    "warranty": {
-    "sr": "Tesla u uputstvu za Evropu navodi garanciju od 48 meseci za ličnu upotrebu i 12 meseci za komercijalnu.",
-    "en": "Tesla’s European manual states a warranty of 48 months for personal use and 12 months for commercial use.",
-    "ru": "В европейской инструкции Tesla указана гарантия 48 месяцев при личном использовании и 12 месяцев при коммерческом."
+    "sr": "Tesla u uputstvu za Evropu navodi garanciju od 48 meseci za ličnu upotrebu u porodičnoj kući i 12 meseci za komercijalnu upotrebu, od datuma računa. U komercijalnu upotrebu Tesla ubraja i punjenje u stambenim zgradama, hotelima, poslovnim objektima i na parkinzima.",
+    "en": "Tesla’s European manual states a warranty of 48 months for personal use at a single-family home and 12 months for commercial use, from the invoice date. Tesla counts charging at apartment buildings, hotels, offices and parking lots as commercial use.",
+    "ru": "В европейской инструкции Tesla указана гарантия 48 месяцев при личном использовании в частном доме и 12 месяцев при коммерческом, с даты счёта. К коммерческому использованию Tesla относит и зарядку в многоквартирных домах, отелях, офисах и на парковках."
    },
    "shop": {
     "path": "/tesla-wall-connector-gen3/",
