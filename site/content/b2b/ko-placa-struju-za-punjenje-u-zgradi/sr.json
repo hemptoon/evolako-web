@@ -1,0 +1,275 @@
+{
+ "page": "ko-placa-struju-za-punjenje-u-zgradi",
+ "slug": "/ko-placa-struju-za-punjenje-u-zgradi",
+ "tone": "vi",
+ "kind": "article",
+ "seo": {
+  "title": "Ko plaća struju za punjenje u zgradi | Evolako",
+  "description": "Kako stambena zajednica dobija nazad struju punjača: MID brojilo na svakom mestu, cena sa računa zgrade bez marže i odluka skupštine.",
+  "og_title": "Ko plaća struju za punjače u garaži zgrade: MID merenje i obračun bez marže",
+  "og_description": "Učesnici plaćaju svoja mesta i svoju struju: MID brojilo meri svako mesto, a stambena zajednica svakog meseca dobija nazad iznos po ceni sa računa zgrade, bez marže."
+ },
+ "hero": {
+  "kicker": "Vodič za firme i zgrade",
+  "h1": "Ko plaća struju za punjače u garaži zgrade: MID merenje i obračun bez marže",
+  "lead": "Struju za punjače plaćaju učesnici koji pune: MID brojilo meri svako mesto, a oni svakog meseca vraćaju stambenoj zajednici iznos po ceni sa računa zgrade, bez marže. Da ostali vlasnici ne bi plaćali tuđe punjenje, odluka skupštine unapred određuje kako se računa cena kWh, ko očitava brojila i do kada se plaća.",
+  "updated": "@auto"
+ },
+ "card": {
+  "title": "Ko plaća struju za punjače u zgradi",
+  "text": "MID brojilo na svakom mestu, cena kWh sa računa zgrade i šta odluka skupštine kaže o obračunu."
+ },
+ "sections": [
+  {
+   "type": "article",
+   "id": "tekst",
+   "blocks": [
+    {
+     "p": [
+      "Učesnici su vlasnici koji se priključe projektu punjača, a ostali vlasnici ne plaćaju ni mesta ni zajedničku liniju. Ceo model, sa cenama po mestu, opisan je na stranici o ",
+      {
+       "a": "punjačima za stambene zgrade",
+       "href": "/punjaci-za-stambene-zgrade"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Bez posebnog merenja punjenje plaćaju svi vlasnici"
+    },
+    {
+     "p": "Brojilo zajedničke potrošnje obično meri potrošnju rasvete, lifta, pumpi i garažnih vrata. EPS izdaje račun za to brojilo na ime stambene zajednice. Trošak se deli na sve vlasnike, u okviru mesečnog iznosa o kome odlučuje skupština (Zakon o stanovanju i održavanju zgrada, čl. 42 st. 1 tač. 5)."
+    },
+    {
+     "p": "Bez posebnog brojila kWh punjača ulaze u isti račun i ne mogu se izdvojiti, pa pravilo o plaćanju struje treba usvojiti pre ugradnje prvog punjača."
+    },
+    {
+     "h2": "Tri načina napajanja: brojilo stana, zajednička linija ili novo brojilo"
+    },
+    {
+     "p": "Od brojila zavisi ko dobija račun i da li zajednica vodi obračun:"
+    },
+    {
+     "ul": [
+      "Brojilo stana. Struju plaća vlasnik stana na svom računu, a zajednica ne vodi obračun. Kabl od mernog ormana do garaže ipak prolazi kroz zajedničke delove, pa je potrebno ovlašćenje (čl. 12 st. 1 tač. 3). Potrošnja punjača ulazi u mesečni zbir stana i njegovu zonu.",
+      "Zajednička linija sa MID brojilom na svakom mestu. Punjači se napajaju sa brojila zajedničke potrošnje, zajednica i dalje plaća račun tog brojila, a učesnici joj svakog meseca vraćaju izmereni iznos.",
+      "Novo brojilo za garažu. Struja garaže se tada ne meša sa liftom i rasvetom, ali to je posebno merno mesto, za koje se kod Elektrodistribucije Srbije vodi upravni postupak. Ono ima i sopstvenu obračunsku snagu, koja se plaća svakog meseca, i kada nema potrošnje."
+     ]
+    },
+    {
+     "p": [
+      "Kod više učesnika zajednička linija je obično jednostavnija od niza kablova iz stanova. Skupština o njoj odlučuje jednom, a ista odluka određuje uslove za nove učesnike. MID brojilo meri mesto, a ne automobil, pa ovaj model podrazumeva da svaki učesnik puni na svom mestu. Ceo postupak, od prijava do ugradnje, opisan je u vodiču ",
+      {
+       "a": "plan u 5 koraka za upravnike",
+       "href": "/punjaci-u-garazi-zgrade-plan-za-upravnike"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Mesečni obračun: očitavanje, iznos i uplata zajednici"
+    },
+    {
+     "p": "Evolako struju ne prodaje: ugrađuje MID brojila, a uz pretplatu šalje mesečni obračun. MID brojilo beleži kWh svog mesta, pa iznos ne zavisi od procene ni od podataka iz automobila."
+    },
+    {
+     "p": "Postupak je isti svakog meseca:"
+    },
+    {
+     "ul": [
+      "brojila se očitavaju istog dana u mesecu, što bliže datumu očitavanja na računu EPS-a;",
+      "iznos za svako mesto je izmereni broj kWh pomnožen cenom koja se, metodom iz odluke, izračuna iz računa EPS-a za taj mesec;",
+      "učesnik uplaćuje iznos direktno na tekući račun stambene zajednice, u roku iz odluke;",
+      "pojedinačni obračun dobija samo učesnik na koga se odnosi, a upravnik čuva očitavanja, račune EPS-a i potvrde o uplatama."
+     ]
+    },
+    {
+     "p": "Uplate učesnika upravnik vodi kao posebnu stavku u evidenciji prihoda i rashoda zajednice (čl. 50 tač. 12). Tako izveštaj o radu (čl. 50 tač. 13) pokazuje koliko su učesnici vratili. Zajednica obično plaća račun EPS-a pre nego što stignu uplate, pa je kratak rok uplate u interesu svih vlasnika."
+    },
+    {
+     "p": "Pretplata nije obavezna. Uz nju za svako mesto svakog meseca stiže obračun u PDF i CSV formatu, sa kWh i iznosom po ceni sa računa zgrade. Bez pretplate brojila očitava upravnik ili lice koje on odredi."
+    },
+    {
+     "h2": "Cena kWh: prosek sa računa ili trošak koji dodaju punjači"
+    },
+    {
+     "p": "Po metodologiji AERS-a, struja za zajedničke uređaje i instalacije u stambenim zgradama spada u grupu „Javna i zajednička potrošnja“, koja ima dve zone: zelenu do 350 kWh mesečno i plavu za sve kWh preko toga. Stanovi imaju i treću, crvenu zonu, iznad 1.200 kWh."
+    },
+    {
+     "p": "Ako lift, pumpe i rasveta već troše više od 350 kWh mesečno, što se vidi na računima, EPS zgradi naplaćuje svaki kWh punjača po ceni plave zone."
+    },
+    {
+     "p": "Najjednostavnija je prosečna cena: ukupan iznos računa podeljen sa svim kWh na računu. Prvih 350 kWh je jeftinije, pa je prosek niži od cene plave zone, po kojoj se plaća većina kWh punjača, i deo razlike plaćaju ostali vlasnici. Delovi računa koji ne zavise od potrošnje — obračunska snaga i trošak garantovanog snabdevača — deluju u suprotnom smeru, jer ih prosek deli i na učesnike."
+    },
+    {
+     "p": "Da učesnici plate tačno ono što punjači dodaju računu, odluka može da propiše metod razlike: učesnici zajedno plaćaju razliku između računa sa punjačima i računa bez njihovih kWh, po istom cenovniku, i dele je srazmerno svojim kWh. Pre sednice obe računice napravite na stvarnim računima zgrade, pa neka vlasnici izaberu."
+    },
+    {
+     "p": [
+      "Upravljanje snagom drži zbir punjača, lifta i rasvete u okviru odobrene snage priključka, pa punjači po potrebi rade sporije ili redom. Računica za veći broj mesta je u vodiču ",
+      {
+       "a": "koliko snage treba garaži za 10, 20 ili 50 punjača",
+       "href": "/koliko-snage-treba-garazi-za-punjace"
+      },
+      "."
+     ]
+    },
+    {
+     "p": "Ako je veća odobrena snaga ipak potrebna, raste i obračunska snaga. Odluka treba da kaže da tu razliku i trošak povećanja snage snose učesnici, a da se kod prosečne cene razlika ne uračunava u prosek."
+    },
+    {
+     "h2": "Odluka skupštine o plaćanju struje: šta treba da sadrži"
+    },
+    {
+     "p": "O postavljanju stvari na zajedničkim delovima zgrade i o naknadi koju plaćaju vlasnici tih stvari odlučuje skupština (čl. 42 st. 1 tač. 16). Odluke se donose običnom većinom glasova prisutnih (čl. 44), uz kvorum od većine ukupnog broja glasova (čl. 45). Ako odluka samo odobrava postavljanje linije i punjača, obična većina je dovoljna. Ako učesnik dobija i pravo isključivog korišćenja mesta u zajedničkoj garaži, odluku donesite sa najmanje 2/3 ukupnog broja glasova, kao za raspolaganje zajedničkim delovima (čl. 44 st. 2)."
+    },
+    {
+     "p": "Pored mesta, trase i opreme, odluka treba da odgovori i na pitanja o struji:"
+    },
+    {
+     "ul": [
+      "sa kog brojila se napaja svako mesto;",
+      "ko očitava MID brojila i kog dana;",
+      "kojom metodom se računa cena kWh, sa primerom računice;",
+      "rok za uplatu, tekući račun zajednice i šta važi kod kašnjenja;",
+      "ko snosi veću obračunsku snagu i trošak povećanja snage, ako budu potrebni;",
+      "kako se obračunava mesec u kome brojilo nije radilo;",
+      "obaveza učesnika da potpisom prihvati uslove odluke, uključujući obračun po MID brojilu svog mesta;",
+      "šta važi kada učesnik izda ili proda stan ili garažno mesto i koliko za priključenje na postojeću liniju plaća novi učesnik."
+     ]
+    },
+    {
+     "p": [
+      "Šablon predloga odluke predviđa napajanje sa brojila stana ili sa brojila zajedničke potrošnje, uz obračun po prosečnoj ceni; za metod razlike tu tačku prilagodite. Uz njega su i šabloni tačke dnevnog reda i odgovora stanarima, besplatno na stranici ",
+      {
+       "a": "šabloni za skupštinu",
+       "href": "/sabloni-za-skupstinu"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Porez, licenca i overavanje brojila"
+    },
+    {
+     "p": "Po vodiču Poreske uprave za stambene zajednice (mart 2025.), naknade koje plaćaju vlasnici posebnih delova nisu prihod ostvaren na tržištu. Zajednica koja se finansira samo iz njih i fizičkim licima ne prodaje dobra ni usluge nije obveznik poreza na dobit ni fiskalizacije, a u sistem PDV-a ulazi tek kad promet na tržištu u prethodnih 12 meseci pređe 8.000.000 dinara. Naknadu za struju punjača vodič ne pominje, pa je najsigurnije da zajednica struju ne naplaćuje kao prodaju, nego kao naknadu vlasnika: plaćaju je samo vlasnici koji učestvuju, po odluci skupštine i tačno po računu. Ako mesto koristi zakupac, zajednici i dalje plaća vlasnik."
+    },
+    {
+     "p": "Licenca je potrebna za snabdevanje, odnosno prodaju struje kupcima (Zakon o energetici, čl. 2, 16 i 17). Zato je model postavljen tako da zajednica struju ne prodaje: odluka samo deli stvarni račun po izmerenim kWh, bez marže i bez unapred određene cene kWh."
+    },
+    {
+     "p": "Brojila električne energije podležu zakonskoj kontroli: brojilo sa direktnim priključenjem overava se svakih 12 godina od ocenjivanja usaglašenosti, a usaglašeno brojilo sa oznakama propisanim u Srbiji prvi put se ne overava (Pravilnik o vrstama merila koja podležu zakonskoj kontroli, čl. 3 i 5). Izuzetka za brojila po kojima zajednica deli trošak nema, pa ih učesnik menja ili overava pre isteka tih 12 godina; godina uz oznaku „M“ otprilike pokazuje kada je rok počeo."
+    },
+    {
+     "h2": "Cena za učesnike: mesto i deo linije"
+    },
+    {
+     "p": "U ovom modelu mesta i liniju plaćaju učesnici, pa zgradu projekat ne košta ništa. Svaki učesnik plaća svoje mesto sa MID brojilom, 39.000 RSD za pojačanu utičnicu ili 104.000 RSD za wallbox 11 kW, i deo zajedničke linije. U paketu ZGRADA mesto sa delom linije košta od 96.000 RSD."
+    },
+    {
+     "p": [
+      "Na primer, sa 10 učesnika zajednička linija u garaži do 30 mesta košta oko 387.000–805.000 RSD, kada je razvodna tabla udaljena 10–30 m od garaže. Taj iznos se deli na svih deset, pa je cena po učesniku 96.000–120.000 RSD sa pojačanom utičnicom ili 142.000–185.000 RSD sa wallboxom. Cene su konačne, bez PDV-a: preduzetnik nije u sistemu PDV-a. Okvirnu cenu za svoju zgradu izračunajte u ",
+      {
+       "a": "kalkulatoru cene punjača",
+       "href": "/kalkulator-cene-punjaca?tip=zgrada"
+      },
+      "."
+     ]
+    },
+    {
+     "p": [
+      "Procena na licu mesta košta 2.990 RSD i uračunava se u cenu ugradnje. Kvarove na punjačima i brojilima učesnici prijavljuju nama. Ako još ne znate koliko je stanara zainteresovano, neka svaki zainteresovani stanar ",
+      {
+       "a": "prijavi zgradu",
+       "href": "/prijavi-zgradu"
+      },
+      "."
+     ]
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "id": "izvori",
+   "h2": "Izvori",
+   "items": [
+    {
+     "title": "Zakon o stanovanju i održavanju zgrada („Sl. glasnik RS“, br. 104/2016 i 9/2020 — dr. zakon), čl. 12, 16, 42, 44, 45 i 50",
+     "url": "https://www.paragraf.rs/propisi/zakon_o_stanovanju_i_odrzavanju_zgrada.html"
+    },
+    {
+     "title": "AERS: Metodologija za određivanje cene električne energije za garantovano snabdevanje, prečišćen tekst (oktobar 2026.) — grupe kupaca i zone",
+     "url": "https://www.aers.rs/media/FILES/Metodologije/Preciscen/2026-10-08%20metodologija%20GS%20EE%20sg-84-14-109-15-106-16-79-17-99-18-150-20-75-22-141-22-101-24,28-25,74-25,40-26.pdf"
+    },
+    {
+     "title": "EPS: osnovni pojmovi (troškovi koji ne zavise od potrošnje)",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/osnovni-pojmovi.aspx"
+    },
+    {
+     "title": "EPS: objašnjenje računa (obračun po zonama potrošnje, obračunska snaga)",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/objasnjenje-racuna.aspx"
+    },
+    {
+     "title": "EPS: cenovnik koji se primenjuje od 1. oktobra 2025.",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/cene.aspx"
+    },
+    {
+     "title": "Agencija za energetiku Republike Srbije (AERS): regulacija cena — pitanja i odgovori",
+     "url": "https://www.aers.rs/regulacija-cena-pitanja-i-odgovori"
+    },
+    {
+     "title": "Elektrodistribucija Srbije: postupak priključenja van objedinjene procedure",
+     "url": "https://elektrodistribucija.rs/usluge/postupak-prikljucenja-na-dsee/postupak-prikljucenja-van-objedinjenoj"
+    },
+    {
+     "title": "Prosperitet: naknada za utrošak zajedničke električne energije u stambenim zgradama (18. juna 2025.)",
+     "url": "https://prosperitet.rs/naknada-za-utrosak-zajednicke-elektricne-energije-u-stambenim-zgradama-pravni-okvir-i-prava-stanara/"
+    },
+    {
+     "title": "Poreska uprava: Stambena zajednica kao poreski obveznik (mart 2025.) — porez na dobit, fiskalizacija i PDV",
+     "url": "https://www.purs.gov.rs/upload/media/2025/3/14/759250/Stambena_zajednica_kao_poreski_obveznik_mart_2025.pdf"
+    },
+    {
+     "title": "Zakon o energetici, čl. 2, 16 i 17 (snabdevanje i licenca)",
+     "url": "https://www.paragraf.rs/propisi/zakon_o_energetici.html"
+    },
+    {
+     "title": "Pravilnik o vrstama merila koja podležu zakonskoj kontroli, čl. 3 i 5 i tabela intervala overavanja",
+     "url": "https://www.paragraf.rs/propisi_download/pravilnik-o-vrstama-merila-koja-podlezu-zakonskoj-kontroli.pdf"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "cta",
+   "h2": "Evolako za stambene zgrade",
+   "text": "MID brojilo na svakom mestu, upravljanje snagom i šabloni za skupštinu, a uz pretplatu mesečni obračun po mestu. Radimo u celoj Srbiji, a na upit odgovaramo u roku od 48h.",
+   "button": {
+    "label": "Punjači za stambene zgrade",
+    "href": "/punjaci-za-stambene-zgrade"
+   }
+  },
+  {
+   "type": "links",
+   "id": "srodni",
+   "h2": "Srodni vodiči",
+   "items": [
+    {
+     "title": "Punjači u garaži stambene zgrade: plan u 5 koraka za upravnike",
+     "text": "Od prijava stanara do odluke skupštine, ugradnje i obračuna.",
+     "href": "/punjaci-u-garazi-zgrade-plan-za-upravnike"
+    },
+    {
+     "title": "Koliko snage treba garaži za 10, 20 ili 50 punjača",
+     "text": "Noćna računica, upravljanje snagom i kada je potrebno povećanje snage.",
+     "href": "/koliko-snage-treba-garazi-za-punjace"
+    },
+    {
+     "title": "Cena punjača po parking mestu: šta ulazi u cenu za zgradu, hotel i firmu",
+     "text": "Mesto za punjenje, zajednička linija i šta se utvrđuje tek na proceni.",
+     "href": "/cena-punjaca-po-parking-mestu"
+    }
+   ]
+  }
+ ]
+}

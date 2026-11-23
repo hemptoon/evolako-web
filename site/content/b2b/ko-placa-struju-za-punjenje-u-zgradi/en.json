@@ -1,0 +1,275 @@
+{
+ "page": "ko-placa-struju-za-punjenje-u-zgradi",
+ "slug": "/ko-placa-struju-za-punjenje-u-zgradi",
+ "tone": "vi",
+ "kind": "article",
+ "seo": {
+  "title": "Who pays for charging electricity in a building | Evolako",
+  "description": "How a residents’ association gets back the cost of charger electricity: a MID meter at every spot, the price from the building’s bill with no markup, and the assembly decision.",
+  "og_title": "Who pays for charging electricity in a building garage: MID metering and statements with no markup",
+  "og_description": "Participants pay for their own spots and their own electricity: a MID meter measures each spot, and every month the residents’ association gets the amount back at the price on the building’s bill, with no markup."
+ },
+ "hero": {
+  "kicker": "Guide for businesses and buildings",
+  "h1": "Who pays for charging electricity in a building garage: MID metering and statements with no markup",
+  "lead": "The chargers’ electricity is paid for by the participants who charge: a MID-certified meter measures every spot, and each month they pay the residents’ association back at the price on the building’s bill, with no markup. So that other owners do not pay for someone else’s charging, the assembly decision sets in advance how the kWh price is calculated, who reads the meters and when payment is due.",
+  "updated": "@auto"
+ },
+ "card": {
+  "title": "Who pays for charging electricity in a building",
+  "text": "A MID meter at every spot, the kWh price from the building’s bill and what the assembly decision says about statements."
+ },
+ "sections": [
+  {
+   "type": "article",
+   "id": "tekst",
+   "blocks": [
+    {
+     "p": [
+      "Participants are the owners who join the charger project; the other owners pay for neither the spots nor the shared line. The whole model, with prices per spot, is described on the page about ",
+      {
+       "a": "chargers for apartment buildings",
+       "href": "/punjaci-za-stambene-zgrade"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Without separate metering, all owners pay for the charging"
+    },
+    {
+     "p": "The common-consumption meter usually measures the lighting, the lift, the pumps and the garage door. EPS issues the bill for that meter in the name of the residents’ association. The cost is shared by all owners as part of the monthly amount set by the assembly (Law on Housing and Building Maintenance, Art. 42(1)(5))."
+    },
+    {
+     "p": "Without a separate meter, the chargers’ kWh go into the same bill and cannot be separated out, so the rule on paying for electricity should be adopted before the first charger is installed."
+    },
+    {
+     "h2": "Three ways to supply power: an apartment meter, a shared line or a new meter"
+    },
+    {
+     "p": "The meter decides who gets the bill and whether the association keeps accounts:"
+    },
+    {
+     "ul": [
+      "An apartment meter. The apartment owner pays for the electricity on their own bill, and the association keeps no accounts. The cable from the meter cabinet to the garage still runs through common parts, so authorization is needed (Art. 12(1)(3)). The charger’s consumption counts toward the apartment’s monthly total and its zone.",
+      "A shared line with a MID meter at every spot. The chargers run off the common-consumption meter, the association still pays that meter’s bill, and every month the participants pay it back the metered amount.",
+      "A new meter for the garage. The garage’s electricity is then not mixed with the lift and the lighting, but this is a separate metering point, which requires an administrative procedure with Elektrodistribucija Srbije (EDS, the grid operator). It also has its own power charge, paid every month, even when there is no consumption."
+     ]
+    },
+    {
+     "p": [
+      "With several participants, a shared line is usually simpler than a row of cables from apartments. The assembly decides on it once, and the same decision sets the terms for new participants. A MID meter measures a spot, not a car, so this model assumes that each participant charges at their own spot. The whole process, from sign-ups to installation, is described in the guide ",
+      {
+       "a": "a 5-step plan for building managers",
+       "href": "/punjaci-u-garazi-zgrade-plan-za-upravnike"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "The monthly statement: reading, amount and payment to the association"
+    },
+    {
+     "p": "Evolako does not sell electricity: it installs MID meters and, with a subscription, sends a monthly statement. A MID meter records the kWh of its own spot, so the amount does not depend on estimates or on data from the car."
+    },
+    {
+     "p": "The routine is the same every month:"
+    },
+    {
+     "ul": [
+      "the meters are read on the same day each month, as close as possible to the reading date on the EPS bill;",
+      "the amount for each spot is the metered kWh multiplied by the price worked out from that month’s EPS bill using the method in the decision;",
+      "the participant pays the amount directly into the association’s current account by the deadline in the decision;",
+      "each participant receives only their own statement, and the building manager keeps the readings, the EPS bills and the payment confirmations."
+     ]
+    },
+    {
+     "p": "The building manager records the participants’ payments as a separate item in the association’s record of income and expenses (Art. 50, item 12). That way, the activity report (Art. 50, item 13) shows how much the participants have paid back. The association usually pays the EPS bill before the payments arrive, so a short payment deadline is in every owner’s interest."
+    },
+    {
+     "p": "The subscription is optional. With it, a monthly statement arrives for every spot in PDF and CSV format, with the kWh and the amount at the price on the building’s bill. Without a subscription, the meters are read by the building manager or a person the manager appoints."
+    },
+    {
+     "h2": "The kWh price: the bill’s average or the cost the chargers add"
+    },
+    {
+     "p": "Under the methodology of AERS, the energy regulator, electricity for common devices and installations in apartment buildings belongs to the “public and common consumption” group, which has two zones: green up to 350 kWh a month and blue for every kWh above that. Apartments also have a third, red zone, above 1,200 kWh."
+    },
+    {
+     "p": "If the lift, the pumps and the lighting already use more than 350 kWh a month, as the bills show, EPS bills the building for every kWh the chargers draw at the blue-zone price."
+    },
+    {
+     "p": "The simplest is the average price: the total amount of the bill divided by all the kWh on it. The first 350 kWh are cheaper, so the average is lower than the blue-zone price at which most of the chargers’ kWh are billed, and the other owners pay part of the difference. The parts of the bill that do not depend on consumption — the power charge and the guaranteed supplier’s fixed charge — work in the opposite direction, because the average spreads them over the participants too."
+    },
+    {
+     "p": "For the participants to pay exactly what the chargers add to the bill, the decision can prescribe the difference method: together they pay the difference between the bill with the chargers and the bill without their kWh, under the same price list, and split it in proportion to their kWh. Before the meeting, work out both calculations on the building’s real bills and let the owners choose."
+    },
+    {
+     "p": [
+      "Load management keeps the chargers, the lift and the lighting together within the connection’s approved power, so the chargers run slower or in turn when needed. The math for a larger number of spots is in the guide ",
+      {
+       "a": "how much power a garage needs for 10, 20 or 50 chargers",
+       "href": "/koliko-snage-treba-garazi-za-punjace"
+      },
+      "."
+     ]
+    },
+    {
+     "p": "If a higher approved power is needed after all, the power charge goes up as well. The decision should say that this difference and the cost of the power increase are borne by the participants, and that with the average price the difference is left out of the average."
+    },
+    {
+     "h2": "The assembly’s decision on paying for electricity: what it should contain"
+    },
+    {
+     "p": "The assembly decides on placing things on the building’s common parts and on the fee paid by the owners of those things (Art. 42(1)(16)). Decisions are made by a simple majority of the votes of those present (Art. 44), with a quorum of a majority of the total number of votes (Art. 45). If the decision only approves installing the line and the chargers, a simple majority is enough. If a participant also gets the right to exclusive use of a space in the common garage, adopt the decision with at least 2/3 of the total number of votes, as for disposing of common parts (Art. 44(2))."
+    },
+    {
+     "p": "Besides the spots, the cable route and the equipment, the decision should also answer the questions about electricity:"
+    },
+    {
+     "ul": [
+      "which meter supplies each spot;",
+      "who reads the MID meters and on which day;",
+      "which method is used for the kWh price, with a worked example;",
+      "the payment deadline, the association’s current account and what applies to late payment;",
+      "who bears a higher power charge and the cost of a power increase, if they become necessary;",
+      "how a month in which a meter did not work is settled;",
+      "the participant’s obligation to accept the decision’s terms by signing, including billing by the MID meter of their spot;",
+      "what applies when a participant rents out or sells the apartment or parking space, and how much a new participant pays to connect to the existing line."
+     ]
+    },
+    {
+     "p": [
+      "The draft decision template covers supply from an apartment meter or from the common-consumption meter, with billing at the average price; for the difference method, adapt that clause. It comes with templates for the agenda item and for answers to residents’ questions, free on the page ",
+      {
+       "a": "templates for the residents’ assembly",
+       "href": "/sabloni-za-skupstinu"
+      },
+      "."
+     ]
+    },
+    {
+     "h2": "Taxes, licensing and meter verification"
+    },
+    {
+     "p": "According to the Tax Administration’s guide for residents’ associations (March 2025), fees paid by the owners of individual units are not income earned on the market. An association that is funded only by them and sells no goods or services to individuals is subject to neither corporate income tax nor fiscalization, and it enters the VAT system only when its market turnover over the previous 12 months exceeds 8.000.000 dinars. The guide does not mention fees for charger electricity, so the safest option is for the association to charge for electricity not as a sale but as an owners’ fee: only participating owners pay it, under the assembly decision and exactly as billed. If a tenant uses the spot, the owner still pays the association."
+    },
+    {
+     "p": "A license is required for supply, that is, selling electricity to customers (Energy Law, Arts. 2, 16 and 17). That is why the model is set up so that the association does not sell electricity: the decision only splits the actual bill by the metered kWh, with no markup and no kWh price set in advance."
+    },
+    {
+     "p": "Electricity meters are subject to legal metrological control: a direct-connected meter is re-verified every 12 years from its conformity assessment, and a compliant meter with the markings required in Serbia is not verified a first time (Rulebook on the types of measuring instruments subject to legal control, Arts. 3 and 5). There is no exception for meters the association uses to split the cost, so the participant replaces the meter or has it verified before those 12 years are up; the year next to the “M” marking roughly shows when the period began."
+    },
+    {
+     "h2": "The price for participants: a spot and a share of the line"
+    },
+    {
+     "p": "In this model, the participants pay for the spots and the line, so the project costs the building nothing. Each participant pays for their own spot with a MID meter, 39.000 RSD for a reinforced socket or 104.000 RSD for an 11 kW wallbox, and a share of the shared line. In the ZGRADA package, a spot with its share of the line costs from 96.000 RSD."
+    },
+    {
+     "p": [
+      "For example, with 10 participants, a shared line in a garage of up to 30 spaces costs about 387.000–805.000 RSD when the distribution board is 10–30 m from the garage. That amount is split among all ten, so the price per participant is 96.000–120.000 RSD with a reinforced socket or 142.000–185.000 RSD with a wallbox. Prices are final, with no VAT: the sole proprietor is not in the VAT system. Work out a rough price for your building in the ",
+      {
+       "a": "charger price calculator",
+       "href": "/kalkulator-cene-punjaca?tip=zgrada"
+      },
+      "."
+     ]
+    },
+    {
+     "p": [
+      "The on-site assessment costs 2.990 RSD and is credited toward the installation price. Participants report faults in chargers and meters to us. If you do not yet know how many residents are interested, have every interested resident ",
+      {
+       "a": "sign up their building",
+       "href": "/prijavi-zgradu"
+      },
+      "."
+     ]
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "id": "izvori",
+   "h2": "Sources",
+   "items": [
+    {
+     "title": "Law on Housing and Building Maintenance (Official Gazette of RS, Nos. 104/2016 and 9/2020 — other law), Arts. 12, 16, 42, 44, 45 and 50",
+     "url": "https://www.paragraf.rs/propisi/zakon_o_stanovanju_i_odrzavanju_zgrada.html"
+    },
+    {
+     "title": "AERS: Methodology for setting the price of electricity for guaranteed supply, consolidated text (October 2026) — customer groups and zones",
+     "url": "https://www.aers.rs/media/FILES/Metodologije/Preciscen/2026-10-08%20metodologija%20GS%20EE%20sg-84-14-109-15-106-16-79-17-99-18-150-20-75-22-141-22-101-24,28-25,74-25,40-26.pdf"
+    },
+    {
+     "title": "EPS: basic terms (costs that do not depend on consumption)",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/osnovni-pojmovi.aspx"
+    },
+    {
+     "title": "EPS: the bill explained (billing by consumption zones, power charge)",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/objasnjenje-racuna.aspx"
+    },
+    {
+     "title": "EPS: the price list in force since October 1, 2025",
+     "url": "https://www.eps.rs/lat/snabdevanje/Stranice/cene.aspx"
+    },
+    {
+     "title": "Energy Agency of the Republic of Serbia (AERS): price regulation — questions and answers",
+     "url": "https://www.aers.rs/regulacija-cena-pitanja-i-odgovori"
+    },
+    {
+     "title": "Elektrodistribucija Srbije: connection procedure outside the unified procedure",
+     "url": "https://elektrodistribucija.rs/usluge/postupak-prikljucenja-na-dsee/postupak-prikljucenja-van-objedinjenoj"
+    },
+    {
+     "title": "Prosperitet: charges for common electricity consumption in residential buildings (June 18, 2025)",
+     "url": "https://prosperitet.rs/naknada-za-utrosak-zajednicke-elektricne-energije-u-stambenim-zgradama-pravni-okvir-i-prava-stanara/"
+    },
+    {
+     "title": "Tax Administration of Serbia: The residents’ association as a taxpayer (March 2025) — corporate income tax, fiscalization and VAT",
+     "url": "https://www.purs.gov.rs/upload/media/2025/3/14/759250/Stambena_zajednica_kao_poreski_obveznik_mart_2025.pdf"
+    },
+    {
+     "title": "Energy Law, Arts. 2, 16 and 17 (supply and license)",
+     "url": "https://www.paragraf.rs/propisi/zakon_o_energetici.html"
+    },
+    {
+     "title": "Rulebook on the types of measuring instruments subject to legal control, Arts. 3 and 5 and the table of verification intervals",
+     "url": "https://www.paragraf.rs/propisi_download/pravilnik-o-vrstama-merila-koja-podlezu-zakonskoj-kontroli.pdf"
+    }
+   ]
+  },
+  {
+   "type": "callout",
+   "id": "cta",
+   "h2": "Evolako for apartment buildings",
+   "text": "A MID meter at every spot, load management and templates for the residents’ assembly, plus a monthly statement per spot with a subscription. We work all over Serbia and reply to inquiries within 48h.",
+   "button": {
+    "label": "Chargers for apartment buildings",
+    "href": "/punjaci-za-stambene-zgrade"
+   }
+  },
+  {
+   "type": "links",
+   "id": "srodni",
+   "h2": "Related guides",
+   "items": [
+    {
+     "title": "Chargers in an apartment building garage: a 5-step plan for building managers",
+     "text": "From residents’ sign-ups to the assembly decision, installation and statements.",
+     "href": "/punjaci-u-garazi-zgrade-plan-za-upravnike"
+    },
+    {
+     "title": "How much power a garage needs for 10, 20 or 50 chargers",
+     "text": "The overnight math, load management and when a power increase is needed.",
+     "href": "/koliko-snage-treba-garazi-za-punjace"
+    },
+    {
+     "title": "Charger cost per parking spot: what the price includes for a building, hotel or company",
+     "text": "The charging spot, the shared line and what is only settled at the site assessment.",
+     "href": "/cena-punjaca-po-parking-mestu"
+    }
+   ]
+  }
+ ]
+}
